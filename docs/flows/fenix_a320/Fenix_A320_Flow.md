@@ -75,15 +75,8 @@ Note: 200kg fuel = 5min flying. Normal Op: 1+F Take Off
 | Fuel Calc            | Ckeck/Adjust      |
 
 ## Preflight Procedure
-<<<<<<< HEAD
 
-Flow Pattern:
-![plot](./pics/a320flow.png)
-||||||| 558a465
-![plot](./pics/a320flow.png)
-=======
 <img width="700" alt="image" src="https://github.com/Zwelckovich/flightsim/blob/main/docs/flows/fenix_a320/pics/a320flow.png">
->>>>>>> b30f3dc5d1d95185b2cc282bc9ab88ffb0971f5f
 
 | Check                | Status            |
 |----------------------|-------------------|
