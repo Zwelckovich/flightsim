@@ -48,7 +48,8 @@ page to delete the whole flight plan.
 
 ### Aircraft Status/Action
 
-Note: If engine page is xxx then activate FADEC GND POWER at the upper overhead panel. 0.5 oil per hour.
+Note: If engine page is xxx then activate FADEC GND POWER at the upper overhead
+panel. 0.5 oil per hour.
 
 | Check                               | Status/Action           |
 |-------------------------------------|-------------------------|
