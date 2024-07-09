@@ -73,7 +73,7 @@ Note: 200kg fuel = 5min flying. Normal Op: 1+F Take Off
 | EFB Mass/Weight      | Adjust/Load       |
 | Take Off Performance | Adjust/Calc/Check |
 | TOPL / Stop Margin   | Check             |
-| Fuel Calc            | Check/Adjust      |
+
 
 ## Preflight Procedure
 
