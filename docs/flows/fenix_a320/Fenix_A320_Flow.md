@@ -13,7 +13,7 @@
 | Gain Knob              | Cal                  |
 | Multiscan Switch       | Auto                 |
 | GCS Switch             | Auto                 |
-| Landing Gear Lever     | Up Position          |
+| Landing Gear Lever     | Down Position          |
 | Wiper Selectors        | OFF                  |
 
 ### Power Up
