@@ -1,0 +1,27 @@
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
+const dir=__dirname,html=fs.readFileSync(dir+'/../Fenix_A320_Flow_V2.html','utf8');
+const js=html.match(/<script>([\s\S]*?)<\/script>/)[1];new vm.Script(js);
+const data=JSON.parse(fs.readFileSync(dir+'/data-v2.json','utf8'));const {DATA}=data;
+const step=(p,t)=>DATA.find(x=>x.id===p).items.find(x=>Array.isArray(x)&&x[0]===t);
+const ids=DATA.flatMap(p=>p.items.filter(Array.isArray).map(x=>x[3].id));assert.equal(new Set(ids).size,ids.length);
+assert.equal(step('n5','FCU — Initial CLB ALT')[1],'SET {{clearedAlt}}');assert(step('n8','PERF TO — THR RED / ACC')[1].includes('{{acc}}'));
+assert(!JSON.stringify(step('n2','EFB Mass & Balance')).includes('Use 25.0'));
+assert(JSON.stringify(step('n17','F — Fuel')).includes('initial fuel'));
+assert(!step('s2','Acceleration Height')[3].w.includes('only after'));
+const touch=DATA.find(p=>p.id==='s8').items.filter(Array.isArray).map(x=>x[0]);assert(touch.indexOf('At 500 ft AGL')<touch.indexOf('At 1000 ft AGL'));
+const ctx={DATA,refs:data.refs,Date,Set,Map,console};vm.createContext(ctx);
+const defs=js.slice(js.indexOf('const defaults='),js.indexOf('let S=defaults();'));
+vm.runInContext('const idSet=new Set('+JSON.stringify(ids)+');'+defs+';globalThis.makeDefault=defaults;',ctx);
+vm.runInContext('let S=defaults();'+js.slice(js.indexOf('function active('),js.indexOf('function expand('))+js.slice(js.indexOf('function plain('),js.indexOf('function renderSearch('))+js.slice(js.indexOf('function sourceFor('),js.indexOf('function sourceNode(')),ctx);
+const valid=ctx.makeDefault();assert.equal(ctx.validState(valid,true).schema,2);
+for(const bad of [null,{}, {...valid,done:null},{...valid,done:{unknown:true}},{...valid,profile:{...valid.profile,engine:'IAE'}}])assert.throws(()=>ctx.validState(bad,true));
+assert(ctx.searchAll('tailstrike').some(h=>h.title==='Referenztabelle'));
+assert(ctx.searchAll('green triangle').length>0);
+assert(ctx.searchAll('V2527').length===0); // no invented engine match text
+const n15=DATA.find(p=>p.id==='n15');vm.runInContext("S.profile.wind='normal'",ctx);const normal=ctx.phaseStats(n15);vm.runInContext("S.profile.wind='strong'",ctx);const strong=ctx.phaseStats(n15);assert.equal(normal.total,strong.total);
+const chosen=n15.items.filter(Array.isArray).find(x=>x[0]==='Brakes'&&x[3].condition.wind==='strong');assert(chosen);
+const identity=step('n5','FCU — Initial CLB ALT')[3].id;const inserted=structuredClone(DATA.find(p=>p.id==='n5').items);inserted.unshift(['new','CHECK','chk',{id:'new'}]);assert.equal(inserted.find(x=>Array.isArray(x)&&x[0]==='FCU — Initial CLB ALT')[3].id,identity);
+const fields=new Set([...vm.runInContext('[...fieldKeys]',ctx),'toConf']);for(const p of DATA)for(const m of JSON.stringify(p).matchAll(/\{\{(\w+)\}\}/g))assert(fields.has(m[1]),'Unknown field: '+m[1]);
+assert(!/\b(confirm|prompt|alert)\s*\(/.test(js));assert(!html.includes('__HERO__'));assert(html.includes('data:image/png;base64,'));
+const result={syntax:'passed',uniqueStableIds:ids.length,phases:DATA.length,fieldBinding:'passed',schemaValidation:'passed',conditionalBranches:{normal:normal.total,strong:strong.total},search:'details + tables passed',touchGoSequence:'passed',standaloneImage:'embedded',nativeJsDialogs:0};
+fs.writeFileSync(dir+'/TEST_RESULTS.json',JSON.stringify(result,null,2));console.log(JSON.stringify(result,null,2));

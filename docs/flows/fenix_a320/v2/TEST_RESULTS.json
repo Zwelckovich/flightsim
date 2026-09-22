@@ -1,0 +1,15 @@
+{
+  "syntax": "passed",
+  "uniqueStableIds": 609,
+  "phases": 50,
+  "fieldBinding": "passed",
+  "schemaValidation": "passed",
+  "conditionalBranches": {
+    "normal": 16,
+    "strong": 16
+  },
+  "search": "details + tables passed",
+  "touchGoSequence": "passed",
+  "standaloneImage": "embedded",
+  "nativeJsDialogs": 0
+}

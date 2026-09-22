@@ -1,0 +1,105 @@
+{
+  "cockpit": {
+    "title": "Cockpit Flow Pattern",
+    "file": "cockpit-flow.svg",
+    "original": "flowpattern",
+    "source": "V1 · Cockpit flow pattern",
+    "note": "Die Originalaufnahme ist unverändert eingebettet. Die Zonenkarte erklärt die vorhandene Nummerierung; sie ist keine neue Fenix-Aufnahme und keine Referenz für einzelne Schalter.",
+    "refs": [
+      "scope"
+    ]
+  },
+  "approach-techniques": {
+    "title": "Decelerated / Early Stabilized",
+    "file": "approach-techniques.svg",
+    "original": "apptypes",
+    "source": "Airbus Safety First · Anflugtechniken",
+    "note": "Die beiden Profile zeigen unterschiedliche Zeitpunkte für VAPP und Landekonfiguration. FDP, Stabilisierungspunkt und Abstand sind getrennt dargestellt; die Zeichnung ist nicht maßstäblich.",
+    "refs": [
+      "airbus-approach"
+    ]
+  },
+  "engine-out": {
+    "title": "Engine Failure after V1",
+    "file": "engine-out-profile.svg",
+    "original": "engfail",
+    "source": "V1 · Engine Failure / V2 Quellenabgleich",
+    "note": "Das Steigprofil zeigt den Zusammenhang. Engine securing, maximale EO ACC und Schubzeitlimit sind mit den vorhandenen Quellen nicht vollständig für CFM/Sharklets aufgelöst. Im gelben Abschnitt stehen deshalb keine erfundenen Freigabewerte.",
+    "refs": [
+      "eo-review",
+      "airbus-climb",
+      "airbus-fire"
+    ]
+  },
+  "quick-return": {
+    "title": "Engine-out · Quick VMC Return",
+    "file": "quick-return.svg",
+    "original": "eoqvmc",
+    "source": "V1 · FSLabs Quick VMC Return",
+    "note": "Eigenständiges Simulator-Trainingsprofil mit CONF 1 im Downwind. Zeitkorrektur und Konfigurationsstrategie stammen aus der Quelle; kein allgemein vorgeschriebener Rückkehrpfad.",
+    "refs": [
+      "eo-review",
+      "applicability"
+    ]
+  },
+  "circling": {
+    "title": "Circling Approach",
+    "file": "circling.svg",
+    "original": "circling",
+    "source": "Blackbox711 · Simple Circling Approach",
+    "note": "Die Draufsicht macht den 45°-Versatz und die Flugrichtung deutlich. Die Quellenwerte beschreiben ein Trainingsmuster; Schutzraum, Minima und veröffentlichte Verfahren folgen den tatsächlichen Charts.",
+    "refs": [
+      "applicability"
+    ]
+  },
+  "visual": {
+    "title": "Visual Approach",
+    "file": "../visual-approach-v2.svg",
+    "original": "visapp",
+    "source": "Blackbox711 · Visual Approach A320",
+    "note": "Räumliche Reinzeichnung nach OpenAI-Image-Gestaltungsentwurf. Höhen, Abstände, Zeitkorrektur und Stabilisierung stammen aus dem Quellenprofil.",
+    "refs": [
+      "applicability"
+    ]
+  },
+  "touch-go": {
+    "title": "Touch and Go",
+    "file": "touch-and-go.svg",
+    "original": "touchgo",
+    "source": "V1 · FSLabs Touch and Go",
+    "note": "Platzrunde und Bahnablauf sind getrennt lesbar. Die Zahlen bleiben als Quellen-Trainingswerte gekennzeichnet. Für das gewählte CFM-Profil wird N1 gezeigt; die IAE-EPR-Angabe wird nicht übernommen.",
+    "refs": [
+      "touch-go"
+    ]
+  },
+  "flap-logic": {
+    "title": "Flap Movement Logic",
+    "file": "flap-logic.svg",
+    "original": "flaplogic",
+    "source": "V1 · Flap Movement Logic",
+    "note": "Hebelbefehle und automatische Oberflächenbewegungen sind getrennt. Ein logischer Übergang bei hoher Geschwindigkeit ist keine Freigabe, Konfigurationsgrenzen zu überschreiten.",
+    "refs": [
+      "applicability"
+    ]
+  },
+  "emergency-descent": {
+    "title": "Emergency Descent · Ablauf",
+    "type": "emergency",
+    "original": "emerdes",
+    "source": "V2-Daten · Emergency Descent",
+    "note": "Die Übersicht übernimmt die vorhandenen Schritte und ihre Bedingungen. Memory Items und Folgeaktionen bleiben getrennt. Das passende ECAM/QRH-Verfahren führt.",
+    "refs": [
+      "qrh-emer"
+    ]
+  },
+  "overweight": {
+    "title": "Overweight Landing · Referenz",
+    "type": "overweight",
+    "original": "owlanding",
+    "source": "V1 · Overweight Landing.pdf",
+    "note": "Die Tabelle wurde nur lesbar übertragen. Flugzeugzuordnung und Anwendbarkeit sind ungeklärt; sie ist ausdrücklich keine Leistungsgrundlage für deinen CFM-Sharklet.",
+    "refs": [
+      "overweight-review"
+    ]
+  }
+}

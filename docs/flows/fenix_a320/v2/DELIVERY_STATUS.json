@@ -1,0 +1,15 @@
+{
+  "completed": "2026-09-22",
+  "output": "C:/Users/zwelc/Documents/Codex/2026-09-21/ich/flow-review-20260922/graphics-update/Fenix_A320_Flow_V2.html",
+  "projectCopy": {
+    "target": "M:/flightsim/docs/flows/fenix_a320",
+    "status": "blocked",
+    "reason": "EPERM on write despite previous folder permission"
+  },
+  "v1Sha256": "7A5B022DB07B9BFBB972EA8DC944C4783202014D2D6EE3719433F7D7F50B3941",
+  "htmlBytes": 3434602,
+  "topics": 10,
+  "svgPlates": 8,
+  "structuredReferences": 2,
+  "steps": 609
+}

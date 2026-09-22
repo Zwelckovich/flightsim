@@ -1,0 +1,18 @@
+{
+  "originalImagesPreserved": 10,
+  "learningTopics": 10,
+  "embeddedSvgPlates": 8,
+  "phasePlacements": 11,
+  "standaloneSvgAssets": "passed",
+  "sourceReferences": "passed",
+  "historicalTableShape": "passed; blank cells remain null",
+  "javascriptSyntax": "passed",
+  "browser": {
+    "allSevenNewSvgs": "visually inspected and refined",
+    "svgZoom": "100% / 125% / fit / Escape passed",
+    "originalComparison": "passed",
+    "flightModeHidesPlates": "passed",
+    "narrowLayout": "375px content; no page overflow; table scrolls internally",
+    "consoleErrors": 0
+  }
+}
