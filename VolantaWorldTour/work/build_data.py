@@ -14,7 +14,7 @@ C={c['code']:c['name'] for c in read('countries.csv') if c['code'] not in ['GS',
 C.update({'AX':'Åland Islands','SJ':'Svalbard','BN':'Brunei Darussalam','BQ':'Bonaire, Sint Eustatius and Saba','CG':'Congo','CZ':'Czechia','EH':'Western Sahara','FK':'Falkland Islands (Malvinas)','FM':'Micronesia, Federated States of','IR':'Iran (Islamic Republic of)','KP':"Korea, Democratic People's Republic of",'KR':'Korea, Republic of','LA':"Lao People's Democratic Republic",'MD':'Republic of Moldova','PS':'Palestine','RE':'Reunion','SH':'Saint Helena','SY':'Syrian Arab Republic','TF':'French Southern Territories','TR':'Türkiye','TZ':'United Republic of Tanzania','VA':'Holy See (Vatican City)','VI':'United States Virgin Islands','VN':'Viet Nam','WF':'Wallis and Futuna Islands','CI':"Cote d'Ivoire"})
 assert len(C)==245,len(C)
 C['ST']='Sao Tome and Principe'
-ADD={r['ICAO'].strip():r for r in csv.DictReader(open(r'M:\VolantaWorldTour\MSFS Airports - Addons.csv',encoding='utf-8-sig'))}
+ADD={r['ICAO'].strip():r for r in csv.DictReader(open(ROOT.parent/'MSFS Airports - Addons.csv',encoding='utf-8-sig'))}
 
 SOURCES={
  'oa':('OurAirports – Koordinaten und Pisten','https://ourairports.com/data/'),

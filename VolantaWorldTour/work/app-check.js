@@ -10,7 +10,7 @@ function save(){saveAll()}
 function toggleDone(id){state.done.has(id)?state.done.delete(id):state.done.add(id);save();renderRows();renderDetail()}
 function sceneTag(a){return `<span class="tag ${a.scenery}">${esc(a.sceneryLabel)}</span>`}
 function needsBriefing(a){return !!a.note||a.elevation>6000||!a.runway||a.runway<2000||a.width<40}
-function showView(id){$$('.view').forEach(v=>v.classList.toggle('active',v.id===id));$$('.topnav [data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===id));if(id==='tourView')requestAnimationFrame(renderMap);if(id==='coverageView')requestAnimationFrame(renderXMap);if(id==='journeyView')renderJourney();if(id==='sceneryView')renderScenery();window.scrollTo({top:0,behavior:'instant'})}
+function showView(id){$$('.view').forEach(v=>v.classList.toggle('active',v.id===id));$$('.topnav [data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===id));if(id==='tourView')requestAnimationFrame(renderMap);if(id==='coverageView')requestAnimationFrame(renderXMap);if(id==='journeyView')renderJourney();if(id==='sceneryView')renderScenery();if(id==='debriefView')renderDebriefs();window.scrollTo({top:0,behavior:'instant'})}
 document.addEventListener('click',e=>{const v=e.target.closest('[data-view]');if(v)showView(v.dataset.view);const j=e.target.closest('[data-jump]');if(j)jumpToAirport(j.dataset.jump)});
 function jumpToAirport(code){const l=D.legs.find(l=>l.to===code)||D.legs.find(l=>l.from===code);if(!l)return;showView('tourView');setChapter(l.chapter,false);selectLeg(l.id,true);$('#scope').value='chapter';$('#search').value='';$('#filter').value='all';renderRows()}
 function renderStats(){const count=D.countries.filter(c=>c.airports.length).length;const combined=[...D.legs,...XL];const short=combined.filter(l=>!l.over2h).length;const sum=combined.reduce((n,l)=>n+l.airMin,0);$('#stats').innerHTML=`<div class="stat"><div class="kicker">Zusammenhängend</div><b>${D.legs.length+XL.length}<em> Legs</em></b><span>${D.legs.length} A320 + ${XL.length} Ausflugs-Legs</span></div><div class="stat"><div class="kicker">Kategorien geplant</div><b>245<em> / 245</em></b><span>229 A320 + 16 Ausflüge geplant*</span></div><div class="stat"><div class="kicker">Deine Szenerien</div><b class="teal">${36+(X.bonusOwnedAirports?.length||0)}<em> / ${D.meta.inventoryTotal}</em></b><span>Add-on-Airports eingebunden</span></div><div class="stat"><div class="kicker">Alle Legs bis 2 h</div><b>${Math.round(short/combined.length*100)}<em> %</em></b><span>${combined.length-short} längere Legs markiert</span></div><div class="stat"><div class="kicker">Gesamte Flugzeit ≈</div><b>${Math.round(sum/60)}<em> h</em></b><span>${fmt(combined.reduce((n,l)=>n+l.nm,0))} NM Großkreis</span></div>`}
@@ -18,7 +18,7 @@ $('#chapter').innerHTML=D.chapters.map(c=>`<option value="${c.id}">${c.title}</o
 function setChapter(id,choose=true){state.chapter=id;$('#chapter').value=id;const c=D.chapters.find(c=>c.id===id),ls=D.legs.filter(l=>l.chapter===id);$('#chapterNo').textContent=id;$('#chapterFraction').textContent=`${+id} / ${D.chapters.length}`;$('#chapterDescription').textContent=`${c.description} ${ls.length} Legs.`;$('#previousChapter').disabled=id==='01';$('#nextChapter').disabled=+id===D.chapters.length;if(choose)state.leg=ls[0].id;renderRows();renderDetail();renderMap()}
 $('#chapter').addEventListener('change',e=>{state.map='chapter';setChapter(e.target.value)});$('#previousChapter').onclick=()=>{state.map='chapter';setChapter(String(+state.chapter-1).padStart(2,'0'))};$('#nextChapter').onclick=()=>{state.map='chapter';setChapter(String(+state.chapter+1).padStart(2,'0'))};
 function selectLeg(id,focus=false){state.leg=id;const l=D.legs[id-1];if(state.chapter!==l.chapter)setChapter(l.chapter,false);if(focus)state.map='leg';renderDetail();renderRows();renderMap();$('#detail').scrollTop=0;if(focus)$('.workbench').scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'})}
-function renderDetail(){const l=D.legs[state.leg-1],a=A[l.from],b=A[l.to],brief=B[b.icao],done=state.done.has(l.id);$('#detail').innerHTML=`<div class="detail-inner"><div class="detail-top"><span class="leg-number mono">LEG ${String(l.id).padStart(3,'0')} / ${D.legs.length}</span><div><button id="prevLeg" aria-label="Vorheriges Leg" style="padding:2px 9px" ${l.id===1?'disabled':''}>‹</button> <button id="nextLeg" aria-label="Nächstes Leg" style="padding:2px 9px" ${l.id===D.legs.length?'disabled':''}>›</button></div></div><div class="leg-route mono"><strong>${a.icao}</strong><span>→</span><strong>${b.icao}</strong></div><div class="small muted">${esc(a.city)} nach ${esc(b.city)}</div><h2>${esc(b.name)}</h2><p class="country">${esc(b.countryName)}${l.newCountry?' · neue Kategorie':''}</p><div class="tags">${sceneTag(b)}${l.bridge?'<span class="tag">Zwischenstopp für kurze Legs</span>':''}${b.special?'<span class="tag warn">Simulator-Sonderbetrieb</span>':''}</div><div class="detail-metrics"><div><b class="mono ${l.over2h?'time-long':''}">${hm(l.airMin)}</b><span>FLUGZEIT ≈ h:mm</span></div><div><b class="mono">${hm(l.blockMin)}</b><span>BLOCKZEIT ≈ h:mm</span></div><div><b class="mono">${fmt(l.nm)}</b><span>GROSSKREIS · NM</span></div></div>${l.over2h?'<p class="alert">Über dem 2-h-Ziel. Diese längere Verbindung bleibt Teil der zusammenhängenden Route. Wind, Reserven und Alternate separat planen.</p>':''}${b.highlight?`<h3>${esc(b.highlight[0])}</h3><p>${esc(b.highlight[1])}</p>`:`<h3>${l.bridge?'Warum dieser Zwischenstopp?':'Warum dieses Ziel?'}</h3><p>${l.bridge?'Dieser Stopp teilt eine längere Verbindung in kürzere Etappen.':l.newCountry?'Ein Flughafen in der richtigen Volanta-Kategorie ergänzt die Länderabdeckung.':'Dieser Stopp hält die Rundreise zusammen und verbindet die folgenden Ziele.'}</p>`}${brief?`<h3>Anflug erleben</h3><p>${esc(brief.focus)}. ${esc(brief.timing)}</p>`:''}${b.note?`<h3>Vor dem Anflug</h3><p class="alert">${esc(b.note)}</p>`:needsBriefing(b)?'<h3>Leistung prüfen</h3><p class="alert">Pistenabmessungen oder Platzhöhe erfordern besondere Aufmerksamkeit bei der Fenix-Leistungsplanung.</p>':''}${sceneryCard(b.icao)}<div class="airport-facts"><div><span>Längste befestigte Bahn*</span><strong>${b.runway?fmt(b.runway)+' m':'AIP prüfen'}</strong></div><div><span>Breite*</span><strong>${b.width?b.width+' m':'unbekannt'}</strong></div><div><span>Platzhöhe*</span><strong>${fmt(b.elevation)} ft</strong></div><div><span>Bahnkennung*</span><strong>${esc(b.runwayId)}</strong></div></div><div class="small muted" style="margin-top:9px;font-size:11px">*Orientierungsdaten; LDA/TORA können abweichen.</div>${brief?`<details><summary>Vollständiger Briefing-Hinweis</summary><p>${esc(brief.experience)}</p><p>${esc(brief.preparation)}</p>${brief.purchase?`<p><a href="${brief.buyUrl}" target="_blank" rel="noopener noreferrer">${esc(brief.purchase)} ↗</a><br>${esc(brief.buyReason)}</p>`:''}</details>`:''}<details><summary>Abflug ${a.icao}: Piste & Szenerie</summary><p>${sceneTag(a)}</p>${sceneryCard(a.icao)}<p>${a.runway?fmt(a.runway)+' × '+a.width+' m':'Aktuelle AIP prüfen'} · ${fmt(a.elevation)} ft</p>${a.note?`<p>${esc(a.note)}</p>`:''}</details><div class="linkrow"><a href="${b.runwaySource||b.url}" target="_blank" rel="noopener noreferrer">Flughafendaten ↗</a>${b.scenerySource&&D.sources[b.scenerySource]?`<a href="${D.sources[b.scenerySource][1]}" target="_blank" rel="noopener noreferrer">Szenerie-Quelle ↗</a>`:''}<a href="https://dispatch.simbrief.com/" target="_blank" rel="noopener noreferrer">SimBrief ↗</a></div>${X.excursions.some(e=>e.afterLeg===l.id)?`<h3>Nach der Landung: Ausflüge</h3><p class="small muted">Fenix bei ${b.icao} abstellen, Ausflug fliegen und hier zur Hauptroute zurückkehren.</p><div class="backup-actions">${X.excursions.filter(e=>e.afterLeg===l.id).map(e=>`<button data-xmap="${e.id}" style="font-size:12px">${esc(e.countryName)} · ${e.target} →</button>`).join('')}</div>`:''}<button class="complete-btn ${done?'':'primary'}" id="completeLeg">${done?'✓ Geflogen · Häkchen entfernen':'Als geflogen markieren'}</button></div>`;$('#prevLeg').onclick=()=>selectLeg(l.id-1,true);$('#nextLeg').onclick=()=>selectLeg(l.id+1,true);$('#completeLeg').onclick=()=>toggleDone(l.id)}
+function renderDetail(){const l=D.legs[state.leg-1],a=A[l.from],b=A[l.to],brief=B[b.icao],done=state.done.has(l.id);$('#detail').innerHTML=`<div class="detail-inner"><div class="detail-top"><span class="leg-number mono">LEG ${String(l.id).padStart(3,'0')} / ${D.legs.length}</span><div><button id="prevLeg" aria-label="Vorheriges Leg" style="padding:2px 9px" ${l.id===1?'disabled':''}>‹</button> <button id="nextLeg" aria-label="Nächstes Leg" style="padding:2px 9px" ${l.id===D.legs.length?'disabled':''}>›</button></div></div><div class="leg-route mono"><strong>${a.icao}</strong><span>→</span><strong>${b.icao}</strong></div><div class="small muted">${esc(a.city)} nach ${esc(b.city)}</div><h2>${esc(b.name)}</h2><p class="country">${esc(b.countryName)}${l.newCountry?' · neue Kategorie':''}</p><div class="tags">${sceneTag(b)}${l.bridge?'<span class="tag">Zwischenstopp für kurze Legs</span>':''}${b.special?'<span class="tag warn">Simulator-Sonderbetrieb</span>':''}</div><div class="detail-metrics"><div><b class="mono ${l.over2h?'time-long':''}">${hm(l.airMin)}</b><span>FLUGZEIT ≈ h:mm</span></div><div><b class="mono">${hm(l.blockMin)}</b><span>BLOCKZEIT ≈ h:mm</span></div><div><b class="mono">${fmt(l.nm)}</b><span>GROSSKREIS · NM</span></div></div>${l.over2h?'<p class="alert">Über dem 2-h-Ziel. Diese längere Verbindung bleibt Teil der zusammenhängenden Route. Wind, Reserven und Alternate separat planen.</p>':''}${b.highlight?`<h3>${esc(b.highlight[0])}</h3><p>${esc(b.highlight[1])}</p>`:`<h3>${l.bridge?'Warum dieser Zwischenstopp?':'Warum dieses Ziel?'}</h3><p>${l.bridge?'Dieser Stopp teilt eine längere Verbindung in kürzere Etappen.':l.newCountry?'Ein Flughafen in der richtigen Volanta-Kategorie ergänzt die Länderabdeckung.':'Dieser Stopp hält die Rundreise zusammen und verbindet die folgenden Ziele.'}</p>`}${brief?`<h3>Anflug erleben</h3><p>${esc(brief.focus)}. ${esc(brief.timing)}</p>`:''}${b.note?`<h3>Vor dem Anflug</h3><p class="alert">${esc(b.note)}</p>`:needsBriefing(b)?'<h3>Leistung prüfen</h3><p class="alert">Pistenabmessungen oder Platzhöhe erfordern besondere Aufmerksamkeit bei der Fenix-Leistungsplanung.</p>':''}${sceneryCard(b.icao)}<div class="airport-facts"><div><span>Längste befestigte Bahn*</span><strong>${b.runway?fmt(b.runway)+' m':'AIP prüfen'}</strong></div><div><span>Breite*</span><strong>${b.width?b.width+' m':'unbekannt'}</strong></div><div><span>Platzhöhe*</span><strong>${fmt(b.elevation)} ft</strong></div><div><span>Bahnkennung*</span><strong>${esc(b.runwayId)}</strong></div></div><div class="small muted" style="margin-top:9px;font-size:11px">*Orientierungsdaten; LDA/TORA können abweichen.</div>${brief?`<details><summary>Vollständiger Briefing-Hinweis</summary><p>${esc(brief.experience)}</p><p>${esc(brief.preparation)}</p>${brief.purchase?`<p><a href="${brief.buyUrl}" target="_blank" rel="noopener noreferrer">${esc(brief.purchase)} ↗</a><br>${esc(brief.buyReason)}</p>`:''}</details>`:''}<details><summary>Abflug ${a.icao}: Piste & Szenerie</summary><p>${sceneTag(a)}</p>${sceneryCard(a.icao)}<p>${a.runway?fmt(a.runway)+' × '+a.width+' m':'Aktuelle AIP prüfen'} · ${fmt(a.elevation)} ft</p>${a.note?`<p>${esc(a.note)}</p>`:''}</details><div class="linkrow"><a href="${b.runwaySource||b.url}" target="_blank" rel="noopener noreferrer">Flughafendaten ↗</a>${b.scenerySource&&D.sources[b.scenerySource]?`<a href="${D.sources[b.scenerySource][1]}" target="_blank" rel="noopener noreferrer">Szenerie-Quelle ↗</a>`:''}<a href="https://dispatch.simbrief.com/" target="_blank" rel="noopener noreferrer">SimBrief ↗</a></div>${X.excursions.some(e=>e.afterLeg===l.id)?`<h3>Nach der Landung: Ausflüge</h3><p class="small muted">Fenix bei ${b.icao} abstellen, Ausflug fliegen und hier zur Hauptroute zurückkehren.</p><div class="backup-actions">${X.excursions.filter(e=>e.afterLeg===l.id).map(e=>`<button data-xmap="${e.id}" style="font-size:12px">${esc(e.countryName)} · ${e.target} →</button>`).join('')}</div>`:''}<button class="complete-btn ${done?'':'primary'}" id="completeLeg">${done?'✓ Geflogen · Häkchen entfernen':'Als geflogen markieren'}</button><button class="complete-btn" data-debrief="${l.id}">Debriefing · tatsächlich verwendete Szenerien →</button></div>`;$('#prevLeg').onclick=()=>selectLeg(l.id-1,true);$('#nextLeg').onclick=()=>selectLeg(l.id+1,true);$('#completeLeg').onclick=()=>toggleDone(l.id)}
 function filteredLegs(){const q=normalize($('#search').value),f=$('#filter').value,scope=$('#scope').value;return D.legs.filter(l=>{const a=A[l.from],b=A[l.to];if(scope==='chapter'&&l.chapter!==state.chapter)return false;if(q&&!normalize([l.id,a.icao,b.icao,a.name,b.name,a.countryName,b.countryName,b.highlight?.join(' ')||''].join(' ')).includes(q))return false;return f==='all'||f==='owned'&&b.scenery==='owned'||f==='wu'&&b.scenery==='wu'||f==='long'&&l.over2h||f==='highlights'&&b.highlight||f==='briefing'&&needsBriefing(b)||f==='open'&&!state.done.has(l.id)||f==='done'&&state.done.has(l.id)})}
 function renderRows(){const ls=filteredLegs();$('#legRows').innerHTML=ls.length?ls.map(l=>{const b=A[l.to];return `<tr data-leg="${l.id}" tabindex="0" class="${l.id===state.leg?'selected':''}" aria-label="Leg ${l.id}, ${l.from} nach ${l.to}"><td><input class="table-check" type="checkbox" data-done="${l.id}" aria-label="Leg ${l.id} geflogen" ${state.done.has(l.id)?'checked':''}></td><td class="mono">${String(l.id).padStart(3,'0')}</td><td><span class="airport-pair mono">${l.from}<span class="arrow">→</span>${l.to}</span></td><td>${esc(b.city)}<div class="airport-name">${esc(b.countryName)}${l.newCountry?' · neu':''}</div></td><td class="mono">${fmt(l.nm)}</td><td class="mono ${l.over2h?'time-long':''}">${hm(l.airMin)}</td><td>${sceneTag(b)}<br>${sceneryButton(b.icao)}</td><td>${b.highlight?`<span class="tag highlight">${esc(b.highlight[0])}</span>`:b.special?'<span class="tag warn">Sonderbetrieb</span>':needsBriefing(b)?'<span class="tag warn">Briefing</span>':l.bridge?'<span class="small muted">Zwischenstopp</span>':'<span class="small muted">—</span>'}</td></tr>`}).join(''):'<tr><td colspan="8" class="empty">Keine passenden Legs. Suche oder Filter ändern.</td></tr>';$('#rowsCount').textContent=`${ls.length} von ${D.legs.length} Legs angezeigt · Zeiten h:mm · Flugzeit ab Start bis Landung · CSV exportiert immer die gesamte Tour.`}
 $('#legRows').addEventListener('click',e=>{if(e.target.closest('[data-scenery]'))return;if(e.target.matches('[data-done]')){toggleDone(+e.target.dataset.done);return}const r=e.target.closest('[data-leg]');if(r)selectLeg(+r.dataset.leg,true)});$('#legRows').addEventListener('keydown',e=>{if(e.target.closest('[data-scenery]'))return;if(e.target.matches('[data-done]'))return;if(['Enter',' '].includes(e.key)){const r=e.target.closest('[data-leg]');if(r){e.preventDefault();selectLeg(+r.dataset.leg,true)}}});
@@ -41,7 +41,7 @@ const retiredIDs=new Set((X.retiredLegs||[]).map(l=>l.id));
 state.xDone=new Set();state.retiredXDone=new Set();
 function restoreXProgress(saved){state.xDone=new Set((saved.xDone||[]).filter(id=>xIDs.has(id)));state.retiredXDone=new Set([...(saved.xDone||[]),...(saved.retiredXDone||[])].filter(id=>retiredIDs.has(id)))}
 try{restoreXProgress(JSON.parse(localStorage.getItem(storageKey)||'{}'))}catch(e){storageOK=false}
-function saveAll(){try{localStorage.setItem(storageKey,JSON.stringify({done:[...state.done],xDone:[...state.xDone],retiredXDone:[...state.retiredXDone]}))}catch(e){storageOK=false}renderProgress();renderXProgress();renderJourney();for(const box of document.querySelectorAll('[data-xdone]'))box.checked=state.xDone.has(box.dataset.xdone)}
+function saveAll(){try{localStorage.setItem(storageKey,JSON.stringify({done:[...state.done],xDone:[...state.xDone],retiredXDone:[...state.retiredXDone]}))}catch(e){storageOK=false}renderProgress();renderXProgress();renderJourney();if(typeof renderDebriefs==='function')renderDebriefs();for(const box of document.querySelectorAll('[data-xdone]'))box.checked=state.xDone.has(box.dataset.xdone)}
 function renderXProgress(){if($('#xProgress'))$('#xProgress').textContent=`${state.xDone.size} / ${XL.length} Ausflugs-Legs lokal geflogen · keine automatische Volanta-Synchronisierung`}
 function renderFleet(){
  $('#fleetStrip').innerHTML=[['HAUPTROUTE','Fenix A320',`${D.legs.length} Legs · CFM Sharklets · deine großen Verbindungen`],['HELIKOPTER','Airbus H160',`${X.excursions.filter(e=>e.profile==='H160').length} Ausflüge · Heliports, Küsten und Gebirgstäler`],['ANTARKTIS-EXPEDITION','Twin Otter',`${X.excursions.filter(e=>e.profile==='DHC6').length} Ausflug · nur die lange Drake-Passage`]].map(t=>`<article class="fleet-tile"><div class="kicker">${t[0]}</div><b>${t[1]}</b><p>${t[2]}</p></article>`).join('');
@@ -75,7 +75,7 @@ function isJourneyDone(l){return l.kind==='A320'?state.done.has(l.id):state.xDon
 function renderJourney(){
  const all=allJourney(),q=normalize($('#journeySearch').value),fleet=$('#journeyFleet').value||'all',status=$('#journeyStatus').value||'all';
  const rows=all.filter(l=>(fleet==='all'||fleet===l.profile)&&(!q||normalize([l.from,l.to,l.title,l.country,l.note].join(' ')).includes(q))&&(status==='all'||status==='long'&&l.over2h||status==='done'&&isJourneyDone(l)||status==='open'&&!isJourneyDone(l)));
- $('#journeyRows').innerHTML=rows.map(l=>`<tr class="${l.kind==='Ausflug'?'side':''}"><td><input type="checkbox" class="table-check" data-journeyid="${l.id}" data-kind="${l.kind}" aria-label="Flug ${l.sequence} als geflogen markieren" ${isJourneyDone(l)?'checked':''}></td><td class="mono">${String(l.sequence).padStart(3,'0')}<div class="airport-name">${l.kind==='A320'?'A320 '+String(l.id).padStart(3,'0'):'Ausflug'}</div></td><td class="mono airport-pair">${esc(l.from)} → ${esc(l.to)}</td><td><span class="tag ${l.profile==='A320'?'owned':l.profile==='H160'?'base':'warn'}">${l.profile==='A320'?'Fenix A320':l.profile==='H160'?'H160':'Twin Otter'}</span></td><td>${esc(l.title)}<div class="airport-name">${esc(l.country)}</div></td><td class="mono ${l.over2h?'time-long':''}">${hm(l.airMin)} h<div class="airport-name">${l.nm} NM</div></td><td>${sceneryButton(l.to)}</td><td><button ${l.kind==='A320'?`data-mainleg="${l.id}"`:`data-xmap="${l.excursion}"`}>Briefing →</button></td></tr>`).join('')||'<tr><td colspan="8" class="empty">Keine passenden Legs.</td></tr>';
+ $('#journeyRows').innerHTML=rows.map(l=>`<tr class="${l.kind==='Ausflug'?'side':''}"><td><input type="checkbox" class="table-check" data-journeyid="${l.id}" data-kind="${l.kind}" aria-label="Flug ${l.sequence} als geflogen markieren" ${isJourneyDone(l)?'checked':''}></td><td class="mono">${String(l.sequence).padStart(3,'0')}<div class="airport-name">${l.kind==='A320'?'A320 '+String(l.id).padStart(3,'0'):'Ausflug'}</div></td><td class="mono airport-pair">${esc(l.from)} → ${esc(l.to)}</td><td><span class="tag ${l.profile==='A320'?'owned':l.profile==='H160'?'base':'warn'}">${l.profile==='A320'?'Fenix A320':l.profile==='H160'?'H160':'Twin Otter'}</span></td><td>${esc(l.title)}<div class="airport-name">${esc(l.country)}</div></td><td class="mono ${l.over2h?'time-long':''}">${hm(l.airMin)} h<div class="airport-name">${l.nm} NM</div></td><td>${sceneryButton(l.to)}</td><td><button ${l.kind==='A320'?`data-mainleg="${l.id}"`:`data-xmap="${l.excursion}"`}>Briefing →</button><div class="airport-name"><button data-debrief="${esc(l.id)}">Debriefing →</button></div></td></tr>`).join('')||'<tr><td colspan="8" class="empty">Keine passenden Legs.</td></tr>';
  $('#journeyTotals').textContent=`${all.length} verbundene Legs · ${state.done.size+state.xDone.size} lokal geflogen · EDLV → EDLV · ≈ ${hm(all.reduce((n,l)=>n+l.airMin,0))} h Flugzeit`;
  $('#journeyCount').textContent=`${rows.length} von ${all.length} Legs angezeigt. Filter behalten die ursprüngliche Flugreihenfolge bei.`;
  $('#retiredDetails').hidden=state.retiredXDone.size===0;
@@ -88,7 +88,7 @@ function renderExpeditions(){
  $('#expeditionGrid').innerHTML=X.excursions.filter(e=>e.highlightCard).map(e=>`<article class="highlight-card ${e.country==='AQ'?'featured':''}"><div class="kicker">${e.profile==='DHC6'?'TWIN OTTER':'H160'} · NACH A320-LEG ${String(e.afterLeg).padStart(3,'0')}</div><div class="bigcode">${e.target}</div><h3>${esc(e.title)}</h3><p>${esc(e.experience)}</p><h4>So lohnt sich der Anflug</h4><p>${esc(e.timing)}</p><h4>Die feste Route</h4><p class="mono">${e.route.join(' → ')}</p><p>${e.legs.length} Legs · zusammen ≈ ${hm(e.legs.reduce((n,l)=>n+l.airMin,0))} h</p>${e.country==='AQ'||e.country==='TV'?`<p class="fuel-note">${e.country==='AQ'?'Rund 4:21 h je Richtung. Vorbereitete Betankung in SCRM und individuelle Reichweitenprüfung gehören zum Plan.':'Tankstopps auf Yasawa, Rotuma und Funafuti als vorbereitete Simulatorversorgung. Vier H160-Legs mit etwa 2:15 bzw. 2:21 Stunden.'}</p>`:''}<div class="card-footer"><span class="tag warn">${esc(e.countryName)}</span>${sceneryButton(e.target)}<button data-xmap="${e.id}">Ausflug & Briefing →</button></div></article>`).join('');
 }
 $('#fullCsvExport').onclick=()=>{
- const rows=[['Reihenfolge','Leg_ID','Art','Von','Nach','Flugzeug','Ziel','Kategorie_am_Ziel','NM','Flugzeit_Min','Blockzeit_Min_A320','Lokal_geflogen','Volanta_Wertung','Hinweise_Anflug_Treibstoff','Quellen','Szenerie_Empfehlung','Empfohlenes_Produkt_Basis','Szenerie_Begruendung','Szenerie_Quellen'],...allJourney().map(l=>[l.sequence,l.id,l.kind,l.from,l.to,l.aircraft,l.title,l.country,l.nm,l.airMin,l.blockMin||'',isJourneyDone(l)?'Ja':'Nein','Nach Flug kontrollieren',l.note,l.sources,sceneryLabel(l.to),SC.airports[l.to].recommendation,SC.airports[l.to].reason,SC.airports[l.to].links.map(s=>s[1]).join(' | ')])];
+ const rows=[['Reihenfolge','Leg_ID','Art','Von','Nach','Flugzeug','Ziel','Kategorie_am_Ziel','NM','Flugzeit_Min','Blockzeit_Min_A320','Lokal_geflogen','Volanta_Wertung','Hinweise_Anflug_Treibstoff','Quellen','Szenerie_Empfehlung','Empfohlenes_Produkt_Basis','Szenerie_Begruendung','Szenerie_Quellen','Debriefing_Status','Tatsaechliche_Szenerie_Abflug','Tatsaechliche_Szenerie_Ankunft','Berichtetes_Flugdatum'],...allJourney().map(l=>[l.sequence,l.id,l.kind,l.from,l.to,l.aircraft,l.title,l.country,l.nm,l.airMin,l.blockMin||'',isJourneyDone(l)?'Ja':'Nein','Nach Flug kontrollieren',l.note,l.sources,sceneryLabel(l.to),SC.airports[l.to].recommendation,SC.airports[l.to].reason,SC.airports[l.to].links.map(s=>s[1]).join(' | '),debriefStatus(l),debriefSceneryText(debriefRecord(l)?.actualScenery?.departure),debriefSceneryText(debriefRecord(l)?.actualScenery?.arrival),debriefRecord(l)?.flightDate||''])];
  download('Volanta-Worldtour-245-Komplette-Reihenfolge.csv','\ufeff'+rows.map(r=>r.map(v=>'"'+String(v).replaceAll('"','""')+'"').join(';')).join('\r\n'),'text/csv;charset=utf-8');toast('Alle Fluggeräte in fester Flugreihenfolge exportiert');
 };
 $('#journeyCsv').onclick=()=>$('#fullCsvExport').onclick();
@@ -160,4 +160,173 @@ $('#sceneryCsv').onclick=()=>{
  download('Volanta-Worldtour-Szenerien.csv','\ufeff'+rows.map(r=>r.map(v=>'"'+String(v).replaceAll('"','""')+'"').join(';')).join('\r\n'),'text/csv;charset=utf-8');toast('Alle 405 Szenerie-Empfehlungen exportiert');
 };
 
-renderSceneryOverview();renderStats();renderHighlights();renderExpeditions();renderCoverage();renderJourney();renderInventory();renderProgress();setChapter('01');
+// Confirmed reports are project data. Browser checkboxes never populate actual scenery.
+const DB=JSON.parse($('#debriefData').textContent);
+const debriefEntries=new Map(DB.entries.map(entry=>[entry.legId,entry]));
+let debriefSelected=null;
+function debriefRecord(l){return debriefEntries.get(String(l.id))}
+function debriefStatus(l){
+ const entry=debriefRecord(l);
+ return entry?.status==='final'?'Final dokumentiert':entry?'Angaben offen':isJourneyDone(l)?'Debrief offen':'Noch nicht debrieft';
+}
+function debriefSceneryText(s){return s?.product?`${s.product}${s.version?' · Version '+s.version:''}`:'Noch nicht angegeben'}
+function debriefPrompt(l){
+ return `Debriefing · Flug ${String(l.sequence).padStart(3,'0')} · Leg-ID ${l.id}\n${l.from} → ${l.to}\n\nFlugdatum und tatsächlich verwendetes Flugzeug:\nAbflug ${l.from} – tatsächlich aktive Airport-Szenerie (Hersteller, Produkt, ggf. Version; auch Standard/WU ausdrücklich nennen):\nAnkunft ${l.to} – tatsächlich aktive Airport-Szenerie:\nZusätzliche Landschafts-/Stadt-Add-ons:\nAnflug, Landebahn/Landeplatz, Wetter und Tageszeit:\nWas war das Highlight?\nPerformance, Probleme oder Auffälligkeiten:\nFazit: hat sich die Szenerie gelohnt? Was nächstes Mal anders?\nVolanta-Wertung nach dem Flug geprüft (gutgeschrieben / nicht gutgeschrieben / offen):\n\nBitte im Projekt dokumentieren. Fehlende Angaben offen lassen; geplante Szenerien nicht als verwendet übernehmen.`;
+}
+function openDebrief(id){
+ const leg=allJourney().find(l=>String(l.id)===String(id));if(!leg)return;
+ debriefSelected=String(leg.id);$('#debriefSearch').value='';$('#debriefFilter').value='all';
+ showView('debriefView');
+ $('#debriefDetail').scrollIntoView({block:'nearest',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
+}
+function renderDebriefs(){
+ const all=allJourney(),q=normalize($('#debriefSearch').value),filter=$('#debriefFilter').value||'pending';
+ const pending=l=>debriefRecord(l)?.status!=='final'&&(isJourneyDone(l)||!!debriefRecord(l));
+ const rows=all.filter(l=>{
+  const entry=debriefRecord(l);
+  return (filter==='all'||filter==='final'&&entry?.status==='final'||filter==='pending'&&pending(l))&&(!q||normalize([l.id,l.sequence,l.from,l.to,l.title,l.aircraft,entry?JSON.stringify(entry):''].join(' ')).includes(q));
+ });
+ const finals=DB.entries.filter(e=>e.status==='final').length;
+ $('#debriefStats').innerHTML=[[finals,'Legs final dokumentiert'],[all.filter(pending).length,'Geflogen / berichtet · Debrief offen'],[all.length,'Legs mit Debriefing-Zuordnung']].map(([n,label])=>`<article><b>${n}</b><span>${label}</span></article>`).join('');
+ if(!debriefSelected||!rows.some(l=>String(l.id)===debriefSelected))debriefSelected=rows.length?String(rows[0].id):null;
+ $('#debriefRows').innerHTML=rows.map(l=>`<tr class="${String(l.id)===debriefSelected?'selected':''}"><td class="mono">${String(l.sequence).padStart(3,'0')}<div class="airport-name">Leg-ID ${esc(l.id)} · ${esc(l.profile)}</div></td><td><button data-debrief-select="${esc(l.id)}" aria-label="Debriefing für ${esc(l.from)} nach ${esc(l.to)}, Leg ${esc(l.id)} öffnen">${esc(l.from)} → ${esc(l.to)}</button><div class="airport-name">${esc(l.title)}</div></td><td><span class="tag ${debriefRecord(l)?.status==='final'?'owned':pending(l)?'warn':''}">${debriefStatus(l)}</span></td></tr>`).join('')||`<tr><td colspan="3" class="empty">${filter==='pending'&&!q?'Keine offenen Debriefings. Nach dem ersten Flug ein Häkchen setzen oder das Leg unter „Alle Legs anzeigen“ öffnen.':'Keine passenden Debriefings.'}</td></tr>`;
+ $('#debriefCount').textContent=`${rows.length} von ${all.length} Legs · Flugnummer = gesamte Reihenfolge; Leg-ID = feste Zuordnung im Projekt.`;
+ renderDebriefDetail(all.find(l=>String(l.id)===debriefSelected));
+}
+function renderDebriefDetail(l){
+ if(!l){$('#debriefDetail').innerHTML='<div class="kicker">Bereit für deinen ersten Bericht</div><h3>Erst erleben.<br>Dann festhalten.</h3><p>Nach jedem Flug sammeln wir deine tatsächlich verwendeten Szenerien und deine Eindrücke. Wähle ein Leg, um die passende Vorlage für unser Gespräch zu öffnen.</p><p>Einzelne fehlende Angaben sind kein Hindernis: sie bleiben sichtbar offen.</p>';return}
+ const entry=debriefRecord(l),scenery=entry?.actualScenery;
+ const field=value=>esc(value||'Noch nicht angegeben');
+ const volanta={open:'Noch nicht geprüft',credited:'Laut deinem Bericht gutgeschrieben',not_credited:'Laut deinem Bericht nicht gutgeschrieben'};
+ const actual=side=>`<section><div class="kicker">${side==='departure'?'Abflug · '+esc(l.from):'Ankunft · '+esc(l.to)}</div><strong>${field(scenery?.[side]?.product)}</strong><small>Version: ${field(scenery?.[side]?.version)}</small></section>`;
+ const fields=[['Flugdatum',entry?.flightDate],['Tatsächlich geflogenes Flugzeug',entry?.aircraft],['Zusätzliche Landschafts-/Stadt-Add-ons',scenery?.landscape],['Anflug, Landebahn / Landeplatz',entry?.approach],['Wetter und Tageszeit',entry?.conditions],['Dein Highlight',entry?.highlights],['Performance und Probleme',entry?.issues],['Dein Szenerie-Fazit',entry?.verdict],['Für das nächste Mal',entry?.nextTime]];
+ $('#debriefDetail').innerHTML=`<div class="kicker">Flug ${String(l.sequence).padStart(3,'0')} · Leg-ID ${esc(l.id)} · ${esc(l.profile)}</div><h3 class="mono">${esc(l.from)} → ${esc(l.to)}</h3><p>${esc(l.title)}</p><div class="debrief-status"><span class="tag ${entry?.status==='final'?'owned':'warn'}">${debriefStatus(l)}</span>${entry?` <span class="small muted">Bearbeitet: ${esc(entry.updatedAt)}</span>`:''}</div><h4>Tatsächlich verwendete Airports</h4><div class="debrief-actual">${actual('departure')}${actual('arrival')}</div><dl>${fields.map(([label,value])=>`<dt>${label}</dt><dd>${field(value)}</dd>`).join('')}<dt>Volanta-Wertung</dt><dd>${esc(volanta[entry?.volanta||'open'])}</dd></dl><p class="small muted">Ein Finalbericht bestätigt die genannten Szenerien. Andere fehlende Angaben bleiben offen. Berichte bleiben auch beim Entfernen eines Flug-Häkchens erhalten.</p><details><summary>Geplante Empfehlungen zum Vergleich</summary><p><strong>${esc(l.from)}:</strong> ${esc(SC.airports[l.from]?.recommendation||'Keine Empfehlung hinterlegt')}</p><p><strong>${esc(l.to)}:</strong> ${esc(SC.airports[l.to]?.recommendation||'Keine Empfehlung hinterlegt')}</p><div class="backup-actions">${sceneryButton(l.from)}${sceneryButton(l.to)}</div></details><h4>Vorlage für unser Debriefing im Chat</h4><p>Du kannst frei erzählen oder diese Vorlage kopieren. Ich pflege den Bericht anschließend in die Projektdateien ein und aktualisiere die HTML.</p><label for="debriefPrompt" class="small muted">Gesprächsvorlage · nur zum Kopieren</label><textarea id="debriefPrompt" class="debrief-prompt" readonly></textarea><button id="debriefTemplateExport">Vorlage als Text herunterladen</button>`;
+ $('#debriefPrompt').value=debriefPrompt(l);
+ $('#debriefTemplateExport').onclick=()=>download(`Debriefing-${l.id}-${l.from}-${l.to}.txt`,debriefPrompt(l),'text/plain;charset=utf-8');
+}
+document.addEventListener('click',event=>{
+ const open=event.target.closest('[data-debrief]');if(open)openDebrief(open.dataset.debrief);
+ const select=event.target.closest('[data-debrief-select]');if(select){debriefSelected=select.dataset.debriefSelect;renderDebriefs()}
+});
+$('#debriefSearch').oninput=renderDebriefs;$('#debriefFilter').onchange=renderDebriefs;
+$('#debriefShowAll').onclick=()=>{$('#debriefFilter').value='all';$('#debriefSearch').value='';renderDebriefs()};
+$('#debriefArchiveExport').onclick=()=>download('Worldtour-EDLV-Debriefings.json',JSON.stringify(DB,null,2),'application/json');
+
+// The browser owns progress; the project owns reports. Never clear unrelated storage.
+let resetMode=null,resetBusy=false;
+const resetProjectFiles=['debriefings.json','Volanta-Worldtour-EDLV.html','outputs/Volanta-Worldtour-EDLV.html','outputs/Debriefings.md'];
+const emptyDebriefJournal='# Worldtour · Debriefings\n\nAus den berichteten Flügen in `debriefings.json` erzeugt. Empfehlungen und Flug-Häkchen sind keine Nutzungsnachweise.\n\n0 final dokumentiert · 0 mit offenen Angaben.\n\nNoch kein Flug debrieft. Nach dem ersten Flug halten wir die tatsächlich verwendeten Szenerien und deine Eindrücke fest.\n';
+function showResetResult(message){$('#resetResult').textContent=message;$('#debriefResetResult').textContent=message}
+function openReset(mode){
+ if(resetBusy||!['progress','debriefs'].includes(mode))return;
+ resetMode=mode;$('#resetDialogError').textContent='';
+ const progress=mode==='progress',count=progress?state.done.size+state.xDone.size+state.retiredXDone.size:DB.entries.length;
+ $('#resetDialogTitle').textContent=progress?'Flugfortschritt zurücksetzen?':'Debriefings im Projekt leeren?';
+ $('#resetDialogDescription').textContent=progress?`${state.done.size} A320-Häkchen, ${state.xDone.size} Ausflugs-Häkchen und ${state.retiredXDone.size} archivierte Häkchen werden in diesem Browser entfernt.\nDie Debriefings bleiben erhalten.`:`${count} Debriefings werden aus dem aktiven Projektarchiv, beiden HTML-Dateien und dem Tourtagebuch entfernt.\nDeine Flug-Häkchen bleiben erhalten. Wähle gleich den Ordner VolantaWorldTour, in dem debriefings.json und work liegen.`;
+ $('#resetDialogBackupNote').textContent=progress?'Du kannst vorher eine JSON-Sicherung herunterladen und später unter „Planung & Quellen“ wieder laden.':'Vor Änderungen werden die vier betroffenen Dateien unter backups im gewählten Projekt gesichert. Die Sicherung enthält weiterhin die bisherigen Berichte.';
+ $('#resetConfirm').textContent=progress?'Flugfortschritt jetzt zurücksetzen':'Projektordner wählen & leeren';
+ $('#resetConfirm').disabled=count===0||!progress&&typeof window.showDirectoryPicker!=='function';
+ $('#resetBackup').disabled=false;$('#resetCancel').disabled=false;
+ if(count===0)$('#resetDialogError').textContent=progress?'Der Flugfortschritt ist bereits leer.':'Es sind noch keine Debriefings gespeichert.';
+ else if(!progress&&typeof window.showDirectoryPicker!=='function')$('#resetDialogError').textContent='Dieser Browser bietet keinen schreibenden Ordnerzugriff. Öffne die HTML für diesen Reset in Microsoft Edge oder Google Chrome. Es wurde nichts verändert.';
+ $('#resetDialog').showModal();
+}
+function refreshAfterReset(){
+ renderProgress();renderXProgress();renderRows();renderDetail();renderCoverage();renderJourney();renderDebriefs();
+}
+function resetFlightProgress(){
+ // Persist first: a blocked/quota-exhausted storage must not leave a false success in the UI.
+ localStorage.setItem(storageKey,JSON.stringify({done:[],xDone:[],retiredXDone:[]}));
+ state.done.clear();state.xDone.clear();state.retiredXDone.clear();storageOK=true;
+ refreshAfterReset();
+ return 'Flugfortschritt zurückgesetzt. Die Debriefings sind erhalten.';
+}
+function canonicalResetJson(value){
+ if(value===null||typeof value!=='object')return JSON.stringify(value);
+ if(Array.isArray(value))return '['+value.map(canonicalResetJson).join(',')+']';
+ return '{'+Object.keys(value).sort().map(key=>JSON.stringify(key)+':'+canonicalResetJson(value[key])).join(',')+'}';
+}
+function clearedDebriefHtml(html,archive){
+ const pattern=/<script id="debriefData" type="application\/json">([\s\S]*?)<\/script>/g;
+ const matches=[...html.matchAll(pattern)];
+ if(matches.length!==1||canonicalResetJson(JSON.parse(matches[0][1]))!==canonicalResetJson(archive))throw Error('Eine HTML-Datei enthält einen anderen Debriefing-Stand. Projekt neu bauen und die aktuelle HTML öffnen; nichts wurde geleert.');
+ const json=JSON.stringify({...archive,entries:[]},null,2).replaceAll('<','\\u003c');
+ return html.replace(pattern,()=>'<'+'script id="debriefData" type="application/json">'+json+'<'+'/script>');
+}
+async function resetFileHandle(directory,relative,create=false){
+ const parts=relative.split('/');let parent=directory;
+ for(const part of parts.slice(0,-1))parent=await parent.getDirectoryHandle(part,{create});
+ return parent.getFileHandle(parts.at(-1),{create});
+}
+async function writeResetFile(handle,contents){
+ const writable=await handle.createWritable();
+ try{await writable.write(contents);await writable.close()}
+ catch(error){try{await writable.abort()}catch{}throw error}
+}
+async function resetProjectDebriefs(directory){
+ // Read and validate everything before creating backups or touching project content.
+ await resetFileHandle(directory,'work/build_html.py');
+ const files=[];
+ for(const relative of resetProjectFiles){
+  const handle=await resetFileHandle(directory,relative),file=await handle.getFile(),before=await file.arrayBuffer();
+  files.push({relative,handle,before,text:new TextDecoder().decode(before)});
+ }
+ const archive=JSON.parse(files[0].text);
+ if(archive.tour!==DB.tour||archive.schemaVersion!==DB.schemaVersion||canonicalResetJson(archive)!==canonicalResetJson(DB))throw Error('Das Projektarchiv unterscheidet sich von dieser geöffneten HTML. Projekt neu bauen und die aktuelle HTML öffnen; nichts wurde geleert.');
+ const cleared={...archive,entries:[]};
+ files[0].after=JSON.stringify(cleared,null,2)+'\n';
+ files[1].after=clearedDebriefHtml(files[1].text,archive);
+ files[2].after=clearedDebriefHtml(files[2].text,archive);
+ files[3].after=emptyDebriefJournal;
+ const backupName='debrief-reset-'+new Date().toISOString().replace(/[:.]/g,'-')+'-'+crypto.randomUUID();
+ const backupPath='backups/'+backupName;
+ const backups=await directory.getDirectoryHandle('backups',{create:true});
+ const backup=await backups.getDirectoryHandle(backupName,{create:true});
+ for(const file of files)await writeResetFile(await resetFileHandle(backup,file.relative,true),file.before);
+ // A user may edit a report while the permission/backup dialogs are open.
+ for(const file of files){
+  const current=new Uint8Array(await (await file.handle.getFile()).arrayBuffer()),before=new Uint8Array(file.before);
+  if(current.length!==before.length||current.some((byte,index)=>byte!==before[index]))throw Error('Eine Projektdatei wurde während der Sicherung geändert. Reset abgebrochen; keine Projektdatei überschrieben. Sicherung: '+backupPath);
+ }
+ const touched=[];
+ try{
+  for(const file of files){touched.push(file);await writeResetFile(file.handle,file.after)}
+ }catch(error){
+  const failed=[];
+  for(const file of touched.reverse()){try{await writeResetFile(file.handle,file.before)}catch{failed.push(file.relative)}}
+  throw Error(failed.length?'Reset unvollständig; Wiederherstellung fehlgeschlagen für '+failed.join(', ')+'. Originaldateien liegen in '+backupPath+'. Bitte aus dieser Sicherung wiederherstellen.':'Reset fehlgeschlagen. Alle begonnenen Änderungen wurden zurückgenommen. Sicherung: '+backupPath);
+ }
+ DB.entries.length=0;debriefEntries.clear();debriefSelected=null;
+ $('#debriefData').textContent=JSON.stringify(cleared);
+ refreshAfterReset();
+ return 'Debriefings im Projekt und in beiden HTML-Dateien geleert. Flug-Häkchen erhalten. Sicherung: '+backupPath;
+}
+$('#debriefResetShortcut').onclick=()=>openReset('debriefs');
+window.addEventListener?.('beforeunload',event=>{if(resetBusy){event.preventDefault();event.returnValue=''}});
+$('#resetProgressOpen').onclick=()=>openReset('progress');
+$('#resetDebriefsOpen').onclick=()=>openReset('debriefs');
+$('#resetBackup').onclick=()=>{if(resetMode==='progress')$('#backupExport').onclick();else $('#debriefArchiveExport').onclick()};
+$('#resetCancel').onclick=()=>{if(!resetBusy)$('#resetDialog').close()};
+$('#resetDialog').addEventListener('cancel',event=>{if(resetBusy)event.preventDefault()});
+$('#resetConfirm').onclick=async()=>{
+ if(resetBusy||$('#resetConfirm').disabled)return;
+ resetBusy=true;$('#resetConfirm').disabled=true;$('#resetCancel').disabled=true;$('#resetBackup').disabled=true;$('#resetDialogError').textContent='';
+ try{
+  let result;
+  if(resetMode==='progress')result=resetFlightProgress();
+  else{
+   // Call the picker directly in the click handler, before other asynchronous work.
+   const directory=await window.showDirectoryPicker({id:'volanta-worldtour-project',mode:'readwrite'});
+   $('#resetDialogError').textContent='Sicherung und Reset laufen. Dieses Fenster bitte geöffnet lassen.';
+   result=await resetProjectDebriefs(directory);
+  }
+  $('#resetDialog').close();showResetResult(result);toast('Reset abgeschlossen');
+ }catch(error){
+  if(error.name==='AbortError')$('#resetDialogError').textContent='Ordnerauswahl abgebrochen. Es wurde nichts verändert.';
+  else if(resetMode==='progress')$('#resetDialogError').textContent='Der Browser konnte den leeren Fortschritt nicht speichern. Deine Häkchen wurden nicht verändert. Bitte zuerst eine Sicherung herunterladen.';
+  else $('#resetDialogError').textContent=error.message||'Projektzugriff fehlgeschlagen. Bitte Ordner und Schreibfreigabe prüfen.';
+ }finally{resetBusy=false;$('#resetConfirm').disabled=false;$('#resetCancel').disabled=false;$('#resetBackup').disabled=false}
+};
+$('#resetBrowserSupport').textContent=typeof window.showDirectoryPicker==='function'?'Beim Debriefing-Reset erteilst du dieser HTML Zugriff auf den ausgewählten Projektordner.':'Für das Leeren der Projektdateien diese HTML in Microsoft Edge oder Google Chrome öffnen. Der Flugfortschritt lässt sich auch hier zurücksetzen.';
+
+renderDebriefs();renderSceneryOverview();renderStats();renderHighlights();renderExpeditions();renderCoverage();renderJourney();renderInventory();renderProgress();setChapter('01');

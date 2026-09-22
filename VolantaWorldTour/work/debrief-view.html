@@ -1,0 +1,21 @@
+<section class="view" id="debriefView" aria-labelledby="debriefTitle">
+  <div class="kicker">Nach dem Flug · dein Tourtagebuch</div>
+  <h2 class="panel-title" id="debriefTitle">So war es wirklich.</h2>
+  <p class="intro">Hier dokumentieren wir deine geflogenen Legs: die tatsächlich verwendeten Airports und Landschafts-Add-ons, den Anflug und deine Eindrücke. Die Empfehlungen bleiben als Planung separat erhalten.</p>
+  <div class="debrief-stats" id="debriefStats" aria-live="polite"></div>
+  <div class="debrief-workflow"><strong>Fliegen → hier im Chat debriefen → im Projekt festhalten.</strong><p>Erzähl mir nach dem Flug, welches Leg du geflogen bist und welche Szenerien aktiv waren. Highlights, Performance und Probleme ergänzen das Bild. Fehlende Angaben bleiben offen; bestätigt dokumentieren wir nur, was du berichtet hast.</p></div>
+  <div class="debrief-layout">
+    <div class="debrief-list">
+      <div class="toolbar">
+        <input id="debriefSearch" type="search" placeholder="ICAO, Leg oder verwendete Szenerie …" aria-label="Debriefings durchsuchen">
+        <select id="debriefFilter" aria-label="Debriefing-Status"><option value="pending">Debrief offen</option><option value="final">Final dokumentiert</option><option value="all">Alle Legs</option></select>
+      </div>
+      <div class="table-wrap debrief-table"><table><thead><tr><th>Flug / Leg</th><th>Strecke</th><th>Debriefing</th></tr></thead><tbody id="debriefRows"></tbody></table></div>
+      <p class="rows-count" id="debriefCount" aria-live="polite"></p>
+      <div class="backup-actions"><button id="debriefShowAll">Alle Legs anzeigen</button><button id="debriefArchiveExport">Archiv als JSON exportieren</button><button class="reset-danger" id="debriefResetShortcut">Debriefings leeren …</button></div>
+      <p id="debriefResetResult" class="reset-result" role="status" aria-live="polite"></p>
+      <p class="small muted">Berichte sind in der HTML eingebettet und in <span class="mono">debriefings.json</span> im Projekt gespeichert. Die Flug-Häkchen liegen weiterhin im Browser. Ein Häkchen bestätigt keine Szenerie und keine Volanta-Wertung.</p>
+    </div>
+    <article class="debrief-detail" id="debriefDetail" aria-live="polite"></article>
+  </div>
+</section>

@@ -1,0 +1,21 @@
+.debrief-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:24px 0}
+.debrief-stats article{padding:18px 22px;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+.debrief-stats b{display:block;color:var(--teal);font:34px/1.2 'Bahnschrift','Segoe UI',sans-serif}
+.debrief-stats span{font-size:13px;color:var(--muted)}
+.debrief-workflow{border-left:3px solid var(--teal);padding:15px 20px;background:linear-gradient(110deg,#16362f,#0e1921);border-radius:0 10px 10px 0;margin-bottom:24px}
+.debrief-workflow p{color:var(--muted);font-size:14px;margin:5px 0 0;max-width:1050px}
+.debrief-layout{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);align-items:start;gap:22px}
+.debrief-list{min-width:0}.debrief-table{max-height:590px}.debrief-table td{vertical-align:top}
+.debrief-table button{text-align:left;padding:5px 8px;font-size:13px;white-space:nowrap}.debrief-table .airport-name{font-size:11px}
+.debrief-detail{min-width:0;overflow-wrap:anywhere;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:26px}
+.debrief-detail h3{font:30px/1.2 'Bahnschrift','Segoe UI',sans-serif;margin:14px 0 8px}.debrief-detail h4{color:var(--teal);font-size:13px;letter-spacing:.05em;margin:24px 0 9px}
+.debrief-detail p{font-size:14px;color:#c3d2da}.debrief-detail .debrief-status{margin:16px 0}
+.debrief-actual{display:grid;grid-template-columns:1fr 1fr;gap:12px}.debrief-actual section{background:#152a30;border:1px solid #2d494d;padding:16px;border-radius:10px}
+.debrief-actual strong{display:block;font-size:14px;margin-top:7px}.debrief-actual small{display:block;color:var(--muted);margin-top:4px}.debrief-actual .kicker{font-size:10px}
+.debrief-detail dl{margin:0}.debrief-detail dt{font-size:12px;color:var(--muted);margin-top:15px}.debrief-detail dd{font-size:14px;margin:3px 0 0;white-space:pre-wrap}
+.debrief-detail details{border-top:1px solid var(--line);margin-top:22px;padding-top:16px;font-size:13px}.debrief-detail summary{cursor:pointer;color:var(--muted)}
+.debrief-prompt{display:block;width:100%;min-height:265px;margin:10px 0;background:#09151b;border:1px solid var(--line);color:var(--text);border-radius:8px;padding:14px;resize:vertical;font:13px/1.6 'Segoe UI',sans-serif}
+.debrief-prompt:focus-visible{outline:2px solid var(--gold);outline-offset:3px}.debrief-preserve{white-space:pre-wrap}
+@media(max-width:1000px){.debrief-layout{grid-template-columns:1fr}.debrief-table{max-height:380px}}
+@media(max-width:480px){.debrief-stats{gap:7px}.debrief-stats article{padding:14px 10px}.debrief-stats b{font-size:27px}.debrief-stats span{font-size:11px}.debrief-detail{padding:19px}.debrief-actual{grid-template-columns:1fr}}
+@media print{.debrief-layout{display:block}.debrief-detail,.debrief-actual section,.debrief-workflow,.debrief-stats article{background:white!important;color:black!important}.debrief-prompt{display:none}.debrief-table{max-height:none}}

@@ -20,13 +20,13 @@ assert set(A)==set(x for l in legs for x in (l['from'],l['to']))
 assert A['EFMA']['country']=='AX' and A['ENSB']['country']=='SJ' and A['TNCM']['country']=='SX'
 assert not any(code in A for code in ['EGLC','KSEZ','NZMF','TFFJ','TFFG','NGFU'])
 assert A['BGGH']['runway']>2100 and A['FMCZ']['width']==45
-owned={r['ICAO'].strip() for r in csv.DictReader(open(r'M:\VolantaWorldTour\MSFS Airports - Addons.csv',encoding='utf8'))}
+owned={r['ICAO'].strip() for r in csv.DictReader(open(R.parent/'MSFS Airports - Addons.csv',encoding='utf8'))}
 assert {a['icao'] for a in A.values() if a['scenery']=='owned'}==owned&set(A)
 assert sum(a['scenery']=='owned' for a in A.values())==36
 assert all(a['runway'] is None or a['runway']>=1700 for a in A.values())
 s=(R.parent/'outputs'/'Volanta-Worldtour-EDLV.html').read_text(encoding='utf8')
 assert not re.search(r'<script[^>]+src=',s)
-assert '__DATA__' not in s and '__WORLD__' not in s
+assert not re.search(r'__(?:DATA|WORLD|DEBRIEFS|DEBRIEF_UI|DEBRIEF_CSS|DEBRIEF_VIEW|RESET_UI|RESET_CSS|RESET_VIEW|RESET_DIALOG)__',s)
 assert '\ufffd' not in s
 scripts=re.findall(r'<script>(.*?)</script>',s,re.S)
 (R/'app-check.js').write_text(scripts[-1],encoding='utf8')
