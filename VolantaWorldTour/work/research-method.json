@@ -1,0 +1,18 @@
+{
+  "date": "2026-09-21",
+  "scope": 405,
+  "method": "Pro Landestelle getrennte Suche nach Flightsim.to-Erweiterungen und kommerziellen MSFS-Szenerien; konkrete geeignete Kandidaten anschließend anhand ihrer Produktseiten, Bewertungen und MSFS-2024-Hinweise prüfen. Suchtreffer sind keine Qualitätsfreigabe. Vorhandene Add-ons werden nicht automatisch ersetzt.",
+  "stages": [
+    "Recherche ausstehend",
+    "Suchabgleich erfolgt",
+    "Produktseite geprüft",
+    "Empfehlung begründet"
+  ],
+  "quality": "Downloads und Bewertungen sind Indizien, keine Simulator-Tests. Fehlende Treffer beweisen keine Nichtexistenz. Kandidaten ohne hinreichenden Nachweis bleiben sichtbar zurückgestellt.",
+  "manufacturerPolicy": "Flightbeam, FlyTampa, iniBuilds/iniScene, Captain7, Aerosoft mit bekanntem Entwickler, Gaya und Digital Design erhalten bei der Kandidatensuche besonderes Gewicht. Entscheidend bleiben das konkrete Produkt, seine 2024-Ausgabe, belastbare Erfahrungen und der sichtbare Gewinn gegenüber Besitz, enthaltenem Airport und guter Freeware. Außergewöhnliche Airportqualität beim Anflug, Rollen und Parken kann den Kauf ebenso rechtfertigen wie Gelände oder POIs. Eine Stadt- oder Inselerweiterung ist keine Pflicht. Portalsterne dienen als Hinweis; Zahl, Alter und Herkunft der Bewertungen zählen mit. Es gibt keine feste Zahl erlaubter Käufe.",
+  "fsacReadable": 164,
+  "fsacUnavailable": 241,
+  "productReviewedAirports": 81,
+  "paywareReviewedAirports": 21,
+  "limits": "405 ICAO-Suchen versucht; 28 gekürzte Antworten einzeln nachgelesen. 40 weitere erfolglose Abrufe erneut versucht, ohne auswertbare Antwort. Entwicklerkataloge und Hersteller-/Reviewquellen ergänzen den Abgleich, schließen aber keine vollständige Prüfung aller Produkte ein."
+}

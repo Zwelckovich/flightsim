@@ -1,0 +1,745 @@
+{
+  "date": "2026-09-21",
+  "policy": "Für diese enge Auswahl: mindestens 4,8/5, mindestens 20 Bewertungen und rund 10.000 Downloads, dazu ein erkennbarer Qualitätsgewinn und konkrete Hinweise auf MSFS-2024-Nutzbarkeit. Sterne allein reichen nicht. Kleine oder neue Projekte können gut sein, erhalten ohne genügend Belege aber noch keine Spitzenempfehlung.",
+  "metricsNote": "Gerundete, kumulierte Plattformwerte aus den gelesenen Produktseiten; ältere Versionen können in Bewertungen enthalten sein. Recherche am 21.09.2026; Suchindex und Seitenstände können zeitlich abweichen. Keine eigenen Simulator-Messungen.",
+  "selected": {
+    "EKVG": {
+      "developer": "superspud",
+      "name": "Vágar Airport · Upgrade",
+      "headline": "Starker Auftakt auf den Färöern.",
+      "downloads": 50000,
+      "downloadsDisplay": "50K",
+      "rating": 5.0,
+      "reviews": 85,
+      "version": "2.9 / 1.1 · getrennte Plattform-Ausgaben",
+      "updated": "01.10.2025",
+      "reason": "Individuelle Gebäude, überarbeitete Bodenflächen und zahlreiche Platzdetails verbessern deinen Färöer-Stopp deutlich. Die breite, sehr positive Resonanz macht dies zur bevorzugten kostenlosen Erweiterung für EKVG.",
+      "compatibility": "Separate 2024-Fassung vorhanden; der letzte Änderungsvermerk nennt eine Terrainkorrektur für MSFS 2024.",
+      "dependencies": "Beide zum 2024-Download gehörenden Ordner verwenden. Animated Human Library und GSX-Profil sind optional; GSX ist für den Airport nicht erforderlich.",
+      "caveat": "Meldungen zu fehlenden Texturen und Installationsproblemen beachten. Das Layout bildet nicht zwingend die neuesten Vorfelderweiterungen ab.",
+      "fallback": "Die Basis mit World Update XV bleibt eine Alternative ohne zusätzliche Installation.",
+      "links": [
+        [
+          "Flightsim.to · Download, Bewertungen & 2024-Hinweise",
+          "https://flightsim.to/addon/365/ekvg-vagar-airport-faroe-islands"
+        ]
+      ]
+    },
+    "VQPR": {
+      "developer": "kychungdotcom",
+      "name": "Paro Airport Remake & Landmarks",
+      "headline": "Mehr Orientierung im Paro-Tal.",
+      "downloads": 55000,
+      "downloadsDisplay": "55K",
+      "rating": 4.9,
+      "reviews": 37,
+      "version": "7.5 · 2024-Download wählen",
+      "updated": "31.07.2026",
+      "reason": "Überarbeitetes Airportlayout und zusätzliche Orientierungspunkte im Tal ergänzen den anspruchsvollen Sichtanflug. Für diesen besonders markanten Tour-Stopp ist das eine gut belegte kostenlose Erweiterung.",
+      "compatibility": "Der Autor bestätigt getrennte 2020-/2024-Ausgaben. Nutzer melden erfolgreichen 2024-Betrieb nach Deaktivieren der überlagernden Asobo-Fassung.",
+      "dependencies": "2024-Ausgabe und Installationshinweise beachten; Windy Things ergänzt Flaggen. Bei Doppelobjekten die enthaltene Airport-Fassung nach Anleitung deaktivieren.",
+      "caveat": "Empfohlen ist die Szenerie. Wiederhergestellte alte RNAV-Daten sind laut Autor nicht für die Airbus-MCDU nutzbar; nicht als Fenix-Anfluglösung übernehmen. Aktuelle Charts bleiben maßgeblich.",
+      "fallback": "Die enthaltene handgefertigte Paro-Fassung bleibt die einfache Alternative ohne Add-on.",
+      "links": [
+        [
+          "Flightsim.to · Download, Bewertungen & Hinweise zu RNAV",
+          "https://flightsim.to/addon/9622/paro-valley-landmarks"
+        ]
+      ]
+    },
+    "VNKT": {
+      "developer": "KapilGyawali",
+      "name": "Tribhuvan International · Kathmandu",
+      "headline": "Kathmandu mit eigenem Charakter.",
+      "downloads": 11000,
+      "downloadsDisplay": "11K",
+      "rating": 4.8,
+      "reviews": 20,
+      "version": "1.1",
+      "updated": "23.08.2023",
+      "reason": "Eigenständige internationale und nationale Terminals, Hangars und Vorfelddetails geben dem Himalaya-Stopp mehr Wiedererkennungswert als die Basisdarstellung. Die Nutzerresonanz trägt eine Freeware-Empfehlung.",
+      "compatibility": "Ältere Veröffentlichung, aber Autor und Nutzer bestätigen ausdrücklich den Betrieb in MSFS 2024; keine native 2024-Neuentwicklung behauptet.",
+      "dependencies": "SDR Himalaya Pack und SDR Pack sind optionale Ergänzungen für weitere Objekte; Links stehen beim Download.",
+      "caveat": "Vereinzelte Meldungen zu nächtlichem Glasflimmern und Bodenservice-Anbindung. Ein eigener Performance- oder Fenix-GSX-Test liegt nicht vor.",
+      "fallback": "Basisdarstellung verwenden, wenn du zusätzliche Bibliotheken und Installation vermeiden möchtest.",
+      "links": [
+        [
+          "Flightsim.to · Download, Bewertungen & 2024-Rückmeldungen",
+          "https://flightsim.to/addon/54393/tribhuwan-international-airport-kathmandu-nepal"
+        ]
+      ]
+    },
+    "LROP": {
+      "developer": "rekinowy",
+      "name": "Bucharest Henri Coandă International",
+      "headline": "Bukarest: starke aktuelle Freeware.",
+      "downloads": 23000,
+      "rating": 5.0,
+      "reviews": 90,
+      "version": "0.8.5",
+      "updated": "28.08.2026",
+      "reason": "Individuelle Gebäude, überarbeitete Vorfelder und ein laut Autor an Juli 2026 angeglichenes Layout. Die breite, ausgezeichnete Resonanz und die fortlaufende Pflege tragen eine klare kostenlose Empfehlung.",
+      "compatibility": "Der Autor nennt ausdrücklich MSFS 2020 und 2024. Keine eigene Prüfung im Fenix.",
+      "dependencies": "Archivinhalt in den Community-Ordner; das verlinkte GSX-Profil ist optional.",
+      "caveat": "Militärvorfeld, eigene Bodenfahrzeuge und weitere Umgebungsgebäude sind noch auf der Entwicklungsliste. Kein vollständig ausmodellierter Endzustand behauptet.",
+      "fallback": "Die MSFS-Basis bleibt die Alternative ohne zusätzliche Installation.",
+      "links": [
+        [
+          "Flightsim.to · Download, Bewertungen & Hinweise",
+          "https://flightsim.to/addon/102093/lrop-bucharest-henri-coanda-international-airport-2025"
+        ]
+      ]
+    },
+    "EYVI": {
+      "developer": "Ch3rka",
+      "name": "Vilnius International",
+      "headline": "Eigenständiger Charakter in Vilnius.",
+      "downloads": 32000,
+      "rating": 4.8,
+      "reviews": 79,
+      "version": "1.7.1",
+      "updated": "23.09.2024",
+      "reason": "Eigene Airportgebäude, Bodenmarkierungen und angepasste Pistenneigung geben dem Stopp deutlich mehr Charakter. Gute Bewertungsbreite und mehrere positive 2024-Rückmeldungen machen die Freeware zur bevorzugten Ergänzung.",
+      "compatibility": "Mehrere Nutzer bestätigen ausdrücklich die Funktion in MSFS 2024. Ältere 2020-Veröffentlichung, keine native Neuentwicklung.",
+      "dependencies": "Den eigentlichen Szenerieordner in Community legen, nicht den darüberliegenden Archivordner. Vorhandene konkurrierende EYVI-Pakete vermeiden.",
+      "caveat": "Das neueste reale Terminal ist nicht sicher abgedeckt. Einzelne Nutzer melden eingeschränkte GSX-Jetway-Anbindung; Version 1.7.1 enthält eine ILS-Ausrichtungskorrektur.",
+      "fallback": "Die MSFS-Basis bleibt die Alternative ohne zusätzliche Installation.",
+      "links": [
+        [
+          "Flightsim.to · Download, Bewertungen & Hinweise",
+          "https://flightsim.to/addon/7118/eyvi-vilnius-international"
+        ]
+      ]
+    },
+    "YPKG": {
+      "developer": "NZA Simulations",
+      "name": "Kalgoorlie-Boulder + Super Pit",
+      "headline": "Eine Goldmine neben dem Airport.",
+      "downloads": 12000,
+      "rating": 4.9,
+      "reviews": 25,
+      "version": "1.0.1",
+      "updated": "14.02.2022",
+      "reason": "Eigene Terminal- und Vorfeldobjekte sowie die Super-Pit-Goldmine verbinden den Airport mit einem auffälligen Landschaftsziel. Rund 12.000 Downloads und 4,9/5 aus 25 Bewertungen passen zu deinem Qualitätsanspruch.",
+      "compatibility": "NZA bestätigt in seinen MSFS-2024-Kompatibilitätsnachrichten ausdrücklich, dass die ältere Kalgoorlie-Freeware in 2024 funktioniert.",
+      "dependencies": "Beide mitgelieferten Pakete installieren: Der getrennte Windsack-Fix ist laut Autor erforderlich. Aktuelle Installationshinweise auf der NZA-Seite beachten.",
+      "caveat": "Alte Veröffentlichung, nicht mit einer nativ neu gebauten 2024-Ausgabe verwechseln. Eigene Performance-Messung fehlt.",
+      "fallback": "Die MSFS-Basis bleibt die Alternative ohne zusätzliche Installation.",
+      "links": [
+        [
+          "Flightsim.to · Download, Bewertungen & Hinweise",
+          "https://flightsim.to/addon/1886/nza-simulations-nz-aus-discord-ypkg-kalgoorlie-boulder-scenery-pack-1-0"
+        ],
+        [
+          "NZA · Produktumfang",
+          "https://nzasimulations.com/product/ypkg-kalgoorlie-boulder/"
+        ],
+        [
+          "NZA · ausdrückliche 2024-Kompatibilität",
+          "https://nzasimulations.com/news/"
+        ]
+      ]
+    },
+    "VOCI": {
+      "developer": "martin.j",
+      "name": "Cochin International · T3 update",
+      "headline": "Kochi mit markantem Terminal.",
+      "downloads": 10000,
+      "rating": 4.9,
+      "reviews": 23,
+      "version": "1.1.0",
+      "updated": "24.03.2024",
+      "reason": "Das überarbeitete Terminal 3, lokale Vorfelddetails und Solar-Parkplatzdächer verbessern den Wiedererkennungswert. Sehr gute Resonanz und mehrere positive 2024-Berichte sprechen für diese kostenlose Ergänzung.",
+      "compatibility": "Mehrere Nutzer bestätigen MSFS 2024; ein Bericht nennt ausdrücklich einen funktionierenden ILS-Z-Anflug auf RWY 09. Dies ersetzt keine eigene Prüfung mit Fenix und aktuellen Navdaten.",
+      "dependencies": "Japan Airports Model Library KRC ist erforderlich. Das verlinkte GSX-Profil ist optional.",
+      "caveat": "WIP: weitere Terminalteile sind nicht vollständig neu modelliert. Ältere Kommentare nennen vereinzelte Bodenobjekt- und Performance-Probleme; zuerst einen kurzen Stand- und Rolltest machen.",
+      "fallback": "Die MSFS-Basis bleibt die Alternative ohne zusätzliche Installation.",
+      "links": [
+        [
+          "Flightsim.to · Download, Bewertungen & Hinweise",
+          "https://flightsim.to/addon/36258/voci-cochin-international-airport"
+        ]
+      ]
+    }
+  },
+  "considered": [
+    {
+      "codes": [
+        "FMEE"
+      ],
+      "name": "ftsxfreelw · Roland Garros MSFS 2024",
+      "metrics": "4K Downloads · 4,8/5 · 16 Bewertungen",
+      "reason": "Gute Resonanz, aber Jetways hängen laut Autor und Nutzern von der enthaltenen EDDM-Szenerie ab. Deren Aktivierung kann mit deinem vorhandenen München-Add-on kollidieren. Dazu kommen neun Bibliotheksabhängigkeiten. Deshalb derzeit keine Empfehlung für deine Konfiguration.",
+      "url": "https://flightsim.to/addon/87040/msfs2024-aeroport-roland-garros-la-reunion-oaci-fmee"
+    },
+    {
+      "codes": [
+        "TFFJ"
+      ],
+      "name": "superspud · St Barth Upgrade",
+      "metrics": "33K Downloads · 5,0/5 · 39 Bewertungen",
+      "reason": "Sehr gute Resonanz, aber in den gelesenen Belegen keine ausreichend konkrete Bestätigung für die aktuelle 2024-Nutzung. Der Autor nennt zudem unveränderte Geländehöhen. Deshalb noch keine gleichwertige Empfehlung zur auf Anflugtopografie ausgerichteten SLH-Ausgabe.",
+      "url": "https://flightsim.to/addon/23536/tffj-st-barthelemy-gustaf-iii-airport-tree-fix"
+    },
+    {
+      "codes": [
+        "SCRM"
+      ],
+      "name": "GrafDresche · SCRM Antarctica",
+      "metrics": "6K Downloads · 4,4/5 · 10 Bewertungen",
+      "reason": "Funktionaler Landeplatz-Kandidat, aber ältere Ausführung, karge Umgebung und dokumentierte Probleme mit Bahn-/Lichtausrichtung bzw. Navdata-Überlagerungen. Erfüllt den gewünschten Spitzenqualitäts-Maßstab nicht. Kein Nachweis einer gelösten Tour-Landestelle.",
+      "url": "https://flightsim.to/addon/1073/scrm-teniente-rodolfo-marsh-martin-airport-antarctica"
+    },
+    {
+      "codes": [
+        "SCRM"
+      ],
+      "name": "jagdwolf · SCRM Antartic Aerodrome",
+      "metrics": "1K Downloads · keine belastbare Bewertungsbasis verifiziert",
+      "reason": "Mit dem 2024-SDK erstellt und damit gezielter Kandidat für einen Vorabtest. Die dünne Bewertungsbasis reicht für eine Empfehlung als exzellente Szenerie noch nicht; die Tour führt SCRM weiterhin als zu prüfende Landestelle.",
+      "url": "https://flightsim.to/addon/85188/scrm-teniente-rodolfo-marsh-martin-antartic-aerodrome"
+    },
+    {
+      "codes": [
+        "SAWH"
+      ],
+      "name": "Chak991 · Ushuaia",
+      "metrics": "7K Downloads · 5,0/5 · 12 Bewertungen",
+      "reason": "Sehr positive, noch kleine Bewertungsbasis. Der Autor nennt weiterhin Terraforming-Probleme auf dem Taxiway in MSFS 2024. Für deine strenge Qualitätsauswahl vorerst zurückgestellt.",
+      "url": "https://flightsim.to/addon/55371/sawh-malvinas-argentinas-international-airport-ushuaia"
+    },
+    {
+      "codes": [
+        "EGJJ",
+        "EGJB"
+      ],
+      "name": "superspud · Channel Islands Airports",
+      "metrics": "38K Downloads · 4,8/5 · 73 Bewertungen für das gesamte Paket",
+      "reason": "Beliebtes Paket; 2024-Rückmeldungen unterscheiden sich je Insel und enthalten Darstellungsprobleme. Der letzte veröffentlichte Stand ist von 2022. Für beide Tour-Airports zusammen ist die aktuelle 2024-Qualität nicht ausreichend belegt.",
+      "url": "https://flightsim.to/addon/1615/channel-islands-complete-overhaul-jersey-guernsey-sark-alderney-airports"
+    },
+    {
+      "codes": [
+        "LNMC"
+      ],
+      "name": "CDN · Monaco Heliport MSFS 2024",
+      "metrics": "1K Downloads · 5,0/5 · 7 Bewertungen",
+      "reason": "Eine konkrete 2024-Ausgabe existiert. Sehr kleine Bewertungsbasis und einzelne noch klärungsbedürftige Funktionsmeldungen reichen für eine Spitzenempfehlung nicht. Der Heliport bleibt vorab zu prüfen.",
+      "url": "https://flightsim.to/addon/92855/lnmc-heliport-de-monaco-for-msfs-2020"
+    },
+    {
+      "codes": [
+        "SBBR"
+      ],
+      "name": "SBBR - Brasília International Airport - DF - Brazil",
+      "metrics": "ca. 30.000 Downloads · 5,0/5 · 83 Bewertungen",
+      "reason": "Sehr starke Resonanz. Für 2024 verweist der Autor auf die Photogrammetry-ON-Datei; nur eine Fassung installieren. Modelle bilden jedoch 2015 ab, Aktualisierung ist nicht geplant; zusätzlich Glasflimmern und versionsabhängige Höhenprobleme gemeldet. Daher ein interessanter Kandidat, aber keine uneingeschränkte Spitzenempfehlung.",
+      "url": "https://flightsim.to/addon/68384/sbbr-braslia-international-airport-df-brazil"
+    },
+    {
+      "codes": [
+        "SBBR"
+      ],
+      "name": "Brasília International Airport (SBBR )",
+      "metrics": "ca. 12.000 Downloads · 4,9/5 · 86 Bewertungen",
+      "reason": "Trotz hoher Sternezahl ausdrücklich nicht mit MSFS 2024 kompatibel; Downloads auf der Seite gestoppt. Diese Ausgabe nicht empfehlen.",
+      "url": "https://flightsim.to/addon/63131/braslia-international-airport-sbbr"
+    },
+    {
+      "codes": [
+        "VOMM"
+      ],
+      "name": "VOMM Chennai International Airport",
+      "metrics": "ca. 17.000 Downloads · 5,0/5 · 53 Bewertungen",
+      "reason": "Sehr gute Gesamtbewertung, aber ein konkreter 2024-Bericht nennt grasüberdeckte Taxiways. Der Autor nennt außerdem schwebende Brückenteile und Texturflimmern. Für deine strenge Qualitätsauswahl zurückgestellt.",
+      "url": "https://flightsim.to/addon/10471/vomm-chennai-international-airport"
+    },
+    {
+      "codes": [
+        "OKKK"
+      ],
+      "name": "OKKK - Kuwait Intl. Airport and City مطار و مدينة الكويت",
+      "metrics": "ca. 186.000 Downloads · 4,8/5 · 201 Bewertungen",
+      "reason": "Große Nutzerbasis; aktuelle 2024-Nutzung hängt laut Autor von EICK-Objekten und einer experimentellen Discord-Fassung ab. Meldungen zu fehlenden Jetways bleiben relevant. Keine unkompliziert belegte Spitzenempfehlung.",
+      "url": "https://flightsim.to/addon/3279/okbk-kuwait-intl-airport-and-city"
+    },
+    {
+      "codes": [
+        "OERK"
+      ],
+      "name": "OERK - King Khaled Intl. Airport, Riyadh",
+      "metrics": "ca. 25.000 Downloads · 4,8/5 · 55 Bewertungen",
+      "reason": "2024 funktioniert laut mehreren Nutzern. Der Autor führt aber untexturierte Gebäude, Modellfehler an Terminal 5 und fehlende Gebäude als bekannte Einschränkungen. Gute Freeware, für die gewünschte enge Spitzenauswahl zurückgestellt.",
+      "url": "https://flightsim.to/addon/9290/king-khaled-intl-airport-riyadh"
+    },
+    {
+      "codes": [
+        "RJOO"
+      ],
+      "name": "RJOO-Osaka Intl Airport Japan◆伊丹空港",
+      "metrics": "ca. 40.000 Downloads · 5,0/5 · 127 Bewertungen",
+      "reason": "Ausgezeichnete Gesamtresonanz. In 2024 fehlen laut Rückmeldungen jedoch gerade die Circling-Anfluglichter; weitere Meldungen betreffen Jetways und Terrain. Das ist für deinen Schwerpunkt Anflug-Highlights ein wichtiger Vorbehalt.",
+      "url": "https://flightsim.to/addon/51064/osaka-intl-airport-japan"
+    },
+    {
+      "codes": [
+        "VGHS"
+      ],
+      "name": "VGHS - Dhaka (Hazrat Shahjalal) Intl. Airport",
+      "metrics": "ca. 10.000 Downloads · 4,8/5 · 20 Bewertungen",
+      "reason": "Der Änderungsverlauf berücksichtigt 2024. Die Rückmeldungen zu ILS/LOC widersprechen sich; zusätzlich bestehen Abhängigkeiten von City-Update-Objekten. Für Fenix-Anflüge vorerst keine uneingeschränkte Empfehlung.",
+      "url": "https://flightsim.to/addon/47179/dhaka-hazrat-shahjalal-intl-airport-vghs"
+    },
+    {
+      "codes": [
+        "EGNS"
+      ],
+      "name": "EGNS - Ronaldsway Airport - Isle of Man - Upgrade",
+      "metrics": "ca. 15.000 Downloads · 4,9/5 · 32 Bewertungen",
+      "reason": "Sehr gute Resonanz, aber der letzte Stand ist von 2021; auf der gelesenen Seite bleibt die konkrete 2024-Frage unbeantwortet. Ein weiterer Bericht nennt störende Objekte am Vorfeld. Kompatibilität nicht allein aus dem Plattform-Badge ableiten.",
+      "url": "https://flightsim.to/addon/5919/egns-ronaldsway-airport-isle-of-man-upgrade"
+    },
+    {
+      "codes": [
+        "NZQN"
+      ],
+      "name": "Queenstown International Airport & Surroundings (NZQN)",
+      "metrics": "ca. 22.000 Downloads · 4,8/5 · 22 Bewertungen",
+      "reason": "Die enthaltene handgefertigte Fassung bleibt die erste Wahl. Der ältere kostenlose Ersatz erreicht gute Werte, aber ein belastbarer zusätzlicher 2024-Mehrwert gegenüber dem enthaltenen Airport ist nicht belegt.",
+      "url": "https://flightsim.to/addon/7510/queenstown-airport-surroundings-nzqn"
+    },
+    {
+      "codes": [
+        "EPKK"
+      ],
+      "name": "EPKK Kraków - Balice ( Papa Delta Studio / nereusz )",
+      "metrics": "ca. 12.000 Downloads · 5,0/5 · 16 Bewertungen",
+      "reason": "Gute Resonanz, aber der Autor beschreibt den 2024-Betrieb nur als eingeschränkt nutzbar und nennt verschobene Bodentexturen. Deshalb keine Spitzenempfehlung.",
+      "url": "https://flightsim.to/addon/77425/epkk-krakw-balice-vatsim-2024"
+    },
+    {
+      "codes": [
+        "EGGP"
+      ],
+      "name": "EGGP - Liverpool John Lennon Airport - Upgrade",
+      "metrics": "ca. 12.000 Downloads · 5,0/5 · 23 Bewertungen",
+      "reason": "Den enthaltenen handgefertigten World-Update-Airport behalten. Der Freeware-Autor selbst beschreibt seine ältere Fassung nach dem UK-Update hauptsächlich als historische Alternative.",
+      "url": "https://flightsim.to/addon/3175/eggp-liverpool-john-lennon-airport-upgrade"
+    },
+    {
+      "codes": [
+        "SBGL"
+      ],
+      "name": "Galeão Airport (SBGL) Improvement - WIP",
+      "metrics": "ca. 16.000 Downloads · 5,0/5 · 38 Bewertungen",
+      "reason": "Die Freeware-Downloads wurden gestoppt; der Autor verweist auf Zugang über eine kostenpflichtige Kanalmitgliedschaft. Zusätzlich bestehen Brückenmeldungen. Deshalb bei der enthaltenen Fassung bleiben.",
+      "url": "https://flightsim.to/addon/59837/galeao-sbgl-improvement-wip"
+    },
+    {
+      "codes": [
+        "RPVP"
+      ],
+      "name": "Puerto Princesa International Airport (RPVP)",
+      "metrics": "ca. 9.000 Downloads · 4,9/5 · 18 Bewertungen",
+      "reason": "Gute, noch kleinere Bewertungsbasis, aber der Autor antwortet auf die 2024-Frage ausdrücklich, dass die Anpassung noch nicht erfolgt sei. Mehrere Objektbibliotheken sind erforderlich. Keine aktuelle 2024-Spitzenempfehlung.",
+      "url": "https://flightsim.to/addon/14259/puerto-princesa-international-airport-rpvp"
+    },
+    {
+      "codes": [
+        "VTBS"
+      ],
+      "name": "Suvarnabhumi Airport Thailand [VTBS]",
+      "metrics": "ca. 29.000 Downloads · 4,8/5 · 19 Bewertungen",
+      "reason": "Beliebte ältere Modellumsetzung, Stand 2020. Kein belastbarer aktueller 2024-Nachweis und keine Bestätigung des heutigen Airportlayouts in der gelesenen Quelle.",
+      "url": "https://flightsim.to/addon/2763/suvarnabhumi-airport-thailand-vtbs"
+    },
+    {
+      "codes": [
+        "LJLJ"
+      ],
+      "name": "LJLJ - Ljubljana airport, Slovenia",
+      "metrics": "ca. 15.000 Downloads · 4,7/5 · 27 Bewertungen",
+      "reason": "Weiter gepflegtes Projekt, aber 4,7/5 und Meldungen zu fehlenden Anfluglichtern. Die 2024-Lage ist nicht ausreichend eindeutig; keine Spitzenempfehlung für diese Auswahl.",
+      "url": "https://flightsim.to/addon/8718/ljlj-ljubljana-airport-slovenia"
+    },
+    {
+      "codes": [
+        "LYBE"
+      ],
+      "name": "LYBE MSFS - Airport NIKOLA TESLA Belgrade - aerodrom Nikola Tesla Beograd",
+      "metrics": "ca. 17.000 Downloads · 4,8/5 · 51 Bewertungen",
+      "reason": "2024-Nutzung wird bestätigt. Die Fassung von 2022 bildet jedoch den aktuellen Ausbau nicht ab; Nutzer melden fehlende Verfahren und verschobene Objekte. Deshalb trotz guter Sterne vorerst zurückgestellt.",
+      "url": "https://flightsim.to/addon/41863/airport-nikola-tesla-belgrade-aerodrom-nikola-tesla-beograd"
+    },
+    {
+      "codes": [
+        "ENTC"
+      ],
+      "name": "Tromso Airport ENTC",
+      "metrics": "ca. 13.000 Downloads · 4,7/5 · 11 Bewertungen",
+      "reason": "Kleine funktionale Verbesserung aus 2020, keine umfassende aktuelle Szenerie. 4,7/5 aus 11 Bewertungen und kein konkreter 2024-Nachweis reichen hier nicht für die Spitzenauswahl.",
+      "url": "https://flightsim.to/addon/4802/tromso-airport-entc"
+    },
+    {
+      "codes": [
+        "OAKB"
+      ],
+      "name": "OAKB - Hamid Karzai Intl. Airport, Kabul, Afghanistan",
+      "metrics": "ca. 10.000 Downloads · 4,8/5 · 9 Bewertungen",
+      "reason": "2024-Rückmeldungen sind positiv. Allerdings nur neun Bewertungen; außerdem fehlen laut Kommentaren Beleuchtung bzw. Jetways. Als Kandidat sichtbar, aber keine belegte Spitzenempfehlung.",
+      "url": "https://flightsim.to/addon/19483/oakb-hamid-karzai-intl-airport-kabul-afghanistan"
+    },
+    {
+      "codes": [
+        "WIII"
+      ],
+      "name": "WIII - Soekarno–Hatta International Airport, Jakarta",
+      "metrics": "ca. 3.000 Downloads · 4,2/5 · 5 Bewertungen",
+      "reason": "Der Autor bestätigt 2024, nennt aber fehlende nächtliche Glastexturen. 4,2/5 aus fünf Bewertungen trägt keine Spitzenempfehlung.",
+      "url": "https://flightsim.to/addon/95345/wiii-soekarno-hatta-international-airport-jakarta"
+    },
+    {
+      "codes": [
+        "FMCZ"
+      ],
+      "name": "FMCZ - MAYOTTE Dzaoudzi–Pamandzi International Airport",
+      "metrics": "ca. 3.000 Downloads · 4,9/5 · 14 Bewertungen",
+      "reason": "Sehr gute kleine Bewertungsbasis. Aktuelle Nutzer melden überhohe Bäume im Anflug; mehrere Bibliotheken und World Update Oceania sind erforderlich. Für deinen Anflug-Schwerpunkt zurückgestellt.",
+      "url": "https://flightsim.to/addon/82173/fmcz-mayotte-dzaoudzi-pamandzi-international-airport"
+    },
+    {
+      "codes": [
+        "EFMA"
+      ],
+      "name": "EFMA - Mariehamn Airport - MSFS Add-on - Flightsim.to",
+      "metrics": "ca. 2.000 Downloads · 5,0/5 · 5 Bewertungen",
+      "reason": "Nur fünf Bewertungen; die Seite belegt keine ausreichend eindeutige 2024-Konfiguration. Enthält zwar auch Stadtobjekte, bleibt aber unter der gewünschten Belegstärke.",
+      "url": "https://flightsim.to/addon/81837/efma-mariehamn-airport"
+    },
+    {
+      "codes": [
+        "FSIA"
+      ],
+      "name": "FSIA - Seychelles International",
+      "metrics": "ca. 2.000 Downloads · 4,0/5 · 2 Bewertungen",
+      "reason": "Überwiegend Korrektur von Taxiways und Vorfeldern, keine vollständige eigene 3D-Umsetzung. Nur zwei Bewertungen mit 4,0/5 und Verfahrensmeldungen; keine Spitzenempfehlung.",
+      "url": "https://flightsim.to/addon/30333/fsia-seychelles-international"
+    },
+    {
+      "codes": [
+        "TBPB"
+      ],
+      "name": "TBPB - Barbados Grantley Adams International Airport - Caribbean",
+      "metrics": "ca. 17.000 Downloads · 5,0/5 · 13 Bewertungen",
+      "reason": "2024-Nutzung ist belegt, aber Nutzer melden fehlende beziehungsweise schwebende Anflug- und Pistenlichter. Mit 13 Bewertungen und diesen für dich relevanten Vorbehalten vorerst zurückgestellt.",
+      "url": "https://flightsim.to/addon/44599/caribbean-tbpb-grantley-adams-international-airport-barbados"
+    },
+    {
+      "codes": [
+        "TIST"
+      ],
+      "name": "Cyril E. King Airport (TIST) Updated Scenery Project v1.5",
+      "metrics": "ca. 7.000 Downloads · 4,8/5 · 20 Bewertungen",
+      "reason": "Ein Nutzer bestätigt 2024. Der Autor weist weiter auf ältere Absturzprobleme hin; eine erforderliche Personenbibliothek ist laut Kommentaren nicht einfach verfügbar. Keine ausreichend belastbare unkomplizierte Empfehlung.",
+      "url": "https://flightsim.to/addon/17191/cyril-e-king-airport-tist-updated-scenery-project-v1-0"
+    },
+    {
+      "codes": [
+        "EGYP"
+      ],
+      "name": "EGYP - RAF Mount Pleasant",
+      "metrics": "ca. 8.000 Downloads · 5,0/5 · 11 Bewertungen",
+      "reason": "Positive 2024-Berichte, aber laut Autor nur als 2020-Ausgabe getestet und auf begrenzte Bildreferenzen gestützt. Benötigt RAF Lossiemouth; elf Bewertungen reichen für deine strenge Spitzenauswahl noch nicht.",
+      "url": "https://flightsim.to/addon/60881/egyp-raf-mount-pleasant"
+    },
+    {
+      "codes": [
+        "RORS"
+      ],
+      "name": "RORS Shimojishima Airport Enhanced",
+      "metrics": "ca. 7.000 Downloads · 4,7/5 · 3 Bewertungen",
+      "reason": "Eine eigene 2024-Fassung ist vorhanden und verbessert auch Küstengelände. Nur drei Bewertungen; der Autor nennt weiterhin ein abweichendes Terminalmodell. Deshalb zuerst den enthaltenen WU-I-Airport nutzen.",
+      "url": "https://flightsim.to/addon/16969/rors-shimojijima-airport-small-fixes"
+    },
+    {
+      "codes": [
+        "VRMM"
+      ],
+      "name": "VRMM Velana International Airport, Male, Hulhule Island, Maldives. (Upgrade)",
+      "metrics": "ca. 6.000 Downloads · 3,7/5 · 10 Bewertungen",
+      "reason": "Nur 3,7/5 aus zehn Bewertungen. Älteres generisches Layout; Nutzer melden auf die alte Piste ausgerichtetes ILS. Für den Fenix-Anflug nicht empfohlen.",
+      "url": "https://flightsim.to/addon/27331/vrmm-velana-international-airport-male-hulhule-island-maldives-upgrade"
+    },
+    {
+      "codes": [
+        "FHAW"
+      ],
+      "name": "FHAW - RAF Ascension Island/ Wideawake Airfield - Upgrade",
+      "metrics": "ca. 6.000 Downloads · 5,0/5 · 10 Bewertungen",
+      "reason": "Nutzer bestätigt 2024, aber kleine Bewertungsbasis und vom Autor beschriebene Höhenkompromisse. Interessanter Ausbau mit optionalem Luftbild, noch keine ausreichend belegte Spitzenempfehlung.",
+      "url": "https://flightsim.to/addon/364/fhaw-raf-ascension-island"
+    },
+    {
+      "codes": [
+        "TKPK"
+      ],
+      "name": "R. L. Bradshaw Int.(TKPK) & Vance Amory Int.(TKPN) Updated Scenery Pack Project 2.5",
+      "metrics": "ca. 9.000 Downloads · 4,7/5 · 14 Bewertungen",
+      "reason": "Älterer Stand, 4,7/5 aus 14 Bewertungen und keine konkrete 2024-Bestätigung in den gelesenen Daten. Keine Spitzenempfehlung.",
+      "url": "https://flightsim.to/addon/9036/r-l-bradshaw-int-updated-scenery-project"
+    },
+    {
+      "codes": [
+        "TFFF"
+      ],
+      "name": "Martinique TFFF + Water fix",
+      "metrics": "ca. 12.000 Downloads · 5,0/5 · 20 Bewertungen",
+      "reason": "Gute Resonanz, jedoch vor allem Wasser-/Grunddarstellungskorrektur mit ausgewiesener 2020-Version. Ein aktueller Mehrwert samt 2024-Nutzbarkeit ist nicht belegt.",
+      "url": "https://flightsim.to/addon/4808/martinique"
+    },
+    {
+      "codes": [
+        "MBPV"
+      ],
+      "name": "MBPV-Providenciales International Airport + Executive terminal",
+      "metrics": "ca. 8.000 Downloads · 4,9/5 · 20 Bewertungen",
+      "reason": "Vielversprechend: 4,9/5 aus 20 Bewertungen, etwa 8.000 Downloads und positive 2024-Rückmeldungen. Noch unter dem gewählten engen Downloadmaßstab; zusätzliche Bibliotheken und eine laut Autor schwer weiterzuentwickelnde ältere Fassung. Als geprüfte Alternative behalten.",
+      "url": "https://flightsim.to/addon/54935/turks-and-caicos-island-providenciales-international-airport"
+    },
+    {
+      "codes": [
+        "PHNL"
+      ],
+      "name": "PHNL Daniel K. Inouye International Airport, Honolulu",
+      "metrics": "ca. 15.000 Downloads · 4,8/5 · 45 Bewertungen",
+      "reason": "Sehr gute Resonanz und positive 2024-Meldung. Deine vorhandene iniBuilds-Szenerie hat Vorrang; es gibt keinen belegten Grund, sie durch diese kostenlose Teilüberarbeitung zu ersetzen.",
+      "url": "https://flightsim.to/addon/49601/phnl-daniel-k-inouye-international-airport-honolulu"
+    },
+    {
+      "codes": [
+        "PHKO"
+      ],
+      "name": "PHKO Ellison Onizuka Kona International Airport at Keahole",
+      "metrics": "ca. 10.000 Downloads · 4,9/5 · 21 Bewertungen",
+      "reason": "Gute Resonanz, aber die 2024-Frage bleibt offen. Zuerst die enthaltene handgefertigte World-Update-XIII-Fassung verwenden; auch der Autor weist auf deren Qualität hin.",
+      "url": "https://flightsim.to/addon/29995/phko-ellison-onizuka-kona-international-airport-at-keahole"
+    },
+    {
+      "codes": [
+        "PGUM"
+      ],
+      "name": "PGUM Guam Won Pat International (V3 20)",
+      "metrics": "ca. 9.000 Downloads · 4,9/5 · 8 Bewertungen",
+      "reason": "2024-Bericht positiv, jedoch nur acht Bewertungen und zahlreiche verwendete Standardbibliotheksobjekte. Kein ausreichend belegtes Spitzenprodukt; deshalb vorerst Basis.",
+      "url": "https://flightsim.to/addon/46265/guam-pgum-won-pat-international"
+    },
+    {
+      "codes": [
+        "NSTU"
+      ],
+      "name": "NSTU Pago Pago Intl Version 3 20",
+      "metrics": "ca. 4.000 Downloads · 4,9/5 · 8 Bewertungen",
+      "reason": "Eigene 2024-Neufassung mit positiven Rückmeldungen vorhanden. Nur acht Bewertungen und rund 4.000 Downloads; daher geprüfter Kandidat statt Spitzenempfehlung.",
+      "url": "https://flightsim.to/addon/42879/pago-pago-nstu"
+    },
+    {
+      "codes": [
+        "NSFA"
+      ],
+      "name": "Apia Faleolo Airport NSFA",
+      "metrics": "ca. 5.000 Downloads · 5,0/5 · 3 Bewertungen",
+      "reason": "2024-Rückmeldung positiv, aber nur drei Bewertungen und umfangreiche Bibliotheksabhängigkeiten. Keine ausreichend breit belegte Qualitätsfreigabe.",
+      "url": "https://flightsim.to/addon/62629/apia-faleolo-airport-nsfa"
+    },
+    {
+      "codes": [
+        "NVVV"
+      ],
+      "name": "NVVV - Bauerfield Intl, Port Vila",
+      "metrics": "ca. 8.000 Downloads · 4,8/5 · 5 Bewertungen",
+      "reason": "2024-Ausgabe und zusätzliche Circling-Lichter sind besonders interessant; dafür EDHK-Bibliothek nötig. Nur fünf Bewertungen, deshalb geprüfter Kandidat mit Potenzial statt Spitzenempfehlung.",
+      "url": "https://flightsim.to/addon/35138/bauerfield-intl-port-vila-nvvv"
+    },
+    {
+      "codes": [
+        "YBCS"
+      ],
+      "name": "Cairns International - YBCS - Queensland - Tag21",
+      "metrics": "ca. 5.000 Downloads · 3,9/5 · 8 Bewertungen",
+      "reason": "3,9/5 aus acht Bewertungen; kein ausreichender Qualitätsbeleg für deine enge Freeware-Auswahl.",
+      "url": "https://flightsim.to/addon/31874/cairns-international-ybcs-queensland-tag21"
+    },
+    {
+      "codes": [
+        "VTSP"
+      ],
+      "name": "VTSP - Phuket Intl. Airport Enhancement",
+      "metrics": "ca. 13.000 Downloads · 4,0/5 · 6 Bewertungen",
+      "reason": "Nur 4,0/5 aus sechs Bewertungen; fehlende Gates und weitere Vorbehalte dokumentiert. Ein 2024-Zusatzpatch existiert, macht daraus aber noch keine belegte Spitzenempfehlung.",
+      "url": "https://flightsim.to/addon/25405/vtsp-phuket-intl-airportenhancement"
+    },
+    {
+      "codes": [
+        "VYYY"
+      ],
+      "name": "VYYY-Yangon International Airport-Update",
+      "metrics": "ca. 3.000 Downloads · 4,8/5 · 9 Bewertungen",
+      "reason": "4,8/5, aber nur neun Bewertungen, älterer Stand und keine konkrete 2024-Bestätigung in den gelesenen Belegen.",
+      "url": "https://flightsim.to/addon/37122/vyyy-yangon-international-airport-update"
+    },
+    {
+      "codes": [
+        "VVTS"
+      ],
+      "name": "Tan Son Nhat International Airport [VVTS]",
+      "metrics": "ca. 8.000 Downloads · 4,4/5 · 12 Bewertungen",
+      "reason": "4,4/5 aus zwölf Bewertungen; bekannte Jetway-Texturfehler und offene 2024-Frage. Keine Spitzenempfehlung.",
+      "url": "https://flightsim.to/addon/15167/tan-son-nhat-international-airport-vvts"
+    },
+    {
+      "codes": [
+        "VVCR"
+      ],
+      "name": "VVCR - Cam Ranh International Airport - MSFS Add-on - Flightsim.to",
+      "metrics": "ca. 5.000 Downloads · 4,9/5 · 7 Bewertungen",
+      "reason": "Positive 2024-Rückmeldungen, aber nur sieben Bewertungen. Zusätzliches Luftbild ist erforderlich. Als guter Kandidat vermerkt, Belegstärke für die Spitzenauswahl noch zu klein.",
+      "url": "https://flightsim.to/addon/41754/cam-ranh-international-airport-vvcr"
+    },
+    {
+      "codes": [
+        "VLLB"
+      ],
+      "name": "VLLB, Luang Prabanng international Airport",
+      "metrics": "ca. 3.000 Downloads · 4,8/5 · 11 Bewertungen",
+      "reason": "Der Autor nennt nicht nutzbare Jetways; älterer Stand und elf Bewertungen. Die aktuelle 2024-Qualität ist nicht ausreichend belegt.",
+      "url": "https://flightsim.to/addon/19516/vllb-luang-prabanng-international-airport"
+    },
+    {
+      "codes": [
+        "VABB"
+      ],
+      "name": "VABB Chhatrapati Shivaji International Airport (BOM)",
+      "metrics": "ca. 15.000 Downloads · 4,7/5 · 24 Bewertungen",
+      "reason": "4,7/5 aus 24 Bewertungen. Nutzer melden Beleuchtungs- und ILS-Probleme; die konkrete 2024-Frage bleibt offen. Für den Fenix nicht als Spitzenempfehlung ausgewählt.",
+      "url": "https://flightsim.to/addon/11495/vabb-chhatrapati-shivaji-international-airport-bom"
+    },
+    {
+      "codes": [
+        "OOMS"
+      ],
+      "name": "OOMS Muscat Int'l - Muscat, Oman",
+      "metrics": "ca. 26.000 Downloads · 4,9/5 · 70 Bewertungen",
+      "reason": "Starke Gesamtresonanz, aber widersprüchliche 2024-Rückmeldungen einschließlich erheblicher FPS-Probleme bei der GSX-Fassung. Zusätzlich ist das dargestellte Bahnlayout veraltet. Deshalb vorerst zurückgestellt.",
+      "url": "https://flightsim.to/addon/37640/ooms-muscat-int-l-muscat-oman"
+    },
+    {
+      "codes": [
+        "FMNN"
+      ],
+      "name": "FMNN - Nosy Be Fascene Airport",
+      "metrics": "ca. 1.000 Downloads · 5,0/5 · 1 Bewertungen",
+      "reason": "Nur eine Bewertung und eine ausdrücklich unfertige frühe Umsetzung. Keine belegte Spitzenempfehlung.",
+      "url": "https://flightsim.to/addon/39738/madagascar-nosy-be-fascene-airport"
+    },
+    {
+      "codes": [
+        "FAOR"
+      ],
+      "name": "FAOR - O. R. Tambo International Airport",
+      "metrics": "ca. 4.000 Downloads · 3,0/5 · 3 Bewertungen",
+      "reason": "3,0/5 aus drei Bewertungen. Diese Resonanz und die geringe Datenbasis genügen dem gewünschten Qualitätsmaßstab nicht.",
+      "url": "https://flightsim.to/addon/65986/faor-o-r-tambo-international-airport"
+    },
+    {
+      "codes": [
+        "FZAA"
+      ],
+      "name": "FZAA - N'djili International Airport (FIH) - Kinshasa - Democratic Republic of Congo",
+      "metrics": "ca. 4.000 Downloads · 5,0/5 · 11 Bewertungen",
+      "reason": "Positiver Eindruck und 5,0/5 aus elf Bewertungen; rund 4.000 Downloads. Noch keine ausreichend breite und konkrete 2024-Beleglage für die enge Empfehlungsliste.",
+      "url": "https://flightsim.to/addon/86442/n-djili-international-airport-fih-kinshasa-fzaa-democratic-republic-of-congo"
+    },
+    {
+      "codes": [
+        "GBYD"
+      ],
+      "name": "GBYD - Banjul Intl Airport The Gambia",
+      "metrics": "ca. 1000 Downloads · Bewertungsbasis nicht verifiziert",
+      "reason": "Rund 1.000 Downloads, keine belastbare Bewertungsbasis verifiziert. Funktionale Verbesserung, aber keine belegte Spitzenszenerie.",
+      "url": "https://flightsim.to/addon/76438/gbyd-banjul-intl-airport-the-gambia"
+    },
+    {
+      "codes": [
+        "GQNO"
+      ],
+      "name": "GQNO - Nouakchott Oumtounsy Airport",
+      "metrics": "ca. 1.000 Downloads · 4,0/5 · 3 Bewertungen",
+      "reason": "4,0/5 aus drei Bewertungen; Nutzer meldet Doppelung mit dem 2024-Luftbild und seitlich versetztes ILS. Keine Empfehlung für den Fenix-Anflug.",
+      "url": "https://flightsim.to/addon/23253/nouakchott-oumtounsy-airport-gqno"
+    },
+    {
+      "codes": [
+        "DAAG"
+      ],
+      "name": "DAAG Algiers Houari Boumediene Airport - MSFS Add-on - Flightsim.to",
+      "metrics": "ca. 3.000 Downloads · 5,0/5 · 3 Bewertungen",
+      "reason": "Nur drei Bewertungen, Stand 2021 und primär Korrektur von Vorfeldern und Taxiways. Aktuelle 2024-Spitzenqualität nicht belegt.",
+      "url": "https://flightsim.to/addon/17668/daag-algiers-airport-taxiway-and-runway-fix"
+    },
+    {
+      "codes": [
+        "LDDU"
+      ],
+      "name": "LDDU - Dubrovnik Airport",
+      "metrics": "ca. 1000 Downloads · Bewertungsbasis nicht verifiziert",
+      "reason": "Etwa 1.000 Downloads, keine belastbare Bewertungsbasis verifiziert. Der Autor kündigt eine neue Fassung separat an. Keine Empfehlung aus den vorhandenen Belegen.",
+      "url": "https://flightsim.to/addon/52070/lddu-dubrovnik-airport"
+    },
+    {
+      "codes": [
+        "LRCL"
+      ],
+      "name": "LRCL Cluj-Napoca International Airport",
+      "metrics": "ca. 7.000 Downloads · 4,3/5 · 9 Bewertungen",
+      "reason": "4,3/5 aus neun Bewertungen; eigene Verfahren wurden laut Autor nur mit Standardflugzeugen getestet. Keine belastbare 2024-/Fenix-Empfehlung.",
+      "url": "https://flightsim.to/addon/7336/lrcl-cluj-napoca-international-airport"
+    },
+    {
+      "codes": [
+        "EGPE"
+      ],
+      "name": "EGPE Inverness Airport - MSFS2024",
+      "metrics": "ca. 3.000 Downloads · 4,8/5 · 6 Bewertungen",
+      "reason": "Aktive native 2024-Pflege und SU6-Anpassung sind positiv. Nur sechs Bewertungen und rund 3.000 Downloads; deshalb als aussichtsreicher Kandidat sichtbar, noch keine breit belegte Spitzenempfehlung.",
+      "url": "https://flightsim.to/addon/99067/egpe-invernessairport-msfs2024"
+    },
+    {
+      "codes": [
+        "SCRM"
+      ],
+      "name": "Antarctica Airfield Pack",
+      "metrics": "ca. 26.000 Downloads · 4,8/5 · 28 Bewertungen",
+      "reason": "Gute Paketbewertung, aber die vom Autor aufgeführten 20 Flugplätze enthalten SCRM nicht. Dieses Paket löst die konkret geplante Antarktis-Landestelle daher nicht.",
+      "url": "https://flightsim.to/addon/2862/wilkins-runway-antarctica-ywks"
+    },
+    {
+      "codes": [
+        "SAZB"
+      ],
+      "name": "Argentina Airports Pack",
+      "metrics": "ca. 16.000 Downloads · 4,8/5 · 51 Bewertungen",
+      "reason": "Der Autor beschreibt funktionale Verbesserungen mit Standardobjekten, keine originalgetreuen eigenen Gebäude. Dazu ein 2024-Absturzbericht. Keine pauschale Empfehlung für die Argentinien-Stopps.",
+      "url": "https://flightsim.to/addon/1221/argentina"
+    },
+    {
+      "codes": [
+        "DFFD",
+        "DRRN"
+      ],
+      "name": "AFRICA TO GO!",
+      "metrics": "ca. 15.000 Downloads · 4,9/5 · 51 Bewertungen",
+      "reason": "Gute Paketresonanz, aber sehr viele Bibliotheken, teils generische Nachbildungen und uneinheitliche 2024-Berichte. Nutzer bestätigen insbesondere Ouagadougou/Niamey; das belegt keine durchgängig exzellente 2024-Qualität aller enthaltenen Airports.",
+      "url": "https://flightsim.to/addon/53291/africa-to-go"
+    }
+  ]
+}

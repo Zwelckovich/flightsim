@@ -1,0 +1,29 @@
+{
+  "status": "Fleet recommendation; final airfield/performance validation outstanding",
+  "date": "2026-09-21",
+  "recommendedFleet": ["Fenix A320 CFM Sharklets", "Airbus H160", "iniBuilds Airbus A400M"],
+  "a400Role": "Antarctic expedition; do not treat every short runway as approved",
+  "antarcticCandidate": {
+    "route": ["SAWH", "SCGC", "SAWH"],
+    "nmEachWay": 1525,
+    "airMinEachWayModel": 290,
+    "model": "18 min + great-circle NM * 1.07 / 360 kt * 60",
+    "runway": "3000 x 50 m blue ice; DGAC publishes no bearing-strength value",
+    "operationsEvidence": "ALE operates Boeing 757 and IL-76 at Union Glacier; this does not certify A400M operation",
+    "fuel": "ALE explicitly does not provide runway refuelling service. Round-trip fuel, reserves, payload and alternatives must be planned together.",
+    "outstanding": ["MSFS 2024 airfield scenery", "iniBuilds A400M ice-runway performance", "Landing/takeoff mass and bearing suitability", "Volanta recognition at SCGC"]
+  },
+  "scrm": "1292 x 39 m gravel. DGAC publishes AUW categories up to 65000 kg for AUW 8. No specific approval for the A400M's 12-wheel main gear was verified. Do not simply swap DHC-6 for A400M based on runway length.",
+  "tuvalu": "Keep prepared H160 route for now. A400M runway bearing/geometry at NGFU not established.",
+  "airbusRange": "3400 NM with 20 tonnes payload; 4800 NM ferry range. These are manufacturer figures, not flight-release calculations.",
+  "msfs": "A400M included in MSFS 2024 Standard Edition; iniBuilds manual published by Microsoft.",
+  "sources": [
+    "https://www.airbus.com/en/products-services/defence/military-aircraft/a400m",
+    "https://image.contactad.airbus.com/lib/fe2d1171756404747c1678/m/1/7f52cf78-0b6e-49b2-8028-4cc0b85158bd.pdf",
+    "https://ftp2.dgac.gob.cl/designador/SCRM",
+    "https://aipchile.dgac.gob.cl/designador/SCGC",
+    "https://antarctic-logistics.com/services/air-transport/",
+    "https://flightsimulator.azureedge.net/wp-content/uploads/2024/11/Airbus-A400M-MSFS-Manual.pdf",
+    "https://flightsimulator.zendesk.com/hc/en-us/articles/12702272798364-Microsoft-Flight-Simulator-2024-FAQ"
+  ]
+}

@@ -1,0 +1,5032 @@
+{
+  "EDLV": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/EDLV"
+  },
+  "EHAM": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "EHAM - Amsterdam",
+        "developer": "FlyTampa",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.12,
+        "reviews": 129,
+        "url": "https://www.fsaddoncompare.com/search/EHAM"
+      },
+      {
+        "name": "EHAM - Amsterdam Airport Schiphol",
+        "developer": "FeelThere",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.0,
+        "reviews": 2,
+        "url": "https://www.fsaddoncompare.com/search/EHAM"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/EHAM"
+  },
+  "EBBR": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/EBBR"
+  },
+  "ELLX": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/ELLX"
+  },
+  "EGLL": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "London Heathrow (EGLL)",
+        "developer": "iniBuilds",
+        "platforms": [
+          "MSFS2024",
+          "MSFS2020"
+        ],
+        "rating": 3.64,
+        "reviews": 260,
+        "url": "https://www.fsaddoncompare.com/search/EGLL"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/EGLL"
+  },
+  "EGLC": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/EGLC"
+  },
+  "EGJJ": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "Jersey (EGJJ)",
+        "developer": "Fly X Simulations",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.67,
+        "reviews": 3,
+        "url": "https://www.fsaddoncompare.com/search/EGJJ"
+      },
+      {
+        "name": "EGJJ - Jersey Airport",
+        "developer": "UK2000 Scenery",
+        "platforms": [],
+        "rating": null,
+        "reviews": null,
+        "url": "https://www.fsaddoncompare.com/search/EGJJ"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/EGJJ"
+  },
+  "EGJB": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "EGJB - Guernsey Airport",
+        "developer": "UK2000 Scenery",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.5,
+        "reviews": 8,
+        "url": "https://www.fsaddoncompare.com/search/EGJB"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/EGJB"
+  },
+  "EICK": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/EICK"
+  },
+  "EGNS": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/EGNS"
+  },
+  "EGGP": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/EGGP"
+  },
+  "EGPE": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "Inverness Airport",
+        "developer": "UK2000 Scenery",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.6,
+        "reviews": 60,
+        "url": "https://www.fsaddoncompare.com/search/EGPE"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/EGPE"
+  },
+  "EKVG": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/EKVG"
+  },
+  "BIAR": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "BIAR - Akureyri Airport",
+        "developer": "ST Simulations",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.62,
+        "reviews": 19,
+        "url": "https://www.fsaddoncompare.com/search/BIAR"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/BIAR"
+  },
+  "BIKF": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "BIKF - Keflavik & BIRK - Reykjavik Airports v2",
+        "developer": "MK Studios",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.66,
+        "reviews": 53,
+        "url": "https://www.fsaddoncompare.com/search/BIKF"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/BIKF"
+  },
+  "BGGH": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "BGGH Nuuk Airport & City",
+        "developer": "FSDG",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.5,
+        "reviews": 2,
+        "url": "https://www.fsaddoncompare.com/search/BGGH"
+      },
+      {
+        "name": "BGGH - Nuuk International Airport",
+        "developer": "M'M Simulations",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 5.0,
+        "reviews": 3,
+        "url": "https://www.fsaddoncompare.com/search/BGGH"
+      },
+      {
+        "name": "BGGH - Nuuk International Airport",
+        "developer": "FSimStudios",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.65,
+        "reviews": 21,
+        "url": "https://www.fsaddoncompare.com/search/BGGH"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/BGGH"
+  },
+  "CYFB": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/CYFB"
+  },
+  "CYVP": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/CYVP"
+  },
+  "CYWK": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/CYWK"
+  },
+  "CYOW": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/CYOW"
+  },
+  "CYQM": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/CYQM"
+  },
+  "LFVP": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/LFVP"
+  },
+  "CYYT": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "St John's Intl CYYT",
+        "developer": "Mfsg",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": null,
+        "reviews": null,
+        "url": "https://www.fsaddoncompare.com/search/CYYT"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/CYYT"
+  },
+  "CYHZ": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/CYHZ"
+  },
+  "KBOS": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "KBOS - Boston Logan",
+        "developer": "FlyTampa",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.86,
+        "reviews": 390,
+        "url": "https://www.fsaddoncompare.com/search/KBOS"
+      },
+      {
+        "name": "KBOS – Boston Airport",
+        "developer": "FeelThere",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 3.62,
+        "reviews": 41,
+        "url": "https://www.fsaddoncompare.com/search/KBOS"
+      },
+      {
+        "name": "KBOS Boston Logan International Airport",
+        "developer": "Bredok3d",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 1.7,
+        "reviews": 42,
+        "url": "https://www.fsaddoncompare.com/search/KBOS"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/KBOS"
+  },
+  "KJFK": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "New York John F. Kennedy (KJFK)",
+        "developer": "iniBuilds",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 3.55,
+        "reviews": 189,
+        "url": "https://www.fsaddoncompare.com/search/KJFK"
+      },
+      {
+        "name": "KJFK Dynamic Runway Lights",
+        "developer": "DreamScenery",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 5.0,
+        "reviews": 1,
+        "url": "https://www.fsaddoncompare.com/search/KJFK"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/KJFK"
+  },
+  "KORF": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "KORF - Norfolk Intl.",
+        "developer": "VerticalSim",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.49,
+        "reviews": 135,
+        "url": "https://www.fsaddoncompare.com/search/KORF"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/KORF"
+  },
+  "TXKF": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "TXKF - Bermuda International Airport",
+        "developer": "SLH Sim Designs",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.59,
+        "reviews": 15,
+        "url": "https://www.fsaddoncompare.com/search/TXKF"
+      },
+      {
+        "name": "TXKF - Bermuda Intl. Airport",
+        "developer": "FeelThere",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.42,
+        "reviews": 34,
+        "url": "https://www.fsaddoncompare.com/search/TXKF"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/TXKF"
+  },
+  "TJSJ": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "TJSJ - San Juan Intl.",
+        "developer": "LVFR",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.05,
+        "reviews": 320,
+        "url": "https://www.fsaddoncompare.com/search/TJSJ"
+      },
+      {
+        "name": "TJSJ San Juan International Airport",
+        "developer": "Photorico Scenery",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.25,
+        "reviews": 4,
+        "url": "https://www.fsaddoncompare.com/search/TJSJ"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/TJSJ"
+  },
+  "TIST": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/TIST"
+  },
+  "TUPJ": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/TUPJ"
+  },
+  "TNCM": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "TNCM/TFFG Saint Martin & Grand Case",
+        "developer": "Airworthy Designs",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.6,
+        "reviews": 791,
+        "url": "https://www.fsaddoncompare.com/search/TNCM"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/TNCM"
+  },
+  "TQPF": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/TQPF"
+  },
+  "TFFJ": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "TFFJ - SAINT BARTHS",
+        "developer": "SLH Sim Designs",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 5.0,
+        "reviews": 9,
+        "url": "https://www.fsaddoncompare.com/search/TFFJ"
+      },
+      {
+        "name": "St. Barts (TFFJ)",
+        "developer": "Airworthy Designs",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.39,
+        "reviews": 28,
+        "url": "https://www.fsaddoncompare.com/search/TFFJ"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/TFFJ"
+  },
+  "TFFG": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "TFFG - St. Martin Grand Case (L'Espérance Airport)",
+        "developer": "SLH Sim Designs",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 5.0,
+        "reviews": 5,
+        "url": "https://www.fsaddoncompare.com/search/TFFG"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/TFFG"
+  },
+  "TKPK": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "TKPK - Robert L. Bradshaw Intl Airport",
+        "developer": "SLH Sim Designs",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.69,
+        "reviews": 13,
+        "url": "https://www.fsaddoncompare.com/search/TKPK"
+      },
+      {
+        "name": "St. Kitts Robert L. Bradshaw TKPK",
+        "developer": "Tropicalsim",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 3.0,
+        "reviews": 1,
+        "url": "https://www.fsaddoncompare.com/search/TKPK"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/TKPK"
+  },
+  "TAPA": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "Antigua Vc Bird Intl TAPA V2",
+        "developer": "Tropicalsim",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 2.5,
+        "reviews": 2,
+        "url": "https://www.fsaddoncompare.com/search/TAPA"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/TAPA"
+  },
+  "TRPG": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/TRPG"
+  },
+  "TFFR": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/TFFR"
+  },
+  "TDPD": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "TDPD Douglas-Charles Airport",
+        "developer": "Richer Simulations",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.0,
+        "reviews": 5,
+        "url": "https://www.fsaddoncompare.com/search/TDPD"
+      },
+      {
+        "name": "TDPD Douglas-Charles Airport",
+        "developer": "Richer Simulations",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.0,
+        "reviews": 5,
+        "url": "https://www.fsaddoncompare.com/search/TDPD"
+      },
+      {
+        "name": "TDPD - Douglas Charles Airport",
+        "developer": "SLH Sim Designs",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.33,
+        "reviews": 9,
+        "url": "https://www.fsaddoncompare.com/search/TDPD"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/TDPD"
+  },
+  "TFFF": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "Fort-de-france Martinique TFFF V2",
+        "developer": "Tropicalsim",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.25,
+        "reviews": 4,
+        "url": "https://www.fsaddoncompare.com/search/TFFF"
+      },
+      {
+        "name": "Caribbean Pack 3",
+        "developer": "FLYNDRIVE4D",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 5.0,
+        "reviews": 6,
+        "url": "https://www.fsaddoncompare.com/search/TFFF"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/TFFF"
+  },
+  "TLPL": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "St Lucia TLPL",
+        "developer": "FSDG",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 3.73,
+        "reviews": 11,
+        "url": "https://www.fsaddoncompare.com/search/TLPL"
+      },
+      {
+        "name": "St Lucia Hewanorra Intl TLPL",
+        "developer": "Tropicalsim",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 3.5,
+        "reviews": 2,
+        "url": "https://www.fsaddoncompare.com/search/TLPL"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/TLPL"
+  },
+  "TVSA": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "TVSA Argyle International Airport",
+        "developer": "Richer Simulations",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.6,
+        "reviews": 7,
+        "url": "https://www.fsaddoncompare.com/search/TVSA"
+      },
+      {
+        "name": "Caribbean Pack 2",
+        "developer": "FLYNDRIVE4D",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.4,
+        "reviews": 10,
+        "url": "https://www.fsaddoncompare.com/search/TVSA"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/TVSA"
+  },
+  "TBPB": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "TBPB Grantley Adams International Airport",
+        "developer": "Richer Simulations",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.58,
+        "reviews": 10,
+        "url": "https://www.fsaddoncompare.com/search/TBPB"
+      },
+      {
+        "name": "Barbados Grantley Adams (TBPB)",
+        "developer": "Final Approach Simulations",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.4,
+        "reviews": 27,
+        "url": "https://www.fsaddoncompare.com/search/TBPB"
+      },
+      {
+        "name": "TBPB Barbados",
+        "developer": "ImagineSim",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 5.0,
+        "reviews": 1,
+        "url": "https://www.fsaddoncompare.com/search/TBPB"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/TBPB"
+  },
+  "TGPY": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "TGPY - Maurice Bishop International Airport",
+        "developer": "SLH Sim Designs",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.44,
+        "reviews": 9,
+        "url": "https://www.fsaddoncompare.com/search/TGPY"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/TGPY"
+  },
+  "TTCP": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/TTCP"
+  },
+  "TNCB": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/TNCB"
+  },
+  "TNCC": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/TNCC"
+  },
+  "TNCA": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "Aruba TNCA",
+        "developer": "Tropicalsim",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 3.5,
+        "reviews": 4,
+        "url": "https://www.fsaddoncompare.com/search/TNCA"
+      },
+      {
+        "name": "Aruba TNCA V2",
+        "developer": "Tropicalsim",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": null,
+        "reviews": null,
+        "url": "https://www.fsaddoncompare.com/search/TNCA"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/TNCA"
+  },
+  "SVMI": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/SVMI"
+  },
+  "SYCJ": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "SYCJ Cheddi Jagan International Airport",
+        "developer": "MSFScenerybuilders",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 2.8,
+        "reviews": 6,
+        "url": "https://www.fsaddoncompare.com/search/SYCJ"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/SYCJ"
+  },
+  "SMJP": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/SMJP"
+  },
+  "SOCA": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "Cayenne-félix Éboué-airport SOCA",
+        "developer": "Sky-additions",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.0,
+        "reviews": 2,
+        "url": "https://www.fsaddoncompare.com/search/SOCA"
+      },
+      {
+        "name": "SOCA and TFFR A350 Bundle - Cayenne Félix Éboue and Pointe Pitre Intl-",
+        "developer": "SLH Sim Designs",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": null,
+        "reviews": null,
+        "url": "https://www.fsaddoncompare.com/search/SOCA"
+      },
+      {
+        "name": "SOCA - Cayenne Félix Éboue",
+        "developer": "SLH Sim Designs",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 5.0,
+        "reviews": 15,
+        "url": "https://www.fsaddoncompare.com/search/SOCA"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/SOCA"
+  },
+  "SBMQ": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/SBMQ"
+  },
+  "SBSN": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/SBSN"
+  },
+  "SBEG": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "SBEG - Eduardo Gomes",
+        "developer": "Ld Improvement",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": null,
+        "reviews": null,
+        "url": "https://www.fsaddoncompare.com/search/SBEG"
+      },
+      {
+        "name": "SBEG Manaus Intl",
+        "developer": "Mfsg",
+        "platforms": [
+          "MSFS2024",
+          "MSFS2020"
+        ],
+        "rating": 4.0,
+        "reviews": 1,
+        "url": "https://www.fsaddoncompare.com/search/SBEG"
+      },
+      {
+        "name": "SBEG - Eduardo Gomes - Manaus - Brazil",
+        "developer": "Brazil Land Games",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 2.0,
+        "reviews": 1,
+        "url": "https://www.fsaddoncompare.com/search/SBEG"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/SBEG"
+  },
+  "SBPV": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "SBPV Porto Velho",
+        "developer": "Brazil Land Games",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": null,
+        "reviews": null,
+        "url": "https://www.fsaddoncompare.com/search/SBPV"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/SBPV"
+  },
+  "SBCY": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/SBCY"
+  },
+  "SBBR": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/SBBR"
+  },
+  "SBCF": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "SBCF - Confins/bh - Brazil",
+        "developer": "Brazil Land Games",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.0,
+        "reviews": 1,
+        "url": "https://www.fsaddoncompare.com/search/SBCF"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/SBCF"
+  },
+  "SBGL": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "SBGL - Rio De Janeiro Galeão",
+        "developer": "Ld Improvement",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": null,
+        "reviews": null,
+        "url": "https://www.fsaddoncompare.com/search/SBGL"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/SBGL"
+  },
+  "SBFI": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "SBFI V2- Cataratas - Foz Do Iguacu - Brazil",
+        "developer": "Brazil Land Games",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": null,
+        "reviews": null,
+        "url": "https://www.fsaddoncompare.com/search/SBFI"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/SBFI"
+  },
+  "SGAS": {
+    "readable": true,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/SGAS"
+  },
+  "SUMU": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "Montevideo Carrasco Intl SUMU  New",
+        "developer": "Tropicalsim",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": null,
+        "reviews": null,
+        "url": "https://www.fsaddoncompare.com/search/SUMU"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/SUMU"
+  },
+  "SAEZ": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "Buenos Aires Ezeiza SAEZ",
+        "developer": "Tropicalsim",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 3.2,
+        "reviews": 5,
+        "url": "https://www.fsaddoncompare.com/search/SAEZ"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/SAEZ"
+  },
+  "SAZB": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/SAZB"
+  },
+  "SAVT": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/SAVT"
+  },
+  "SAWG": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/SAWG"
+  },
+  "EGYP": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/EGYP"
+  },
+  "SAWH": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "SAWH Ushuaia Airport",
+        "developer": "Simulación Extrema",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.71,
+        "reviews": 103,
+        "url": "https://www.fsaddoncompare.com/search/SAWH"
+      },
+      {
+        "name": "SAWH Ushuaia",
+        "developer": "Simulación Extrema",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 5.0,
+        "reviews": 3,
+        "url": "https://www.fsaddoncompare.com/search/SAWH"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/SAWH"
+  },
+  "SCRM": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/SCRM"
+  },
+  "SCCI": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/SCCI"
+  },
+  "SCBA": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/SCBA"
+  },
+  "SCTE": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/SCTE"
+  },
+  "SCIE": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/SCIE"
+  },
+  "SCEL": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "SCEL - Santiago Intl.",
+        "developer": "LVFR",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.33,
+        "reviews": 206,
+        "url": "https://www.fsaddoncompare.com/search/SCEL"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/SCEL"
+  },
+  "SCAT": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/SCAT"
+  },
+  "SCFA": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "Andrés Sabella Antofagasta SCFA",
+        "developer": "Airport Network Design",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": null,
+        "reviews": null,
+        "url": "https://www.fsaddoncompare.com/search/SCFA"
+      },
+      {
+        "name": "SCFA Airport Andres Sabella",
+        "developer": "Virtual Design 3D",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": null,
+        "reviews": null,
+        "url": "https://www.fsaddoncompare.com/search/SCFA"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/SCFA"
+  },
+  "SLLP": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/SLLP"
+  },
+  "SLVR": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/SLVR"
+  },
+  "SPZO": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "Cusco",
+        "developer": "FSDG",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.58,
+        "reviews": 40,
+        "url": "https://www.fsaddoncompare.com/search/SPZO"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/SPZO"
+  },
+  "SPJC": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "SPJC - Jorge Chavez Airport, Lima-Peru Version 2",
+        "developer": "Low-End PC",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.91,
+        "reviews": 12,
+        "url": "https://www.fsaddoncompare.com/search/SPJC"
+      },
+      {
+        "name": "SPJC Jorge Chávez International Airport",
+        "developer": "DominicDesignTeam",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 3.0,
+        "reviews": 30,
+        "url": "https://www.fsaddoncompare.com/search/SPJC"
+      },
+      {
+        "name": "SPJC Jorge Chávez International Airport",
+        "developer": "PKSIM",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 3.5,
+        "reviews": 21,
+        "url": "https://www.fsaddoncompare.com/search/SPJC"
+      },
+      {
+        "name": "SPJC - Jorge Chavez Airport, Lima-Peru",
+        "developer": "Low-End PC",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.8,
+        "reviews": 10,
+        "url": "https://www.fsaddoncompare.com/search/SPJC"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/SPJC"
+  },
+  "SPHI": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/SPHI"
+  },
+  "SEGU": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "SEGU José Joaquín de Olmedo Intl Airport",
+        "developer": "MSFScenerybuilders",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.0,
+        "reviews": 7,
+        "url": "https://www.fsaddoncompare.com/search/SEGU"
+      },
+      {
+        "name": "SEGU - Jose Joaquin De Olmedo Intl.",
+        "developer": "Sierrasim Simulation",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.6,
+        "reviews": 65,
+        "url": "https://www.fsaddoncompare.com/search/SEGU"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/SEGU"
+  },
+  "SEGS": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "SEGS Seymour-baltra",
+        "developer": "Ecuavirtual3d",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": null,
+        "reviews": null,
+        "url": "https://www.fsaddoncompare.com/search/SEGS"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/SEGS"
+  },
+  "SKCL": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "SKCL - Alfonso Bonilla Aragon Intl.",
+        "developer": "TEIKOF Studio",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.88,
+        "reviews": 25,
+        "url": "https://www.fsaddoncompare.com/search/SKCL"
+      },
+      {
+        "name": "SKCL Alfonso Bonilla Aragón International Airport",
+        "developer": "PKSIM",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.8,
+        "reviews": 18,
+        "url": "https://www.fsaddoncompare.com/search/SKCL"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/SKCL"
+  },
+  "SKBO": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "SKBO El Dorado International Airport",
+        "developer": "Wingsim",
+        "platforms": [
+          "MSFS2024",
+          "MSFS2020"
+        ],
+        "rating": 3.3,
+        "reviews": 19,
+        "url": "https://www.fsaddoncompare.com/search/SKBO"
+      },
+      {
+        "name": "Bogotá El Dorado (SKBO)",
+        "developer": "TaiModels/Double T",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 3.92,
+        "reviews": 12,
+        "url": "https://www.fsaddoncompare.com/search/SKBO"
+      },
+      {
+        "name": "SKBO El Dorado International Airport",
+        "developer": "V Pilot Designs",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.49,
+        "reviews": 140,
+        "url": "https://www.fsaddoncompare.com/search/SKBO"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/SKBO"
+  },
+  "SKCG": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/SKCG"
+  },
+  "MPTO": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/MPTO"
+  },
+  "MROC": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/MROC"
+  },
+  "MNMG": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "MNMG Augusto C. Sandino International Airport",
+        "developer": "Sierrasim Simulation",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.5,
+        "reviews": 32,
+        "url": "https://www.fsaddoncompare.com/search/MNMG"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/MNMG"
+  },
+  "MHTG": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "MHTG Toncontin Airport",
+        "developer": "Project MAX",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 1.0,
+        "reviews": 1,
+        "url": "https://www.fsaddoncompare.com/search/MHTG"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/MHTG"
+  },
+  "MSLP": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/MSLP"
+  },
+  "MGGT": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "MGGT - La Aurora Intl. Airport",
+        "developer": "Sierrasim Simulation",
+        "platforms": [
+          "MSFS2024",
+          "MSFS2020"
+        ],
+        "rating": 4.47,
+        "reviews": 58,
+        "url": "https://www.fsaddoncompare.com/search/MGGT"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/MGGT"
+  },
+  "MZBZ": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "MZBZ Philip S. W. Goldson International Airport",
+        "developer": "MSFScenerybuilders",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 3.38,
+        "reviews": 12,
+        "url": "https://www.fsaddoncompare.com/search/MZBZ"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/MZBZ"
+  },
+  "MMUN": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/MMUN"
+  },
+  "MWCR": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "MWCR - Owen Roberts International Airport",
+        "developer": "TropiSim Studios",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 5.0,
+        "reviews": 1,
+        "url": "https://www.fsaddoncompare.com/search/MWCR"
+      },
+      {
+        "name": "MWCR - Owen Roberts Airport",
+        "developer": "VueloSimple",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.73,
+        "reviews": 33,
+        "url": "https://www.fsaddoncompare.com/search/MWCR"
+      },
+      {
+        "name": "MWCR Owen Roberts International Airport",
+        "developer": "Wingsim",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 5.0,
+        "reviews": 5,
+        "url": "https://www.fsaddoncompare.com/search/MWCR"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/MWCR"
+  },
+  "MKJS": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "Montego Bay Sangster (MKJS)",
+        "developer": "Final Approach Simulations",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.69,
+        "reviews": 22,
+        "url": "https://www.fsaddoncompare.com/search/MKJS"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/MKJS"
+  },
+  "MTPP": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/MTPP"
+  },
+  "MDPP": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/MDPP"
+  },
+  "MBPV": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/MBPV"
+  },
+  "MYEH": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/MYEH"
+  },
+  "MYNN": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/MYNN"
+  },
+  "MUHA": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "MUHA La Habana Jose Marti Airport",
+        "developer": "Mex High Flight",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 3.71,
+        "reviews": 7,
+        "url": "https://www.fsaddoncompare.com/search/MUHA"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/MUHA"
+  },
+  "MMMD": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "MMMD Merida International Airport",
+        "developer": "Simulación Extrema",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.42,
+        "reviews": 18,
+        "url": "https://www.fsaddoncompare.com/search/MMMD"
+      },
+      {
+        "name": "MMMD Merida International Airport",
+        "developer": "DXR",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 3.8,
+        "reviews": 13,
+        "url": "https://www.fsaddoncompare.com/search/MMMD"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/MMMD"
+  },
+  "MMVR": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/MMVR"
+  },
+  "MMMX": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "MMMX Mexico City International Airport",
+        "developer": "Flymex Software",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.22,
+        "reviews": 158,
+        "url": "https://www.fsaddoncompare.com/search/MMMX"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/MMMX"
+  },
+  "MMGL": {
+    "readable": true,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/MMGL"
+  },
+  "MMSD": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "MMSD Los Cabos International Airport",
+        "developer": "MSFScenerybuilders",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 2.18,
+        "reviews": 10,
+        "url": "https://www.fsaddoncompare.com/search/MMSD"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/MMSD"
+  },
+  "MMHO": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/MMHO"
+  },
+  "KPHX": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "KPHX - Sky Harbor Phoenix International Airport -",
+        "developer": "Glideslope Pro",
+        "platforms": [
+          "MSFS2024",
+          "MSFS2020"
+        ],
+        "rating": 3.77,
+        "reviews": 125,
+        "url": "https://www.fsaddoncompare.com/search/KPHX"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/KPHX"
+  },
+  "KSEZ": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/KSEZ"
+  },
+  "KLAS": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "KLAS - Las Vegas Intl. Airport",
+        "developer": "FeelThere",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 3.19,
+        "reviews": 22,
+        "url": "https://www.fsaddoncompare.com/search/KLAS"
+      },
+      {
+        "name": "KLAS - Las Vegas V3",
+        "developer": "FlyTampa",
+        "platforms": [
+          "MSFS2024",
+          "MSFS2020"
+        ],
+        "rating": 4.09,
+        "reviews": 21,
+        "url": "https://www.fsaddoncompare.com/search/KLAS"
+      },
+      {
+        "name": "KLAS - Las Vegas Harry Reid International Airport",
+        "developer": "Glideslope Pro",
+        "platforms": [
+          "MSFS2024"
+        ],
+        "rating": 3.0,
+        "reviews": 2,
+        "url": "https://www.fsaddoncompare.com/search/KLAS"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/KLAS"
+  },
+  "KDEN": {
+    "readable": true,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/KDEN"
+  },
+  "KSLC": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "KSLC Salt Lake City International Airport",
+        "developer": "Bredok3d",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 2.4,
+        "reviews": 124,
+        "url": "https://www.fsaddoncompare.com/search/KSLC"
+      },
+      {
+        "name": "KSLC - Salt Lake City International Airport",
+        "developer": "FeelThere",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.04,
+        "reviews": 53,
+        "url": "https://www.fsaddoncompare.com/search/KSLC"
+      },
+      {
+        "name": "KSLC - Salt Lake City Intl Airport",
+        "developer": "Salt Lake Simulations",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 3.67,
+        "reviews": 6,
+        "url": "https://www.fsaddoncompare.com/search/KSLC"
+      },
+      {
+        "name": "Salt Lake City Intl",
+        "developer": "Pacific Islands Simulation",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": null,
+        "reviews": null,
+        "url": "https://www.fsaddoncompare.com/search/KSLC"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/KSLC"
+  },
+  "KSFO": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/KSFO"
+  },
+  "KLAX": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "KLAX - Los Angeles Airport",
+        "developer": "FeelThere",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 3.06,
+        "reviews": 90,
+        "url": "https://www.fsaddoncompare.com/search/KLAX"
+      },
+      {
+        "name": "Los Angeles (KLAX)",
+        "developer": "iniBuilds",
+        "platforms": [
+          "MSFS2024",
+          "MSFS2020"
+        ],
+        "rating": 4.3,
+        "reviews": 186,
+        "url": "https://www.fsaddoncompare.com/search/KLAX"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/KLAX"
+  },
+  "PHNL": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "Honolulu (PHNL)",
+        "developer": "iniBuilds",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 3.74,
+        "reviews": 68,
+        "url": "https://www.fsaddoncompare.com/search/PHNL"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/PHNL"
+  },
+  "PHKO": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/PHKO"
+  },
+  "PMDY": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/PMDY"
+  },
+  "PWAK": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/PWAK"
+  },
+  "PKMJ": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/PKMJ"
+  },
+  "PTPN": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/PTPN"
+  },
+  "PTKK": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/PTKK"
+  },
+  "PGUM": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/PGUM"
+  },
+  "PGSN": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/PGSN"
+  },
+  "PTRO": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/PTRO"
+  },
+  "RPMD": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "Davao International Airport",
+        "developer": "Bdoaviation",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 3.0,
+        "reviews": 7,
+        "url": "https://www.fsaddoncompare.com/search/RPMD"
+      },
+      {
+        "name": "Davao (RPMD)",
+        "developer": "Airwil Sceneries",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.33,
+        "reviews": 3,
+        "url": "https://www.fsaddoncompare.com/search/RPMD"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/RPMD"
+  },
+  "WAMM": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/WAMM"
+  },
+  "WABB": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/WABB"
+  },
+  "WAJJ": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "WAJJ Sentani Jayapura Airport",
+        "developer": "BinerSim",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.8,
+        "reviews": 25,
+        "url": "https://www.fsaddoncompare.com/search/WAJJ"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/WAJJ"
+  },
+  "AYPY": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/AYPY"
+  },
+  "AGGH": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/AGGH"
+  },
+  "ANYN": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/ANYN"
+  },
+  "NGTA": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/NGTA"
+  },
+  "NFFN": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/NFFN"
+  },
+  "NFSW": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/NFSW"
+  },
+  "NFNR": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/NFNR"
+  },
+  "NGFU": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/NGFU"
+  },
+  "NLWW": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/NLWW"
+  },
+  "NSFA": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "NSFA - Faleolo International Airport, Samoa (Pacific Islands) - 2020 & 2024",
+        "developer": "KiwiFlightSim",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.65,
+        "reviews": 6,
+        "url": "https://www.fsaddoncompare.com/search/NSFA"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/NSFA"
+  },
+  "NSTU": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/NSTU"
+  },
+  "NIUE": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/NIUE"
+  },
+  "NCRG": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/NCRG"
+  },
+  "NTAA": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "NTAA Tahiti Faa'a Intl Airport",
+        "developer": "Mex High Flight",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 2.63,
+        "reviews": 8,
+        "url": "https://www.fsaddoncompare.com/search/NTAA"
+      },
+      {
+        "name": "NTAA Tahiti Faa'a International Airport",
+        "developer": "FLYNDRIVE4D",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.23,
+        "reviews": 8,
+        "url": "https://www.fsaddoncompare.com/search/NTAA"
+      },
+      {
+        "name": "NTAA tahiti faaa",
+        "developer": "FLYNDRIVE4D",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 5.0,
+        "reviews": 1,
+        "url": "https://www.fsaddoncompare.com/search/NTAA"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/NTAA"
+  },
+  "NFTF": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/NFTF"
+  },
+  "NVVV": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/NVVV"
+  },
+  "NWWW": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/NWWW"
+  },
+  "YSNF": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "YSNF NorfolkIsland Airport",
+        "developer": "Propair Flight",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.0,
+        "reviews": 1,
+        "url": "https://www.fsaddoncompare.com/search/YSNF"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/YSNF"
+  },
+  "NZAA": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "NZAA - Auckland Intl.",
+        "developer": "Flightbeam",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.67,
+        "reviews": 219,
+        "url": "https://www.fsaddoncompare.com/search/NZAA"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/NZAA"
+  },
+  "NZRO": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/NZRO"
+  },
+  "NZWN": {
+    "readable": true,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/NZWN"
+  },
+  "NZQN": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "Queenstown (NZQN)",
+        "developer": "iniBuilds",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 3.91,
+        "reviews": 84,
+        "url": "https://www.fsaddoncompare.com/search/NZQN"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/NZQN"
+  },
+  "NZMF": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "NZMF Milford Sound Region Airport",
+        "developer": "NZA Simulations",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.8,
+        "reviews": 35,
+        "url": "https://www.fsaddoncompare.com/search/NZMF"
+      },
+      {
+        "name": "NZMF – Milford Sound Region Expansion",
+        "developer": "NZA Simulations",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": null,
+        "reviews": null,
+        "url": "https://www.fsaddoncompare.com/search/NZMF"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/NZMF"
+  },
+  "NZCH": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "NZCH Christchurch International Airport",
+        "developer": "NZA Simulations",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.6,
+        "reviews": 41,
+        "url": "https://www.fsaddoncompare.com/search/NZCH"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/NZCH"
+  },
+  "YMHB": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/YMHB"
+  },
+  "YMML": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/YMML"
+  },
+  "YSSY": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "YSSY Sydney Kingsford Smith Airport",
+        "developer": "FlyTampa",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.13,
+        "reviews": 197,
+        "url": "https://www.fsaddoncompare.com/search/YSSY"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/YSSY"
+  },
+  "YBCG": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/YBCG"
+  },
+  "YBBN": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "YBBN Brisbane International Airport",
+        "developer": "Orbx",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.1,
+        "reviews": 103,
+        "url": "https://www.fsaddoncompare.com/search/YBBN"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/YBBN"
+  },
+  "YBRK": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/YBRK"
+  },
+  "YBCS": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/YBCS"
+  },
+  "YBTL": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/YBTL"
+  },
+  "YBMA": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/YBMA"
+  },
+  "YBAS": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/YBAS"
+  },
+  "YAYE": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/YAYE"
+  },
+  "YPKG": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/YPKG"
+  },
+  "YPPH": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "Perth Intl YPPH",
+        "developer": "Mfsg",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": null,
+        "reviews": null,
+        "url": "https://www.fsaddoncompare.com/search/YPPH"
+      },
+      {
+        "name": "YPPH - Perth International",
+        "developer": "Axonos",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 3.8,
+        "reviews": 99,
+        "url": "https://www.fsaddoncompare.com/search/YPPH"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/YPPH"
+  },
+  "YPLM": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/YPLM"
+  },
+  "YBRM": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/YBRM"
+  },
+  "YPDN": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "Darwin Intl YPDN",
+        "developer": "Mfsg",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": null,
+        "reviews": null,
+        "url": "https://www.fsaddoncompare.com/search/YPDN"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/YPDN"
+  },
+  "WPDL": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/WPDL"
+  },
+  "WADD": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/WADD"
+  },
+  "WAHQ": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/WAHQ"
+  },
+  "WIII": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "WIII Soekarno Hatta International Airport",
+        "developer": "BinerSim",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.6,
+        "reviews": 69,
+        "url": "https://www.fsaddoncompare.com/search/WIII"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/WIII"
+  },
+  "WIOO": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/WIOO"
+  },
+  "WBSB": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/WBSB"
+  },
+  "WBKK": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "Kota Kinabalu Intl WBKK",
+        "developer": "Mfsg",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": null,
+        "reviews": null,
+        "url": "https://www.fsaddoncompare.com/search/WBKK"
+      },
+      {
+        "name": "WBKK - Kota Kinabalu International Airport (KKIA)",
+        "developer": "The Secret Studio",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.53,
+        "reviews": 15,
+        "url": "https://www.fsaddoncompare.com/search/WBKK"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/WBKK"
+  },
+  "WBGB": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/WBGB"
+  },
+  "WMKK": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "WMKK - Kuala Lumpur International Airport (KLIA)",
+        "developer": "The Secret Studio",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.66,
+        "reviews": 55,
+        "url": "https://www.fsaddoncompare.com/search/WMKK"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/WMKK"
+  },
+  "WSSS": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "WSSS Singapore",
+        "developer": "ImagineSim",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.0,
+        "reviews": 8,
+        "url": "https://www.fsaddoncompare.com/search/WSSS"
+      },
+      {
+        "name": "WSSS - Singapore Changi Airport",
+        "developer": "TaiModels/Double T",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.13,
+        "reviews": 15,
+        "url": "https://www.fsaddoncompare.com/search/WSSS"
+      },
+      {
+        "name": "WSSS - Singapore Changi Airport",
+        "developer": "Cloudsurf Asia Simulations",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.49,
+        "reviews": 264,
+        "url": "https://www.fsaddoncompare.com/search/WSSS"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/WSSS"
+  },
+  "YPXM": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/YPXM"
+  },
+  "YPCC": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/YPCC"
+  },
+  "WIEE": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/WIEE"
+  },
+  "WIMM": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "WIMM Kualanamu International Airport",
+        "developer": "South Oak Co",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 5.0,
+        "reviews": 9,
+        "url": "https://www.fsaddoncompare.com/search/WIMM"
+      },
+      {
+        "name": "Kualanamu Int'l Airport",
+        "developer": "Worldsky Studios",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": null,
+        "reviews": null,
+        "url": "https://www.fsaddoncompare.com/search/WIMM"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/WIMM"
+  },
+  "VTSP": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "VTSP Phuket International Airport",
+        "developer": "Orbx",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.6,
+        "reviews": 24,
+        "url": "https://www.fsaddoncompare.com/search/VTSP"
+      },
+      {
+        "name": "Phuket International Airport",
+        "developer": "Bdoaviation",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.67,
+        "reviews": 9,
+        "url": "https://www.fsaddoncompare.com/search/VTSP"
+      },
+      {
+        "name": "VTSP/HKT - Phuket International Thailand",
+        "developer": "SiamFlight",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.92,
+        "reviews": 15,
+        "url": "https://www.fsaddoncompare.com/search/VTSP"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/VTSP"
+  },
+  "VTBS": {
+    "readable": true,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/VTBS"
+  },
+  "VDSV": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/VDSV"
+  },
+  "VVTS": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/VVTS"
+  },
+  "VVCR": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/VVCR"
+  },
+  "VVDN": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/VVDN"
+  },
+  "VVNB": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/VVNB"
+  },
+  "VLLB": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/VLLB"
+  },
+  "VYYY": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/VYYY"
+  },
+  "VGHS": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "VGHS - Dhaka Airport",
+        "developer": "Final Approach Simulations",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": null,
+        "reviews": null,
+        "url": "https://www.fsaddoncompare.com/search/VGHS"
+      },
+      {
+        "name": "VGHS Hazrat Shahjalal International Airport",
+        "developer": "FAD-STUDIOS",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 5.0,
+        "reviews": 3,
+        "url": "https://www.fsaddoncompare.com/search/VGHS"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/VGHS"
+  },
+  "VQPR": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/VQPR"
+  },
+  "VNKT": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/VNKT"
+  },
+  "VEBN": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/VEBN"
+  },
+  "VIDP": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "VIDP – Delhi Indira Gandhi Intl. Airport",
+        "developer": "FeelThere",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 3.08,
+        "reviews": 20,
+        "url": "https://www.fsaddoncompare.com/search/VIDP"
+      },
+      {
+        "name": "VIDP - Indira Gandhi Intl. Airport - New Delhi",
+        "developer": "DhruvSim",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.81,
+        "reviews": 15,
+        "url": "https://www.fsaddoncompare.com/search/VIDP"
+      },
+      {
+        "name": "VIDP Delhi international Airport",
+        "developer": "Cascadia Approach",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 2.6,
+        "reviews": 5,
+        "url": "https://www.fsaddoncompare.com/search/VIDP"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/VIDP"
+  },
+  "VIAR": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/VIAR"
+  },
+  "OPIS": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/OPIS"
+  },
+  "OAKB": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/OAKB"
+  },
+  "UTDD": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "Dushanbe Int Airport (UTDD)",
+        "developer": "Middle Asia Developers",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": null,
+        "reviews": null,
+        "url": "https://www.fsaddoncompare.com/search/UTDD"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/UTDD"
+  },
+  "UCFM": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/UCFM"
+  },
+  "UAAA": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "UAAA - Almaty International Airport",
+        "developer": "VueloSimple",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.54,
+        "reviews": 7,
+        "url": "https://www.fsaddoncompare.com/search/UAAA"
+      },
+      {
+        "name": "Almaty Int Airport (UAAA)",
+        "developer": "Middle Asia Developers",
+        "platforms": [
+          "MSFS2024",
+          "MSFS2020"
+        ],
+        "rating": 4.5,
+        "reviews": 2,
+        "url": "https://www.fsaddoncompare.com/search/UAAA"
+      },
+      {
+        "name": "UAAA Almaty Intl",
+        "developer": "Mfsg",
+        "platforms": [
+          "MSFS2024",
+          "MSFS2020"
+        ],
+        "rating": null,
+        "reviews": null,
+        "url": "https://www.fsaddoncompare.com/search/UAAA"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/UAAA"
+  },
+  "UASK": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/UASK"
+  },
+  "ZMKD": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/ZMKD"
+  },
+  "ZMCK": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/ZMCK"
+  },
+  "UIII": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/UIII"
+  },
+  "UIUU": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/UIUU"
+  },
+  "ZBHH": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/ZBHH"
+  },
+  "ZBAA": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "ZBAA - Beijing Capital",
+        "developer": "WF Scenery Studio",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.55,
+        "reviews": 93,
+        "url": "https://www.fsaddoncompare.com/search/ZBAA"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/ZBAA"
+  },
+  "ZYTL": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/ZYTL"
+  },
+  "ZKPY": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/ZKPY"
+  },
+  "RKSI": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/RKSI"
+  },
+  "RKPC": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "Jeju (RKPC)",
+        "developer": "DominicDesignTeam",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 1.75,
+        "reviews": 50,
+        "url": "https://www.fsaddoncompare.com/search/RKPC"
+      },
+      {
+        "name": "South Korea Jeju RKPC",
+        "developer": "SamScene3D",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.56,
+        "reviews": 38,
+        "url": "https://www.fsaddoncompare.com/search/RKPC"
+      },
+      {
+        "name": "RKPC JEJU INTERNATIONAL AIRPORT",
+        "developer": "Fly2High",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.2,
+        "reviews": 17,
+        "url": "https://www.fsaddoncompare.com/search/RKPC"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/RKPC"
+  },
+  "RJFR": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/RJFR"
+  },
+  "RJOO": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/RJOO"
+  },
+  "RJTT": {
+    "readable": true,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/RJTT"
+  },
+  "RJCK": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/RJCK"
+  },
+  "RJFU": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/RJFU"
+  },
+  "RORS": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/RORS"
+  },
+  "RCTP": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "Taiwan Taoyuan (RCTP)",
+        "developer": "TaiModels/Double T",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 3.38,
+        "reviews": 8,
+        "url": "https://www.fsaddoncompare.com/search/RCTP"
+      },
+      {
+        "name": "RCTP - Taiwan Taoyuan Airport",
+        "developer": "ACO Design Studio",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.56,
+        "reviews": 106,
+        "url": "https://www.fsaddoncompare.com/search/RCTP"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/RCTP"
+  },
+  "VHHH": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "VHHH - Hong Kong International",
+        "developer": "WF Scenery Studio",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.69,
+        "reviews": 200,
+        "url": "https://www.fsaddoncompare.com/search/VHHH"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/VHHH"
+  },
+  "VMMC": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/VMMC"
+  },
+  "RPLL": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "RPLL - Ninoy Aquino Airport",
+        "developer": "Cloudsurf Asia Simulations",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.59,
+        "reviews": 112,
+        "url": "https://www.fsaddoncompare.com/search/RPLL"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/RPLL"
+  },
+  "RPVP": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/RPVP"
+  },
+  "WIPP": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/WIPP"
+  },
+  "VOPB": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/VOPB"
+  },
+  "VOMM": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/VOMM"
+  },
+  "VOBL": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/VOBL"
+  },
+  "VCBI": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "Bandaranaike VCBI",
+        "developer": "Mfsg",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": null,
+        "reviews": null,
+        "url": "https://www.fsaddoncompare.com/search/VCBI"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/VCBI"
+  },
+  "VRMM": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "Velana International Airport [VRMM]",
+        "developer": "S-Design",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 2.6,
+        "reviews": 5,
+        "url": "https://www.fsaddoncompare.com/search/VRMM"
+      },
+      {
+        "name": "Maldives - VRMM & Malé Atolls",
+        "developer": "FSDG",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 3.8,
+        "reviews": 5,
+        "url": "https://www.fsaddoncompare.com/search/VRMM"
+      },
+      {
+        "name": "VRMM Maldives Velana International Airport",
+        "developer": "FSDG",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.23,
+        "reviews": 8,
+        "url": "https://www.fsaddoncompare.com/search/VRMM"
+      },
+      {
+        "name": "Maldives VRMM The Male Atolls Big Bundle",
+        "developer": "FSDG",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.3,
+        "reviews": 18,
+        "url": "https://www.fsaddoncompare.com/search/VRMM"
+      },
+      {
+        "name": "VRMM - Velana Airport Maldives",
+        "developer": "VueloSimple",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.09,
+        "reviews": 26,
+        "url": "https://www.fsaddoncompare.com/search/VRMM"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/VRMM"
+  },
+  "VOCI": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/VOCI"
+  },
+  "VOGO": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/VOGO"
+  },
+  "VABB": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "VABB - Mumbai International",
+        "developer": "MSK Productions",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.61,
+        "reviews": 41,
+        "url": "https://www.fsaddoncompare.com/search/VABB"
+      },
+      {
+        "name": "VABB Mumbai International Airport",
+        "developer": "South Oak Co",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 3.4,
+        "reviews": 5,
+        "url": "https://www.fsaddoncompare.com/search/VABB"
+      },
+      {
+        "name": "VABB - Mumbai International Airport",
+        "developer": "Project MAX",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 3.17,
+        "reviews": 12,
+        "url": "https://www.fsaddoncompare.com/search/VABB"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/VABB"
+  },
+  "VAAH": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/VAAH"
+  },
+  "OPKC": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/OPKC"
+  },
+  "OOMS": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "Muscat (OOMS)",
+        "developer": "TaiModels/Double T",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.6,
+        "reviews": 14,
+        "url": "https://www.fsaddoncompare.com/search/OOMS"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/OOMS"
+  },
+  "OMDB": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "OMDB - Dubai International Airport",
+        "developer": "FeelThere",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 3.5,
+        "reviews": 54,
+        "url": "https://www.fsaddoncompare.com/search/OMDB"
+      },
+      {
+        "name": "Dubai (OMDB)",
+        "developer": "iniBuilds",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 3.71,
+        "reviews": 119,
+        "url": "https://www.fsaddoncompare.com/search/OMDB"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/OMDB"
+  },
+  "OBBI": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "Bahrain Intl OBBI",
+        "developer": "Mfsg",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 3.0,
+        "reviews": 1,
+        "url": "https://www.fsaddoncompare.com/search/OBBI"
+      },
+      {
+        "name": "OBBI Bahrain Bundle",
+        "developer": "Tuwaiq Designs",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": null,
+        "reviews": null,
+        "url": "https://www.fsaddoncompare.com/search/OBBI"
+      },
+      {
+        "name": "Bahrain Airport V2",
+        "developer": "Tuwaiq Designs",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": null,
+        "reviews": null,
+        "url": "https://www.fsaddoncompare.com/search/OBBI"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/OBBI"
+  },
+  "OTHH": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "Doha-Hamad (OTHH)",
+        "developer": "MXI Design",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 3.72,
+        "reviews": 80,
+        "url": "https://www.fsaddoncompare.com/search/OTHH"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/OTHH"
+  },
+  "OKKK": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/OKKK"
+  },
+  "OERK": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "OERK - Riyadh Saudi Arabia",
+        "developer": "Azrsim",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 3.73,
+        "reviews": 36,
+        "url": "https://www.fsaddoncompare.com/search/OERK"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/OERK"
+  },
+  "OEMA": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "OEMA Prince Mohammed Intl Airport",
+        "developer": "Hawkskullz Simulations",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 3.88,
+        "reviews": 8,
+        "url": "https://www.fsaddoncompare.com/search/OEMA"
+      },
+      {
+        "name": "Prince Muhmmad Airport V2",
+        "developer": "Tuwaiq Designs",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 5.0,
+        "reviews": 1,
+        "url": "https://www.fsaddoncompare.com/search/OEMA"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/OEMA"
+  },
+  "OJAI": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/OJAI"
+  },
+  "LLBG": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/LLBG"
+  },
+  "LLJR": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/LLJR"
+  },
+  "OLBA": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "Beirut Intl OLBA",
+        "developer": "Mfsg",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.0,
+        "reviews": 3,
+        "url": "https://www.fsaddoncompare.com/search/OLBA"
+      },
+      {
+        "name": "Beirut Rafic Hariri Airport",
+        "developer": "Simsoft",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 3.5,
+        "reviews": 4,
+        "url": "https://www.fsaddoncompare.com/search/OLBA"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/OLBA"
+  },
+  "OSDI": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/OSDI"
+  },
+  "ORBI": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "ORBI - Baghdad Intl. Airport",
+        "developer": "Azrsim",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.31,
+        "reviews": 9,
+        "url": "https://www.fsaddoncompare.com/search/ORBI"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/ORBI"
+  },
+  "OIIE": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "OIIE International Airport",
+        "developer": "HomaSim",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.13,
+        "reviews": 65,
+        "url": "https://www.fsaddoncompare.com/search/OIIE"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/OIIE"
+  },
+  "UTAK": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/UTAK"
+  },
+  "UTAA": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/UTAA"
+  },
+  "UTTT": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "Tashkent Int Airport UTTT",
+        "developer": "Middle Asia Developers",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 2.0,
+        "reviews": 1,
+        "url": "https://www.fsaddoncompare.com/search/UTTT"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/UTTT"
+  },
+  "UBBB": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "UBBB Baku Bundle Azerbaijan",
+        "developer": "Azrsim",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 5.0,
+        "reviews": 2,
+        "url": "https://www.fsaddoncompare.com/search/UBBB"
+      },
+      {
+        "name": "UBBB - GYD - Baku Azerbaijan",
+        "developer": "Azrsim",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 5.0,
+        "reviews": 1,
+        "url": "https://www.fsaddoncompare.com/search/UBBB"
+      },
+      {
+        "name": "Baku Int Airport (UBBB)  New",
+        "developer": "Middle Asia Developers",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": null,
+        "reviews": null,
+        "url": "https://www.fsaddoncompare.com/search/UBBB"
+      },
+      {
+        "name": "UBBB Haydar Aliyev Airport",
+        "developer": "Ac Scenery",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 5.0,
+        "reviews": 1,
+        "url": "https://www.fsaddoncompare.com/search/UBBB"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/UBBB"
+  },
+  "UDYZ": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/UDYZ"
+  },
+  "UGTB": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "UGTB Tbilisi International Airport",
+        "developer": "AmSim",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.3,
+        "reviews": 41,
+        "url": "https://www.fsaddoncompare.com/search/UGTB"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/UGTB"
+  },
+  "LTCG": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/LTCG"
+  },
+  "LTAI": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "LTAI Antalya Airport",
+        "developer": "JustSim",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.21,
+        "reviews": 104,
+        "url": "https://www.fsaddoncompare.com/search/LTAI"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/LTAI"
+  },
+  "LCLK": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "Larnaca (LCLK)",
+        "developer": "iniBuilds",
+        "platforms": [
+          "MSFS2024"
+        ],
+        "rating": null,
+        "reviews": null,
+        "url": "https://www.fsaddoncompare.com/search/LCLK"
+      },
+      {
+        "name": "LCLK Larnaca International Airport",
+        "developer": "JustSim",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.18,
+        "reviews": 51,
+        "url": "https://www.fsaddoncompare.com/search/LCLK"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/LCLK"
+  },
+  "HECA": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "HECA - Cairo International Airport",
+        "developer": "TAIMODELS",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 3.89,
+        "reviews": 24,
+        "url": "https://www.fsaddoncompare.com/search/HECA"
+      },
+      {
+        "name": "Cairo (HECA)",
+        "developer": "Sim Design Group",
+        "platforms": [
+          "MSFS2024",
+          "MSFS2020"
+        ],
+        "rating": null,
+        "reviews": null,
+        "url": "https://www.fsaddoncompare.com/search/HECA"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/HECA"
+  },
+  "HESN": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/HESN"
+  },
+  "HSSK": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/HSSK"
+  },
+  "HHAS": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/HHAS"
+  },
+  "HAAB": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "HAAB - Addis Ababa Bole International Airport",
+        "developer": "Barelli MSFS Addons",
+        "platforms": [
+          "MSFS2024",
+          "MSFS2020"
+        ],
+        "rating": 4.0,
+        "reviews": 3,
+        "url": "https://www.fsaddoncompare.com/search/HAAB"
+      },
+      {
+        "name": "HAAB Addis Ababa Airport",
+        "developer": "South Oak Co",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 3.0,
+        "reviews": 9,
+        "url": "https://www.fsaddoncompare.com/search/HAAB"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/HAAB"
+  },
+  "HDAM": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/HDAM"
+  },
+  "HCMH": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/HCMH"
+  },
+  "OYSQ": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/OYSQ"
+  },
+  "OOSA": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/OOSA"
+  },
+  "HALA": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/HALA"
+  },
+  "HKJK": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "Nairobi Jomo Kenyatta (HKJK)",
+        "developer": "iniBuilds",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.47,
+        "reviews": 19,
+        "url": "https://www.fsaddoncompare.com/search/HKJK"
+      },
+      {
+        "name": "HKJK Nairobi Jomo Kenyatta International Airport",
+        "developer": "FSDG",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.0,
+        "reviews": 24,
+        "url": "https://www.fsaddoncompare.com/search/HKJK"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/HKJK"
+  },
+  "HUEN": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/HUEN"
+  },
+  "HJJJ": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/HJJJ"
+  },
+  "HRYR": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/HRYR"
+  },
+  "HBBA": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/HBBA"
+  },
+  "HTKJ": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/HTKJ"
+  },
+  "HTZA": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "Zanzibar Abeid Amani Karume International Airport - HTZA",
+        "developer": "Barelli MSFS Addons",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.0,
+        "reviews": 1,
+        "url": "https://www.fsaddoncompare.com/search/HTZA"
+      },
+      {
+        "name": "HTZA Abeid Amani Karume Airport",
+        "developer": "South Oak Co",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.2,
+        "reviews": 5,
+        "url": "https://www.fsaddoncompare.com/search/HTZA"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/HTZA"
+  },
+  "HKMO": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "HKMO Moi International Airport",
+        "developer": "MSFScenerybuilders",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 3.31,
+        "reviews": 9,
+        "url": "https://www.fsaddoncompare.com/search/HKMO"
+      },
+      {
+        "name": "HKMO Moi International Airport Mombasa",
+        "developer": "FSDG",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": null,
+        "reviews": null,
+        "url": "https://www.fsaddoncompare.com/search/HKMO"
+      },
+      {
+        "name": "Mombasa International Airport",
+        "developer": "African Skies",
+        "platforms": [
+          "MSFS2024",
+          "MSFS2020"
+        ],
+        "rating": 4.0,
+        "reviews": 4,
+        "url": "https://www.fsaddoncompare.com/search/HKMO"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/HKMO"
+  },
+  "FSIA": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/FSIA"
+  },
+  "FJDG": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/FJDG"
+  },
+  "FIMP": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/FIMP"
+  },
+  "FMEE": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/FMEE"
+  },
+  "FMMI": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/FMMI"
+  },
+  "FMNN": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/FMNN"
+  },
+  "FMNM": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/FMNM"
+  },
+  "FMMO": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/FMMO"
+  },
+  "FMZJ": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/FMZJ"
+  },
+  "FMCZ": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/FMCZ"
+  },
+  "FMCH": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/FMCH"
+  },
+  "FQPB": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/FQPB"
+  },
+  "FWKI": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/FWKI"
+  },
+  "FQBR": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/FQBR"
+  },
+  "FQMA": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "FQMA Maputo International Airport",
+        "developer": "MSFScenerybuilders",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 3.4,
+        "reviews": 7,
+        "url": "https://www.fsaddoncompare.com/search/FQMA"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/FQMA"
+  },
+  "FDSK": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/FDSK"
+  },
+  "FALE": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "FALE King Shaka International Airport",
+        "developer": "NMG Simulations",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 5.0,
+        "reviews": 6,
+        "url": "https://www.fsaddoncompare.com/search/FALE"
+      },
+      {
+        "name": "King Shaka (FALE)",
+        "developer": "Gaffer Simulations",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.18,
+        "reviews": 88,
+        "url": "https://www.fsaddoncompare.com/search/FALE"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/FALE"
+  },
+  "FXMM": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/FXMM"
+  },
+  "FAOR": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/FAOR"
+  },
+  "FAKM": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "FAKM Kimberley Airport",
+        "developer": "NMG Simulations",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.8,
+        "reviews": 5,
+        "url": "https://www.fsaddoncompare.com/search/FAKM"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/FAKM"
+  },
+  "FACT": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "FACT Cape Town International Airport",
+        "developer": "NMG Simulations",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.4,
+        "reviews": 10,
+        "url": "https://www.fsaddoncompare.com/search/FACT"
+      },
+      {
+        "name": "Cape Town (FACT)",
+        "developer": "iniBuilds",
+        "platforms": [
+          "MSFS2024"
+        ],
+        "rating": null,
+        "reviews": null,
+        "url": "https://www.fsaddoncompare.com/search/FACT"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/FACT"
+  },
+  "FYLZ": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/FYLZ"
+  },
+  "FYWH": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "FYWH Windhoek Hosea Kutako International Airport",
+        "developer": "MSFScenerybuilders",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": null,
+        "reviews": null,
+        "url": "https://www.fsaddoncompare.com/search/FYWH"
+      },
+      {
+        "name": "FYWH Hosea Kutako International Airport",
+        "developer": "FSDG",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.4,
+        "reviews": 16,
+        "url": "https://www.fsaddoncompare.com/search/FYWH"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/FYWH"
+  },
+  "FBKE": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/FBKE"
+  },
+  "FVFA": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/FVFA"
+  },
+  "FVHA": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "FVHA Harare International Airport",
+        "developer": "MSFScenerybuilders",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 3.4,
+        "reviews": 17,
+        "url": "https://www.fsaddoncompare.com/search/FVHA"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/FVHA"
+  },
+  "FLKK": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/FLKK"
+  },
+  "FZQA": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/FZQA"
+  },
+  "FNME": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/FNME"
+  },
+  "FNUB": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/FNUB"
+  },
+  "FNLU": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/FNLU"
+  },
+  "FHAW": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/FHAW"
+  },
+  "FPST": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/FPST"
+  },
+  "FOOL": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/FOOL"
+  },
+  "FZAA": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "FZAA N'djili international airport",
+        "developer": "MSFScenerybuilders",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.5,
+        "reviews": 2,
+        "url": "https://www.fsaddoncompare.com/search/FZAA"
+      },
+      {
+        "name": "FZAA Kinshasa International Airport",
+        "developer": "FSDG",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 5.0,
+        "reviews": 1,
+        "url": "https://www.fsaddoncompare.com/search/FZAA"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/FZAA"
+  },
+  "FCBB": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/FCBB"
+  },
+  "FGSL": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/FGSL"
+  },
+  "FKKD": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/FKKD"
+  },
+  "FEFF": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/FEFF"
+  },
+  "FTTJ": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/FTTJ"
+  },
+  "DNSO": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/DNSO"
+  },
+  "DRRN": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/DRRN"
+  },
+  "DNMM": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "Lagos Murtala Muhammed Airport",
+        "developer": "African Skies",
+        "platforms": [
+          "MSFS2024",
+          "MSFS2020"
+        ],
+        "rating": 3.86,
+        "reviews": 7,
+        "url": "https://www.fsaddoncompare.com/search/DNMM"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/DNMM"
+  },
+  "DBBB": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/DBBB"
+  },
+  "DXXX": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/DXXX"
+  },
+  "DGAA": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "DGAA Kotoka International Airport",
+        "developer": "FSDG",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.57,
+        "reviews": 18,
+        "url": "https://www.fsaddoncompare.com/search/DGAA"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/DGAA"
+  },
+  "DFFD": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/DFFD"
+  },
+  "GABS": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/GABS"
+  },
+  "DIAP": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "DIAP Airport",
+        "developer": "Aciv",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 5.0,
+        "reviews": 2,
+        "url": "https://www.fsaddoncompare.com/search/DIAP"
+      },
+      {
+        "name": "DIAP Abidjan Felix International Airport",
+        "developer": "MSFScenerybuilders",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 3.47,
+        "reviews": 16,
+        "url": "https://www.fsaddoncompare.com/search/DIAP"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/DIAP"
+  },
+  "GLRB": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/GLRB"
+  },
+  "GFLL": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/GFLL"
+  },
+  "GUCY": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/GUCY"
+  },
+  "GGOV": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/GGOV"
+  },
+  "GBYD": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/GBYD"
+  },
+  "GOBD": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "GOBD Blaise Diagne International Airport",
+        "developer": "Devinci",
+        "platforms": [
+          "MSFS2024",
+          "MSFS2020"
+        ],
+        "rating": 4.66,
+        "reviews": 35,
+        "url": "https://www.fsaddoncompare.com/search/GOBD"
+      },
+      {
+        "name": "Dakar",
+        "developer": "FSDG",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 3.98,
+        "reviews": 9,
+        "url": "https://www.fsaddoncompare.com/search/GOBD"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/GOBD"
+  },
+  "GVAC": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "GVAC Amilcar Cabral International Airport",
+        "developer": "RmStudios",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.6,
+        "reviews": 40,
+        "url": "https://www.fsaddoncompare.com/search/GVAC"
+      },
+      {
+        "name": "GVAC Cabo Verde Sal",
+        "developer": "FSDG",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": null,
+        "reviews": null,
+        "url": "https://www.fsaddoncompare.com/search/GVAC"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/GVAC"
+  },
+  "GQNO": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/GQNO"
+  },
+  "GMMH": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/GMMH"
+  },
+  "GCLP": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "GCLP - Gran Canaria Airport",
+        "developer": "sim-wings",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.68,
+        "reviews": 63,
+        "url": "https://www.fsaddoncompare.com/search/GCLP"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/GCLP"
+  },
+  "LPMA": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "LPMA - Madeira Airport",
+        "developer": "Atelic",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.11,
+        "reviews": 59,
+        "url": "https://www.fsaddoncompare.com/search/LPMA"
+      },
+      {
+        "name": "LPMA MADEIRA C. Ronaldo International Airport",
+        "developer": "AmSim",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 2.89,
+        "reviews": 144,
+        "url": "https://www.fsaddoncompare.com/search/LPMA"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/LPMA"
+  },
+  "LPPT": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "LPPT - Lisbon, Humberto Delgado Airport",
+        "developer": "FeelThere",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 2.9,
+        "reviews": 11,
+        "url": "https://www.fsaddoncompare.com/search/LPPT"
+      },
+      {
+        "name": "LPPT - Lisbon Airport v2",
+        "developer": "MK Studios",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.5,
+        "reviews": 55,
+        "url": "https://www.fsaddoncompare.com/search/LPPT"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/LPPT"
+  },
+  "LPFR": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "LPFR - Faro International Airport",
+        "developer": "RDPresets",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 3.28,
+        "reviews": 34,
+        "url": "https://www.fsaddoncompare.com/search/LPFR"
+      },
+      {
+        "name": "Faro Airport",
+        "developer": "Tropicalsim",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 3.7,
+        "reviews": 10,
+        "url": "https://www.fsaddoncompare.com/search/LPFR"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/LPFR"
+  },
+  "LXGB": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "LXGB - Gibraltar",
+        "developer": "RDPresets",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 2.95,
+        "reviews": 42,
+        "url": "https://www.fsaddoncompare.com/search/LXGB"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/LXGB"
+  },
+  "GMMN": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "GMMN - Casablanca Airport",
+        "developer": "Prealsoft",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.23,
+        "reviews": 70,
+        "url": "https://www.fsaddoncompare.com/search/GMMN"
+      },
+      {
+        "name": "Casablanca  New",
+        "developer": "FSDG",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": null,
+        "reviews": null,
+        "url": "https://www.fsaddoncompare.com/search/GMMN"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/GMMN"
+  },
+  "DAAG": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/DAAG"
+  },
+  "HLLM": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/HLLM"
+  },
+  "DTTJ": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "Djerba",
+        "developer": "FSDG",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.7,
+        "reviews": 3,
+        "url": "https://www.fsaddoncompare.com/search/DTTJ"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/DTTJ"
+  },
+  "LMML": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/LMML"
+  },
+  "LICJ": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "LICJ - Palermo Airport",
+        "developer": "JetStream",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.4,
+        "reviews": 32,
+        "url": "https://www.fsaddoncompare.com/search/LICJ"
+      },
+      {
+        "name": "LICJ Palermo Airport",
+        "developer": "AmSim",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.4,
+        "reviews": 64,
+        "url": "https://www.fsaddoncompare.com/search/LICJ"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/LICJ"
+  },
+  "LIRF": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "LIRF - Rome Fiumicino v2",
+        "developer": "MK Studios",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.86,
+        "reviews": 58,
+        "url": "https://www.fsaddoncompare.com/search/LIRF"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/LIRF"
+  },
+  "LIKD": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/LIKD"
+  },
+  "VA-0001": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/VA-0001"
+  },
+  "LFMN": {
+    "readable": true,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/LFMN"
+  },
+  "LNMC": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/LNMC"
+  },
+  "LEPA": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "LEPA Palma de Mallorca Airport",
+        "developer": "jspco",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.6,
+        "reviews": 56,
+        "url": "https://www.fsaddoncompare.com/search/LEPA"
+      },
+      {
+        "name": "LEPA Palma de Mallorca Airport",
+        "developer": "JustSim",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.19,
+        "reviews": 210,
+        "url": "https://www.fsaddoncompare.com/search/LEPA"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/LEPA"
+  },
+  "LEBL": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "LEBL - Barcelona Intl.",
+        "developer": "sim-wings",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.44,
+        "reviews": 28,
+        "url": "https://www.fsaddoncompare.com/search/LEBL"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/LEBL"
+  },
+  "AD-ALV": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/AD-ALV"
+  },
+  "LSGG": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "LSGG - Geneva Airport",
+        "developer": "JetStream",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.62,
+        "reviews": 109,
+        "url": "https://www.fsaddoncompare.com/search/LSGG"
+      },
+      {
+        "name": "LSGG Geneva Airport",
+        "developer": "RDPresets",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 3.0,
+        "reviews": 21,
+        "url": "https://www.fsaddoncompare.com/search/LSGG"
+      },
+      {
+        "name": "LSGG Geneva Airport",
+        "developer": "Redwing Sim",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.04,
+        "reviews": 168,
+        "url": "https://www.fsaddoncompare.com/search/LSGG"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/LSGG"
+  },
+  "LSZH": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "LSZH - Zurich Airport",
+        "developer": "MK Studios",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.59,
+        "reviews": 76,
+        "url": "https://www.fsaddoncompare.com/search/LSZH"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/LSZH"
+  },
+  "LSXB": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/LSXB"
+  },
+  "LOWI": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "LOWI Innsbruck Airport",
+        "developer": "JustSim",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.03,
+        "reviews": 36,
+        "url": "https://www.fsaddoncompare.com/search/LOWI"
+      },
+      {
+        "name": "LOWI Innsbruck Airport",
+        "developer": "Orbx",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.4,
+        "reviews": 953,
+        "url": "https://www.fsaddoncompare.com/search/LOWI"
+      },
+      {
+        "name": "Innsbruck (LOWI)",
+        "developer": "iniBuilds",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 3.22,
+        "reviews": 28,
+        "url": "https://www.fsaddoncompare.com/search/LOWI"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/LOWI"
+  },
+  "LOWS": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "LOWS Salzburg Airport",
+        "developer": "RDPresets",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 3.77,
+        "reviews": 18,
+        "url": "https://www.fsaddoncompare.com/search/LOWS"
+      },
+      {
+        "name": "LOWS - Salzburg Airport",
+        "developer": "Digital Design",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.63,
+        "reviews": 295,
+        "url": "https://www.fsaddoncompare.com/search/LOWS"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/LOWS"
+  },
+  "LOWG": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/LOWG"
+  },
+  "LJLJ": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "LJLJ Ljubljana Airport",
+        "developer": "Scenic Routes",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.88,
+        "reviews": 56,
+        "url": "https://www.fsaddoncompare.com/search/LJLJ"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/LJLJ"
+  },
+  "LDRI": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/LDRI"
+  },
+  "LDDU": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "LDDU Dubrovnik Airport",
+        "developer": "MXI Design",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 3.82,
+        "reviews": 34,
+        "url": "https://www.fsaddoncompare.com/search/LDDU"
+      },
+      {
+        "name": "Dubrovnik (LDDU)",
+        "developer": "iniBuilds",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.71,
+        "reviews": 23,
+        "url": "https://www.fsaddoncompare.com/search/LDDU"
+      },
+      {
+        "name": "Dubrovnik-LDDU-croatia",
+        "developer": "Davor Puljevic",
+        "platforms": [
+          "MSFS2024",
+          "MSFS2020"
+        ],
+        "rating": 4.5,
+        "reviews": 6,
+        "url": "https://www.fsaddoncompare.com/search/LDDU"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/LDDU"
+  },
+  "LYTV": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/LYTV"
+  },
+  "LATI": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "Tirana (LATI)",
+        "developer": "Salvuz",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": null,
+        "reviews": null,
+        "url": "https://www.fsaddoncompare.com/search/LATI"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/LATI"
+  },
+  "BKPR": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "BKPR - Prishtina Intl. Airport",
+        "developer": "M'M Simulations",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.8,
+        "reviews": 24,
+        "url": "https://www.fsaddoncompare.com/search/BKPR"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/BKPR"
+  },
+  "LWSK": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/LWSK"
+  },
+  "LGKR": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/LGKR"
+  },
+  "LGAV": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/LGAV"
+  },
+  "LGSM": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/LGSM"
+  },
+  "LBSF": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "LBSF Sofia Airport",
+        "developer": "Aflosim",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.67,
+        "reviews": 6,
+        "url": "https://www.fsaddoncompare.com/search/LBSF"
+      },
+      {
+        "name": "LBSF - Sofia Airport 2.0",
+        "developer": "Fly2High",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.12,
+        "reviews": 25,
+        "url": "https://www.fsaddoncompare.com/search/LBSF"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/LBSF"
+  },
+  "LQSA": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/LQSA"
+  },
+  "LYBE": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/LYBE"
+  },
+  "LHBP": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "LHBP - Budapest Airport",
+        "developer": "SoFly",
+        "platforms": [
+          "MSFS2024",
+          "MSFS2020"
+        ],
+        "rating": 4.0,
+        "reviews": 7,
+        "url": "https://www.fsaddoncompare.com/search/LHBP"
+      },
+      {
+        "name": "LHBP - Budapest \"Liszt\" Intl. Airport",
+        "developer": "Barelli MSFS Addons",
+        "platforms": [
+          "MSFS2024",
+          "MSFS2020"
+        ],
+        "rating": null,
+        "reviews": null,
+        "url": "https://www.fsaddoncompare.com/search/LHBP"
+      },
+      {
+        "name": "LHBP Budapest Airport",
+        "developer": "South Oak Co",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 3.0,
+        "reviews": 2,
+        "url": "https://www.fsaddoncompare.com/search/LHBP"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/LHBP"
+  },
+  "LZTT": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/LZTT"
+  },
+  "LRCL": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "Cluj Napoca (LRCL)",
+        "developer": "Barelli MSFS Addons",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": null,
+        "reviews": null,
+        "url": "https://www.fsaddoncompare.com/search/LRCL"
+      },
+      {
+        "name": "LRCL Cluj Airport",
+        "developer": "South Oak Co",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 2.8,
+        "reviews": 4,
+        "url": "https://www.fsaddoncompare.com/search/LRCL"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/LRCL"
+  },
+  "LROP": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/LROP"
+  },
+  "LUKK": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/LUKK"
+  },
+  "UKLL": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/UKLL"
+  },
+  "UMMS": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/UMMS"
+  },
+  "EYVI": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "EYVI - Vilnius International Airport",
+        "developer": "MM Simulations",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.28,
+        "reviews": 22,
+        "url": "https://www.fsaddoncompare.com/search/EYVI"
+      },
+      {
+        "name": "EYVI - Vilnius International Airport",
+        "developer": "LisiumDesign",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.79,
+        "reviews": 19,
+        "url": "https://www.fsaddoncompare.com/search/EYVI"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/EYVI"
+  },
+  "EVRA": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/EVRA"
+  },
+  "EETN": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "EETN - Tallinn Airport",
+        "developer": "Drzewiecki Design",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.9,
+        "reviews": 86,
+        "url": "https://www.fsaddoncompare.com/search/EETN"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/EETN"
+  },
+  "EFMA": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/EFMA"
+  },
+  "ESSA": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "ESSA Stockholm-Arlanda International Airport",
+        "developer": "Orbx",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.5,
+        "reviews": 35,
+        "url": "https://www.fsaddoncompare.com/search/ESSA"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/ESSA"
+  },
+  "EFVA": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/EFVA"
+  },
+  "EFIV": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/EFIV"
+  },
+  "ESNQ": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/ESNQ"
+  },
+  "ENTC": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/ENTC"
+  },
+  "ENSB": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "Svalbard Longyear (ENSB)",
+        "developer": "iniBuilds",
+        "platforms": [
+          "MSFS2024"
+        ],
+        "rating": null,
+        "reviews": null,
+        "url": "https://www.fsaddoncompare.com/search/ENSB"
+      },
+      {
+        "name": "ENSB Svalbard Airport, Longyear",
+        "developer": "MXI Design",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 2.42,
+        "reviews": 37,
+        "url": "https://www.fsaddoncompare.com/search/ENSB"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/ENSB"
+  },
+  "ENVA": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/ENVA"
+  },
+  "ENGM": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "ENGM Oslo Gardermoen Airport",
+        "developer": "Orbx",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.8,
+        "reviews": 69,
+        "url": "https://www.fsaddoncompare.com/search/ENGM"
+      },
+      {
+        "name": "ENGM Oslo Gardermoen International Airport",
+        "developer": "JustSim",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 3.64,
+        "reviews": 72,
+        "url": "https://www.fsaddoncompare.com/search/ENGM"
+      },
+      {
+        "name": "ENGM - Oslo-Gardermoen Airport",
+        "developer": "Aerosoft",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.92,
+        "reviews": 67,
+        "url": "https://www.fsaddoncompare.com/search/ENGM"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/ENGM"
+  },
+  "EKCH": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "EKCH - Copenhagen",
+        "developer": "FlyTampa",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.7,
+        "reviews": 1098,
+        "url": "https://www.fsaddoncompare.com/search/EKCH"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/EKCH"
+  },
+  "EKRN": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/EKRN"
+  },
+  "EPWA": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "EPWA - Warsaw Chopin",
+        "developer": "Drzewiecki Design",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.74,
+        "reviews": 77,
+        "url": "https://www.fsaddoncompare.com/search/EPWA"
+      },
+      {
+        "name": "EPWA - Warsaw Chopin Airport",
+        "developer": "Fly2High",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 3.29,
+        "reviews": 68,
+        "url": "https://www.fsaddoncompare.com/search/EPWA"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/EPWA"
+  },
+  "EPKK": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "EPKK - Kraków Airport v2",
+        "developer": "Drzewiecki Design",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.86,
+        "reviews": 29,
+        "url": "https://www.fsaddoncompare.com/search/EPKK"
+      },
+      {
+        "name": "EPKK/krk Krakow-balice Airport",
+        "developer": "Flydesign",
+        "platforms": [
+          "MSFS2024",
+          "MSFS2020"
+        ],
+        "rating": 2.8,
+        "reviews": 5,
+        "url": "https://www.fsaddoncompare.com/search/EPKK"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/EPKK"
+  },
+  "LKKV": {
+    "readable": true,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/LKKV"
+  },
+  "EDDB": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "EDDB - Berlin Brandenburg",
+        "developer": "Aerosoft",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 3.89,
+        "reviews": 80,
+        "url": "https://www.fsaddoncompare.com/search/EDDB"
+      },
+      {
+        "name": "EDDB Berlin Brandenburg Airport",
+        "developer": "LIMESIM",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 3.5,
+        "reviews": 277,
+        "url": "https://www.fsaddoncompare.com/search/EDDB"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/EDDB"
+  },
+  "EDDP": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "EDDP - Leipzig Intl.",
+        "developer": "Digital Design",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 3.96,
+        "reviews": 125,
+        "url": "https://www.fsaddoncompare.com/search/EDDP"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/EDDP"
+  },
+  "EDDN": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "EDDN Airport Nuremberg",
+        "developer": "Digitale Produkte Frederik Blatter",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 4.56,
+        "reviews": 9,
+        "url": "https://www.fsaddoncompare.com/search/EDDN"
+      },
+      {
+        "name": "EDDN - Albrecht Dürer Airport Nürnberg",
+        "developer": "Freds Airports",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": null,
+        "reviews": null,
+        "url": "https://www.fsaddoncompare.com/search/EDDN"
+      },
+      {
+        "name": "EDDN - Nuremberg Airport",
+        "developer": "Captain7",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.84,
+        "reviews": 116,
+        "url": "https://www.fsaddoncompare.com/search/EDDN"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/EDDN"
+  },
+  "EDDM": {
+    "readable": true,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/EDDM"
+  },
+  "EDDF": {
+    "readable": true,
+    "candidates": [
+      {
+        "name": "EDDF - Frankfurt Intl. Airport",
+        "developer": "FeelThere",
+        "platforms": [
+          "MSFS2020"
+        ],
+        "rating": 2.92,
+        "reviews": 87,
+        "url": "https://www.fsaddoncompare.com/search/EDDF"
+      },
+      {
+        "name": "EDDF - Frankfurt Airport",
+        "developer": "Aerosoft",
+        "platforms": [
+          "MSFS2020",
+          "MSFS2024"
+        ],
+        "rating": 4.1,
+        "reviews": 80,
+        "url": "https://www.fsaddoncompare.com/search/EDDF"
+      }
+    ],
+    "url": "https://www.fsaddoncompare.com/search/EDDF"
+  },
+  "EDDK": {
+    "readable": false,
+    "candidates": [],
+    "url": "https://www.fsaddoncompare.com/search/EDDK"
+  }
+}

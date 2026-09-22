@@ -1,0 +1,17 @@
+from pathlib import Path
+R=Path(__file__).resolve().parent
+p=R/'excursions-ui.js';s=p.read_text(encoding='utf8')
+s=s.replace("['EXPEDITION & KURZE PISTEN','Twin Otter'", "['ANTARKTIS-EXPEDITION','Twin Otter'")
+s=s.replace("Ausflüge · inklusive drei eigener Highlight-Szenerien", "Ausflug · nur die lange Drake-Passage")
+s=s.replace('Zusätzliche Kategorien mit vier Twin-Otter- und zwölf H160-Ausflügen.', 'Zusätzliche Kategorien mit einer Twin-Otter- und fünfzehn H160-Schleifen.')
+s=s.replace("X.excursions.filter(e=>e.profile==='DHC6').map", "X.excursions.filter(e=>e.highlightCard).map")
+s=s.replace('TWIN OTTER · NACH A320-LEG', "${e.profile==='DHC6'?'TWIN OTTER':'H160'} · NACH A320-LEG")
+s=s.replace('Vier Legs knapp über zwei Stunden.', 'Vier H160-Legs mit etwa 2:15 bzw. 2:21 Stunden.')
+s=s.replace("side?'Twin-Otter-Ausflug'", "side?'H160-Ausflug'").replace('Im Twin-Otter-Ausflug','Im H160-Ausflug')
+s=s.replace('<p class="small xverify">${esc(e.verification)}</p>', '<p class="small xverify">${esc(e.verification)}</p><p class="small"><strong>Warum dieses Fluggerät?</strong> ${esc(e.aircraftReason)}</p>')
+p.write_text(s,encoding='utf8')
+p=R/'tour-template.html';s=p.read_text(encoding='utf8').replace('Sieben besondere Twin-Otter-Ausflüge','Sechs H160-Highlights und eine Antarktis-Expedition').replace('London City, Sedona und Milford Sound als Twin-Otter-Ausflüge.','London City, Sedona und Milford Sound als H160-Ausflüge.')
+p.write_text(s,encoding='utf8')
+p=R/'scenery-ui.js';s=p.read_text(encoding='utf8').replace('Twin Otter · Kleiner Hersteller, starke Resonanz','H160 · Kleiner Hersteller, starke Resonanz');p.write_text(s,encoding='utf8')
+p=R/'build_scenery_guide.py';s=p.read_text(encoding='utf8').replace('Für den niedrigen Twin-Otter-Anflug ist das ein ungewöhnlich direkter Mehrwert gegenüber der enthaltenen handgefertigten Fassung.','Der Mehrwert liegt für deinen H160-Ausflug in der Landschaft rund um den Airport; der berühmte Pistenanflug ist kein H160-Pflichtprogramm.');p.write_text(s,encoding='utf8')
+print('Fleet UI updated; highlight cards and route IDs retained.')
