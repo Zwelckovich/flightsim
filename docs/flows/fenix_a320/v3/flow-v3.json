@@ -1,0 +1,7269 @@
+{
+ "meta": {
+  "title": "Fenix A320 Flow",
+  "version": "V3",
+  "date": "2026-09-24",
+  "aircraft": "Fenix A320 CEO · CFM56-5B · Sharklets",
+  "scope": "Persönliche Simulator-Hilfe für den Fenix A320 in MSFS 2024 – kein Airline-SOP, nicht für den echten Flugbetrieb.",
+  "basis": "V2 (Astra) mit stabilen IDs, Inhalt ursprünglich aus V1 (Fable) und deinem Flow von 2024."
+ },
+ "sources": {
+  "FCOM": {
+   "label": "FCOM",
+   "text": "Airbus Flight Crew Operating Manual – Inhalt nach der Verfahrensquelle bzw. Airbus-Standard, nicht Zeile für Zeile gegen ein FCOM des CFM-Sharklet-Musters geprüft."
+  },
+  "FCTM": {
+   "label": "FCTM",
+   "text": "Airbus Flight Crew Techniques Manual – empfohlene Technik, nach Airbus-Standard zusammengefasst."
+  },
+  "NCL": {
+   "label": "NCL",
+   "text": "Airbus Normal Checklist – Aufbau mit Strich (down to the line / below the line)."
+  },
+  "QRH": {
+   "label": "QRH",
+   "text": "Vorliegendes QRH (EC-MLE, A320-232/IAE, März 2016) – nur für Wortlaut und Bedingungen, nicht für Leistungswerte."
+  },
+  "PROC": {
+   "label": "PROC",
+   "text": "A320 Normal Procedures (TheAirlinePilots) – betreiberlastige, FCOM-basierte Zusammenstellung; Hauptquelle von V1."
+  },
+  "SIM": {
+   "label": "SIM",
+   "text": "Simulator-Trainingsblätter (u. a. FSLabs) – nur für die Simulation, Übertragbarkeit auf den Fenix nicht belegt."
+  },
+  "FENIX": {
+   "label": "FENIX",
+   "text": "Fenix-/MSFS-spezifische Bedienung – kein Verfahren des echten Flugzeugs."
+  },
+  "USER": {
+   "label": "DEIN FLOW",
+   "text": "Aus deinem Flow von 2024 übernommen."
+  },
+  "TECH": {
+   "label": "TECHNIK",
+   "text": "Für die Weltreise zusammengefasste Technik (V3) – aus den Verfahren oben abgeleitet; Leistung immer aus dem EFB."
+  }
+ },
+ "fields": [
+  {
+   "id": "qnhDep",
+   "label": "QNH",
+   "unit": "hPa",
+   "group": "dep",
+   "hint": "1013"
+  },
+  {
+   "id": "clearedAlt",
+   "label": "FCU ALT",
+   "unit": "",
+   "group": "dep",
+   "hint": "5000 / FL070"
+  },
+  {
+   "id": "sqk",
+   "label": "SQUAWK",
+   "unit": "",
+   "group": "dep",
+   "hint": "2000"
+  },
+  {
+   "id": "flex",
+   "label": "FLEX",
+   "unit": "°C",
+   "group": "dep",
+   "hint": "45"
+  },
+  {
+   "id": "v1",
+   "label": "V1",
+   "unit": "kt",
+   "group": "dep",
+   "hint": "140"
+  },
+  {
+   "id": "vr",
+   "label": "VR",
+   "unit": "kt",
+   "group": "dep",
+   "hint": "142"
+  },
+  {
+   "id": "v2",
+   "label": "V2",
+   "unit": "kt",
+   "group": "dep",
+   "hint": "146"
+  },
+  {
+   "id": "trim",
+   "label": "THS",
+   "unit": "",
+   "group": "dep",
+   "hint": "UP0.8"
+  },
+  {
+   "id": "thr",
+   "label": "THR RED",
+   "unit": "ft",
+   "group": "dep",
+   "hint": "1500"
+  },
+  {
+   "id": "acc",
+   "label": "ACC",
+   "unit": "ft",
+   "group": "dep",
+   "hint": "1500"
+  },
+  {
+   "id": "eoAcc",
+   "label": "EO ACC",
+   "unit": "ft",
+   "group": "dep",
+   "hint": "1500"
+  },
+  {
+   "id": "ta",
+   "label": "TRANS ALT",
+   "unit": "ft",
+   "group": "dep",
+   "hint": "5000"
+  },
+  {
+   "id": "qnhArr",
+   "label": "QNH",
+   "unit": "hPa",
+   "group": "arr",
+   "hint": "1013"
+  },
+  {
+   "id": "tl",
+   "label": "TRANS LVL",
+   "unit": "FL",
+   "group": "arr",
+   "hint": "70"
+  },
+  {
+   "id": "vapp",
+   "label": "VAPP",
+   "unit": "kt",
+   "group": "arr",
+   "hint": "138"
+  },
+  {
+   "id": "abrk",
+   "label": "A/BRK",
+   "unit": "",
+   "group": "arr",
+   "hint": "LO"
+  },
+  {
+   "id": "mins",
+   "label": "MINIMUM",
+   "unit": "ft",
+   "group": "arr",
+   "hint": "DA 580"
+  },
+  {
+   "id": "gaAlt",
+   "label": "GA ALT",
+   "unit": "",
+   "group": "arr",
+   "hint": "5000"
+  },
+  {
+   "id": "apOff",
+   "label": "AP OFF",
+   "unit": "ft",
+   "group": "arr",
+   "hint": "300"
+  },
+  {
+   "id": "fpa",
+   "label": "FPA",
+   "unit": "°",
+   "group": "arr",
+   "hint": "-3.0",
+   "when": {
+    "approach": "npa"
+   }
+  }
+ ],
+ "profile": [
+  {
+   "id": "wind",
+   "label": "STARTLAUF",
+   "options": [
+    [
+     "normal",
+     "Standard"
+    ],
+    [
+     "strong",
+     "X-Wind > 20 kt / Rückenwind"
+    ]
+   ],
+   "default": "normal"
+  },
+  {
+   "id": "toConf",
+   "label": "T/O CONF",
+   "options": [
+    [
+     "1",
+     "1+F"
+    ],
+    [
+     "2",
+     "2"
+    ],
+    [
+     "3",
+     "3"
+    ]
+   ],
+   "default": "1"
+  },
+  {
+   "id": "approach",
+   "label": "ANFLUG",
+   "options": [
+    [
+     "ils",
+     "ILS"
+    ],
+    [
+     "rnav",
+     "RNAV · FINAL APP"
+    ],
+    [
+     "npa",
+     "NPA · TRK/FPA"
+    ]
+   ],
+   "default": "ils"
+  },
+  {
+   "id": "ldgConf",
+   "label": "LDG CONF",
+   "options": [
+    [
+     "FULL",
+     "FULL"
+    ],
+    [
+     "3",
+     "3"
+    ]
+   ],
+   "default": "FULL"
+  },
+  {
+   "id": "landingMode",
+   "label": "LANDUNG",
+   "options": [
+    [
+     "manual",
+     "Manuell"
+    ],
+    [
+     "autoland",
+     "Autoland"
+    ]
+   ],
+   "default": "manual"
+  }
+ ],
+ "stages": [
+  {
+   "id": "prep",
+   "title": "Vorbereitung",
+   "phases": [
+    "n1",
+    "n2",
+    "n3",
+    "n4",
+    "n5",
+    "n6",
+    "n7",
+    "n8",
+    "n9"
+   ]
+  },
+  {
+   "id": "dep",
+   "title": "Abflug",
+   "phases": [
+    "n10",
+    "n11",
+    "n12",
+    "n13",
+    "n14",
+    "n15",
+    "n16"
+   ]
+  },
+  {
+   "id": "enr",
+   "title": "Reiseflug",
+   "phases": [
+    "n17",
+    "n18"
+   ]
+  },
+  {
+   "id": "arr",
+   "title": "Ankunft",
+   "phases": [
+    "n19",
+    "n20",
+    "n21"
+   ]
+  },
+  {
+   "id": "post",
+   "title": "Nach dem Flug",
+   "phases": [
+    "n22",
+    "n23"
+   ]
+  }
+ ],
+ "phases": [
+  {
+   "id": "n1",
+   "kind": "flow",
+   "title": "Prelim Prep — Setup & Power",
+   "zone": "OVHD · PED",
+   "note": "First flow of the day. Only the **Weather Radar** items are repeated on transit checks. Battery voltage is checked with the BAT pushbuttons **OFF**.",
+   "items": [
+    {
+     "sub": "SIM SETUP"
+    },
+    {
+     "id": "n1.v1-001",
+     "item": "Fenix Variant",
+     "state": "A320 CEO · CFM56-5B · SHARKLETS",
+     "type": "act",
+     "src": "FENIX",
+     "detail": "Your world-tour aircraft: Fenix A320 CEO with CFM56-5B engines and sharklets. Confirm variant, livery, payload and fuel in the Fenix EFB before powering up.",
+     "rev": "v3"
+    },
+    {
+     "id": "n1.v3-panel",
+     "item": "Fenix EFB — Panel State",
+     "state": "COLD & DARK",
+     "type": "act",
+     "src": "FENIX",
+     "detail": "The full flow starts from a cold and dark cockpit. If you load a later panel state, mark the power-up steps that are already done as N/A.",
+     "rev": "v3"
+    },
+    {
+     "sub": "AIRCRAFT SETUP"
+    },
+    {
+     "id": "n1.v1-003",
+     "item": "WX Radar SYS",
+     "state": "OFF",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Radar OFF on the pedestal panel before applying power. This is the only prelim-prep item repeated during transit checks."
+    },
+    {
+     "id": "n1.v1-004",
+     "item": "Windshear / PWS",
+     "state": "OFF",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n1.v1-005",
+     "item": "Gain Knob",
+     "state": "CAL / AUTO",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Collins WXR-1200 baseline. Honeywell RDR-4000 units differ — check which radar the airframe has."
+    },
+    {
+     "id": "n1.v1-006",
+     "item": "Multiscan / Mode Sel",
+     "state": "AS REQUIRED",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n1.v1-007",
+     "item": "ENG Master 1 + 2",
+     "state": "OFF",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n1.v1-008",
+     "item": "ENG Mode Selector",
+     "state": "NORM",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n1.v1-009",
+     "item": "Landing Gear Lever",
+     "state": "DOWN",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n1.v1-010",
+     "item": "Wiper Selectors (both)",
+     "state": "OFF",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "sub": "ELECTRICAL POWER"
+    },
+    {
+     "id": "n1.v1-012",
+     "item": "BAT Voltage (BAT pb OFF)",
+     "state": "> 25.5 V",
+     "type": "chk",
+     "src": "PROC",
+     "caution": "Check voltage with the BAT pushbuttons **OFF** — not ON. Your original flow read the voltage without this step.",
+     "detail": ">25.5 V confirms a charge above 50%. At or below 25.5 V: charge 20 min with BAT pb AUTO + EXT PWR ON, then re-check. Verify the battery contactor closes on the ELEC page.",
+     "rev": "v2"
+    },
+    {
+     "id": "n1.v1-013",
+     "item": "BAT 1 + 2",
+     "state": "AUTO",
+     "type": "act",
+     "src": "FCOM",
+     "detail": "The A320 BAT pushbutton has AUTO (pressed in) and OFF (released) — there is no \"ON\" position. Your original flow said \"ON\"; the correct callout is AUTO."
+    },
+    {
+     "id": "n1.v1-014",
+     "item": "EXT PWR",
+     "state": "ON (if AVAIL)",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Press EXT PWR when the AVAIL light is lit. If the aircraft was electrically supplied within the last 6 h, the voltage check above can be skipped."
+    },
+    {
+     "id": "n1.v1-015",
+     "item": "Battery Charge Cycle",
+     "state": "CHECK",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "BAT pb OFF then ON to start a charging cycle. After 10 s the charging current should be < 60 A and decreasing. If not, repeat the check after the cycle ends."
+    },
+    {
+     "id": "n1.v1-016",
+     "item": "APU Start on Battery",
+     "state": "WITHIN 30 MIN",
+     "type": "cau",
+     "src": "PROC",
+     "caution": "If the APU will be started on batteries, start it within 30 min of selecting BAT to AUTO. Beyond ~35 min the charge can fall below 25%."
+    },
+    {
+     "sub": "RMP & APU"
+    },
+    {
+     "id": "n1.v1-018",
+     "item": "RMP 1",
+     "state": "ON · NAV OFF · SEL OFF",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n1.v1-019",
+     "item": "VHF 1 / 2 / INT / CAB",
+     "state": "TUNE & LISTEN",
+     "type": "act",
+     "src": "USER",
+     "detail": "Carried over from your flow. Set the communication frequencies and select the audio channels you want to monitor."
+    },
+    {
+     "id": "n1.v1-020",
+     "item": "APU FIRE Test",
+     "state": "PRESS — MAX 3 s",
+     "type": "cau",
+     "src": "PROC",
+     "caution": "Holding the APU FIRE test pb **longer than 3 seconds** can auto-shut down the APU **and discharge the fire bottle**. Press briefly.",
+     "detail": "The APU fire pb is only partially lit when AC power is unavailable — that is normal, not a fault."
+    },
+    {
+     "id": "n1.v1-021",
+     "item": "APU Master SW",
+     "state": "ON",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n1.v1-022",
+     "item": "APU START pb",
+     "state": "AFTER 3 s",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Wait 3 s after the master switch before pressing START. Keep external power connected to reduce APU load, especially in hot weather."
+    },
+    {
+     "id": "n1.v1-023",
+     "item": "APU Bleed",
+     "state": "ON WHEN AVAIL",
+     "type": "act",
+     "src": "PROC",
+     "caution": "Do **not** use APU bleed while an LP or HP ground air unit is connected — check the BLEED page for existing pressure first.",
+     "detail": "Your original flow waited 3 min after APU AVAIL before selecting bleed. The source procedure has no such delay: bleed is selected as required once the APU is available. The real constraint is the ground-air unit, not a timer."
+    }
+   ]
+  },
+  {
+   "id": "n2",
+   "kind": "flow",
+   "title": "Prelim Prep — ADIRS & Acceptance",
+   "zone": "OVHD · MCDU",
+   "note": "IRS alignment takes ~10 min. Start it early so it runs while you do the rest of the preparation.",
+   "items": [
+    {
+     "sub": "ADIRS"
+    },
+    {
+     "id": "n2.v1-001",
+     "item": "IR Mode Selectors 1·2·3",
+     "state": "NAV",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n2.v1-002",
+     "item": "Complete IRS Alignment",
+     "state": "IF REQUIRED",
+     "type": "cau",
+     "src": "FCOM",
+     "detail": "A complete alignment is required: before the first flight of the day · after a crew change · departure airport between 2°N and 2°S · GPS unavailable with poor NAVAID coverage en route · GPS unavailable and flight time over 3 h. Your original flow had no alignment criteria at all."
+    },
+    {
+     "id": "n2.v1-003",
+     "item": "Fast IRS Alignment",
+     "state": "IF ≥ 5 NM DRIFT",
+     "type": "cau",
+     "src": "FCOM",
+     "detail": "If a complete alignment is not required but the IRS-to-FMGC position difference is 5 NM or more (POSITION MONITOR page), perform a fast alignment."
+    },
+    {
+     "id": "n2.v1-004",
+     "item": "Cockpit Lights",
+     "state": "AS REQUIRED",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "sub": "AIRCRAFT ACCEPTANCE"
+    },
+    {
+     "id": "n2.v1-006",
+     "item": "ECAM RCL",
+     "state": "PRESS 3 s",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Recalls all cleared and cancelled warnings so nothing hidden is carried into the flight."
+    },
+    {
+     "id": "n2.v1-007",
+     "item": "Aircraft Config / MEL",
+     "state": "CHECK",
+     "type": "chk",
+     "src": "FENIX",
+     "detail": "In the Fenix EFB, check the aircraft configuration and any simulated failures before planning performance."
+    },
+    {
+     "id": "n2.v1-008",
+     "item": "ECAM STS Page",
+     "state": "CHECK",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "Confirm the INOP SYS list is compatible with the MEL."
+    },
+    {
+     "id": "n2.v1-009",
+     "item": "Icing: prev. taxi-in time",
+     "state": "CHECK",
+     "type": "cau",
+     "src": "FCOM",
+     "detail": "In icing conditions with OAT +3 °C or below, check the previous flight's taxi-in time to work out the remaining taxi-out time before the next engine acceleration for ice shedding (FCOM PRO-NOR-SUP-ADVWXR)."
+    },
+    {
+     "sub": "PRELIMINARY PERFORMANCE"
+    },
+    {
+     "id": "n2.v1-011",
+     "item": "Airfield Data",
+     "state": "OBTAIN",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n2.v1-012",
+     "item": "Fuel Figures",
+     "state": "CROSS-CHECK",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "Check computerised fuel figures for gross errors, and that \"last flight FOB + uplift = current FOB\"."
+    },
+    {
+     "id": "n2.v1-013",
+     "item": "EFB Mass & Balance",
+     "state": "FINAL LOADSHEET / LOAD",
+     "type": "act",
+     "src": "FENIX",
+     "detail": "Load the planned payload and fuel in the Fenix EFB. Use the final loadsheet: MACZFW is ZFWCG; MACTOW is takeoff CG. Check that the aircraft has finished loading. Never substitute a default CG when the actual value is missing.",
+     "rev": "v2"
+    },
+    {
+     "id": "n2.v1-014",
+     "item": "Prelim T/O Performance",
+     "state": "OPT vs CONF 2",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Compare OPT and CONF 2 performance. If the TFLEX difference is under 3 °C, take the higher flap setting. Short or poorly paved runway → higher flaps. Better climb gradient → lower flaps."
+    },
+    {
+     "id": "n2.v1-015",
+     "item": "NAV Charts",
+     "state": "PREPARE",
+     "type": "act",
+     "src": "PROC"
+    }
+   ]
+  },
+  {
+   "id": "n3",
+   "kind": "flow",
+   "title": "Before Walkaround",
+   "zone": "ECAM SD · CABIN",
+   "note": "Split into a seated part (systems on the ECAM SD pages) and a standing part (equipment and circuit breakers). The alternate-brake check is done before the first flight of the day only.",
+   "items": [
+    {
+     "sub": "SEATED — ECAM SD PAGES"
+    },
+    {
+     "id": "n3.v1-001",
+     "item": "ENG Page — Oil Quantity",
+     "state": "≥ 9.5 QT + 0.5 QT/h",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "Source procedure (CFM56): minimum 9.5 qt plus an estimated consumption of about 0.5 qt per flight hour — for a 2-hour leg that is 10.5 qt. Not verified against a CFM56-5B FCOM; treat it as a planning value.",
+     "rev": "v3"
+    },
+    {
+     "id": "n3.v1-002",
+     "item": "HYD Page — Reservoir Level",
+     "state": "CHECK",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "Fluid volume changes with OAT and can read out of range without any low-level or low-pressure warning. Contact maintenance if it does."
+    },
+    {
+     "id": "n3.v1-003",
+     "item": "DOOR Page — Crew Oxygen",
+     "state": "CHECK PRESSURE",
+     "type": "chk",
+     "src": "FCOM",
+     "detail": "If the value is half-boxed amber, refer to FCOM LIM-OXY for minimum flight-crew oxygen pressure — it varies with crew number and temperature. Your original flow used a fixed >1000 psi; the real minimum comes from the table."
+    },
+    {
+     "id": "n3.v1-004",
+     "item": "F/CTL — Flaps vs Handle",
+     "state": "AGREE",
+     "type": "chk",
+     "src": "PROC",
+     "caution": "If a flight-control surface disagrees with its handle position, contact maintenance **before** applying hydraulic power."
+    },
+    {
+     "id": "n3.v1-005",
+     "item": "F/CTL — Speed Brake",
+     "state": "RETRACTED & DISARMED",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "sub": "SEATED — BRAKES"
+    },
+    {
+     "id": "n3.v1-007",
+     "item": "ACCU Pressure",
+     "state": "CHECK GREEN",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "Use the yellow electric pump to recharge if required."
+    },
+    {
+     "id": "n3.v1-008",
+     "item": "Parking Brake",
+     "state": "ON",
+     "type": "act",
+     "src": "PROC",
+     "detail": "The parking brake must be ON for the exterior inspection so the brake wear indicators can be read. With one brake above 500 °C (350 °C with brake fans on), avoid the parking brake unless necessary."
+    },
+    {
+     "id": "n3.v1-009",
+     "item": "Brake Pressure Indicator",
+     "state": "CHECK NORMAL",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n3.v1-010",
+     "item": "Alternate Brake Check",
+     "state": "FIRST FLIGHT ONLY",
+     "type": "cau",
+     "src": "PROC",
+     "detail": "Yellow elec pump OFF · chocks ON · parking brake OFF · press pedals and read the triple indicator · release pedals · parking brake ON. Pressure must build symmetrically without delay; at full pedal deflection it must read between 2000 and 2700 psi."
+    },
+    {
+     "sub": "STANDING"
+    },
+    {
+     "id": "n3.v1-012",
+     "item": "Emergency Equipment",
+     "state": "CHECK",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "Life jackets · smoke hoods · gloves · axe · portable fire extinguisher · oxygen masks (goggles attached) · escape ropes. Memory aid: put on the life jacket and smoke hood, pull on the gloves, take the axe in one hand and the extinguisher in the other, use the rope to get out and breathe fresh oxygen."
+    },
+    {
+     "id": "n3.v1-013",
+     "item": "CB Panels",
+     "state": "CHECK",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "Overhead (49 VU) and rear panels (121, 122, 123, 124, 125 VU)."
+    },
+    {
+     "id": "n3.v1-014",
+     "item": "Landing Gear Pins",
+     "state": "ONBOARD & STOWED",
+     "type": "chk",
+     "src": "PROC"
+    }
+   ]
+  },
+  {
+   "id": "n4",
+   "kind": "flow",
+   "title": "Cockpit Prep — Overhead",
+   "zone": "OVHD PANEL",
+   "note": "Worked left to right across the overhead panel, following zone 1 of the flow pattern. Both pilots cover their own side.",
+   "plate": "zones",
+   "items": [
+    {
+     "id": "n4.v1-000",
+     "item": "Left Wiper",
+     "state": "OFF",
+     "type": "act",
+     "src": "USER"
+    },
+    {
+     "id": "n4.v1-001",
+     "item": "Crew Oxygen Supply",
+     "state": "ON",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n4.v1-002",
+     "item": "Oxygen Mask Test",
+     "state": "PERFORM",
+     "type": "chk",
+     "src": "FCOM",
+     "caution": "Tell any ground crew on the intercom first — the test produces a **loud noise** in their headset.",
+     "detail": "After testing, check there is no REGUL LO PR message on the DOOR/OXY page. Residual pressure between the LP valve and the masks can mask a closed-failed LP valve; absence of REGUL LO PR is what confirms the valve is open."
+    },
+    {
+     "id": "n4.v1-003",
+     "item": "RCDR GND CTL",
+     "state": "ON",
+     "type": "act",
+     "src": "USER"
+    },
+    {
+     "id": "n4.v1-004",
+     "item": "CVR Test",
+     "state": "PRESS & HOLD",
+     "type": "chk",
+     "src": "USER"
+    },
+    {
+     "id": "n4.v1-005",
+     "item": "EVAC Command",
+     "state": "CAPT",
+     "type": "act",
+     "src": "USER"
+    },
+    {
+     "id": "n4.v1-006",
+     "item": "EXT LT — Strobe",
+     "state": "AUTO",
+     "type": "act",
+     "src": "USER"
+    },
+    {
+     "id": "n4.v1-007",
+     "item": "EXT LT — NAV & LOGO",
+     "state": "1",
+     "type": "act",
+     "src": "USER"
+    },
+    {
+     "id": "n4.v1-008",
+     "item": "Seat Belts",
+     "state": "ON",
+     "type": "act",
+     "src": "PROC",
+     "detail": "After refuelling is complete."
+    },
+    {
+     "id": "n4.v1-009",
+     "item": "No Smoking",
+     "state": "AUTO",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n4.v1-010",
+     "item": "Emergency Exit Lights",
+     "state": "ARM",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n4.v1-011",
+     "item": "LDG ELEV",
+     "state": "AUTO",
+     "type": "chk",
+     "src": "FCOM",
+     "detail": "Check the CAB PRESS page actually displays LDG ELEV AUTO."
+    },
+    {
+     "id": "n4.v1-012",
+     "item": "Pack Flow",
+     "state": "NORM · HI IF HOT & HUMID",
+     "type": "act",
+     "src": "FCOM",
+     "detail": "FCOM: LO only with few occupants (fewer than 141 on the A320), HI for abnormally hot and humid conditions. With a normal passenger load NORM is right. Your 2024 flow simply set the temperature knobs to 12 o'clock.",
+     "rev": "v3"
+    },
+    {
+     "id": "n4.v1-013",
+     "item": "Air Cond Temp Selectors",
+     "state": "12 O'CLOCK",
+     "type": "act",
+     "src": "USER"
+    },
+    {
+     "id": "n4.v1-014",
+     "item": "Fuel Pumps",
+     "state": "ON",
+     "type": "act",
+     "src": "PROC",
+     "detail": "After refuelling is complete."
+    },
+    {
+     "id": "n4.v1-015",
+     "item": "CTR TK Pumps",
+     "state": "CHECK",
+     "type": "cau",
+     "src": "FCOM",
+     "detail": "If the centre tank holds under 200 kg for the flight and FUEL CTR TK PUMPS LO PR cautions appear, set FUEL MODE SEL to MAN and CTR TK PUMPS OFF. Leaving MODE SEL in MAN on the ground with the pumps not OFF risks fuel spillage."
+    },
+    {
+     "id": "n4.v1-016",
+     "item": "ENG FIRE Test",
+     "state": "PUSH & CHECK",
+     "type": "chk",
+     "src": "USER",
+     "detail": "Check both the ECAM warning and the master switch lights."
+    },
+    {
+     "id": "n4.v1-017",
+     "item": "Lights Test",
+     "state": "PERFORM",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "Annunciator light test — confirms no failed indicator lamps before departure."
+    },
+    {
+     "id": "n4.v1-018",
+     "item": "Right Wiper",
+     "state": "OFF",
+     "type": "act",
+     "src": "USER"
+    }
+   ]
+  },
+  {
+   "id": "n5",
+   "kind": "flow",
+   "title": "Cockpit Prep — Glareshield & Center",
+   "zone": "GLARESHIELD · MAIN",
+   "note": "",
+   "fields": [
+    "qnhDep",
+    "clearedAlt"
+   ],
+   "plate": "zones",
+   "items": [
+    {
+     "id": "n5.v1-000",
+     "item": "FCU — Baro Ref",
+     "state": "SET {{qnhDep}} hPa",
+     "type": "tgt",
+     "src": "PROC",
+     "detail": "Set QNH on both sides. Note the readings on the flight plan."
+    },
+    {
+     "id": "n5.v1-001",
+     "item": "Altimeter Cross-Check",
+     "state": "± TOLERANCES",
+     "type": "chk",
+     "src": "FCOM",
+     "detail": "Maximum allowed differences: PFD to PFD 20 ft · PFD to field elevation 75 ft (RVSM tolerance) · PFD to ISIS 100 ft."
+    },
+    {
+     "id": "n5.v1-002",
+     "item": "Standby Instrument (ISIS)",
+     "state": "SET {{qnhDep}} hPa",
+     "type": "tgt",
+     "src": "USER",
+     "detail": "Use of the ISIS bugs function is not recommended."
+    },
+    {
+     "id": "n5.v1-003",
+     "item": "FCU — Initial CLB ALT",
+     "state": "SET {{clearedAlt}}",
+     "type": "tgt",
+     "src": "PROC",
+     "detail": "From the departure clearance and chart — e.g. 5000 ft or FL070. This is independent of the PERF thrust-reduction and acceleration altitudes.",
+     "rev": "v3"
+    },
+    {
+     "id": "n5.v1-004",
+     "item": "FD 1 + 2",
+     "state": "ON",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n5.v1-005",
+     "item": "A/THR",
+     "state": "DO NOT ENGAGE",
+     "type": "cau",
+     "src": "FCOM",
+     "caution": "Do not engage autothrust on the ground — it can trigger AUTO FLT A/THR OFF at engine start."
+    },
+    {
+     "id": "n5.v1-006",
+     "item": "EFIS — TERR on ND",
+     "state": "OFF",
+     "type": "act",
+     "src": "USER"
+    },
+    {
+     "id": "n5.v1-007",
+     "item": "EFIS — CSTR",
+     "state": "ON",
+     "type": "act",
+     "src": "USER"
+    },
+    {
+     "id": "n5.v1-008",
+     "item": "Both DCDU",
+     "state": "ON",
+     "type": "act",
+     "src": "USER"
+    },
+    {
+     "id": "n5.v1-009",
+     "item": "Accumulator Pressure",
+     "state": "CHECK",
+     "type": "chk",
+     "src": "USER"
+    },
+    {
+     "id": "n5.v1-010",
+     "item": "Clock",
+     "state": "CHECK DATE & TIME",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "If the date is wrong, set it manually and leave the mode on INT for the whole flight. Date initialisation must finish in under a minute or the CFDS needs a maintenance reset to re-sync the lower ECAM time. Sync with GPS at least once a day."
+    }
+   ]
+  },
+  {
+   "id": "n6",
+   "kind": "flow",
+   "title": "Cockpit Prep — Pedestal",
+   "zone": "PEDESTAL",
+   "note": "",
+   "fields": [
+    "sqk"
+   ],
+   "plate": "zones",
+   "items": [
+    {
+     "id": "n6.v1-000",
+     "item": "Thrust Levers",
+     "state": "IDLE",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n6.v1-001",
+     "item": "Speed Brake Lever",
+     "state": "RETRACTED & DISARMED",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n6.v1-002",
+     "item": "Flap Lever",
+     "state": "MATCH SURFACES",
+     "type": "chk",
+     "src": "USER"
+    },
+    {
+     "id": "n6.v1-003",
+     "item": "Pitch Trim",
+     "state": "CHECK",
+     "type": "chk",
+     "src": "USER"
+    },
+    {
+     "id": "n6.v1-004",
+     "item": "Rudder Trim",
+     "state": "ZERO",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n6.v1-005",
+     "item": "ACP — PA Knob",
+     "state": "RECEPT (3rd ACP)",
+     "type": "act",
+     "src": "FCOM",
+     "detail": "Setting the third ACP PA knob to RECEPT lets the CVR record cabin announcements. Keep the volume above the medium range. Your original flow pulled the PA switch without this detail."
+    },
+    {
+     "id": "n6.v1-006",
+     "item": "A/SKID & N/W STRG",
+     "state": "ON (UP)",
+     "type": "chk",
+     "src": "USER"
+    },
+    {
+     "id": "n6.v1-007",
+     "item": "ATC — Code",
+     "state": "SET {{sqk}}",
+     "type": "tgt",
+     "src": "USER",
+     "detail": "Set the code from the clearance. Without an assigned code the ICAO default is 2000; VFR uses 7000 in Europe and 1200 in the USA.",
+     "rev": "v3"
+    },
+    {
+     "id": "n6.v1-008",
+     "item": "ATC — Mode",
+     "state": "STBY",
+     "type": "act",
+     "src": "USER"
+    },
+    {
+     "id": "n6.v1-009",
+     "item": "ATC — ALT RPTG",
+     "state": "ON",
+     "type": "act",
+     "src": "USER"
+    },
+    {
+     "id": "n6.v1-010",
+     "item": "ATC — System",
+     "state": "1 (PF side)",
+     "type": "act",
+     "src": "USER"
+    },
+    {
+     "id": "n6.v1-011",
+     "item": "TCAS — Traffic",
+     "state": "ABV",
+     "type": "act",
+     "src": "USER"
+    },
+    {
+     "id": "n6.v1-012",
+     "item": "TCAS — Mode",
+     "state": "STBY",
+     "type": "act",
+     "src": "USER"
+    },
+    {
+     "id": "n6.v1-013",
+     "item": "Radio Frequencies",
+     "state": "SET",
+     "type": "act",
+     "src": "USER"
+    },
+    {
+     "id": "n6.v1-014",
+     "item": "Cockpit Door",
+     "state": "CLOSED & NORM",
+     "type": "chk",
+     "src": "PROC"
+    }
+   ]
+  },
+  {
+   "id": "n7",
+   "kind": "flow",
+   "title": "FMS Prep — INIT & F-PLN",
+   "zone": "MCDU",
+   "note": "Insert the **weights last** — entering them earlier forces repeated prediction computations. To find the right VIA, check on the second MCDU where the STAR ends.",
+   "items": [
+    {
+     "id": "n7.v1-000",
+     "item": "DATA — A/C Status",
+     "state": "CHECK",
+     "type": "chk",
+     "src": "USER",
+     "detail": "Selecting the secondary nav database on the A/C STATUS page deletes the whole flight plan — useful for a clean start."
+    },
+    {
+     "id": "n7.v1-001",
+     "item": "DATA — POS MONITOR",
+     "state": "DESELECT INOP NAVAIDS",
+     "type": "act",
+     "src": "USER"
+    },
+    {
+     "id": "n7.v1-002",
+     "item": "INIT — CO RTE / City Pair",
+     "state": "SET",
+     "type": "tgt",
+     "src": "PROC"
+    },
+    {
+     "id": "n7.v1-003",
+     "item": "INIT — COST INDEX",
+     "state": "SET",
+     "type": "tgt",
+     "src": "PROC",
+     "detail": "As stated on the flight plan."
+    },
+    {
+     "id": "n7.v1-004",
+     "item": "INIT — CRZ FL",
+     "state": "SET",
+     "type": "tgt",
+     "src": "PROC"
+    },
+    {
+     "id": "n7.v1-005",
+     "item": "INIT — TROPO",
+     "state": "SET",
+     "type": "tgt",
+     "src": "PROC",
+     "detail": "Check the tropopause value is accurate — it drives FMS prediction accuracy."
+    },
+    {
+     "id": "n7.v1-006",
+     "item": "INIT — GND TEMP",
+     "state": "SET",
+     "type": "tgt",
+     "src": "USER"
+    },
+    {
+     "id": "n7.v1-007",
+     "item": "F-PLN — DEPARTURE",
+     "state": "SET",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n7.v1-008",
+     "item": "F-PLN — ARRIVAL",
+     "state": "SET",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n7.v1-009",
+     "item": "F-PLN — VERT REV",
+     "state": "STEP CLIMB / SPD",
+     "type": "act",
+     "src": "USER"
+    },
+    {
+     "id": "n7.v1-010",
+     "item": "F-PLN — Cross-Check",
+     "state": "MODE SW + CSTR ON",
+     "type": "chk",
+     "src": "USER",
+     "detail": "Walk the plan against the charts with constraints displayed."
+    },
+    {
+     "id": "n7.v1-011",
+     "item": "RAD NAV",
+     "state": "DEPARTURE NAVAIDS",
+     "type": "tgt",
+     "src": "PROC"
+    },
+    {
+     "id": "n7.v1-012",
+     "item": "PROG — GPS PRIMARY",
+     "state": "CHECK + HIGH ACCUR",
+     "type": "chk",
+     "src": "USER"
+    },
+    {
+     "id": "n7.v1-013",
+     "item": "PROG — BRG/DIST",
+     "state": "DEPARTURE RWY",
+     "type": "tgt",
+     "src": "USER",
+     "detail": "e.g. EDDM26R — gives a live bearing and distance reference."
+    },
+    {
+     "id": "n7.v1-014",
+     "item": "IRS Alignment",
+     "state": "CHECK < 5 NM",
+     "type": "chk",
+     "src": "FCOM",
+     "detail": "On the POSITION MONITOR page each IRS should be under 5 NM from the FMS position. Confirm the aircraft position on the ND against the airport, SID and surrounding navaids."
+    }
+   ]
+  },
+  {
+   "id": "n8",
+   "kind": "flow",
+   "title": "FMS Prep — PERF & Engine-Out",
+   "zone": "MCDU",
+   "note": "The engine-out setup below is an **operator technique**, not a generic Airbus procedure — it is kept because it is genuinely useful, but marked **§** so you know where it comes from.",
+   "fields": [
+    "toConf",
+    "flex",
+    "v1",
+    "vr",
+    "v2",
+    "trim",
+    "thr",
+    "acc",
+    "eoAcc",
+    "ta"
+   ],
+   "items": [
+    {
+     "sub": "PERFORMANCE"
+    },
+    {
+     "id": "n8.v1-001",
+     "item": "INIT B — ZFW / ZFWCG",
+     "state": "ENTER",
+     "type": "tgt",
+     "src": "PROC",
+     "detail": "Insert the weights after all other entries to avoid repeated prediction cycles."
+    },
+    {
+     "id": "n8.v1-002",
+     "item": "INIT B — Block Fuel",
+     "state": "ENTER",
+     "type": "tgt",
+     "src": "PROC"
+    },
+    {
+     "id": "n8.v1-003",
+     "item": "PERF TO — V1 / VR / V2",
+     "state": "{{v1}} / {{vr}} / {{v2}}",
+     "type": "tgt",
+     "src": "PROC"
+    },
+    {
+     "id": "n8.v1-004",
+     "item": "PERF TO — FLEX TEMP",
+     "state": "{{flex}}",
+     "type": "tgt",
+     "src": "PROC"
+    },
+    {
+     "id": "n8.v1-005",
+     "item": "PERF TO — Flap / THS",
+     "state": "CONF {{toConf}} / {{trim}}",
+     "type": "tgt",
+     "src": "PROC",
+     "rev": "v2"
+    },
+    {
+     "id": "n8.v1-006",
+     "item": "PERF TO — THR RED / ACC",
+     "state": "{{thr}} / {{acc}} ft QNH",
+     "type": "tgt",
+     "src": "PROC",
+     "detail": "The FMS proposes a default (usually 1500 ft above the airport). Replace it with the values of the departure or noise-abatement procedure. The PERF fields are altitudes (ft QNH), not heights above the aerodrome.",
+     "rev": "v3"
+    },
+    {
+     "id": "n8.v1-007",
+     "item": "PERF TO — TRANS ALT",
+     "state": "{{ta}}",
+     "type": "tgt",
+     "src": "PROC"
+    },
+    {
+     "id": "n8.v1-008",
+     "item": "EFB vs MCDU Green Dot",
+     "state": "COMPARE",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "A green-dot discrepancy between the FMGS and the takeoff performance application means the two are using different takeoff weights. Resolve it before departure."
+    },
+    {
+     "sub": "ENGINE-OUT SETUP  §  operator technique"
+    },
+    {
+     "id": "n8.v1-010",
+     "item": "SEC F-PLN",
+     "state": "COPY ACTIVE",
+     "type": "act",
+     "src": "USER"
+    },
+    {
+     "id": "n8.v1-011",
+     "item": "SEC F-PLN — New DEST",
+     "state": "ENTER (NO STAR/VIA)",
+     "type": "act",
+     "src": "USER",
+     "detail": "Sets up the takeoff-alternate or immediate-return option without disturbing the active plan."
+    },
+    {
+     "id": "n8.v1-012",
+     "item": "SEC PERF — APPR",
+     "state": "MIN ALTITUDE",
+     "type": "tgt",
+     "src": "USER"
+    },
+    {
+     "id": "n8.v1-013",
+     "item": "EOP Waypoint",
+     "state": "[IATA]X[RWY]",
+     "type": "act",
+     "src": "USER",
+     "detail": "e.g. MUCX4. Place it as the 2nd waypoint after the departure airport."
+    },
+    {
+     "id": "n8.v1-014",
+     "item": "NEW WAYPOINT",
+     "state": "PLACE/BRG/DIST",
+     "type": "act",
+     "src": "USER",
+     "detail": "e.g. EDDM26R/260/25."
+    },
+    {
+     "id": "n8.v1-015",
+     "item": "Holding at EOP",
+     "state": "RWY COURSE",
+     "type": "act",
+     "src": "USER"
+    },
+    {
+     "id": "n8.v1-016",
+     "item": "FIX INFO @ DEP",
+     "state": "RWY TRACK RADIAL",
+     "type": "act",
+     "src": "USER",
+     "detail": "e.g. EDDM26R — draws the extended runway track on the ND."
+    },
+    {
+     "id": "n8.v1-017",
+     "item": "FIX INFO @ DEP",
+     "state": "EOP WAYPOINT",
+     "type": "act",
+     "src": "USER"
+    },
+    {
+     "id": "n8.v1-018",
+     "item": "EO SID",
+     "state": "REVIEW",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "Check the engine-out SID routing and constraints against the chart — this is what the setup above supports."
+    },
+    {
+     "id": "n8.eo-acc",
+     "item": "PERF TO — ENG OUT ACC",
+     "state": "{{eoAcc}} ft QNH",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "Engine-out acceleration altitude from the takeoff performance. Brief it together with the maximum acceleration altitude (TOGA time limit).",
+     "rev": "v3"
+    }
+   ]
+  },
+  {
+   "id": "n9",
+   "kind": "flow",
+   "title": "Briefings",
+   "zone": "BOTH PILOTS",
+   "note": "Keep it interactive and in logical sequence. The goal is a shared game plan: identify the threats, identify deviations from routine, agree on how to mitigate both.",
+   "fields": [
+    "toConf",
+    "flex",
+    "v1",
+    "thr",
+    "acc",
+    "eoAcc"
+   ],
+   "items": [
+    {
+     "sub": "DEPARTURE BRIEFING"
+    },
+    {
+     "id": "n9.v1-001",
+     "item": "Aircraft — FMS Data",
+     "state": "TYPE · DB DATE",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "DATA page: type and model, APD and nav database validity."
+    },
+    {
+     "id": "n9.v1-002",
+     "item": "Aircraft — Fuel & Weight",
+     "state": "BLOCK · TOW · EXTRA",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n9.v1-003",
+     "item": "Aircraft — Takeoff Data",
+     "state": "RWY · CONF · {{flex}}",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "Runway, takeoff config, FLEX or TOGA, V-speeds, transition altitude, thrust reduction and acceleration altitude."
+    },
+    {
+     "id": "n9.v1-004",
+     "item": "Aircraft — Route",
+     "state": "WPTS · TIME · FUEL",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n9.v1-005",
+     "item": "Weather & NOTAMs",
+     "state": "REVIEW",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n9.v1-006",
+     "item": "Startup & Taxi",
+     "state": "ATC · ROUTING",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n9.v1-007",
+     "item": "Runway",
+     "state": "DIMS · SURFACE · LIGHTS",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "Length, width, stopway, surface condition, lighting. Also packs and anti-ice for takeoff."
+    },
+    {
+     "id": "n9.v1-008",
+     "item": "Departure — SID",
+     "state": "ROUTING & CSTR",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n9.v1-009",
+     "item": "Departure — EO SID",
+     "state": "ROUTING & CSTR",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n9.v1-010",
+     "item": "Departure — MSA",
+     "state": "CHECK",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n9.v1-011",
+     "item": "Special Procedures",
+     "state": "NADP · WX · TERR",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "Noise abatement, weather, terrain, failure contingencies (communication, technical), EO SID and other contingencies."
+    },
+    {
+     "sub": "EMERGENCY BRIEFING"
+    },
+    {
+     "id": "n9.v1-013",
+     "item": "Seat",
+     "state": "LEFT / RIGHT SEAT T/O",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n9.v1-014",
+     "item": "Failure before 100 kt / V1",
+     "state": "CALL OUT → STOP or GO",
+     "type": "wrn",
+     "src": "PROC",
+     "detail": "Call out the malfunction clearly; PF calls STOP or GO. On STOP: apply the rejected-takeoff procedure, bring the aircraft to a complete stop, set the parking brake and call \"ATTENTION CREW AT STATION\". PM monitors REV GREEN and DECEL, silences aural warnings, informs ATC. ECAM actions on command. Evacuate via the Emergency Evacuation checklist if required."
+    },
+    {
+     "id": "n9.v1-015",
+     "item": "Failure after V1",
+     "state": "CONTINUE · BRIEF EO PLAN",
+     "type": "wrn",
+     "src": "PROC",
+     "detail": "Continue. No action below 400 ft AGL except gear up and silencing warnings; then ECAM actions on command. Level off at the engine-out acceleration altitude once the engine is secured — at the latest at the maximum acceleration altitude (TOGA time limit). Accelerate, clean up, green dot, MCT; then ECAM, status, relight; follow the EO routing or an immediate return.",
+     "rev": "v3"
+    }
+   ]
+  },
+  {
+   "id": "n10",
+   "kind": "flow",
+   "title": "Before Pushback & Start",
+   "zone": "PEDESTAL · OVHD",
+   "note": "A quick look at the E/WD memo before push catches the classics: PARK BRK · NW STRG DISC · TCAS · APU (reminder to disconnect GPU and AC van).",
+   "fields": [
+    "v1",
+    "vr",
+    "v2",
+    "flex",
+    "trim"
+   ],
+   "checklists": [
+    "c1"
+   ],
+   "items": [
+    {
+     "id": "n10.v1-000",
+     "item": "Final Load Sheet",
+     "state": "CHECK / REVISE",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "If actual ZFW exceeds estimated ZFW by 2000 kg a new flight plan is required. Fuel discrepancy tolerance: 400 kg up to 6 t uplift, 500 kg between 6 and 12 t, 600 kg above 12 t."
+    },
+    {
+     "id": "n10.v1-001",
+     "item": "Final Performance",
+     "state": "RECOMPUTE",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n10.v1-002",
+     "item": "FMS Takeoff Data",
+     "state": "REVISE & CROSS-CHECK",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n10.v1-003",
+     "item": "Push / Start Clearance",
+     "state": "OBTAIN",
+     "type": "act",
+     "src": "PROC",
+     "detail": "From both ATC and ground. Confirm the ground crew is ready and pass them the start sequence."
+    },
+    {
+     "id": "n10.v1-004",
+     "item": "External Power",
+     "state": "DISCONNECT",
+     "type": "act",
+     "src": "PROC",
+     "caution": "Deselect EXT PWR **before** the ground engineer disconnects it — disconnecting with the pb still ON may cause injury."
+    },
+    {
+     "id": "n10.v1-005",
+     "item": "Air Conditioning Unit",
+     "state": "REQUEST DISCONNECT",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n10.v1-006",
+     "item": "Beacon",
+     "state": "ON",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n10.v1-007",
+     "item": "ATC Transponder",
+     "state": "AUTO / AS REQUIRED",
+     "type": "act",
+     "src": "USER"
+    },
+    {
+     "id": "n10.v1-008",
+     "item": "Windows / Doors",
+     "state": "CHECK CLOSED",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "For the sliding window check the red indicator on its handle; for doors and slides use the lower ECAM DOOR page."
+    },
+    {
+     "id": "n10.v1-009",
+     "item": "PA — Cabin",
+     "state": "PREPARE FOR DEPARTURE",
+     "type": "act",
+     "src": "PROC",
+     "detail": "\"Cabin crew prepare for departure, arm the door slides and cross check.\""
+    },
+    {
+     "id": "n10.v1-010",
+     "item": "Slides",
+     "state": "CHECK ARMED",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n10.v1-011",
+     "item": "Thrust Levers",
+     "state": "IDLE",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n10.v1-012",
+     "item": "ACCU Pressure",
+     "state": "CHECK",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n10.v1-013",
+     "item": "NW STRG DISC Memo",
+     "state": "DISPLAYED",
+     "type": "chk",
+     "src": "FCOM",
+     "caution": "If the memo is **not** displayed but the ground crew confirms the bypass pin is in the towing position, do **not** start engines during pushback — green hydraulic pressurisation could damage the nose gear."
+    },
+    {
+     "id": "n10.v1-014",
+     "item": "BEFORE START C/L",
+     "state": "READ",
+     "type": "chk",
+     "src": "PROC",
+     "link": "c1"
+    },
+    {
+     "id": "n10.v1-015",
+     "item": "Parking Brake",
+     "state": "OFF (when asked)",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Release when the ground crew asks. Note the off-blocks time and start the clock."
+    }
+   ]
+  },
+  {
+   "id": "n11",
+   "kind": "flow",
+   "title": "Engine Start",
+   "zone": "PEDESTAL · OVHD",
+   "note": "**Engine 2 is started first** — it drives the yellow hydraulic system, which pressurises the parking brake. Automatic start is the norm; manual start is a read-and-do supplementary procedure.",
+   "items": [
+    {
+     "id": "n11.v1-000",
+     "item": "Thrust Levers",
+     "state": "IDLE",
+     "type": "chk",
+     "src": "PROC",
+     "caution": "Engines start regardless of lever position, but thrust rises rapidly to whatever the levers command. Confirm IDLE."
+    },
+    {
+     "id": "n11.v1-001",
+     "item": "ENG Mode Selector",
+     "state": "IGN / START",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n11.v1-002",
+     "item": "ENG 2 Master",
+     "state": "ON",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Engine 2 first: it powers the yellow hydraulic system that pressurises the parking brake. Select ON only once all amber crosses and messages have cleared from the engine parameters and bleed pressure is available."
+    },
+    {
+     "id": "n11.v1-003",
+     "item": "N2 rising",
+     "state": "START VALVE · BLEED · OIL",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "N2 increases, start valve in line, bleed pressure green, oil pressure rising."
+    },
+    {
+     "id": "n11.v1-004",
+     "item": "N2 16%",
+     "state": "IGNITER A or B",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "CFM56 auto-start: igniter at about 16% N2, fuel at about 22% N2, start valve closes at about 50% N2.",
+     "rev": "v3"
+    },
+    {
+     "id": "n11.v1-005",
+     "item": "N2 22%",
+     "state": "FF INCREASES",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "Fuel flow may cross approximately 200 kg/h."
+    },
+    {
+     "id": "n11.v1-006",
+     "item": "EGT & N1",
+     "state": "RISE WITHIN 15 s",
+     "type": "cau",
+     "src": "PROC",
+     "caution": "EGT and N1 must increase within 15 s (max) after fuel is on. If not, abort the start."
+    },
+    {
+     "id": "n11.v1-007",
+     "item": "N2 50%",
+     "state": "START VALVE CLOSES",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "Start valve closure begins and the igniter indication goes out."
+    },
+    {
+     "id": "n11.v1-008",
+     "item": "Idle — CFM56",
+     "state": "N1 20 · N2 60 · EGT 400",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "Approximate ISA sea-level CFM56 values for recognition, not hard limits: N1 20%, N2 60%, EGT 400 °C, FF 300 kg/h. Confirm normal indications for the actual conditions."
+    },
+    {
+     "id": "n11.v1-010",
+     "item": "ENG 1 Master",
+     "state": "ON",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Same sequence as engine 2. PTU FAULT is triggered if the last engine is started within 40 s of cargo-door operation ending — reset by cycling the yellow ELEC pump ON then OFF."
+    },
+    {
+     "id": "n11.v1-011",
+     "item": "Pack Valves",
+     "state": "REOPEN AUTO",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "Both packs reopen with a 30 s delay after the second engine passes N2 50%."
+    }
+   ]
+  },
+  {
+   "id": "n12",
+   "kind": "flow",
+   "title": "After Start",
+   "zone": "OVHD · PEDESTAL",
+   "note": "After start, run the engines at or near idle for at least **2 minutes** before advancing to high power — taxi time at idle counts toward this.",
+   "fields": [
+    "toConf",
+    "trim"
+   ],
+   "checklists": [
+    "c2"
+   ],
+   "items": [
+    {
+     "id": "n12.v1-000",
+     "item": "ENG Mode Selector",
+     "state": "NORM",
+     "type": "act",
+     "src": "PROC",
+     "detail": "This is the cue to begin the after-start flow."
+    },
+    {
+     "id": "n12.v1-001",
+     "item": "APU Bleed",
+     "state": "OFF",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Avoids ingesting engine exhaust gases. If the APU is needed for performance, bleed may be selected ON again before takeoff."
+    },
+    {
+     "id": "n12.v1-002",
+     "item": "Engine Anti-Ice",
+     "state": "AS REQUIRED",
+     "type": "cau",
+     "src": "FCOM",
+     "detail": "Must be ON for all ground operations when icing conditions exist or are anticipated — OAT/TAT below 10 °C with visible moisture. In icing with OAT +3 °C or below, carry out the ice-shedding procedure."
+    },
+    {
+     "id": "n12.v1-003",
+     "item": "Wing Anti-Ice",
+     "state": "AS REQUIRED",
+     "type": "cau",
+     "src": "FCOM",
+     "caution": "APU bleed is **not authorised** for wing anti-ice.",
+     "detail": "Turn on if there is evidence of ice accretion — ice on the visual indicator or wipers, or a SEVERE ICE DETECTED alert. Accretion is severe at roughly 5 mm or more."
+    },
+    {
+     "id": "n12.v1-004",
+     "item": "APU Master",
+     "state": "OFF",
+     "type": "act",
+     "src": "PROC",
+     "detail": "If no longer required."
+    },
+    {
+     "id": "n12.v1-005",
+     "item": "Ground Spoilers",
+     "state": "ARM",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n12.v1-006",
+     "item": "Rudder Trim",
+     "state": "ZERO",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n12.v1-007",
+     "item": "Flaps",
+     "state": "TAKEOFF CONF",
+     "type": "act",
+     "src": "PROC",
+     "caution": "In icing conditions with rain, slush or snow, keep flaps **retracted** until the takeoff point."
+    },
+    {
+     "id": "n12.v1-008",
+     "item": "Pitch Trim",
+     "state": "SET {{trim}}",
+     "type": "tgt",
+     "src": "PROC"
+    },
+    {
+     "id": "n12.v1-009",
+     "item": "ECAM STS",
+     "state": "CHECK NOT DISPLAYED",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "If the status reminder is displayed, review the ECAM status page."
+    },
+    {
+     "id": "n12.v1-010",
+     "item": "N/W STEER DISC",
+     "state": "CHECK NOT DISPLAYED",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n12.v1-011",
+     "item": "Ground Crew",
+     "state": "CLEAR TO DISCONNECT",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Then: \"hand signal on the left/right\". After the signal, call \"HAND SIGNAL RECEIVED AND BYPASS PIN SIGHTED\"."
+    },
+    {
+     "id": "n12.v1-012",
+     "item": "AFTER START C/L",
+     "state": "READ",
+     "type": "chk",
+     "src": "PROC",
+     "link": "c2"
+    }
+   ]
+  },
+  {
+   "id": "n13",
+   "kind": "flow",
+   "title": "Taxi",
+   "zone": "PEDESTAL · GLARESHIELD",
+   "note": "FCTM technique: on long straight taxiways let the aircraft accelerate to about **30 kt**, then one smooth brake application down to about **10 kt** — fewer, firmer applications save the carbon brakes. Below 10 kt for turns of 90° or more. Local and low-visibility limits always apply.",
+   "fields": [
+    "sqk",
+    "toConf"
+   ],
+   "checklists": [
+    "c3"
+   ],
+   "items": [
+    {
+     "id": "n13.v1-000",
+     "item": "Flight Controls",
+     "state": "CHECK (F/CTL page)",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "Full deflection on both sidesticks and rudder, watching the F/CTL page. May be done before or during taxi."
+    },
+    {
+     "id": "n13.v1-001",
+     "item": "Taxi Clearance",
+     "state": "OBTAIN",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n13.v1-002",
+     "item": "Taxi / Turn-Off Lights",
+     "state": "ON",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n13.v1-003",
+     "item": "Area",
+     "state": "CLEAR LEFT / RIGHT",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n13.v1-004",
+     "item": "Parking Brake",
+     "state": "OFF — PRESSURE ZERO",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Slight residual pressure may show briefly."
+    },
+    {
+     "id": "n13.v1-005",
+     "item": "Brake Check",
+     "state": "PRESS PEDALS",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "Call \"BRAKE CHECK\" / \"PRESSURE ZERO\" — no pressure on the triple gauge. After long parking in the wet, the first application at low speed is less effective."
+    },
+    {
+     "id": "n13.v1-006",
+     "item": "FMS & Instruments",
+     "state": "CROSS-CHECK",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "F-PLN (SID, transition), initial climb speed and speed limit, FCU cleared altitude, HDG preset, FD both ON, PFD/ND check."
+    },
+    {
+     "id": "n13.v1-007",
+     "item": "Auto Brake",
+     "state": "MAX",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n13.v1-008",
+     "item": "ATC Code / Mode",
+     "state": "CONFIRM / SET",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n13.v1-009",
+     "item": "WX Radar",
+     "state": "ON / ALL",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n13.v1-010",
+     "item": "Predictive Windshear",
+     "state": "AUTO / ON",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n13.v1-011",
+     "item": "TERR on ND",
+     "state": "AS REQUIRED",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Consider radar on the PF side and terrain on the PM side."
+    },
+    {
+     "id": "n13.v1-012",
+     "item": "ENG Mode Selector",
+     "state": "AS REQUIRED",
+     "type": "cau",
+     "src": "PROC",
+     "detail": "Select IGN for heavy rain, standing water on the runway, or if severe turbulence is expected after takeoff."
+    },
+    {
+     "id": "n13.v1-013",
+     "item": "TO CONFIG",
+     "state": "TEST",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n13.v1-014",
+     "item": "TO Memo",
+     "state": "NO BLUE",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n13.v1-015",
+     "item": "Cabin",
+     "state": "SECURED FOR TAKEOFF",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n13.v1-016",
+     "item": "BEFORE TAKEOFF C/L",
+     "state": "DOWN TO THE LINE",
+     "type": "chk",
+     "src": "NCL",
+     "detail": "Airbus has one Before Takeoff checklist: the part down to the line during taxi, the rest at line-up.",
+     "link": "c3",
+     "rev": "v3"
+    }
+   ]
+  },
+  {
+   "id": "n14",
+   "kind": "flow",
+   "title": "Before Takeoff / Line-Up",
+   "zone": "GLARESHIELD · OVHD",
+   "note": "",
+   "checklists": [
+    "c3"
+   ],
+   "items": [
+    {
+     "id": "n14.v1-000",
+     "item": "Brake Fans",
+     "state": "CHECK / OFF",
+     "type": "cau",
+     "src": "FCOM",
+     "caution": "Brake fans must be **OFF** for takeoff. Fans-off brake temperature limit for takeoff is **300 °C**.",
+     "detail": "If an arc shows on the WHEEL page above brake temp, set fans ON. The sensor cools faster than the brake itself, so switching fans OFF will show a temperature rise — select fans OFF if the temperature with fans on is below 150 °C, otherwise delay takeoff."
+    },
+    {
+     "id": "n14.v1-001",
+     "item": "Line-Up Clearance",
+     "state": "OBTAIN",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n14.v1-002",
+     "item": "TCAS",
+     "state": "TA or TA/RA",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n14.v1-003",
+     "item": "Takeoff Runway",
+     "state": "CONFIRM",
+     "type": "chk",
+     "src": "PROC",
+     "caution": "Double-check runway direction after line-up using the localizer, ND and runway markings."
+    },
+    {
+     "id": "n14.v1-004",
+     "item": "Approach Path",
+     "state": "CLEAR OF TRAFFIC",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "Visually and via TCAS."
+    },
+    {
+     "id": "n14.v1-005",
+     "item": "Packs",
+     "state": "AS REQUIRED",
+     "type": "cau",
+     "src": "PROC",
+     "detail": "Consider packs OFF, or APU bleed ON provided wing anti-ice is OFF. Packs OFF improves performance with TOGA and reduces takeoff EGT (and maintenance cost) on a FLEX takeoff."
+    },
+    {
+     "id": "n14.v1-006",
+     "item": "Sliding Table",
+     "state": "STOWED",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n14.v1-007",
+     "item": "Exterior Lights — Strobe",
+     "state": "ON",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n14.v1-008",
+     "item": "Cabin Crew",
+     "state": "ADVISE",
+     "type": "act",
+     "src": "PROC",
+     "detail": "\"Cabin crew take your stations for takeoff.\""
+    },
+    {
+     "id": "n14.v1-009",
+     "item": "BEFORE TAKEOFF C/L",
+     "state": "BELOW THE LINE",
+     "type": "chk",
+     "src": "NCL",
+     "link": "c3",
+     "rev": "v3"
+    }
+   ]
+  },
+  {
+   "id": "n15",
+   "kind": "flow",
+   "title": "Takeoff",
+   "zone": "PEDESTAL",
+   "note": "Captain keeps a hand on the thrust levers until V1. The takeoff-roll technique follows your flight profile: standard, or strong crosswind above 20 kt / tailwind.",
+   "fields": [
+    "wind",
+    "flex",
+    "v1",
+    "vr",
+    "v2"
+   ],
+   "plate": "takeoff",
+   "items": [
+    {
+     "id": "n15.v1-000",
+     "item": "Takeoff Clearance",
+     "state": "OBTAIN",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Also check weather and terrain around the departure path, and the fuel state before takeoff."
+    },
+    {
+     "id": "n15.v1-001",
+     "item": "Exterior Lights",
+     "state": "NOSE · TURN OFF · LAND ON",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n15.v1-002",
+     "item": "Announce",
+     "state": "\"TAKEOFF\"",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n15.v1-003",
+     "item": "Chrono",
+     "state": "START",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "sub": "TAKEOFF ROLL — STANDARD"
+    },
+    {
+     "id": "n15.v1-005",
+     "item": "Thrust",
+     "state": "N1 50% — STABILISE",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Let the engines stabilise before advancing.",
+     "when": {
+      "wind": "normal"
+     }
+    },
+    {
+     "id": "n15.v1-006",
+     "item": "Brakes",
+     "state": "RELEASE",
+     "type": "act",
+     "src": "PROC",
+     "when": {
+      "wind": "normal"
+     }
+    },
+    {
+     "id": "n15.v1-007",
+     "item": "Thrust",
+     "state": "FLEX {{flex}} / TOGA",
+     "type": "act",
+     "src": "PROC",
+     "when": {
+      "wind": "normal"
+     }
+    },
+    {
+     "id": "n15.v1-008",
+     "item": "Sidestick",
+     "state": "½ FWD → NEUTRAL BY 100",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Half forward up to 80 kt, progressively neutral by 100 kt. Counters the nose-up effect of setting takeoff thrust.",
+     "when": {
+      "wind": "normal"
+     }
+    },
+    {
+     "sub": "TAKEOFF ROLL — CROSSWIND > 20 kt / TAILWIND"
+    },
+    {
+     "id": "n15.strong-stabilise",
+     "item": "Thrust — stabilise",
+     "state": "N1 50%",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Let the engines stabilise at 50% before the further increase.",
+     "when": {
+      "wind": "strong"
+     },
+     "rev": "v3"
+    },
+    {
+     "id": "n15.strong-brakes",
+     "item": "Brakes",
+     "state": "RELEASE",
+     "type": "act",
+     "src": "PROC",
+     "when": {
+      "wind": "strong"
+     },
+     "rev": "v3"
+    },
+    {
+     "id": "n15.v1-010",
+     "item": "Thrust",
+     "state": "N1 50% → 70% → FLX/TOGA",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Rapidly increase to 70% (1.15 EPR), then progressively to takeoff thrust by 40 kt ground speed.",
+     "when": {
+      "wind": "strong"
+     }
+    },
+    {
+     "id": "n15.v1-011",
+     "item": "Sidestick",
+     "state": "FULL FWD → NEUTRAL BY 100",
+     "type": "act",
+     "src": "PROC",
+     "when": {
+      "wind": "strong"
+     }
+    },
+    {
+     "sub": "ROLL & ROTATE"
+    },
+    {
+     "id": "n15.v1-013",
+     "item": "FMA",
+     "state": "ANNOUNCE",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "MAN TOGA or MAN FLX, SRS, RWY (or blank), A/THR in blue."
+    },
+    {
+     "id": "n15.v1-014",
+     "item": "Below 80 kt",
+     "state": "THRUST SET",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "Below 80 kt an EGT overlimit triggers ECAM and the takeoff can be rejected. Above 80 kt it is inhibited — EGT may exceed red line but do not reject above 100 kt."
+    },
+    {
+     "id": "n15.v1-015",
+     "item": "100 kt",
+     "state": "\"ONE HUNDRED KNOTS\"",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n15.v1-016",
+     "item": "V1",
+     "state": "\"V1\" — {{v1}}",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n15.v1-017",
+     "item": "VR",
+     "state": "\"ROTATE\" — {{vr}}",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Rotate smoothly at about 3°/s toward 15° pitch, then follow SRS."
+    },
+    {
+     "id": "n15.v1-018",
+     "item": "Pitch",
+     "state": "15° (12.5° ENG OUT)",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n15.v1-019",
+     "item": "Positive Climb",
+     "state": "\"POSITIVE CLIMB\"",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n15.v1-020",
+     "item": "Landing Gear",
+     "state": "UP",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n15.v3-ap",
+     "item": "Autopilot",
+     "state": "AS RQRD — ≥ 100 ft",
+     "type": "act",
+     "src": "FCOM",
+     "detail": "The AP can be engaged from 100 ft AGL and at least 5 s after liftoff. Follow SRS until then.",
+     "rev": "v3"
+    }
+   ]
+  },
+  {
+   "id": "n16",
+   "kind": "flow",
+   "title": "After Takeoff & Climb",
+   "zone": "PEDESTAL · OVHD",
+   "note": "Flow first, then the **AFTER TAKEOFF / CLIMB** checklist: down to the line once the flaps are up and the packs are on, below the line at the transition altitude.",
+   "fields": [
+    "thr",
+    "acc",
+    "ta"
+   ],
+   "plate": "takeoff",
+   "checklists": [
+    "c9"
+   ],
+   "items": [
+    {
+     "sub": "THRUST REDUCTION ALT — {{thr}}"
+    },
+    {
+     "id": "n16.v1-001",
+     "item": "Thrust Levers",
+     "state": "CL",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n16.v1-002",
+     "item": "Packs",
+     "state": "ON (if applicable)",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Set pack 2 ON about 10 s after pack 1 for passenger comfort. Packs ON before reducing thrust will increase EGT."
+    },
+    {
+     "sub": "ACCELERATION ALT — {{acc}}"
+    },
+    {
+     "id": "n16.v1-004",
+     "item": "Target Speed",
+     "state": "CHECK / MONITOR FMA",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n16.v1-005",
+     "item": "F Speed",
+     "state": "FLAPS 1",
+     "type": "act",
+     "src": "FCOM",
+     "detail": "At F speed with a positive speed trend, retract to CONF 1. Note: in CONF 1+F the F speed does not appear on the PFD. Your original flow collapsed both retraction steps into one \"above S speed\" item.",
+     "when": {
+      "toConf": [
+       "2",
+       "3"
+      ]
+     }
+    },
+    {
+     "id": "n16.v1-006",
+     "item": "S Speed",
+     "state": "FLAPS 0",
+     "type": "act",
+     "src": "FCOM",
+     "caution": "Slat alpha/speed lock inhibits retraction from 1 to 0 if AOA exceeds 8.5° or speed drops below 148 kt. It clears below 7.6° AOA and above 154 kt.",
+     "detail": "In CONF 1+F the flaps also retract automatically to 0 when IAS exceeds 210 kt, with the slats staying out."
+    },
+    {
+     "id": "n16.v1-007",
+     "item": "Ground Spoilers",
+     "state": "DISARM",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n16.v1-008",
+     "item": "Exterior Lights",
+     "state": "NOSE & TURN-OFF OFF",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n16.v1-009",
+     "item": "TCAS",
+     "state": "TA / RA",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n16.v1-010",
+     "item": "APU",
+     "state": "BLEED & MASTER AS REQ",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n16.v1-011",
+     "item": "Anti-Ice",
+     "state": "AS REQUIRED",
+     "type": "cau",
+     "src": "FCOM",
+     "detail": "Engine anti-ice ON when icing conditions exist or are anticipated, except in climb and cruise when SAT is below −40 °C."
+    },
+    {
+     "id": "n16.v3-atc1",
+     "item": "AFTER TAKEOFF / CLIMB C/L",
+     "state": "DOWN TO THE LINE",
+     "type": "chk",
+     "src": "NCL",
+     "link": "c9",
+     "rev": "v3"
+    },
+    {
+     "sub": "CLIMB — THE FOUR T's"
+    },
+    {
+     "id": "n16.v1-013",
+     "item": "Transition Altitude",
+     "state": "AT {{ta}} ft QNH — SET STD",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Set STD at the transition altitude and cross-check both sides.",
+     "rev": "v3"
+    },
+    {
+     "id": "n16.v3-atc2",
+     "item": "AFTER TAKEOFF / CLIMB C/L",
+     "state": "BELOW THE LINE",
+     "type": "chk",
+     "src": "NCL",
+     "detail": "Baro reference STD, cross-checked on both sides.",
+     "link": "c9",
+     "rev": "v3"
+    },
+    {
+     "id": "n16.v1-014",
+     "item": "10 000 ft",
+     "state": "TEN THOUSAND CHECKS",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "EFIS CSTR/ARPT · landing lights retract · seat belts as required · ECAM memo and pressurisation review · clear manually tuned VORs · SEC F-PLN copy active · check OPT/MAX ALT."
+    },
+    {
+     "id": "n16.v1-015",
+     "item": "Tilt / Terrain",
+     "state": "ADJUST",
+     "type": "act",
+     "src": "PROC",
+     "detail": "At 10 000 ft or the highest MSA, whichever is later."
+    },
+    {
+     "id": "n16.v1-016",
+     "item": "20 000 ft",
+     "state": "WX RADAR GAIN",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n16.v1-017",
+     "item": "Cabin Altitude",
+     "state": "MAX 8000 ft",
+     "type": "chk",
+     "src": "USER"
+    },
+    {
+     "id": "n16.v1-018",
+     "item": "Top of Climb",
+     "state": "RATE < 1500 fpm",
+     "type": "cau",
+     "src": "PROC",
+     "detail": "Approaching the assigned level, keep the vertical rate below 1500 fpm through the last 1000 ft (ideally 500–1000 fpm) to avoid unnecessary TCAS RAs."
+    }
+   ]
+  },
+  {
+   "id": "n17",
+   "kind": "flow",
+   "title": "Cruise",
+   "zone": "MCDU · ECAM",
+   "note": "Mnemonic **A–I**. Green dot below 20 000 ft ≈ (2 × weight in tonnes) + 85; add 1 kt per 1000 ft above that.",
+   "items": [
+    {
+     "id": "n17.v1-000",
+     "item": "A — Altimeter",
+     "state": "HOURLY READINGS",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "RVSM requirement."
+    },
+    {
+     "id": "n17.v1-001",
+     "item": "B — Boundaries",
+     "state": "FIR ENTRY / EXIT",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n17.v1-002",
+     "item": "C — Collision Avoidance",
+     "state": "TCAS ALL",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n17.v1-003",
+     "item": "D — Documentation",
+     "state": "FPL · LOG · DEBRIEF",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n17.v1-004",
+     "item": "E — ECAM",
+     "state": "MEMO & SD PAGES",
+     "type": "chk",
+     "src": "USER"
+    },
+    {
+     "id": "n17.v1-005",
+     "item": "E — Enroute Alternates",
+     "state": "DIVERSION / ETP",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "Review suitable alternates, terrain, weather, fuel and the applicable engine-out performance. A fixed 350 NM does not define single-engine range without fuel, time, mass and flight conditions.",
+     "rev": "v2"
+    },
+    {
+     "id": "n17.v1-006",
+     "item": "F — Fuel",
+     "state": "WAYPOINT / ≤ 30 MIN",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "At the same waypoint compare actual FOB and fuel used with the OFP/SimBrief plan. Check FOB + total fuel used against the initial fuel quantity, using the applicable tolerances. Review destination/alternate predictions separately. A future-waypoint prediction must not be compared directly with the present tank quantity.",
+     "rev": "v2"
+    },
+    {
+     "id": "n17.v1-007",
+     "item": "G — Gain & Tilt",
+     "state": "WX RADAR",
+     "type": "act",
+     "src": "PROC",
+     "detail": "A range of 80 NM on the PF ND and 160 NM on the PM ND is a good combination."
+    },
+    {
+     "id": "n17.v1-008",
+     "item": "H — High Altitude Winds",
+     "state": "CHECK ENTRIES",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "Update when wind differs by 30° or 30 kt, or temperature deviation by 5 °C. Your original flow requested winds on a 6-hourly clock; the source ties it to actual deviation."
+    },
+    {
+     "id": "n17.v1-009",
+     "item": "I — Inflight Performance",
+     "state": "STEP / GREEN DOT",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "Up: step flight level. Down (if FMGS fails): green dot speed and single-engine ceiling. Lateral: waypoint track and distance, NAV accuracy."
+    },
+    {
+     "id": "n17.v1-010",
+     "item": "Low Fuel Temperature",
+     "state": "MONITOR",
+     "type": "cau",
+     "src": "PROC",
+     "detail": "Fuel cools toward TAT at roughly 3 °C/h (up to 12 °C/h in extremes). Below the tropopause a 4000 ft descent gives about 7 °C more TAT; M +0.01 gives about 0.7 °C. Allow up to an hour to stabilise."
+    }
+   ]
+  },
+  {
+   "id": "n18",
+   "kind": "flow",
+   "title": "Descent Prep & Arrival Briefing",
+   "zone": "MCDU",
+   "note": "Obtain destination and alternate weather about **15 min before TOD**. Landing weight = GW − (FOB − estimated fuel at destination).",
+   "fields": [
+    "approach",
+    "ldgConf",
+    "landingMode",
+    "qnhArr",
+    "tl",
+    "vapp",
+    "abrk",
+    "mins",
+    "gaAlt",
+    "apOff",
+    "fpa"
+   ],
+   "items": [
+    {
+     "id": "n18.v1-000",
+     "item": "Weather & Landing Info",
+     "state": "OBTAIN",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n18.v1-001",
+     "item": "ECAM Status",
+     "state": "CHECK",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n18.v1-002",
+     "item": "NAV Charts",
+     "state": "PREPARE",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n18.v1-003",
+     "item": "Landing Performance",
+     "state": "COMPUTE & CROSS-CHECK",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Best combination to save fuel and brake wear: CONF 3 + REV idle + autobrake LO. If landing distance is the priority: CONF FULL + REV max + autobrake MED."
+    },
+    {
+     "id": "n18.v1-004",
+     "item": "Auto Brake",
+     "state": "{{abrk}}",
+     "type": "tgt",
+     "src": "PROC",
+     "detail": "LO for long runways, MED for short or contaminated. Pedal braking may suit very long runways, or very short ones where full manual braking without delay is wanted."
+    },
+    {
+     "id": "n18.v1-005",
+     "item": "GPWS LDG FLAP 3",
+     "state": "AS REQUIRED",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n18.v1-006",
+     "item": "F-PLN — STAR & DES WINDS",
+     "state": "SET",
+     "type": "act",
+     "src": "PROC",
+     "detail": "The FMS may delete altitude constraints at or above the cruise level. If TOO STEEP PATH shows after the final descent point, do not use FINAL APP guidance."
+    },
+    {
+     "id": "n18.v1-007",
+     "item": "RAD NAV",
+     "state": "APPROACH AIDS",
+     "type": "tgt",
+     "src": "PROC"
+    },
+    {
+     "id": "n18.v1-008",
+     "item": "PROG — BRG/DIST",
+     "state": "ARRIVAL RWY",
+     "type": "tgt",
+     "src": "PROC"
+    },
+    {
+     "id": "n18.v3-coding",
+     "item": "Approach Coding",
+     "state": "CHECK vs CHART",
+     "type": "chk",
+     "src": "FCTM",
+     "detail": "Compare the F-PLN from the final approach fix to the missed approach point with the chart: track, altitude constraints and final descent angle. Do not modify the final approach segment.",
+     "when": {
+      "approach": [
+       "rnav",
+       "npa"
+      ]
+     },
+     "rev": "v3"
+    },
+    {
+     "id": "n18.v1-009",
+     "item": "PERF — APPR",
+     "state": "QNH · TEMP · WIND · MINS",
+     "type": "tgt",
+     "src": "PROC",
+     "detail": "Insert the tower wind without gusts — ground-speed mini already covers them. Minimum: the barometric minimum (DA for ILS CAT I, MDA or DA for non-precision) goes into the MDA field; the DH field is only for CAT II/III radio minima.",
+     "rev": "v3"
+    },
+    {
+     "id": "n18.v1-010",
+     "item": "PERF — GO AROUND",
+     "state": "THR RED / ACC ALT",
+     "type": "tgt",
+     "src": "PROC"
+    },
+    {
+     "id": "n18.v1-011",
+     "item": "FUEL PRED",
+     "state": "CHECK",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n18.v1-012",
+     "item": "SEC F-PLN",
+     "state": "ALTERNATE RWY",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n18.v1-013",
+     "item": "Landing Elevation",
+     "state": "MODE & VALUE",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "sub": "ARRIVAL BRIEFING"
+    },
+    {
+     "id": "n18.v1-015",
+     "item": "Airfield & Weather",
+     "state": "DEST + ALTN",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "Including terminal information, NOTAMs and extra holding fuel."
+    },
+    {
+     "id": "n18.v1-016",
+     "item": "STAR",
+     "state": "FREQ · ROUTING · TL · MSA",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n18.v1-017",
+     "item": "Approach",
+     "state": "FREQ · MINIMA · OBSTACLES",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n18.v1-018",
+     "item": "Go-Around",
+     "state": "ATC & A/C PROCEDURE",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n18.v1-019",
+     "item": "Runway & Taxi",
+     "state": "DIMS · SURFACE · PARKING",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n18.v1-020",
+     "item": "Descent Clearance",
+     "state": "SET ON FCU",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n18.v1-021",
+     "item": "TCAS",
+     "state": "BELOW",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Cycling the seat-belt sign twice just before TOD cues the cabin crew for descent."
+    }
+   ]
+  },
+  {
+   "id": "n19",
+   "kind": "flow",
+   "title": "Descent",
+   "zone": "FCU · EFIS",
+   "note": "Max rate of descent: **2000 fpm** below 5000 ft AGL and **1000 fpm** below 2000 ft AGL. Approaching the assigned level, reduce to 1000 fpm or less.",
+   "fields": [
+    "qnhArr",
+    "tl"
+   ],
+   "checklists": [
+    "c4"
+   ],
+   "items": [
+    {
+     "id": "n19.v1-000",
+     "item": "Descent Speed",
+     "state": "MANAGED",
+     "type": "act",
+     "src": "PROC",
+     "detail": "If not managed: 0.78 / 300 kt down to FL100, then 250 kt below FL100."
+    },
+    {
+     "id": "n19.v1-001",
+     "item": "20 000 ft",
+     "state": "WX RADAR GAIN",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n19.v1-002",
+     "item": "Tilt / Terrain",
+     "state": "TERR ON ND",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Select at 10 000 ft or MSA, whichever is higher. If NAV accuracy is LOW, do not use TERR ON ND."
+    },
+    {
+     "id": "n19.v1-003",
+     "item": "10 000 ft",
+     "state": "TEN THOUSAND CHECKS",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "EFIS CSTR · LS as required · NAV accuracy check · landing lights set · seat belts ON · RAD NAV selected and identified · engine mode as required."
+    },
+    {
+     "id": "n19.v1-004",
+     "item": "Landing Lights",
+     "state": "ON",
+     "type": "act",
+     "src": "USER"
+    },
+    {
+     "id": "n19.v1-005",
+     "item": "Seat Belts",
+     "state": "ON",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Your flow used \"15 min before landing or below FL150\". The source ties it to the 10 000 ft checks, which is the standard trigger."
+    },
+    {
+     "id": "n19.v1-006",
+     "item": "Engine Mode Selector",
+     "state": "NORM or IGN",
+     "type": "cau",
+     "src": "USER",
+     "detail": "IGN for standing water on the runway or heavy rain."
+    },
+    {
+     "id": "n19.v1-007",
+     "item": "Transition Level",
+     "state": "FL{{tl}} — SET {{qnhArr}} hPa",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Approaching TL and when cleared to an altitude.",
+     "rev": "v3"
+    },
+    {
+     "id": "n19.v1-008",
+     "item": "Anti-Ice",
+     "state": "CHECK",
+     "type": "cau",
+     "src": "USER",
+     "detail": "Visible moisture with TAT at or below 10 °C."
+    },
+    {
+     "id": "n19.v1-009",
+     "item": "APPROACH C/L",
+     "state": "READ",
+     "type": "chk",
+     "src": "PROC",
+     "link": "c4"
+    }
+   ]
+  },
+  {
+   "id": "n20",
+   "kind": "flow",
+   "title": "Approach",
+   "zone": "FCU · PEDESTAL",
+   "note": "**ILS and RNAV (FINAL APP):** decelerated approach — CONF 1 and S speed at the final descent point, landing configuration and VAPP by 1000 ft. **Selected non-precision (TRK/FPA):** early stabilised — landing configuration and VAPP before the final descent point. Never forget: speed control · approach mode · configuration points · go-around altitude.",
+   "fields": [
+    "approach",
+    "ldgConf",
+    "landingMode",
+    "vapp",
+    "mins",
+    "gaAlt",
+    "apOff",
+    "fpa"
+   ],
+   "plate": "approach",
+   "checklists": [
+    "c5"
+   ],
+   "items": [
+    {
+     "id": "n20.v1-000",
+     "item": "Approach Phase",
+     "state": "ACTIVATE",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Activates automatically when overflying the DECEL pseudo-waypoint in NAV mode. In HDG mode activate manually on PERF DES, about 15–20 NM from touchdown."
+    },
+    {
+     "id": "n20.v1-001",
+     "item": "NAV Accuracy",
+     "state": "CHECK",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "NAV ACCURACY HIGH on the PROG page. If it is LOW, at least one ND must show ROSE LS or VOR raw data.",
+     "rev": "v3"
+    },
+    {
+     "id": "n20.v1-002",
+     "item": "APPR pb",
+     "state": "WHEN CLEARED / INTERCEPT",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Arm when cleared for the approach and on an intercept heading or track. FMA: LOC and G/S blue.",
+     "rev": "v3",
+     "when": {
+      "approach": "ils"
+     }
+    },
+    {
+     "id": "n20.v1-003",
+     "item": "AP",
+     "state": "AS RQRD — BOTH FOR CAT II/III",
+     "type": "act",
+     "src": "FCOM",
+     "detail": "One AP is enough for a CAT I approach. Autoland and CAT II/III need both APs (CAT 2 / CAT 3 DUAL on the FMA).",
+     "rev": "v3",
+     "when": {
+      "approach": "ils"
+     }
+    },
+    {
+     "id": "n20.v1-004",
+     "item": "LOC / GS",
+     "state": "ARMED / CAPTURED",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "Capture from below is the normal case. For a capture from above use the special card “G/S Interception from Above”.",
+     "rev": "v3",
+     "when": {
+      "approach": "ils"
+     }
+    },
+    {
+     "id": "n20.v3-rnav-gps",
+     "item": "GPS PRIMARY",
+     "state": "CHECK",
+     "type": "chk",
+     "src": "FCOM",
+     "detail": "An RNAV (GNSS) approach needs GPS PRIMARY. If GPS PRIMARY is lost before the final descent point, do not continue the RNAV approach unless visual.",
+     "when": {
+      "approach": "rnav"
+     },
+     "rev": "v3"
+    },
+    {
+     "id": "n20.v3-rnav-appr",
+     "item": "APPR pb",
+     "state": "PRESS — FINAL APP ARMED",
+     "type": "act",
+     "src": "FCOM",
+     "detail": "Press when cleared and established on — or in NAV towards — the final approach track. FMA: APP NAV green, FINAL blue.",
+     "when": {
+      "approach": "rnav"
+     },
+     "rev": "v3"
+    },
+    {
+     "id": "n20.v3-rnav-vdev",
+     "item": "V/DEV",
+     "state": "MONITOR",
+     "type": "chk",
+     "src": "FCTM",
+     "detail": "The vertical-deviation scale on the PFD shows the aircraft relative to the final descent path.",
+     "when": {
+      "approach": "rnav"
+     },
+     "rev": "v3"
+    },
+    {
+     "id": "n20.v3-rnav-final",
+     "item": "FINAL APP",
+     "state": "ENGAGED AT FDP",
+     "type": "chk",
+     "src": "FCOM",
+     "detail": "At the final descent point the FMA changes to FINAL APP (green) and the descent starts.",
+     "when": {
+      "approach": "rnav"
+     },
+     "rev": "v3"
+    },
+    {
+     "id": "n20.v3-rnav-ga",
+     "item": "FCU ALT",
+     "state": "SET {{gaAlt}}",
+     "type": "tgt",
+     "src": "FCTM",
+     "detail": "Once FINAL APP is engaged and the descent has started, set the missed-approach altitude.",
+     "when": {
+      "approach": "rnav"
+     },
+     "rev": "v3"
+    },
+    {
+     "id": "n20.v3-npa-config",
+     "item": "Landing Configuration",
+     "state": "BEFORE FDP — VAPP",
+     "type": "act",
+     "src": "FCTM",
+     "detail": "Early stabilised: gear down, landing flaps, ground spoilers armed and VAPP before the final descent point, so the descent starts fully configured.",
+     "when": {
+      "approach": "npa"
+     },
+     "rev": "v3"
+    },
+    {
+     "id": "n20.v3-npa-trk",
+     "item": "TRK-FPA",
+     "state": "SELECT — BIRD ON",
+     "type": "act",
+     "src": "FCOM",
+     "detail": "Fly the final track with TRK; the bird on the PFD shows the flight path.",
+     "when": {
+      "approach": "npa"
+     },
+     "rev": "v3"
+    },
+    {
+     "id": "n20.v3-npa-fpa",
+     "item": "FPA",
+     "state": "{{fpa}}° — PULL 0.2 NM BEFORE FDP",
+     "type": "act",
+     "src": "FCTM",
+     "detail": "Preset the charted final descent angle and pull it about 0.2 NM before the final descent point so the aircraft joins the path.",
+     "when": {
+      "approach": "npa"
+     },
+     "rev": "v3"
+    },
+    {
+     "id": "n20.v3-npa-ga",
+     "item": "FCU ALT",
+     "state": "SET {{gaAlt}}",
+     "type": "tgt",
+     "src": "FCTM",
+     "detail": "Once established in the final descent, set the missed-approach altitude.",
+     "when": {
+      "approach": "npa"
+     },
+     "rev": "v3"
+    },
+    {
+     "id": "n20.v3-npa-check",
+     "item": "Altitude / Distance",
+     "state": "CHECK vs CHART",
+     "type": "chk",
+     "src": "FCTM",
+     "detail": "Compare the altitude with the chart's distance table and correct the FPA in small steps (0.1–0.5°).",
+     "when": {
+      "approach": "npa"
+     },
+     "rev": "v3"
+    },
+    {
+     "id": "n20.v1-005",
+     "item": "Cabin Crew",
+     "state": "ADVISE",
+     "type": "act",
+     "src": "PROC",
+     "detail": "\"Cabin crew at your stations for landing.\""
+    },
+    {
+     "id": "n20.v1-006",
+     "item": "3 NM from FDP",
+     "state": "FLAPS 1 — S SPEED",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Select flaps 1 at least 3 NM before the final descent point. Establish on final descent with flaps 1 and S speed at or above 2000 ft AGL. If tailwind exceeds 20 kt or the glide is steeper than 3.5°, use an early stabilised approach instead.",
+     "when": {
+      "approach": [
+       "ils",
+       "rnav"
+      ]
+     },
+     "rev": "v3"
+    },
+    {
+     "id": "n20.v1-007",
+     "item": "G/S*",
+     "state": "SET {{gaAlt}}",
+     "type": "tgt",
+     "src": "PROC",
+     "detail": "After glide-slope capture, set the missed-approach altitude and cross-check it.",
+     "rev": "v3",
+     "when": {
+      "approach": "ils"
+     }
+    },
+    {
+     "id": "n20.v1-008",
+     "item": "2000 ft AGL (min)",
+     "state": "FLAPS 2 — F SPEED",
+     "type": "act",
+     "src": "PROC",
+     "detail": "If intercepting below 2000 ft AGL, take flaps 2 at one dot below the flight path. Speed brakes are not recommended below 2000 ft.",
+     "when": {
+      "approach": [
+       "ils",
+       "rnav"
+      ]
+     },
+     "rev": "v3"
+    },
+    {
+     "id": "n20.v1-009",
+     "item": "When Flaps 2",
+     "state": "LANDING GEAR DOWN",
+     "type": "act",
+     "src": "PROC",
+     "when": {
+      "approach": [
+       "ils",
+       "rnav"
+      ]
+     },
+     "rev": "v3"
+    },
+    {
+     "id": "n20.v1-010",
+     "item": "Auto Brake",
+     "state": "CONFIRM {{abrk}}",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n20.v1-011",
+     "item": "Lights",
+     "state": "NOSE TO · TURN-OFF ON",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n20.v1-012",
+     "item": "Ground Spoilers",
+     "state": "ARM",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n20.v1-013",
+     "item": "When Gear Down",
+     "state": "FLAPS 3",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Confirm down-and-locked indications for nose, left main and right main gear. On the WHEEL page this means at least one green triangle for each gear, with the applicable landing-gear memo. Check the brake triple indicator for residual pressure.",
+     "rev": "v3",
+     "when": {
+      "approach": [
+       "ils",
+       "rnav"
+      ]
+     }
+    },
+    {
+     "id": "n20.v1-014",
+     "item": "When Flaps 3",
+     "state": "FLAPS FULL — TARGET SPD",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Retract speed brakes before selecting full flaps. To minimise flap wear, extend at VFE−15 where possible.",
+     "when": {
+      "approach": [
+       "ils",
+       "rnav"
+      ],
+      "ldgConf": "FULL"
+     },
+     "rev": "v3"
+    },
+    {
+     "id": "n20.conf3-speed",
+     "item": "Landing CONF 3",
+     "state": "CONFIRM · VAPP {{vapp}}",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "Retain CONF 3 and confirm VAPP from the landing performance.",
+     "when": {
+      "ldgConf": "3"
+     },
+     "rev": "v3"
+    },
+    {
+     "id": "n20.v1-015",
+     "item": "Landing Memo",
+     "state": "NO BLUE",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n20.v1-016",
+     "item": "A/THR",
+     "state": "SPEED MODE or OFF",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n20.v1-017",
+     "item": "Wing Anti-Ice",
+     "state": "AS RQRD",
+     "type": "cau",
+     "src": "FCOM",
+     "detail": "ON when ice accretion is evident — ice on the visual indicator or the wipers. With significant ice on the airframe apply the icing corrections of the landing performance.",
+     "rev": "v3"
+    },
+    {
+     "id": "n20.v1-018",
+     "item": "LANDING C/L",
+     "state": "READ",
+     "type": "chk",
+     "src": "PROC",
+     "link": "c5"
+    },
+    {
+     "id": "n20.v1-019",
+     "item": "1000 ft",
+     "state": "STABILISED",
+     "type": "wrn",
+     "src": "PROC",
+     "caution": "Stabilised by **1000 ft** above the airport (500 ft for a visual approach in VMC). Not stabilised → go around.",
+     "detail": "Criteria: speed +10/−5 kt · pitch +10°/−2.5° · bank 7° · sink rate max 1000 fpm · LOC and glide within ½ dot · hands on thrust levers and sidestick · briefings and checklists complete. The source procedure uses 1500 ft for CAT II/III. With more than 10 kt tailwind at landing it does not permit a decelerated approach.",
+     "rev": "v3"
+    },
+    {
+     "id": "n20.v1-020",
+     "item": "Minimum + 100",
+     "state": "\"ONE HUNDRED ABOVE\"",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n20.v1-021",
+     "item": "Minimum",
+     "state": "CONTINUE or GO AROUND",
+     "type": "wrn",
+     "src": "PROC",
+     "detail": "Non-precision: treat the MDA (plus an add-on, often 50 ft) as a decision altitude — no level-off at MDA (continuous descent final approach).",
+     "rev": "v3"
+    },
+    {
+     "id": "n20.v1-022",
+     "item": "AP Disconnect",
+     "state": "BY {{apOff}} ft",
+     "type": "cau",
+     "src": "FCOM",
+     "detail": "A320 minimum AP use heights: ILS with CAT 1 on the FMA 160 ft AGL · FINAL APP, V/S or FPA 250 ft AGL · after a manual go-around 100 ft. Autoland follows the CAT II/III procedure. Your 2024 flow used 300 ft — a stricter personal policy, fine to keep.",
+     "when": {
+      "landingMode": "manual"
+     },
+     "rev": "v3"
+    }
+   ]
+  },
+  {
+   "id": "n21",
+   "kind": "flow",
+   "title": "Landing",
+   "zone": "PEDESTAL",
+   "note": "Flare at about **30 ft**. \"RETARD\" sounds at 20 ft as a reminder — thrust levers must be at IDLE by touchdown at the latest, or the ground spoilers are inhibited.",
+   "items": [
+    {
+     "id": "n21.v1-000",
+     "item": "≈ 30 ft",
+     "state": "FLARE",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Typical pitch increment in the flare is about 4°, giving roughly −1° flight path angle with a 10 kt speed decay. Do not allow the aircraft to float. Your original flow noted 1°, which understates it."
+    },
+    {
+     "id": "n21.v1-001",
+     "item": "20 ft",
+     "state": "\"RETARD\" — THRUST IDLE",
+     "type": "act",
+     "src": "PROC",
+     "caution": "Ground spoilers are **inhibited** if the thrust levers are not at IDLE by touchdown."
+    },
+    {
+     "id": "n21.v1-002",
+     "item": "Attitude",
+     "state": "PITCH < 10° · BANK < 7°",
+     "type": "cau",
+     "src": "PROC",
+     "caution": "Tailstrike above 13.5° pitch (11.5° with gear compressed). Wingtip or engine scrape above 20° roll (16° compressed).",
+     "detail": "PM calls \"PITCH, PITCH\" at 10° and \"BANK, BANK\" at 7°."
+    },
+    {
+     "id": "n21.v1-003",
+     "item": "Touchdown",
+     "state": "DE-ROTATE",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Do not attempt a landing immediately after a high bounce — thrust may be needed to soften the second touchdown and the remaining runway may be insufficient."
+    },
+    {
+     "id": "n21.v1-004",
+     "item": "Reverse",
+     "state": "IDLE or MAX",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n21.v1-005",
+     "item": "Spoilers",
+     "state": "\"SPOILERS / NO SPOILERS\"",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "If no spoilers: verify both levers at idle or reverse, set max reverse and press the brake pedals fully. If spoilers were not armed, selecting reverse will extend them."
+    },
+    {
+     "id": "n21.v1-006",
+     "item": "Reversers",
+     "state": "\"REVERSE GREEN\"",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n21.v1-007",
+     "item": "Deceleration",
+     "state": "\"DECEL / NO DECEL\"",
+     "type": "chk",
+     "src": "PROC",
+     "caution": "Autobrake does not activate if the ground spoilers have not activated."
+    },
+    {
+     "id": "n21.v1-008",
+     "item": "70 kt",
+     "state": "REVERSE IDLE",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n21.v1-009",
+     "item": "Taxi Speed",
+     "state": "STOW REVERSERS",
+     "type": "act",
+     "src": "PROC",
+     "detail": "On snow-covered surfaces stow at 25 kt. For an autoland, stow at the end of the roll-out together with disconnecting the autopilot. Do not move the levers beyond forward idle."
+    },
+    {
+     "id": "n21.v1-010",
+     "item": "Before 20 kt",
+     "state": "AUTOBRAKE DISENGAGE",
+     "type": "act",
+     "src": "PROC"
+    }
+   ]
+  },
+  {
+   "id": "n22",
+   "kind": "flow",
+   "title": "After Landing",
+   "zone": "PEDESTAL · OVHD",
+   "note": "Ground spoilers disarming is the cue to start the flow. Complete the cleanup only once clear of the runway.",
+   "checklists": [
+    "c6"
+   ],
+   "items": [
+    {
+     "id": "n22.v1-000",
+     "item": "Ground Spoilers",
+     "state": "DISARM",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n22.v1-001",
+     "item": "Exterior Lights",
+     "state": "STROBE AUTO · LAND OFF",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Strobe AUTO after vacating. Landing lights retract, others as required."
+    },
+    {
+     "id": "n22.v1-002",
+     "item": "WX Radar",
+     "state": "OFF",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n22.v1-003",
+     "item": "Predictive Windshear",
+     "state": "OFF",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n22.v1-004",
+     "item": "ENG Mode Selector",
+     "state": "NORM",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n22.v1-005",
+     "item": "Flaps",
+     "state": "RETRACT",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Cold weather: flaps 0 unless the approach was in icing conditions or the runway is contaminated — ground crew must then check for obstructing ice first. Hot weather: keep slats in CONF 1 when OAT is above 30 °C to avoid AIR L(R) WING LEAK warnings. On terminating flights retract fully to 0 for the securing checklist."
+    },
+    {
+     "id": "n22.v1-006",
+     "item": "TCAS",
+     "state": "STANDBY",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n22.v1-007",
+     "item": "ATC",
+     "state": "AS REQUIRED",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n22.v1-008",
+     "item": "APU",
+     "state": "START",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Delay as long as possible. Use one pack if possible and alternate packs between flights to spread the wear."
+    },
+    {
+     "id": "n22.v1-009",
+     "item": "Anti-Ice",
+     "state": "AS REQUIRED",
+     "type": "cau",
+     "src": "PROC"
+    },
+    {
+     "id": "n22.v1-010",
+     "item": "Brake Temperature",
+     "state": "CHECK",
+     "type": "cau",
+     "src": "PROC",
+     "detail": "Delay brake fans at least 5 min after landing, or until before stopping at the gate. Use them sooner if turnaround is short or temperature is likely to exceed 500 °C. Maintenance action is due if one brake exceeds 900 °C, or the difference between two brakes on a gear exceeds 150 °C with one at or above 600 °C."
+    },
+    {
+     "id": "n22.v1-011",
+     "item": "Single Engine Taxi",
+     "state": "AFTER COOLDOWN",
+     "type": "cau",
+     "src": "USER",
+     "detail": "Your technique: shut down engine 2 about 2 min after vacating, or 3 min after high thrust. Switch the electric hydraulic pump ON. This matches the FCOM 3-minute cooldown rule below."
+    },
+    {
+     "id": "n22.v1-012",
+     "item": "AFTER LANDING C/L",
+     "state": "READ",
+     "type": "chk",
+     "src": "PROC"
+    }
+   ]
+  },
+  {
+   "id": "n23",
+   "kind": "flow",
+   "title": "Parking & Securing",
+   "zone": "PEDESTAL · OVHD",
+   "note": "Engine masters OFF **no less than 3 minutes** after high-thrust operation. Mnemonic for performance monitoring: **I-F-E** — IRS, Fuel, ECAM.",
+   "checklists": [
+    "c7",
+    "c8"
+   ],
+   "items": [
+    {
+     "sub": "PARKING"
+    },
+    {
+     "id": "n23.v1-001",
+     "item": "ACCU Pressure",
+     "state": "CHECK",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "If pressure is low, chocks are required before engine 1 shutdown."
+    },
+    {
+     "id": "n23.v1-002",
+     "item": "Parking Brake",
+     "state": "ON",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n23.v1-003",
+     "item": "Anti-Ice",
+     "state": "OFF",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n23.v1-004",
+     "item": "APU Bleed",
+     "state": "ON",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Just before engine shutdown, to avoid exhaust fumes entering the cabin. If the APU is unavailable, use external power."
+    },
+    {
+     "id": "n23.v1-005",
+     "item": "Engine Masters",
+     "state": "BOTH OFF",
+     "type": "act",
+     "src": "PROC",
+     "caution": "No less than **3 minutes** after high-thrust operation. Check engine parameters decreasing."
+    },
+    {
+     "id": "n23.v1-006",
+     "item": "Beacon",
+     "state": "OFF",
+     "type": "act",
+     "src": "PROC",
+     "detail": "After confirming all engines have spooled down. Your original flow used \"N2 below 20%\" — spool-down is the actual condition."
+    },
+    {
+     "id": "n23.v1-007",
+     "item": "PA — Cabin",
+     "state": "PREPARE FOR ARRIVAL",
+     "type": "act",
+     "src": "PROC",
+     "detail": "\"Cabin crew prepare for arrival, disarm door slides and cross check.\""
+    },
+    {
+     "id": "n23.v1-008",
+     "item": "Slides",
+     "state": "CHECK DISARMED",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n23.v1-009",
+     "item": "Seat Belts",
+     "state": "OFF",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n23.v1-010",
+     "item": "Fuel Pumps",
+     "state": "OFF",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n23.v1-011",
+     "item": "ATC",
+     "state": "STANDBY",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n23.v1-012",
+     "item": "Chocks",
+     "state": "CONFIRM IN PLACE",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n23.v1-013",
+     "item": "Parking Brake",
+     "state": "AS REQUIRED",
+     "type": "cau",
+     "src": "PROC",
+     "detail": "Release after chocks are on if one brake exceeds 300 °C (150 °C with fans). Do not press the pedals before releasing — that activates the zero-torque pressure function. Keep it on with a flat nose tyre to avoid yawing at release."
+    },
+    {
+     "id": "n23.v1-014",
+     "item": "I — IRS Drift",
+     "state": "CHECK",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "On POSITION MONITOR read each IRS deviation from the FMGC position against the FCOM PRO-NOR-SOP-22 limits."
+    },
+    {
+     "id": "n23.v1-015",
+     "item": "F — Fuel",
+     "state": "FOB + FU = DEP FUEL",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "An unusual discrepancy means maintenance action. Allow 5 min after shutdown for the gauges to settle."
+    },
+    {
+     "id": "n23.v1-016",
+     "item": "E — ECAM",
+     "state": "CHECK STATUS",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "n23.v1-017",
+     "item": "PARKING C/L",
+     "state": "READ",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "sub": "SECURING THE AIRCRAFT"
+    },
+    {
+     "id": "n23.v1-019",
+     "item": "Parking Brake",
+     "state": "CHECK ON",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "Keeping it on reduces the hydraulic leak rate."
+    },
+    {
+     "id": "n23.v1-020",
+     "item": "Flaps / Slats",
+     "state": "RETRACTED",
+     "type": "chk",
+     "src": "FCOM",
+     "caution": "Slats and flaps must be retracted **before** all ADIRS are set OFF simultaneously, or the rudder travel limit unit mechanical stop can be damaged."
+    },
+    {
+     "id": "n23.v1-021",
+     "item": "ADIRS",
+     "state": "ALL OFF",
+     "type": "act",
+     "src": "PROC",
+     "detail": "After ADIRS shutdown, wait 10 s before electrical shutdown so the units can memorise the most recent data."
+    },
+    {
+     "id": "n23.v1-022",
+     "item": "Crew Oxygen",
+     "state": "OFF",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n23.v1-023",
+     "item": "Exterior Lights",
+     "state": "OFF",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n23.v1-024",
+     "item": "Maintenance Bus",
+     "state": "AS REQUIRED",
+     "type": "act",
+     "src": "PROC",
+     "detail": "If electrical power is needed for servicing, set the overhead MAINT BUS switch ON before removing aircraft power."
+    },
+    {
+     "id": "n23.v1-025",
+     "item": "APU",
+     "state": "BLEED & MASTER OFF",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n23.v1-026",
+     "item": "Emergency Exit Lights",
+     "state": "OFF",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n23.v1-027",
+     "item": "External Power",
+     "state": "AS REQUIRED",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "n23.v1-028",
+     "item": "Batteries 1 + 2",
+     "state": "OFF",
+     "type": "act",
+     "src": "PROC",
+     "caution": "Wait until the APU flap is closed — about **2 min** after the APU AVAIL light goes out — or smoke may enter the cabin on the next flight. With batteries off and the APU running, APU fire extinguishing is unavailable."
+    },
+    {
+     "id": "n23.v1-029",
+     "item": "SECURING C/L",
+     "state": "READ",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "This checklist is read-and-do."
+    }
+   ]
+  },
+  {
+   "id": "s1",
+   "kind": "special",
+   "title": "Rejected Takeoff",
+   "zone": "",
+   "note": "Below 100 kt: reject for any ECAM warning or caution or another significant failure — captain's decision. Between 100 kt and V1 be **go-minded** and reject only for the cases below. After V1: continue.",
+   "items": [
+    {
+     "sub": "REJECT BETWEEN 100 kt AND V1 ONLY FOR"
+    },
+    {
+     "id": "s1.v1-001",
+     "item": "Severe Damage",
+     "state": "REJECT",
+     "type": "wrn",
+     "src": "PROC"
+    },
+    {
+     "id": "s1.v1-002",
+     "item": "Fire Warning",
+     "state": "REJECT",
+     "type": "wrn",
+     "src": "PROC"
+    },
+    {
+     "id": "s1.v1-003",
+     "item": "Sudden Loss of Thrust",
+     "state": "REJECT",
+     "type": "wrn",
+     "src": "PROC"
+    },
+    {
+     "id": "s1.v1-004",
+     "item": "Unable to Fly Safely",
+     "state": "REJECT",
+     "type": "wrn",
+     "src": "FCTM",
+     "detail": "Malfunctions or conditions that give unambiguous indications that the aircraft will not fly safely.",
+     "rev": "v3"
+    },
+    {
+     "id": "s1.v1-005",
+     "item": "Red ECAM Warning",
+     "state": "REJECT",
+     "type": "wrn",
+     "src": "FCTM",
+     "detail": "Any red warning. During the takeoff inhibit only a few alerts can appear at all — see the list at the bottom.",
+     "rev": "v3"
+    },
+    {
+     "id": "s1.v3-amber",
+     "item": "Amber: ENG FAIL · REV · THR LVR · SIDESTICK",
+     "state": "REJECT",
+     "type": "wrn",
+     "src": "FCTM",
+     "detail": "Only these amber cautions: ENG 1(2) FAIL, ENG 1(2) REVERSER FAULT or REVERSE UNLOCKED, ENG 1(2) THR LEVER FAULT, F/CTL SIDESTICK FAULT.",
+     "rev": "v3"
+    },
+    {
+     "id": "s1.v1-006",
+     "item": "Windshear",
+     "state": "REJECT — BEFORE V1",
+     "type": "wrn",
+     "src": "FCOM",
+     "detail": "Only with significant airspeed variations below V1 and enough runway left to stop.",
+     "rev": "v3"
+    },
+    {
+     "id": "s1.v1-007",
+     "item": "ATC \"STOP IMMEDIATELY\"",
+     "state": "REJECT",
+     "type": "wrn",
+     "src": "SIM"
+    },
+    {
+     "id": "s1.v1-008",
+     "item": "Runway Incursion / Birds",
+     "state": "REJECT",
+     "type": "wrn",
+     "src": "SIM"
+    },
+    {
+     "id": "s1.v1-009",
+     "item": "Tire Failure within 20 kt of V1",
+     "state": "CONTINUE",
+     "type": "cau",
+     "src": "PROC",
+     "detail": "Unless debris causes noticeable engine parameter fluctuation: take off, reduce fuel load and land with full runway length available."
+    },
+    {
+     "id": "s1.v1-010",
+     "item": "EGT Red Line / NG Vibration",
+     "state": "DO NOT ABORT > 100 kt",
+     "type": "cau",
+     "src": "PROC"
+    },
+    {
+     "sub": "PROCEDURE"
+    },
+    {
+     "id": "s1.v1-012",
+     "item": "Thrust Levers",
+     "state": "IDLE",
+     "type": "wrn",
+     "src": "SIM"
+    },
+    {
+     "id": "s1.v1-013",
+     "item": "Reverse",
+     "state": "MAXIMUM",
+     "type": "wrn",
+     "src": "SIM"
+    },
+    {
+     "id": "s1.v1-014",
+     "item": "Autobrake",
+     "state": "CHECK MAX WORKING",
+     "type": "wrn",
+     "src": "SIM",
+     "caution": "Autobrake only becomes active **above 72 kt**. Below that the blue ON light stays lit but the autobrake is **not braking** — use manual brakes with maximum force."
+    },
+    {
+     "id": "s1.v1-015",
+     "item": "Once Stopped",
+     "state": "STOW REVERSERS",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s1.v1-016",
+     "item": "Parking Brake",
+     "state": "SET",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s1.v1-017",
+     "item": "Cabin Crew",
+     "state": "\"ATTENTION CREW AT STATION\"",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "s1.v1-018",
+     "item": "ECAM / QRH",
+     "state": "APPLY",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s1.v1-019",
+     "item": "Evacuation",
+     "state": "CONSIDER",
+     "type": "cau",
+     "src": "SIM",
+     "detail": "Go to the Ground Emergency / Emergency Evacuation checklist whenever the situation threatens passengers and crew."
+    },
+    {
+     "sub": "TIMING REALITY"
+    },
+    {
+     "id": "s1.v1-021",
+     "item": "Reject near V1",
+     "state": "~5 s TO FULL BRAKING",
+     "type": "wrn",
+     "src": "SIM",
+     "detail": "From the malfunction occurring to brakes and spoilers working fully, about 5 seconds pass. Rejecting 4 kt after V1 with no stop margin can mean a runway overrun at up to 70 kt groundspeed. Statistically about half of all unsuccessful rejected takeoffs could have been avoided by continuing; roughly a quarter of those were tire failures."
+    },
+    {
+     "sub": "T.O. INHIBIT — NOT INHIBITED WARNINGS"
+    },
+    {
+     "id": "s1.v1-023",
+     "item": "Red Warnings",
+     "state": "FIRE · OIL LO PR · DUAL FAIL",
+     "type": "cau",
+     "src": "SIM",
+     "detail": "ENG 1(2) FIRE, ENG 1(2) OIL LO PR, ENG DUAL FAILURE, APU FIRE, F/CTL L+R ELEV FAULT, CONFIG WARNING."
+    },
+    {
+     "id": "s1.v1-024",
+     "item": "Amber Cautions",
+     "state": "ENG FAIL · SHUTDOWN · REV",
+     "type": "cau",
+     "src": "SIM",
+     "detail": "ENG 1(2) FAIL, ENG 1(2) SHUTDOWN, ENG 1(2) REV UNLOCKED, ENG 1(2) THR LEVER FAULT, F/CTL L(R) SIDESTICK FAULT, FWS FWC 1+2 FAULT. The T.O. inhibit phase runs from the first engine reaching takeoff power until 1500 ft AGL or 2 min after takeoff."
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "kind": "special",
+   "title": "Engine Failure after V1",
+   "zone": "",
+   "note": "Continue the takeoff. **No action below 400 ft AGL** except silencing aural warnings and gear up.",
+   "fields": [
+    "eoAcc"
+   ],
+   "plate": "eo",
+   "items": [
+    {
+     "id": "s2.v1-001",
+     "item": "VR",
+     "state": "ROTATE — 12.5°",
+     "type": "act",
+     "src": "FCTM",
+     "detail": "Then follow SRS. The simulator sheet gives 10–13°.",
+     "rev": "v3"
+    },
+    {
+     "id": "s2.v1-002",
+     "item": "Positive Climb",
+     "state": "GEAR UP",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s2.v1-003",
+     "item": "β Target",
+     "state": "CENTRE WITH RUDDER · THEN TRIM",
+     "type": "act",
+     "src": "FCTM",
+     "detail": "Centre the blue beta target with the rudder pedals, then take the pressure off with rudder trim.",
+     "rev": "v3"
+    },
+    {
+     "id": "s2.v1-004",
+     "item": "Autopilot",
+     "state": "ON (consider)",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s2.v1-005",
+     "item": "Thrust",
+     "state": "CONSIDER TOGA",
+     "type": "cau",
+     "src": "FCOM",
+     "caution": "TOGA: **10 min** with one engine inoperative, 5 min with all engines (CFM56-5B).",
+     "detail": "The maximum engine-out acceleration altitude in the takeoff performance is based on this limit.",
+     "rev": "v3"
+    },
+    {
+     "id": "s2.v1-006",
+     "item": "400 ft AGL (earliest)",
+     "state": "ECAM ACTIONS",
+     "type": "act",
+     "src": "PROC",
+     "detail": "ECAM procedure is applied once an appropriate flight path is established and the aircraft is at least 400 ft AGL."
+    },
+    {
+     "id": "s2.v1-007",
+     "item": "In the Turn",
+     "state": "FOLLOW FD / AP",
+     "type": "act",
+     "src": "SIM",
+     "detail": "With no AP or FD available, limit bank angle to 15° until reaching F, S or green dot speed."
+    },
+    {
+     "id": "s2.v1-008",
+     "item": "EO ACC ALT {{eoAcc}}",
+     "state": "LEVEL OFF · ACCELERATE",
+     "type": "act",
+     "src": "FCTM",
+     "caution": "Level off once the engine is secured — at the latest at the maximum acceleration altitude (TOGA time limit).",
+     "detail": "Push to level off (or V/S 0), let the speed increase and retract the flaps on schedule. An engine fire is secured with the agent discharged; a failure without damage with the master switch OFF.",
+     "rev": "v3"
+    },
+    {
+     "id": "s2.v1-009",
+     "item": "F Speed",
+     "state": "FLAPS 1",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s2.v1-010",
+     "item": "S Speed",
+     "state": "FLAPS 0",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s2.v1-011",
+     "item": "Green Dot",
+     "state": "SET CLEARED ALT & PULL",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s2.v1-012",
+     "item": "Thrust Levers",
+     "state": "MCT",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s2.v1-013",
+     "item": "Then",
+     "state": "ECAM · STATUS · RELIGHT",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Follow EO routing, radar vectors, or an immediate turn back."
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "kind": "special",
+   "title": "Engine Out — Quick VMC Return",
+   "zone": "",
+   "note": "Visual circuit back to the departure runway with one engine out. Timing on downwind: **45 s ± 1 s per kt** of wind component.",
+   "plate": "quickreturn",
+   "items": [
+    {
+     "id": "s3.v1-001",
+     "item": "E/O Recovery",
+     "state": "ESTABLISH SAFE FLIGHT PATH",
+     "type": "act",
+     "src": "SIM",
+     "detail": "This is an alternative quick-return configuration strategy at acceleration altitude. Do not first clean up to CONF 0 and then follow a sequence that assumes CONF 1.",
+     "rev": "v2"
+    },
+    {
+     "id": "s3.v1-002",
+     "item": "Acceleration Height",
+     "state": "V/S PUSH TO LEVEL OFF",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s3.v1-003",
+     "item": "Acceleration Height",
+     "state": "SPEED MANUAL TO S",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s3.v1-004",
+     "item": "Above F Speed",
+     "state": "FLAPS 1 (if T/O flap > 1)",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s3.v1-005",
+     "item": "At S Speed",
+     "state": "MAINTAIN FLAPS 1 & S",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s3.v1-006",
+     "item": "Downwind",
+     "state": "MAINTAIN FLAPS 1",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s3.v1-007",
+     "item": "Downwind",
+     "state": "ACTIVATE APPROACH IN MCDU",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s3.v1-008",
+     "item": "Downwind",
+     "state": "FCU SPEED — PUSH",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s3.v1-009",
+     "item": "Abeam Threshold",
+     "state": "START STOPWATCH",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s3.v1-010",
+     "item": "45 s ± wind",
+     "state": "TURN BASE",
+     "type": "act",
+     "src": "SIM",
+     "detail": "45 seconds, adjusted by 1 second per knot of wind component."
+    },
+    {
+     "id": "s3.v1-011",
+     "item": "Turning Base",
+     "state": "FLAPS 2",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s3.v1-012",
+     "item": "At Flaps 2",
+     "state": "LANDING GEAR DOWN",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s3.v1-013",
+     "item": "When Gear Down",
+     "state": "FLAPS FINAL CONFIG",
+     "type": "act",
+     "src": "SIM"
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "kind": "special",
+   "title": "Go-Around",
+   "zone": "",
+   "note": "TOGA engages the go-around phase. If TOGA thrust is not needed, the levers can be retarded after briefly passing through the detent — CL keeps the benefit of A/THR.",
+   "fields": [
+    "gaAlt"
+   ],
+   "plate": "goaround",
+   "items": [
+    {
+     "sub": "GO-AROUND"
+    },
+    {
+     "id": "s4.v1-000",
+     "item": "Thrust Levers",
+     "state": "TOGA",
+     "type": "wrn",
+     "src": "PROC"
+    },
+    {
+     "id": "s4.v1-001",
+     "item": "Rotation",
+     "state": "PITCH 15° (12.5° ENG OUT)",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Then follow FD SRS."
+    },
+    {
+     "id": "s4.v1-002",
+     "item": "Announce",
+     "state": "\"GO AROUND — FLAPS\"",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "s4.v1-003",
+     "item": "Flaps",
+     "state": "ONE NOTCH UP",
+     "type": "act",
+     "src": "PROC",
+     "caution": "FULL → 3 · 3 → 2. There is **no stopping at flaps 2** during the later clean-up."
+    },
+    {
+     "id": "s4.v1-004",
+     "item": "FMA",
+     "state": "ANNOUNCE",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "MAN TOGA · SRS · GA TRK · A/THR in blue."
+    },
+    {
+     "id": "s4.v1-005",
+     "item": "Positive Climb",
+     "state": "GEAR UP",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "s4.v1-006",
+     "item": "FCU",
+     "state": "NAV / HDG AS REQUIRED",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Minimum 100 ft before changing lateral mode."
+    },
+    {
+     "id": "s4.v1-007",
+     "item": "AP",
+     "state": "AS REQUIRED",
+     "type": "act",
+     "src": "PROC",
+     "detail": "A go-around can be flown with both autopilots; engaging any other mode disengages AP2."
+    },
+    {
+     "id": "s4.v1-008",
+     "item": "Go-Around Altitude",
+     "state": "CHECK",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "s4.v1-009",
+     "item": "Thrust Reduction ALT",
+     "state": "THRUST LEVERS CL",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "s4.v1-010",
+     "item": "Acceleration ALT",
+     "state": "TARGET SPEED GREEN DOT",
+     "type": "act",
+     "src": "PROC",
+     "detail": "If speed does not increase, check and pull the ALT knob."
+    },
+    {
+     "id": "s4.v1-011",
+     "item": "F Speed",
+     "state": "FLAPS 1",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "s4.v1-012",
+     "item": "S Speed",
+     "state": "FLAPS 0",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "s4.v1-013",
+     "item": "Ground Spoilers",
+     "state": "DISARM",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "s4.v1-014",
+     "item": "Lights",
+     "state": "NOSE & TURN-OFF OFF",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "s4.v1-015",
+     "item": "Plan of Action",
+     "state": "DIVERT or 2nd APPROACH",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Divert: enable the alternate. Second approach: activate the approach phase."
+    },
+    {
+     "sub": "DISCONTINUED APPROACH — AT OR ABOVE FCU ALT"
+    },
+    {
+     "id": "s4.v1-017",
+     "item": "Announce",
+     "state": "\"CANCEL APPROACH\"",
+     "type": "act",
+     "src": "PROC",
+     "detail": "An alternative to a full go-around when at or above the FCU selected altitude. Below it, go around."
+    },
+    {
+     "id": "s4.v1-018",
+     "item": "AP/FD Approach Mode",
+     "state": "DISARM (APPR / LOC pb)",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "s4.v1-019",
+     "item": "Lateral Mode",
+     "state": "NAV / HDG",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "s4.v1-020",
+     "item": "Vertical Mode",
+     "state": "V/S or LEVEL OFF",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "s4.v1-021",
+     "item": "Speed",
+     "state": "SELECT & ADJUST",
+     "type": "act",
+     "src": "PROC",
+     "caution": "Since the levers never reach TOGA, the FMS stays in approach phase. Overflying the airport sequences the destination — a lateral revision will be needed to redefine it."
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "kind": "special",
+   "title": "Emergency Descent",
+   "zone": "",
+   "note": "Memory items first, followed by the applicable ECAM/QRH procedure. The old descent-rate, time and distance figures are source examples, not guaranteed descent performance.",
+   "items": [
+    {
+     "sub": "MEMORY ITEMS"
+    },
+    {
+     "id": "s5.v1-001",
+     "item": "Crew Oxygen Masks",
+     "state": "USE",
+     "type": "wrn",
+     "src": "SIM"
+    },
+    {
+     "id": "s5.v1-002",
+     "item": "Signs",
+     "state": "ON",
+     "type": "wrn",
+     "src": "SIM"
+    },
+    {
+     "id": "s5.v1-003",
+     "item": "Emergency Descent",
+     "state": "INITIATE",
+     "type": "wrn",
+     "src": "SIM"
+    },
+    {
+     "id": "s5.v1-004",
+     "item": "If A/THR not active",
+     "state": "THRUST IDLE",
+     "type": "wrn",
+     "src": "SIM"
+    },
+    {
+     "id": "s5.v1-005",
+     "item": "Speed Brake",
+     "state": "FULL",
+     "type": "wrn",
+     "src": "SIM",
+     "caution": "At high flight levels, monitor VLS while extending the speed brakes — angle-of-attack protection can retract them and disconnect the AP."
+    },
+    {
+     "sub": "WHEN DESCENT ESTABLISHED"
+    },
+    {
+     "id": "s5.v1-007",
+     "item": "Speed",
+     "state": "MAX APPROPRIATE",
+     "type": "act",
+     "src": "SIM",
+     "detail": "If structural damage is suspected (loud bang, high cabin vertical speed): set SPEED/MACH to SPEED to prevent an IAS increase, and use the speed brakes carefully."
+    },
+    {
+     "id": "s5.v1-008",
+     "item": "Engine Mode Selector",
+     "state": "IGN",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s5.v1-009",
+     "item": "ATC",
+     "state": "NOTIFY",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s5.v1-010",
+     "item": "PA",
+     "state": "ANNOUNCE",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s5.v1-011",
+     "item": "Transponder",
+     "state": "7700 — CONSIDER",
+     "type": "tgt",
+     "src": "SIM",
+     "detail": "The supplied QRH uses “consider”; squawk 7700 unless otherwise specified by ATC. Preserve the condition instead of turning it into an unconditional action.",
+     "rev": "v2"
+    },
+    {
+     "id": "s5.v1-012",
+     "item": "Max Flight Level",
+     "state": "FL100 or MEA/MORA",
+     "type": "tgt",
+     "src": "SIM",
+     "detail": "The MORA displayed on the ND is the highest MORA value within 40 NM of the aircraft."
+    },
+    {
+     "id": "s5.v1-013",
+     "item": "If CAB ALT > 14 000 ft",
+     "state": "PAX MASKS MANUALLY ON",
+     "type": "wrn",
+     "src": "SIM",
+     "detail": "Press MASK MAN ON. It may be pressed before reaching 14 000 ft once it is obvious the cabin altitude will exceed it."
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "kind": "special",
+   "title": "Circling Approach",
+   "zone": "",
+   "note": "Minima are the higher of the published chart values or **MDH 600 ft AGL / visibility 2400 m**. Use TRK-FPA throughout; keep AP and A/THR until the final descent.",
+   "plate": "circling",
+   "items": [
+    {
+     "id": "s6.v1-001",
+     "item": "F-PLN",
+     "state": "APPROACH & MISSED APPR",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "s6.v1-002",
+     "item": "SEC F-PLN",
+     "state": "COPY ACTIVE + REVISE RWY",
+     "type": "act",
+     "src": "PROC",
+     "caution": "Once SEC F-PLN is activated the go-around is tied to the landing runway, not the instrument approach. If visual reference is lost, go around using selected guidance and fly the **original** missed approach."
+    },
+    {
+     "id": "s6.v1-003",
+     "item": "Approach Speed",
+     "state": "F SPEED",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Also insert it as a constraint at the final descent point."
+    },
+    {
+     "id": "s6.v1-004",
+     "item": "Configuration",
+     "state": "GEAR DOWN · CONF 3 · SPLR ARM",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "s6.v1-005",
+     "item": "At MDA",
+     "state": "LEVEL OFF & SET G/A ALT",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "s6.v1-006",
+     "item": "At MDA",
+     "state": "TRK-FPA · 45° FOR 30 s",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Proceed to downwind; 30 s once wings are level after the turn."
+    },
+    {
+     "id": "s6.v1-007",
+     "item": "Downwind",
+     "state": "ACTIVATE SEC F-PLN",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "s6.v1-008",
+     "item": "Abeam Threshold",
+     "state": "START STOPWATCH",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "s6.v1-009",
+     "item": "Timing",
+     "state": "3 s per 100 ft height",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "s6.v1-010",
+     "item": "Turn Base",
+     "state": "AFTER TIMING",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s6.v1-011",
+     "item": "Before Descending",
+     "state": "AP / FD OFF",
+     "type": "act",
+     "src": "PROC",
+     "caution": "Do not descend before the runway threshold is identified and you are on the correct descent path."
+    },
+    {
+     "id": "s6.v1-012",
+     "item": "Landing Config",
+     "state": "AS APPROPRIATE",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Ensure early stabilisation."
+    },
+    {
+     "id": "s6.v1-013",
+     "item": "LANDING C/L",
+     "state": "COMPLETE",
+     "type": "chk",
+     "src": "PROC",
+     "link": "c5"
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "kind": "special",
+   "title": "Visual Approach",
+   "zone": "",
+   "note": "Accept a visual approach **only** if: visibility over 5 km · positive ground contact · cloud base at least 2000 ft above · preceding traffic in sight · daytime.",
+   "plate": "visual",
+   "items": [
+    {
+     "id": "s7.v1-001",
+     "item": "ND",
+     "state": "ROSE NAV · RANGE 10 NM",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "s7.v1-002",
+     "item": "Landing Runway",
+     "state": "SELECT IN MCDU",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Selected for reference — but fly on visual references."
+    },
+    {
+     "id": "s7.v1-003",
+     "item": "Circuit Height",
+     "state": "1500 ft",
+     "type": "tgt",
+     "src": "PROC"
+    },
+    {
+     "id": "s7.v1-004",
+     "item": "Abeam RWY",
+     "state": "ACTIVATE APPR PHASE",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s7.v1-005",
+     "item": "Abeam RWY",
+     "state": "SPEED MANAGED · F/D OFF",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s7.v1-006",
+     "item": "Abeam RWY",
+     "state": "TRK/FPA SELECT",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s7.v1-007",
+     "item": "Green Dot or below",
+     "state": "FLAPS 1",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s7.v1-008",
+     "item": "Bank Angle",
+     "state": "15° HEADWIND · 25° TAILWIND",
+     "type": "cau",
+     "src": "PROC",
+     "detail": "Use the wind vector on the ND so the downwind track sits about 2.5–3 NM out — the inner range circle margin."
+    },
+    {
+     "id": "s7.v1-009",
+     "item": "Abeam Threshold",
+     "state": "START STOPWATCH",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "s7.v1-010",
+     "item": "Timing",
+     "state": "3 s/100 ft ± 1 s per kt",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s7.v1-011",
+     "item": "End of Downwind",
+     "state": "FLAPS 2",
+     "type": "act",
+     "src": "SIM",
+     "detail": "Before turning base."
+    },
+    {
+     "id": "s7.v1-012",
+     "item": "Turning Base",
+     "state": "GEAR DOWN · SPOILERS ARM",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s7.v1-013",
+     "item": "When Gear Down",
+     "state": "FLAPS 3",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s7.v1-014",
+     "item": "When below VFE",
+     "state": "FLAPS FULL",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s7.v1-015",
+     "item": "On Base",
+     "state": "DESCEND 300–400 fpm",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "s7.v1-016",
+     "item": "500 ft",
+     "state": "STABILISED — FULL & VAPP",
+     "type": "wrn",
+     "src": "PROC"
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "kind": "special",
+   "title": "Touch and Go",
+   "zone": "",
+   "note": "Training manoeuvre. After touchdown the critical sequence is flaps 2, N1 50%, trim in the green band, **then** TOGA.",
+   "items": [
+    {
+     "id": "s8.v1-001",
+     "item": "After Touchdown",
+     "state": "MAINTAIN CENTRELINE",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s8.v1-002",
+     "item": "After Touchdown",
+     "state": "CHECK REVERSE CLOSED",
+     "type": "chk",
+     "src": "SIM"
+    },
+    {
+     "id": "s8.v1-003",
+     "item": "After Touchdown",
+     "state": "CHECK SPOILERS NOT ACTIVE",
+     "type": "chk",
+     "src": "SIM"
+    },
+    {
+     "id": "s8.v1-004",
+     "item": "After Touchdown",
+     "state": "FLAPS 2",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s8.v1-005",
+     "item": "After Touchdown",
+     "state": "N1 50% (EPR 1.05)",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s8.v1-006",
+     "item": "When TRIM in Green Band",
+     "state": "TOGA",
+     "type": "wrn",
+     "src": "SIM",
+     "caution": "Do not select TOGA before the pitch trim is back in the green band."
+    },
+    {
+     "id": "s8.v1-007",
+     "item": "At Bug Speed",
+     "state": "ROTATE",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s8.v1-008",
+     "item": "After Gear Up",
+     "state": "SET CLB THRUST · F/D OFF",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s8.v1-010",
+     "item": "At 500 ft AGL",
+     "state": "TURN DOWNWIND",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s8.v1-009",
+     "item": "At 1000 ft AGL",
+     "state": "PITCH 10° · THRUST 75%",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s8.v1-011",
+     "item": "At Pattern Altitude",
+     "state": "FLAPS 2 · F+20 · PITCH 6°",
+     "type": "act",
+     "src": "SIM",
+     "detail": "Thrust roughly equal to gross weight in tonnes."
+    },
+    {
+     "id": "s8.v1-012",
+     "item": "On Downwind",
+     "state": "2× WIND CORRECTION ANGLE",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s8.v1-013",
+     "item": "On Downwind",
+     "state": "ACTIVATE APPROACH PHASE",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s8.v1-014",
+     "item": "Abeam Threshold",
+     "state": "STOPWATCH · SPEED MANAGED",
+     "type": "act",
+     "src": "SIM",
+     "detail": "Reduce thrust to about 45%, then slowly to F speed."
+    },
+    {
+     "id": "s8.v1-015",
+     "item": "Time Elapsed",
+     "state": "TURN · DESCEND · GEAR DOWN",
+     "type": "act",
+     "src": "SIM",
+     "detail": "Speed at F."
+    },
+    {
+     "id": "s8.v1-016",
+     "item": "On Base",
+     "state": "FINAL FLAP SETTING",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s8.v1-017",
+     "item": "LANDING C/L",
+     "state": "ALL GREEN EXCEPT SPOILERS",
+     "type": "chk",
+     "src": "SIM",
+     "link": "c5"
+    },
+    {
+     "id": "s8.v1-018",
+     "item": "1000 ft AGL",
+     "state": "STABILISED AT VTGT",
+     "type": "wrn",
+     "src": "SIM"
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "kind": "special",
+   "title": "Overweight Landing",
+   "zone": "",
+   "note": "Overweight landing requires aircraft-specific performance and the applicable abnormal procedure. This source-derived card is a study reference until those requirements are confirmed.",
+   "items": [
+    {
+     "id": "s9.v1-001",
+     "item": "Max Landing Weight",
+     "state": "USE APPLICABLE PERFORMANCE",
+     "type": "chk",
+     "src": "SIM",
+     "caution": "No verified overweight table for the CFM sharklet aircraft is available.",
+     "detail": "Use the landing performance of the Fenix EFB for the actual mass, configuration and conditions.",
+     "rev": "v3"
+    },
+    {
+     "id": "s9.v1-002",
+     "item": "If Above Limit",
+     "state": "USE FLAP 3",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s9.v1-003",
+     "item": "Landing Distance",
+     "state": "CHECK",
+     "type": "chk",
+     "src": "SIM"
+    },
+    {
+     "id": "s9.v1-004",
+     "item": "Pack 1",
+     "state": "OFF or APU SUPPLIED",
+     "type": "act",
+     "src": "SIM",
+     "detail": "Packs off (or on APU) increases maximum available engine thrust in the event of a go-around."
+    },
+    {
+     "id": "s9.v1-005",
+     "item": "Pack 2",
+     "state": "OFF or APU SUPPLIED",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s9.v1-006",
+     "item": "If CONF other than FULL",
+     "state": "GO-AROUND IN CONF 1+F",
+     "type": "cau",
+     "src": "SIM"
+    },
+    {
+     "id": "s9.v1-007",
+     "item": "Threshold Speed",
+     "state": "VLS",
+     "type": "tgt",
+     "src": "SIM",
+     "detail": "Reduce the FCU selected speed to reach VLS at the runway threshold."
+    },
+    {
+     "id": "s9.v1-008",
+     "item": "Touchdown",
+     "state": "MINIMISE V/S",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s9.v1-009",
+     "item": "Reverse",
+     "state": "MAXIMUM",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s9.v1-010",
+     "item": "After Nosewheel Touchdown",
+     "state": "BRAKES AS NECESSARY",
+     "type": "act",
+     "src": "SIM",
+     "detail": "Maximum braking may be used after nosewheel touchdown. If landing distance permits, delay or reduce braking to use the full runway."
+    },
+    {
+     "id": "s9.v1-011",
+     "item": "When Landing Completed",
+     "state": "BRAKE FANS ON",
+     "type": "act",
+     "src": "SIM",
+     "caution": "Be prepared for tyre deflation if brake temperature exceeds **800 °C**."
+    }
+   ]
+  },
+  {
+   "id": "s10",
+   "kind": "special",
+   "title": "Crossbleed Engine Start",
+   "zone": "",
+   "note": "Used to start the second engine from the running engine's bleed air.",
+   "items": [
+    {
+     "id": "s10.v1-000",
+     "item": "Parking Brake",
+     "state": "SET",
+     "type": "wrn",
+     "src": "SIM",
+     "caution": "This procedure should only be performed with the **parking brake set**."
+    },
+    {
+     "sub": "BEFORE START"
+    },
+    {
+     "id": "s10.v1-002",
+     "item": "APU Bleed",
+     "state": "OFF",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s10.v1-003",
+     "item": "ENG Bleed (running engine)",
+     "state": "CHECK ON",
+     "type": "chk",
+     "src": "SIM"
+    },
+    {
+     "id": "s10.v1-004",
+     "item": "ENG Bleed (receiving engine)",
+     "state": "OFF",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s10.v1-005",
+     "item": "X-BLEED",
+     "state": "OPEN",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "sub": "WHEN CLEARED TO START"
+    },
+    {
+     "id": "s10.v1-007",
+     "item": "Area",
+     "state": "CHECK CLEAR",
+     "type": "chk",
+     "src": "SIM",
+     "detail": "Behind and in front of the engine."
+    },
+    {
+     "id": "s10.v1-008",
+     "item": "Supplying Engine Thrust",
+     "state": "ADJUST FOR 30 PSI",
+     "type": "act",
+     "src": "SIM",
+     "caution": "Obtain 30 PSI bleed pressure before start initiation and maintain at least **25 PSI** throughout the start."
+    },
+    {
+     "id": "s10.v1-009",
+     "item": "Engine",
+     "state": "NORMAL START PROCEDURE",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "sub": "AFTER ENGINE AVAILABLE"
+    },
+    {
+     "id": "s10.v1-011",
+     "item": "Thrust Lever (supplying)",
+     "state": "IDLE",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s10.v1-012",
+     "item": "X-BLEED",
+     "state": "AUTO",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s10.v1-013",
+     "item": "ENG Bleed (receiving)",
+     "state": "ON",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s10.v1-014",
+     "item": "Packs",
+     "state": "CHECK ON",
+     "type": "chk",
+     "src": "SIM"
+    }
+   ]
+  },
+  {
+   "id": "s11",
+   "kind": "special",
+   "title": "Engine Start — External Air",
+   "zone": "",
+   "note": "Engine start with an external air cart when the APU cannot supply bleed air: engine 2 from the cart, engine 1 from the cart as well or by crossbleed.",
+   "items": [
+    {
+     "sub": "BEFORE CONNECTING EXTERNAL AIR"
+    },
+    {
+     "id": "s11.v1-001",
+     "item": "Packs 1 and 2",
+     "state": "OFF",
+     "type": "act",
+     "src": "SIM",
+     "detail": "Prevents pack contamination."
+    },
+    {
+     "sub": "BEFORE START"
+    },
+    {
+     "id": "s11.v1-003",
+     "item": "APU",
+     "state": "OFF",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s11.v1-004",
+     "item": "ENG Bleeds 1 and 2",
+     "state": "OFF",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s11.v1-005",
+     "item": "X-BLEED",
+     "state": "OPEN",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "sub": "WHEN CLEARED TO START"
+    },
+    {
+     "id": "s11.v1-007",
+     "item": "Engine 2",
+     "state": "START",
+     "type": "act",
+     "src": "SIM",
+     "detail": "Minimum recommended starter air supply pressure is 30 PSI with the starter valve open."
+    },
+    {
+     "sub": "IF EXTERNAL AIR ALSO STARTS ENGINE 1"
+    },
+    {
+     "id": "s11.v1-009",
+     "item": "Engine 1",
+     "state": "START",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s11.v1-010",
+     "item": "External Pneumatic Air",
+     "state": "REMOVE",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s11.v1-011",
+     "item": "X-BLEED",
+     "state": "AUTO",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s11.v1-012",
+     "item": "ENG Bleeds 1 and 2",
+     "state": "ON",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s11.v1-013",
+     "item": "Packs 1 and 2",
+     "state": "ON",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "sub": "IF CROSSBLEED STARTS ENGINE 1"
+    },
+    {
+     "id": "s11.v1-015",
+     "item": "External Pneumatic Air",
+     "state": "REMOVE",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s11.v1-016",
+     "item": "Packs 1 and 2",
+     "state": "ON",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s11.v1-017",
+     "item": "ENG Bleed 2",
+     "state": "ON",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s11.v1-018",
+     "item": "Crossbleed Start",
+     "state": "APPLY",
+     "type": "act",
+     "src": "SIM"
+    },
+    {
+     "id": "s11.v1-019",
+     "item": "External Electric Power",
+     "state": "DISCONNECT",
+     "type": "act",
+     "src": "SIM"
+    }
+   ]
+  },
+  {
+   "id": "s12",
+   "kind": "special",
+   "title": "Low Visibility T/O & Turbulence",
+   "zone": "",
+   "note": "Low-visibility takeoff (LVP, RVR below 400 m) and flying through severe turbulence.",
+   "items": [
+    {
+     "sub": "LOW VISIBILITY TAKEOFF — PREPARATION"
+    },
+    {
+     "id": "s12.v1-001",
+     "item": "LVP",
+     "state": "IN FORCE IF RVR < 400 m",
+     "type": "cau",
+     "src": "PROC"
+    },
+    {
+     "id": "s12.v1-002",
+     "item": "Takeoff Alternate",
+     "state": "IF VIS < LDG MINIMA",
+     "type": "cau",
+     "src": "PROC"
+    },
+    {
+     "id": "s12.v1-003",
+     "item": "NOTAMs",
+     "state": "CLOSED TWY / RWY",
+     "type": "chk",
+     "src": "PROC"
+    },
+    {
+     "id": "s12.v1-004",
+     "item": "Extra Fuel",
+     "state": "30 MIN or DELAY",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Whichever is higher."
+    },
+    {
+     "id": "s12.v1-005",
+     "item": "Cabin Crew",
+     "state": "BRIEF STERILE COCKPIT",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "sub": "PERFORMANCE"
+    },
+    {
+     "id": "s12.v1-007",
+     "item": "Contaminated RWY",
+     "state": "NOT IF RVR < 200 m",
+     "type": "wrn",
+     "src": "PROC"
+    },
+    {
+     "id": "s12.v1-008",
+     "item": "A/THR & Autobrake",
+     "state": "SERVICEABLE IF RVR < 200 m",
+     "type": "wrn",
+     "src": "PROC"
+    },
+    {
+     "id": "s12.v1-009",
+     "item": "Thrust",
+     "state": "FULL THRUST RECOMMENDED",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "s12.v1-010",
+     "item": "Flaps",
+     "state": "LOWEST T/O SPEEDS",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Payload permitting."
+    },
+    {
+     "sub": "EXECUTION"
+    },
+    {
+     "id": "s12.v1-012",
+     "item": "Taxi Speed",
+     "state": "MAX 10 kt",
+     "type": "cau",
+     "src": "PROC"
+    },
+    {
+     "id": "s12.v1-013",
+     "item": "CAT II/III Holding Points",
+     "state": "BE CAREFUL",
+     "type": "cau",
+     "src": "PROC"
+    },
+    {
+     "id": "s12.v1-014",
+     "item": "Checklists",
+     "state": "STATIONARY · PARK BRK ON",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "s12.v1-015",
+     "item": "Runway Direction",
+     "state": "DOUBLE CHECK",
+     "type": "chk",
+     "src": "PROC",
+     "detail": "Localizer, ND, runway markings."
+    },
+    {
+     "id": "s12.v1-016",
+     "item": "Roll Out Bar",
+     "state": "USE IF AVAILABLE",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "s12.v1-017",
+     "item": "Visual Ref Lost < 100 kt",
+     "state": "MAY REJECT",
+     "type": "cau",
+     "src": "PROC"
+    },
+    {
+     "id": "s12.v1-018",
+     "item": "Visual Ref Lost > 100 kt",
+     "state": "CONTINUE",
+     "type": "cau",
+     "src": "PROC"
+    },
+    {
+     "id": "s12.v1-019",
+     "item": "If Rejected",
+     "state": "KEEP LANDING LIGHTS ON",
+     "type": "act",
+     "src": "PROC",
+     "detail": "So emergency services can identify the aircraft."
+    },
+    {
+     "sub": "SEVERE TURBULENCE"
+    },
+    {
+     "id": "s12.v1-021",
+     "item": "Slat/Flap Retraction",
+     "state": "TARGET +20 kt",
+     "type": "cau",
+     "src": "PROC",
+     "caution": "Wait for target speed +20 kt (limited to VFE−5) before retracting slats or flaps."
+    },
+    {
+     "id": "s12.v1-022",
+     "item": "Moderate Turbulence",
+     "state": "AP & A/THR ON · MANAGED",
+     "type": "act",
+     "src": "PROC"
+    },
+    {
+     "id": "s12.v1-023",
+     "item": "Severe Turbulence",
+     "state": "AP ON · A/THR OFF",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Set thrust to turbulence N1 from the QRH."
+    },
+    {
+     "id": "s12.v1-024",
+     "item": "On Approach",
+     "state": "A/THR RECOMMENDED",
+     "type": "act",
+     "src": "PROC",
+     "detail": "To keep the benefit of ground-speed mini."
+    },
+    {
+     "id": "s12.v1-025",
+     "item": "Configuration",
+     "state": "FULL vs CONF 3",
+     "type": "cau",
+     "src": "PROC",
+     "detail": "CONF FULL gives better handling in turbulence; CONF 3 gives more energy and less drag."
+    },
+    {
+     "id": "s12.v1-026",
+     "item": "Climb Speeds",
+     "state": "250 / 275 / M0.76",
+     "type": "tgt",
+     "src": "PROC",
+     "detail": "250 kt up to FL200, 275 kt or M0.76 above FL200."
+    }
+   ]
+  },
+  {
+   "id": "s13",
+   "kind": "special",
+   "title": "QFE Operations",
+   "zone": "",
+   "note": "Mainly Russian and CIS airspace. Rule of thumb: **1 hPa ≈ 27 ft**. QNH = QFE + (threshold elevation ÷ 27).",
+   "items": [
+    {
+     "id": "s13.v1-000",
+     "item": "QFE vs QNH",
+     "state": "UNDERSTAND",
+     "type": "chk",
+     "src": "SIM",
+     "detail": "With QFE set, the altimeter reads 0 ft on the airfield (height above the field). With QNH set, it reads elevation above mean sea level."
+    },
+    {
+     "id": "s13.v1-001",
+     "item": "Above Transition",
+     "state": "NORMAL FLIGHT LEVELS",
+     "type": "chk",
+     "src": "SIM",
+     "detail": "The same FL system in feet applies at or above transition altitude/height/level."
+    },
+    {
+     "id": "s13.v1-002",
+     "item": "If FCU has no QFE",
+     "state": "CONVERT TO QNH",
+     "type": "act",
+     "src": "SIM",
+     "detail": "Example UUWW RWY 01, threshold 630 ft: 630 ÷ 27 = 23 hPa. Reported QFE 997 → QNH = 997 + 23 = 1020 hPa. Altimeters then read 630 ft on the ground."
+    },
+    {
+     "id": "s13.v1-003",
+     "item": "Metric Clearances",
+     "state": "USE CHART CONVERSION",
+     "type": "act",
+     "src": "SIM",
+     "detail": "Departure chart example: initial climb 900 m QFE = 3640 ft QNH → set 3700 ft on the FCU. A later clearance to 1200 m QFE = 4630 ft."
+    },
+    {
+     "id": "s13.v1-004",
+     "item": "Cross-Check",
+     "state": "SET QFE IN ISIS",
+     "type": "act",
+     "src": "SIM",
+     "detail": "Leaving QFE on the standby instrument gives a direct height reference while the PFDs run on QNH."
+    },
+    {
+     "id": "s13.v1-005",
+     "item": "METRIC ALT pb",
+     "state": "USE",
+     "type": "act",
+     "src": "SIM",
+     "caution": "The metre indication on the SD page uses a simple feet-to-metres conversion — treat it as advisory."
+    },
+    {
+     "id": "s13.v1-006",
+     "item": "If FCU supports QFE",
+     "state": "ENTER QFE FEET",
+     "type": "act",
+     "src": "SIM",
+     "detail": "With QFE selected on the FCU, altitude values entered are QFE feet: 600 m QFE ≈ 2000 ft QFE (1977 ft exactly)."
+    }
+   ]
+  },
+  {
+   "id": "s14",
+   "kind": "special",
+   "title": "G/S Interception from Above",
+   "zone": "FCU · PFD",
+   "note": "Only when cleared for the approach, established on the localizer and with enough distance to be stabilised by 1000 ft. Otherwise ask for vectors or go around.",
+   "fields": [
+    "gaAlt"
+   ],
+   "plate": "gsabove",
+   "items": [
+    {
+     "id": "s14.v3-01",
+     "item": "APPR pb",
+     "state": "PRESS — LOC · G/S ARMED",
+     "type": "act",
+     "src": "FCTM",
+     "rev": "v3"
+    },
+    {
+     "id": "s14.v3-02",
+     "item": "LOC",
+     "state": "CAPTURED",
+     "type": "chk",
+     "src": "FCTM",
+     "rev": "v3"
+    },
+    {
+     "id": "s14.v3-03",
+     "item": "FCU ALT",
+     "state": "SET ABOVE AIRCRAFT ALTITUDE",
+     "type": "act",
+     "src": "FCTM",
+     "caution": "With the FCU altitude below the aircraft, ALT* would engage before the glide slope is captured.",
+     "rev": "v3"
+    },
+    {
+     "id": "s14.v3-04",
+     "item": "V/S",
+     "state": "−1500 fpm (MAX −2000)",
+     "type": "act",
+     "src": "FCTM",
+     "detail": "Monitor the speed; do not let it run away from the configuration you need.",
+     "rev": "v3"
+    },
+    {
+     "id": "s14.v3-05",
+     "item": "Configuration",
+     "state": "GEAR DOWN · FLAPS 2",
+     "type": "act",
+     "src": "FCTM",
+     "detail": "Landing gear and flaps 2 give the best rate of descent. Respect VFE; speed brakes are not recommended below 2000 ft.",
+     "rev": "v3"
+    },
+    {
+     "id": "s14.v3-06",
+     "item": "G/S*",
+     "state": "CHECK CAPTURE",
+     "type": "chk",
+     "src": "FCTM",
+     "rev": "v3"
+    },
+    {
+     "id": "s14.v3-07",
+     "item": "FCU ALT",
+     "state": "SET {{gaAlt}}",
+     "type": "tgt",
+     "src": "FCTM",
+     "rev": "v3"
+    },
+    {
+     "id": "s14.v3-08",
+     "item": "1000 ft",
+     "state": "STABILISED — OR GO AROUND",
+     "type": "wrn",
+     "src": "FCTM",
+     "rev": "v3"
+    }
+   ]
+  },
+  {
+   "id": "s15",
+   "kind": "special",
+   "title": "Hot & High Airports",
+   "zone": "EFB · FMS",
+   "note": "Cusco, La Paz, Quito, Bogotá, Paro, Mexico City, Addis Ababa: high elevation and heat mean high true airspeed, long distances and less thrust. Performance only from the Fenix EFB with actual temperature, QNH and wind.",
+   "items": [
+    {
+     "id": "s15.v3-01",
+     "item": "Takeoff Performance",
+     "state": "EFB — ACTUAL OAT · QNH",
+     "type": "act",
+     "src": "FENIX",
+     "detail": "Expect TOGA or a small FLEX margin. Check the engine-out acceleration altitude and the climb gradient against terrain.",
+     "rev": "v3"
+    },
+    {
+     "id": "s15.v3-02",
+     "item": "Packs",
+     "state": "OFF or APU BLEED IF REQUIRED",
+     "type": "cau",
+     "src": "PROC",
+     "detail": "Improves takeoff performance when the EFB needs it.",
+     "rev": "v3"
+    },
+    {
+     "id": "s15.v3-03",
+     "item": "Tire Speed",
+     "state": "≤ 195 kt GROUND SPEED",
+     "type": "cau",
+     "src": "FCOM",
+     "detail": "High true airspeed plus tailwind can reach the tire limit at rotation.",
+     "rev": "v3"
+    },
+    {
+     "id": "s15.v3-04",
+     "item": "Engine Start",
+     "state": "WATCH EGT",
+     "type": "cau",
+     "src": "TECH",
+     "detail": "Thin air means slower light-up and higher EGT — monitor the auto-start closely.",
+     "rev": "v3"
+    },
+    {
+     "id": "s15.v3-05",
+     "item": "Terrain",
+     "state": "EO SID · MSA · GRADIENT",
+     "type": "chk",
+     "src": "PROC",
+     "rev": "v3"
+    },
+    {
+     "id": "s15.v3-06",
+     "item": "Landing Performance",
+     "state": "EFB — HIGH GROUND SPEED",
+     "type": "act",
+     "src": "FENIX",
+     "detail": "VAPP stays an indicated speed; the ground speed is much higher. Longer landing distance and more brake energy.",
+     "rev": "v3"
+    },
+    {
+     "id": "s15.v3-07",
+     "item": "LDG ELEV",
+     "state": "AUTO — CHECK VALUE",
+     "type": "chk",
+     "src": "FCOM",
+     "detail": "The cabin is scheduled to the airport elevation automatically; after landing the cabin altitude equals the high field elevation.",
+     "rev": "v3"
+    },
+    {
+     "id": "s15.v3-08",
+     "item": "Brake Temperature",
+     "state": "MONITOR · ≤ 300 °C FOR T/O",
+     "type": "cau",
+     "src": "FCOM",
+     "rev": "v3"
+    },
+    {
+     "id": "s15.v3-09",
+     "item": "Go-Around",
+     "state": "BRIEF GRADIENT & TERRAIN",
+     "type": "chk",
+     "src": "PROC",
+     "rev": "v3"
+    }
+   ]
+  },
+  {
+   "id": "s16",
+   "kind": "special",
+   "title": "Short Runway",
+   "zone": "EFB · PEDESTAL",
+   "note": "Funafuti, St Helena, Skiathos: plan the stop before you plan the approach. Landing distance from the EFB with the actual runway condition, then keep your margin. Your world tour has test legs for Funafuti and St Helena.",
+   "items": [
+    {
+     "id": "s16.v3-01",
+     "item": "Landing Performance",
+     "state": "EFB — ACTUAL RWY CONDITION",
+     "type": "act",
+     "src": "FENIX",
+     "rev": "v3"
+    },
+    {
+     "id": "s16.v3-02",
+     "item": "Configuration",
+     "state": "CONF FULL",
+     "type": "act",
+     "src": "PROC",
+     "detail": "Lowest approach speed; CONF 3 only if the performance allows it.",
+     "rev": "v3"
+    },
+    {
+     "id": "s16.v3-03",
+     "item": "Auto Brake",
+     "state": "MED or MANUAL",
+     "type": "act",
+     "src": "PROC",
+     "detail": "LO is for long runways.",
+     "rev": "v3"
+    },
+    {
+     "id": "s16.v3-04",
+     "item": "VAPP",
+     "state": "EXACT — NO EXTRA ADDITIVES",
+     "type": "cau",
+     "src": "FCTM",
+     "detail": "The FMGS already adds the wind correction; every extra knot adds landing distance.",
+     "rev": "v3"
+    },
+    {
+     "id": "s16.v3-05",
+     "item": "Aim Point",
+     "state": "TOUCHDOWN ZONE — NO FLOAT",
+     "type": "wrn",
+     "src": "FCTM",
+     "detail": "A long flare or float is a go-around, not a correction to force onto the runway.",
+     "rev": "v3"
+    },
+    {
+     "id": "s16.v3-06",
+     "item": "Reverse",
+     "state": "MAX",
+     "type": "act",
+     "src": "PROC",
+     "rev": "v3"
+    },
+    {
+     "id": "s16.v3-07",
+     "item": "Braking",
+     "state": "AS REQUIRED — FULL IF NEEDED",
+     "type": "act",
+     "src": "PROC",
+     "rev": "v3"
+    },
+    {
+     "id": "s16.v3-08",
+     "item": "Takeoff",
+     "state": "TOGA · PACKS PER EFB",
+     "type": "act",
+     "src": "FENIX",
+     "rev": "v3"
+    },
+    {
+     "id": "s16.v3-09",
+     "item": "Brake Temperature",
+     "state": "≤ 300 °C BEFORE T/O",
+     "type": "cau",
+     "src": "FCOM",
+     "rev": "v3"
+    }
+   ]
+  },
+  {
+   "id": "s17",
+   "kind": "special",
+   "title": "Cold Weather & Contaminated Runway",
+   "zone": "OVHD · EFB",
+   "note": "Union Glacier and winter stops: treat blue ice and snow as contaminated — performance from the EFB with the correct runway condition, a reduced crosswind limit and gentle inputs. Union Glacier is a test leg of your world tour.",
+   "items": [
+    {
+     "id": "s17.v3-01",
+     "item": "Engine Anti-Ice",
+     "state": "ON — OAT ≤ 10 °C + MOISTURE",
+     "type": "act",
+     "src": "FCOM",
+     "rev": "v3"
+    },
+    {
+     "id": "s17.v3-02",
+     "item": "Ice Shedding",
+     "state": "PER FCOM — OAT ≤ +3 °C",
+     "type": "cau",
+     "src": "FCOM",
+     "detail": "Engine run-ups at intervals during long taxi in freezing fog or precipitation.",
+     "rev": "v3"
+    },
+    {
+     "id": "s17.v3-03",
+     "item": "Flaps",
+     "state": "RETRACTED DURING TAXI",
+     "type": "cau",
+     "src": "PROC",
+     "detail": "With slush or snow keep the flaps up until the holding point.",
+     "rev": "v3"
+    },
+    {
+     "id": "s17.v3-04",
+     "item": "Taxi",
+     "state": "SLOW · GENTLE TURNS",
+     "type": "cau",
+     "src": "TECH",
+     "rev": "v3"
+    },
+    {
+     "id": "s17.v3-05",
+     "item": "Takeoff Performance",
+     "state": "EFB — CONTAMINATION",
+     "type": "act",
+     "src": "FENIX",
+     "rev": "v3"
+    },
+    {
+     "id": "s17.v3-06",
+     "item": "Crosswind",
+     "state": "REDUCED LIMIT",
+     "type": "cau",
+     "src": "PROC",
+     "detail": "Contaminated runways have lower crosswind limits — use the value for the reported runway condition.",
+     "rev": "v3"
+    },
+    {
+     "id": "s17.v3-07",
+     "item": "Landing",
+     "state": "AUTO BRAKE MED · MAX REVERSE",
+     "type": "act",
+     "src": "PROC",
+     "rev": "v3"
+    },
+    {
+     "id": "s17.v3-08",
+     "item": "Reversers",
+     "state": "STOW AT 25 kt ON SNOW",
+     "type": "act",
+     "src": "PROC",
+     "rev": "v3"
+    },
+    {
+     "id": "s17.v3-09",
+     "item": "After Landing — Flaps",
+     "state": "CHECK FOR ICE FIRST",
+     "type": "cau",
+     "src": "PROC",
+     "detail": "After an approach in icing or on a contaminated runway, retract only once the ground crew has checked for ice.",
+     "rev": "v3"
+    },
+    {
+     "id": "s17.v3-10",
+     "item": "Fuel Temperature",
+     "state": "MONITOR",
+     "type": "cau",
+     "src": "PROC",
+     "rev": "v3"
+    }
+   ]
+  },
+  {
+   "id": "c1",
+   "kind": "checklist",
+   "title": "BEFORE START",
+   "zone": "",
+   "note": "Read after the cockpit preparation flow is complete. The flow does the work — the checklist catches omissions.",
+   "items": [
+    {
+     "id": "c1.v1-000",
+     "item": "COCKPIT PREP",
+     "state": "COMPLETED (BOTH)",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c1.v1-001",
+     "item": "GEAR PINS & COVERS",
+     "state": "REMOVED",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c1.v1-002",
+     "item": "SIGNS",
+     "state": "ON / AUTO",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c1.v1-003",
+     "item": "ADIRS",
+     "state": "NAV",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c1.v1-004",
+     "item": "FUEL QUANTITY",
+     "state": "___ KG",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c1.v1-005",
+     "item": "TO DATA",
+     "state": "{{v1}} / {{vr}} / {{v2}} SET",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c1.v1-006",
+     "item": "BARO REF",
+     "state": "{{qnhDep}} SET (BOTH)",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "line": true
+    },
+    {
+     "id": "c1.v1-007",
+     "item": "WINDOWS / DOORS",
+     "state": "CLOSED (BOTH)",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c1.v1-008",
+     "item": "BEACON",
+     "state": "ON",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c1.v1-009",
+     "item": "THR LEVERS",
+     "state": "IDLE",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c1.v1-010",
+     "item": "PARKING BRAKE",
+     "state": "AS REQUIRED",
+     "type": "chk",
+     "src": "NCL"
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "kind": "checklist",
+   "title": "AFTER START",
+   "zone": "",
+   "note": "",
+   "items": [
+    {
+     "id": "c2.v1-000",
+     "item": "ANTI ICE",
+     "state": "AS REQUIRED",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c2.v1-001",
+     "item": "ECAM STATUS",
+     "state": "CHECKED",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c2.v1-002",
+     "item": "PITCH TRIM",
+     "state": "{{trim}} SET",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c2.v1-003",
+     "item": "RUDDER TRIM",
+     "state": "ZERO",
+     "type": "chk",
+     "src": "NCL"
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "kind": "checklist",
+   "title": "BEFORE TAKEOFF",
+   "zone": "",
+   "note": "",
+   "items": [
+    {
+     "id": "c3.v1-000",
+     "item": "FLIGHT CONTROLS",
+     "state": "CHECKED (BOTH)",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c3.v1-001",
+     "item": "FLT INST",
+     "state": "CHECKED (BOTH)",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c3.v1-002",
+     "item": "BRIEFING",
+     "state": "CONFIRMED",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c3.v1-003",
+     "item": "FLAP SETTING",
+     "state": "CONF {{toConf}} (BOTH)",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c3.v1-004",
+     "item": "V1 / VR / FLEX",
+     "state": "{{v1}} / {{vr}} / {{flex}}",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c3.v1-005",
+     "item": "ATC + TCAS",
+     "state": "SET",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c3.v1-006",
+     "item": "ECAM MEMO",
+     "state": "TO NO BLUE",
+     "type": "chk",
+     "src": "NCL",
+     "detail": "Checks: auto brake MAX · signs on · spoilers armed · flaps set to T/O · TO config normal."
+    },
+    {
+     "id": "c3.v1-007",
+     "item": "CABIN",
+     "state": "SECURED FOR TAKEOFF",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "line": true,
+     "label": "at line-up"
+    },
+    {
+     "id": "c3.v1-009",
+     "item": "STROBE LIGHTS",
+     "state": "ON",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c3.v1-010",
+     "item": "ENG MODE SEL",
+     "state": "AS REQUIRED",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c3.v1-011",
+     "item": "PACKS",
+     "state": "AS REQUIRED",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c3.v1-012",
+     "item": "TCAS",
+     "state": "TA / RA",
+     "type": "chk",
+     "src": "NCL"
+    }
+   ]
+  },
+  {
+   "id": "c4",
+   "kind": "checklist",
+   "title": "APPROACH",
+   "zone": "",
+   "note": "",
+   "items": [
+    {
+     "id": "c4.v1-000",
+     "item": "BRIEFING",
+     "state": "CONFIRMED",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c4.v1-001",
+     "item": "ECAM STATUS",
+     "state": "CHECKED",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c4.v1-002",
+     "item": "MINIMUM",
+     "state": "{{mins}} SET (BOTH)",
+     "type": "chk",
+     "src": "NCL",
+     "rev": "v3"
+    },
+    {
+     "id": "c4.v1-003",
+     "item": "SEAT BELTS",
+     "state": "ON",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c4.v1-004",
+     "item": "BARO REF",
+     "state": "{{qnhArr}} SET (BOTH)",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c4.v1-005",
+     "item": "AUTOBRAKE",
+     "state": "{{abrk}}",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c4.v3-engmode",
+     "item": "ENG MODE SEL",
+     "state": "AS RQRD",
+     "type": "chk",
+     "src": "NCL",
+     "rev": "v3"
+    }
+   ]
+  },
+  {
+   "id": "c5",
+   "kind": "checklist",
+   "title": "LANDING",
+   "zone": "",
+   "note": "",
+   "items": [
+    {
+     "id": "c5.v1-000",
+     "item": "CABIN CREW",
+     "state": "SECURED & ADVISED",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c5.v1-001",
+     "item": "A/THR",
+     "state": "SPEED / OFF",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c5.v1-002",
+     "item": "GO AROUND ALT",
+     "state": "{{gaAlt}} SET",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c5.v1-003",
+     "item": "ECAM MEMO",
+     "state": "LDG NO BLUE",
+     "type": "chk",
+     "src": "NCL",
+     "detail": "Checks: landing gear down · signs on · spoilers armed · flaps set to landing config."
+    }
+   ]
+  },
+  {
+   "id": "c6",
+   "kind": "checklist",
+   "title": "AFTER LANDING",
+   "zone": "",
+   "note": "Silent checklist in many operators. Consider adverse weather before retracting the flaps.",
+   "items": [
+    {
+     "id": "c6.v1-000",
+     "item": "FLAPS",
+     "state": "RETRACTED",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c6.v1-001",
+     "item": "SPOILERS",
+     "state": "DISARMED",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c6.v1-002",
+     "item": "APU",
+     "state": "START",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c6.v1-003",
+     "item": "RADAR / PWS",
+     "state": "OFF",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c6.v1-004",
+     "item": "TCAS",
+     "state": "STANDBY",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c6.v1-005",
+     "item": "STROBE LIGHTS",
+     "state": "AUTO",
+     "type": "chk",
+     "src": "NCL"
+    }
+   ]
+  },
+  {
+   "id": "c7",
+   "kind": "checklist",
+   "title": "PARKING",
+   "zone": "",
+   "note": "",
+   "items": [
+    {
+     "id": "c7.v1-000",
+     "item": "APU BLEED",
+     "state": "ON",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c7.v1-001",
+     "item": "ENGINES",
+     "state": "OFF",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c7.v1-002",
+     "item": "SEAT BELTS",
+     "state": "OFF",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c7.v1-003",
+     "item": "EXT LT",
+     "state": "AS REQUIRED",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c7.v1-004",
+     "item": "FUEL PUMPS",
+     "state": "OFF",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c7.v1-005",
+     "item": "PARK BRK & CHOCKS",
+     "state": "AS REQUIRED",
+     "type": "chk",
+     "src": "NCL"
+    }
+   ]
+  },
+  {
+   "id": "c8",
+   "kind": "checklist",
+   "title": "SECURING",
+   "zone": "",
+   "note": "Read-and-do checklist. Apply when the last passenger has left and the aircraft will be unattended.",
+   "items": [
+    {
+     "id": "c8.v1-000",
+     "item": "ADIRS",
+     "state": "OFF",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c8.v1-001",
+     "item": "OXYGEN",
+     "state": "OFF",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c8.v1-002",
+     "item": "APU BLEED",
+     "state": "OFF",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c8.v1-003",
+     "item": "EMER EXIT LT",
+     "state": "OFF",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c8.v1-004",
+     "item": "NO SMOKING",
+     "state": "OFF",
+     "type": "chk",
+     "src": "NCL"
+    },
+    {
+     "id": "c8.v1-005",
+     "item": "APU AND BAT",
+     "state": "OFF",
+     "type": "chk",
+     "src": "NCL"
+    }
+   ]
+  },
+  {
+   "id": "c9",
+   "kind": "checklist",
+   "title": "AFTER TAKEOFF / CLIMB",
+   "zone": "",
+   "note": "",
+   "items": [
+    {
+     "id": "c9.v3-01",
+     "item": "LDG GEAR",
+     "state": "UP",
+     "type": "chk",
+     "src": "NCL",
+     "rev": "v3"
+    },
+    {
+     "id": "c9.v3-02",
+     "item": "FLAPS",
+     "state": "RETRACTED",
+     "type": "chk",
+     "src": "NCL",
+     "rev": "v3"
+    },
+    {
+     "id": "c9.v3-03",
+     "item": "PACKS",
+     "state": "ON",
+     "type": "chk",
+     "src": "NCL",
+     "rev": "v3"
+    },
+    {
+     "line": true,
+     "label": "at transition altitude"
+    },
+    {
+     "id": "c9.v3-04",
+     "item": "BARO REF",
+     "state": "STD SET (BOTH)",
+     "type": "chk",
+     "src": "NCL",
+     "rev": "v3"
+    }
+   ]
+  },
+  {
+   "id": "r1",
+   "kind": "reference",
+   "title": "Speeds & Limits",
+   "zone": "",
+   "note": "Values keep their source context. Performance numbers always come from the Fenix EFB for the actual flight.",
+   "items": [
+    {
+     "sub": "TAXI"
+    },
+    {
+     "table": {
+      "head": [
+       "Situation",
+       "Limit"
+      ],
+      "rows": [
+       [
+        "Straight taxiway",
+        "up to about 30 kt (FCTM technique) — local limits apply"
+       ],
+       [
+        "Turns of 90° or more",
+        "below 10 kt"
+       ],
+       [
+        "Technique",
+        "let it accelerate to ~30 kt, one smooth brake application to ~10 kt"
+       ],
+       [
+        "180° turn on runway",
+        "5–8 kt GS, min 30 m width"
+       ],
+       [
+        "Apron / entering stand",
+        "max 5 kt"
+       ],
+       [
+        "Low visibility taxi",
+        "max 10 kt"
+       ],
+       [
+        "Engine warm-up before high thrust",
+        "min 2 min at idle"
+       ]
+      ]
+     }
+    },
+    {
+     "sub": "TAKEOFF & CLIMB"
+    },
+    {
+     "table": {
+      "head": [
+       "Item",
+       "Value"
+      ],
+      "rows": [
+       [
+        "Rotation pitch target",
+        "15° (12.5° engine out)"
+       ],
+       [
+        "Sidestick, X-wind < 20 kt",
+        "½ fwd to 80 kt, neutral by 100 kt"
+       ],
+       [
+        "Sidestick, X-wind > 20 kt",
+        "full fwd to 80 kt, neutral by 100 kt"
+       ],
+       [
+        "Thrust reduction altitude",
+        "from the departure procedure, ft QNH (FMS default usually 1500 ft above the airport)"
+       ],
+       [
+        "Acceleration altitude",
+        "Flight-specific PERF altitude, ft QNH; separate from FCU clearance"
+       ],
+       [
+        "Pack 2 after pack 1",
+        "about 10 s"
+       ],
+       [
+        "Max TOGA thrust duration",
+        "5 min all engines · 10 min engine out (CFM56-5B)"
+       ],
+       [
+        "Rate approaching level-off",
+        "max 1500 fpm last 1000 ft"
+       ],
+       [
+        "Max cabin altitude",
+        "8000 ft"
+       ]
+      ]
+     }
+    },
+    {
+     "sub": "DESCENT & APPROACH"
+    },
+    {
+     "table": {
+      "head": [
+       "Item",
+       "Value"
+      ],
+      "rows": [
+       [
+        "Descent speed if not managed",
+        "0.78 / 300 kt, 250 kt below FL100"
+       ],
+       [
+        "Max ROD below 5000 ft AGL",
+        "2000 fpm"
+       ],
+       [
+        "Max ROD below 2000 ft AGL",
+        "1000 fpm"
+       ],
+       [
+        "Stabilisation height CAT I",
+        "1000 ft above the airport (500 ft visual in VMC)"
+       ],
+       [
+        "Stabilisation height CAT II/III",
+        "1500 ft in the source procedure (operator value)"
+       ],
+       [
+        "Stabilised speed window",
+        "+10 / −5 kt"
+       ],
+       [
+        "Stabilised pitch / bank",
+        "+10° / −2.5° · 7°"
+       ],
+       [
+        "Stabilised sink rate",
+        "max 1000 fpm"
+       ],
+       [
+        "LOC / GLIDE deviation",
+        "½ dot"
+       ],
+       [
+        "AP off — non-autoland (limitation)",
+        "ILS with CAT 1 on the FMA: 160 ft AGL"
+       ],
+       [
+        "Min AP height, FINAL APP / V/S / FPA",
+        "250 ft AGL"
+       ],
+       [
+        "Min AP height after takeoff",
+        "100 ft AGL and 5 s after liftoff"
+       ],
+       [
+        "Minimum fields",
+        "BARO (MDA field): DA or MDA · RADIO (DH field): CAT II/III only"
+       ],
+       [
+        "Decelerated approach — tailwind limit",
+        "10 kt at landing"
+       ]
+      ]
+     }
+    },
+    {
+     "sub": "LANDING & GROUND"
+    },
+    {
+     "table": {
+      "head": [
+       "Item",
+       "Value"
+      ],
+      "rows": [
+       [
+        "Flare initiation",
+        "about 30 ft"
+       ],
+       [
+        "Flare pitch increment",
+        "about 4°"
+       ],
+       [
+        "\"RETARD\" callout",
+        "20 ft"
+       ],
+       [
+        "Reverse to idle",
+        "70 kt"
+       ],
+       [
+        "Stow reversers",
+        "taxi speed (25 kt on snow)"
+       ],
+       [
+        "Autobrake disengage",
+        "before 20 kt"
+       ],
+       [
+        "Autobrake becomes active",
+        "above 72 kt"
+       ],
+       [
+        "Tailstrike pitch",
+        "13.5° (11.5° gear compressed)"
+       ],
+       [
+        "Engine scrape roll",
+        "20° (16° gear compressed)"
+       ],
+       [
+        "Brake temp limit for takeoff (fans off)",
+        "300 °C"
+       ],
+       [
+        "Tire speed limit",
+        "195 kt ground speed"
+       ],
+       [
+        "Engine masters off after high thrust",
+        "min 3 min"
+       ],
+       [
+        "Batteries off after APU AVAIL out",
+        "about 2 min (flap closed)"
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "kind": "reference",
+   "title": "Flap Logic",
+   "zone": "",
+   "note": "The flap lever position and the actual surface configuration are not the same thing. This is what makes the 1 / 1+F distinction confusing.",
+   "items": [
+    {
+     "table": {
+      "head": [
+       "Condition",
+       "Result"
+      ],
+      "rows": [
+       [
+        "Lever 0 → 1, CAS ≤ 100 kt",
+        "results in CONF 1+F"
+       ],
+       [
+        "Lever 0 → 1, CAS > 100 kt",
+        "results in CONF 1"
+       ],
+       [
+        "Lever 2 → 1, CAS < 210 kt",
+        "results in CONF 1+F"
+       ],
+       [
+        "Lever 2 → 1, CAS ≥ 210 kt",
+        "results in CONF 1"
+       ],
+       [
+        "Automatic retraction",
+        "CONF 1+F only, at IAS > 210 kt — flaps to 0, slats stay"
+       ],
+       [
+        "Automatic extension",
+        "CONF 1, CAS below 100 kt — extends to 1+F"
+       ],
+       [
+        "Alpha/speed lock inhibits 1 → 0",
+        "AOA > 8.5° or speed < 148 kt"
+       ],
+       [
+        "Alpha/speed lock clears",
+        "AOA < 7.6° and speed > 154 kt"
+       ],
+       [
+        "CONF 1+F on PFD",
+        "F speed is not displayed"
+       ],
+       [
+        "FLAPS 2 VFE",
+        "200 kt"
+       ]
+      ]
+     }
+    },
+    {
+     "sub": "RETRACTION AFTER TAKEOFF"
+    },
+    {
+     "table": {
+      "head": [
+       "Trigger",
+       "Action"
+      ],
+      "rows": [
+       [
+        "At F speed, positive trend",
+        "retract to CONF 1"
+       ],
+       [
+        "At S speed, positive trend",
+        "retract to 0"
+       ],
+       [
+        "Turbulence",
+        "wait target +20 kt (max VFE−5)"
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "r3",
+   "kind": "reference",
+   "title": "Rules of Thumb",
+   "zone": "",
+   "note": "",
+   "items": [
+    {
+     "sub": "PERFORMANCE"
+    },
+    {
+     "table": {
+      "head": [
+       "Item",
+       "Formula"
+      ],
+      "rows": [
+       [
+        "Green dot below 20 000 ft",
+        "(2 × weight in tonnes) + 85"
+       ],
+       [
+        "Green dot above 20 000 ft",
+        "add 1 kt per 1000 ft"
+       ],
+       [
+        "Example: 60 t at FL200",
+        "(2 × 60) + 85 = 205 kt"
+       ],
+       [
+        "Example: 60 t at FL250",
+        "205 + 5 = 210 kt"
+       ],
+       [
+        "Landing weight",
+        "GW − (FOB − estimated fuel at destination)"
+       ],
+       [
+        "Fuel burn rule of thumb",
+        "200 kg ≈ 5 min of flight"
+       ],
+       [
+        "Oil minimum",
+        "9.5 qt + 0.5 qt per flight hour (source procedure, CFM56)"
+       ]
+      ]
+     }
+    },
+    {
+     "sub": "ALTITUDE & PRESSURE"
+    },
+    {
+     "table": {
+      "head": [
+       "Item",
+       "Formula"
+      ],
+      "rows": [
+       [
+        "Pressure to height",
+        "1 hPa ≈ 27 ft"
+       ],
+       [
+        "QNH from QFE",
+        "QFE + (threshold elevation ÷ 27)"
+       ],
+       [
+        "Fuel cooling rate",
+        "about 3 °C/h (max 12 °C/h)"
+       ],
+       [
+        "4000 ft descent below tropopause",
+        "about +7 °C TAT"
+       ],
+       [
+        "Mach +0.01",
+        "about +0.7 °C TAT"
+       ]
+      ]
+     }
+    },
+    {
+     "sub": "VISUAL CIRCUIT TIMING"
+    },
+    {
+     "table": {
+      "head": [
+       "Item",
+       "Value"
+      ],
+      "rows": [
+       [
+        "Downwind timing",
+        "3 s per 100 ft of height"
+       ],
+       [
+        "Wind correction",
+        "±1 s per kt of wind component"
+       ],
+       [
+        "Engine-out quick return",
+        "45 s ± 1 s per kt"
+       ],
+       [
+        "Downwind distance target",
+        "2.5–3 NM"
+       ],
+       [
+        "Bank in headwind / tailwind",
+        "about 15° / 25°"
+       ]
+      ]
+     }
+    },
+    {
+     "sub": "EMERGENCY DESCENT"
+    },
+    {
+     "table": {
+      "head": [
+       "Item",
+       "Value"
+      ],
+      "rows": [
+       [
+        "Rate of descent, idle + speed brake",
+        "about 7000 fpm"
+       ],
+       [
+        "FL390 → FL100",
+        "about 4 min and 40 NM"
+       ],
+       [
+        "Pax masks deploy",
+        "cabin altitude above 14 000 ft"
+       ],
+       [
+        "Transponder",
+        "7700"
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "r4",
+   "kind": "reference",
+   "title": "Sources",
+   "zone": "",
+   "note": "",
+   "sources": true,
+   "items": []
+  }
+ ],
+ "compare": [
+  [
+   "Bereiche",
+   "50",
+   "50",
+   "53"
+  ],
+  [
+   "Abhakbare Schritte",
+   "605",
+   "609",
+   "665"
+  ],
+  [
+   "Checklisten",
+   "8",
+   "8",
+   "9 – mit After Takeoff / Climb"
+  ],
+  [
+   "Sonderverfahren",
+   "13",
+   "13",
+   "17 – vier neue für die Weltreise"
+  ],
+  [
+   "Anflugarten im Normal-Flow",
+   "ILS",
+   "ILS",
+   "ILS · RNAV (FINAL APP) · NPA (TRK/FPA)"
+  ],
+  [
+   "Flugdaten beim Fliegen",
+   "Kopfleiste",
+   "hinter einem Dialog",
+   "pro Phase im Briefing"
+  ],
+  [
+   "Grafiken",
+   "10 Fremdbilder",
+   "10 Fremdbilder + 8 helle Tafeln",
+   "9 eigene, dunkle Grafiken – Profile mit deinen Werten"
+  ],
+  [
+   "Dateigröße",
+   "1,0 MB",
+   "3,4 MB",
+   "rund 235 KB"
+  ],
+  [
+   "Quellen",
+   "pauschal",
+   "pro Schritt",
+   "pro Schritt, mit Legende"
+  ],
+  [
+   "Eurowings / IAE",
+   "ja",
+   "teilweise",
+   "nein"
+  ],
+  [
+   "Datenquelle",
+   "im HTML",
+   "V1-HTML + Patch-Skript",
+   "flow-v3.json"
+  ]
+ ],
+ "changes": [
+  {
+   "area": "Inhalt",
+   "title": "V2-Korrekturen übernommen",
+   "text": "Getrennte FCU-Freigabehöhe, THR RED/ACC nach Abflugverfahren, kein Ersatz-CG, Fahrwerk pro Bein, Fuel-Check am gleichen Punkt, Engine-out ohne Widerspruch, 7700 mit Bedingung, Touch-and-go-Reihenfolge.",
+   "effect": "alle echten V2-Fixes"
+  },
+  {
+   "area": "Inhalt",
+   "title": "Konkrete Werte zurück",
+   "text": "Wo V2 korrekte Zahlen durch „as briefed“ ersetzt hat, stehen sie wieder da – mit Quelle: Taxi 30 → 10 kt (FCTM), AP-Mindesthöhen 100/160/250 ft, TOGA 5/10 min, Öl 9,5 qt + 0,5 qt/h.",
+   "effect": "brauchbar im Cockpit"
+  },
+  {
+   "area": "Fehler",
+   "title": "After Takeoff / Climb",
+   "text": "V1 behauptete, die Checkliste gebe es nicht mehr; V2 räumte ein, dass es sie gibt, ließ sie aber weg. Sie ist jetzt da und im Flow eingehängt.",
+   "effect": "9 Checklisten"
+  },
+  {
+   "area": "Fehler",
+   "title": "Startabbruch nach Airbus",
+   "text": "Zwischen 100 kt und V1 nicht mehr „jede ECAM-Meldung“, sondern Feuer, schwere Schäden, Schubverlust, Flugunfähigkeit, rote Warnungen und fünf bestimmte Amber-Cautions.",
+   "effect": "go-minded"
+  },
+  {
+   "area": "Fehler",
+   "title": "Anflug ohne Widersprüche",
+   "text": "Wing Anti-Ice bei sichtbarem Eisansatz statt „nur bei starker Vereisung“; Stabilisierung 1000 ft (500 ft visuell); die 1500 ft der Quelle als Betreiberwert markiert.",
+   "effect": "konsistent"
+  },
+  {
+   "area": "Weltreise",
+   "title": "Drei Anflugarten",
+   "text": "Der Normal-Flow kennt jetzt ILS, RNAV mit FINAL APP und Nichtpräzisionsanflüge mit TRK/FPA – umgeschaltet im Flugprofil, mit CDFA-Hinweis und Kodierungsprüfung.",
+   "effect": "für Inseln und Berge"
+  },
+  {
+   "area": "Weltreise",
+   "title": "Vier neue Karten",
+   "text": "G/S von oben, Hot & High (Cusco, La Paz, Quito …), kurze Bahnen (Funafuti, St Helena …) sowie Kälte und kontaminierte Bahn (Union Glacier).",
+   "effect": "17 Sonderverfahren"
+  },
+  {
+   "area": "Aufgeräumt",
+   "title": "Eurowings und IAE entfernt",
+   "text": "Flottenseite, Streckenkarte, Pack-Flow-Bezug und IAE-Leerlaufwerte sind raus; V3 ist auf den Fenix A320 CEO mit CFM56-5B und Sharklets ausgelegt.",
+   "effect": "ein Flugzeug"
+  },
+  {
+   "area": "Design",
+   "title": "Im Look der Weltreise",
+   "text": "Gleiche Farben, Schriften und Bausteine wie die Weltreise V2: Phasen-Leiste über den ganzen Flug, Briefing links, Schritte und Profil rechts, Tracks und Reiter.",
+   "effect": "eine Familie"
+  },
+  {
+   "area": "Technik",
+   "title": "Eine Datenquelle",
+   "text": "Alle Inhalte stehen in flow-v3.json und werden per build_v3.py zur Offline-Datei. Die stabilen Schritt-IDs aus V2 bleiben – Häkchen überleben Änderungen.",
+   "effect": "wartbar"
+  }
+ ],
+ "log": [
+  {
+   "phase": "n1",
+   "id": "n1.v1-001",
+   "action": "geändert",
+   "why": "V2-Meta-Text durch eine klare Anweisung ersetzt."
+  },
+  {
+   "phase": "n1",
+   "id": "n1.v3-panel",
+   "action": "neu",
+   "why": "Fenix-Einstieg ergänzt: der Flow beginnt Cold & Dark."
+  },
+  {
+   "phase": "n3",
+   "id": "n3.v1-001",
+   "action": "geändert",
+   "why": "Konkreter Öl-Richtwert wieder da – mit ehrlicher Quellenangabe statt ersatzloser Streichung."
+  },
+  {
+   "phase": "n4",
+   "id": "n4.v1-012",
+   "action": "geändert",
+   "why": "Eurowings-Bezug entfernt, FCOM-Regel neutral formuliert."
+  },
+  {
+   "phase": "n5",
+   "id": "n5.v1-003",
+   "action": "geändert",
+   "why": "Quelle neutral (war „V2“), Text gestrafft."
+  },
+  {
+   "phase": "n6",
+   "id": "n6.v1-007",
+   "action": "geändert",
+   "why": "Transponder-Hinweis präzisiert."
+  },
+  {
+   "phase": "n8",
+   "id": "n8.v1-006",
+   "action": "geändert",
+   "why": "FMS-Vorgabe erklärt, Quelle neutral (war „V2“)."
+  },
+  {
+   "phase": "n8",
+   "id": "n8.eo-acc",
+   "action": "geändert",
+   "why": "Quelle neutral (war „V2“)."
+  },
+  {
+   "phase": "n9",
+   "id": "n9.v1-015",
+   "action": "geändert",
+   "why": "Briefing-Text entschlackt, gleiche Aussage wie die Engine-out-Karte."
+  },
+  {
+   "phase": "n11",
+   "id": "n11.v1-009",
+   "action": "entfernt",
+   "why": "IAE-Leerlaufwerte entfernt – V3 ist fest auf CFM56-5B ausgelegt."
+  },
+  {
+   "phase": "n11",
+   "id": "n11.v1-004",
+   "action": "geändert",
+   "why": "Nur noch CFM-Angaben."
+  },
+  {
+   "phase": "n13",
+   "id": "(Notiz)",
+   "action": "geändert",
+   "why": "Konkrete FCTM-Taxitechnik statt pauschaler Formulierung."
+  },
+  {
+   "phase": "n13",
+   "id": "n13.v1-016",
+   "action": "geändert",
+   "why": "Airline-Name „Taxi-Checkliste“ durch die Airbus-Checkliste ersetzt."
+  },
+  {
+   "phase": "n14",
+   "id": "n14.v1-009",
+   "action": "geändert",
+   "why": "Airline-Name „Line-up-Checkliste“ durch die Airbus-Checkliste ersetzt."
+  },
+  {
+   "phase": "n15",
+   "id": "n15.strong-stabilise",
+   "action": "geändert",
+   "why": "Quelle ergänzt, Meta-Text entfernt."
+  },
+  {
+   "phase": "n15",
+   "id": "n15.strong-brakes",
+   "action": "geändert",
+   "why": "Quelle ergänzt, Meta-Text entfernt."
+  },
+  {
+   "phase": "n15",
+   "id": "n15.v3-ap",
+   "action": "neu",
+   "why": "Autopilot-Zeitpunkt nach dem Start ergänzt."
+  },
+  {
+   "phase": "n16",
+   "id": "(Notiz)",
+   "action": "geändert",
+   "why": "Die Airbus-Checkliste After Takeoff / Climb existiert und ist jetzt enthalten."
+  },
+  {
+   "phase": "n16",
+   "id": "n16.v3-atc1",
+   "action": "neu",
+   "why": "After-Takeoff/Climb-Checkliste in den Ablauf eingehängt."
+  },
+  {
+   "phase": "n16",
+   "id": "n16.v3-atc2",
+   "action": "neu",
+   "why": "After-Takeoff/Climb-Checkliste: Teil unter dem Strich an der Transition Altitude."
+  },
+  {
+   "phase": "n16",
+   "id": "n16.v1-013",
+   "action": "geändert",
+   "why": "V2-Meta-Satz entfernt."
+  },
+  {
+   "phase": "n18",
+   "id": "n18.v1-009",
+   "action": "geändert",
+   "why": "Minimum-Felder für alle Anflugarten erklärt."
+  },
+  {
+   "phase": "n18",
+   "id": "n18.v3-coding",
+   "action": "neu",
+   "why": "RNAV: Kodierungsprüfung vor dem Anflug."
+  },
+  {
+   "phase": "n19",
+   "id": "n19.v1-007",
+   "action": "geändert",
+   "why": "Transition Level als eigenes Datenfeld."
+  },
+  {
+   "phase": "n20",
+   "id": "(Notiz)",
+   "action": "geändert",
+   "why": "Anflug-Phase deckt jetzt ILS, RNAV (FINAL APP) und NPA (TRK/FPA) ab."
+  },
+  {
+   "phase": "n20",
+   "id": "n20.v1-001",
+   "action": "geändert",
+   "why": "NAV-Genauigkeit inklusive GPS PRIMARY für RNAV."
+  },
+  {
+   "phase": "n20",
+   "id": "n20.v1-002",
+   "action": "geändert",
+   "why": "Nur im ILS-Zweig; V2-Meta-Text entfernt."
+  },
+  {
+   "phase": "n20",
+   "id": "n20.v1-003",
+   "action": "geändert",
+   "why": "Konkrete AP-Regel statt „as briefed“."
+  },
+  {
+   "phase": "n20",
+   "id": "n20.v1-004",
+   "action": "geändert",
+   "why": "Nur im ILS-Zweig; Verweis auf die neue Karte „G/S from Above“."
+  },
+  {
+   "phase": "n20",
+   "id": "n20.v1-007",
+   "action": "geändert",
+   "why": "Nur im ILS-Zweig."
+  },
+  {
+   "phase": "n20",
+   "id": "n20.v3-rnav-gps",
+   "action": "neu",
+   "why": "RNAV-Anflug mit FINAL APP ergänzt."
+  },
+  {
+   "phase": "n20",
+   "id": "n20.v3-rnav-appr",
+   "action": "neu",
+   "why": "RNAV-Anflug mit FINAL APP ergänzt."
+  },
+  {
+   "phase": "n20",
+   "id": "n20.v3-rnav-vdev",
+   "action": "neu",
+   "why": "RNAV-Anflug mit FINAL APP ergänzt."
+  },
+  {
+   "phase": "n20",
+   "id": "n20.v3-rnav-final",
+   "action": "neu",
+   "why": "RNAV-Anflug mit FINAL APP ergänzt."
+  },
+  {
+   "phase": "n20",
+   "id": "n20.v3-rnav-ga",
+   "action": "neu",
+   "why": "RNAV-Anflug mit FINAL APP ergänzt."
+  },
+  {
+   "phase": "n20",
+   "id": "n20.v3-npa-config",
+   "action": "neu",
+   "why": "RNAV-Anflug mit FINAL APP ergänzt."
+  },
+  {
+   "phase": "n20",
+   "id": "n20.v3-npa-trk",
+   "action": "neu",
+   "why": "RNAV-Anflug mit FINAL APP ergänzt."
+  },
+  {
+   "phase": "n20",
+   "id": "n20.v3-npa-fpa",
+   "action": "neu",
+   "why": "RNAV-Anflug mit FINAL APP ergänzt."
+  },
+  {
+   "phase": "n20",
+   "id": "n20.v3-npa-ga",
+   "action": "neu",
+   "why": "RNAV-Anflug mit FINAL APP ergänzt."
+  },
+  {
+   "phase": "n20",
+   "id": "n20.v3-npa-check",
+   "action": "neu",
+   "why": "RNAV-Anflug mit FINAL APP ergänzt."
+  },
+  {
+   "phase": "n20",
+   "id": "n20.v1-006",
+   "action": "geändert",
+   "why": "Konfigurationspunkte des Decelerated Approach gelten für ILS und RNAV."
+  },
+  {
+   "phase": "n20",
+   "id": "n20.v1-008",
+   "action": "geändert",
+   "why": "Konfigurationspunkte des Decelerated Approach gelten für ILS und RNAV."
+  },
+  {
+   "phase": "n20",
+   "id": "n20.v1-009",
+   "action": "geändert",
+   "why": "Konfigurationspunkte des Decelerated Approach gelten für ILS und RNAV."
+  },
+  {
+   "phase": "n20",
+   "id": "n20.v1-013",
+   "action": "geändert",
+   "why": "Konfigurationspunkte des Decelerated Approach gelten für ILS und RNAV."
+  },
+  {
+   "phase": "n20",
+   "id": "n20.v1-014",
+   "action": "geändert",
+   "why": "Konfigurationspunkte des Decelerated Approach gelten für ILS und RNAV."
+  },
+  {
+   "phase": "n20",
+   "id": "n20.conf3-speed",
+   "action": "geändert",
+   "why": "Quelle ergänzt, Meta-Text entfernt."
+  },
+  {
+   "phase": "n20",
+   "id": "n20.v1-017",
+   "action": "geändert",
+   "why": "Widerspruch zum After-Start-Schritt behoben: Flächenenteisung bei sichtbarem Eisansatz, nicht erst bei starkem."
+  },
+  {
+   "phase": "n20",
+   "id": "n20.v1-019",
+   "action": "geändert",
+   "why": "Stabilisierungshöhe nach Airbus; die 1500 ft der Quelle als Betreiberwert markiert."
+  },
+  {
+   "phase": "n20",
+   "id": "n20.v1-021",
+   "action": "geändert",
+   "why": "CDFA-Hinweis für Nichtpräzisionsanflüge."
+  },
+  {
+   "phase": "n20",
+   "id": "n20.v1-022",
+   "action": "geändert",
+   "why": "AP-Mindesthöhen nach Anflugart wieder konkret (V2: nur „as briefed“)."
+  },
+  {
+   "phase": "s1",
+   "id": "(Notiz)",
+   "action": "geändert",
+   "why": "Abbruchkriterien nach Airbus FCTM."
+  },
+  {
+   "phase": "s1",
+   "id": "s1.v1-004",
+   "action": "geändert",
+   "why": "Formulierung nach Airbus FCTM."
+  },
+  {
+   "phase": "s1",
+   "id": "s1.v1-005",
+   "action": "geändert",
+   "why": "„Jede ECAM-Meldung“ ersetzt durch rote Warnungen und eine kurze Amber-Liste (Airbus FCTM)."
+  },
+  {
+   "phase": "s1",
+   "id": "s1.v3-amber",
+   "action": "neu",
+   "why": "Die wenigen Amber-Cautions, für die Airbus über 100 kt abbricht."
+  },
+  {
+   "phase": "s1",
+   "id": "s1.v1-006",
+   "action": "geändert",
+   "why": "Windscherung nur mit Bedingung (Airbus)."
+  },
+  {
+   "phase": "s2",
+   "id": "s2.v1-001",
+   "action": "geändert",
+   "why": "Airbus-Zielwert statt Spanne aus dem Trainingsblatt."
+  },
+  {
+   "phase": "s2",
+   "id": "s2.v1-003",
+   "action": "geändert",
+   "why": "Reihenfolge korrigiert: erst Seitenruder, dann Trimmung."
+  },
+  {
+   "phase": "s2",
+   "id": "s2.v1-005",
+   "action": "geändert",
+   "why": "TOGA-Zeitlimit wieder konkret: 10 min einmotorig, 5 min mit beiden Triebwerken."
+  },
+  {
+   "phase": "s2",
+   "id": "s2.v1-008",
+   "action": "geändert",
+   "why": "Engine-out-Beschleunigung klar formuliert (gleiche Aussage wie das Briefing)."
+  },
+  {
+   "phase": "s11",
+   "id": "(Notiz)",
+   "action": "neu",
+   "why": "Kurzbeschreibung ergänzt (war leer)."
+  },
+  {
+   "phase": "s12",
+   "id": "(Notiz)",
+   "action": "neu",
+   "why": "Kurzbeschreibung ergänzt (war leer)."
+  },
+  {
+   "phase": "s4",
+   "id": "(Zwischentitel)",
+   "action": "neu",
+   "why": "Durchstarten und Discontinued Approach stehen beide sichtbar da (kein Profil-Zweig)."
+  },
+  {
+   "phase": "s4",
+   "id": "(Zweige)",
+   "action": "geändert",
+   "why": "Beide Varianten sichtbar – im Moment des Durchstartens wählst du, nicht vorher im Profil."
+  },
+  {
+   "phase": "s9",
+   "id": "s9.v1-001",
+   "action": "geändert",
+   "why": "Hinweis ohne Verweis auf das entfernte Bildarchiv."
+  },
+  {
+   "phase": "s14",
+   "id": "(Karte)",
+   "action": "neu",
+   "why": "Neue Karte für die Weltreise."
+  },
+  {
+   "phase": "s15",
+   "id": "(Karte)",
+   "action": "neu",
+   "why": "Neue Karte für die Weltreise."
+  },
+  {
+   "phase": "s16",
+   "id": "(Karte)",
+   "action": "neu",
+   "why": "Neue Karte für die Weltreise."
+  },
+  {
+   "phase": "s17",
+   "id": "(Karte)",
+   "action": "neu",
+   "why": "Neue Karte für die Weltreise."
+  },
+  {
+   "phase": "c4",
+   "id": "c4.v3-engmode",
+   "action": "geändert",
+   "why": "Approach-Checkliste nach Airbus: MINIMUM statt BARO/MDA/DH, ENG MODE SEL ergänzt."
+  },
+  {
+   "phase": "c9",
+   "id": "(Checkliste)",
+   "action": "neu",
+   "why": "Airbus After Takeoff / Climb Checkliste ergänzt."
+  },
+  {
+   "phase": "r1",
+   "id": "(Tabellen)",
+   "action": "geändert",
+   "why": "Konkrete Grenzwerte (Taxi, TOGA, AP-Höhen, Reifen) statt „verify applicable limit“."
+  },
+  {
+   "phase": "r5",
+   "id": "(Seite)",
+   "action": "entfernt",
+   "why": "Eurowings-Flotte und -Streckenkarte gehören nicht zur Weltreise."
+  },
+  {
+   "phase": "r6",
+   "id": "(Seite)",
+   "action": "entfernt",
+   "why": "Eurowings-Flotte und -Streckenkarte gehören nicht zur Weltreise."
+  }
+ ]
+}

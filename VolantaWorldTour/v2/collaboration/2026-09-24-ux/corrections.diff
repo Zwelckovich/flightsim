@@ -1,0 +1,237 @@
+--- behavior-review/v2/app.js
++++ v2/app.js
+@@ -798,10 +798,18 @@
+     $('#resume').disabled = LEGS.every(l => state.flown.has(l.id));
+     $('#resume').textContent = $('#resume').disabled ? 'Alle Legs geflogen' : 'Erstes offenes Leg';
+   }
+-  function reveal(el) {
+-    el.focus({ preventScroll: true });
+-    const top = el.getBoundingClientRect().top + window.scrollY - $('.stepbar').getBoundingClientRect().height - 16;
++  function reveal(el, { focus = true, anchor = el } = {}) {
++    if (focus) el.focus({ preventScroll: true });
++    const bar = $('.stepbar');
++    const offset = getComputedStyle(bar).position === 'sticky' ? bar.getBoundingClientRect().height : 0;
++    const top = anchor.getBoundingClientRect().top + window.scrollY - offset - 16;
+     window.scrollTo({ top: Math.max(0, top), behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
++  }
++  function stepLeg(delta) {
++    const control = document.activeElement;
++    select(state.idx + delta);
++    if (control && control.disabled) $('#jump').focus({ preventScroll: true });
++    reveal($('.grid'), { focus: false });
+   }
+   function openBriefing(id) {
+     selectId(id);
+@@ -809,7 +817,7 @@
+   }
+   function findLeg() {
+     showTab('plan');
+-    reveal($('#q'));
++    reveal($('#q'), { anchor: $('#book') });
+   }
+   function markPlanSel() {
+     $$('#plan tbody tr.sel').forEach(r => r.classList.remove('sel'));
+@@ -835,6 +843,7 @@
+     const focused = document.activeElement;
+     const restoreFlownFocus = focused && focused.id === 'flownbtn';
+     const restoreDoneFocus = focused && focused.dataset && focused.dataset.done;
++    const previousDoneIds = restoreDoneFocus ? $$('#plan input[data-done]').map(cb => cb.dataset.done) : [];
+     updateRail(false);
+     renderTracks();
+     renderProse();
+@@ -847,10 +856,14 @@
+     if (state.tab === 'data') renderData();
+     updateNav();
+     if (restoreFlownFocus) $('#flownbtn').focus({ preventScroll: true });
+-    if (restoreDoneFocus) {
+-      const replacement = $(`#plan input[data-done="${CSS.escape(restoreDoneFocus)}"]`);
+-      (replacement || $('#q')).focus({ preventScroll: true });
+-    }
++    if (restoreDoneFocus) restorePlanFocus(restoreDoneFocus, previousDoneIds);
++  }
++  function restorePlanFocus(id, previousIds) {
++    const remaining = new Map($$('#plan input[data-done]').map(cb => [cb.dataset.done, cb]));
++    const index = previousIds.indexOf(id);
++    const candidates = [id, ...previousIds.slice(index + 1), ...previousIds.slice(0, index).reverse()];
++    const target = candidates.map(key => remaining.get(key)).find(Boolean) || $('#clear-filters');
++    target.focus({ preventScroll: remaining.has(id) });
+   }
+ 
+   // ---------- Flugplan ----------
+@@ -1312,7 +1325,7 @@
+       const cb = ev.target.closest('input[data-done]');
+       if (cb) { setFlown(cb.dataset.done, cb.checked); return; }
+       const tr = ev.target.closest('tr[data-leg]');
+-      if (tr && !ev.target.closest('a, button, .check-hit')) openBriefing(tr.dataset.leg);
++      if (tr && !ev.target.closest('a, button, .check-hit, td:first-child')) openBriefing(tr.dataset.leg);
+     });
+     let qTimer = 0;
+     $('#q').addEventListener('input', ev => {
+@@ -1344,9 +1357,9 @@
+     $('#rs-go').addEventListener('click', () => step(true));
+     $('#rs-no').addEventListener('click', () => step(false));
+     $('#rs-yes').addEventListener('click', async () => { step(false); await doReset(); });
+-    $('#prev').addEventListener('click', () => { select(state.idx - 1); reveal($('.grid')); });
+-    $('#next').addEventListener('click', () => { select(state.idx + 1); reveal($('.grid')); });
+-    $('#jump').addEventListener('change', ev => openBriefing(ev.target.value));
++    $('#prev').addEventListener('click', () => stepLeg(-1));
++    $('#next').addEventListener('click', () => stepLeg(1));
++    $('#jump').addEventListener('change', ev => { selectId(ev.target.value); reveal($('.grid'), { focus: false }); });
+     $('#resume').addEventListener('click', () => {
+       const next = LEGS.find(l => !state.flown.has(l.id));
+       if (next) openBriefing(next.id);
+@@ -1361,7 +1374,7 @@
+     });
+     document.addEventListener('keydown', ev => {
+       if (ev.defaultPrevented || ev.repeat || ev.altKey || ev.ctrlKey || ev.metaKey) return;
+-      if (ev.target.closest && ev.target.closest('input, select, textarea, button, a, summary, [contenteditable]:not([contenteditable="false"]), [role="tab"]')) return;
++      if (ev.target.closest && ev.target.closest('input, select, textarea, summary, [contenteditable]:not([contenteditable="false"]), [role="tab"]')) return;
+       if (ev.target !== document.body && !(ev.target.closest && ev.target.closest('.grid'))) return;
+       if (ev.key === 'ArrowLeft') { select(state.idx - 1); ev.preventDefault(); }
+       else if (ev.key === 'ArrowRight') { select(state.idx + 1); ev.preventDefault(); }
+
+--- behavior-review/v2/template.html
++++ v2/template.html
+@@ -32,9 +32,9 @@
+ <nav class="stepbar" aria-label="Kapitel und Legs">
+   <div class="wrap">
+     <div class="legnav">
+-      <button class="btn" type="button" id="prev" aria-label="Vorheriges Leg">← Zurück</button>
++      <button class="btn" type="button" id="prev" aria-label="Zurück – vorheriges Leg">← Zurück</button>
+       <label class="leg-picker"><span id="nav-position">Aktuelles Leg</span><select id="jump" aria-label="Zu einem Leg springen"></select></label>
+-      <button class="btn" type="button" id="next" aria-label="Nächstes Leg">Weiter →</button>
++      <button class="btn" type="button" id="next" aria-label="Weiter – nächstes Leg">Weiter →</button>
+       <div class="nav-shortcuts">
+         <button class="btn" type="button" id="resume">Erstes offenes Leg</button>
+         <button class="btn" type="button" id="find-leg">Leg suchen</button>
+@@ -44,12 +44,12 @@
+ </nav>
+ <details class="route-overview wrap">
+   <summary>Gesamte Route · 28 Kapitel</summary>
+-  <div class="rail" id="rail" aria-label="Legs der gesamten Route"></div>
++  <div class="rail" id="rail" role="group" aria-label="Legs der gesamten Route"></div>
+ </details>
+ 
+ <main>
+   <div class="wrap">
+-    <div class="grid" tabindex="-1" aria-label="Briefing zum ausgewählten Leg">
++    <div class="grid" role="region" tabindex="-1" aria-label="Briefing zum ausgewählten Leg">
+       <section class="prose" id="prose" aria-live="polite"></section>
+       <section class="stage" aria-label="Karte und Flughäfen">
+         <div class="stagebar">
+@@ -89,8 +89,8 @@
+ 
+       <div class="panel" role="tabpanel" id="panel-plan" aria-labelledby="tab-plan">
+         <div class="toolbar">
+-          <label class="filter-field"><span>Suche</span><input type="search" id="q" placeholder="Leg, ICAO, Ort oder Land …" aria-label="Flugplan durchsuchen"></label>
+-          <label class="filter-field"><span>Status und Interessen</span><select id="flt" aria-label="Filter">
++          <label class="filter-field"><span>Suche</span><input type="search" id="q" placeholder="Leg, ICAO, Ort oder Land …"></label>
++          <label class="filter-field"><span>Status und Interessen</span><select id="flt">
+             <option value="all">Alle Legs</option>
+             <option value="open">Offen</option>
+             <option value="done">Geflogen</option>
+@@ -104,7 +104,7 @@
+             <option value="trial">Sonderetappen (erst testen)</option>
+             <option value="unrated">Szenerie ungeprüft</option>
+           </select></label>
+-          <label class="filter-field"><span>Kapitel</span><select id="chsel" aria-label="Kapitel"></select></label>
++          <label class="filter-field"><span>Kapitel</span><select id="chsel"></select></label>
+           <button class="btn" type="button" id="clear-filters" hidden>Filter zurücksetzen</button>
+           <span class="spacer"></span>
+           <button class="btn small" type="button" id="csv">Flugplan als CSV</button>
+
+--- behavior-review/v2/tests/check_ui_navigation.cjs
++++ v2/tests/check_ui_navigation.cjs
+@@ -13,7 +13,8 @@
+   constructor(dataset = {}) { this.dataset = dataset; this.listeners = {}; this.attrs = {}; this.value = ''; }
+   addEventListener(type, cb) { this.listeners[type] = cb; }
+   setAttribute(key, value) { this.attrs[key] = value; }
+-  focus() { this.focused = true; }
++  focus() { this.focused = true; element('document').activeElement = this; }
++  getBoundingClientRect() { return { top: 100, height: 60 }; }
+   remove() { this.removed = true; }
+   closest(selector) {
+     if (this.dataset.tab && (selector === '.tab' || selector.includes('[role="tab"]'))) return this;
+@@ -23,9 +24,14 @@
+ const elements = new Map();
+ const element = s => { if (!elements.has(s)) elements.set(s, new Element()); return elements.get(s); };
+ const tabs = ['plan', 'hl', 'scn', 'cat', 'new', 'data'].map(tab => new Element({ tab }));
++let planCheckboxes = [];
+ const ctx = vm.createContext({ input: data, console, setTimeout, clearTimeout,
+   document: element('document'), window: element('window'),
+-  one: element, many: s => s === '.tab' ? tabs : [], moves: [], toggles: [] });
++  getComputedStyle: () => ({ position: 'sticky' }),
++  one: element, many: s => s === '.tab' ? tabs : s === '#plan input[data-done]' ? planCheckboxes : [], moves: [], toggles: [] });
++element('window').scrollY = 0;
++element('window').scrollTo = options => { element('window').lastScroll = options; };
++element('window').matchMedia = () => ({ matches: true });
+ const searchLine = src.split('\n').find(line => line.includes('const searchText ='));
+ vm.runInContext(`
+ const D=input, AP=D.airports, LEGS=D.legs, CH=D.chapters, XC=D.excursions;
+@@ -36,13 +42,14 @@
+ const $=one, $$=many, cur=()=>LEGS[state.idx], cityOf=a=>a.c||a.n;
+ const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');
+ const rowHtml=l=>'<tr data-leg="'+l.id+'"></tr>';
+-function select(i){moves.push(i);}
++function select(i){moves.push(i);state.idx=Math.max(0,Math.min(LEGS.length-1,i));updateNav();}
+ function toggleFlown(id){toggles.push(id);}
+ function saveLocal(){} function renderHL(){} function renderScn(){} function renderCat(){}
+-function renderNew(){} function renderData(){} function findLeg(){}
++function renderNew(){} function renderData(){}
+ ${searchLine}
+-${['passFilter','renderPlan','showTab','updateNav','wire'].map(fn).join('\n')}
+-wire(); globalThis.ui={state,renderPlan,showTab,updateNav};`, ctx);
++${['passFilter','renderPlan','showTab','updateNav','reveal','stepLeg','openBriefing','findLeg','restorePlanFocus','wire'].map(fn).join('\n')}
++function selectId(id){if(legIdx.has(id))select(legIdx.get(id));}
++wire(); globalThis.ui={state,renderPlan,showTab,updateNav,restorePlanFocus,openBriefing};`, ctx);
+ const ui = ctx.ui;
+ const ids = () => [...element('#plan tbody').innerHTML.matchAll(/data-leg="([^"]+)"/g)].map(m => m[1]);
+ ui.state.q = 'eDlV EHAM'; ui.renderPlan();
+@@ -83,7 +90,7 @@
+ assert.equal(ctx.toggles.length, 0, 'holding G must not repeatedly toggle progress');
+ console.log('PASS keyboard: tab arrows/Home/End, single tab stop, no accidental leg/progress changes, briefing arrows');
+ 
+-ui.updateNav(); assert.equal(element('#prev').disabled, true);
++ui.state.idx = 0; ui.updateNav(); assert.equal(element('#prev').disabled, true);
+ assert.equal(element('#next').disabled, false); assert.equal(element('#resume').disabled, false);
+ ui.state.idx = data.legs.length - 1; ui.updateNav();
+ assert.equal(element('#next').disabled, true); assert.equal(element('#jump').value, 'L388');
+@@ -91,3 +98,37 @@
+ ui.updateNav(); assert.equal(element('#resume').disabled, true);
+ assert.equal(element('#resume').textContent, 'Alle Legs geflogen');
+ console.log('PASS navigation: first/last boundaries, current selection, complete-tour state');
++
++const jump = element('#jump'), next = element('#next');
++jump.focus(); jump.value = 'L010'; jump.listeners.change({target:jump});
++assert.equal(element('document').activeElement, jump, 'changing the select must keep focus in the select');
++next.focus(); next.listeners.click(); next.listeners.click();
++assert.equal(data.legs[ui.state.idx].id, 'L012');
++assert.equal(element('document').activeElement, next, 'repeated next-button activation keeps its focus');
++ui.state.idx = data.legs.length - 2; next.listeners.click();
++assert.equal(element('document').activeElement, jump, 'a newly disabled navigation button hands focus to the select');
++ui.openBriefing('L010');
++assert.equal(element('document').activeElement, element('.grid'), 'a table route jump focuses its briefing');
++
++const briefButton = new Element();
++briefButton.closest = selector => selector === '.grid' ? briefing : selector.split(', ').includes('button') ? briefButton : null;
++const moveCount = ctx.moves.length;
++element('document').listeners.keydown(key(briefButton, 'ArrowRight'));
++assert.equal(ctx.moves.length, moveCount + 1, 'briefing buttons allow flight shortcuts');
++const briefInput = new Element();
++briefInput.closest = selector => selector === '.grid' ? briefing : selector.split(', ').includes('input') ? briefInput : null;
++element('document').listeners.keydown(key(briefInput, 'ArrowRight'));
++assert.equal(ctx.moves.length, moveCount + 1, 'editing a field must not navigate');
++console.log('PASS focus: native select, repeated next, disabled boundary, route jump and briefing-button shortcuts');
++
++const boxes = ['L001','L002','L003'].map(done => new Element({done}));
++planCheckboxes = [boxes[0], boxes[2]];
++ui.restorePlanFocus('L002', ['L001','L002','L003']);
++assert.equal(element('document').activeElement, boxes[2], 'removed filtered row moves focus to the following result');
++planCheckboxes = [boxes[0]];
++ui.restorePlanFocus('L003', ['L001','L003']);
++assert.equal(element('document').activeElement, boxes[0], 'last removed row moves focus to the previous result');
++planCheckboxes = [];
++ui.restorePlanFocus('L001', ['L001']);
++assert.equal(element('document').activeElement, element('#clear-filters'), 'empty results focus the reset action, not the keyboard-opening search field');
++console.log('PASS filtered-list focus: following row, previous row, empty result reset');
+

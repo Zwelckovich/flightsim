@@ -1,0 +1,503 @@
+--- baseline/v2/app.js
++++ v2/app.js
+@@ -9,6 +9,12 @@
+   const CH = D.chapters;
+   const XC = D.excursions;
+   const CATN = Object.fromEntries(D.cats.map(c => [c.code, c.name]));
++  // Volanta-Namen bleiben sichtbar; die Suche versteht zusätzlich deutsche Ländernamen.
++  const CAT_SEARCH = { ...CATN };
++  try {
++    const regions = new Intl.DisplayNames(['de'], { type: 'region' });
++    for (const c of D.cats) CAT_SEARCH[c.code] += ' ' + regions.of(c.code);
++  } catch (e) { /* Ältere Browser suchen weiterhin nach den Volanta-Namen. */ }
+   const legIdx = new Map(LEGS.map((l, i) => [l.id, i]));
+   const chIdx = new Map(CH.map((c, i) => [c.id, i]));
+   const A320_TOTAL = D.stats.a320.legs;
+@@ -26,6 +32,7 @@
+   const cityOf = a => a.c || a.n;
+   const isIcao = s => /^[A-Z][A-Z0-9]{3}$/.test(s);
+   const legLabel = l => (l.k === 'h' ? l.id.slice(2) : pad3(l.n));
++  const searchText = s => String(s).normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ß/g, 'ss').toLowerCase();
+ 
+   // ---------- Zustand ----------
+   // marks: pro Leg {on, at, t}. Auch entfernte Häkchen bleiben als {on:false} mit Zeitstempel
+@@ -463,7 +470,7 @@
+       ${trialHtml(l)}
+       <div class="kicker">${kicker}</div>
+       <div class="actions">
+-        <button type="button" class="btn ${done ? 'done' : 'primary'}" id="flownbtn">${done ? '✓ Geflogen' : 'Als geflogen markieren'}</button>
++        <button type="button" class="btn ${done ? 'done' : 'primary'}" id="flownbtn" aria-pressed="${done}">${done ? '✓ Geflogen' : 'Als geflogen markieren'}</button>
+         ${sb ? `<a class="btn" href="${sb}" target="_blank" rel="noopener">SimBrief ↗</a>` : ''}
+         <button type="button" class="btn" id="dbtpl">Debrief-Vorlage</button>
+       </div>
+@@ -565,9 +572,9 @@
+       const pips = c.legs.map(id => {
+         const l = LEGS[legIdx.get(id)];
+         const cls = `pip${l.k === 'h' ? ' heli' : ''}${l.o2 ? ' long' : ''}`;
+-        return `<button type="button" class="${cls}" data-leg="${id}" title="${esc(id)} · ${esc(l.f)} → ${esc(l.t)}" aria-label="${esc(id)} ${esc(l.f)} nach ${esc(l.t)}"></button>`;
++        return `<button type="button" class="${cls}" data-leg="${id}" tabindex="-1" title="${esc(id)} · ${esc(l.f)} → ${esc(l.t)}" aria-label="${esc(id)} ${esc(l.f)} nach ${esc(l.t)}"><span class="pip-label">${esc(legLabel(l))}</span></button>`;
+       }).join('');
+-      return `<div class="act" data-ch="${c.id}"><div class="lbl"><b>${c.id}</b>${esc(c.title)} <b class="cnt"></b></div><div class="pips">${pips}</div></div>`;
++      return `<div class="act" data-ch="${c.id}"><button type="button" class="chapter-link lbl" data-go="${c.legs[0]}"><b>${c.id}</b>${esc(c.title)} <b class="cnt"></b></button><div class="pips">${pips}</div></div>`;
+     }).join('');
+     $$('#rail .pip').forEach(p => pipEl.set(p.dataset.leg, p));
+   }
+@@ -576,6 +583,11 @@
+     for (const [id, p] of pipEl) {
+       p.classList.toggle('done', state.flown.has(id));
+       p.classList.toggle('now', id === l.id);
++      p.tabIndex = id === l.id ? 0 : -1;
++      if (id === l.id) p.setAttribute('aria-current', 'step');
++      else p.removeAttribute('aria-current');
++      const leg = LEGS[legIdx.get(id)];
++      p.setAttribute('aria-label', `${id} ${leg.f} nach ${leg.t}${state.flown.has(id) ? ', geflogen' : ', offen'}`);
+     }
+     $$('#rail .act').forEach(act => {
+       const c = CH[chIdx.get(act.dataset.ch)];
+@@ -782,6 +794,22 @@
+     $('#next').disabled = state.idx === LEGS.length - 1;
+     const sel = $('#jump');
+     if (sel.value !== cur().id) sel.value = cur().id;
++    $('#nav-position').textContent = `Etappe ${state.idx + 1} von ${LEGS.length} · ${cur().k === 'h' ? 'H160' : 'A320'}`;
++    $('#resume').disabled = LEGS.every(l => state.flown.has(l.id));
++    $('#resume').textContent = $('#resume').disabled ? 'Alle Legs geflogen' : 'Erstes offenes Leg';
++  }
++  function reveal(el) {
++    el.focus({ preventScroll: true });
++    const top = el.getBoundingClientRect().top + window.scrollY - $('.stepbar').getBoundingClientRect().height - 16;
++    window.scrollTo({ top: Math.max(0, top), behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
++  }
++  function openBriefing(id) {
++    selectId(id);
++    reveal($('.grid'));
++  }
++  function findLeg() {
++    showTab('plan');
++    reveal($('#q'));
+   }
+   function markPlanSel() {
+     $$('#plan tbody tr.sel').forEach(r => r.classList.remove('sel'));
+@@ -804,6 +832,9 @@
+   function selectId(id) { if (legIdx.has(id)) select(legIdx.get(id)); }
+ 
+   function refreshProgress() {
++    const focused = document.activeElement;
++    const restoreFlownFocus = focused && focused.id === 'flownbtn';
++    const restoreDoneFocus = focused && focused.dataset && focused.dataset.done;
+     updateRail(false);
+     renderTracks();
+     renderProse();
+@@ -814,6 +845,12 @@
+     if (state.tab === 'hl') renderHL();
+     if (state.tab === 'cat') renderCat();
+     if (state.tab === 'data') renderData();
++    updateNav();
++    if (restoreFlownFocus) $('#flownbtn').focus({ preventScroll: true });
++    if (restoreDoneFocus) {
++      const replacement = $(`#plan input[data-done="${CSS.escape(restoreDoneFocus)}"]`);
++      (replacement || $('#q')).focus({ preventScroll: true });
++    }
+   }
+ 
+   // ---------- Flugplan ----------
+@@ -840,9 +877,9 @@
+     const isH = l.k === 'h';
+     const tag = isH ? (l.t === XC[l.x].target ? XC[l.x].tag : '') : (b.tag || '');
+     return `<tr data-leg="${l.id}" class="${isH ? 'hx' : ''}${l.id === cur().id ? ' sel' : ''}">
+-      <td><input type="checkbox" data-done="${l.id}"${state.flown.has(l.id) ? ' checked' : ''} aria-label="${esc(l.id)} als geflogen markieren"></td>
++      <td><label class="check-hit"><input type="checkbox" data-done="${l.id}"${state.flown.has(l.id) ? ' checked' : ''} aria-label="${esc(l.id)} als geflogen markieren"><span class="visually-hidden">${esc(l.id)} geflogen</span></label></td>
+       <td class="num lft">${esc(legLabel(l))}</td>
+-      <td class="mono">${esc(l.f)} → ${esc(l.t)}</td>
++      <td class="mono"><button type="button" class="route-link" data-go="${l.id}" aria-label="Briefing ${esc(l.id)}: ${esc(l.f)} nach ${esc(l.t)}">${esc(l.f)} → ${esc(l.t)}</button></td>
+       <td><span class="dest">${esc(cityOf(b))}</span> <span class="cat${l.nc ? ' new' : ''}">${esc(CATN[b.cc])}${l.nc ? ' · neu' : ''}</span>${isH ? ` <span class="cat">ab ${esc(cityOf(a))}</span>` : ''}</td>
+       <td class="num">${nf(l.nm)}</td>
+       <td class="num${l.o2 ? ' long' : ''}">${hm(l.air)}</td>
+@@ -851,18 +888,18 @@
+     </tr>`;
+   }
+   function renderPlan() {
+-    const q = state.q.trim().toLowerCase();
++    const terms = searchText(state.q).trim().split(/\s+/).filter(Boolean);
+     const rows = [];
+     let last = null;
+     let n = 0;
+     for (const l of LEGS) {
+       if (state.ch !== 'all' && l.ch !== state.ch) continue;
+       if (!passFilter(l)) continue;
+-      if (q) {
++      if (terms.length) {
+         const a = AP[l.f];
+         const b = AP[l.t];
+-        const hay = `${l.id} ${l.f} ${l.t} ${a.n} ${b.n} ${cityOf(a)} ${cityOf(b)} ${CATN[a.cc]} ${CATN[b.cc]}`.toLowerCase();
+-        if (!hay.includes(q)) continue;
++        const hay = searchText(`${l.id} ${l.f} ${l.t} ${a.n} ${b.n} ${cityOf(a)} ${cityOf(b)} ${CAT_SEARCH[a.cc]} ${CAT_SEARCH[b.cc]} ${CH[chIdx.get(l.ch)].title} ${l.k === 'h' ? 'H160' : 'A320'}`);
++        if (!terms.every(term => hay.includes(term))) continue;
+       }
+       if (l.ch !== last) {
+         last = l.ch;
+@@ -872,8 +909,10 @@
+       rows.push(rowHtml(l));
+       n++;
+     }
+-    $('#plan tbody').innerHTML = rows.join('') || '<tr class="grp"><td colspan="8">Keine Legs für diesen Filter.</td></tr>';
+-    $('#planinfo').textContent = `${n} von ${LEGS.length} Legs · Flugzeit-Schätzung: ${D.meta.formula.a320}; H160: ${D.meta.formula.h160}.`;
++    $('#plan tbody').innerHTML = rows.join('') || '<tr class="empty-row"><td colspan="8"><strong>Keine passenden Legs</strong><p>Suchbegriff ändern oder die Filter zurücksetzen, um wieder alle Etappen zu sehen.</p></td></tr>';
++    const filtered = terms.length > 0 || state.flt !== 'all' || state.ch !== 'all';
++    $('#planinfo').textContent = `${n} von ${LEGS.length} Legs${filtered ? ' · Filter aktiv' : ''}`;
++    $('#clear-filters').hidden = !filtered;
+   }
+ 
+   // ---------- Highlights ----------
+@@ -938,11 +977,11 @@
+       <p>${esc(it.why || '')}</p>${it.alt ? `<p>Alternative: <a href="${esc(it.alt.url)}" target="_blank" rel="noopener">${esc(it.alt.name)} ↗</a></p>` : ''}${installationNotes(it)}
+       <div><button type="button" class="btn small" data-go="${lid}">Zum Leg →</button></div></article>`;
+     const rows = list => `<div class="scroll"><table><thead><tr><th>ICAO</th><th>Ort</th><th>Produkt</th><th>Entwickler</th><th>Bewertung</th><th>Begründung</th><th>Leg</th></tr></thead><tbody>${list.map(([a, it, lid]) =>
+-      `<tr data-go="${lid}"><td class="mono">${esc(a.i)}</td><td>${esc(cityOf(a))}</td><td>${link(it)}</td><td>${esc(it.dev)}</td><td class="mono">${esc(it.rating || '')}</td><td>${esc(it.why || '')}${it.alt ? ` Alternative: <a href="${esc(it.alt.url)}" target="_blank" rel="noopener">${esc(it.alt.name)} ↗</a>` : ''}${installationNotes(it)}</td><td class="mono">${lid}</td></tr>`).join('')}</tbody></table></div>`;
++      `<tr data-go="${lid}"><td class="mono">${esc(a.i)}</td><td>${esc(cityOf(a))}</td><td>${link(it)}</td><td>${esc(it.dev)}</td><td class="mono">${esc(it.rating || '')}</td><td>${esc(it.why || '')}${it.alt ? ` Alternative: <a href="${esc(it.alt.url)}" target="_blank" rel="noopener">${esc(it.alt.name)} ↗</a>` : ''}${installationNotes(it)}</td><td class="mono"><button type="button" class="route-link" data-go="${lid}" aria-label="Briefing ${lid} öffnen">${lid}</button></td></tr>`).join('')}</tbody></table></div>`;
+ 
+     const owned = D.owned.map(o => {
+       const lid = LEGS.find(l => l.t === o.icao || l.f === o.icao);
+-      return `<tr${lid ? ` data-go="${lid.id}"` : ''}><td class="mono">${esc(o.icao)}</td><td>${esc(o.name)}</td><td>${esc(o.dev)}</td><td>${o.used ? (lid ? lid.id : '✓') : '<span class="long">nicht in der Tour</span>'}</td><td>${esc(o.note || '')}</td></tr>`;
++      return `<tr${lid ? ` data-go="${lid.id}"` : ''}><td class="mono">${esc(o.icao)}</td><td>${esc(o.name)}</td><td>${esc(o.dev)}</td><td>${o.used ? (lid ? `<button type="button" class="route-link" data-go="${lid.id}" aria-label="Briefing ${lid.id} öffnen">${lid.id}</button>` : '✓') : '<span class="long">nicht in der Tour</span>'}</td><td>${esc(o.note || '')}</td></tr>`;
+     }).join('');
+     const usedN = D.owned.filter(o => o.used).length;
+     const openChecks = Object.values(AP).filter(a => a.simCheck && a.simCheck.status === 'unconfirmed');
+@@ -989,7 +1028,7 @@
+       <h3 class="sect">Angebot recherchiert <small>${stdok.length} Airports · keine feste Add-on-Empfehlung</small></h3>
+       <details class="chk"><summary><b>${stdok.length}</b><span>Begründungen anzeigen</span><em>FSAddonCompare und flightsim.to je Airport recherchiert</em></summary>
+       <div class="scroll"><table><thead><tr><th>ICAO</th><th>Ort</th><th>Begründung</th><th>Leg</th></tr></thead><tbody>${stdok.map(([a, it, lid]) =>
+-        `<tr data-go="${lid}"><td class="mono">${esc(a.i)}</td><td>${esc(cityOf(a))}</td><td>${esc(it.why)}</td><td class="mono">${lid}</td></tr>`).join('')}</tbody></table></div></details>
++        `<tr data-go="${lid}"><td class="mono">${esc(a.i)}</td><td>${esc(cityOf(a))}</td><td>${esc(it.why)}</td><td class="mono"><button type="button" class="route-link" data-go="${lid}" aria-label="Briefing ${lid} öffnen">${lid}</button></td></tr>`).join('')}</tbody></table></div></details>
+       <h3 class="sect">Deine Sammlung <small>${usedN} von ${D.owned.length} in der Tour</small></h3>
+       <div class="scroll"><table><thead><tr><th>ICAO</th><th>Airport</th><th>Hersteller</th><th>Leg</th><th>Hinweis</th></tr></thead><tbody>${owned}</tbody></table></div>
+       <h3 class="sect">Handgefertigt in MSFS 2024 <small>${hand.length} Airports – kein Add-on nötig</small></h3>
+@@ -1095,7 +1134,10 @@
+   function showTab(tab) {
+     state.tab = tab;
+     saveLocal();
+-    $$('.tab').forEach(t => t.setAttribute('aria-selected', String(t.dataset.tab === tab)));
++    $$('.tab').forEach(t => {
++      t.setAttribute('aria-selected', String(t.dataset.tab === tab));
++      t.tabIndex = t.dataset.tab === tab ? 0 : -1;
++    });
+     $$('.panel').forEach(p => { p.hidden = p.id !== `panel-${tab}`; });
+     if (tab === 'plan') renderPlan();
+     if (tab === 'hl') renderHL();
+@@ -1202,8 +1244,7 @@
+       if (vol) { setVol(vol.dataset.vol, VOL_NEXT[manualVol(vol.dataset.vol)] || 'credited'); return; }
+       const go = t.closest('[data-go]');
+       if (go && !t.closest('a')) {
+-        selectId(go.dataset.go);
+-        $('.grid').scrollIntoView({ behavior: 'smooth', block: 'start' });
++        openBriefing(go.dataset.go);
+         return;
+       }
+       const catf = t.closest('[data-catf]');
+@@ -1236,19 +1277,54 @@
+       Chart.draw();
+     }));
+     $$('.tab').forEach(t => t.addEventListener('click', () => showTab(t.dataset.tab)));
++    $('.tabs').addEventListener('keydown', ev => {
++      const tabs = $$('.tab');
++      const current = tabs.indexOf(ev.target.closest('.tab'));
++      if (current < 0 || ev.altKey || ev.ctrlKey || ev.metaKey) return;
++      let next;
++      if (ev.key === 'ArrowRight') next = (current + 1) % tabs.length;
++      else if (ev.key === 'ArrowLeft') next = (current + tabs.length - 1) % tabs.length;
++      else if (ev.key === 'Home') next = 0;
++      else if (ev.key === 'End') next = tabs.length - 1;
++      else return;
++      ev.preventDefault();
++      showTab(tabs[next].dataset.tab);
++      tabs[next].focus();
++    });
++    $('#rail').addEventListener('keydown', ev => {
++      const pip = ev.target.closest('.pip');
++      if (!pip || ev.altKey || ev.ctrlKey || ev.metaKey) return;
++      const current = legIdx.get(pip.dataset.leg);
++      let next;
++      if (ev.key === 'ArrowRight') next = current + 1;
++      else if (ev.key === 'ArrowLeft') next = current - 1;
++      else if (ev.key === 'Home') next = 0;
++      else if (ev.key === 'End') next = LEGS.length - 1;
++      else return;
++      ev.preventDefault();
++      select(next);
++      pipEl.get(cur().id).focus({ preventScroll: true });
++    });
++    $('.route-overview').addEventListener('toggle', () => {
++      if ($('.route-overview').open) updateRail(true);
++    });
+     $('#plan tbody').addEventListener('click', ev => {
+       const cb = ev.target.closest('input[data-done]');
+       if (cb) { setFlown(cb.dataset.done, cb.checked); return; }
+       const tr = ev.target.closest('tr[data-leg]');
+-      if (tr && !ev.target.closest('a')) {
+-        selectId(tr.dataset.leg);
+-        $('.grid').scrollIntoView({ behavior: 'smooth', block: 'start' });
+-      }
++      if (tr && !ev.target.closest('a, button, .check-hit')) openBriefing(tr.dataset.leg);
+     });
+     let qTimer = 0;
+     $('#q').addEventListener('input', ev => {
+       clearTimeout(qTimer);
+       qTimer = setTimeout(() => { state.q = ev.target.value; renderPlan(); }, 150);
++    });
++    $('#clear-filters').addEventListener('click', () => {
++      clearTimeout(qTimer);
++      state.q = ''; state.flt = 'all'; state.ch = 'all';
++      $('#q').value = ''; $('#flt').value = 'all'; $('#chsel').value = 'all';
++      renderPlan();
++      $('#q').focus();
+     });
+     // Filter „Szenerie ungeprüft“ nur anbieten, solange es ungeprüfte Airports gibt
+     if (!D.stats.unrated) $('#flt option[value="unrated"]')?.remove();
+@@ -1268,12 +1344,25 @@
+     $('#rs-go').addEventListener('click', () => step(true));
+     $('#rs-no').addEventListener('click', () => step(false));
+     $('#rs-yes').addEventListener('click', async () => { step(false); await doReset(); });
+-    $('#prev').addEventListener('click', () => select(state.idx - 1));
+-    $('#next').addEventListener('click', () => select(state.idx + 1));
+-    $('#jump').addEventListener('change', ev => selectId(ev.target.value));
++    $('#prev').addEventListener('click', () => { select(state.idx - 1); reveal($('.grid')); });
++    $('#next').addEventListener('click', () => { select(state.idx + 1); reveal($('.grid')); });
++    $('#jump').addEventListener('change', ev => openBriefing(ev.target.value));
++    $('#resume').addEventListener('click', () => {
++      const next = LEGS.find(l => !state.flown.has(l.id));
++      if (next) openBriefing(next.id);
++    });
++    $('#find-leg').addEventListener('click', findLeg);
++    $('.skip-link').addEventListener('click', ev => { ev.preventDefault(); findLeg(); });
++    window.addEventListener('hashchange', () => {
++      try {
++        const id = decodeURIComponent(location.hash.slice(1));
++        if (legIdx.has(id)) selectId(id);
++      } catch (e) { /* Unvollständige URL-Kodierung ändert die Auswahl nicht. */ }
++    });
+     document.addEventListener('keydown', ev => {
+-      if (ev.target.closest && ev.target.closest('input, select, textarea')) return;
+-      if (ev.altKey || ev.ctrlKey || ev.metaKey) return;
++      if (ev.defaultPrevented || ev.repeat || ev.altKey || ev.ctrlKey || ev.metaKey) return;
++      if (ev.target.closest && ev.target.closest('input, select, textarea, button, a, summary, [contenteditable]:not([contenteditable="false"]), [role="tab"]')) return;
++      if (ev.target !== document.body && !(ev.target.closest && ev.target.closest('.grid'))) return;
+       if (ev.key === 'ArrowLeft') { select(state.idx - 1); ev.preventDefault(); }
+       else if (ev.key === 'ArrowRight') { select(state.idx + 1); ev.preventDefault(); }
+       else if (ev.key === 'g' || ev.key === 'G') toggleFlown(cur().id);
+@@ -1284,10 +1373,11 @@
+     $('#chsel').innerHTML = '<option value="all">Alle Kapitel</option>' + CH.map(c => `<option value="${c.id}">${c.id} · ${esc(c.title)}</option>`).join('');
+     $('#jump').innerHTML = CH.map(c => `<optgroup label="${c.id} · ${esc(c.title)}">${c.legs.map(id => {
+       const l = LEGS[legIdx.get(id)];
+-      return `<option value="${id}">${esc(legLabel(l))} · ${esc(l.f)} → ${esc(l.t)}${l.k === 'h' ? ' (H160)' : ''}</option>`;
++      return `<option value="${id}">${esc(legLabel(l))} · ${esc(l.f)} → ${esc(l.t)} · ${esc(cityOf(AP[l.t]))}${l.k === 'h' ? ' (H160)' : ''}</option>`;
+     }).join('')}</optgroup>`).join('');
+     $('#credits').textContent = `Stand ${D.meta.built} · ${D.meta.aircraft} + ${D.meta.heli} · Daten: OurAirports, Natural Earth · Flugzeiten sind Schätzungen ohne Wind.`;
+     $('#sub').textContent = `V2 · ${nf(D.stats.legs)} Legs · ${nf(Math.round(D.stats.air / 60))} h · alle 245 Volanta-Kategorien · Fenix A320 + H160`;
++    $('#time-formula').textContent = `A320: ${D.meta.formula.a320}; H160: ${D.meta.formula.h160}. Ohne Wind; keine verbindlichen Flugzeiten.`;
+   }
+ 
+   // ---------- Start ----------
+@@ -1296,7 +1386,8 @@
+   fillSelects();
+   $$('.seg button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.view === state.view)));
+   wire();
+-  const fromHash = decodeURIComponent((location.hash || '').slice(1));
++  let fromHash = '';
++  try { fromHash = decodeURIComponent((location.hash || '').slice(1)); } catch (e) { /* Ungültiger Link: erstes offenes Leg verwenden. */ }
+   const firstOpen = LEGS.findIndex(l => !state.flown.has(l.id));
+   select(legIdx.has(fromHash) ? legIdx.get(fromHash) : Math.max(0, firstOpen));
+   showTab(state.tab);
+
+--- baseline/v2/template.html
++++ v2/template.html
+@@ -6,6 +6,7 @@
+ /*__CSS__*/
+ </style>
+ 
++<a class="skip-link" href="#book">Zum Flugplan und zu den Bereichen</a>
+ <header class="top">
+   <div class="wrap head">
+     <div class="brand">
+@@ -29,12 +30,26 @@
+ </header>
+ 
+ <nav class="stepbar" aria-label="Kapitel und Legs">
+-  <div class="wrap"><div class="rail" id="rail"></div></div>
++  <div class="wrap">
++    <div class="legnav">
++      <button class="btn" type="button" id="prev" aria-label="Vorheriges Leg">← Zurück</button>
++      <label class="leg-picker"><span id="nav-position">Aktuelles Leg</span><select id="jump" aria-label="Zu einem Leg springen"></select></label>
++      <button class="btn" type="button" id="next" aria-label="Nächstes Leg">Weiter →</button>
++      <div class="nav-shortcuts">
++        <button class="btn" type="button" id="resume">Erstes offenes Leg</button>
++        <button class="btn" type="button" id="find-leg">Leg suchen</button>
++      </div>
++    </div>
++  </div>
+ </nav>
++<details class="route-overview wrap">
++  <summary>Gesamte Route · 28 Kapitel</summary>
++  <div class="rail" id="rail" aria-label="Legs der gesamten Route"></div>
++</details>
+ 
+ <main>
+   <div class="wrap">
+-    <div class="grid">
++    <div class="grid" tabindex="-1" aria-label="Briefing zum ausgewählten Leg">
+       <section class="prose" id="prose" aria-live="polite"></section>
+       <section class="stage" aria-label="Karte und Flughäfen">
+         <div class="stagebar">
+@@ -62,7 +77,7 @@
+ 
+     <div class="tracks" id="tracks"></div>
+ 
+-    <section class="book">
++    <section class="book" id="book">
+       <div class="tabs" role="tablist" aria-label="Bereiche">
+         <button class="tab" role="tab" id="tab-plan" aria-controls="panel-plan" data-tab="plan">Flugplan</button>
+         <button class="tab" role="tab" id="tab-hl" aria-controls="panel-hl" data-tab="hl">Highlights</button>
+@@ -74,8 +89,8 @@
+ 
+       <div class="panel" role="tabpanel" id="panel-plan" aria-labelledby="tab-plan">
+         <div class="toolbar">
+-          <input type="search" id="q" placeholder="ICAO, Ort oder Land …" aria-label="Flugplan durchsuchen">
+-          <select id="flt" aria-label="Filter">
++          <label class="filter-field"><span>Suche</span><input type="search" id="q" placeholder="Leg, ICAO, Ort oder Land …" aria-label="Flugplan durchsuchen"></label>
++          <label class="filter-field"><span>Status und Interessen</span><select id="flt" aria-label="Filter">
+             <option value="all">Alle Legs</option>
+             <option value="open">Offen</option>
+             <option value="done">Geflogen</option>
+@@ -88,16 +103,21 @@
+             <option value="new">Neue Kategorie</option>
+             <option value="trial">Sonderetappen (erst testen)</option>
+             <option value="unrated">Szenerie ungeprüft</option>
+-          </select>
+-          <select id="chsel" aria-label="Kapitel"></select>
++          </select></label>
++          <label class="filter-field"><span>Kapitel</span><select id="chsel" aria-label="Kapitel"></select></label>
++          <button class="btn" type="button" id="clear-filters" hidden>Filter zurücksetzen</button>
+           <span class="spacer"></span>
+           <button class="btn small" type="button" id="csv">Flugplan als CSV</button>
++        </div>
++        <div class="plan-summary">
++          <p id="planinfo" role="status" aria-live="polite"></p>
++          <p class="hint">Strecke anklicken, um das Briefing zu öffnen.</p>
+         </div>
+         <div class="scroll"><table id="plan"><thead><tr>
+           <th scope="col"><span class="visually-hidden">Geflogen</span>✓</th><th scope="col">Leg</th><th scope="col">Strecke</th><th scope="col">Ziel · Kategorie</th>
+           <th scope="col" class="num">NM</th><th scope="col" class="num">Flug</th><th scope="col">Szenerie am Ziel</th><th scope="col">Hinweis</th>
+         </tr></thead><tbody></tbody></table></div>
+-        <p class="toolbar hint" id="planinfo"></p>
++        <details class="time-info"><summary>Wie werden Flugzeiten geschätzt?</summary><p id="time-formula"></p></details>
+       </div>
+ 
+       <div class="panel" role="tabpanel" id="panel-hl" aria-labelledby="tab-hl" hidden></div>
+@@ -146,10 +166,7 @@
+ 
+ <footer>
+   <div class="wrap foot">
+-    <button class="btn" type="button" id="prev">← Zurück</button>
+-    <select id="jump" aria-label="Zu einem Leg springen"></select>
+-    <button class="btn" type="button" id="next">Weiter →</button>
+-    <span class="hint"><kbd>←</kbd> <kbd>→</kbd> blättern · <kbd>G</kbd> geflogen · jedes Leg hat einen eigenen Link</span>
++    <span class="hint"><kbd>←</kbd> <kbd>→</kbd> im Briefing: Legs blättern · <kbd>G</kbd> geflogen · in Reitern: mit Pfeiltasten wechseln</span>
+   </div>
+   <div class="wrap credits" id="credits"></div>
+ </footer>
+
+--- baseline/v2/tests/check_ui_navigation.cjs
++++ v2/tests/check_ui_navigation.cjs
+@@ -0,0 +1,93 @@
++// User-facing search and keyboard regressions, using real app functions and isolated data.
++const fs = require('fs'), path = require('path'), vm = require('vm'), assert = require('assert/strict');
++const base = path.resolve(__dirname, '..');
++const src = fs.readFileSync(path.join(base, 'app.js'), 'utf8');
++const data = JSON.parse(fs.readFileSync(path.join(base, 'tour-v2.json'), 'utf8'));
++function fn(name) {
++  const start = src.search(new RegExp('  function ' + name + '\\('));
++  const end = src.indexOf('\n  }', start);
++  assert(start >= 0 && end > start, name);
++  return src.slice(start, end + 4);
++}
++class Element {
++  constructor(dataset = {}) { this.dataset = dataset; this.listeners = {}; this.attrs = {}; this.value = ''; }
++  addEventListener(type, cb) { this.listeners[type] = cb; }
++  setAttribute(key, value) { this.attrs[key] = value; }
++  focus() { this.focused = true; }
++  remove() { this.removed = true; }
++  closest(selector) {
++    if (this.dataset.tab && (selector === '.tab' || selector.includes('[role="tab"]'))) return this;
++    return null;
++  }
++}
++const elements = new Map();
++const element = s => { if (!elements.has(s)) elements.set(s, new Element()); return elements.get(s); };
++const tabs = ['plan', 'hl', 'scn', 'cat', 'new', 'data'].map(tab => new Element({ tab }));
++const ctx = vm.createContext({ input: data, console, setTimeout, clearTimeout,
++  document: element('document'), window: element('window'),
++  one: element, many: s => s === '.tab' ? tabs : [], moves: [], toggles: [] });
++const searchLine = src.split('\n').find(line => line.includes('const searchText ='));
++vm.runInContext(`
++const D=input, AP=D.airports, LEGS=D.legs, CH=D.chapters, XC=D.excursions;
++const CATN=Object.fromEntries(D.cats.map(c=>[c.code,c.name]));
++${src.slice(src.indexOf('  const CAT_SEARCH'), src.indexOf('  const legIdx'))}
++const legIdx=new Map(LEGS.map((l,i)=>[l.id,i])), chIdx=new Map(CH.map((c,i)=>[c.id,i]));
++const state={idx:0,tab:'plan',q:'',flt:'all',ch:'all',flown:new Map()};
++const $=one, $$=many, cur=()=>LEGS[state.idx], cityOf=a=>a.c||a.n;
++const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');
++const rowHtml=l=>'<tr data-leg="'+l.id+'"></tr>';
++function select(i){moves.push(i);}
++function toggleFlown(id){toggles.push(id);}
++function saveLocal(){} function renderHL(){} function renderScn(){} function renderCat(){}
++function renderNew(){} function renderData(){} function findLeg(){}
++${searchLine}
++${['passFilter','renderPlan','showTab','updateNav','wire'].map(fn).join('\n')}
++wire(); globalThis.ui={state,renderPlan,showTab,updateNav};`, ctx);
++const ui = ctx.ui;
++const ids = () => [...element('#plan tbody').innerHTML.matchAll(/data-leg="([^"]+)"/g)].map(m => m[1]);
++ui.state.q = 'eDlV EHAM'; ui.renderPlan();
++assert.deepEqual(ids(), ['L001'], 'search terms combine across route fields');
++ui.state.q = 'reykjavik'; ui.renderPlan();
++assert(ids().includes('L012'), 'unaccented query finds Reykjavík');
++ui.state.q = 'Deutschland'; ui.renderPlan();
++assert(ids().includes('L001') && ids().includes('L388'), 'German country names find the same Volanta categories');
++ui.state.q = 'h160'; ui.renderPlan(); assert.equal(ids().length, 34);
++ui.state.ch = '01'; ui.renderPlan(); assert.deepEqual(ids(), ['X-GG-1','X-GG-2']);
++ui.state.flt = 'done'; ui.renderPlan(); assert.equal(ids().length, 0);
++assert(element('#plan tbody').innerHTML.includes('Keine passenden Legs'));
++assert.equal(element('#clear-filters').hidden, false);
++element('#clear-filters').listeners.click();
++assert.equal(ids().length, 422); assert.equal(element('#clear-filters').hidden, true);
++assert(element('#q').focused);
++console.log('PASS search: combined terms, accents, H160, chapter/status combination, empty results, reset');
++
++function key(target, key, extras = {}) {
++  return { target, key, defaultPrevented:false, preventDefault(){this.defaultPrevented=true;}, ...extras };
++}
++ui.showTab('plan');
++for (const [from, keyName, expected] of [[0,'ArrowRight','hl'],[1,'End','data'],[5,'Home','plan'],[0,'ArrowLeft','data']]) {
++  const event = key(tabs[from], keyName);
++  element('.tabs').listeners.keydown(event);
++  element('document').listeners.keydown(event);
++  assert.equal(ui.state.tab, expected);
++  assert.equal(tabs.filter(t => t.tabIndex === 0).length, 1);
++}
++assert.equal(ctx.moves.length, 0, 'tab arrows must never select another flight');
++element('document').listeners.keydown(key(tabs[5], 'g'));
++assert.equal(ctx.toggles.length, 0, 'typing on a tab must not mark a flight');
++const briefing = new Element();
++briefing.closest = selector => selector === '.grid' ? briefing : null;
++element('document').listeners.keydown(key(briefing, 'ArrowRight'));
++assert.equal(ctx.moves.length, 1);
++element('document').listeners.keydown(key(briefing, 'g', {repeat:true}));
++assert.equal(ctx.toggles.length, 0, 'holding G must not repeatedly toggle progress');
++console.log('PASS keyboard: tab arrows/Home/End, single tab stop, no accidental leg/progress changes, briefing arrows');
++
++ui.updateNav(); assert.equal(element('#prev').disabled, true);
++assert.equal(element('#next').disabled, false); assert.equal(element('#resume').disabled, false);
++ui.state.idx = data.legs.length - 1; ui.updateNav();
++assert.equal(element('#next').disabled, true); assert.equal(element('#jump').value, 'L388');
++for (const l of data.legs) ui.state.flown.set(l.id, '2026-09-24');
++ui.updateNav(); assert.equal(element('#resume').disabled, true);
++assert.equal(element('#resume').textContent, 'Alle Legs geflogen');
++console.log('PASS navigation: first/last boundaries, current selection, complete-tour state');
+

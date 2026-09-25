@@ -1,0 +1,126 @@
+{
+  "checkedAt": "2026-09-24T16:55:11.026074+00:00",
+  "tests": {
+    "sync": {
+      "command": "node v2/tests/check_sync.cjs",
+      "result": "PASS",
+      "scenarios": 16
+    },
+    "sceneryData": {
+      "command": "python v2/tests/check_scenery_data.py",
+      "result": "PASS",
+      "invalidInputsRejected": 12,
+      "repeatIntegrations": 2
+    },
+    "debriefs": {
+      "command": "python v2/tests/check_debriefs.py",
+      "result": "PASS",
+      "invalidInputsRejected": 10,
+      "validAccepted": true
+    },
+    "sceneryRendering": {
+      "command": "node v2/tests/check_scenery_ui.cjs",
+      "result": "PASS"
+    },
+    "appSyntax": {
+      "command": "node --check v2/app.js",
+      "result": "PASS"
+    },
+    "browserFixtures": {
+      "generated": 8,
+      "inlineJavaScriptSyntax": "PASS",
+      "currentSourceEmbedded": true,
+      "browserExecution": "NOT RUN: browser security policy blocked local HTML access"
+    },
+    "builtArtifacts": {
+      "local": "PASS",
+      "artifactFragment": "PASS",
+      "sourceAndDataEmbedded": true
+    },
+    "privateCloud": "NOT RUN",
+    "simulatorFlights": "NOT RUN"
+  },
+  "stats": {
+    "a320": {
+      "legs": 388,
+      "nm": 125503,
+      "air": 25753
+    },
+    "h160": {
+      "legs": 34,
+      "nm": 1714,
+      "air": 1226,
+      "trips": 17
+    },
+    "legs": 422,
+    "air": 26979,
+    "over2h": 23,
+    "cats": 245,
+    "ownedUsed": 43,
+    "ownedMain": 41,
+    "ownedTotal": 44,
+    "buy": 6,
+    "unrated": 0,
+    "scn": {
+      "owned": 43,
+      "buy": 6,
+      "freeware": 72,
+      "hand": 41,
+      "stdok": 241,
+      "optional": 0,
+      "unrated": 0
+    },
+    "candidate": 4,
+    "simChecks": [
+      "FMZJ",
+      "ZDM",
+      "ZMCK",
+      "ZZ-0002"
+    ],
+    "trials": [
+      "FHSH",
+      "NGFU",
+      "SCGC"
+    ],
+    "revisits": [
+      "NCRG",
+      "NIUE",
+      "SCCI"
+    ],
+    "v1": {
+      "legs": 449,
+      "a320": 403,
+      "air": 29414,
+      "over2h": 25,
+      "h160legs": 44,
+      "twinOtter": 2,
+      "ownedUsed": 39,
+      "ownedMain": 36,
+      "buy": 6,
+      "default": 300
+    }
+  },
+  "preservedByteForByte": [
+    "v2/route.json",
+    "v2/debriefings.json",
+    "v2/research-2026-09-24.json"
+  ],
+  "reviewedAstraHashesUnchanged": true,
+  "sha256": {
+    "v2/app.js": "33136353a851969babb9601e5518ab52498ae6cd885017a0424b24a42d4ba6af",
+    "v2/app.css": "c0c3949b821c986b62f0a87cf0b3c590b2bcd6cb34f60e46806f069892dee2de",
+    "v2/content.json": "d1b3e5946874e3d154d6b82315b2b0842521be95ddd52bf557807f1328bcecc6",
+    "v2/integrate_research.py": "b526321423622c4fbad86758d647de8e411235790df2c22d0dd1ec58a62b3d29",
+    "v2/build_v2.py": "ac74545e0df76c2dde8a2f83593fd51307cdd1d1293d17c1812fe8249fdf00c0",
+    "v2/tests/check_sync.cjs": "e26e4ae160112b04f2867716e7dd63578b0be485da0f6a85da7ca155a6edaeef",
+    "v2/tests/check_scenery_ui.cjs": "53cf13f9a35b466d772384f530051feea213673e20345f6d0d85b6e546132140",
+    "v2/tests/check_scenery_data.py": "e5fe57a6ad6f300728470de964b31e4073471c4e1a76392461752674f7d22e98",
+    "v2/tests/make_sync_tests.py": "4925d72631e23e535b1e05a387533d926a6e898c36450e5e03200fc01ab5588d",
+    "v2/tour-v2.json": "0f5dbe9b41482b2d5866b59746a9c8f6bb765c0ef636be181e1d9ac1df9e0fd1",
+    "Volanta-Worldtour-V2.html": "adbff86af98f6930eadceabe2c1d858ef7e896f497be4b68b3052b2cbcd7c1ff",
+    "v2/dist/artifact.html": "fec389ea8813a1198796d7d98de366f4622487da8151775a1c739d6acdbcb0dc"
+  },
+  "publishedOnline": false,
+  "committed": false,
+  "mutualReview": "APPROVED: Opus approved Astra F1-F4 and final HAAB correction; Astra approved Opus implementation and corrections"
+}

@@ -1,0 +1,4043 @@
+{
+ "airports": {
+  "EDLV": {
+   "level": 1,
+   "tag": "Start & Ziel",
+   "hl": "Heimatbasis am Niederrhein – hier beginnt und endet die Weltreise."
+  },
+  "EHAM": {
+   "hl": "Schiphol mit deiner FlyTampa-Szenerie – Polder, Kanäle und sechs Bahnen."
+  },
+  "EBBR": {
+   "hl": "Brüssel von Jo Erlend Sund (Aerosoft) – deine Szenerie."
+  },
+  "ELLX": {
+   "hl": "Luxemburg-Findel auf dem Plateau über der Hauptstadt."
+  },
+  "EGLL": {
+   "hl": "Heathrow mit deiner iniBuilds-Szenerie – bei Westbetrieb Anflug quer über London."
+  },
+  "EGJJ": {
+   "hl": "Jersey – kurze 1.705-m-Bahn auf der Hochfläche im Westen der Insel.",
+   "brief": "Leicht beladen planen, die Bahn ist für den A320 knapp. Von hier startet der H160-Sprung nach Guernsey."
+  },
+  "EICK": {
+   "hl": "Cork an der irischen Südküste, handgefertigt in World Update 17."
+  },
+  "EGNS": {
+   "hl": "Isle of Man – Ronaldsway liegt direkt an der Küste."
+  },
+  "EGGP": {
+   "hl": "Liverpool am Mersey (World Update 3)."
+  },
+  "EGPE": {
+   "hl": "Inverness am Moray Firth – Tor zu den Highlands."
+  },
+  "EKVG": {
+   "level": 2,
+   "tag": "Färöer",
+   "hl": "Vágar – Bahn zwischen Bergen und dem Sørvágsvatn, dem „schwebenden See“ über den Klippen.",
+   "brief": "Anflug über Wasser in eine enge Inselwelt; Wind und tiefe Wolken prägen den Platz. Der See neben der Bahn stürzt als Bøsdalafossur direkt ins Meer – bei klarer Sicht lohnt eine Runde. Freeware-Empfehlung: superspud."
+  },
+  "BIAR": {
+   "level": 2,
+   "tag": "Fjord",
+   "hl": "Akureyri – langer Anflug durch den Eyjafjörður, Islands längsten Fjord.",
+   "brief": "Handgefertigt in World Update 15. Der Fjord führt dich zwischen verschneiten Bergen bis an die Bahn am Fjordende – bei Tageslicht einer der schönsten Anflüge im Norden."
+  },
+  "BIKF": {
+   "hl": "Keflavík auf der Reykjanes-Halbinsel – Lavafelder bis zum Horizont."
+  },
+  "BGGH": {
+   "level": 2,
+   "tag": "Grönland",
+   "hl": "Nuuk – neue 2.200-m-Bahn zwischen Fjorden und Schären.",
+   "brief": "Nur mit deiner M'M-Szenerie ab Version 1.1.0 fliegen: Der MSFS-Standard zeigt laut Forenberichten noch das alte Layout bzw. eine fehlerhafte Verlängerung. Ein Käufer meldet fehlende ILS-Wegpunkte – vorher im EFB prüfen, sonst RNP oder visuell. Der Leg ab Keflavík dauert gut zwei Stunden.",
+   "tips": [
+    "M'M Nuuk auf v1.1.0 aktualisieren",
+    "ILS-Daten vorab im MCDU prüfen"
+   ]
+  },
+  "CYFB": {
+   "hl": "Iqaluit auf Baffin Island – Arktis pur (World Update 11)."
+  },
+  "CYVP": {
+   "hl": "Kuujjuaq – Tankstopp in Nunavik."
+  },
+  "CYWK": {
+   "hl": "Wabush – Labrador-Plateau, Sprungbrett nach Ottawa."
+  },
+  "CYOW": {
+   "hl": "Ottawa mit deiner Roman-Design-Szenerie."
+  },
+  "CYQM": {
+   "hl": "Moncton – Sprungbrett nach Saint-Pierre."
+  },
+  "LFVP": {
+   "level": 1,
+   "tag": "Frankreich",
+   "hl": "Saint-Pierre – ein Stück Frankreich vor Neufundland, 1.800-m-Bahn."
+  },
+  "CYYT": {
+   "hl": "St. John's – der östlichste Punkt Nordamerikas."
+  },
+  "CYHZ": {
+   "hl": "Halifax an der Atlantikküste Nova Scotias."
+  },
+  "KBOS": {
+   "hl": "Boston Logan mit deiner FlyTampa-Szenerie."
+  },
+  "KDCA": {
+   "level": 2,
+   "tag": "River Visual",
+   "hl": "Washington National – River Visual 19 entlang des Potomac.",
+   "brief": "Der Sichtanflug folgt dem Flusslauf nach Süden, vorbei an Georgetown und dem Pentagon, mit Blick auf die National Mall. Das Sperrgebiet P-56 über Weißem Haus und Mall liegt direkt östlich – Kurs sauber halten. Kauf-Tipp: Drzewiecki KDCA.",
+   "tips": [
+    "Anflug: River Visual RWY 19",
+    "Hauptbahn 01/19 ist nur rund 2.100 m lang"
+   ]
+  },
+  "KJFK": {
+   "level": 1,
+   "hl": "JFK mit deiner iniBuilds-Szenerie – Canarsie-Anflug auf 13L mit Kurve über die Jamaica Bay."
+  },
+  "TXKF": {
+   "level": 1,
+   "tag": "Bermuda",
+   "hl": "Bermuda – Bahn zwischen Castle Harbour und St. George's, türkise Lagunen ringsum."
+  },
+  "TJSJ": {
+   "hl": "San Juan mit deiner Latin-VFR-Szenerie."
+  },
+  "TIST": {
+   "hl": "St. Thomas – Ausgangspunkt für den H160-Sprung zu den British Virgin Islands."
+  },
+  "TNCM": {
+   "level": 2,
+   "tag": "Maho Beach",
+   "hl": "Princess Juliana – Endanflug auf die 10 knapp über den Maho Beach.",
+   "brief": "Handgefertigt im Basis-Sim. Der Endanflug führt über Bucht, Strand und Straße direkt an die Schwelle – ein Airliner-Klassiker. Von hier starten drei H160-Abstecher: Anguilla, Saint-Martin (Grand Case) und St. Barth."
+  },
+  "TKPK": {
+   "hl": "St. Kitts – der Vulkan Mount Liamuiga im Blick."
+  },
+  "TAPA": {
+   "hl": "Antigua – Basis für den H160-Flug nach Montserrat."
+  },
+  "TFFR": {
+   "hl": "Guadeloupe – Pointe-à-Pitre zwischen den beiden Inselflügeln."
+  },
+  "TDPD": {
+   "level": 2,
+   "tag": "Neu",
+   "hl": "Dominica – Bahn 2025 auf 1.936 m verlängert, jetzt ein A320-Stopp.",
+   "brief": "Douglas–Charles liegt an der Nordostküste zwischen Regenwaldbergen und Atlantik. Im Sim kann noch die alte, kürzere Bahn erscheinen – leicht beladen fliegen, der nächste Leg nach Martinique ist kurz. Ersetzt den bisherigen H160-Ausflug."
+  },
+  "TFFF": {
+   "hl": "Martinique – Montagne Pelée im Norden der Insel."
+  },
+  "TLPL": {
+   "level": 1,
+   "hl": "St. Lucia – Hewanorra an der Südspitze, die Pitons im Nordwesten."
+  },
+  "TVSA": {
+   "hl": "St. Vincent – Argyle an der Atlantikküste."
+  },
+  "TBPB": {
+   "hl": "Barbados – Grantley Adams an der Südküste."
+  },
+  "TGPY": {
+   "hl": "Grenada – Bahn auf der Landzunge von Point Salines."
+  },
+  "TTCP": {
+   "hl": "Tobago, handgefertigt in World Update 16."
+  },
+  "TNCB": {
+   "level": 1,
+   "hl": "Bonaire mit deiner Aerosoft-Szenerie von Jo Erlend Sund – Salzseen und Flamingos."
+  },
+  "TNCC": {
+   "hl": "Curaçao – Hato mit Blick auf Willemstad."
+  },
+  "TNCA": {
+   "hl": "Aruba – Queen Beatrix am Karibikstrand."
+  },
+  "SVMI": {
+   "hl": "Caracas-Maiquetía zwischen Küste und Ávila-Massiv."
+  },
+  "SYCJ": {
+   "hl": "Georgetown – Regenwaldküste Guyanas."
+  },
+  "SMJP": {
+   "hl": "Paramaribo – Surinam."
+  },
+  "SOCA": {
+   "hl": "Cayenne – Französisch-Guayana, nahe Kourou, Europas Weltraumbahnhof."
+  },
+  "SBMQ": {
+   "hl": "Macapá – direkt am Äquator an der Amazonasmündung."
+  },
+  "SBSN": {
+   "level": 1,
+   "hl": "Santarém – Zusammenfluss von Tapajós und Amazonas (World Update 19)."
+  },
+  "SBEG": {
+   "hl": "Manaus – Treffen der Wasser von Rio Negro und Solimões."
+  },
+  "SBPV": {
+   "hl": "Porto Velho am Rio Madeira."
+  },
+  "SBCY": {
+   "hl": "Cuiabá – Tor zum Pantanal."
+  },
+  "SBBR": {
+   "hl": "Brasília – Niemeyers Planhauptstadt auf dem Hochland."
+  },
+  "SBCF": {
+   "hl": "Belo Horizonte – Hochland von Minas Gerais."
+  },
+  "SBRJ": {
+   "level": 2,
+   "tag": "Zuckerhut",
+   "hl": "Santos Dumont – Stadtflughafen am Zuckerhut, 1.323-m-Bahn in der Guanabara-Bucht.",
+   "brief": "Seit World Update 19 von Gaya handgefertigt. LATAM und Azul fliegen hier regulär A320 mit Short-Runway-Paket. Je nach Betriebsrichtung kommst du am Zuckerhut vorbei oder über die Bucht mit der Rio–Niterói-Brücke. Landestrecke für die 1.323 m im EFB rechnen und leicht beladen fliegen.",
+   "tips": [
+    "Bahn nur 1.323 m"
+   ]
+  },
+  "SBFI": {
+   "level": 1,
+   "hl": "Foz do Iguaçu – Wasserfälle im Dreiländereck (World Update 19)."
+  },
+  "SGAS": {
+   "hl": "Asunción am Río Paraguay."
+  },
+  "SUMU": {
+   "hl": "Montevideo am Río de la Plata."
+  },
+  "SAEZ": {
+   "hl": "Buenos Aires-Ezeiza."
+  },
+  "SAZB": {
+   "hl": "Bahía Blanca – Tor nach Patagonien."
+  },
+  "SAZS": {
+   "level": 1,
+   "tag": "Seen",
+   "hl": "Bariloche – Anflug über den Nahuel-Huapi-See vor der Andenkette."
+  },
+  "SAWC": {
+   "level": 2,
+   "tag": "Gletscher",
+   "hl": "El Calafate – Lago Argentino und die Gletscher des Südpatagonischen Eisfelds.",
+   "brief": "JetSMART fliegt die Strecke saisonal mit A320. Starke Westwinde sind typisch, Seitenwind einplanen. Bei klarer Sicht lohnt der Blick nach Westen auf die Eisfelder."
+  },
+  "EGYP": {
+   "level": 1,
+   "tag": "Falklands",
+   "hl": "Falklandinseln – RAF Mount Pleasant, rau und windig."
+  },
+  "SAWH": {
+   "level": 2,
+   "tag": "Feuerland",
+   "hl": "Ushuaia – Anflug über den Beagle-Kanal vor den Bergen Feuerlands.",
+   "brief": "Die Bahn liegt auf einer Halbinsel im Kanal, böige Fallwinde von den Bergen sind typisch. Die Freeware von Chak991 wertet den Platz deutlich auf."
+  },
+  "SCCI": {
+   "hl": "Punta Arenas an der Magellanstraße – Absprung in die Antarktis."
+  },
+  "SCGC": {
+   "level": 2,
+   "tag": "Antarktis",
+   "hl": "Union Glacier – 3.000 m Blue Ice im Ellsworth-Gebirge.",
+   "brief": "Real fliegt ALE hier mit der B757 ab Punta Arenas, rund 4¼ h. Die Bahn ist blankes Eis mit sehr geringer Bremswirkung – Landestrecke und Verzögerung vorher im EFB und im Freeflug-Test klären. Nicht im Standard-Sim: das kostenlose „Antarctica Airfield Pack“ von kychungdotcom ist Pflicht. Vor Ort im Sim nachtanken; Volanta-Wertung nach der Landung prüfen.",
+   "tips": [
+    "Freeware-Pflicht: Antarctica Airfield Pack",
+    "Saison: November bis Januar"
+   ]
+  },
+  "SCBA": {
+   "hl": "Balmaceda – Patagonische Anden und Fjorde von Aysén."
+  },
+  "SCTE": {
+   "hl": "Puerto Montt – Vulkan Osorno über dem Llanquihue-See."
+  },
+  "SCIE": {
+   "hl": "Concepción an der Pazifikküste."
+  },
+  "SCEL": {
+   "hl": "Santiago de Chile vor der Andenkulisse."
+  },
+  "SCAT": {
+   "hl": "Copiapó – am Rand der Atacama."
+  },
+  "SCFA": {
+   "hl": "Antofagasta – Wüste trifft Pazifik."
+  },
+  "SLLP": {
+   "level": 2,
+   "tag": "4.061 m",
+   "hl": "El Alto – einer der höchsten internationalen Flughäfen der Welt.",
+   "brief": "Dünne Luft bedeutet sehr hohe Groundspeed bei der Landung und lange Startstrecken. Leicht beladen fliegen und die Performance im Fenix-EFB rechnen. Der Illimani (6.438 m) steht im Südosten."
+  },
+  "SLVR": {
+   "hl": "Santa Cruz – Tiefland östlich der Anden."
+  },
+  "SPZO": {
+   "level": 2,
+   "tag": "Cusco",
+   "hl": "Cusco – Talanflug auf 3.310 m, Tor zu Machu Picchu.",
+   "brief": "Enges Andental, große Platzhöhe und eine geneigte Bahn. Hier lohnt der Kauf: FSDG Cusco ist die einzige ernsthafte Umsetzung und nativ für MSFS 2024. Missed Approach und Gelände vorher studieren."
+  },
+  "SPJC": {
+   "hl": "Lima-Callao an der Pazifikküste."
+  },
+  "SPHI": {
+   "hl": "Chiclayo – Nordküste Perus."
+  },
+  "SEGU": {
+   "hl": "Guayaquil – Sprungbrett zu den Galápagos."
+  },
+  "SEGS": {
+   "level": 2,
+   "tag": "Galápagos",
+   "hl": "Galápagos (Baltra) – Vulkaninseln mitten im Pazifik.",
+   "brief": "Kleine Inselbahn nördlich von Santa Cruz; Freeware von David Munoz Jensen. Danach direkt nach Quito – der Leg liegt mit 2:05 h knapp über zwei Stunden, spart aber den Rückflug nach Guayaquil."
+  },
+  "SEQM": {
+   "level": 1,
+   "tag": "Vulkane",
+   "hl": "Quito – 2.390 m hoch in der „Straße der Vulkane“."
+  },
+  "SKCL": {
+   "hl": "Cali im Caucatal."
+  },
+  "SKBO": {
+   "level": 1,
+   "hl": "Bogotá – 2.550 m hoch auf der Sabana."
+  },
+  "SKCG": {
+   "hl": "Cartagena – Kolonialaltstadt an der Karibik."
+  },
+  "MPTO": {
+   "hl": "Panama-Stadt – Anflug über die Bucht nahe dem Kanal."
+  },
+  "MROC": {
+   "hl": "San José – Zentraltal zwischen Vulkanen."
+  },
+  "MNMG": {
+   "hl": "Managua am Managuasee."
+  },
+  "MHTG": {
+   "level": 2,
+   "tag": "Toncontín",
+   "hl": "Toncontín – der berüchtigte Talanflug von Tegucigalpa.",
+   "brief": "Handgefertigt im Basis-Sim. Auf Piste 02 kommt eine enge Kurve kurz vor der Schwelle über hügeligem Stadtgebiet. Große Jets wurden 2021 nach Palmerola verlegt, der Platz ist aber weiter in Betrieb. Leicht beladen, stabil in der Kurve, früh aufsetzen."
+  },
+  "MSLP": {
+   "hl": "San Salvador – Pazifikküste."
+  },
+  "MGGT": {
+   "hl": "Guatemala-Stadt – Vulkane Agua und Fuego im Südwesten."
+  },
+  "MZBZ": {
+   "hl": "Belize – Barrier Reef vor der Küste."
+  },
+  "MMUN": {
+   "hl": "Cancún – Riviera Maya."
+  },
+  "MWCR": {
+   "hl": "Grand Cayman."
+  },
+  "MKJS": {
+   "hl": "Montego Bay (World Update 16)."
+  },
+  "MTCH": {
+   "level": 1,
+   "tag": "Haiti",
+   "hl": "Cap-Haïtien – das aktive Tor Haitis an der Nordküste, die Zitadelle La Ferrière in den Bergen."
+  },
+  "MDPP": {
+   "hl": "Puerto Plata (World Update 16)."
+  },
+  "MBPV": {
+   "hl": "Providenciales – Turks & Caicos, türkises Flachwasser."
+  },
+  "MYEH": {
+   "hl": "North Eleuthera (World Update 16)."
+  },
+  "MYNN": {
+   "hl": "Nassau."
+  },
+  "MUHA": {
+   "hl": "Havanna."
+  },
+  "MMMD": {
+   "hl": "Mérida – Yucatán."
+  },
+  "MMVR": {
+   "hl": "Veracruz am Golf von Mexiko."
+  },
+  "MMMX": {
+   "level": 1,
+   "hl": "Mexico City – 2.230 m hoch mitten im Häusermeer, der Popocatépetl im Südosten."
+  },
+  "MMGL": {
+   "hl": "Guadalajara."
+  },
+  "MMSD": {
+   "hl": "Los Cabos an der Südspitze der Baja California."
+  },
+  "MMHO": {
+   "hl": "Hermosillo – Sonora-Wüste."
+  },
+  "KPHX": {
+   "hl": "Phoenix – Basis für den H160-Abstecher nach Sedona."
+  },
+  "KLAS": {
+   "level": 1,
+   "hl": "Las Vegas mit deiner FlyTampa-Szenerie – Strip und Wüste."
+  },
+  "KDEN": {
+   "hl": "Denver mit deiner Flightbeam-Szenerie vor den Rockies."
+  },
+  "KJAC": {
+   "level": 2,
+   "tag": "Tetons",
+   "hl": "Jackson Hole – einziger Verkehrsflughafen in einem US-Nationalpark, direkt unter den Grand Tetons.",
+   "brief": "Seit World Update 22 von Gaya handgefertigt. United fliegt hier A320 ab Denver. 1.920 m Bahn auf 1.966 m Höhe – leicht beladen und Performance rechnen."
+  },
+  "KSLC": {
+   "hl": "Salt Lake City am Großen Salzsee."
+  },
+  "KSFO": {
+   "level": 1,
+   "hl": "San Francisco mit deiner Flightbeam-Szenerie – danach der lange Sprung nach Hawaii."
+  },
+  "PHKO": {
+   "level": 1,
+   "hl": "Kona – Bahn zwischen schwarzen Lavafeldern (World Update 13)."
+  },
+  "PHNL": {
+   "level": 1,
+   "hl": "Honolulu mit deiner iniBuilds-Szenerie – Diamond Head und Waikīkī."
+  },
+  "PMDY": {
+   "level": 1,
+   "tag": "Midway",
+   "hl": "Midway-Atoll – Henderson Field, Schauplatz der Schlacht von 1942 und riesige Albatros-Kolonie."
+  },
+  "PWAK": {
+   "hl": "Wake Island – winziges Atoll mitten im Pazifik."
+  },
+  "PKMJ": {
+   "hl": "Majuro – Bahn auf dem schmalen Atollring der Marshallinseln."
+  },
+  "PTPN": {
+   "level": 1,
+   "hl": "Pohnpei – Vulkaninsel mit Riffkante (World Update 13)."
+  },
+  "PTKK": {
+   "hl": "Chuuk – Lagune voller Wracks aus dem Zweiten Weltkrieg."
+  },
+  "PGUM": {
+   "hl": "Guam."
+  },
+  "PGSN": {
+   "hl": "Saipan."
+  },
+  "PTRO": {
+   "hl": "Palau – die Rock Islands."
+  },
+  "RPMD": {
+   "hl": "Davao – Mindanao, Mount Apo."
+  },
+  "WAMM": {
+   "hl": "Manado – Nord-Sulawesi."
+  },
+  "WABB": {
+   "hl": "Biak vor Neuguinea."
+  },
+  "WAJJ": {
+   "hl": "Jayapura – Neuguinea."
+  },
+  "AYPY": {
+   "hl": "Port Moresby – Papua-Neuguinea."
+  },
+  "AGGH": {
+   "hl": "Honiara – Guadalcanal."
+  },
+  "ANYN": {
+   "hl": "Nauru – die Bahn nimmt einen guten Teil der Inselküste ein."
+  },
+  "NGTA": {
+   "hl": "Tarawa – Kiribati."
+  },
+  "NGFU": {
+   "level": 2,
+   "tag": "Atoll",
+   "hl": "Funafuti – eine Bahn mitten im Atoll, Lagune und Ozean links und rechts.",
+   "brief": "Real fliegen hier nur Turboprops. Mit dem A320 ist das eine Sonderetappe, die du vorher im Freeflug und im EFB prüfst. Klappt es, ersetzt dieser Stopp die frühere 10½-Stunden-Kette mit dem H160; sonst gilt der Ausweichplan.",
+   "tips": [
+    "Bahnbreite nur 24 m"
+   ]
+  },
+  "NLWW": {
+   "hl": "Wallis – Hihifo, direkt ab Funafuti."
+  },
+  "NSFA": {
+   "hl": "Samoa – Faleolo."
+  },
+  "NSTU": {
+   "hl": "Pago Pago – Anflug zwischen steilen grünen Bergen."
+  },
+  "NIUE": {
+   "hl": "Niue – Korallenfelsen im Südpazifik."
+  },
+  "NCRG": {
+   "hl": "Rarotonga – Cook-Inseln, Lagune und grüne Gipfel."
+  },
+  "NTAA": {
+   "level": 1,
+   "tag": "Tahiti",
+   "hl": "Tahiti – Blick hinüber nach Moorea; Basis für den H160-Flug nach Bora Bora."
+  },
+  "NFTF": {
+   "hl": "Tonga – Nukuʻalofa."
+  },
+  "NFFN": {
+   "hl": "Nadi – Fidschi."
+  },
+  "NVVV": {
+   "hl": "Port Vila – Vanuatu."
+  },
+  "NWWW": {
+   "hl": "Nouméa – Neukaledonien und seine Lagune (UNESCO)."
+  },
+  "YSNF": {
+   "level": 1,
+   "hl": "Norfolk Island – 1.950-m-Bahn auf der Klippeninsel."
+  },
+  "NZAA": {
+   "hl": "Auckland – Vulkanfeld und Hauraki Gulf."
+  },
+  "NZRO": {
+   "level": 1,
+   "hl": "Rotorua – Vulkanseen und Geothermie (World Update 12)."
+  },
+  "NZWN": {
+   "level": 2,
+   "tag": "Windy Wellington",
+   "hl": "Wellington – kurze Bahn zwischen zwei Buchten, berüchtigt für Wind.",
+   "brief": "Die 1.936-m-Bahn liegt auf einer Landenge zwischen Lyall Bay und Evans Bay; Böen und Scherwind aus der Cookstraße sind hier Alltag. Kauf-Tipp: Flightbeam NZWN, 4,9 aus über 200 Bewertungen."
+  },
+  "NZCH": {
+   "hl": "Christchurch – Canterbury-Ebene vor den Südalpen."
+  },
+  "NZQN": {
+   "level": 2,
+   "tag": "Südalpen",
+   "hl": "Queenstown – Anflug zwischen den Remarkables und dem Lake Wakatipu.",
+   "brief": "Handgefertigt im Basis-Sim. Das Tal ist eng, die RNP-Verfahren sind anspruchsvoll – bei klarer Sicht ist ein Sichtanflug die schönste Wahl. Von hier der H160-Abstecher zum Milford Sound mit deiner Blinn-Szenerie."
+  },
+  "YMHB": {
+   "hl": "Hobart – Tasmanien und kunanyi/Mount Wellington."
+  },
+  "YMML": {
+   "hl": "Melbourne mit deiner Orbx-Szenerie."
+  },
+  "YSSY": {
+   "level": 1,
+   "hl": "Sydney mit deiner FlyTampa-Szenerie – Harbour Bridge und Oper."
+  },
+  "YBCG": {
+   "hl": "Gold Coast – Surfers Paradise an der Küste."
+  },
+  "YBHM": {
+   "level": 2,
+   "tag": "Whitsundays",
+   "hl": "Hamilton Island – mitten in den Whitsundays am Great Barrier Reef.",
+   "brief": "Die 1.704-m-Bahn endet auf beiden Seiten im Meer. Jetstar flog hier bis Oktober 2025 A320, heute kommen A220 und 737. Whitehaven Beach liegt wenige Meilen nordöstlich – bei klarer Sicht lohnt der Schlenker."
+  },
+  "YBCS": {
+   "level": 1,
+   "hl": "Cairns – Regenwald und Great Barrier Reef."
+  },
+  "YBMA": {
+   "hl": "Mount Isa – Bergbaustadt im Outback."
+  },
+  "YBAS": {
+   "hl": "Alice Springs – MacDonnell Ranges."
+  },
+  "YAYE": {
+   "level": 1,
+   "tag": "Uluru",
+   "hl": "Ayers Rock – Uluru und Kata Tjuta liegen vor der Bahn."
+  },
+  "YPKG": {
+   "level": 1,
+   "hl": "Kalgoorlie – die Goldmine „Super Pit“ neben der Bahn (Freeware)."
+  },
+  "YPPH": {
+   "hl": "Perth am Swan River."
+  },
+  "YPLM": {
+   "hl": "Learmonth – Ningaloo-Riff und Exmouth-Golf."
+  },
+  "YBRM": {
+   "level": 1,
+   "hl": "Broome – rote Erde, türkises Meer (World Update 21)."
+  },
+  "YPDN": {
+   "hl": "Darwin – Top End."
+  },
+  "WPDL": {
+   "hl": "Dili – Timor-Leste."
+  },
+  "WADD": {
+   "level": 1,
+   "hl": "Bali – die Bahn ragt ins Meer, der Vulkan Agung im Nordosten."
+  },
+  "WALL": {
+   "hl": "Balikpapan – Ostborneo."
+  },
+  "WBSB": {
+   "hl": "Brunei – Bandar Seri Begawan."
+  },
+  "WBKK": {
+   "level": 1,
+   "hl": "Kota Kinabalu – Mount Kinabalu (4.095 m) im Hintergrund."
+  },
+  "WBGG": {
+   "hl": "Kuching – Sarawak."
+  },
+  "WSSS": {
+   "hl": "Singapur mit deiner Cloudsurf-Szenerie."
+  },
+  "WIII": {
+   "hl": "Jakarta – Sprungbrett zu Christmas Island."
+  },
+  "YPXM": {
+   "level": 1,
+   "hl": "Christmas Island – steile Dschungelinsel im Indischen Ozean."
+  },
+  "YPCC": {
+   "level": 1,
+   "hl": "Cocos (Keeling) – Bahn auf einem Korallenatoll."
+  },
+  "WIEE": {
+   "hl": "Padang – Westsumatra."
+  },
+  "WMKK": {
+   "hl": "Kuala Lumpur."
+  },
+  "VTSP": {
+   "level": 1,
+   "hl": "Phuket – Anflug über die Andamanensee und den Mai-Khao-Strand."
+  },
+  "VTBS": {
+   "hl": "Bangkok-Suvarnabhumi."
+  },
+  "VDSA": {
+   "level": 2,
+   "tag": "Angkor",
+   "hl": "Siem Reap – neuer Flughafen (2023) für Angkor Wat.",
+   "brief": "Siem Reap–Angkor International ersetzt seit Oktober 2023 den alten Stadtflughafen. Angkor Wat liegt rund 40 km westlich – bei klarer Sicht lohnt ein Umweg über die Tempelanlagen."
+  },
+  "VVTS": {
+   "hl": "Ho-Chi-Minh-Stadt."
+  },
+  "VVDN": {
+   "hl": "Da Nang – Marmorberge und Küste."
+  },
+  "VLLB": {
+   "level": 1,
+   "hl": "Luang Prabang – Anflug über den Mekong in die Berge von Laos."
+  },
+  "VVNB": {
+   "hl": "Hanoi."
+  },
+  "VHHH": {
+   "level": 1,
+   "hl": "Hongkong – Inselairport vor Lantau, der Big Buddha im Süden."
+  },
+  "VMMC": {
+   "hl": "Macau – Bahn auf aufgeschüttetem Land in der Bucht."
+  },
+  "RCTP": {
+   "hl": "Taipeh-Taoyuan."
+  },
+  "RORS": {
+   "level": 2,
+   "tag": "Riff",
+   "hl": "Shimojishima – leuchtend türkises Riffwasser direkt an der Bahn (World Update 1).",
+   "brief": "Früher Trainingsflughafen, heute mit Linienverkehr. Das Riff am Nordende der Bahn, der berühmte „17 END“, ist ein Fotomotiv – ein tiefer Überflug zeigt die Farben am besten."
+  },
+  "ROAH": {
+   "level": 1,
+   "hl": "Naha – Okinawa, Bahn direkt am Ostchinesischen Meer (Freeware)."
+  },
+  "RJFK": {
+   "level": 2,
+   "tag": "Vulkan",
+   "hl": "Kagoshima – Anflug mit Blick auf den aktiven Vulkan Sakurajima.",
+   "brief": "Der Sakurajima raucht fast ständig über der Bucht von Kagoshima. Bei Nordwind lohnt ein Blick nach Süden auf den Krater."
+  },
+  "RJOO": {
+   "level": 1,
+   "hl": "Osaka-Itami – Stadtflughafen mit Anflug über die Dächer (Freeware)."
+  },
+  "RJTT": {
+   "hl": "Tokio-Haneda – handgefertigt im Basis-Sim."
+  },
+  "RKSI": {
+   "hl": "Seoul-Incheon."
+  },
+  "ZKPY": {
+   "level": 1,
+   "hl": "Pjöngjang – einer der am wenigsten beflogenen Hauptstadtflughäfen der Welt."
+  },
+  "ZYTL": {
+   "hl": "Dalian."
+  },
+  "ZBAA": {
+   "hl": "Peking."
+  },
+  "ZBHH": {
+   "hl": "Hohhot – Innere Mongolei."
+  },
+  "ZMCK": {
+   "hl": "Ulaanbaatar – neuer Chinggis-Khaan-Flughafen in der Steppe.",
+   "tips": [
+    "Vorher im Sim prüfen, ob ZMCK existiert: eröffnet 2021, fehlt in MSFS 2020, für MSFS 2024 nicht belegt",
+    "Falls nicht: Hohhot → Ulan-Ude direkt (682 NM, 2:00 h) – die Mongolei zählt ohnehin über Chowd (ZMKD)"
+   ]
+  },
+  "UIUU": {
+   "hl": "Ulan-Ude – Burjatien."
+  },
+  "UIII": {
+   "level": 1,
+   "hl": "Irkutsk – nur einen kurzen Sprung vom Baikalsee entfernt."
+  },
+  "ZMKD": {
+   "hl": "Chowd – Westmongolei vor dem Altai."
+  },
+  "UASK": {
+   "hl": "Öskemen – Altai-Vorland."
+  },
+  "UAAA": {
+   "level": 1,
+   "hl": "Almaty – vor den Gipfeln des Tian Shan."
+  },
+  "UCFM": {
+   "hl": "Bischkek."
+  },
+  "UTTT": {
+   "hl": "Taschkent."
+  },
+  "UTSS": {
+   "level": 2,
+   "tag": "Seidenstraße",
+   "hl": "Samarkand – Registan und die Kuppeln der Timuriden.",
+   "brief": "Die Altstadt liegt nur wenige Kilometer vom Flughafen. Kurzer Hüpfer von Taschkent, danach über das Serafschan-Tal nach Duschanbe."
+  },
+  "UTDD": {
+   "hl": "Duschanbe – Pamir-Vorland."
+  },
+  "OAKB": {
+   "level": 1,
+   "hl": "Kabul – Talkessel auf 1.790 m, umringt vom Hindukusch."
+  },
+  "OPSD": {
+   "level": 2,
+   "tag": "Karakorum",
+   "hl": "Skardu – Indus-Tal im Karakorum, Tor zum K2.",
+   "brief": "PIA und Airblue fliegen hier regulär A320. Das Tal ist lang und breit, die Berge ringsum stehen weit über 5.000 m hoch – nur bei guter Sicht fliegen. Kauf-Tipp: VueloSimple OPSD, alternativ die Freeware von kychungdotcom."
+  },
+  "OPIS": {
+   "hl": "Islamabad."
+  },
+  "VIAR": {
+   "hl": "Amritsar – Goldener Tempel."
+  },
+  "VILH": {
+   "level": 2,
+   "tag": "3.256 m",
+   "hl": "Leh – Hochtal in Ladakh auf 3.256 m.",
+   "brief": "Gelandet wird nur auf 07, gestartet nur auf 25, weil der Talverlauf nichts anderes zulässt. Wegen der Talwinde nur vormittags fliegen. IndiGo und Air India bedienen Leh mit A320neo. Die Freeware von mottoth bildet laut Beschreibung den Einbahnbetrieb ab, ist mit 3 Bewertungen aber nur ein Kandidat zum Prüfen.",
+   "tips": [
+    "Landung 07, Start 25",
+    "Nur vormittags (Talwind)"
+   ]
+  },
+  "VIDP": {
+   "hl": "Delhi."
+  },
+  "VEBN": {
+   "hl": "Varanasi am Ganges."
+  },
+  "VNKT": {
+   "level": 2,
+   "tag": "Himalaya",
+   "hl": "Kathmandu – Talkessel auf 1.338 m, der Himalaya am Horizont.",
+   "brief": "Der Anflug auf 02 führt über die Hügel südlich des Tals mit steilem Sinkflug. Freeware: KapilGyawali; nativ für MSFS 2024 gibt es Final Approach Design (optional). Von hier startet der H160-Abstecher nach Lukla."
+  },
+  "VQPR": {
+   "level": 2,
+   "tag": "Paro",
+   "hl": "Paro – Sichtanflug durch das enge Paro-Tal auf 2.245 m.",
+   "brief": "Einflug über Chhuzom, dann das Tal hinauf; Zielpunkt für Piste 15 ist „Mr. Smith's House“. Die restaurierten RNAV-Verfahren der Freeware laufen nicht in der Fenix-MCDU – visuell fliegen, am besten nach einer Übungssession. Freeware-Pflicht: kychungdotcom, gebaut für genau diesen Anflug.",
+   "tips": [
+    "Visuell fliegen – kein RNAV im Fenix",
+    "Übungssession vorab einplanen"
+   ]
+  },
+  "VGHS": {
+   "hl": "Dhaka – Bengalisches Delta."
+  },
+  "VYYY": {
+   "hl": "Yangon – Shwedagon-Pagode."
+  },
+  "VOPB": {
+   "level": 1,
+   "hl": "Port Blair – Andamanen im Golf von Bengalen."
+  },
+  "VOMM": {
+   "hl": "Chennai."
+  },
+  "VCBI": {
+   "hl": "Colombo."
+  },
+  "VRMM": {
+   "level": 2,
+   "tag": "Malediven",
+   "hl": "Malé – Bahn auf der Flughafeninsel Hulhulé zwischen Atollen.",
+   "brief": "Wasserflugzeuge starten direkt neben der Bahn, ringsum türkise Atolle – tagsüber fliegen. Die NSAJID-Freeware mit korrigierter Bahnlänge ist mit 4 Bewertungen nur ein Kandidat zum Prüfen; FSDG Malé ist optional."
+  },
+  "VOCI": {
+   "hl": "Kochi – Kerala (Freeware)."
+  },
+  "VOGO": {
+   "hl": "Goa."
+  },
+  "VABB": {
+   "hl": "Mumbai."
+  },
+  "VAAH": {
+   "hl": "Ahmedabad."
+  },
+  "OPKC": {
+   "hl": "Karatschi."
+  },
+  "OOMS": {
+   "hl": "Maskat – Hajar-Gebirge."
+  },
+  "OMDB": {
+   "hl": "Dubai mit deiner iniBuilds-Szenerie."
+  },
+  "OBBI": {
+   "hl": "Bahrain."
+  },
+  "OTHH": {
+   "hl": "Doha."
+  },
+  "OKKK": {
+   "hl": "Kuwait."
+  },
+  "OERK": {
+   "hl": "Riad."
+  },
+  "OEAO": {
+   "level": 2,
+   "tag": "Hegra",
+   "hl": "AlUla – Sandsteinfelsen und die Nabatäer-Gräber von Hegra.",
+   "brief": "Anflug über eine Wüste aus roten Felsformationen; das UNESCO-Welterbe Hegra liegt nördlich des Flughafens. Ersetzt Medina."
+  },
+  "OJAQ": {
+   "level": 1,
+   "tag": "Rotes Meer",
+   "hl": "Aqaba – vier Länder im Blick, das Wadi Rum im Osten."
+  },
+  "LLBG": {
+   "hl": "Tel Aviv-Ben Gurion – Basis für den H160-Flug nach Ramallah."
+  },
+  "OLBA": {
+   "hl": "Beirut – Anflug über das Meer."
+  },
+  "OSDI": {
+   "hl": "Damaskus."
+  },
+  "ORBI": {
+   "hl": "Bagdad."
+  },
+  "OIIE": {
+   "hl": "Teheran-Imam Khomeini, das Elburs-Gebirge im Norden."
+  },
+  "UTAA": {
+   "hl": "Aschgabat – Marmorstadt am Kopet-Dag."
+  },
+  "UTAK": {
+   "hl": "Turkmenbaschi am Kaspischen Meer."
+  },
+  "UBBB": {
+   "hl": "Baku – nach dem Flug über das Kaspische Meer."
+  },
+  "UDYZ": {
+   "level": 1,
+   "hl": "Jerewan – der Ararat (5.137 m) direkt im Süden."
+  },
+  "UGTB": {
+   "hl": "Tiflis – Großer Kaukasus im Norden."
+  },
+  "LTCG": {
+   "level": 1,
+   "hl": "Trabzon – Bahn direkt an der Schwarzmeerküste."
+  },
+  "LTAI": {
+   "hl": "Antalya – Taurusgebirge."
+  },
+  "LCLK": {
+   "hl": "Larnaka – Salzsee neben der Bahn."
+  },
+  "HECA": {
+   "hl": "Kairo – handgefertigt; die Pyramiden von Gizeh im Westen der Stadt."
+  },
+  "HESN": {
+   "level": 1,
+   "hl": "Assuan – Nil, Katarakte und der Nassersee."
+  },
+  "HSPN": {
+   "hl": "Port Sudan – der aktive Hauptflughafen des Sudan am Roten Meer."
+  },
+  "HHAS": {
+   "level": 1,
+   "hl": "Asmara – 2.335 m hoch am Rand des Eritreischen Hochlands."
+  },
+  "HAAB": {
+   "hl": "Addis Abeba – 2.325 m hoch."
+  },
+  "HDAM": {
+   "hl": "Dschibuti – Golf von Tadjoura."
+  },
+  "OYSQ": {
+   "level": 2,
+   "tag": "Socotra",
+   "hl": "Socotra – Drachenblutbäume auf der „Galápagos des Indischen Ozeans“.",
+   "brief": "Eine der isoliertesten Inseln der Welt. Azrsim Socotra ist die einzige echte Umsetzung und günstig."
+  },
+  "HCMH": {
+   "hl": "Hargeisa – Somaliland."
+  },
+  "HALA": {
+   "hl": "Hawassa – Äthiopischer Grabenbruch."
+  },
+  "HJJJ": {
+   "hl": "Juba am Weißen Nil."
+  },
+  "HKJK": {
+   "level": 1,
+   "hl": "Nairobi – der Nationalpark grenzt direkt an den Flughafen."
+  },
+  "HUEN": {
+   "hl": "Entebbe am Victoriasee."
+  },
+  "HRYR": {
+   "hl": "Kigali – Land der tausend Hügel."
+  },
+  "HBBA": {
+   "hl": "Bujumbura am Tanganjikasee."
+  },
+  "HTKJ": {
+   "level": 2,
+   "tag": "Kibo",
+   "hl": "Kilimanjaro – der 5.895-m-Gipfel steht nordöstlich des Flughafens.",
+   "brief": "Bei klarer Sicht thront der Kibo über der Savanne, der Mount Meru steht im Westen. Morgens ist die Chance auf einen wolkenfreien Gipfel am größten."
+  },
+  "HTZA": {
+   "hl": "Sansibar."
+  },
+  "HKMO": {
+   "hl": "Mombasa – Absprung zu den Seychellen."
+  },
+  "FSIA": {
+   "level": 1,
+   "hl": "Seychellen – Bahn am Fuß der Granitberge von Mahé."
+  },
+  "FJDG": {
+   "level": 1,
+   "hl": "Diego Garcia – Militäratoll im Chagos-Archipel."
+  },
+  "FIMP": {
+   "hl": "Mauritius."
+  },
+  "FMEE": {
+   "level": 1,
+   "hl": "Réunion – Piton des Neiges und Cirques (Freeware)."
+  },
+  "FMMI": {
+   "hl": "Antananarivo – Hochland von Madagaskar."
+  },
+  "FMNN": {
+   "level": 1,
+   "hl": "Nosy Be – Basis für den H160-Flug zu den Glorieuses."
+  },
+  "FMCZ": {
+   "hl": "Mayotte – Lagune."
+  },
+  "FMCH": {
+   "hl": "Komoren – Vulkan Karthala."
+  },
+  "FQPB": {
+   "hl": "Pemba – Nordmosambik."
+  },
+  "FWKI": {
+   "hl": "Lilongwe – Malawi."
+  },
+  "FQBR": {
+   "hl": "Beira."
+  },
+  "FQMA": {
+   "hl": "Maputo."
+  },
+  "FDSK": {
+   "hl": "Eswatini – King Mswati III."
+  },
+  "FAOR": {
+   "hl": "Johannesburg."
+  },
+  "FXMM": {
+   "level": 1,
+   "hl": "Maseru – Lesotho, das „Königreich im Himmel“."
+  },
+  "FALE": {
+   "hl": "Durban."
+  },
+  "FAGG": {
+   "level": 1,
+   "tag": "Garden Route",
+   "hl": "George – Garden Route zwischen Outeniqua-Bergen und Indischem Ozean."
+  },
+  "FACT": {
+   "level": 2,
+   "tag": "Tafelberg",
+   "hl": "Kapstadt – Tafelberg und Kaphalbinsel.",
+   "brief": "Handgefertigt in der Deluxe-Edition. iniBuilds FACT bringt ein 12-m-Geländemodell des Tafelbergs mit – noch ohne Bewertungen, daher nur als Beobachten-Tipp. Bei Südostwind liegt das „Tischtuch“ aus Wolken auf dem Berg."
+  },
+  "FYLZ": {
+   "level": 1,
+   "hl": "Lüderitz – Namib-Küste, die Geisterstadt Kolmanskop gleich nebenan."
+  },
+  "FYWH": {
+   "hl": "Windhoek."
+  },
+  "FBKE": {
+   "hl": "Kasane – Chobe-Nationalpark."
+  },
+  "FVFA": {
+   "level": 2,
+   "tag": "Mosi-oa-Tunya",
+   "hl": "Victoria Falls – „der Rauch, der donnert“.",
+   "brief": "Die Fälle liegen rund 20 km nordwestlich des Flughafens; die Gischtwolke ist bei gutem Wetter schon im Anflug zu sehen. FSDG Victoria Falls ist optional."
+  },
+  "FVHA": {
+   "hl": "Harare."
+  },
+  "FLKK": {
+   "hl": "Lusaka."
+  },
+  "FZQA": {
+   "hl": "Lubumbashi – Kupfergürtel."
+  },
+  "FNME": {
+   "hl": "Menongue – Südostangola."
+  },
+  "FNUB": {
+   "hl": "Lubango – Serra da Leba."
+  },
+  "FNLU": {
+   "hl": "Luanda – Absprung in den Südatlantik."
+  },
+  "FHSH": {
+   "level": 2,
+   "tag": "St Helena",
+   "hl": "St Helena – Bahn auf einem Klippenplateau mitten im Südatlantik.",
+   "brief": "Nur 1.535–1.550 m Landestrecke, dazu die berüchtigte Windscherung an der Kante. Real fliegt Airlink die E190; eine 737-800 und eine A318 sind hier schon gelandet. Mit dem A320 ist das eine Sonderetappe, die du vorab testest. Freeware-Pflicht: kychungdotcom, bringt auch die Navdaten mit.",
+   "tips": [
+    "Freeware-Pflicht inkl. Navdaten"
+   ]
+  },
+  "FHAW": {
+   "level": 1,
+   "hl": "Ascension – RAF Wideawake; St Helena–Ascension fliegt Airlink auch real (Freeware)."
+  },
+  "FPST": {
+   "hl": "São Tomé."
+  },
+  "FOOL": {
+   "hl": "Libreville."
+  },
+  "FZAA": {
+   "hl": "Kinshasa – am anderen Kongo-Ufer liegt Brazzaville."
+  },
+  "FCBB": {
+   "hl": "Brazzaville."
+  },
+  "FGSL": {
+   "hl": "Malabo – Bioko und der Pico Basilé."
+  },
+  "FKKD": {
+   "hl": "Douala – der Kamerunberg im Westen."
+  },
+  "FEFF": {
+   "hl": "Bangui."
+  },
+  "FTTJ": {
+   "hl": "N'Djamena."
+  },
+  "DNSO": {
+   "hl": "Sokoto."
+  },
+  "DRRN": {
+   "hl": "Niamey am Niger."
+  },
+  "DNMM": {
+   "hl": "Lagos."
+  },
+  "DBBB": {
+   "hl": "Cotonou."
+  },
+  "DXXX": {
+   "hl": "Lomé."
+  },
+  "DGAA": {
+   "hl": "Accra."
+  },
+  "DFFD": {
+   "hl": "Ouagadougou."
+  },
+  "GABS": {
+   "hl": "Bamako am Niger."
+  },
+  "DIAP": {
+   "hl": "Abidjan – Lagunenstadt."
+  },
+  "GLRB": {
+   "hl": "Monrovia."
+  },
+  "GFLL": {
+   "hl": "Freetown-Lungi."
+  },
+  "GUCY": {
+   "hl": "Conakry."
+  },
+  "GGOV": {
+   "hl": "Bissau."
+  },
+  "GBYD": {
+   "hl": "Banjul."
+  },
+  "GOBD": {
+   "hl": "Dakar-Diass."
+  },
+  "GVAC": {
+   "hl": "Sal – Kapverden."
+  },
+  "GQNO": {
+   "hl": "Nouakchott."
+  },
+  "GMMH": {
+   "level": 1,
+   "hl": "Dakhla – Halbinsel zwischen Atlantik und Lagune (Westsahara)."
+  },
+  "GCXO": {
+   "level": 2,
+   "tag": "Teide",
+   "hl": "Teneriffa Nord – Los Rodeos auf 633 m, der Teide (3.715 m) im Südwesten.",
+   "brief": "Der Platz liegt oft unter einer tiefen Wolkendecke, dem „Panza de burro“; bei Sicht öffnet sich der Blick auf den Teide. Ersetzt Gran Canaria."
+  },
+  "LPMA": {
+   "level": 2,
+   "tag": "Madeira",
+   "hl": "Madeira – Bahn teils auf Stelzen über dem Meer.",
+   "brief": "Handgefertigt im Basis-Sim. Böige Winde an den Klippen und die berühmte Plattform der Bahnverlängerung machen den Anflug anspruchsvoll. Beim ersten Mal ruhiges Wetter wählen."
+  },
+  "LPPT": {
+   "hl": "Lissabon – Anflug über die Stadt."
+  },
+  "LPFR": {
+   "hl": "Faro (World Update 8)."
+  },
+  "LXGB": {
+   "level": 2,
+   "tag": "Rock",
+   "hl": "Gibraltar – der Fels direkt neben der Bahn, eine Straße quert die Piste.",
+   "brief": "Handgefertigt im Basis-Sim; mit dem kostenlosen Terrain-Fix von THEOLI4D passt auch das Gelände. Bei Levante-Wind steht Turbulenz hinter dem Felsen. easyJet fliegt hier regulär A320."
+  },
+  "GMMN": {
+   "hl": "Casablanca."
+  },
+  "DAAG": {
+   "hl": "Algier."
+  },
+  "HLLM": {
+   "hl": "Tripolis-Mitiga."
+  },
+  "DTTJ": {
+   "hl": "Djerba."
+  },
+  "LMML": {
+   "hl": "Malta."
+  },
+  "LICJ": {
+   "hl": "Palermo (World Update 9)."
+  },
+  "LIRF": {
+   "level": 1,
+   "hl": "Rom – Basis für die H160-Flüge in den Vatikan und nach San Marino."
+  },
+  "LFMN": {
+   "level": 1,
+   "hl": "Nizza – Anflug über die Baie des Anges (World Update 4); H160 nach Monaco."
+  },
+  "LEPA": {
+   "hl": "Palma mit deiner JustSim-Szenerie."
+  },
+  "LEBL": {
+   "hl": "Barcelona – H160 in die Pyrenäen nach Andorra."
+  },
+  "LSGG": {
+   "hl": "Genf mit deiner Redwing-Szenerie – der Mont Blanc im Süden."
+  },
+  "LSZH": {
+   "hl": "Zürich mit deiner FSDT-Szenerie – H160 nach Liechtenstein."
+  },
+  "LOWI": {
+   "level": 2,
+   "tag": "Inntal",
+   "hl": "Innsbruck mit deiner iniBuilds-Szenerie – Anflug durchs Inntal.",
+   "brief": "Die Berge stehen dicht an der Route. Verfahren samt Missed Approach vorher lesen; bei Föhn nur mit Erfahrung fliegen."
+  },
+  "LOWS": {
+   "hl": "Salzburg mit deiner Digital-Design-Szenerie – der Untersberg vor der Bahn."
+  },
+  "LOWG": {
+   "hl": "Graz mit deiner Orbx-Szenerie."
+  },
+  "LJLJ": {
+   "hl": "Ljubljana – Julische Alpen im Nordwesten."
+  },
+  "LDRI": {
+   "hl": "Rijeka auf der Insel Krk (World Update 14)."
+  },
+  "LDDU": {
+   "level": 1,
+   "hl": "Dubrovnik – Anflug entlang der Adriaküste."
+  },
+  "LYTV": {
+   "level": 2,
+   "tag": "Kotor",
+   "hl": "Tivat – Anflug durch die Bucht von Kotor.",
+   "brief": "Fjordartige Bucht zwischen hohen Karstbergen, der Sichtanflug über die Bucht ist spektakulär. Kauf-Tipp: Pyreegue Tivat für rund 5 €, 4,4 aus 148 Bewertungen."
+  },
+  "LATI": {
+   "hl": "Tirana."
+  },
+  "BKPR": {
+   "hl": "Priština – Kosovo."
+  },
+  "LWSK": {
+   "hl": "Skopje."
+  },
+  "LGKR": {
+   "hl": "Korfu mit deiner FlyTampa-Szenerie."
+  },
+  "LGSK": {
+   "level": 2,
+   "tag": "Beach",
+   "hl": "Skiathos – das „St. Maarten Griechenlands“.",
+   "brief": "1.628 × 30 m; im September 2024 landete hier sogar ein A321. Tiefe Überflüge am Pistenende sind ein Spotter-Klassiker. Leicht beladen, früh stabil – geflogen wird mit dem Standard-Airport, Orbx gibt es nur für MSFS 2020."
+  },
+  "LGAV": {
+   "hl": "Athen mit deiner FlyTampa-Szenerie."
+  },
+  "LGSM": {
+   "level": 1,
+   "hl": "Samos mit deiner Terrainy-Szenerie – enger Anflug zwischen Bergen und Meer, danach direkt nach Sofia."
+  },
+  "LBSF": {
+   "hl": "Sofia – das Witoscha-Gebirge vor der Stadt."
+  },
+  "LQSA": {
+   "hl": "Sarajevo im Talkessel."
+  },
+  "LYBE": {
+   "hl": "Belgrad."
+  },
+  "LHBP": {
+   "hl": "Budapest."
+  },
+  "LZTT": {
+   "level": 1,
+   "hl": "Poprad-Tatry – vor der Hohen Tatra (World Update 14)."
+  },
+  "LRCL": {
+   "hl": "Cluj – Siebenbürgen."
+  },
+  "LROP": {
+   "hl": "Bukarest (Freeware)."
+  },
+  "LUKK": {
+   "hl": "Chișinău."
+  },
+  "UKLL": {
+   "hl": "Lwiw – der einzige Weg zur Kategorie Ukraine.",
+   "brief": "Real ist der ukrainische Luftraum seit 2022 für den Linienverkehr gesperrt (Stand der Recherche); im Sim ist Lwiw ein normaler Stopp und kein historischer Flughafen."
+  },
+  "UMMS": {
+   "hl": "Minsk."
+  },
+  "EYVI": {
+   "hl": "Vilnius (Freeware)."
+  },
+  "EVRA": {
+   "hl": "Riga."
+  },
+  "EETN": {
+   "hl": "Tallinn."
+  },
+  "EFMA": {
+   "level": 1,
+   "hl": "Mariehamn – Åland, eine eigene Volanta-Kategorie."
+  },
+  "ESSA": {
+   "hl": "Stockholm-Arlanda (World Update 5)."
+  },
+  "EFVA": {
+   "hl": "Vaasa (World Update 5)."
+  },
+  "EFIV": {
+   "level": 1,
+   "hl": "Ivalo – Lappland (World Update 15)."
+  },
+  "ESNQ": {
+   "hl": "Kiruna (World Update 15)."
+  },
+  "ENTC": {
+   "level": 1,
+   "hl": "Tromsø – Fjordinsel unter dem Nordlicht (Freeware artogsta)."
+  },
+  "ENSB": {
+   "level": 2,
+   "tag": "78° Nord",
+   "hl": "Svalbard – Longyearbyen, der nördlichste Flughafen mit Linienverkehr.",
+   "brief": "Handgefertigt in World Update 5. Arktisches Fjordtal, Gletscher und kahle Berge; im Sommer Mitternachtssonne. Weiter geht es direkt nach Bodø statt zurück nach Tromsø."
+  },
+  "ENBO": {
+   "level": 1,
+   "hl": "Bodø – Küstengebirge und der Gezeitenstrom Saltstraumen (Freeware)."
+  },
+  "ENVA": {
+   "hl": "Trondheim – Jo Erlend Sund (Aerosoft), deine Szenerie."
+  },
+  "ENGM": {
+   "hl": "Oslo – Jo Erlend Sund (Aerosoft), deine Szenerie."
+  },
+  "EKCH": {
+   "hl": "Kopenhagen mit deiner FlyTampa-Szenerie – die Øresundbrücke im Blick."
+  },
+  "EKRN": {
+   "hl": "Bornholm (World Update 5)."
+  },
+  "EPWA": {
+   "hl": "Warschau."
+  },
+  "EPKK": {
+   "hl": "Krakau."
+  },
+  "LKKV": {
+   "hl": "Karlsbad (World Update 14)."
+  },
+  "EDDM": {
+   "hl": "München mit deiner Aerosoft-Szenerie."
+  },
+  "EDDN": {
+   "hl": "Nürnberg mit deiner Captain7-Szenerie."
+  },
+  "EDDP": {
+   "hl": "Leipzig/Halle mit deiner Digital-Design-Szenerie."
+  },
+  "EDDB": {
+   "hl": "Berlin Brandenburg mit deiner Limesim-Szenerie."
+  },
+  "EDXW": {
+   "level": 1,
+   "tag": "Sylt",
+   "hl": "Sylt mit deiner FSDG-Szenerie – Anflug über das Wattenmeer."
+  },
+  "EDDW": {
+   "hl": "Bremen mit deiner FSDG-Szenerie."
+  },
+  "EDDV": {
+   "hl": "Hannover mit deiner iniBuilds-Szenerie."
+  },
+  "EDLP": {
+   "hl": "Paderborn – Jo Erlend Sund (Aerosoft), deine Szenerie."
+  },
+  "EDDF": {
+   "hl": "Frankfurt mit deiner Aerosoft-Szenerie."
+  },
+  "EDDK": {
+   "hl": "Köln/Bonn – Jo Erlend Sund (Aerosoft), deine Szenerie."
+  },
+  "EDDL": {
+   "hl": "Düsseldorf mit deiner MK-Studios-Szenerie – noch 30 NM bis Weeze."
+  }
+ },
+ "scenery": {
+  "SPZO": {
+   "status": "buy",
+   "product": "Cusco",
+   "dev": "FSDG",
+   "url": "https://www.fsaddoncompare.com/product/4709/Cusco",
+   "why": "Einzige ernsthafte Umsetzung: geneigte Bahn, Tal und Stadt; nativ für MSFS 2024.",
+   "rating": "4,59 · 41",
+   "price": "ca. 14–16 €"
+  },
+  "NZWN": {
+   "status": "buy",
+   "product": "Wellington International",
+   "dev": "Flightbeam",
+   "url": "https://www.fsaddoncompare.com/product/4301/NZWN-Wellington-Intl.",
+   "why": "Felsen und Küste bis an die Bahn, erstklassige Bodentexturen; für 2024 kompatibel.",
+   "rating": "4,91 · 209",
+   "price": "im Bundle mit Auckland 29,95 €"
+  },
+  "LYTV": {
+   "status": "buy",
+   "product": "Tivat",
+   "dev": "Pyreegue",
+   "url": "https://contrail.shop/products/lytv-tivat-airport-msfs",
+   "why": "Die Bucht von Kotor – für den Preis unschlagbar.",
+   "rating": "4,44 · 148",
+   "price": "ca. 5 €"
+  },
+  "KDCA": {
+   "status": "buy",
+   "product": "Washington National",
+   "dev": "Drzewiecki Design",
+   "url": "https://contrail.shop/products/kdca-washington-national-msfs",
+   "why": "River Visual mit passender Stadtkulisse; mit 351 Bewertungen sehr breit und gut bewertet.",
+   "rating": "4,61 · 351",
+   "price": "ab ca. 15 €"
+  },
+  "OPSD": {
+   "status": "buy",
+   "product": "Skardu International",
+   "dev": "VueloSimple",
+   "url": "https://www.fsaddoncompare.com/product/9513/OPSD-Skardu-International-Airport",
+   "why": "Günstig und bestbewertet; in MSFS 2024 nutzbar. Kostenlose Alternative: kychungdotcom.",
+   "rating": "4,68 · 19",
+   "price": "ca. 6–10 €",
+   "alt": {
+    "name": "kychungdotcom (Freeware)",
+    "url": "https://flightsim.to/file/36145/skardu-intl-airport-opsd"
+   }
+  },
+  "VNLK": {
+   "status": "buy",
+   "product": "Mt. Everest Airports Vol. 3",
+   "dev": "Aerosoft",
+   "url": "https://www.aerosoft.com/en/shop/flight/microsoft-flight-simulator/msfs-2024/sceneries/4728/aerosoft-mt.-everest-airports-vol.-3-namche-bazaar-to-basecamp",
+   "why": "Helipads das Khumbu-Tal hinauf bis zum Basislager – macht aus dem Lukla-Ausflug einen echten Himalaya-Flug. Lukla selbst ist im Basis-Sim handgefertigt.",
+   "rating": "5,0 · 3",
+   "price": "13,95 €"
+  },
+  "FACT": {
+   "status": "optional",
+   "product": "Cape Town",
+   "dev": "iniBuilds",
+   "url": "https://inibuilds.com/products/inibuilds-cape-town-fact-msfs-24",
+   "why": "12-m-Gelände des Tafelbergs, nativ 2024 – kaufen, sobald Bewertungen da sind.",
+   "price": "£14,99"
+  },
+  "VNKT": {
+   "status": "optional",
+   "product": "Tribhuvan International",
+   "dev": "Final Approach Design Studios",
+   "url": "https://inibuilds.com/products/final-approach-design-studios-tribhuvan-vnkt-msfs-2024",
+   "why": "Einziges natives 2024-Kathmandu mit Bahnneigung und Gelände. Sonst reicht die Freeware.",
+   "rating": "5,0 · 3",
+   "price": "ca. 22 €"
+  },
+  "LDDU": {
+   "status": "optional",
+   "product": "Dubrovnik",
+   "dev": "iniBuilds",
+   "url": "https://inibuilds.com/products/inibuilds-dubrovnik-lddu-msfs",
+   "why": "Gute Umsetzung der Adriaküste; für 2024 verifiziert.",
+   "rating": "4,71 · 23",
+   "price": "£14,99"
+  },
+  "SAWC": {
+   "status": "optional",
+   "product": "El Calafate",
+   "dev": "Simulación Extrema",
+   "url": "https://www.fsaddoncompare.com/product/1198/SAWC-El-Calafate-International-Airport",
+   "why": "Einzige Umsetzung – der Standard ist generisch.",
+   "rating": "4,61 · 58",
+   "price": "ab 12 €"
+  },
+  "SLLP": {
+   "status": "optional",
+   "product": "El Alto International",
+   "dev": "Sierrasim",
+   "url": "https://www.fsaddoncompare.com/product/10951/SLLP-EL-ALTO-INTERNATIONAL-AIRPORT",
+   "why": "Einzige native 2024-Version.",
+   "rating": "4,53 · 19",
+   "price": "ca. 10–17 €"
+  },
+  "OYSQ": {
+   "status": "optional",
+   "product": "Socotra",
+   "dev": "Azrsim",
+   "url": "https://fsaddoncompare.com/product/11222/Socotra-OYSQ",
+   "why": "Einzige echte Umsetzung der Insel, günstig.",
+   "rating": "5,0 · 1"
+  },
+  "FVFA": {
+   "status": "optional",
+   "product": "Victoria Falls",
+   "dev": "FSDG",
+   "url": "https://www.aerosoft.com/en/shop/flight/microsoft-flight-simulator/msfs-2020/msfs-sceneries/msfs-africa/4179/fsdg-victoria-falls-msfs",
+   "why": "Airport plus Fälle; für 2024 überarbeitet.",
+   "rating": "4,43 · 7"
+  },
+  "SKBO": {
+   "status": "optional",
+   "product": "El Dorado (MSFS 2024)",
+   "dev": "V Pilot Designs",
+   "url": "https://contrail.shop/products/vpilot-skbo-el-dorado-intl-airport-bogota-msfs2024",
+   "why": "Native 2024-Neuauflage, bestbewertet.",
+   "rating": "4,49 · 140",
+   "price": "ca. 22 $"
+  },
+  "EGJJ": {
+   "status": "optional",
+   "product": "Jersey",
+   "dev": "UK2000",
+   "url": "https://www.fsaddoncompare.com/product/3963/EGJJ-Jersey-Airport",
+   "why": "Für 2024 angepasst, günstig.",
+   "rating": "4,62 · 58",
+   "price": "ab 14 €"
+  },
+  "ROAH": {
+   "status": "freeware",
+   "product": "Naha Airport",
+   "dev": "KAZE & Mr. Kuro",
+   "url": "https://flightsim.to/file/5768/naha-bouhatei",
+   "why": "Hervorragende Freeware; Payware-Alternative MK Studios (4,91 · 35).",
+   "rating": "5,0 · 31"
+  },
+  "EKVG": {
+   "status": "freeware",
+   "product": "Vágar Airport Upgrade",
+   "dev": "superspud",
+   "url": "https://flightsim.to/addon/365/ekvg-vagar-airport-faroe-islands",
+   "why": "Bestbewertete Färöer-Freeware mit eigener 2024-Fassung.",
+   "rating": "5,0 · 85",
+   "installNote": "Die 2024-Fassung besteht laut Autor aus zwei Ordnern (Modellbibliothek und Airport) – beide in den Community-Ordner."
+  },
+  "VQPR": {
+   "status": "freeware",
+   "product": "Paro Airport Remake & Landmarks",
+   "dev": "kychungdotcom",
+   "url": "https://flightsim.to/file/9622/paro-valley-landmarks",
+   "why": "Gezielt für den Anflug gebaut: Einflug über Chhuzom, Paro Dzong als Landmarke, „Mr. Smith's House“ als Zielpunkt für Piste 15, Bahnneigung und A320-taugliche Taxiway T – in MSFS 2024 gepflegt (v7.5).",
+   "rating": "4,9 · 37",
+   "required": true,
+   "dependencies": [
+    {
+     "product": "Windy Things",
+     "dev": "trfsto",
+     "url": "https://flightsim.to/addon/14024/windy-things",
+     "required": false,
+     "note": "Steht auf der Seite als „Required“, laut Beschreibung aber nur für die Flaggen nötig – kosmetische Ergänzung: Ohne die Bibliothek fehlen die Flaggen."
+    }
+   ]
+  },
+  "VNKT_fw": {
+   "status": "freeware",
+   "product": "Tribhuvan International",
+   "dev": "KapilGyawali",
+   "url": "https://flightsim.to/addon/54393/tribhuwan-international-airport-kathmandu-nepal",
+   "why": "Eigene Terminals und Vorfelder; in MSFS 2024 bestätigt.",
+   "rating": "4,8 · 20",
+   "icao": "VNKT"
+  },
+  "SCGC": {
+   "status": "freeware",
+   "product": "Antarctica Airfield Pack",
+   "dev": "kychungdotcom",
+   "url": "https://flightsim.to/addon/2862/wilkins-runway-antarctica-ywks",
+   "why": "Union Glacier ist laut Add-on-Autoren nicht in der MSFS-Datenbank – dieses Paket liefert die Bahn.",
+   "rating": "4,8 · 28",
+   "required": true,
+   "dependencies": [
+    {
+     "product": "Winter Asset Pack",
+     "dev": "Usatix",
+     "url": "https://flightsim.to/addon/23158/winter-asset-pack",
+     "required": false,
+     "note": "Steht auf der Seite als „Required“, laut Beschreibung aber nur für die Pistenraupen nötig – kosmetische Ergänzung: Ohne das Pack fehlen die Raupen, die Bahn liefert das Hauptpaket."
+    }
+   ]
+  },
+  "FHSH": {
+   "status": "freeware",
+   "product": "St. Helena Airport",
+   "dev": "kychungdotcom",
+   "url": "https://flightsim.to/addon/21642/st-helena-airport",
+   "why": "Aktuell für 2024 gepflegt und inklusive Navdaten.",
+   "rating": "4,8 · 12",
+   "required": true,
+   "installNote": "Die Navdaten stecken im Paket als eigene Datei navdata-fhsh.bgl. Wer zusätzlich globale Navdaten eines Drittanbieters wie Navigraph installiert hat, soll diese Datei laut Autor aus dem Paket entfernen; ohne solche Navdaten bleibt sie drin."
+  },
+  "FHAW": {
+   "status": "freeware",
+   "product": "RAF Ascension Island",
+   "dev": "superspud",
+   "url": "https://flightsim.to/addon/364/fhaw-raf-ascension-island",
+   "why": "Einzige brauchbare Umsetzung; der Standard hat kein Satellitenbild – das Luftbild ist ein eigener, vom Autor empfohlener Download.",
+   "rating": "5,0 · 10",
+   "dependencies": [
+    {
+     "product": "Ascension Island Aerial Ground Image",
+     "url": "https://flightsim.to/addon/64419/ascension-island-aerial-ground-image",
+     "required": false,
+     "note": "Auf der FHAW-Seite als empfohlen verlinkt; die Luftbild-Seite selbst war beim Abruf am 24.09.2026 nur mit Titel lesbar."
+    }
+   ]
+  },
+  "ENTC": {
+   "status": "freeware",
+   "product": "Tromsø Airport Langnes",
+   "dev": "artogsta",
+   "url": "https://flightsim.to/addon/62060/entc-troms-airport-langnes",
+   "why": "Deutlich besser bewertet als die Payware von M'M (3,55 · 64) und laufend gepflegt.",
+   "rating": "5,0 · 83"
+  },
+  "ENBO": {
+   "status": "freeware",
+   "product": "Bodø Airport",
+   "dev": "WombiiActual",
+   "url": "https://flightsim.to/addon/5898/enbo-bodo-airport-and-air-station-bodo",
+   "why": "Einzige Umsetzung, sehr gut bewertet.",
+   "rating": "4,9 · 41",
+   "dependencies": [
+    {
+     "product": "Wombiiactual ENxx Asset pack",
+     "dev": "WombiiActual",
+     "url": "https://flightsim.to/addon/12208/wombiiactual-enxx-asset-pack",
+     "required": true
+    }
+   ],
+   "installNote": "Laut Produktseite stören Real Taxiways (Just Flight/Black Square), Andres3d-Airport-Lights und GSX-Jetways – für ENBO deaktivieren."
+  },
+  "SAWH": {
+   "status": "freeware",
+   "product": "Ushuaia",
+   "dev": "Chak991",
+   "url": "https://flightsim.to/addon/55371/sawh-malvinas-argentinas-international-airport-ushuaia",
+   "why": "Für 2020 und 2024; wertet Feuerland deutlich auf.",
+   "rating": "5,0 · 13",
+   "installNote": "Im ZIP nur einen der zwei Ordner entpacken: mit GSX-Jetways oder mit den Asobo-Standard-Jetways."
+  },
+  "SEGS": {
+   "status": "freeware",
+   "product": "Seymour Galápagos",
+   "dev": "David Munoz Jensen",
+   "url": "https://flightsim.to/addon/57748/seymour-galapagos-ecological-airport-baltra-island-ecuador",
+   "why": "Laut Autor in MSFS 2024 lauffähig; die einzige Payware (Ecuavirtual3d) ist nur für MSFS 2020 gelistet.",
+   "rating": "5,0 · 11",
+   "installNote": "Einige 3D-Objekte stammen laut Autor aus den World Updates I (Japan), II und X (USA) sowie XI (Kanada); zu MSFS 2024 schreibt er „tested not 100% but working“."
+  },
+  "FMEE": {
+   "status": "freeware",
+   "product": "Roland Garros (MSFS 2024)",
+   "dev": "ftsxfreelw",
+   "url": "https://flightsim.to/addon/87040/msfs2024-aeroport-roland-garros-la-reunion-oaci-fmee",
+   "why": "Eigene 2024-Fassung, sehr gut bewertet.",
+   "rating": "4,8 · 16",
+   "dependencies": [
+    {
+     "product": "EDHK Lights & Objects Developers Pack (Asset-Pack)",
+     "dev": "MrMo",
+     "url": "https://flightsim.to/addon/2549/edhk-lights-pack",
+     "required": true
+    },
+    {
+     "product": "Palm Tree Library",
+     "dev": "ChrisPiAviation",
+     "url": "https://flightsim.to/addon/32530/palm-tree-library",
+     "required": true
+    },
+    {
+     "product": "Animated Human 3D Models Library",
+     "dev": "superspud",
+     "url": "https://flightsim.to/addon/33166/animated-humans-library",
+     "required": true
+    },
+    {
+     "product": "totof- aircraft library v4",
+     "dev": "Totof33120",
+     "url": "https://flightsim.to/addon/17182/totof-aircraft-library-v1-1",
+     "required": true
+    },
+    {
+     "product": "MSFS 2020 object library 200+ models",
+     "dev": "colinj",
+     "url": "https://flightsim.to/addon/16007/msfs-object-library-with-150-models-ranging-from-towers-hangers-terminals-to-cones",
+     "required": true
+    },
+    {
+     "product": "Pascal's library",
+     "dev": "pascal62",
+     "url": "https://flightsim.to/addon/16930/pascal-s-library",
+     "required": true,
+     "note": "Die aktuelle Fassung ist nur für MSFS 2024."
+    },
+    {
+     "product": "Mikea.at - AssetPack",
+     "dev": "Mikea.at",
+     "url": "https://flightsim.to/addon/1923/mikea-at-assetpack",
+     "required": true
+    },
+    {
+     "product": "Windy Things",
+     "dev": "trfsto",
+     "url": "https://flightsim.to/addon/14024/windy-things",
+     "required": true
+    },
+    {
+     "product": "NamScene Libraries",
+     "dev": "v1rota7e",
+     "url": "https://flightsim.to/addon/40177/namscene-libraries",
+     "required": true
+    }
+   ],
+   "installNote": "Die Jetways stammen laut Autor und Nutzern aus der Standard-EDDM von World Update 18. Nutzer mit der SimWings-EDDM (Aerosoft) melden deshalb fehlende Jetways oder Konflikte – du besitzt Aerosoft München. Eine Variante mit EDLP-Jetways hat der Autor nur auf Nachfrage angeboten; als Download ist sie nicht sichtbar."
+  },
+  "RJOO": {
+   "status": "freeware",
+   "product": "Osaka Itami",
+   "dev": "KADO_t",
+   "url": "https://flightsim.to/file/51064/osaka-intl-airport-japan",
+   "why": "5,0 bei 127 Bewertungen (Stand 2023). Seit World Update 20 planiert die Szenerie laut Nutzern die Photogrammetrie rund um den Platz; das Zusatzpaket von Daikichi passt sie an WU20 an und gehört deshalb dazu.",
+   "rating": "5,0 · 127",
+   "dependencies": [
+    {
+     "product": "Osaka Itami RJOO Airport Enhanced (WU20-Fix)",
+     "dev": "Daikichi",
+     "url": "https://flightsim.to/addon/111381/osaka-itami-rjoo-airport-enhancement",
+     "required": true,
+     "note": "Passt die KADO_t-Szenerie an World Update 20 an (Autogen statt planierter Flächen, überarbeitetes Vorfeld) und setzt sie voraus; v1.3 vom 24.09.2026."
+    },
+    {
+     "product": "Japan airports Model Library KRC",
+     "dev": "karuchie",
+     "url": "https://flightsim.to/addon/34494/japanese-airports-model-library",
+     "required": true,
+     "note": "Vom Daikichi-Paket als Pflicht gelistet (für die Anflugbefeuerung)."
+    }
+   ]
+  },
+  "VILH": {
+   "status": "candidate",
+   "product": "VILH Leh",
+   "dev": "mottoth",
+   "url": "https://flightsim.to/addon/4551/vilh-leh",
+   "why": "Kostenloser Kandidat, keine Empfehlung: 4,8 aus erst 3 Bewertungen bei rund 4.000 Downloads – unter der Freeware-Schwelle. Laut Beschreibung Einbahnbetrieb (Landung 07, Start 25), neues Bahnprofil und PAPI; v1.0 ist fünf Jahre alt und als MSFS 2020/2024 getaggt, eine Aussage zum Betrieb in 2024 fehlt, und ein älterer Kommentar meldet Abstürze beim Spawnen am Platz.",
+   "rating": "4,8 · 3"
+  },
+  "LXGB": {
+   "status": "freeware",
+   "product": "Gibraltar Terrain Fix",
+   "dev": "THEOLI4D",
+   "url": "https://flightsim.to/addon/78639/gibraltar-terrain-fix-for-default-asobo-lxgb",
+   "why": "Korrigiert das Gelände am handgefertigten Standard-Airport.",
+   "rating": "4,6 · 13",
+   "addon": true
+  },
+  "NTTB": {
+   "status": "candidate",
+   "product": "Bora Bora Watermask",
+   "dev": "kohheiva",
+   "url": "https://flightsim.to/file/71784/bora-bora-nttb-watermask-enhancement",
+   "why": "Kostenloser Kandidat, keine Empfehlung: 4,6 aus erst 5 Bewertungen bei rund 2.000 Downloads – unter der Freeware-Schwelle. Ergänzt die handgefertigte Szene um Riff- und Korallenmuster, die laut Autor in MSFS 2024 nur verwaschen erscheinen; seit SU2 passen die Watermasks laut Autor aber nicht mehr genau, gegen Wasserflimmern empfiehlt er DLSS-Kantenglättung.",
+   "rating": "4,6 · 5",
+   "addon": true,
+   "dependencies": [
+    {
+     "product": "Static Boats 3D Model Library",
+     "dev": "superspud",
+     "url": "https://flightsim.to/addon/27907/static-boat-3d-model-library",
+     "required": true,
+     "note": "Laut Anleitung nötig, damit die mitgelieferten Boote erscheinen."
+    },
+    {
+     "product": "Moving Boats 3D Model Library",
+     "dev": "superspud",
+     "url": "https://flightsim.to/addon/27908/moving-boats-3d-model-library",
+     "required": true,
+     "note": "Laut Anleitung nötig, damit die mitgelieferten Boote erscheinen; getrennte Fassungen für MSFS 2020 und 2024."
+    }
+   ]
+  },
+  "VRMM": {
+   "status": "candidate",
+   "product": "Velana International",
+   "dev": "NSAJID",
+   "url": "https://flightsim.to/addon/96568/vrmm-velana-international-airport-maldives",
+   "why": "Kostenloser Kandidat, keine Empfehlung: 4,8 aus erst 4 Bewertungen bei rund 2.000 Downloads – unter der Freeware-Schwelle. Laut Beschreibung eigene Terminals, in v1.1 (19.08.2025) korrigierte Bahnlänge und eigene Bodenmarkierungen; als MSFS 2020/2024 getaggt, aber ohne Aussage von Autor oder Nutzern zum Betrieb in 2024.",
+   "rating": "4,8 · 4"
+  },
+  "LROP": {
+   "status": "freeware",
+   "product": "Henri Coandă International",
+   "dev": "rekinowy",
+   "url": "https://flightsim.to/addon/102093/lrop-bucharest-henri-coanda-international-airport-2025",
+   "why": "Aktuelles Layout, laufend gepflegt.",
+   "rating": "5,0 · 90"
+  },
+  "EYVI": {
+   "status": "freeware",
+   "product": "Vilnius International",
+   "dev": "Ch3rka",
+   "url": "https://flightsim.to/addon/7118/eyvi-vilnius-international",
+   "why": "Eigene Gebäude und Bahnneigung.",
+   "rating": "4,8 · 79"
+  },
+  "YPKG": {
+   "status": "freeware",
+   "product": "Kalgoorlie-Boulder + Super Pit",
+   "dev": "NZA Simulations",
+   "url": "https://flightsim.to/addon/1886/nza-simulations-nz-aus-discord-ypkg-kalgoorlie-boulder-scenery-pack-1-0",
+   "why": "Eigenes Terminal, RFDS-Hangar und die Super-Pit-Goldmine stecken im Hauptpaket; das zweite Paket im selben Download (Windsack-Patch) verlangt NZA ausdrücklich dazu.",
+   "rating": "4,9 · 25",
+   "dependencies": [
+    {
+     "product": "Windsack-Patch (zweites Paket im selben Download)",
+     "dev": "NZA Simulations",
+     "url": "https://flightsim.to/addon/1886/nza-simulations-nz-aus-discord-ypkg-kalgoorlie-boulder-scenery-pack-1-0",
+     "required": true,
+     "note": "Laut Beschreibung beide Pakete getrennt in den Community-Ordner – nur so funktionieren die Windsäcke. Die Super-Pit-Mine gehört zum Hauptpaket, nicht zum Patch."
+    }
+   ]
+  },
+  "VOCI": {
+   "status": "freeware",
+   "product": "Cochin International",
+   "dev": "martin.j",
+   "url": "https://flightsim.to/addon/36258/voci-cochin-international-airport",
+   "why": "Terminal 3 und lokale Details; benötigt die KRC-Bibliothek.",
+   "rating": "4,9 · 23",
+   "dependencies": [
+    {
+     "product": "Japan airports Model Library KRC",
+     "dev": "karuchie",
+     "url": "https://flightsim.to/addon/34494/japanese-airports-model-library",
+     "required": true,
+     "note": "Auf der Produktseite als Pflicht gelistet."
+    }
+   ]
+  },
+  "VQPR_fsdg": {
+   "icao": "VQPR",
+   "status": "optional",
+   "product": "Paro",
+   "dev": "FSDG",
+   "url": "https://www.aerosoft.com/en/shop/flight/microsoft-flight-simulator/msfs-2020/msfs-sceneries/msfs-asia/4801/fsdg-paro-msfs",
+   "why": "Seit Mai 2026 für MSFS 2020 und 2024: aktualisiertes Airport-Layout mit detaillierten Gebäuden. Anflug-Landmarken im Tal bewirbt FSDG nicht. Für den Anflug empfehle ich deshalb die Freeware, für einen schöneren Airport FSDG – beide ersetzen denselben Airport.",
+   "price": "19,99 €"
+  },
+  "FSIA": {
+   "status": "optional",
+   "product": "Seychelles",
+   "dev": "FSDG",
+   "url": "https://www.fsaddoncompare.com/search/FSIA",
+   "why": "Ganzer Archipel mit Außeninseln; in Foren werden 2024-Textur- und Riffprobleme gemeldet.",
+   "rating": "4,68 · 20"
+  },
+  "HTKJ": {
+   "status": "optional",
+   "product": "Kilimanjaro International",
+   "dev": "VueloSimple",
+   "url": "https://www.fsaddoncompare.com/search/HTKJ",
+   "why": "Für MSFS 2020 und 2024 gelistet, günstig; die Freeware von VForce hat erst 2 Bewertungen.",
+   "rating": "4,33 · 18"
+  },
+  "GCXO": {
+   "status": "optional",
+   "product": "Tenerife Norte – Los Rodeos",
+   "dev": "Wolkenblau",
+   "url": "https://flightsim.to/store/product/tenerife-norte-los-rodeos-gcxo",
+   "why": "Für MSFS 2020 und 2024, zuletzt im August 2026 aktualisiert.",
+   "rating": "4,4 · 14"
+  },
+  "WADD": {
+   "status": "optional",
+   "product": "Airport Bali",
+   "dev": "Aerosoft",
+   "url": "https://www.aerosoft.com/en/shop/flight/microsoft-flight-simulator/msfs-2020/msfs-sceneries/msfs-asia/3339/aerosoft-airport-bali",
+   "why": "Einzige detaillierte Umsetzung; offiziell nur für MSFS 2020 gelistet, läuft laut mehreren Nutzern aber in 2024 (letztes Update August 2023).",
+   "rating": "4,9 · 51 (Marketplace) · 4,2 · 20 (Aerosoft)"
+  },
+  "VHHH": {
+   "status": "optional",
+   "product": "Hong Kong International FS24",
+   "dev": "WF Scenery Studio",
+   "url": "https://contrail.shop/products/wf-scenery-studio-vhhh-hong-kong-international-msfs2024",
+   "why": "Nativ für 2024 und breit bewertet; iniBuilds Hongkong (März 2026) hat noch keine Bewertungen.",
+   "rating": "4,68 · 221"
+  },
+  "NTAA": {
+   "status": "optional",
+   "product": "Tahiti Faa'a",
+   "dev": "FLYNDRIVE4D",
+   "url": "https://secure.simmarket.com/flyndrive4d-tahiti-faaa-airport-msfs2024.phtml",
+   "why": "Günstig und nativ für 2024.",
+   "rating": "4,23 · 8",
+   "price": "ca. 15 €"
+  },
+  "MMMX": {
+   "status": "optional",
+   "product": "Mexico City International (MSFS 2024)",
+   "dev": "Flymex",
+   "url": "https://secure.simmarket.com/flymex-software-mexico-city-intl-airport-msfs24.phtml",
+   "why": "Einzige vollständige Umsetzung, mit eigener 2024-Version.",
+   "rating": "4,22 · 159",
+   "price": "ca. 19 €"
+  },
+  "NZAA": {
+   "status": "optional",
+   "product": "Auckland International",
+   "dev": "Flightbeam",
+   "url": "https://www.fsaddoncompare.com/product/4290/NZAA-Auckland-Intl.",
+   "why": "Nur im Bundle mit Wellington sinnvoll – allein kein besonderer Anflug.",
+   "rating": "4,67 · 220"
+  },
+  "VILH_sd": {
+   "icao": "VILH",
+   "status": "optional",
+   "product": "Leh Airbase",
+   "dev": "Sundownersim (Miltech)",
+   "url": "https://inibuilds.com/products/miltech-simulations-leh-airbase-kushok-bakula-rimpochee-vilh-msfs",
+   "why": "Detaillierter als die Freeware, aber erst wenige Bewertungen.",
+   "rating": "4,2 · 4"
+  },
+  "KJAC_df": {
+   "icao": "KJAC",
+   "status": "optional",
+   "product": "Jackson Hole v2",
+   "dev": "Dreamflight",
+   "url": "https://www.fsaddoncompare.com/product/9300/KJAC-Jackson-Hole-Airport-v2",
+   "why": "Nur wenn dir begehbare Innenräume wichtig sind – der handgefertigte Airport aus World Update 22 reicht.",
+   "rating": "5,0 · 40"
+  },
+  "ELLX__fw": {
+   "icao": "ELLX",
+   "status": "freeware",
+   "product": "ELLX - Luxemburg Airport",
+   "dev": "TheRedFox",
+   "url": "https://flightsim.to/addon/12973/luxemburg-airport",
+   "why": "Freeware von TheRedFox, 4,8 aus 63 Bewertungen und über 35.000 Downloads, als MSFS 2020/24 markiert und laut Nutzerbericht (06/2026) in 2024 gut, sofern man den separaten Terrain-Patch aus dem Download-Bereich mitinstalliert; die Atelic-Payware liegt nur bei 3,98 aus 47.",
+   "rating": "4,8 · 63 · 35.471 Downloads",
+   "dependencies": [
+    {
+     "product": "pg-ellx-terrainpatch (MSFS-2024-Terrain-Patch)",
+     "dev": "Panagiotis28",
+     "url": "https://flightsim.to/addon/12973/luxemburg-airport",
+     "required": true,
+     "note": "Eigene Datei im Download-Bereich derselben Seite; laut Beschreibung für MSFS 2024 zusätzlich in den Community-Ordner. Die Dateiliste selbst war beim Abruf am 24.09.2026 nicht einsehbar."
+    }
+   ]
+  },
+  "EGPE__pw": {
+   "icao": "EGPE",
+   "status": "optional",
+   "product": "Inverness Airport",
+   "dev": "UK2000 Scenery",
+   "url": "https://www.fsaddoncompare.com/product/7737/Inverness-Airport",
+   "rating": "4,7 · 63",
+   "price": "ab 14,03 €",
+   "why": "UK2000 Inverness (4,7 aus 63, MSFS 2020/2024, ab 14,03 €) ist gut, aber nicht nötig; kostenlose Alternative ist Scotflights eigene MSFS-2024-Version (4,8 aus erst 6 Bewertungen, Update 09/2026)."
+  },
+  "TIST__fw": {
+   "icao": "TIST",
+   "status": "freeware",
+   "product": "Cyril E. King Airport (TIST) Updated Scenery Project v1.5",
+   "dev": "lexuz2020 (AAE_Studioworks)",
+   "url": "https://flightsim.to/addon/17191/cyril-e-king-airport-tist-updated-scenery-project-v1-0",
+   "why": "Freeware von lexuz2020, 4,8 aus 20 Bewertungen, zwar nur für MSFS 2020 markiert, laut Nutzerantwort (04/2026) aber in MSFS 2024 nutzbar (drei Objekt-Bibliotheken nötig); die FeelThere-Payware (4,42 aus 37) ist nur für MSFS 2020 gelistet.",
+   "rating": "4,8 · 20 · 6.984 Downloads",
+   "dependencies": [
+    {
+     "product": "EDHK Lights & Objects Developers Pack (Asset-Pack)",
+     "dev": "MrMo",
+     "url": "https://flightsim.to/addon/2549/edhk-lights-pack",
+     "required": true
+    },
+    {
+     "product": "Windy Things",
+     "dev": "trfsto",
+     "url": "https://flightsim.to/addon/14024/windy-things",
+     "required": true
+    }
+   ],
+   "installNote": "Die dritte Pflicht-Bibliothek „Dave's 3D People Library“ ist auf flightsim.to nicht mehr abrufbar (HTTP 404 am 24.09.2026); eine offizielle Bezugsquelle ist offen."
+  },
+  "TUPJ__pw": {
+   "icao": "TUPJ",
+   "status": "optional",
+   "product": "TUPJ- TERRANCE B LETTSOME INTL",
+   "dev": "SLH Sim Designs",
+   "url": "https://www.fsaddoncompare.com/product/3502/TUPJ--TERRANCE-B-LETTSOME-INTL",
+   "rating": "4,66 · 19",
+   "price": "ab 10,53 €",
+   "why": "SLH-Payware (4,66 aus 19, MSFS 2020/2024, im Sale ab 10,53 €) ist gut, aber nicht nötig; die starke lexuz2020-Freeware (5,0 aus 11) ist nur für MSFS 2020 markiert und für 2024 unbestätigt."
+  },
+  "TQPF__pw": {
+   "icao": "TQPF",
+   "status": "optional",
+   "product": "TQPF - Clayton J Lloyd Intl Airport",
+   "dev": "SLH Sim Designs",
+   "url": "https://www.fsaddoncompare.com/product/4091/TQPF-Clayton-J-Lloyd-Intl-Airport",
+   "rating": "4,72 · 13",
+   "price": "ab 11,41 €",
+   "why": "SLH-Payware (4,72 aus 13, MSFS 2020/2024, im Sale ab 11,41 €) ist gut, aber nicht nötig; die lexuz2020-Freeware (5,0 aus 7) ist nur für MSFS 2020 markiert und für 2024 unbestätigt."
+  },
+  "TKPK__fw": {
+   "icao": "TKPK",
+   "status": "freeware",
+   "product": "R. L. Bradshaw Int.(TKPK) & Vance Amory Int.(TKPN) Updated Scenery Pack Project 2.5",
+   "dev": "lexuz2020 (AAE_Studioworks)",
+   "url": "https://flightsim.to/addon/9036/r-l-bradshaw-int-updated-scenery-project",
+   "why": "Freeware-Paket von lexuz2020 für TKPK und TKPN, 4,7 aus 14 Bewertungen und rund 8.900 Downloads, nur für MSFS 2020 markiert, laut Nutzerkommentar (09/2026) aber relativ gut nach MSFS 2024 übernommen; Alternative wäre die SLH-Payware (4,69 aus 13).",
+   "rating": "4,7 · 14 · 8.907 Downloads",
+   "installNote": "Beide Ordner des Pakets (TKPK und TKPN) in den Community-Ordner kopieren."
+  },
+  "TKPK__pw": {
+   "icao": "TKPK",
+   "status": "optional",
+   "product": "TKPK - Robert E Bradshaw Intl",
+   "dev": "SLH Sim Designs",
+   "url": "https://www.fsaddoncompare.com/product/5993/TKPK-Robert-E-Bradshaw-Intl",
+   "rating": "4,69 · 13",
+   "price": "ab 14,04 €",
+   "why": "Kostenpflichtige Alternative zur Freeware."
+  },
+  "TRPG__fw": {
+   "icao": "TRPG",
+   "status": "freeware",
+   "product": "TRPG - John A Osborne",
+   "dev": "Totof33120",
+   "url": "https://flightsim.to/addon/8259/trpg-john-a-osborne",
+   "why": "Freeware von Totof33120, 5,0 aus 13 Bewertungen, nur für MSFS 2020 markiert, laut Nutzerbericht (09/2026) aber in MSFS 2024 lauffähig; Alternative wäre die SLH-Payware (4,8 aus 12, ab 7,90 €).",
+   "rating": "5,0 · 13 · 4.750 Downloads"
+  },
+  "TRPG__pw": {
+   "icao": "TRPG",
+   "status": "optional",
+   "product": "TRPG - John A. Osborne Airport",
+   "dev": "SLH Sim Designs",
+   "url": "https://www.fsaddoncompare.com/product/8672/TRPG-John-A.-Osborne-Airport",
+   "rating": "4,8 · 12",
+   "price": "ab 7,90 €",
+   "why": "Kostenpflichtige Alternative zur Freeware."
+  },
+  "TFFR__pw": {
+   "icao": "TFFR",
+   "status": "optional",
+   "product": "TFFR- Pointe-à-Pitre International Airport",
+   "dev": "SLH Sim Designs",
+   "url": "https://www.fsaddoncompare.com/product/3504/TFFR--Pointe-%25C3%25A0-Pitre-International-Airport",
+   "rating": "4,45 · 44",
+   "price": "ab 13,16 €",
+   "why": "SLH-Payware (4,45 aus 44, MSFS 2020/2024, im Sale ab 13,16 €) ist gut, aber nicht nötig; die Freeware von wilfridlisandro (4,6 aus 10) ist nur für MSFS 2020 markiert und für 2024 unbestätigt."
+  },
+  "TDPD__pw": {
+   "icao": "TDPD",
+   "status": "optional",
+   "product": "TDPD - Douglas Charles Airport",
+   "dev": "SLH Sim Designs",
+   "url": "https://www.fsaddoncompare.com/product/4070/TDPD-Douglas-Charles-Airport",
+   "rating": "4,45 · 11",
+   "price": "ab 9,65 €",
+   "why": "SLH-Payware (4,45 aus 11, MSFS 2020/2024, im Sale ab 9,65 €) ist gut, aber nicht nötig; die lexuz2020-Freeware (4,9 aus 10) ist nur für MSFS 2020 markiert und für 2024 unbestätigt."
+  },
+  "TFFF__fw": {
+   "icao": "TFFF",
+   "status": "freeware",
+   "product": "TFFF Martinique Aime Cesaire FS2024",
+   "dev": "YvesP6",
+   "url": "https://flightsim.to/addon/90451/tfff-martinique-aime-cesaire",
+   "why": "Freeware von YvesP6 als eigene MSFS-2024-Version (5,0 aus 6; dieselbe Szenerie für MSFS 2020 hat 5,0 aus 13), Jetways laut Nutzerkommentar nur mit dem kostenlosen Aerosoft Paderborn; die neue FSDG-Payware (15,12 €) ist noch unbewertet.",
+   "rating": "5,0 · 6 (+ 13 der 2020-Fassung)",
+   "installNote": "Der Autor rät zu neun Objektbibliotheken (Liste in der Beschreibung, „it's better to download“). Jetways laut Nutzerkommentar nur mit dem kostenlosen Aerosoft Paderborn (EDLP) – das ist in deiner Sammlung."
+  },
+  "TBPB__fw": {
+   "icao": "TBPB",
+   "status": "freeware",
+   "product": "TBPB - Barbados Grantley Adams International Airport - Caribbean",
+   "dev": "Chak991",
+   "url": "https://flightsim.to/addon/44599/caribbean-tbpb-grantley-adams-international-airport-barbados",
+   "why": "Freeware von Chak991, 5,0 aus 13 Bewertungen und über 17.000 Downloads, als MSFS 2020/24 markiert und von 2024-Nutzern bestätigt (zwei Objekt-Bibliotheken nötig, fehlende Lichtmasten gemeldet); die Richer-Payware (4,58 aus 10) bringt keinen klaren Mehrwert.",
+   "rating": "5,0 · 13 · 17.578 Downloads",
+   "dependencies": [
+    {
+     "product": "MSFS 2020 object library 200+ models",
+     "dev": "colinj",
+     "url": "https://flightsim.to/addon/16007/msfs-object-library-with-150-models-ranging-from-towers-hangers-terminals-to-cones",
+     "required": true
+    },
+    {
+     "product": "Emerald Object Library",
+     "dev": "rotornut44",
+     "url": "https://flightsim.to/addon/8824/emerald-object-library",
+     "required": true
+    }
+   ]
+  },
+  "TBPB__pw": {
+   "icao": "TBPB",
+   "status": "optional",
+   "product": "TBPB Grantley Adams International Airport",
+   "dev": "Richer Simulations",
+   "url": "https://www.fsaddoncompare.com/product/6604/TBPB-Grantley-Adams-International-Airport",
+   "rating": "4,58 · 10",
+   "price": "ab 10,52 €",
+   "why": "Kostenpflichtige Alternative zur Freeware."
+  },
+  "FVFA__pw": {
+   "icao": "FVFA",
+   "status": "optional",
+   "product": "Victoria Falls Scenery Package - Animated Falls & Rapids, 4 Bush Strips, 30 Helipads",
+   "dev": "Jeppeson2001",
+   "url": "https://www.fsaddoncompare.com/product/780/Victoria-Falls-Scenery-Package-Animated-Falls-%2526-Rapids%252C-4-Bush-Strips%252C-30-Helipads",
+   "rating": "4,91 · 120",
+   "price": "ab 12,27 €",
+   "why": "In MSFS 2024 nicht handgefertigt; der FSDG-Flughafen hat nur 4,43 aus 7 Bewertungen, lohnend ist optional das Wasserfall-Paket von Jeppeson2001 (4,91 aus 120 laut fsaddoncompare, für MSFS 2020/2024 gelistet, 2024-Texturfehler laut Entwickler mit v1.5 behoben), das laut Beschreibung aber vor allem Busch- und Heli-Flüge rund um die Fälle aufwertet, nicht den Flughafen."
+  },
+  "SMJP__fw": {
+   "icao": "SMJP",
+   "status": "freeware",
+   "product": "SMJP-Johan Adolf Pengel International Airport -CUSTOM TERMINAL MODEL",
+   "dev": "Kevin1995 (Kevin Klein)",
+   "url": "https://flightsim.to/addon/94126/smjp-johan-adolf-pengel-international-airport",
+   "why": "Freeware von Kevin1995 mit eigenem Terminalmodell, 4,6 aus 9 Bewertungen und 2.460 Downloads, laut Autor und mehreren Nutzern mit eigener MSFS-2024-Version lauffähig; Payware gibt es nicht.",
+   "rating": "4,6 · 9 · 2.460 Downloads",
+   "dependencies": [
+    {
+     "product": "EDHK Lights & Objects Developers Pack (Asset-Pack)",
+     "dev": "MrMo",
+     "url": "https://flightsim.to/addon/2549/edhk-lights-pack",
+     "required": true
+    },
+    {
+     "product": "MSFS 2020 object library 200+ models",
+     "dev": "colinj",
+     "url": "https://flightsim.to/addon/16007/msfs-object-library-with-150-models-ranging-from-towers-hangers-terminals-to-cones",
+     "required": true
+    },
+    {
+     "product": "Wombiiactual ENxx Asset pack",
+     "dev": "WombiiActual",
+     "url": "https://flightsim.to/addon/12208/wombiiactual-enxx-asset-pack",
+     "required": true
+    }
+   ],
+   "installNote": "Bodentexturen stammen laut Autor aus World-Update-Airports; bei Texturfehlern müssen MUCL, ENRA, ESNQ und SBSN installiert sein."
+  },
+  "SOCA__pw": {
+   "icao": "SOCA",
+   "status": "optional",
+   "product": "SOCA - Cayenne Félix Éboue",
+   "dev": "SLH Sim Designs",
+   "url": "https://www.fsaddoncompare.com/product/10504/SOCA-Cayenne-F%25C3%25A9lix-%25C3%2589boue",
+   "rating": "5,0 · 15",
+   "price": "ab 14,91 €",
+   "why": "Payware von SLH Sim Designs, 5,0 aus 15 Bewertungen, für MSFS 2020/2024 ab 14,91 € – gut, aber nicht nötig; eine Freeware-Szenerie gibt es nicht (nur GSX-Profile)."
+  },
+  "SBCY__fw": {
+   "icao": "SBCY",
+   "status": "freeware",
+   "product": "SBCY - Cuiabá International Airport",
+   "dev": "reichert_bruno",
+   "url": "https://flightsim.to/addon/101291/sbcy-cuiaba-international-airport",
+   "why": "Freeware von reichert_bruno, 4,9 aus 17 Bewertungen, 3.521 Downloads, laut Autor MSFS-2024-kompatibel und zuletzt am 17.05.2026 aktualisiert.",
+   "rating": "4,9 · 17 · 3.521 Downloads",
+   "installNote": "Laut Autor müssen World Update Brasilien und Japan installiert bzw. aktiv sein; eine andere SBCY-Szenerie vorher entfernen."
+  },
+  "SBBR__fw": {
+   "icao": "SBBR",
+   "status": "freeware",
+   "product": "SBBR - Brasília International Airport - DF - Brazil",
+   "dev": "FSoares & RZanolli",
+   "url": "https://flightsim.to/addon/68384/sbbr-braslia-international-airport-df-brazil",
+   "why": "Freeware von FSoares & RZanolli, 5,0 aus 83 Bewertungen, 30.205 Downloads, als MSFS 2020/24 getaggt (v1.2.2 vom 10.04.2025).",
+   "rating": "5,0 · 83 · 30.205 Downloads",
+   "installNote": "Nur eine der zwei Dateien installieren: für MSFS 2024 laut Autor die Variante „photogrammetry ON“ (passend zur WU19-Photogrammetrie); die andere verursacht dort laut Autor Rollweg-Fehler."
+  },
+  "SUMU__fw": {
+   "icao": "SUMU",
+   "status": "freeware",
+   "product": "Aeropuerto Internacional de Carrasco - SUMU - Montevideo, Uruguay",
+   "dev": "unTopo",
+   "url": "https://flightsim.to/addon/1935/aeropuerot-internacional-de-carrasco-sumu-montevideo-uruguay",
+   "why": "Freeware von unTopo, 4,8 aus 24 Bewertungen, 15.688 Downloads; nur als MSFS 2020 getaggt (Stand 2021), aber laut zwei Nutzerberichten in MSFS 2024 lauffähig – am besten zusammen mit dem Runway-07/25-Fix von ironlemon.",
+   "rating": "4,8 · 24 · 15.688 Downloads",
+   "dependencies": [
+    {
+     "product": "SUMU Montevideo (by unTopo) Runway 07/25 fix",
+     "dev": "ironlemon",
+     "url": "https://flightsim.to/addon/88272/sumu-montevideo-by-untopo-runway-07-25-fix",
+     "required": false,
+     "note": "Stellt die Bahnbezeichnung von 06/24 auf die reale 07/25 um, auch auf den Rollwegschildern; nach der unTopo-Szenerie installieren."
+    }
+   ]
+  },
+  "SAZB__pw": {
+   "icao": "SAZB",
+   "status": "optional",
+   "product": "SAZB Bahia Blanca Airport",
+   "dev": "Simulación Extrema",
+   "url": "https://www.fsaddoncompare.com/product/6390/SAZB-Bahia-Blanca-Airport",
+   "rating": "4,8 · 13",
+   "price": "ab 11,40 €",
+   "why": "Payware von Simulación Extrema, 4,8 aus 13 Bewertungen, für MSFS 2020/2024 ab 11,40 €; eine Freeware-Szenerie gibt es nicht."
+  },
+  "SAZS__pw": {
+   "icao": "SAZS",
+   "status": "optional",
+   "product": "SAZS Bariloche International Airport",
+   "dev": "Simulación Extrema",
+   "url": "https://www.fsaddoncompare.com/product/1052/SAZS-Bariloche-International-Airport",
+   "rating": "4,71 · 48",
+   "price": "ab 13,15 €",
+   "why": "Payware von Simulación Extrema, 4,71 aus 48 Bewertungen, für MSFS 2020/2024 ab 13,15 € – schöne Ergänzung, aber nicht nötig; eine Freeware-Szenerie des Flughafens gibt es nicht."
+  },
+  "EGYP__fw": {
+   "icao": "EGYP",
+   "status": "freeware",
+   "product": "EGYP - RAF Mount Pleasant",
+   "dev": "Flak",
+   "url": "https://flightsim.to/addon/60881/egyp-raf-mount-pleasant",
+   "why": "Freeware von Flak, 5,0 aus 11 Bewertungen, 7.693 Downloads. Dass sie in MSFS 2024 läuft, beruht auf einem Nutzerbericht, den der Autor begrüßt; getestet hat er v1.9.1 laut Changelog aber nur in MSFS 2020 (natives 2024-Update noch geplant).",
+   "rating": "5,0 · 11 · 7.693 Downloads",
+   "dependencies": [
+    {
+     "product": "EGQS - RAF Lossiemouth (UK)",
+     "dev": "nickb007",
+     "url": "https://flightsim.to/addon/27378/raf-lossiemouth-egqs",
+     "required": true,
+     "note": "Liefert Modelle für EGYP; deren eigene Abhängigkeiten braucht es laut EGYP-Autor nicht."
+    }
+   ]
+  },
+  "SCCI__pw": {
+   "icao": "SCCI",
+   "status": "optional",
+   "product": "SCCI Carlos Ibanez del Campo Punta Arenas",
+   "dev": "Simulación Extrema",
+   "url": "https://www.fsaddoncompare.com/product/1004/SCCI-Carlos-Ibanez-del-Campo-Punta-Arenas",
+   "rating": "4,45 · 38",
+   "price": "ab 12,27 €",
+   "why": "Payware von Simulación Extrema, 4,45 aus 38 Bewertungen, für MSFS 2020/2024 ab 12,27 €; eine Freeware-Szenerie gibt es nicht."
+  },
+  "SCBA__pw": {
+   "icao": "SCBA",
+   "status": "optional",
+   "product": "SCBA Balmaceda Airport",
+   "dev": "Simulación Extrema",
+   "url": "https://www.fsaddoncompare.com/product/986/SCBA-Balmaceda-Airport",
+   "rating": "4,6 · 21",
+   "price": "ab 11,40 €",
+   "why": "Payware von Simulación Extrema, 4,6 aus 21 Bewertungen, für MSFS 2020/2024 ab 11,40 €; die Freeware 'SCBA Rework' hat nur 4,8 aus 2 und ist nur für MSFS 2020 getaggt."
+  },
+  "SCIE__pw": {
+   "icao": "SCIE",
+   "status": "optional",
+   "product": "SCIE Carriel Sur International Airport",
+   "dev": "Simulación Extrema",
+   "url": "https://www.fsaddoncompare.com/product/1000/SCIE-Carriel-Sur-International-Airport",
+   "rating": "4,73 · 32",
+   "price": "ab 13,00 €",
+   "why": "Payware von Simulación Extrema, 4,73 aus 32 Bewertungen, für MSFS 2020/2024 ab 13,00 €; das Freeware-Enhancement von jagdwolf ist unbewertet."
+  },
+  "SCEL__pw": {
+   "icao": "SCEL",
+   "status": "optional",
+   "product": "SCEL - Santiago Intl.",
+   "dev": "LVFR",
+   "url": "https://www.fsaddoncompare.com/product/1249/SCEL-Santiago-Intl.",
+   "rating": "4,33 · 206",
+   "price": "ab 8,95 €",
+   "why": "Payware von LVFR, 4,33 aus 206 Bewertungen, für MSFS 2020/2024 ab 8,95 € (Sale im LVFR-Shop); Freeware gibt es nur als kleine Ergänzungen (Nachtlicht, Gebäude, Statics)."
+  },
+  "SPJC__pw": {
+   "icao": "SPJC",
+   "status": "optional",
+   "product": "SPJC - Jorge Chavez Airport, Lima-Peru Version 2",
+   "dev": "Low-End PC",
+   "url": "https://www.fsaddoncompare.com/product/4125/SPJC-Jorge-Chavez-Airport%252C-Lima-Peru-Version-2",
+   "rating": "4,91 · 12",
+   "price": "ab 9,11 €",
+   "why": "Payware 'Version 2' von Low-End PC, 4,91 aus 12 Bewertungen, für MSFS 2020/2024 ab 9,11 €; die Freeware von jorgechin (4,4 aus 28) ist nur für MSFS 2020 und seit 2022 ohne Update."
+  },
+  "SKCL__pw": {
+   "icao": "SKCL",
+   "status": "optional",
+   "product": "SKCL - Alfonso Bonilla Aragon Intl.",
+   "dev": "TEIKOF Studio",
+   "url": "https://www.fsaddoncompare.com/product/4150/SKCL-Alfonso-Bonilla-Aragon-Intl.",
+   "rating": "4,88 · 25",
+   "price": "ab 8,16 €",
+   "why": "Payware von TEIKOF Studio, 4,88 aus 25 Bewertungen, für MSFS 2020/2024 ab 8,16 € (Sale); eine Freeware-Szenerie gibt es nicht."
+  },
+  "MROC__pw": {
+   "icao": "MROC",
+   "status": "optional",
+   "product": "MROC Juan Santamaria International Airport",
+   "dev": "V Pilot Designs",
+   "url": "https://www.fsaddoncompare.com/product/6996/MROC-Juan-Santamaria-International-Airport",
+   "rating": "4,5 · 56",
+   "price": "ab 12,27 €",
+   "why": "Payware von V Pilot Designs, 4,5 aus 56 Bewertungen, bei fsaddoncompare nur für MSFS 2020 gelistet, aber eine MSFS-2024-Erweiterung (Nyyoko, Aug. 2026) setzt sie ausdrücklich voraus; die Freeware von Alvargas (4,4 aus 28) wurde seit 2021 nicht aktualisiert."
+  },
+  "MGGT__pw": {
+   "icao": "MGGT",
+   "status": "optional",
+   "product": "MGGT LA AURORA INTERNATIONAL AIRPORT",
+   "dev": "Sierrasim Simulation",
+   "url": "https://www.fsaddoncompare.com/product/4063/MGGT-LA-AURORA-INTERNATIONAL-AIRPORT",
+   "rating": "4,47 · 60",
+   "price": "ab 10,44 €",
+   "why": "Payware von Sierrasim (V2), 4,47 aus 60 Bewertungen, für MSFS 2020 und 2024 gelistet; eine Freeware-Szenerie für La Aurora gibt es nicht."
+  },
+  "MWCR__pw": {
+   "icao": "MWCR",
+   "status": "optional",
+   "product": "MWCR - Owen Roberts Airport",
+   "dev": "VueloSimple",
+   "url": "https://www.fsaddoncompare.com/product/4110/MWCR-Owen-Roberts-Airport",
+   "rating": "4,73 · 33",
+   "price": "ab 6,34 €",
+   "why": "Payware von VueloSimple, 4,73 aus 33 Bewertungen, für MSFS 2020 und 2024 gelistet; die Freeware von AVA Simulations hat nur 3 Bewertungen und stammt von 2022."
+  },
+  "MBPV__fw": {
+   "icao": "MBPV",
+   "status": "freeware",
+   "product": "MBPV-Providenciales International Airport + Executive terminal",
+   "dev": "Chak991",
+   "url": "https://flightsim.to/addon/54935/turks-and-caicos-island-providenciales-international-airport",
+   "why": "Freeware von Chak991, 4,9 aus 20 Bewertungen und 8.538 Downloads, mehrere Nutzer bestätigen den Einsatz in MSFS 2024.",
+   "rating": "4,9 · 20 · 8.538 Downloads",
+   "dependencies": [
+    {
+     "product": "Mikea.at - AssetPack",
+     "dev": "Mikea.at",
+     "url": "https://flightsim.to/addon/1923/mikea-at-assetpack",
+     "required": true
+    },
+    {
+     "product": "EDHK Lights & Objects Developers Pack (Asset-Pack)",
+     "dev": "MrMo",
+     "url": "https://flightsim.to/addon/2549/edhk-lights-pack",
+     "required": true
+    }
+   ]
+  },
+  "MMMD__pw": {
+   "icao": "MMMD",
+   "status": "optional",
+   "product": "MMMD Merida International Airport",
+   "dev": "Simulación Extrema",
+   "url": "https://www.fsaddoncompare.com/product/6385/MMMD-Merida-International-Airport",
+   "rating": "4,52 · 19",
+   "price": "ab 12,27 €",
+   "why": "Payware von Simulación Extrema, 4,52 aus 19 Bewertungen, für MSFS 2020 und 2024 gelistet; die Freeware von HSSsimulations (4,4 aus 7) ist von 2022 und nicht für 2024 bestätigt."
+  },
+  "MMGL__fw": {
+   "icao": "MMGL",
+   "status": "freeware",
+   "product": "MMGL - Guadalajara International Airport",
+   "dev": "edu0811",
+   "url": "https://flightsim.to/addon/78694/guadalajara-international-airport",
+   "why": "Freeware von edu0811, 4,8 aus 12 Bewertungen und 5.215 Downloads, laut Nutzerbewertung in MSFS 2020 und 2024 gut nutzbar.",
+   "rating": "4,8 · 12 · 5.215 Downloads",
+   "dependencies": [
+    {
+     "product": "Guadalajara [MMGL] Airport SatelliteView",
+     "dev": "edu0811",
+     "url": "https://flightsim.to/addon/79090/guadalajara-airport-satellite",
+     "required": true,
+     "note": "Eigenes Satellitenbild zur Szenerie (Stand März 2024), eigener Ordner im Community-Ordner."
+    }
+   ]
+  },
+  "MMSD__fw": {
+   "icao": "MMSD",
+   "status": "freeware",
+   "product": "(MMSD) San Jose del Cabo for MSFS 2024",
+   "dev": "HSSsimulations",
+   "url": "https://flightsim.to/addon/96268/mmsd-san-jose-del-cabo-for-msfs-2024",
+   "why": "Native MSFS-2024-Freeware von HSSsimulations, 4,9 aus 9 Bewertungen (2025), während die Payware von MSFScenerybuilders nur 2,37 aus 12 erreicht.",
+   "rating": "4,9 · 9 · 2.837 Downloads"
+  },
+  "MMHO__fw": {
+   "icao": "MMHO",
+   "status": "freeware",
+   "product": "(MMHO) Hermosillo International Airport, Mexico",
+   "dev": "HSSsimulations",
+   "url": "https://flightsim.to/addon/29413/mmho-hermosillo-international-airport-mexico",
+   "why": "Freeware von HSSsimulations, 4,6 aus 14 Bewertungen, der Autor schreibt, dass er sie selbst in MSFS 2024 nutzt (allerdings ohne Support); Payware gibt es nicht.",
+   "rating": "4,6 · 14 · 4.956 Downloads"
+  },
+  "KSLC__fw": {
+   "icao": "KSLC",
+   "status": "freeware",
+   "product": "Salt Lake City International, Custom Scenery",
+   "dev": "Desparoto & b757",
+   "url": "https://flightsim.to/addon/82117/salt-lake-city-international-custom-scenery",
+   "why": "Freeware von Desparoto (Gebäude von b757), 4,8 aus 14 Bewertungen, zuletzt im Februar 2026 aktualisiert und laut Autorenhinweis und Nutzern in MSFS 2024 lauffähig.",
+   "rating": "4,8 · 14 · 3.951 Downloads",
+   "dependencies": [
+    {
+     "product": "Japan airports Model Library KRC",
+     "dev": "karuchie",
+     "url": "https://flightsim.to/addon/34494/japanese-airports-model-library",
+     "required": true,
+     "note": "Auf der Produktseite als Pflicht gelistet."
+    }
+   ]
+  },
+  "PKMJ__fw": {
+   "icao": "PKMJ",
+   "status": "freeware",
+   "product": "PKMJ Majuro 24",
+   "dev": "Mountainair",
+   "url": "https://flightsim.to/addon/96835/pkmj-majuro-24",
+   "why": "Freeware von Mountainair mit eigener MSFS-2024-Fassung (5,0 aus 5), die 2020-Version derselben Szenerie hat 4,9 aus 12 Bewertungen.",
+   "rating": "5,0 · 5 (+ 4,9 · 12 der 2020-Fassung)"
+  },
+  "PGUM__fw": {
+   "icao": "PGUM",
+   "status": "freeware",
+   "product": "PGUM Guam Won Pat International Agana 24",
+   "dev": "Mountainair",
+   "url": "https://flightsim.to/addon/100644/pgum-guam-agana-24",
+   "why": "Freeware von Mountainair mit eigener MSFS-2024-Fassung (5,0 aus 3), die 2020-Version derselben Szenerie hat 4,9 aus 8 Bewertungen und 8.580 Downloads.",
+   "rating": "5,0 · 3 (+ 4,9 · 8 der 2020-Fassung)",
+   "dependencies": [
+    {
+     "product": "totof library object 2020 et 2024",
+     "dev": "Totof33120",
+     "url": "https://flightsim.to/addon/17179/totof-library-object-v1-1",
+     "required": true,
+     "note": "Getrennte Dateien für MSFS 2020 und 2024 – die 2024-Datei wählen."
+    },
+    {
+     "product": "Emerald Object Library",
+     "dev": "rotornut44",
+     "url": "https://flightsim.to/addon/8824/emerald-object-library",
+     "required": true,
+     "note": "Laut Beschreibung nötig; dort zusammen mit World Updates und der UK2000-Bibliothek als Abhängigkeit genannt."
+    }
+   ],
+   "installNote": "Laut Beschreibung außerdem World Updates und die UK2000-Bibliothek (kostenlos im Marketplace)."
+  },
+  "AYPY__fw": {
+   "icao": "AYPY",
+   "status": "freeware",
+   "product": "AYPY Port Moresby Jacksons International 24",
+   "dev": "Mountainair",
+   "url": "https://flightsim.to/addon/88382/aypy-port-moresby-jacksons-international",
+   "why": "Freeware von Mountainair mit eigener MSFS-2024-Fassung (4,9 aus 8, im Juli 2026 aktualisiert), die 2020-Version hat 4,7 aus 15 Bewertungen; Payware gibt es nicht.",
+   "rating": "4,9 · 8 · 2.604 Downloads",
+   "dependencies": [
+    {
+     "product": "kev-library",
+     "dev": "TheReal.K3V",
+     "url": "https://flightsim.to/addon/90419/kev-library",
+     "required": true,
+     "note": "Nur für MSFS 2024 getaggt."
+    },
+    {
+     "product": "Emerald Object Library",
+     "dev": "rotornut44",
+     "url": "https://flightsim.to/addon/8824/emerald-object-library",
+     "required": true
+    },
+    {
+     "product": "totof library object 2020 et 2024",
+     "dev": "Totof33120",
+     "url": "https://flightsim.to/addon/17179/totof-library-object-v1-1",
+     "required": true,
+     "note": "Getrennte Dateien für MSFS 2020 und 2024 – die 2024-Datei wählen."
+    }
+   ],
+   "installNote": "Laut Autor müssen alle Szenerie-Updates einschließlich World Update 21 installiert sein, sonst fehlen Objekte."
+  },
+  "NLWW__fw": {
+   "icao": "NLWW",
+   "status": "freeware",
+   "product": "NLWW - Hihifo Airport, Wallis and Futuna.",
+   "dev": "CoolGunS",
+   "url": "https://flightsim.to/addon/78539/nlww-hihifo-airport-french-polynesia-with-gsx-profile-by-goldmund",
+   "why": "Freeware von CoolGunS, 4,5 aus 10 Bewertungen und ca. 7K Downloads, laut Autor für MSFS 2024 konvertiert (v2.9, Update 16.06.2026); keine Payware, nicht handgefertigt.",
+   "rating": "4,5 · 10 · 6.659 Downloads",
+   "dependencies": [
+    {
+     "product": "MSFS 2020 object library 200+ models",
+     "dev": "colinj",
+     "url": "https://flightsim.to/addon/16007/msfs-object-library-with-150-models-ranging-from-towers-hangers-terminals-to-cones",
+     "required": true
+    },
+    {
+     "product": "Mikea.at - AssetPack",
+     "dev": "Mikea.at",
+     "url": "https://flightsim.to/addon/1923/mikea-at-assetpack",
+     "required": true
+    },
+    {
+     "product": "Emerald Object Library",
+     "dev": "rotornut44",
+     "url": "https://flightsim.to/addon/8824/emerald-object-library",
+     "required": true
+    },
+    {
+     "product": "Ethnicfs Misc Scenery Objects",
+     "dev": "ethnicfs",
+     "url": "https://flightsim.to/addon/45163/ethnicfs-misc-scenery-objects",
+     "required": true
+    },
+    {
+     "product": "totof library object 2020 et 2024",
+     "dev": "Totof33120",
+     "url": "https://flightsim.to/addon/17179/totof-library-object-v1-1",
+     "required": true,
+     "note": "Getrennte Dateien für MSFS 2020 und 2024 – die 2024-Datei wählen."
+    },
+    {
+     "product": "totof- aircraft library v4",
+     "dev": "Totof33120",
+     "url": "https://flightsim.to/addon/17182/totof-aircraft-library-v1-1",
+     "required": true
+    }
+   ],
+   "installNote": "Laut Autor muss der Sim alle World Updates und POIs installiert haben."
+  },
+  "NSTU__fw": {
+   "icao": "NSTU",
+   "status": "freeware",
+   "product": "NSTU Pago Pago Intl (20 & 24)",
+   "dev": "Mountainair",
+   "url": "https://flightsim.to/addon/42879/pago-pago-nstu",
+   "why": "Freeware von Mountainair, 4,9 aus 8 Bewertungen und ca. 4K Downloads, mit eigens neu gebauter MSFS-2024-Version (Update 09.08.2026); keine Payware, nicht handgefertigt.",
+   "rating": "4,9 · 8 · 3.955 Downloads",
+   "installNote": "Das ZIP enthält je einen Ordner für MSFS 2020 und 2024 – nur den 2024-Ordner verwenden. Objekte erscheinen laut Autor nur mit allen World Updates und der UK2000-Bibliothek (kostenlos im Marketplace)."
+  },
+  "NFFN__pw": {
+   "icao": "NFFN",
+   "status": "optional",
+   "product": "Nadi (NFFN)",
+   "dev": "iniBuilds",
+   "url": "https://www.fsaddoncompare.com/product/6182/Nadi-NFFN",
+   "rating": "4,34 · 56",
+   "price": "ab 8,77 €",
+   "why": "iniBuilds Nadi (4,34 aus 56, für MSFS 2020/2024) ist die beste Aufwertung, aber kein Muss. Die Mountainair-Freeware V5 (4,4 aus 11) liegt knapp unter der Freeware-Schwelle von 4,5."
+  },
+  "NVVV__fw": {
+   "icao": "NVVV",
+   "status": "freeware",
+   "product": "NVVV - Bauerfield Intl, Port Vila",
+   "dev": "kychungdotcom",
+   "url": "https://flightsim.to/addon/35138/bauerfield-intl-port-vila-nvvv",
+   "why": "Freeware von kychungdotcom, 4,8 aus 5 Bewertungen bei starken ca. 8K Downloads, MSFS-2024-Version laut Autor vorhanden (v1.7, Update 11.04.2026); keine Payware, nicht handgefertigt.",
+   "rating": "4,8 · 5 · 7.877 Downloads"
+  },
+  "NWWW__pw": {
+   "icao": "NWWW",
+   "status": "optional",
+   "product": "NWWW LA TONTOUTA INTL AIRPORT V2",
+   "dev": "Sierrasim Simulation",
+   "url": "https://www.fsaddoncompare.com/product/4062/NWWW-LA-TONTOUTA-INTL-AIRPORT-V2",
+   "rating": "4,63 · 31",
+   "price": "ab 9,83 €",
+   "why": "Payware von Sierrasim (V2), 4,63 aus 31 Bewertungen, für MSFS 2020 und 2024 ab 9,83 €; auf flightsim.to gibt es dazu nur GSX-Profile und die Sierrasim-Store-Versionen, keine Freeware-Szenerie."
+  },
+  "NZCH__pw": {
+   "icao": "NZCH",
+   "status": "optional",
+   "product": "NZCH Christchurch International Airport",
+   "dev": "NZA Simulations",
+   "url": "https://www.fsaddoncompare.com/product/2854/NZCH-Christchurch-International-Airport",
+   "rating": "4,6 · 45",
+   "price": "ab 22,80 €",
+   "why": "Payware von NZA Simulations, 4,6 aus 45 Bewertungen, MSFS 2020/2024, ab 22,80 €; die Freeware (Redbaron601, 5,0 aus 2) ist zu schwach belegt."
+  },
+  "YMHB__pw": {
+   "icao": "YMHB",
+   "status": "optional",
+   "product": "YMHB Hobart International Airport",
+   "dev": "NZA Simulations",
+   "url": "https://www.fsaddoncompare.com/product/2834/YMHB-Hobart-International-Airport",
+   "rating": "4,49 · 39",
+   "price": "ab 18,24 €",
+   "why": "Payware von NZA Simulations, 4,49 aus 39 Bewertungen, MSFS 2020/2024, ab 18,24 €; die Freeware (Redbaron, 5,0 aus 1) ist zu schwach belegt."
+  },
+  "YBCG__pw": {
+   "icao": "YBCG",
+   "status": "optional",
+   "product": "YBCG Gold Coast Airport",
+   "dev": "Orbx",
+   "url": "https://www.fsaddoncompare.com/product/5728/YBCG-Gold-Coast-Airport",
+   "rating": "4,6 · 13",
+   "price": "ab 14,03 €",
+   "why": "Payware von Orbx, 4,6 aus 13 Bewertungen, MSFS 2020/2024, ab 14,03 €; die Freeware-Alternativen sind nur für MSFS 2020 getaggt und kaum bewertet."
+  },
+  "YBHM__pw": {
+   "icao": "YBHM",
+   "status": "optional",
+   "product": "Hamilton Island & Reefworld Bundle",
+   "dev": "AUscene",
+   "url": "https://www.fsaddoncompare.com/product/4410/Hamilton-Island-%2526-Reefworld-Bundle",
+   "rating": "4,6 · 32",
+   "price": "ab 27,63 €",
+   "why": "AUscene Hamilton Island läuft laut Hersteller in MSFS 2024 (native 2024-Version später kostenpflichtig), bewertet ist aber nur das Bundle mit Reefworld (4,6 aus 32 Bewertungen, ab 27,63 €); keine Freeware-Szenerie."
+  },
+  "YBAS__pw": {
+   "icao": "YBAS",
+   "status": "optional",
+   "product": "Alice Springs (YBAS)",
+   "dev": "Impulse Simulations",
+   "url": "https://www.fsaddoncompare.com/product/2849/Alice-Springs-YBAS",
+   "rating": "4,77 · 25",
+   "price": "ab 18,37 €",
+   "why": "Payware von Impulse Simulations, 4,77 aus 25 Bewertungen, laut Herstellerseite MSFS-2024-kompatibel (fsaddoncompare listet nur MSFS 2020), ab 18,37 €; die Freeware (Tag21) ist nur für MSFS 2020 getaggt."
+  },
+  "YAYE__pw": {
+   "icao": "YAYE",
+   "status": "optional",
+   "product": "YAYE - Ayers Rock Airport",
+   "dev": "AUscene",
+   "url": "https://www.fsaddoncompare.com/product/4346/YAYE-Ayers-Rock-Airport",
+   "rating": "4,46 · 98",
+   "price": "ab 15,99 €",
+   "why": "Payware von AUscene, 4,46 aus 98 Bewertungen, MSFS 2020/2024, ab 15,99 €; keine brauchbare Freeware (Tag21 unbewertet, nur MSFS 2020)."
+  },
+  "WBSB__fw": {
+   "icao": "WBSB",
+   "status": "freeware",
+   "product": "WBSB - Brunei Intl Airport",
+   "dev": "capungflightTV / Christophe Bouville",
+   "url": "https://flightsim.to/addon/20206/wbsb-brunei-intl-airport",
+   "why": "Freeware von capungflightTV mit 4,7 aus 9 Bewertungen (2.882 Downloads), laut Nutzerbericht vom Januar 2026 in MSFS 2024 funktionsfähig (gemeldeter ILS-Versatz auf Piste 21 tritt laut Antwort auch beim Standard auf); die Mfsg-Payware hat keine Bewertungen.",
+   "rating": "4,7 · 9 · 2.882 Downloads"
+  },
+  "WBKK__pw": {
+   "icao": "WBKK",
+   "status": "optional",
+   "product": "WBKK - Kota Kinabalu International Airport (KKIA)",
+   "dev": "The Secret Studio",
+   "url": "https://www.fsaddoncompare.com/product/6093/WBKK-Kota-Kinabalu-International-Airport-KKIA",
+   "rating": "4,53 · 15",
+   "price": "ab 10,21 €",
+   "why": "Payware von The Secret Studio mit 4,53 aus 15 Bewertungen für MSFS 2020/2024 (ab 10,21 €); die Freeware-Edition desselben Studios hat nur 4 Bewertungen und ist nur für MSFS 2020 getaggt."
+  },
+  "WBGG__pw": {
+   "icao": "WBGG",
+   "status": "optional",
+   "product": "WBGG - Kuching Intl. Airport and Air Base",
+   "dev": "The Secret Studio",
+   "url": "https://www.fsaddoncompare.com/product/4211/WBGG-Kuching-Intl.-Airport-and-Air-Base",
+   "rating": "4,71 · 17",
+   "price": "ab 12,24 €",
+   "why": "Payware von The Secret Studio mit 4,71 aus 17 Bewertungen für MSFS 2020/2024 (ab 12,24 €); die Freeware von Enggang/Hornbill (4,6 aus 17) wurde seit September 2022 nicht aktualisiert und ist für MSFS 2024 unbestätigt."
+  },
+  "WIII__fw": {
+   "icao": "WIII",
+   "status": "freeware",
+   "product": "WIII - Soekarno Hatta Intl. Airport, Jakarta",
+   "dev": "capungflightTV",
+   "url": "https://flightsim.to/addon/16911/wiii-soekarno-hatta-intl-airport-jakarta",
+   "why": "Freeware von capungflightTV mit 4,7 aus 27 Bewertungen und 21.449 Downloads, laut Nutzerberichten (12/2024, 05/2025) in MSFS 2024 nutzbar; die BinerSim-Payware (4,6 aus 70) ist nur für MSFS 2020 gelistet.",
+   "rating": "4,7 · 27 · 21.449 Downloads"
+  },
+  "YPCC__fw": {
+   "icao": "YPCC",
+   "status": "freeware",
+   "product": "YPCC Cocos Keeling Island 24",
+   "dev": "Mountainair",
+   "url": "https://flightsim.to/addon/92012/ypcc-cocos-keeling-island-24",
+   "why": "Freeware von Mountainair mit eigener MSFS-2024-Version (5,0 aus 2 Bewertungen, 860 Downloads), deren 2020-Vorlage 5,0 aus 10 Bewertungen hat; Payware gibt es keine.",
+   "rating": "5,0 · 2 (+ 10 der 2020-Fassung)"
+  },
+  "WMKK__fw": {
+   "icao": "WMKK",
+   "status": "freeware",
+   "product": "WMKK KLIA (Kuala Lumpur International Airport) Freeware Edition",
+   "dev": "ChrisJSetterington / The Secret Studio",
+   "url": "https://flightsim.to/addon/13774/wmkk-klia-kuala-lumpur-international-airport-hand-built",
+   "why": "Freeware-Edition von The Secret Studio mit 4,7 aus 44 Bewertungen und 25.118 Downloads, laut Entwickler (03/2025) und Nutzern in MSFS 2024 lauffähig; die Vollversion (4,66 aus 57, ab 13,61 €) wäre nur ein optionales Upgrade.",
+   "rating": "4,7 · 44 · 25.119 Downloads"
+  },
+  "WMKK__pw": {
+   "icao": "WMKK",
+   "status": "optional",
+   "product": "WMKK - Kuala Lumpur International Airport (KLIA)",
+   "dev": "The Secret Studio",
+   "url": "https://www.fsaddoncompare.com/product/4093/WMKK-Kuala-Lumpur-International-Airport-KLIA",
+   "rating": "4,66 · 57",
+   "price": "ab 13,61 €",
+   "why": "Kostenpflichtige Alternative zur Freeware."
+  },
+  "VTSP__pw": {
+   "icao": "VTSP",
+   "status": "optional",
+   "product": "VTSP/HKT - Phuket International Thailand",
+   "dev": "SiamFlight",
+   "url": "https://www.fsaddoncompare.com/product/10757/VTSP%252FHKT-Phuket-International-Thailand",
+   "rating": "4,92 · 16",
+   "price": "ab 15,78 €",
+   "why": "Payware von SiamFlight mit 4,92 aus 16 Bewertungen für MSFS 2020/2024 (ab 15,78 €); die Freeware von Nokin hat nur 4,0 aus 6 Bewertungen (für 2024 gibt es ein separates Update-Paket eines Dritten)."
+  },
+  "VTBS__pw": {
+   "icao": "VTBS",
+   "status": "optional",
+   "product": "VTBS - Suvarnabhumi International Airport Thailand",
+   "dev": "SiamFlight",
+   "url": "https://www.fsaddoncompare.com/product/5653/VTBS-Suvarnabhumi-International-Airport-Thailand",
+   "rating": "4,82 · 115",
+   "price": "ab 19,29 €",
+   "why": "Payware von SiamFlight mit 4,82 aus 115 Bewertungen für MSFS 2020/2024 (ab 19,29 €); die beliebte Freeware (4,8 aus 19) stammt von November 2020 und ist laut Kommentaren veraltet (alte Pistenlage, fehlende Anflugverfahren)."
+  },
+  "VMMC__pw": {
+   "icao": "VMMC",
+   "status": "optional",
+   "product": "Macao Macau VMMC v2.5",
+   "dev": "SamScene3D",
+   "url": "https://www.fsaddoncompare.com/product/4089/Macao-Macau-VMMC-v2.5",
+   "rating": "4,51 · 103",
+   "price": "ab 14,22 €",
+   "why": "Payware von SamScene3D mit 4,51 aus 103 Bewertungen für MSFS 2020/2024 (ab 14,22 €, 2024-Variante ab 16,00 €); eine Flughafen-Freeware gibt es nicht."
+  },
+  "RCTP__pw": {
+   "icao": "RCTP",
+   "status": "optional",
+   "product": "RCTP - Taiwan Taoyuan Airport",
+   "dev": "ACO Design Studio",
+   "url": "https://www.fsaddoncompare.com/product/5658/RCTP-Taiwan-Taoyuan-Airport",
+   "rating": "4,56 · 106",
+   "price": "ab 16,22 €",
+   "why": "Payware von ACO Design Studio mit 4,56 aus 106 Bewertungen für MSFS 2020/2024 (ab 16,22 €); Freeware gibt es nur als kleine Licht- bzw. Fix-Mods von 2021."
+  },
+  "RKSI__pw": {
+   "icao": "RKSI",
+   "status": "optional",
+   "product": "RKSI/ICN- Incheon International Airport",
+   "dev": "SiamFlight",
+   "url": "https://www.fsaddoncompare.com/product/13483/RKSI%252FICN---Incheon-International-Airport",
+   "rating": "4,71 · 13",
+   "price": "ab 22,99 €",
+   "why": "Payware von SiamFlight mit 4,71 aus 13 Bewertungen für MSFS 2020/2024 (ab 22,99 €); auf flightsim.to gibt es nur GSX-Profile, statische Flugzeuge und einen Jetway-Fix, aber keine Flughafen-Freeware."
+  },
+  "ZKPY__pw": {
+   "icao": "ZKPY",
+   "status": "optional",
+   "product": "North Korea Pyongyang ZKPY",
+   "dev": "SamScene3D",
+   "url": "https://www.fsaddoncompare.com/product/3928/North-Korea-Pyongyang-ZKPY",
+   "rating": "4,46 · 50",
+   "price": "ab 10,09 €",
+   "why": "Payware von SamScene3D mit 4,46 aus 50 Bewertungen für MSFS 2020/2024 (ab 10,09 €); die Freeware von kui (4,6 aus 11) ist von 2021 und für MSFS 2024 unbestätigt."
+  },
+  "ZBAA__pw": {
+   "icao": "ZBAA",
+   "status": "optional",
+   "product": "ZBAA - Beijing Capital",
+   "dev": "WF Scenery Studio",
+   "url": "https://www.fsaddoncompare.com/product/4319/ZBAA-Beijing-Capital",
+   "rating": "4,51 · 94",
+   "price": "ab 22,26 €",
+   "why": "Payware von WF Scenery Studio mit 4,51 aus 94 Bewertungen für MSFS 2020/2024 (ab 22,26 €); die Freeware (4,0 aus 14) ist nur für MSFS 2020 getaggt."
+  },
+  "OAKB__fw": {
+   "icao": "OAKB",
+   "status": "freeware",
+   "product": "OAKB - Hamid Karzai Intl. Airport, Kabul, Afghanistan",
+   "dev": "capungflightTV / Ruslan Minets",
+   "url": "https://flightsim.to/addon/19483/oakb-hamid-karzai-intl-airport-kabul-afghanistan",
+   "why": "Freeware von capungflightTV mit 4,8 aus 9 Bewertungen und 10.541 Downloads, laut Nutzerberichten (01/2026 und 09/2026) in MSFS 2024 gut lauffähig; eine Flughafen-Payware gibt es nicht.",
+   "rating": "4,8 · 9 · 10.541 Downloads"
+  },
+  "VIDP__pw": {
+   "icao": "VIDP",
+   "status": "optional",
+   "product": "VIDP - Indira Gandhi Intl. Airport - New Delhi",
+   "dev": "DhruvSim",
+   "url": "https://flightsim.to/store/product/vidp-indira-gandhi-intl-airport-new-delhi",
+   "rating": "4,7 · 16",
+   "price": "ab 16,54 €",
+   "why": "DhruvSim-Payware mit 4,7 aus 16 Bewertungen, für MSFS 2020/2024, ab 16,54 € im Sale – gut, aber nicht nötig; die Freeware von rcavinash123 (4,4 aus 57) ist von 2021 und nur für MSFS 2020 getaggt."
+  },
+  "VGHS__fw": {
+   "icao": "VGHS",
+   "status": "freeware",
+   "product": "VGHS - Dhaka (Hazrat Shahjalal) Intl. Airport",
+   "dev": "kychungdotcom",
+   "url": "https://flightsim.to/addon/47179/dhaka-hazrat-shahjalal-intl-airport-vghs",
+   "why": "Freeware von kychungdotcom, 4,8 aus 20 Bewertungen, 9.948 Downloads, für MSFS 2020/24 getaggt (Vorfeld-Layout laut Autor ziemlich veraltet); Payware-Alternative Final Approach Simulations mit 4,91 aus 21.",
+   "rating": "4,8 · 20 · 9.948 Downloads",
+   "installNote": "Die Vorfeldlampen stammen laut Autor aus dem Standard-Airport Kai Tak (seit SU11); ist dieses Paket deinstalliert, fehlen sie."
+  },
+  "VGHS__pw": {
+   "icao": "VGHS",
+   "status": "optional",
+   "product": "VGHS - Dhaka Airport",
+   "dev": "Final Approach Simulations",
+   "url": "https://contrail.shop/products/vghs-dhaka-airport-msfs",
+   "rating": "4,91 · 21",
+   "price": "ab 18,99 €",
+   "why": "Kostenpflichtige Alternative zur Freeware."
+  },
+  "VOMM__fw": {
+   "icao": "VOMM",
+   "status": "freeware",
+   "product": "VOMM Chennai International Airport",
+   "dev": "rcavinash123",
+   "url": "https://flightsim.to/addon/10471/vomm-chennai-international-airport",
+   "why": "Freeware von rcavinash123, 5,0 aus 53 Bewertungen, 17.100 Downloads; nur MSFS-2020-Tag (Stand 2021), laut Nutzerbericht aber in MSFS 2024 nutzbar, mit teils von Gras überdeckten Rollwegen.",
+   "rating": "5,0 · 53 · 17.100 Downloads"
+  },
+  "VOGO__fw": {
+   "icao": "VOGO",
+   "status": "freeware",
+   "product": "VOGO Dabolim Goa International Airport",
+   "dev": "prakshepak",
+   "url": "https://flightsim.to/addon/20336/vogo-dabolim-goa-international-airport",
+   "why": "Freeware von prakshepak, 4,8 aus 13 Bewertungen, 6.105 Downloads; nur MSFS-2020-Tag, aber zwei Nutzer bestätigen 2026 den Betrieb in MSFS 2024.",
+   "rating": "4,8 · 13 · 6.105 Downloads"
+  },
+  "VABB__pw": {
+   "icao": "VABB",
+   "status": "optional",
+   "product": "VABB - Mumbai International",
+   "dev": "MSK Productions",
+   "url": "https://flightsim.to/store/product/vabb-mumbai-international",
+   "rating": "4,61 · 41",
+   "price": "ab 11,79 €",
+   "why": "MSK-Productions-Payware mit 4,61 aus 41 Bewertungen, für MSFS 2020/2024, ab 11,79 € im Sale; die Freeware von Alkee15 (4,7 aus 24) ist von 2021 und ohne 2024-Bestätigung."
+  },
+  "VAAH__fw": {
+   "icao": "VAAH",
+   "status": "freeware",
+   "product": "VAAH - Ahmedabad Sardar Vallabhbhai Patel Intl Airport",
+   "dev": "KVSceneries",
+   "url": "https://flightsim.to/addon/40526/sardar-vallabhbhai-patel-international-airport-ahmedabad",
+   "why": "Freeware von KVSceneries (Kritik Varma), 4,8 aus 24 Bewertungen, 13.982 Downloads, für MSFS 2020/24 getaggt und im Juli 2026 aktualisiert.",
+   "rating": "4,8 · 24 · 13.982 Downloads"
+  },
+  "OOMS__fw": {
+   "icao": "OOMS",
+   "status": "freeware",
+   "product": "OOMS Muscat Int'l - Muscat, Oman",
+   "dev": "QNH997",
+   "url": "https://flightsim.to/addon/37640/ooms-muscat-int-l-muscat-oman",
+   "why": "Freeware von QNH997, 4,9 aus 70 Bewertungen, 26.312 Downloads; nur MSFS-2020-Tag und 2024-Nutzerberichte gemischt (Dez. 2025 läuft, Nov. 2024 FPS-Einbruch), Payware-Alternative Double T mit 4,6 aus 14 für 2020/2024.",
+   "rating": "4,9 · 70 · 26.312 Downloads",
+   "installNote": "Nur eine Variante installieren: „Default Jetways Version“ ohne GSX oder „GSX Version“. Das hochauflösende Luftbild ist ein separates, empfohlenes Paket."
+  },
+  "OOMS__pw": {
+   "icao": "OOMS",
+   "status": "optional",
+   "product": "Muscat (OOMS)",
+   "dev": "TaiModels/Double T",
+   "url": "https://secure.simmarket.com/double-t-ooms-muscat-intl-airport-msfs.phtml",
+   "rating": "4,6 · 14",
+   "price": "ab 10,39 €",
+   "why": "Kostenpflichtige Alternative zur Freeware."
+  },
+  "OKKK__fw": {
+   "icao": "OKKK",
+   "status": "freeware",
+   "product": "OKKK - Kuwait Intl. Airport and City مطار و مدينة الكويت",
+   "dev": "Y.A.G",
+   "url": "https://flightsim.to/addon/3279/okbk-kuwait-intl-airport-and-city",
+   "why": "Freeware von Y.A.G, 4,8 aus 201 Bewertungen, 186.658 Downloads, für MSFS 2020/24 getaggt und im September 2026 (SU6) aktualisiert.",
+   "rating": "4,8 · 201 · 186.658 Downloads",
+   "installNote": "Jetways in MSFS 2024 laut Autor nur, wenn der kostenlose Airport EICK (Cork) geladen ist; dass sie derzeit nicht an die Türen andocken, nennt er als bekanntes Problem."
+  },
+  "OERK__fw": {
+   "icao": "OERK",
+   "status": "freeware",
+   "product": "OERK - King Khaled Intl. Airport, Riyadh",
+   "dev": "aboodilatif",
+   "url": "https://flightsim.to/addon/9290/king-khaled-intl-airport-riyadh",
+   "why": "Freeware von aboodilatif (BanditSim), 4,8 aus 55 Bewertungen, 25.417 Downloads; nur MSFS-2020-Tag, aber mehrere Nutzer bestätigen 2025/26 den Betrieb in MSFS 2024 (Azrsim-Payware nur 3,81 aus 38).",
+   "rating": "4,8 · 55 · 25.417 Downloads"
+  },
+  "LLBG__pw": {
+   "icao": "LLBG",
+   "status": "optional",
+   "product": "LLBG - Ben Gurion Airport",
+   "dev": "Aerosoft",
+   "url": "https://orbxdirect.com/product/aerosoft-llbg-msfs",
+   "rating": "4,61 · 136",
+   "price": "ab 17,25 €",
+   "why": "Aerosoft-Payware (David Rosenfeld) mit 4,61 aus 136 Bewertungen, offiziell nur für MSFS 2020 gelistet, aber mehrere ausdrücklich für MSFS 2024 gebaute Community-Erweiterungen belegen den Einsatz in 2024; eigenständige Freeware nur 3,5 aus 2."
+  },
+  "OLBA__fw": {
+   "icao": "OLBA",
+   "status": "freeware",
+   "product": "OLBA Beirut Rafic Hariri Intl",
+   "dev": "Viktoren69",
+   "url": "https://flightsim.to/addon/63404/olba-beirut-rafic-hariri-intl",
+   "why": "Freeware von Viktoren69, 4,8 aus 12 Bewertungen, 6.422 Downloads; laut Autor (Sept. 2026) in MSFS 2024 lauffähig mit kleineren optischen Fehlern, benötigt mehrere Objektbibliotheken.",
+   "rating": "4,8 · 12 · 6.422 Downloads",
+   "dependencies": [
+    {
+     "product": "Windy Things",
+     "dev": "trfsto",
+     "url": "https://flightsim.to/addon/14024/windy-things",
+     "required": true
+    },
+    {
+     "product": "EDHK Lights & Objects Developers Pack (Asset-Pack)",
+     "dev": "MrMo",
+     "url": "https://flightsim.to/addon/2549/edhk-lights-pack",
+     "required": true
+    },
+    {
+     "product": "Dave's Crooked Library",
+     "dev": "BadMed",
+     "url": "https://flightsim.to/addon/4696/dave-s-crooked-library",
+     "required": true
+    },
+    {
+     "product": "Emerald Object Library",
+     "dev": "rotornut44",
+     "url": "https://flightsim.to/addon/8824/emerald-object-library",
+     "required": true
+    }
+   ],
+   "installNote": "Laut Beschreibung außerdem die ESD- und UK2000-Bibliotheken (kostenlos im Marketplace); einige Objekte stammen aus Premium-Deluxe- und World-Update-Airports."
+  },
+  "OSDI__fw": {
+   "icao": "OSDI",
+   "status": "freeware",
+   "product": "OSDI - Damascus International Airport | Syria SIM",
+   "dev": "Bilal_1990",
+   "url": "https://flightsim.to/addon/107100/syriasim-airport-osdi-damascus",
+   "why": "Freeware von Syria SIM (Bilal_1990), 5,0 aus 15 Bewertungen, 4.062 Downloads, für MSFS 2020/24 getaggt und im August 2026 aktualisiert.",
+   "rating": "5,0 · 15 · 4.062 Downloads",
+   "installNote": "Nur eine der beiden Versionen installieren – animierte Standard-Jetways oder statische Jetways; beide zusammen sind laut Autor nicht kompatibel."
+  },
+  "UDYZ__pw": {
+   "icao": "UDYZ",
+   "status": "optional",
+   "product": "UDYZ Zvartnots International Airport",
+   "dev": "AmSim",
+   "url": "https://orbxdirect.com/product/amsim-udyz-msfs",
+   "rating": "4,4 · 44",
+   "price": "ab 12,27 €",
+   "why": "AmSim-Payware mit 4,4 aus 44 Bewertungen, als MSFS-2024-Version bei Orbx gelistet (15,45 €) – gut, aber nicht nötig; eine Freeware-Szenerie gibt es nicht."
+  },
+  "LTCG__fw": {
+   "icao": "LTCG",
+   "status": "freeware",
+   "product": "LTCG - Trabzon Airport - Turkey",
+   "dev": "armortas",
+   "url": "https://flightsim.to/addon/38173/ltcg-trabzon-airport-turkey",
+   "why": "Freeware von armortas (5,0 aus 7, 8.378 Downloads), im Juni 2026 an MSFS 2024 angepasst.",
+   "rating": "5,0 · 7 · 8.378 Downloads"
+  },
+  "LTCG__pw": {
+   "icao": "LTCG",
+   "status": "optional",
+   "product": "LTCG - Trabzon Airport",
+   "dev": "SceneryTR Design",
+   "url": "https://secure.simmarket.com/scenerytr-ltcg-trabzon-airport-msfs.phtml",
+   "rating": "4,73 · 21",
+   "price": "ab 8,74 €",
+   "why": "Kostenpflichtige Alternative zur Freeware."
+  },
+  "LTAI__fw": {
+   "icao": "LTAI",
+   "status": "freeware",
+   "product": "LTAI Antalya Intl. Airport MSFS2020 (W.I.P) v1.2.7",
+   "dev": "Argaeus",
+   "url": "https://flightsim.to/addon/89124/ltai-antalya-intl-airport-w-i-p",
+   "why": "Freeware von Argaeus (v1.2.7), 4,7 aus 17 Bewertungen, 7.923 Downloads, laut Autor in MSFS 2024 voll funktionsfähig und im September 2026 aktualisiert (JustSim-Payware 4,21 aus 104 nur für MSFS 2020 gelistet).",
+   "rating": "4,7 · 17 · 7.923 Downloads"
+  },
+  "HSPN__fw": {
+   "icao": "HSPN",
+   "status": "freeware",
+   "product": "Port Sudan New International Airport - HSPN (Sudan)",
+   "dev": "Vortex_SD",
+   "url": "https://flightsim.to/addon/90520/port-sudan-new-international-airport-hspn-sudan",
+   "why": "Freeware von Vortex_SD mit 5,0 aus 11 Bewertungen (1.946 Downloads, v1.1 vom 24.04.2025), nur als MSFS 2020 getaggt, laut Nutzerkommentar vom April 2026 und Autorenaussage aber in MSFS 2024 lauffähig; Payware gibt es nicht.",
+   "rating": "5,0 · 11 · 1.946 Downloads",
+   "dependencies": [
+    {
+     "product": "Animated Human 3D Models Library",
+     "dev": "superspud",
+     "url": "https://flightsim.to/addon/33166/animated-humans-library",
+     "required": false
+    },
+    {
+     "product": "Emerald Object Library",
+     "dev": "rotornut44",
+     "url": "https://flightsim.to/addon/8824/emerald-object-library",
+     "required": false
+    },
+    {
+     "product": "Ethnicfs Misc Scenery Objects",
+     "dev": "ethnicfs",
+     "url": "https://flightsim.to/addon/45163/ethnicfs-misc-scenery-objects",
+     "required": false
+    },
+    {
+     "product": "Ethnicfs Vegetation library",
+     "dev": "ethnicfs",
+     "url": "https://flightsim.to/addon/56359/ethnicfs-vegetation-library",
+     "required": false
+    },
+    {
+     "product": "Windy Things",
+     "dev": "trfsto",
+     "url": "https://flightsim.to/addon/14024/windy-things",
+     "required": false
+    },
+    {
+     "product": "SDR Scenery Pack V1.5",
+     "dev": "Sergio Del Rosso",
+     "url": "https://flightsim.to/addon/6072/sdr-scenery-pack-v1-0",
+     "required": false
+    },
+    {
+     "product": "Ethnicfs vehicles library",
+     "dev": "ethnicfs",
+     "url": "https://flightsim.to/addon/43395/ethnicfs-cars-library",
+     "required": false
+    },
+    {
+     "product": "EDHK Lights & Objects Developers Pack (Asset-Pack)",
+     "dev": "MrMo",
+     "url": "https://flightsim.to/addon/2549/edhk-lights-pack",
+     "required": false
+    },
+    {
+     "product": "Military Camp Library",
+     "dev": "ak47freak",
+     "url": "https://flightsim.to/addon/56383/military-camp-library",
+     "required": false
+    },
+    {
+     "product": "Mikea.at - AssetPack",
+     "dev": "Mikea.at",
+     "url": "https://flightsim.to/addon/1923/mikea-at-assetpack",
+     "required": false
+    }
+   ],
+   "installNote": "Die zehn Bibliotheken stehen auf der Seite als „Required“, laut Autor braucht es sie aber nur für Flaggen, animierte Personen und etwas Kleinkram."
+  },
+  "HAAB__fw": {
+   "icao": "HAAB",
+   "status": "freeware",
+   "product": "HAAB Addis Abeba Bole",
+   "dev": "Viktoren69",
+   "url": "https://flightsim.to/addon/60349/haab-addis-abeba-bole",
+   "why": "Freeware von Viktoren69 mit 4,9 aus 22 Bewertungen und 13.110 Downloads, nur als MSFS 2020 getaggt, laut Nutzerberichten (2025/2026) aber in MSFS 2024 nutzbar (gemeldeter Taxiway-Versatz, sechs kosmetische Zusatzbibliotheken), während die 2024-Paywares kaum bewertet sind (African Skies 5,0 aus 2, Barelli 4,0 aus 3). Der Autor nennt nur MSFS 2020: Die Szenerie sei für 2020 gedacht und in 2024 nie getestet; auf Nachfrage schreibt er, sie laufe nur in 2020. Dass sie in MSFS 2024 läuft, ist damit nicht vom Autor bestätigt – die Nutzerberichte widersprechen seiner Aussage.",
+   "rating": "4,9 · 22 · 13.110 Downloads",
+   "dependencies": [
+    {
+     "product": "Ethnicfs Misc Scenery Objects",
+     "dev": "ethnicfs",
+     "url": "https://flightsim.to/addon/45163/ethnicfs-misc-scenery-objects",
+     "required": false
+    },
+    {
+     "product": "EDHK Lights & Objects Developers Pack (Asset-Pack)",
+     "dev": "MrMo",
+     "url": "https://flightsim.to/addon/2549/edhk-lights-pack",
+     "required": false
+    },
+    {
+     "product": "Emerald Object Library",
+     "dev": "rotornut44",
+     "url": "https://flightsim.to/addon/8824/emerald-object-library",
+     "required": false
+    },
+    {
+     "product": "Windy Things",
+     "dev": "trfsto",
+     "url": "https://flightsim.to/addon/14024/windy-things",
+     "required": false
+    },
+    {
+     "product": "MSFS 2020 object library 200+ models",
+     "dev": "colinj",
+     "url": "https://flightsim.to/addon/16007/msfs-object-library-with-150-models-ranging-from-towers-hangers-terminals-to-cones",
+     "required": false
+    },
+    {
+     "product": "Mikea.at - AssetPack",
+     "dev": "Mikea.at",
+     "url": "https://flightsim.to/addon/1923/mikea-at-assetpack",
+     "required": false
+    }
+   ],
+   "installNote": "Die sechs Bibliotheken stehen auf der Seite als „Required“. Laut Autorenkommentar liefern sie jedoch nur Dekoration; Taxiways, Jetways und Terminals gehören zum Hauptpaket. Ohne die Zusatzbibliotheken ist der Airport nutzbar. EDHK empfiehlt der Autor besonders für die Beleuchtung."
+  },
+  "HKJK__pw": {
+   "icao": "HKJK",
+   "status": "optional",
+   "product": "Nairobi Jomo Kenyatta (HKJK)",
+   "dev": "iniBuilds",
+   "url": "https://www.fsaddoncompare.com/product/8949/Nairobi-Jomo-Kenyatta-HKJK",
+   "rating": "4,47 · 19",
+   "price": "ab 14,91 €",
+   "why": "Payware von iniBuilds mit 4,47 aus 19 Bewertungen, laut Beschreibung für MSFS 2024 verifiziert, ab 14,91 €; die starke Freeware von Chak991 (4,7 aus 26) ist nur für MSFS 2020 gebaut und laut aktuellen Kommentaren (Sept. 2026) fehlt in 2024 das Terminal."
+  },
+  "HRYR__fw": {
+   "icao": "HRYR",
+   "status": "freeware",
+   "product": "HRYR - Kigali International Airport",
+   "dev": "Chak991",
+   "url": "https://flightsim.to/addon/103047/hryr-kigali-international-airport",
+   "why": "Native MSFS-2024-Freeware von Chak991 (16.01.2026) mit eigenem Terminal, Tower und Nachtbeleuchtung, 5,0 aus 8 Bewertungen und 1.629 Downloads – knapp unter 10 Bewertungen, aber klarer Gewinn; die Payware von African Skies ist unbewertet.",
+   "rating": "5,0 · 8 · 1.629 Downloads"
+  },
+  "FMMI__pw": {
+   "icao": "FMMI",
+   "status": "optional",
+   "product": "FMMI - Ivato International Airport",
+   "dev": "VueloSimple",
+   "url": "https://www.fsaddoncompare.com/product/6423/FMMI-Ivato-International-Airport",
+   "rating": "4,92 · 29",
+   "price": "ab 8,88 €",
+   "why": "Payware von VueloSimple mit 4,92 aus 29 Bewertungen, für MSFS 2020/2024 gelistet, ab 8,88 € (Sale); die Freeware von nico_lszk (4,8 aus 5) ist nur für MSFS 2020 getaggt und zu wenig bewertet."
+  },
+  "FMCZ__fw": {
+   "icao": "FMCZ",
+   "status": "freeware",
+   "product": "FMCZ - MAYOTTE Dzaoudzi–Pamandzi International Airport",
+   "dev": "Chak991",
+   "url": "https://flightsim.to/addon/82173/fmcz-mayotte-dzaoudzi-pamandzi-international-airport",
+   "why": "Freeware von Chak991 mit 4,9 aus 14 Bewertungen und 3.560 Downloads, für MSFS 2020/24 getaggt (v1.1 vom 27.08.2025) und von 2024-Nutzern bestätigt – gleichwertig bis besser als die FSDG-Payware (4,4 aus 10, ab 12,60 €).",
+   "rating": "4,9 · 14 · 3.560 Downloads",
+   "dependencies": [
+    {
+     "product": "MSFS 2020 object library 200+ models",
+     "dev": "colinj",
+     "url": "https://flightsim.to/addon/16007/msfs-object-library-with-150-models-ranging-from-towers-hangers-terminals-to-cones",
+     "required": true
+    }
+   ],
+   "installNote": "Das Hotel erscheint laut Autor nur mit World Update Oceania."
+  },
+  "FMCZ__pw": {
+   "icao": "FMCZ",
+   "status": "optional",
+   "product": "Mayotte Pamandzi",
+   "dev": "FSDG",
+   "url": "https://www.fsaddoncompare.com/product/4703/Mayotte-Pamandzi",
+   "rating": "4,4 · 10",
+   "price": "ab 12,60 €",
+   "why": "Kostenpflichtige Alternative zur Freeware."
+  },
+  "FALE__fw": {
+   "icao": "FALE",
+   "status": "freeware",
+   "product": "FALE - Durban King Shaka International Airport",
+   "dev": "Chak991",
+   "url": "https://flightsim.to/addon/60543/fale-durban-king-shaka-international-airport",
+   "why": "Freeware von Chak991 mit 4,8 aus 9 Bewertungen und 6.061 Downloads, für MSFS 2020/24 getaggt und von einem 2024-Nutzer als deutliche Verbesserung gegenüber dem Standard bestätigt; Payware (NMG 5,0 aus 6, Gaffer 4,17 aus 87 nur für 2020) ist nicht nötig.",
+   "rating": "4,8 · 9 · 6.061 Downloads",
+   "installNote": "Der Download enthält zwei Ordner – für Nutzer mit und ohne GSX Pro; nur den passenden verwenden."
+  },
+  "FYWH__fw": {
+   "icao": "FYWH",
+   "status": "freeware",
+   "product": "FYWH - Windhoek Hosea Kutako International Airport",
+   "dev": "Chak991",
+   "url": "https://flightsim.to/addon/114670/fywh-windhoek-hosea-kutako-international-airport",
+   "why": "Chak991 hat am 04.09.2026 eine native MSFS-2024-Version seiner Windhoek-Freeware veröffentlicht (5,0 aus 3), deren 2020-Version 5,0 aus 25 Bewertungen und 10.529 Downloads hat und laut Nutzern auch in 2024 läuft; die FSDG-Payware (4,4 aus 16) ist nur für MSFS 2020 gelistet.",
+   "rating": "5,0 · 3 (+ 25 der 2020-Fassung)"
+  },
+  "FNLU__fw": {
+   "icao": "FNLU",
+   "status": "freeware",
+   "product": "FNLU – Aeroporto Internacional 4 de Fevereiro",
+   "dev": "MIKE_CHARLIE_28",
+   "url": "https://flightsim.to/addon/107445/fnlu-aeroporto-internacional-4-de-fevereiro",
+   "why": "Freeware von MIKE_CHARLIE_28 (15.04.2026) mit 5,0 aus 19 Bewertungen, für MSFS 2020/24 getaggt und laut Nutzer in 2024 mit dem Fenix problemlos (bei Flugzeugen mit Standard-Navdaten fehlen die ILS-Anflüge), während die Payware von MSFScenerybuilders nur 3,9 aus 10 hat und nur für MSFS 2020 gelistet ist.",
+   "rating": "5,0 · 19 · 815 Downloads"
+  },
+  "FZAA__fw": {
+   "icao": "FZAA",
+   "status": "freeware",
+   "product": "FZAA - N'djili International Airport (FIH) - Kinshasa - Democratic Republic of Congo",
+   "dev": "EchoMikeRDC",
+   "url": "https://flightsim.to/addon/86442/n-djili-international-airport-fih-kinshasa-fzaa-democratic-republic-of-congo",
+   "why": "Freeware von EchoMikeRDC mit eigenen Terminalgebäuden, 5,0 aus 11 Bewertungen und 3.940 Downloads, für MSFS 2020/2024 getaggt (letztes Update Juni 2025).",
+   "rating": "5,0 · 11 · 3.940 Downloads"
+  },
+  "DNMM__fw": {
+   "icao": "DNMM",
+   "status": "freeware",
+   "product": "DNMM - Lagos Murtala Mohammed Airport - Enhancement (benötigt „Murtala Muhammed International Airport. Lagos [DNMM]“ von esosae)",
+   "dev": "Jaronics",
+   "url": "https://flightsim.to/addon/79911/dnmm-lagos-murtala-mohammed-airport-enhancement",
+   "why": "Freeware-Kombination aus der esosae-Szenerie (4,6 aus 20 Bewertungen, 10.836 Downloads) und dem Jaronics-Enhancement v1.1 (laut Autor native MSFS-2024-Version, setzt esosae voraus; 5,0 aus 3, 5.790 Downloads) schlägt die Payware von African Skies (3,86 aus 7).",
+   "rating": "5,0 · 3 · Basis-Szenerie 4,6 · 20",
+   "dependencies": [
+    {
+     "product": "Murtala Muhammed International Airport. Lagos [DNMM]",
+     "dev": "esosae",
+     "url": "https://flightsim.to/addon/6199/murtala-muhammed-int",
+     "required": true,
+     "note": "Basis-Szenerie (v3.0 von 2022, vom Autor nicht mehr gepflegt); das Enhancement funktioniert laut Jaronics nur mit ihr. Beide als getrennte Ordner in den Community-Ordner."
+    }
+   ]
+  },
+  "DGAA__pw": {
+   "icao": "DGAA",
+   "status": "optional",
+   "product": "Accra / DGAA Kotoka International Airport (Bewertung aus dem Marketplace-Listing; Shop-Version „Accra“: 4,0 aus 1)",
+   "dev": "FSDG",
+   "url": "https://www.fsaddoncompare.com/search/DGAA",
+   "rating": "4,57 · 18",
+   "price": "ab 16,80 €",
+   "why": "Die FSDG-Payware ist gut bewertet (4,57 aus 18 im Marketplace-Listing, dort nur MSFS 2020) und als Shop-Version „Accra“ für MSFS 2020/2024 gelistet (ab 16,80 €) – schön, aber nicht nötig; Freeware gibt es nur als Terminal-Lichter (5,0 aus 1)."
+  },
+  "GBYD__fw": {
+   "icao": "GBYD",
+   "status": "freeware",
+   "product": "Banjul International Airport - GBYD (Gambia)",
+   "dev": "Vortex_SD",
+   "url": "https://flightsim.to/addon/91671/banjul-international-airport-gbyd-gambia",
+   "why": "Freeware von Vortex_SD mit detaillierten Eigenmodellen, 5,0 aus 15 Bewertungen und 2.199 Downloads; nur für MSFS 2020 getaggt, aber mehrere Nutzer bestätigen den Einsatz in MSFS 2024 (Hinweis: Baumreihen neben der Bahn).",
+   "rating": "5,0 · 15 · 2.199 Downloads",
+   "dependencies": [
+    {
+     "product": "Animated Human 3D Models Library",
+     "dev": "superspud",
+     "url": "https://flightsim.to/addon/33166/animated-humans-library",
+     "required": false
+    },
+    {
+     "product": "Emerald Object Library",
+     "dev": "rotornut44",
+     "url": "https://flightsim.to/addon/8824/emerald-object-library",
+     "required": false
+    },
+    {
+     "product": "Ethnicfs Misc Scenery Objects",
+     "dev": "ethnicfs",
+     "url": "https://flightsim.to/addon/45163/ethnicfs-misc-scenery-objects",
+     "required": false
+    },
+    {
+     "product": "Ethnicfs Vegetation library",
+     "dev": "ethnicfs",
+     "url": "https://flightsim.to/addon/56359/ethnicfs-vegetation-library",
+     "required": false
+    },
+    {
+     "product": "Windy Things",
+     "dev": "trfsto",
+     "url": "https://flightsim.to/addon/14024/windy-things",
+     "required": false
+    },
+    {
+     "product": "Superspud Airport Asset Library",
+     "dev": "superspud",
+     "url": "https://flightsim.to/addon/23692/superspud-airport-asset-library",
+     "required": false
+    }
+   ],
+   "installNote": "Die sechs Bibliotheken braucht es laut Autor nur für Flaggen, animierte Personen und etwas Kleinkram."
+  },
+  "GOBD__pw": {
+   "icao": "GOBD",
+   "status": "optional",
+   "product": "GOBD Blaise Diagne International Airport",
+   "dev": "Devinci",
+   "url": "https://www.fsaddoncompare.com/product/890/GOBD-Blaise-Diagne-International-Airport",
+   "rating": "4,61 · 36",
+   "price": "12,99 €",
+   "why": "Payware von Devinci mit 4,61 aus 36 Bewertungen, als von Grund auf neu gebaute MSFS-2024-Version erhältlich (12,99 € bei SimMarket) – gut, aber nicht nötig; die Freeware von Lennart320 hat erst 5,0 aus 3."
+  },
+  "GMMH__fw": {
+   "icao": "GMMH",
+   "status": "freeware",
+   "product": "GMMH / Dakhla Airport",
+   "dev": "joujou92",
+   "url": "https://flightsim.to/addon/58964/gmmh-dakhla-airport",
+   "why": "Freeware von joujou92 mit 4,9 aus 9 Bewertungen und 3,6K Downloads, laut Autor seit v1.5 (Okt. 2025) MSFS-2024-kompatibel und für 2020/2024 getaggt (benötigt die Bibliotheken Windy Things, Palm Tree Library und Ethnicfs Vegetation).",
+   "rating": "4,9 · 9 · 3.588 Downloads",
+   "dependencies": [
+    {
+     "product": "Windy Things",
+     "dev": "trfsto",
+     "url": "https://flightsim.to/addon/14024/windy-things",
+     "required": true
+    },
+    {
+     "product": "Palm Tree Library",
+     "dev": "ChrisPiAviation",
+     "url": "https://flightsim.to/addon/32530/palm-tree-library",
+     "required": true
+    },
+    {
+     "product": "Ethnicfs Vegetation library",
+     "dev": "ethnicfs",
+     "url": "https://flightsim.to/addon/56359/ethnicfs-vegetation-library",
+     "required": true
+    }
+   ]
+  },
+  "LPPT__pw": {
+   "icao": "LPPT",
+   "status": "optional",
+   "product": "LPPT - Lisbon Airport v2",
+   "dev": "MK Studios",
+   "url": "https://www.fsaddoncompare.com/product/10048/LPPT-Lisbon-Airport-v2",
+   "rating": "4,5 · 55",
+   "price": "ab 18,99 €",
+   "why": "Payware MK Studios LPPT v2 ist mit 4,5 aus 55 Bewertungen gut und für MSFS 2020/2024 gelistet (ab 18,99 €), aber nicht nötig; die Freeware von NSAJID (5,0 aus 6, 15,8K Downloads) ist nur für 2020 getaggt und für 2024 unbestätigt."
+  },
+  "DAAG__fw": {
+   "icao": "DAAG",
+   "status": "freeware",
+   "product": "DAAG Taxiways Improvements and ground markings",
+   "dev": "mrbadis",
+   "url": "https://flightsim.to/addon/40410/daag-taxiways-improvements-and-ground-markings",
+   "why": "Freeware von mrbadis (Rollwege, Bodenmarkierungen, Nachtlicht) mit 4,8 aus 18 Bewertungen und 5,6K Downloads, offiziell nur für 2020 getaggt, laut Nutzerbericht aber in MSFS 2024 lauffähig; als Vollszenerie wäre NetDesign (4,51 aus 37, ab 19,29 €) die Payware-Alternative.",
+   "rating": "4,8 · 18 · 5.564 Downloads",
+   "dependencies": [
+    {
+     "product": "EDHK Lights & Objects Developers Pack (Asset-Pack)",
+     "dev": "MrMo",
+     "url": "https://flightsim.to/addon/2549/edhk-lights-pack",
+     "required": true,
+     "note": "Im Abhängigkeitsblock nur als empfohlen markiert, laut Beschreibung aber nötig („This scenery needs a library“)."
+    }
+   ]
+  },
+  "DAAG__pw": {
+   "icao": "DAAG",
+   "status": "optional",
+   "product": "DAAG - Algiers Intl. Airport",
+   "dev": "NetDesign",
+   "url": "https://www.fsaddoncompare.com/product/6360/DAAG-Algiers-Intl.-Airport",
+   "rating": "4,51 · 37",
+   "price": "ab 19,29 €",
+   "why": "Kostenpflichtige Alternative zur Freeware."
+  },
+  "LIRF__fw": {
+   "icao": "LIRF",
+   "status": "freeware",
+   "product": "LIRF - Rome Fiumicino International Airport",
+   "dev": "NSAJID",
+   "url": "https://flightsim.to/addon/61614/lirf-rome-fiumicino-international-airport",
+   "why": "Freeware von NSAJID mit 4,7 aus 9 Bewertungen und 13,8K Downloads, offiziell nur für 2020 getaggt, laut mehreren Nutzern aber in MSFS 2024 lauffähig (einfache Texturen); MK Studios v2 (4,86 aus 58, ab 20,99 €) wäre das deutlich hochwertigere Payware-Upgrade.",
+   "rating": "4,7 · 9 · 13.835 Downloads"
+  },
+  "LIRF__pw": {
+   "icao": "LIRF",
+   "status": "optional",
+   "product": "LIRF - Rome Fiumicino v2",
+   "dev": "MK Studios",
+   "url": "https://www.fsaddoncompare.com/product/12917/LIRF-Rome-Fiumicino-v2",
+   "rating": "4,86 · 58",
+   "price": "ab 20,99 €",
+   "why": "Kostenpflichtige Alternative zur Freeware."
+  },
+  "LNMC__cand": {
+   "icao": "LNMC",
+   "status": "candidate",
+   "product": "LNMC - Heliport de Monaco for MSFS 2024",
+   "dev": "CDN",
+   "url": "https://flightsim.to/addon/92855/lnmc-heliport-de-monaco-for-msfs-2020",
+   "why": "Kostenloser Kandidat, keine Empfehlung: 5,0 aus erst 7 Bewertungen bei 1.172 Downloads – unter der Freeware-Schwelle. Eigene MSFS-2024-Fassung (v1.1 vom 19.04.2026), gebaut für ein IVAO-Event zum Grand Prix; eine Nutzermeldung über ausgehende Triebwerke beim Spawnen weist der Autor zurück, die Szene wirke nicht auf Luftfahrzeuge ein.",
+   "rating": "5,0 · 7 · 1.172 Downloads"
+  },
+  "LEBL__pw": {
+   "icao": "LEBL",
+   "status": "optional",
+   "product": "LEBL - Barcelona Intl.",
+   "dev": "LVFR",
+   "url": "https://www.fsaddoncompare.com/product/971/LEBL-Barcelona-Intl.",
+   "rating": "4,57 · 725",
+   "price": "ab 8,95 €",
+   "why": "Payware LVFR Barcelona ist mit 4,57 aus 725 Bewertungen gut und für MSFS 2020/2024 gelistet (aktuell ab 8,95 € direkt bei LVFR), aber nicht nötig; die Freeware hat nur 3–5 Bewertungen und ist nur für 2020 getaggt."
+  },
+  "LJLJ__fw": {
+   "icao": "LJLJ",
+   "status": "freeware",
+   "product": "LJLJ - Ljubljana airport, Slovenia",
+   "dev": "Spiki",
+   "url": "https://flightsim.to/addon/8718/ljlj-ljubljana-airport-slovenia",
+   "why": "Freeware von Spiki mit 4,7 aus 27 Bewertungen und 14,8K Downloads, für MSFS 2020/2024 getaggt und im Oktober 2025 aktualisiert (v0.12); Scenic Routes (4,88 aus 56, ab 14,91 €) wäre die optionale Payware.",
+   "rating": "4,7 · 27 · 14.815 Downloads"
+  },
+  "LJLJ__pw": {
+   "icao": "LJLJ",
+   "status": "optional",
+   "product": "LJLJ Ljubljana Airport",
+   "dev": "Scenic Routes",
+   "url": "https://www.fsaddoncompare.com/product/1536/LJLJ-Ljubljana-Airport",
+   "rating": "4,88 · 56",
+   "price": "ab 14,91 €",
+   "why": "Kostenpflichtige Alternative zur Freeware."
+  },
+  "LATI__pw": {
+   "icao": "LATI",
+   "status": "optional",
+   "product": "Tirana (LATI)",
+   "dev": "Salvuz",
+   "url": "https://www.fsaddoncompare.com/product/4105/Tirana-LATI",
+   "rating": "4,57 · 28",
+   "price": "ab 10,52 €",
+   "why": "Payware Salvuz Tirana ist mit 4,57 aus 28 Bewertungen gut und für MSFS 2020/2024 gelistet (ab 10,52 €), aber nicht nötig; Freeware gibt es nur als Parking-Update mit 3 Bewertungen."
+  },
+  "BKPR__pw": {
+   "icao": "BKPR",
+   "status": "optional",
+   "product": "BKPR - Prishtina Intl. Airport",
+   "dev": "M'M Simulations",
+   "url": "https://www.fsaddoncompare.com/product/4127/BKPR-Prishtina-Intl.-Airport",
+   "rating": "4,74 · 41",
+   "price": "ab 9,64 €",
+   "why": "Payware von M'M Simulations ist mit 4,74 aus 41 Bewertungen gut und für MSFS 2020/2024 gelistet (ab 9,64 €), aber nicht nötig; die Freeware (Parking-Fixes, 3,6 aus 5) bringt keinen klaren Mehrwert."
+  },
+  "LQSA__pw": {
+   "icao": "LQSA",
+   "status": "optional",
+   "product": "LQSA Sarajevo International Airport",
+   "dev": "Kiss Simulation",
+   "url": "https://www.fsaddoncompare.com/product/5683/LQSA-Sarajevo-International-Airport",
+   "rating": "4,8 · 18",
+   "price": "ab 11,40 €",
+   "why": "Payware von Kiss Simulation ist mit 4,8 aus 18 Bewertungen gut und für MSFS 2020/2024 gelistet (ab 11,40 €), aber nicht nötig; die einzige Freeware-Szenerie ist noch unbewertet."
+  },
+  "LYBE__fw": {
+   "icao": "LYBE",
+   "status": "freeware",
+   "product": "LYBE MSFS - Airport NIKOLA TESLA Belgrade - aerodrom Nikola Tesla Beograd",
+   "dev": "danilo081",
+   "url": "https://flightsim.to/addon/41863/airport-nikola-tesla-belgrade-aerodrom-nikola-tesla-beograd",
+   "why": "Freeware von danilo081 mit 4,8 aus 51 Bewertungen und 17K Downloads, offiziell nur für 2020 getaggt, laut mehreren Nutzern in MSFS 2024 problemlos – enthält aber nur die alte Piste; die Erweiterung mit neuer Piste von caniky u. a. (v2.0, Nov. 2024, 4,8 aus 16) ist für 2024 unbestätigt.",
+   "rating": "4,8 · 51 · 17.005 Downloads"
+  },
+  "LHBP__pw": {
+   "icao": "LHBP",
+   "status": "optional",
+   "product": "Budapest Airport",
+   "dev": "LHSimulations",
+   "url": "https://www.fsaddoncompare.com/product/7143/Budapest-Airport",
+   "rating": "4,6 · 264",
+   "price": "ab 13,28 €",
+   "why": "Payware LHSimulations Budapest ist mit 4,6 aus 264 Bewertungen gut und für MSFS 2020/2024 gelistet (ab 13,28 €), aber nicht nötig; die Freeware-Aufwertung des Standardflughafens hat nur 3,6 aus 4."
+  },
+  "LRCL__fw": {
+   "icao": "LRCL",
+   "status": "freeware",
+   "product": "2024 LRCL Aeroportul International Avram Iancu Cluj",
+   "dev": "Sergiu.TPA",
+   "url": "https://flightsim.to/addon/56414/lrcl-aeroportul-international-avram-iancu-cluj",
+   "why": "Freeware von Sergiu.TPA mit 4,7 aus 25 Bewertungen und 5,9K Downloads, laut Autor nur für 2020, doch Nutzer melden Betrieb in MSFS 2024 (einer mit deutlichen FPS-Einbußen); die Payware ist nur schwach bewertet (Barelli 1,0 aus 1, South Oak 2,8 aus 5).",
+   "rating": "4,7 · 25 · 5.864 Downloads"
+  },
+  "LUKK__pw": {
+   "icao": "LUKK",
+   "status": "optional",
+   "product": "Chisinau (LUKK)",
+   "dev": "MXI Design",
+   "url": "https://www.fsaddoncompare.com/product/5861/Chisinau-LUKK",
+   "rating": "4,59 · 15",
+   "price": "ab 7,89 €",
+   "why": "Payware MXI Design Chisinau ist mit 4,59 aus 15 Bewertungen gut und für MSFS 2020/2024 gelistet (ab 7,89 €), aber nicht nötig; die gut bewertete Freeware (4,6 aus 19) ist nur für 2020 getaggt und laut Nutzern in 2024 mit defektem ILS."
+  },
+  "UKLL__pw": {
+   "icao": "UKLL",
+   "status": "optional",
+   "product": "UKLL - Lviv Airport",
+   "dev": "Pyreegue Dev Co.",
+   "url": "https://www.fsaddoncompare.com/product/5307/UKLL-Lviv-Airport",
+   "rating": "4,9 · 123",
+   "price": "ab 7,89 €",
+   "why": "Payware Pyreegue Lviv ist mit 4,9 aus 123 Bewertungen sehr gut und für MSFS 2020/2024 gelistet (ab 7,89 €), aber nicht nötig; auf flightsim.to gibt es nur Zubehör (GSX-Profile, Static Aircraft)."
+  },
+  "EVRA__pw": {
+   "icao": "EVRA",
+   "status": "optional",
+   "product": "EVRA - Riga Airport",
+   "dev": "LisiumDesign",
+   "url": "https://www.fsaddoncompare.com/product/10736/EVRA-Riga-Airport",
+   "rating": "4,91 · 33",
+   "price": "ab 17,10 €",
+   "why": "Payware LisiumDesign Riga ist mit 4,91 aus 33 Bewertungen sehr gut und für MSFS 2020/2024 gelistet (ab 17,10 €), aber nicht nötig; die Freeware von Desmo liegt bei 4,0 aus 30 und ist nur für 2020 getaggt."
+  },
+  "EETN__pw": {
+   "icao": "EETN",
+   "status": "optional",
+   "product": "EETN - Tallinn Airport",
+   "dev": "Drzewiecki Design",
+   "url": "https://www.fsaddoncompare.com/product/2786/EETN-Tallinn-Airport",
+   "rating": "4,9 · 86",
+   "price": "ab 20,17 €",
+   "why": "Payware Drzewiecki Design Tallinn ist mit 4,9 aus 86 Bewertungen sehr gut und für MSFS 2020/2024 gelistet (ab 20,17 €), aber nicht nötig; Freeware gibt es nur als unfertiges Projekt (3,5 aus 1)."
+  },
+  "EPWA__pw": {
+   "icao": "EPWA",
+   "status": "optional",
+   "product": "EPWA - Warsaw Chopin",
+   "dev": "Drzewiecki Design",
+   "url": "https://www.fsaddoncompare.com/product/9551/EPWA-Warsaw-Chopin",
+   "rating": "4,79 · 85",
+   "price": "ab 21,05 €",
+   "why": "Payware Drzewiecki Design Warsaw Chopin ist mit 4,79 aus 85 Bewertungen gut und für MSFS 2020/2024 gelistet (ab 21,05 €), aber nicht nötig; Freeware gibt es nur als Bodentexturen (4,8 aus 7, nur für 2020 getaggt)."
+  },
+  "EPKK__fw": {
+   "icao": "EPKK",
+   "status": "freeware",
+   "product": "EPKK Kraków - Balice ( Papa Delta Studio / nereusz )",
+   "dev": "Papa Delta Studio / nereusz",
+   "url": "https://flightsim.to/addon/77425/epkk-krakw-balice-vatsim-2024",
+   "why": "Freeware von Papa Delta Studio / nereusz mit 5,0 aus 16 Bewertungen und 12,2K Downloads, seit v0.9 (März 2025) mit MSFS-2024-Unterstützung und für 2020/2024 getaggt; Drzewiecki Design v2 (4,87 aus 31, ab 18,48 €) wäre die optionale Payware.",
+   "rating": "5,0 · 16 · 12.196 Downloads",
+   "installNote": "Nur einen Jetway-Ordner installieren: „DEFAULT-jetways“ (Asobo) oder „GSX-jetways“ (nur mit GSX Pro); laut Autor nie beide gleichzeitig."
+  },
+  "EPKK__pw": {
+   "icao": "EPKK",
+   "status": "optional",
+   "product": "EPKK - Kraków Airport v2",
+   "dev": "Drzewiecki Design",
+   "url": "https://www.fsaddoncompare.com/product/3791/EPKK-Krak%25C3%25B3w-Airport-v2",
+   "rating": "4,87 · 31",
+   "price": "ab 18,48 €",
+   "why": "Kostenpflichtige Alternative zur Freeware."
+  }
+ },
+ "handcrafted": {
+  "SBRJ": "World Update 19 · Gaya",
+  "KJAC": "World Update 22 · Gaya",
+  "NTTB": "World Update 13",
+  "VNLK": "Basis-Sim",
+  "TFFJ": "Basis-Sim",
+  "ENSB": "World Update 5",
+  "LPMA": "Basis-Sim",
+  "LXGB": "Basis-Sim",
+  "TNCM": "Basis-Sim",
+  "MHTG": "Basis-Sim",
+  "NZQN": "Basis-Sim",
+  "RJTT": "Basis-Sim",
+  "VQPR": "Basis-Sim",
+  "FACT": "Deluxe-Edition",
+  "SEQM": "Basis-Sim"
+ },
+ "ownedNotes": {
+  "BGGH": "Version 1.1.0 oder neuer nötig (neue 2.200-m-Bahn). Der MSFS-Standard ist hier unbrauchbar.",
+  "EGLC": "Nicht in der Tour: Der A320 ist für London City nicht zugelassen. Tipp für später: mit einem steilanflugfähigen Muster (E190/195 von FlightSim Studio oder BAe 146 von Just Flight).",
+  "KSEZ": "Bonus-Ausflug mit dem H160 ab Phoenix.",
+  "NZMF": "Bonus-Ausflug mit dem H160 ab Queenstown."
+ },
+ "excursions": {
+  "GG": {
+   "title": "Guernsey",
+   "tag": "Kanalinseln",
+   "brief": "21 NM über den Kanal, die Klippen von Jersey und Guernsey im Tiefflug. Landung am Flughafen EGJB."
+  },
+  "VG": {
+   "title": "British Virgin Islands",
+   "tag": "Drake Channel",
+   "brief": "Kurzer Sprung nach Beef Island (TUPJ) über den Sir Francis Drake Channel und seine Inselketten."
+  },
+  "AI": {
+   "title": "Anguilla",
+   "tag": "10 NM",
+   "brief": "Zehn Meilen über den Anguilla Channel – Riffe und flaches Türkis bei Mittagssonne."
+  },
+  "BL": {
+   "title": "St. Barth",
+   "tag": "Col de la Tourmente",
+   "brief": "Mit dem H160 fliegst du den berühmten Hügel am Pistenende ab und landest auf dem Platz. St. Barth ist im Basis-Sim handgefertigt – kein Kauf nötig."
+  },
+  "MF": {
+   "title": "Saint-Martin",
+   "tag": "Grand Case",
+   "brief": "Die französische Inselhälfte ist eine eigene Kategorie – fünf Meilen hinüber nach Grand Case."
+  },
+  "MS": {
+   "title": "Montserrat",
+   "tag": "Soufrière Hills",
+   "brief": "Den Vulkan in der Sperrzone nur mit Abstand umfliegen, dann am John A. Osborne Airport landen."
+  },
+  "SEDONA": {
+   "title": "Sedona",
+   "tag": "Rote Felsen",
+   "brief": "Von Phoenix hinauf zur Mesa zwischen den roten Felsen – mit deiner XCodr-Szenerie. Früh oder spät am Tag fliegen: Licht und Dichtehöhe."
+  },
+  "BORABORA": {
+   "title": "Bora Bora",
+   "tag": "Lagune",
+   "brief": "140 NM ab Tahiti vorbei an Moorea und den Leeward-Inseln, dann über die Lagune zum Motu Mute (World Update 13). Der Watermask-Fix von kohheiva ist nur ein Kandidat zum Prüfen: Er soll die in MSFS 2024 verwaschenen Korallenmuster zurückbringen, passt laut Autor seit SU2 aber nicht mehr genau."
+  },
+  "MILFORD": {
+   "title": "Milford Sound",
+   "tag": "Fjordland",
+   "brief": "Über die Täler der Südalpen zum Fjord – mit deiner Blinn-Szenerie. Nur bei klaren Kämmen fliegen."
+  },
+  "LUKLA": {
+   "title": "Lukla",
+   "tag": "Everest",
+   "brief": "Tenzing-Hillary: 527 m Bahn mit starkem Gefälle auf 2.860 m, gelandet wird bergauf auf 06. Lukla ist im Basis-Sim handgefertigt; mit Aerosofts „Mt. Everest Vol. 3“ geht es weiter nach Namche Bazaar bis zum Basislager."
+  },
+  "PS": {
+   "title": "Palästina",
+   "tag": "Ramallah",
+   "brief": "Aktiver Hubschrauberlandeplatz am Regierungssitz in Ramallah, 17 NM ab Ben Gurion. Ersetzt den seit 2001 geschlossenen Flughafen Atarot. Volanta-Wertung nach dem Flug prüfen; Ausweichziel ist der Bethlehem Heliport."
+  },
+  "TF": {
+   "title": "Französische Südgebiete",
+   "tag": "Glorieuses",
+   "brief": "Militärpiste auf der Grande Glorieuse, 120 NM nördlich von Nosy Be. Vorab in der MSFS-Weltkarte und in Volantas Flughafenansicht prüfen. Ausweichplan: ab Mayotte nach Juan de Nova (FMZJ, in Volanta bereits als Französische Südgebiete bestätigt), 295 NM je Richtung."
+  },
+  "VA": {
+   "title": "Vatikan",
+   "tag": "Gärten",
+   "brief": "Zehn Meilen ab Fiumicino zum Heliport in den Vatikanischen Gärten; Petersdom als optionale Runde."
+  },
+  "SM": {
+   "title": "San Marino",
+   "tag": "Monte Titano",
+   "brief": "Über den Apennin nach Torraccia; der Monte Titano mit seinen drei Türmen liegt direkt daneben."
+  },
+  "MC": {
+   "title": "Monaco",
+   "tag": "Côte d'Azur",
+   "brief": "Entlang der Küste über Cap Ferrat und Èze zum Heliport am Meer."
+  },
+  "AD": {
+   "title": "Andorra",
+   "tag": "Pyrenäen",
+   "brief": "Von Barcelona in das enge Pyrenäental nach Andorra la Vella – Wolkenuntergrenze und Leistung in der Höhe beachten."
+  },
+  "LI": {
+   "title": "Liechtenstein",
+   "tag": "Rheintal",
+   "brief": "Über den Walensee ins Alpenrheintal nach Balzers; Burg Gutenberg liegt gleich neben dem Heliport."
+  }
+ },
+ "changes": [
+  {
+   "area": "Route",
+   "title": "Südostasien nur noch einmal",
+   "text": "V1 flog von Macau über Manila, Borneo, Jakarta (zum dritten Mal) und Sumatra zurück nach Port Blair. Das waren 9 Legs ohne neue Kategorie. V2 fliegt Asien als eine durchgehende Schleife.",
+   "effect": "−12 Legs · −4.660 NM · −15 h"
+  },
+  {
+   "area": "Route",
+   "title": "Seidenstraße statt Stichflug",
+   "text": "Usbekistan liegt jetzt zwischen Bischkek und Duschanbe, mit Samarkand. Turkmenistan wird auf dem Weg ans Kaspische Meer mitgenommen.",
+   "effect": "−2 Legs · −1.270 NM"
+  },
+  {
+   "area": "Route",
+   "title": "Stichflüge gestrichen",
+   "text": "Nicht mehr dabei: Norfolk (USA), Los Angeles, der Kushiro-Rückflug, Bangalore, Salalah, das Juba-Pendel, Townsville, Brisbane, Rockhampton, Christchurch doppelt, Tromsø doppelt, Réunion–Mauritius zurück, Hargeisa doppelt und Samos–Athen.",
+   "effect": "mehr Neues pro Stunde"
+  },
+  {
+   "area": "Flotte",
+   "title": "Keine Twin Otter mehr",
+   "text": "Die Antarktis fliegst du mit dem A320 nach Union Glacier; die 3.000-m-Blue-Ice-Bahn wird real mit der B757 angeflogen. Für den Fenix ist das eine Sonderetappe mit Testcheckliste. Der Ausweichplan führt nach Wilkins, wo real ein Airbus A319 landet.",
+   "effect": "0 Twin-Otter-Legs"
+  },
+  {
+   "area": "Flotte",
+   "title": "Tuvalu und Dominica im A320",
+   "text": "Funafuti ersetzt die 6-Leg-Heli-Kette – als Sonderetappe, die du vorher im Freeflug testest, mit der Heli-Kette als Ausweichplan. Dominica hat seit 2025 eine auf 1.936 m verlängerte Bahn.",
+   "effect": "−8 H160-Legs · −11,7 h"
+  },
+  {
+   "area": "Flotte",
+   "title": "Glorieuses statt Juan de Nova",
+   "text": "Die Französischen Südgebiete erreichst du jetzt 120 NM ab Nosy Be statt über eine 6-Leg-Kette durch Madagaskar.",
+   "effect": "−4 H160-Legs · −6,4 h"
+  },
+  {
+   "area": "Aktive Plätze",
+   "title": "Nur Flughäfen im Betrieb",
+   "text": "Atarot (seit 2001 geschlossen) ist durch den Ramallah Heliport ersetzt, Khartum (Kriegsschäden) durch Port Sudan, Port-au-Prince (wegen Bandengewalt immer wieder gesperrt) durch Cap-Haïtien. Kai Tak ist bewusst nicht enthalten.",
+   "effect": "0 geschlossene Plätze"
+  },
+  {
+   "area": "Highlights",
+   "title": "Neue Anflug-Highlights",
+   "text": "Neu dabei: Washington River Visual, Santos Dumont, Bariloche, El Calafate, Union Glacier, Quito, Jackson Hole, Hamilton Island, Siem Reap, Naha, Kagoshima, Samarkand, Skardu, Leh, AlUla, Aqaba, George, St Helena, Teneriffa Nord, Skiathos und Bodø. Mit dem H160 kommen Lukla und Bora Bora dazu.",
+   "effect": "+23 Highlights"
+  },
+  {
+   "area": "Szenerien",
+   "title": "Deine Sammlung voll genutzt",
+   "text": "In der Heimkehr-Runde sind jetzt auch Düsseldorf, Hannover, Bremen, Paderborn und Sylt dabei. Nuuk fliegst du mit deiner M'M-Szenerie, weil der Standard-Airport dort defekt ist.",
+   "effect": "Hauptroute 36 → 41 · mit Bonus-Ausflügen 39 → 43"
+  },
+  {
+   "area": "Szenerien",
+   "title": "Kaufliste nach deiner Regel",
+   "text": "Nur noch Käufe mit echtem Anflug-Mehrwert: Cusco, Wellington, Tivat, Washington, Skardu und Everest Vol. 3. Auckland, Malta, St. Barth und Hongkong fliegen raus.",
+   "effect": "6 Kauf-Tipps · rund 80–90 €"
+  },
+  {
+   "area": "Design",
+   "title": "Instrument-Look",
+   "text": "Das Farbschema kommt aus deinem Walkthrough. Neu sind die Leg-Leiste über die ganze Reise, eine Karte mit Fortschritt, Globus und Leg-Zoom sowie erflogene Volanta-Kategorien live. In der Cloud-Version synchronisiert sich der Fortschritt zwischen Geräten.",
+   "effect": "neu"
+  },
+  {
+   "area": "Ehrlichkeit",
+   "title": "Jeder Airport eingeordnet – nach festen Schwellen",
+   "text": "Jeder der 403 Airports ist eingeordnet: deine Sammlung, handgefertigt laut den World-Update-Listen oder per Add-on-Recherche auf FSAddonCompare und flightsim.to (Stand 24.09.2026). Freeware wird ab 4,5 Sternen bei mindestens 8 Bewertungen oder 6.000 Downloads mit belegtem 2024-Betrieb empfohlen, Payware ab 4,3 Sternen bei mindestens 10 Bewertungen als Option; kostenlose Kandidaten darunter stehen nur zum Prüfen da. „Angebot recherchiert“ heißt: kein Add-on mit belegtem Mehrwert gefunden – im Simulator getestet ist der Standard damit nicht.",
+   "effect": "72 Freeware-Airports · 87 Optionen · 4 Kandidaten · 0 ungeprüft"
+  },
+  {
+   "area": "Daten",
+   "title": "Sicherer Fortschritt und Reset",
+   "text": "Lokaler und Cloud-Fortschritt werden pro Leg nach Zeitstempel zusammengeführt, auch entfernte Häkchen. Neu sind ein Reset für Fortschritt, Volanta-Status und Cloud-Debriefings sowie Volanta-Bestätigungen pro Kategorie.",
+   "effect": "nichts geht verloren"
+  }
+ ],
+ "defaultOk": {
+  "EGNS": "Recherchiert: Die einzige Payware (UK2000, 4,61 · 38) bringt für den kurzen Stopp wenig; die Freeware gibt es nur für MSFS 2020.",
+  "BIKF": "Recherchiert: Nur MK Studios (Payware, 4,66 · 54) wertet echt auf; die Freeware ist unfertig.",
+  "TXKF": "Recherchiert: SLH (4,59 · 15) ist möglich, aber der Stopp lebt von der Insel, nicht vom Terminal.",
+  "MMUN": "Recherchiert: Die Macco-Payware hat gemeldete Geländefehler in 2024; die Freeware ist nicht für 2024 getestet.",
+  "LGSK": "Recherchiert: Orbx nur für MSFS 2020, Freeware von 2020 – nichts Natives für 2024.",
+  "FIMP": "Recherchiert: FSDG Mauritius zeigt in 2024 Riff- und Bildfehler (3,15 · 93); die Freeware ist nur mittelmäßig.",
+  "VILH": "Recherchiert: Kein Add-on mit belegtem Mehrwert – die mottoth-Freeware (4,8 aus 3, rund 4.000 Downloads) liegt unter der Freeware-Schwelle und steht nur als Kandidat zum Prüfen daneben, die Sundownersim-Payware (4,2 aus 4) liegt unter der Payware-Schwelle.",
+  "VRMM": "Recherchiert: Kein Add-on mit belegtem Mehrwert – die NSAJID-Freeware (4,8 aus 4, rund 2.000 Downloads) liegt unter der Freeware-Schwelle und steht nur als Kandidat zum Prüfen daneben.",
+  "EGJB": "Recherchiert: UK2000 Guernsey (4,5 aus nur 8 Bewertungen, MSFS 2020/2024, ab 14,03 €) ist die solide, aber nicht nötige Aufwertung; die beliebte superspud-Freeware (4,8 aus 73) ist nur für MSFS 2020 markiert und die 2024-Nutzerberichte sind widersprüchlich.",
+  "EGPE": "Recherchiert: kein Muss-Add-on; Payware von UK2000 Scenery als Option.",
+  "CYVP": "Recherchiert: Einzige Freeware (Ape42, 4,8 aus 5, Stand 11/2020) ist nur für MSFS 2020 markiert und Nutzer fragen nach einer 2024-Version; Payware für Kuujjuaq gibt es nicht.",
+  "CYWK": "Recherchiert: Weder auf flightsim.to (auch nicht unter „Wabush“) noch auf fsaddoncompare gibt es ein Add-on für Wabush, also Standard-Szenerie.",
+  "CYQM": "Recherchiert: Die Stairport-Payware hat nur 3,7 aus 30 Bewertungen und ist nur für MSFS 2020 gelistet, Freeware gibt es lediglich als unbewerteten AI-Fix von 2022.",
+  "LFVP": "Recherchiert: Die einzige Freeware (declinous, als MSFS 2020/24 markiert, nur 21 KB groß) hat erst 4,5 aus 2 Bewertungen bei rund 1.100 Downloads und Payware gibt es nicht – kein belegter Mehrwert.",
+  "CYYT": "Recherchiert: Die Mfsg-Payware (MSFS 2020/2024, 12,50 € bei SimMarket) ist noch unbewertet und Freeware gibt es nur als veralteten, als „unsupported“ markierten Baum-Fix.",
+  "CYHZ": "Recherchiert: FSimStudios Halifax Stanfield v2 (4,2 aus 97 Bewertungen, MSFS 2020/2024, ab 16,50 €) ist eine solide, aber nicht nötige Aufwertung; Freeware gibt es nur als AI- bzw. Static-Aircraft-Fixes.",
+  "TUPJ": "Recherchiert: kein Muss-Add-on; Payware von SLH Sim Designs als Option.",
+  "TQPF": "Recherchiert: kein Muss-Add-on; Payware von SLH Sim Designs als Option.",
+  "TFFG": "Recherchiert: Die SLH-Payware (MSFS 2020/2024, ab 13,15 €) hat zwar 5,0, aber erst aus 5 Bewertungen, und die timot75-Freeware ist nur für MSFS 2020 markiert und kaum bewertet (5,0 aus 1).",
+  "TAPA": "Recherchiert: Die Tropicalsim-Payware hat nur 2,5 aus 2 Bewertungen und ist nur für MSFS 2020 gelistet, Freeware gibt es nur als kleines Parking-/Taxi-Update (4,5 aus 2, MSFS 2020).",
+  "TFFR": "Recherchiert: kein Muss-Add-on; Payware von SLH Sim Designs als Option.",
+  "TDPD": "Recherchiert: kein Muss-Add-on; Payware von SLH Sim Designs als Option.",
+  "TLPL": "Recherchiert: Die FSDG-Payware hat nur 3,73 aus 11 Bewertungen und die lexuz2020-Freeware (5,0 aus 6) ist nur für MSFS 2020 markiert und für 2024 unbestätigt.",
+  "TVSA": "Recherchiert: Die Payware (Richer Simulations 4,6 aus 7, FLYNDRIVE4D-Pack 4,5 aus 11) ist nur für MSFS 2020 gelistet und die Freeware ist alt, nur MSFS 2020 und kaum bewertet (timot75 4,7 aus 5).",
+  "TGPY": "Recherchiert: SLH-Payware (4,44 aus 9, MSFS 2020/2024, im Sale ab 12,28 €) ist die einzige ernsthafte Aufwertung, aber nicht nötig; Freeware gibt es nur von timot75 mit 1 Bewertung und nur für MSFS 2020.",
+  "TNCC": "Recherchiert: Die Tropicalsim-Payware (4,75 aus 4, V2 unbewertet) ist nur für MSFS 2020 gelistet und die beste Freeware (timot75) hat nur 4,3 aus 2, ebenfalls nur MSFS 2020.",
+  "TNCA": "Recherchiert: Es gibt nur die Tropicalsim-Payware (3,5 aus 4, V2 unbewertet, beide nur MSFS 2020) und keine Freeware-Szenerie, lediglich GSX-Profile.",
+  "SVMI": "Recherchiert: Die PKSIM-Payware (4,5 aus 35) ist nur für MSFS 2020 gelistet und die Freeware SVMI RESTRUCTURED (5,0 aus 12, Stand 2021) läuft laut Autor zwar in 2024, kollidiert dort aber mit dem geänderten Standard-Terminal – kein klarer Mehrwert.",
+  "LDDU": "Recherchiert: kein Muss-Add-on; Payware von iniBuilds als Option.",
+  "SAWC": "Recherchiert: kein Muss-Add-on; Payware von Simulación Extrema als Option.",
+  "SLLP": "Recherchiert: kein Muss-Add-on; Payware von Sierrasim Simulation als Option.",
+  "OYSQ": "Recherchiert: In MSFS 2024 nicht handgefertigt; die Azrsim-Payware (für MSFS 2020/2024 gelistet) hat erst 1 Bewertung und die DangerousBanana-Freeware (5,0 aus 2, 529 Downloads) ist nur für MSFS 2020 markiert und ohne 2024-Bestätigung – kein Add-on mit belegtem Mehrwert.",
+  "FVFA": "Recherchiert: kein Muss-Add-on; Payware von Jeppeson2001 als Option.",
+  "SKBO": "Recherchiert: kein Muss-Add-on; Payware von V Pilot Designs als Option.",
+  "EGJJ": "Recherchiert: kein Muss-Add-on; Payware von UK2000 Scenery als Option.",
+  "FSIA": "Recherchiert: kein Muss-Add-on; Payware von FSDG als Option.",
+  "HTKJ": "Recherchiert: kein Muss-Add-on; Payware von VueloSimple als Option.",
+  "GCXO": "Recherchiert: kein Muss-Add-on; Payware von Wolkenblau als Option.",
+  "WADD": "Recherchiert: kein Muss-Add-on; Payware von A-Flight / Aerosoft als Option.",
+  "VHHH": "Recherchiert: kein Muss-Add-on; Payware von WF Scenery Studio als Option.",
+  "NTAA": "Recherchiert: Die Freeware von Givenchy987 (4,8 aus 26, 16.983 Downloads, für 2024 getaggt) zeigt laut zwei MSFS-2024-Nutzern keine Runway- bzw. Bodenmarkierungen und wird vom Autor nicht mehr gepflegt, und die Payware von FLYNDRIVE4D hat nur 4,23 aus 8 Bewertungen.",
+  "MMMX": "Recherchiert: Die Payware von Flymex (MSFS 2020/2024) liegt mit 4,22 aus 159 Bewertungen unter der Schwelle, und die Freeware von edu0811 (4,0 aus 7, 12.556 Downloads) ist nur für MSFS 2020, ohne 2024-Bestätigung und mit Nutzerbeschwerden über fehlende Nachtbeleuchtung.",
+  "NZAA": "Recherchiert: kein Muss-Add-on; Payware von Flightbeam als Option.",
+  "FMZJ": "Recherchiert: Es gibt nur eine vom Autor als fiktiv bezeichnete Freeware von AtomicDZ (keine Bewertungen, 265 Downloads, nur MSFS 2020, Stand 2022) plus zwei fiktive Helipads (FMZ1/FMZ2) und keine Payware, und ob die Piste FMZJ im Standard-MSFS überhaupt existiert, sagt keine der geprüften Quellen.",
+  "SYCJ": "Recherchiert: Freeware von Kevin1995 erst 4,7 aus 3 Bewertungen (610 Downloads) und Payware von MSFScenerybuilders nur 2,97 aus 10 – kein Add-on mit klarem Mehrwert.",
+  "SOCA": "Recherchiert: kein Muss-Add-on; Payware von SLH Sim Designs als Option.",
+  "SBMQ": "Recherchiert: Keine Freeware-Szenerie (nur ein GSX-Profil) und nur eine unbewertete MSFS-2020-Payware von Brazil Land Games – kein Add-on mit belegtem Mehrwert.",
+  "SBEG": "Recherchiert: Freeware von timot75 nur 4,5 aus 2 Bewertungen (nur MSFS 2020, Stand 2023) und Payware von Mfsg nur 4,0 aus 1 – kein Add-on mit klarem Mehrwert.",
+  "SBPV": "Recherchiert: Keine Freeware und nur eine unbewertete MSFS-2020-Payware von Brazil Land Games – kein Add-on mit belegtem Mehrwert.",
+  "SBCF": "Recherchiert: Die neuen 2024-Freewares (aeromaia 5,0 aus 1, FlightSimAdventures 5,0 aus 2) sind kaum bewertet und die Payware von Brazil Land Games hat nur 4,0 aus 1 (nur MSFS 2020) – kein klarer Mehrwert.",
+  "SGAS": "Recherchiert: 2024-Freeware von aeromaia (Marcelo Maia) erst 5,0 aus 2 Bewertungen und Tropicalsim-Payware nur 4,0 aus 3 und nur für MSFS 2020 – kein klarer Mehrwert.",
+  "SAEZ": "Recherchiert: unTopo-Freeware nur 4,4 aus 31 und seit 2021 ohne Update (2024-Tauglichkeit unbestätigt), Tropicalsim-Payware nur 3,2 aus 5 und nur für MSFS 2020 – kein klarer Mehrwert.",
+  "SAZB": "Recherchiert: kein Muss-Add-on; Payware von Simulación Extrema als Option.",
+  "SAZS": "Recherchiert: kein Muss-Add-on; Payware von Simulación Extrema als Option.",
+  "SCCI": "Recherchiert: kein Muss-Add-on; Payware von Simulación Extrema als Option.",
+  "SCBA": "Recherchiert: kein Muss-Add-on; Payware von Simulación Extrema als Option.",
+  "SCTE": "Recherchiert: Die Payware von Simulación Extrema ist mit 4,72 aus 34 gut bewertet, aber (auch als V2) nur für MSFS 2020 gelistet, und eine Freeware gibt es nicht – kein Add-on mit belegtem Mehrwert.",
+  "SCIE": "Recherchiert: kein Muss-Add-on; Payware von Simulación Extrema als Option.",
+  "SCEL": "Recherchiert: kein Muss-Add-on; Payware von LVFR als Option.",
+  "SCAT": "Recherchiert: Keine Payware und nur ein unbewertetes Freeware-Enhancement von jagdwolf (836 Downloads) – kein Add-on mit belegtem Mehrwert.",
+  "SCFA": "Recherchiert: Die neue 2024-Payware von LuchoDev (ab 15,42 €) hat noch keine Bewertungen, die älteren Paywares sind unbewertet und nur für MSFS 2020, und eine Freeware-Szenerie gibt es nicht.",
+  "SLVR": "Recherchiert: Freeware von BoliviaVFR nur 4,4 aus 9 (nur MSFS 2020, Stand 2021) und Tropicalsim-Payware nur 4,5 aus 2 und nur für MSFS 2020 – kein klarer Mehrwert.",
+  "SPJC": "Recherchiert: kein Muss-Add-on; Payware von Low-End PC als Option.",
+  "SPHI": "Recherchiert: Keine Payware, und die Freeware von jorgechin hat nur 4,5 aus 4 Bewertungen und ist nur für MSFS 2020 getaggt – kein Add-on mit belegtem Mehrwert.",
+  "SEGU": "Recherchiert: Die Sierrasim-Payware (4,6 aus 65) ist in allen Shops nur für MSFS 2020 gelistet, und die neue Freeware von Ram249 hat erst 3 Bewertungen (nur MSFS 2020) – kein bestätigter Mehrwert für 2024.",
+  "SKCL": "Recherchiert: kein Muss-Add-on; Payware von TEIKOF Studio als Option.",
+  "SKCG": "Recherchiert: Die beste 2024-taugliche Payware (V Pilot Designs) hat nur 4,2 aus 15, die besser bewertete V2 (4,7 aus 18) ist nur für MSFS 2020 gelistet, und die Freeware von fsotelo2 hat 4,2 aus 6 (Stand 2021) – kein klarer Mehrwert.",
+  "MPTO": "Recherchiert: Die V-Pilot-Payware (4,3 aus 102) ist nur für MSFS 2020 gelistet, die 2024-taugliche von DominicDesignTeam hat erst 2 Bewertungen, und die Freeware von 2021 hat nur 4,4 aus 13 – kein klarer Mehrwert.",
+  "MROC": "Recherchiert: kein Muss-Add-on; Payware von V Pilot Designs als Option.",
+  "MNMG": "Recherchiert: Einzige Szenerie ist die Payware von Sierrasim (4,5 aus 32 Bewertungen), die aber nur für MSFS 2020 gelistet ist; Freeware gibt es nicht (nur ein GSX-Profil).",
+  "MSLP": "Recherchiert: Payware von PortalFrame (4,85 aus 13 Bewertungen) ist bei fsaddoncompare und SimMarket nur für MSFS 2020 ausgewiesen, die native 2024-Szenerie von PKSIM hat erst 3,5 aus 2 Bewertungen, und Freeware gibt es nur als Nachtbeleuchtungs-Mod (3,8 aus 7).",
+  "MGGT": "Recherchiert: kein Muss-Add-on; Payware von Sierrasim Simulation als Option.",
+  "MZBZ": "Recherchiert: Payware von MSFScenerybuilders nur 3,38 aus 12 Bewertungen und nur für MSFS 2020 gelistet, die Freeware von pyrotix hat keine Bewertungen (920 Downloads).",
+  "MWCR": "Recherchiert: kein Muss-Add-on; Payware von VueloSimple als Option.",
+  "MTCH": "Recherchiert: Keine Payware; die Freeware von Mountainair läuft laut Nutzerbericht in MSFS 2024 (getestet mit Fenix A319), hat aber nur 4,8 aus 4 Bewertungen und bleibt damit ohne klaren Nachweis.",
+  "MYNN": "Recherchiert: Die Freeware von LKPDesigns (4,9 aus 10) ist nur für MSFS 2020 getaggt und ohne 2024-Bestätigung, die 2024-taugliche Payware von Sierrasim (V2) hat nur 3,93 aus 43 Bewertungen.",
+  "MUHA": "Recherchiert: Payware von Mex High Flight nur 3,71 aus 7 Bewertungen, eine Freeware-Szenerie für den Flughafen gibt es nicht (nur GSX-Profile und Havanna-Landmarks).",
+  "MMMD": "Recherchiert: kein Muss-Add-on; Payware von Simulación Extrema als Option.",
+  "MMVR": "Recherchiert: Die Freeware von HSSsimulations (4,5 aus 9) wird laut Autor nicht mehr gepflegt, hat bekannte Jetway-Fehler und keine 2024-Bestätigung, die Payware von DXR erreicht nur 3,2 aus 8.",
+  "KPHX": "Recherchiert: Die beliebte Freeware von unmlobo (4,4 aus 15, 34.577 Downloads) ist nur für MSFS 2020 getaggt und Nutzerfragen zu 2024 blieben unbeantwortet, die 2024-taugliche Payware von Glideslope Pro hat nur 3,77 aus 125 Bewertungen.",
+  "PMDY": "Recherchiert: Keine Payware; die Freeware von Bailsoft ist für MSFS 2020/2024 getaggt und aktuell (Sept. 2026), hat aber erst 4 Bewertungen (4,8) und damit keinen klaren Nachweis.",
+  "PWAK": "Recherchiert: Keine Payware; die Freeware von Mountainair hat nur 2 Bewertungen und ist laut Autor (Sept. 2025) noch nicht MSFS-2024-kompatibel.",
+  "PTKK": "Recherchiert: Keine Payware; die Freeware von Mountainair ist für MSFS 2020/2024 getaggt, hat aber nur 4,7 aus 6 Bewertungen und bleibt damit ohne klaren Nachweis.",
+  "PGSN": "Recherchiert: Keine Payware; die Freeware von Mountainair hat nur 4 Bewertungen und ist laut Autor für MSFS 2020 gebaut, in 2024 fehlen voraussichtlich einige Objekte.",
+  "PTRO": "Recherchiert: Keine Payware; die Freeware von TurtleTank1997 (5,0 aus 7) läuft laut einem Nutzer in MSFS 2024, ist aber seit 2022 unverändert und zu wenig bewertet für eine klare Empfehlung.",
+  "RPMD": "Recherchiert: Payware nur schwach belegt (Airwil 4,33 aus 3, Bdoaviation 3,0 aus 7, beide nur MSFS 2020), eine Freeware-Szenerie für den Flughafen gibt es nicht.",
+  "WAMM": "Recherchiert: Einzige Szenerie ist die Payware von Project MAX mit 4,4 aus nur 5 Bewertungen, nur für MSFS 2020 gelistet; Freeware gibt es nicht.",
+  "WABB": "Recherchiert: Weder bei fsaddoncompare noch bei flightsim.to gibt es eine Szenerie für Biak (WABB), es bleibt beim Standard.",
+  "WAJJ": "Recherchiert: Die Payware von BinerSim ist gut bewertet (4,77 aus 28), aber nur für MSFS 2020 gelistet und ohne 2024-Nachweis, Freeware gibt es nur als Licht-Fix von 2021.",
+  "AGGH": "Recherchiert: Nicht handgefertigt, keine Payware; die einzige nennenswerte Freeware (tcastest, nur einfache Vorfeld-Aktualisierung, 5,0 aus 3 Bewertungen, ca. 1,9K Downloads) ist zu schwach belegt.",
+  "ANYN": "Recherchiert: Nicht handgefertigt, keine Payware; die Freeware von tcastest (4,8 aus 6 Bewertungen, ca. 2,1K Downloads, MSFS 2020/24) hat zu wenige Bewertungen für eine klare Empfehlung.",
+  "NGTA": "Recherchiert: Nicht handgefertigt, keine Payware; die einzige Freeware (tcastest, 5,0 aus 2 Bewertungen) ist nur für MSFS 2020 getaggt und seit 2 Jahren nicht aktualisiert.",
+  "NGFU": "Recherchiert: Nicht handgefertigt, keine Payware; die Freeware von Snoopy7412 (4,4 aus 9 Bewertungen, ca. 3,7K Downloads, MSFS 2020/24) liegt knapp unter der Empfehlungsschwelle.",
+  "NSFA": "Recherchiert: Nicht handgefertigt; Freeware von Snoopy7412 (5,0 aus nur 3 Bewertungen, ca. 4,9K Downloads, MSFS 2020/24) und Payware von KiwiFlightSim (4,65 aus 6 Bewertungen) sind beide zu schwach belegt für eine klare Empfehlung.",
+  "NIUE": "Recherchiert: Nicht handgefertigt, keine Payware; die einzige Freeware (lswain, 4,7 aus 3 Bewertungen) ist nur für MSFS 2020 getaggt und 4 Jahre alt.",
+  "NCRG": "Recherchiert: Nicht handgefertigt; die Payware von KiwiFlightSim (4,57 aus nur 7 Bewertungen, MSFS 2020/2024) und die Freeware von LswainStudiosNZ (4,6 aus 7, nur MSFS 2020) sind zu schwach belegt für eine Empfehlung.",
+  "NFTF": "Recherchiert: Nicht handgefertigt; die Freeware von Mountainair (5,0 aus 6 Bewertungen, ca. 3,5K Downloads, MSFS 2020/24) hat zu wenige Bewertungen, die Payware von Shadow Media (nur MSFS 2024, Early Access) ist unbewertet.",
+  "NFFN": "Recherchiert: kein Muss-Add-on; Payware von iniBuilds als Option.",
+  "NWWW": "Recherchiert: kein Muss-Add-on; Payware von Sierrasim Simulation als Option.",
+  "YSNF": "Recherchiert: Nicht handgefertigt; die Payware von Propair Flight hat nur 4,0 aus 2 Bewertungen, die Freeware von geekle (5,0 aus 3) ist nur für MSFS 2020 getaggt und 4 Jahre alt.",
+  "NZCH": "Recherchiert: kein Muss-Add-on; Payware von NZA Simulations als Option.",
+  "YMHB": "Recherchiert: kein Muss-Add-on; Payware von NZA Simulations als Option.",
+  "YBCG": "Recherchiert: kein Muss-Add-on; Payware von Orbx als Option.",
+  "YBHM": "Recherchiert: kein Muss-Add-on; Payware von AUscene als Option.",
+  "YBCS": "Recherchiert: Nicht handgefertigt; die Payware von TAIMODELS hat nur 3,53 aus 17 Bewertungen, die beste Freeware (Tag21, 3,9 aus 8) ist nur für MSFS 2020 getaggt und 4 Jahre alt.",
+  "YBMA": "Recherchiert: Nicht handgefertigt; die Orbx-Payware (MSFS 2020/2024) ist noch unbewertet, die Freeware von Shanman (4,9 aus 7 Bewertungen) ist nur für MSFS 2020 getaggt.",
+  "YBAS": "Recherchiert: kein Muss-Add-on; Payware von Impulse Simulations als Option.",
+  "YAYE": "Recherchiert: kein Muss-Add-on; Payware von AUscene als Option.",
+  "YPPH": "Recherchiert: Nicht handgefertigt; die Axonos-Payware hat nur 3,71 aus 104 Bewertungen, die Orbx- und Mfsg-Versionen sind unbewertet, die beste Freeware (nsajid91, 3,8 aus 5) ist nur für MSFS 2020 getaggt.",
+  "YPLM": "Recherchiert: Nicht handgefertigt, keine Payware; die einzige Freeware (Bindook) ist unbewertet, hat ca. 900 Downloads und ist nur für MSFS 2020 getaggt.",
+  "YPDN": "Recherchiert: Nicht handgefertigt; die Freeware von Ecrufeels (5,0 aus 6 Bewertungen, ca. 4,4K Downloads, laut Beschreibung 2024-nativ) liegt knapp unter der Empfehlungsschwelle, die Mfsg-Payware ist unbewertet.",
+  "WPDL": "Recherchiert: Keine Payware und nur eine nennenswerte Freeware (Pilot-Snoops, für MSFS 2020/2024 getaggt, Update 31.07.2026) mit erst 5,0 aus 2 Bewertungen bei rund 1.850 Downloads – zu wenig Belege für eine klare Empfehlung.",
+  "WALL": "Recherchiert: Keine Payware gefunden, und die einzige Freeware (ProjectRaven, MSFS 2020/2024) ist mit 3,5 aus 2 Bewertungen schwach bewertet.",
+  "WBKK": "Recherchiert: kein Muss-Add-on; Payware von The Secret Studio als Option.",
+  "WBGG": "Recherchiert: kein Muss-Add-on; Payware von The Secret Studio als Option.",
+  "YPXM": "Recherchiert: Mountainair bietet eine eigene MSFS-2024-Freeware (4,3 aus 7 Bewertungen, 1.065 Downloads, Update 29.08.2026; die 2020-Version hat 5,0 aus 5), was knapp unter der Empfehlungsschwelle liegt; Payware gibt es keine.",
+  "WIEE": "Recherchiert: Nur eine kleine Beleuchtungs-Freeware von 2021 (5,0 aus 1 Bewertung, nur MSFS 2020) und keine Payware.",
+  "VTSP": "Recherchiert: kein Muss-Add-on; Payware von SiamFlight als Option.",
+  "VTBS": "Recherchiert: kein Muss-Add-on; Payware von SiamFlight als Option.",
+  "VDSA": "Recherchiert: Nur schwache Optionen: Freeware von Yoshino mit 4,0 aus 3 Bewertungen und Payware von MSFScenerybuilders mit 2,5 aus 6, beide nur für MSFS 2020 gelistet.",
+  "VVTS": "Recherchiert: Die eigenständige Freeware von ams7880 (4,4 aus 12, von 2021, nur MSFS 2020) liegt unter der Schwelle, das besser bewertete Yoshino-Paket (5,0 aus 10) ist laut Beschreibung nur eine Ergänzung zur DominicDesignTeam-Payware, die selbst nur 4,0 aus 8 Bewertungen hat.",
+  "VVDN": "Recherchiert: Die Payware von DominicDesignTeam hat nur 3,58 aus 12 Bewertungen und ist nur für MSFS 2020 gelistet; die Yoshino-Freeware ist lediglich eine unbewertete Ergänzung zu dieser Payware.",
+  "VLLB": "Recherchiert: Die Freeware von Chanthanong_Nino ist gut bewertet (4,8 aus 10), aber von 2021, nur für MSFS 2020 getaggt und für 2024 unbestätigt, und die FSDG-Payware hat nur 4,0 aus 2 Bewertungen.",
+  "VVNB": "Recherchiert: Die Payware von DominicDesignTeam hat nur 3,82 aus 21 Bewertungen und ist nur für MSFS 2020 gelistet; die Yoshino-Freeware (4,0 aus 4) ist ein Bodenpaket passend zur Dominic-Szenerie.",
+  "VMMC": "Recherchiert: kein Muss-Add-on; Payware von SamScene3D als Option.",
+  "RCTP": "Recherchiert: kein Muss-Add-on; Payware von ACO Design Studio als Option.",
+  "RJFK": "Recherchiert: Nicht handgefertigt (weder in World Update 1 noch 20 für Japan enthalten), die Fly2High-Payware ist mit 3,51 aus 25 Bewertungen schwach, und eine Flughafen-Freeware gibt es nicht.",
+  "RKSI": "Recherchiert: kein Muss-Add-on; Payware von SiamFlight als Option.",
+  "ZKPY": "Recherchiert: kein Muss-Add-on; Payware von SamScene3D als Option.",
+  "ZYTL": "Recherchiert: Nur eine Freeware von Rudi_Z mit 4,6 aus 6 Bewertungen (6.245 Downloads, nur MSFS 2020 getaggt, für 2024 unbestätigt) und keine Payware.",
+  "ZBAA": "Recherchiert: kein Muss-Add-on; Payware von WF Scenery Studio als Option.",
+  "ZBHH": "Recherchiert: Freeware von SONG_DAIZONG mit 5,0 aus nur 4 Bewertungen (2.201 Downloads, Update 22.02.2026, laut Nutzerkommentar auch in 2024 sichtbar) – zu wenig Bewertungen für eine klare Empfehlung; keine Payware.",
+  "ZMCK": "Recherchiert: Nur die Mokui-Payware (5,0 aus 2, nur MSFS 2020) und eine unbewertete Freeware; Achtung: laut Freeware-Autor fehlt ZMCK (eröffnet 2021) in der MSFS-2020-Standarddatenbank – ob der Flughafen in MSFS 2024 standardmäßig vorhanden ist, bitte im Sim prüfen.",
+  "UIUU": "Recherchiert: Einzige Option ist eine MSFS-2024-Freeware von xflight mit 5,0 aus 3 Bewertungen und 564 Downloads – zu wenig Belege; keine Payware.",
+  "UIII": "Recherchiert: Freeware von xflight in eigener MSFS-2024-Version (5,0 aus 3, 1.102 Downloads; die 2020-Version hat 4,3 aus 6) liegt unter der Empfehlungsschwelle; keine Payware.",
+  "ZMKD": "Recherchiert: Weder auf fsaddoncompare noch auf flightsim.to gibt es ein Add-on für Khovd (auch nicht in der Mongolei-Liste von flightsim.to).",
+  "UASK": "Recherchiert: Payware von Middle Asia Developers ohne Bewertungen und eine Freeware mit 3,5 aus 1 Bewertung (nur MSFS 2020) – kein klarer Mehrwert.",
+  "UAAA": "Recherchiert: Die VueloSimple-Payware ist mit 4,54 aus nur 7 Bewertungen (MSFS 2020/2024, ab 11,40 €) zu dünn belegt, und die Freeware liegt bei 4,0 aus 9 (nur MSFS 2020).",
+  "UCFM": "Recherchiert: Nur eine Freeware mit 3,6 aus 8 Bewertungen (nur MSFS 2020) und keine Payware.",
+  "UTTT": "Recherchiert: Die Payware von Middle Asia Developers hat 2,0 aus 1 Bewertung, und die Freeware ist nur ein Parkpositions-Update für AI-Verkehr (4,8 aus 2, nur MSFS 2020).",
+  "UTSS": "Recherchiert: Freeware von maksim_imt mit 5,0 aus nur 4 Bewertungen (laut Nutzer in FS2024 funktionsfähig) und Payware von Middle Asia Developers mit 5,0 aus 1 – jeweils zu wenig Bewertungen für eine klare Empfehlung.",
+  "UTDD": "Recherchiert: Freeware von Viktoren69 mit 4,3 aus 3 Bewertungen (nur MSFS 2020) und eine unbewertete Payware von Middle Asia Developers – kein klarer Mehrwert.",
+  "OPIS": "Recherchiert: Nicht handgefertigt; die SimArc-Payware (4,8 aus 77 auf fsaddoncompare) ist nur für MSFS 2020 gelistet und bei simMarket inaktiv (Nutzerreview 2025: veraltet), die Freeware von capungflightTV hat nur 1 Bewertung (2021, MSFS 2020).",
+  "VIAR": "Recherchiert: Nicht handgefertigt; einzige Freeware (VForce, 4,0 aus 2, nur MSFS-2020-Tag) korrigiert vor allem Rollwege und Beleuchtung beim Standard-Terminal, Payware existiert nicht.",
+  "VIDP": "Recherchiert: kein Muss-Add-on; Payware von DhruvSim als Option.",
+  "VEBN": "Recherchiert: Nicht handgefertigt; nur eine unbewertete Freeware (VForce, 504 Downloads, nur MSFS-2020-Tag), keine Payware gefunden.",
+  "VYYY": "Recherchiert: Freeware von SawLay hat 4,8 aus nur 9 Bewertungen, ist nur für MSFS 2020 getaggt (Stand 2022) und ohne 2024-Bestätigung; die Mfsg-Payware ist unbewertet.",
+  "VOPB": "Recherchiert: Nur schwach bewertete Freeware (Sw1t23r 4,0 aus 1 mit 2024-Tag und nachgebildeter geneigter Piste; arvind320 4,7 aus 3, nur MSFS 2020), keine Payware gefunden.",
+  "VCBI": "Recherchiert: Freeware von capungflightTV nur 4,3 aus 8 (2021, nur MSFS 2020), Mfsg-Payware unbewertet und nur für MSFS 2020 gelistet – kein klarer Mehrwert.",
+  "VABB": "Recherchiert: kein Muss-Add-on; Payware von MSK Productions als Option.",
+  "OPKC": "Recherchiert: MSK-Productions-Payware mit 4,22 aus 37 Bewertungen (knapp unter 4,3), für MSFS 2020/2024, ab 8,31 € im Sale; die Freeware hat nur 3 Bewertungen (2021, MSFS 2020).",
+  "OBBI": "Recherchiert: Freeware von Rashidar84 nur 4,3 aus 8 (2021, nur MSFS 2020), Tuwaiq-Payware V2 (2020/2024) noch unbewertet, Mfsg 3,0 aus 1 – kein klarer Mehrwert.",
+  "OTHH": "Recherchiert: MXI-Design-Payware nur 3,72 aus 81, die neue iniBuilds-Version für MSFS 2024 (23,26 €) ist noch unbewertet und die Freeware hat 2,4 aus 5 – derzeit kein klarer Mehrwert.",
+  "OEAO": "Recherchiert: Nicht handgefertigt; nur eine Freeware von Loay (5,0 aus 2, v0.1, nur MSFS 2020) und keine Payware gefunden.",
+  "OJAQ": "Recherchiert: Mfsg-Payware nur 3,5 aus 2, die Freeware von EDDB2020 ist unbewertet (2021, nur MSFS 2020) – kein klarer Mehrwert.",
+  "LLBG": "Recherchiert: kein Muss-Add-on; Payware von Aerosoft als Option.",
+  "ZDM": "Recherchiert: Weder auf fsaddoncompare noch auf flightsim.to ein Add-on für ZDM/Ramallah gefunden (Suche nach Code und Name); ob der Heliport im Sim überhaupt als Landeplatz existiert, ist unklar.",
+  "ORBI": "Recherchiert: Einzige Option ist die Azrsim-Payware mit 4,2 aus nur 4 Bewertungen (MSFS 2020/2024, ab 18,60 €), eine Freeware-Szenerie gibt es nicht – kein klarer Mehrwert belegt.",
+  "OIIE": "Recherchiert: HomaSim-Payware mit 4,13 aus 65, aber nur für MSFS 2020 gelistet; die frühere Freeware (bamzi, 3,9 aus 4) ist zum Download gesperrt.",
+  "UTAA": "Recherchiert: Nur schwach bewertete Add-ons (Vizkaine-Payware 2,5 aus 2; Freeware EDDB2020 2,5 aus 2 bzw. bymaxgames 1,0 aus 2) – kein klarer Mehrwert.",
+  "UTAK": "Recherchiert: Nur eine WIP-Freeware von bymaxgames (3,0 aus 1, nur MSFS 2020) und keine Payware gefunden.",
+  "UBBB": "Recherchiert: Azrsim-Payware nur 3,78 aus 5 (Bundle 5,0 aus 2), Ac Scenery 4,3 aus 3 und Freeware von EDDB2020 4,0 aus 7 (nur MSFS 2020) – zu wenig belastbare Bewertungen.",
+  "UDYZ": "Recherchiert: kein Muss-Add-on; Payware von AmSim als Option.",
+  "UGTB": "Recherchiert: AmSim-Payware (4,32 aus 42) ist nur für MSFS 2020 gelistet und laut Nutzerberichten (Aug. 2026) weder für 2024 erhältlich noch sicher lauffähig; eigenständige Freeware gibt es nicht, nur einen Enhancement-Mod für die Payware.",
+  "LCLK": "Recherchiert: iniBuilds-Larnaca für MSFS 2024 (11,62 €) ist noch unbewertet, JustSim (4,18 aus 51) nur für MSFS 2020 gelistet und eine Freeware-Szenerie gibt es nicht – vorerst kein klarer Mehrwert.",
+  "HESN": "Recherchiert: Nicht handcrafted; die einzige Freeware (Nassef, kleine 23-KB-Verbesserung von Beleuchtung/Parkpositionen) hat nur 5,0 aus 2 Bewertungen, ist nur für MSFS 2020 getaggt und seit 2021 unverändert, die Payware von MSFScenerybuilders hat 0 Bewertungen und ist nur für MSFS 2020 gelistet.",
+  "HHAS": "Recherchiert: Die Freeware von DangerousBanana hat nur 5,0 aus 4 Bewertungen und braucht in MSFS 2024 den separaten Fix von Nevermind1982 (sonst fehlt das Terminal), die Payware von MSFScenerybuilders (4,3 aus 6) ist nur für MSFS 2020 gelistet – kein klarer Mehrwert.",
+  "HDAM": "Recherchiert: Keine Airport-Scenery vorhanden: auf flightsim.to gibt es nur einen kleinen 2024-Baumentfernungs-Fix (Nevermind1982, 0 Bewertungen, 178 Downloads) und ein GSX-Profil, auf fsaddoncompare keine Payware.",
+  "HCMH": "Recherchiert: Weder auf flightsim.to (Suche HCMH/Hargeisa) noch auf fsaddoncompare gibt es eine Scenery für Hargeisa, und der Platz ist nicht handcrafted.",
+  "HALA": "Recherchiert: Weder auf flightsim.to (Suche HALA/Hawassa) noch auf fsaddoncompare gibt es eine Scenery für Hawassa, und der Platz ist nicht handcrafted.",
+  "HJJJ": "Recherchiert: Die Freeware von kychungdotcom ist zwar für MSFS 2020/24 getaggt, hat aber nur 5,0 aus 1 Bewertung bei 1.422 Downloads und ist seit 2023 unverändert; die Payware von MSFScenerybuilders ist unbewertet und nur für MSFS 2020 gelistet.",
+  "HKJK": "Recherchiert: kein Muss-Add-on; Payware von iniBuilds als Option.",
+  "HBBA": "Recherchiert: Auf flightsim.to gibt es keine Freeware für Bujumbura, die einzige Payware (MSFScenerybuilders, 4,5 aus 6) ist nur für MSFS 2020 gelistet.",
+  "HTZA": "Recherchiert: Die beste Freeware (Skyprince, 5,0 aus 10, 9.027 Downloads) ist nur für MSFS 2020 getaggt, seit 2023 unverändert und in keinem ihrer 34 Kommentare für 2024 bestätigt (Test lohnt sich), die Paywares sind kaum bewertet (Barelli 4,25 aus 2, South Oak 4,3 aus 6).",
+  "HKMO": "Recherchiert: Die Freeware von Lennart320 ist zwar nativ für MSFS 2024 (v1.2, März 2026), laut Autor aber keine realistische Darstellung und nur mit 4,8 aus 5 Bewertungen belegt, und die Paywares überzeugen nicht (African Skies 4,0 aus 4, MSFScenerybuilders 3,31 aus 9).",
+  "FJDG": "Recherchiert: Die einzige Freeware (TangoFox, 4,2 aus 5, 3.137 Downloads) ist nur für MSFS 2020 getaggt und seit 2023 nicht aktualisiert, Payware existiert nicht.",
+  "FMMI": "Recherchiert: kein Muss-Add-on; Payware von VueloSimple als Option.",
+  "FMNN": "Recherchiert: Freeware (Pilot_mathis974, 5,0 aus 1) und Payware (DSky Nosy Be Island, 4,0 aus 1) sind kaum bewertet und nur für MSFS 2020 gelistet.",
+  "ZZ-0002": "Recherchiert: Ohne ICAO-Code; auf flightsim.to gibt es nur ein fantasievolles, laut Autor unfertiges \"Grande Glorieuse Airport Resort\" (Perseverance, 5,0 aus 1, 206 Downloads, nur MSFS 2020), auf fsaddoncompare nichts.",
+  "FMCH": "Recherchiert: Die einzige Freeware (DangerousBanana, 5,0 aus 1, 1.135 Downloads) ist kaum bewertet und nur für MSFS 2020 getaggt, Payware gibt es nicht.",
+  "FQPB": "Recherchiert: Die einzige Freeware (DangerousBanana, v2.0 von 2025, 753 Downloads, nur MSFS 2020) hat nur 1 Bewertung, Payware gibt es nicht.",
+  "FWKI": "Recherchiert: Die Freeware von DangerousBanana (5,0 aus 5, 1.589 Downloads, v2.0 vom Januar 2026) ist nur für MSFS 2020 getaggt und zu wenig bewertet, Payware gibt es nicht.",
+  "FQBR": "Recherchiert: Die beste Freeware (Victor98) ist zwar für MSFS 2020/24 getaggt, hat aber nur 5,0 aus 6 Bewertungen bei 1.204 Downloads und ist seit 2023 unverändert, Payware gibt es nicht.",
+  "FQMA": "Recherchiert: Die Freeware ist schwach belegt (die neue native 2024-Version von DangerousBanana vom 11.09.2026 hat noch keine Bewertung, ältere Versionen je 5,0 aus 2), die Payware von MSFScenerybuilders hat nur 3,4 aus 7 und ist nur für MSFS 2020 gelistet.",
+  "FDSK": "Recherchiert: Die einzige nennenswerte Freeware (DangerousBanana, 5,0 aus 3, 926 Downloads) ist nur für MSFS 2020 getaggt und kaum bewertet, Payware gibt es nicht.",
+  "FAOR": "Recherchiert: Alle Paywares sind mäßig bewertet (Gaffer 3,82 aus 48, NMG 3,25 aus 26, iniBuilds 3,07 aus 14) und die Freeware von NSAJID hat nur 3,0 aus 3 – kein klarer Mehrwert.",
+  "FXMM": "Recherchiert: Die Freeware von DangerousBanana (5,0 aus 5, 1.250 Downloads) ist nur für MSFS 2020 getaggt und zu wenig bewertet, die Payware von MSFScenerybuilders (4,0 aus 1) ebenfalls nur für MSFS 2020 gelistet.",
+  "FAGG": "Recherchiert: Auf flightsim.to gibt es für George nur GSX-Profile, die einzige Payware (NMG Simulations, 3,8 aus 6) ist schwach bewertet.",
+  "FYLZ": "Recherchiert: Die einzige Freeware (vo1tage, 0 Bewertungen, 248 Downloads, nur MSFS 2020) ist ohne Aussagekraft, Payware gibt es nicht.",
+  "FBKE": "Recherchiert: Die Freeware von DangerousBanana (5,0 aus 3, 973 Downloads) ist nur für MSFS 2020 getaggt und kaum bewertet, Payware gibt es nicht.",
+  "FVHA": "Recherchiert: Die Freeware von DangerousBanana hat nur 2,8 aus 5 und die Payware von MSFScenerybuilders nur 3,4 aus 17 (nur MSFS 2020) – kein Mehrwert.",
+  "FLKK": "Recherchiert: Die Freeware von DangerousBanana (4,5 aus 6, 2.841 Downloads, v2.0 vom Januar 2026) ist nur für MSFS 2020 getaggt und zu wenig bewertet, Payware gibt es nicht.",
+  "FZQA": "Recherchiert: Die Freeware von EchoMikeRDC ist zwar für MSFS 2020/24 getaggt, hat aber nur 5,0 aus 6 Bewertungen bei 1.958 Downloads (optional testbar), Payware gibt es nicht.",
+  "FNME": "Recherchiert: Weder auf flightsim.to (Suche FNME/Menongue: 0 Treffer) noch auf fsaddoncompare gibt es eine Scenery, und der Platz ist nicht handcrafted.",
+  "FNUB": "Recherchiert: Die einzige Freeware (DangerousBanana, 0 Bewertungen, 938 Downloads, nur MSFS 2020, Stand 2022) ist ohne Aussagekraft, Payware gibt es nicht.",
+  "FPST": "Recherchiert: Nicht handgefertigt und keine Payware gefunden; die beste Freeware „FPST Sao Tome“ (Viktoren69) hat nur 5,0 aus 3 Bewertungen und 888 Downloads, ist nur für MSFS 2020 getaggt und hat sechs gelistete Abhängigkeiten – kein klarer Mehrwert.",
+  "FOOL": "Recherchiert: Neue Freeware von dulce1021 (Juni 2026, für MSFS 2020/2024 getaggt) überarbeitet den Standardflughafen umfassend, hat aber erst 5,0 aus 4 Bewertungen und 773 Downloads, und die Payware von MSFScenerybuilders liegt nur bei 3,03 aus 4 (nur MSFS 2020) – noch unter der Empfehlungsschwelle.",
+  "FCBB": "Recherchiert: Die Payware von MSFScenerybuilders hat nur 3,38 aus 18 Bewertungen und ist nur für MSFS 2020 gelistet, die einzige Freeware ist ein Korrektur-Mod für genau diese Payware (5,0 aus 1) – kein klarer Mehrwert.",
+  "FGSL": "Recherchiert: Keine eigene FGSL-Freeware, nur das Inselpaket von timot75 (5,0 aus 4, 1.017 Downloads, nur MSFS 2020, Stand 2023), und die Payware von MSFScenerybuilders hat 4,7 aus nur 3 Bewertungen (nur MSFS 2020) – kein klarer Mehrwert.",
+  "FKKD": "Recherchiert: Die Payware von MSFScenerybuilders (4,38 aus 13 Bewertungen) ist nur für MSFS 2020 gelistet (2024 unklar), die Freeware von ghosh9691 hat nur 5,0 aus 2 und ist seit 2022 unverändert – kein klarer Mehrwert.",
+  "FEFF": "Recherchiert: Freeware von quelcertoleo (v0.1.0, 5,0 aus 1, 1.132 Downloads, nur MSFS 2020, Stand 2022) und Payware von MSFScenerybuilders (4,2 aus 4, nur MSFS 2020) sind zu schwach belegt.",
+  "FTTJ": "Recherchiert: Die Freeware von EDDB2020 hat keine Bewertungen (1.730 Downloads, nur MSFS 2020, inzwischen Teil von AFRICA TO GO!) und die für 2020/2024 gelistete Payware von MSFScenerybuilders ebenfalls keine – kein klarer Mehrwert.",
+  "DNSO": "Recherchiert: Weder auf flightsim.to (Suche nach DNSO und Sokoto, Länderliste Nigeria) noch auf fsaddoncompare wurde ein Add-on für DNSO gefunden – Standardflughafen.",
+  "DRRN": "Recherchiert: Keine Freeware gefunden (Suche nach DRRN und Niamey, keine Einträge für Niger), und die Payware von MSFScenerybuilders hat nur 4,5 aus 4 Bewertungen und ist nur für MSFS 2020 gelistet.",
+  "DBBB": "Recherchiert: Keine Freeware gefunden (Suche nach DBBB und Cotonou, keine Einträge für Benin), und die Payware von MSFScenerybuilders hat nur 3,25 aus 4 Bewertungen und ist nur für MSFS 2020 gelistet.",
+  "DXXX": "Recherchiert: Die Freeware von caribbeansky ist laut Autor nur ein „Simple upgrade“ (5,0 aus 4, 1.536 Downloads, MSFS 2024), die Payware von MSFScenerybuilders hat 4,3 aus 6 und ist nur für MSFS 2020 gelistet – kein klarer Mehrwert.",
+  "DGAA": "Recherchiert: kein Muss-Add-on; Payware von FSDG als Option.",
+  "DFFD": "Recherchiert: Keine Freeware gefunden (Suche nach DFFD und Ouagadougou, keine Einträge für Burkina Faso), und die Payware von MSFScenerybuilders hat nur 3,2 aus 4 Bewertungen und ist nur für MSFS 2020 gelistet.",
+  "GABS": "Recherchiert: Die eigene GABS-Freeware ist eingestellt und nur noch im Sammelpaket AFRICA TO GO! enthalten (4,9 aus 51, aber nur MSFS 2020 getaggt, seit 11/2024 ohne Update, 11 Abhängigkeiten), und die Payware von MSFScenerybuilders hat nur 2,62 aus 10.",
+  "DIAP": "Recherchiert: Die Freeware von Chak991 ist laut Autor bewusst einfach (nur Hauptterminal; 5,0 aus 6, 1.260 Downloads, nur MSFS 2024), die Payware von MSFScenerybuilders hat nur 3,38 aus 17 und ist nur für MSFS 2020 gelistet – kein klarer Mehrwert.",
+  "GLRB": "Recherchiert: Keine Freeware-Szenerie gefunden (nur eine Pilot2ATC-Datei), und die Payware von Africa4fs hat nur 5,0 aus 2 Bewertungen und ist nur für MSFS 2020 gelistet.",
+  "GFLL": "Recherchiert: Keine Payware; die beste Freeware von Lennart320 (neues Terminal, 5,0 aus 7 Bewertungen, 2.072 Downloads, für MSFS 2020/2024 getaggt) ist laut Autor keine realistische Umsetzung und liegt unter der Empfehlungsschwelle.",
+  "GUCY": "Recherchiert: Die Freeware von Chak991 ist laut Autor einfach gehalten (nur Terminal und Tower; 5,0 aus 1, 1.434 Downloads, MSFS 2024), die Payware von MSFScenerybuilders hat nur 3,71 aus 7 und ist nur für MSFS 2020 gelistet – kein klarer Mehrwert.",
+  "GGOV": "Recherchiert: Keine Payware; die einzige Freeware von Lennart320 (nur neue Bodentexturen, Standardgebäude; 5,0 aus 1, 843 Downloads, nur MSFS 2020, Stand 2023) bringt keinen klaren Mehrwert.",
+  "GOBD": "Recherchiert: kein Muss-Add-on; Payware von Devinci als Option.",
+  "GVAC": "Recherchiert: Die RmStudios-Payware ist mit 4,6 aus 40 gut bewertet, aber nur für MSFS 2020 gelistet (2024-Status unklar), FSDGs „Cape Verde Sal“ für 2020/2024 hat noch keine Bewertungen und die Freeware nur 3,7 aus 3 – kein klar belegter Mehrwert.",
+  "GQNO": "Recherchiert: Nur schwache Optionen: Die Payware von MSFScenerybuilders ist nur für MSFS 2020 gelistet (3,64 aus 11 Bewertungen), die Freeware hat höchstens 1–3 Bewertungen (z. B. die 2024-Version von Lennart320 mit 5,0 aus 1).",
+  "LPPT": "Recherchiert: kein Muss-Add-on; Payware von MK Studios als Option.",
+  "GMMN": "Recherchiert: Die beste Payware (Prealsoft) liegt mit 4,17 aus 65 Bewertungen unter der Schwelle (FSDG Casablanca nur 3,0 aus 4), Freeware gibt es nur als unbewerteten Licht-Fix bzw. GSX-Profile.",
+  "HLLM": "Recherchiert: Kein Add-on speziell für Mitiga: fsaddoncompare zeigt nur Produkte anderer libyscher Flughäfen (z. B. HLLT), und das Freeware-Paket „AFRICA TO GO!“ erscheint zwar in der Suche, nennt HLLM auf seiner Seite aber nicht und ist nur für 2020 getaggt.",
+  "DTTJ": "Recherchiert: Einzige Szenerie ist die Payware FSDG Djerba mit nur 3,87 aus 6 Bewertungen, auf flightsim.to gibt es lediglich GSX-Profile dafür.",
+  "LMML": "Recherchiert: Die neue iniBuilds-Szenerie (nur MSFS 2024, 17,44 €) hat noch keine Bewertungen, JustSim ist nur für 2020 gelistet (4,17 aus 89) und die Freeware (Early Access, 4,5 aus 2) ist zu dünn bewertet.",
+  "VA-0001": "Recherchiert: Einzige Option ist die unbewertete Freeware „Vatican City Heliport“ (880 Downloads, nur für MSFS 2020 getaggt), Payware gibt es keine.",
+  "LIKD": "Recherchiert: Nur kleine, kaum bewertete Freeware – eine MSFS-2024-Version von FG91X (unbewertet, 197 Downloads) und Pille83s ältere 2020-Version (4,8 aus 2) –, Payware gibt es keine.",
+  "LNMC": "Recherchiert: Die CDN-Freeware für MSFS 2024 (5,0 aus 7, 1.172 Downloads, v1.1 vom April 2026) liegt unter der Schwelle von 8 Bewertungen und steht deshalb nur als Kandidat zum Prüfen daneben. Die ältere 2020-Fassung von t0kenkiwi hat 4,3 aus 26.",
+  "LEBL": "Recherchiert: kein Muss-Add-on; Payware von LVFR als Option.",
+  "AD-ALV": "Recherchiert: Kein passendes Add-on verifiziert: Simteks Payware „LFUA Andorra National Heliport“ (nur 2024, 4,0 aus 1) beschreibt einen neu eröffneten Heliport auf einem Berg, dessen Identität mit AD-ALV unklar ist, und die Freeware „Cami heliport“ ist ein anderer Landeplatz.",
+  "LSXB": "Recherchiert: Einzige Option ist die Freeware von Heli30 (5,0 aus 5, 1,1K Downloads), die nur für MSFS 2020 getaggt und für 2024 unbestätigt ist; Payware gibt es keine.",
+  "LATI": "Recherchiert: kein Muss-Add-on; Payware von Salvuz als Option.",
+  "BKPR": "Recherchiert: kein Muss-Add-on; Payware von M'M Simulations als Option.",
+  "LWSK": "Recherchiert: Die Freeware von EDDB2020 (4,6 aus 8) und die Payware von Aerosoft (4,47 aus 15) sind beide nur für MSFS 2020 gelistet, ein Betrieb in 2024 ist nicht bestätigt.",
+  "LBSF": "Recherchiert: Die Payware Fly2High Sofia 2.0 liegt mit 4,12 aus 25 unter der Schwelle, Aflosim (4,67 aus 6) ist nur für 2020 gelistet und die Freeware kommt nur auf 3,9 aus 11.",
+  "LQSA": "Recherchiert: kein Muss-Add-on; Payware von Kiss Simulation als Option.",
+  "LHBP": "Recherchiert: kein Muss-Add-on; Payware von LHSimulations als Option.",
+  "LUKK": "Recherchiert: kein Muss-Add-on; Payware von MXI Design als Option.",
+  "UKLL": "Recherchiert: kein Muss-Add-on; Payware von Pyreegue Dev Co. als Option.",
+  "UMMS": "Recherchiert: Die Payware AmSim Minsk liegt mit 4,2 aus 53 unter der Schwelle und ist nur für MSFS 2020 gelistet, die Freeware hat nur 1,5 aus 2.",
+  "EVRA": "Recherchiert: kein Muss-Add-on; Payware von LisiumDesign als Option.",
+  "EETN": "Recherchiert: kein Muss-Add-on; Payware von Drzewiecki Design als Option.",
+  "EFMA": "Recherchiert: Einzige Option ist die Freeware von WildLynxPilot (für 2020/2024 getaggt, 5,0 aus nur 5 Bewertungen, 1,6K Downloads) – einen Blick wert, aber unter der Schwelle; Payware gibt es keine.",
+  "EPWA": "Recherchiert: kein Muss-Add-on; Payware von Drzewiecki Design als Option."
+ },
+ "trials": {
+  "NGFU": {
+   "title": "Sonderetappe Funafuti",
+   "why": "Real landen hier nur Turboprops. Die Bahn misst 1.536 × 24 m – schmaler als jede zugelassene A320-Bahn.",
+   "checks": [
+    "Vorher im Freeflug testen: Landung und Start mit der geplanten Masse",
+    "Landestrecke und Startleistung im Fenix-EFB mit dem aktuellen Wetter rechnen",
+    "Nur Treibstoff für Wallis (392 NM) plus Reserven tanken",
+    "Abbrechen bei Rückenwind, nasser Bahn oder zu knapper EFB-Rechnung"
+   ],
+   "fallback": "A320 Tarawa → Nadi (3:14 h), dort H160-Kette über Yasawa und Rotuma nach Funafuti und zurück (6 Legs, rund 10½ h), danach A320 Nadi → Wallis."
+  },
+  "SCGC": {
+   "title": "Sonderetappe Union Glacier",
+   "why": "Real fliegt hier die B757 von ALE. Dass der Fenix auf Blue Ice sauber funktioniert, ist damit nicht bewiesen.",
+   "checks": [
+    "Vorher im Freeflug mit der geplanten Landemasse testen",
+    "Landestrecke im EFB mit der ungünstigsten verfügbaren Bahnzustands-Option rechnen – Blue Ice bremst kaum",
+    "Hin- und Rückweg passen mit Reserven nicht in die Tanks: im Sim vor Ort nachtanken",
+    "Nur bei Tageslicht und ruhigem Wetter fliegen"
+   ],
+   "fallback": "Hobart → Wilkins (YWKS) mit dem A320 in Kapitel 10: Dort fliegt real ein Airbus A319 auf einer Eisbahn (2 × 4:54 h, dasselbe Freeware-Paket). Oder Kapstadt → Wolf's Fang (kostenloses iniBuilds-Add-on, 2 × 5:58 h)."
+  },
+  "FHSH": {
+   "title": "Sonderetappe St Helena",
+   "why": "Real fliegt Airlink die E190; eine 737-800 und eine A318 sind hier schon gelandet, eine A320 im Liniendienst nicht.",
+   "checks": [
+    "Landestrecke nur 1.535–1.550 m – im EFB mit realer Masse rechnen",
+    "Windscherung an der Kante: stabil anfliegen, Durchstarten fest einplanen"
+   ],
+   "fallback": "St Helena auslassen und wie in V1 Luanda → Ascension → São Tomé fliegen – Ascension zählt für dieselbe Kategorie."
+  }
+ },
+ "research": {
+  "date": "2026-09-24",
+  "airports": 289,
+  "rules": "Freeware-Empfehlung ab 4,5 Sternen bei mindestens 8 Bewertungen oder 6.000 Downloads und belegtem MSFS-2024-Betrieb (Tag, Autor oder Nutzer). Payware-Option ab 4,3 Sternen bei mindestens 10 Bewertungen und MSFS-2024-Angabe. Kostenlose Kandidaten unter der Schwelle stehen nur als „Freeware zum Prüfen“ da. Ohne belegten Mehrwert: „Angebot recherchiert“ mit Begründung. Preise: günstigster Händler laut FSAddonCompare, meist ohne Steuern. Die Schwellen gelten für die 289 Airports dieser Recherche und für die älteren Freeware-Einträge (am 24.09.2026 nachgezählt; VILH, VRMM und NTTB stehen seitdem nur noch zum Prüfen da). Ausgenommen, jeweils mit eigener Begründung: die handverlesenen Kauf-Tipps und ältere bezahlte Beobachtungskandidaten unter der Payware-Schwelle (FACT, VNKT, OYSQ, FVFA/FSDG, VQPR/FSDG, NTAA, MMMX, VILH/Sundownersim) – diese bleiben optional."
+ },
+ "simChecks": {
+  "ZMCK": {
+   "status": "unconfirmed",
+   "note": "Neuer Flughafen Ulaanbaatar (eröffnet 2021): Laut Freeware-Autor fehlt er in der MSFS-2020-Datenbank, für MSFS 2024 ist er nicht belegt; ein Forenbeitrag vom März 2025 meldet nur, dass das FMS des Just-Flight-RJ ihn in MSFS 2024 nicht findet. Vor Kapitel 14 in der Weltkarte suchen. Fehlt er: Hohhot → Ulan-Ude direkt (682 NM, 2:00 h) – die Mongolei zählt ohnehin über Chowd (ZMKD).",
+   "sources": [
+    "https://flightsim.to/addon/114241/zmck-new-ulaanbaatar-chinggis-khaan-int-l-airport-free-version",
+    "https://forums.flightsimulator.com/t/airports-missing-in-rj-fms/708983"
+   ]
+  },
+  "ZDM": {
+   "status": "unconfirmed",
+   "note": "Ramallah Heliport: Weder auf flightsim.to noch auf FSAddonCompare gibt es ein Add-on, und ob der Heliport im Sim als Landeplatz existiert, ist unklar. Vorher in der Weltkarte suchen; Ausweichziel ist der Bethlehem Heliport. Die Volanta-Wertung nach dem Flug prüfen.",
+   "sources": [
+    "https://flightsim.to/search/?q=Ramallah",
+    "https://www.fsaddoncompare.com/search/Ramallah"
+   ]
+  },
+  "ZZ-0002": {
+   "status": "unconfirmed",
+   "note": "Militärpiste Grande Glorieuse ohne ICAO-Code (OurAirports ZZ-0002): Keine geprüfte Quelle belegt, dass sie im Standard-MSFS existiert; auf flightsim.to gibt es nur ein fantasievolles, laut Autor unfertiges Resort-Add-on. Vorab in der MSFS-Weltkarte und in Volantas Flughafenansicht prüfen. Ausweichplan: ab Mayotte nach Juan de Nova (FMZJ).",
+   "sources": [
+    "https://flightsim.to/search/?q=Glorieuse",
+    "https://flightsim.to/addon/63230/grande-glorieuse"
+   ]
+  },
+  "FMZJ": {
+   "status": "unconfirmed",
+   "note": "Juan de Nova, Ausweichziel für die Glorieuses: Ob die Piste im Standard-MSFS existiert, sagt keine der geprüften Quellen; die einzige Freeware nennt ihr Autor selbst fiktiv (keine Bewertungen, nur MSFS 2020). Vor dem Ausweichen in der Weltkarte suchen.",
+   "sources": [
+    "https://flightsim.to/addon/45110/juan-de-nova-fictional-airport",
+    "https://www.fsaddoncompare.com/search/FMZJ"
+   ]
+  }
+ }
+}

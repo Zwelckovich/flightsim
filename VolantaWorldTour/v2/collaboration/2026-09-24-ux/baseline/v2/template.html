@@ -1,0 +1,162 @@
+<title>Weltreise ab Weeze</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap">
+<style>
+/*__CSS__*/
+</style>
+
+<header class="top">
+  <div class="wrap head">
+    <div class="brand">
+      <svg width="38" height="38" viewBox="0 0 38 38" aria-hidden="true">
+        <circle cx="19" cy="19" r="17" fill="none" stroke="#3e4a55" stroke-width="1.5"/>
+        <ellipse cx="19" cy="19" rx="7.5" ry="17" fill="none" stroke="#3e4a55" stroke-width="1.2"/>
+        <path d="M2.5 19h33M5 11h28M5 27h28" stroke="#3e4a55" stroke-width="1.2" fill="none"/>
+        <path d="M8 25 C 14 10, 24 9, 31 14" stroke="#33b4f5" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <circle cx="31" cy="14" r="2.6" fill="#33b4f5"/>
+      </svg>
+      <div>
+        <h1>Weltreise ab Weeze</h1>
+        <span class="sub" id="sub">V2 · Fenix A320 + H160 · alle 245 Volanta-Kategorien</span>
+      </div>
+    </div>
+    <div class="status">
+      <span class="count" id="count"></span>
+      <span class="chip" id="sync" title="Wo dein Fortschritt gespeichert wird"><i></i><span>Lokal</span></span>
+    </div>
+  </div>
+</header>
+
+<nav class="stepbar" aria-label="Kapitel und Legs">
+  <div class="wrap"><div class="rail" id="rail"></div></div>
+</nav>
+
+<main>
+  <div class="wrap">
+    <div class="grid">
+      <section class="prose" id="prose" aria-live="polite"></section>
+      <section class="stage" aria-label="Karte und Flughäfen">
+        <div class="stagebar">
+          <span class="figtitle" id="maptitle">Karte</span>
+          <div class="seg" role="group" aria-label="Kartenansicht">
+            <button type="button" data-view="leg" id="view-leg">Leg</button>
+            <button type="button" data-view="chapter" id="view-chapter">Kapitel</button>
+            <button type="button" data-view="world" id="view-world">Welt</button>
+            <button type="button" data-view="globe" id="view-globe">Globus</button>
+          </div>
+        </div>
+        <div class="screen" id="map"></div>
+        <div class="legend">
+          <span><i class="swatch cur"></i>aktuelles Leg</span>
+          <span><i class="swatch ch"></i>Kapitel</span>
+          <span><i class="swatch done"></i>geflogen</span>
+          <span><i class="swatch dash"></i>H160-Ausflug</span>
+          <span><i class="swatch dot"></i>Top-Highlight</span>
+          <span><i class="swatch ring"></i>eigene Szenerie</span>
+        </div>
+        <div class="panels" id="apts"></div>
+        <div class="xcards" id="xcards"></div>
+      </section>
+    </div>
+
+    <div class="tracks" id="tracks"></div>
+
+    <section class="book">
+      <div class="tabs" role="tablist" aria-label="Bereiche">
+        <button class="tab" role="tab" id="tab-plan" aria-controls="panel-plan" data-tab="plan">Flugplan</button>
+        <button class="tab" role="tab" id="tab-hl" aria-controls="panel-hl" data-tab="hl">Highlights</button>
+        <button class="tab" role="tab" id="tab-scn" aria-controls="panel-scn" data-tab="scn">Szenerien</button>
+        <button class="tab" role="tab" id="tab-cat" aria-controls="panel-cat" data-tab="cat">Kategorien</button>
+        <button class="tab" role="tab" id="tab-new" aria-controls="panel-new" data-tab="new">Neu in V2</button>
+        <button class="tab" role="tab" id="tab-data" aria-controls="panel-data" data-tab="data">Daten &amp; Reset</button>
+      </div>
+
+      <div class="panel" role="tabpanel" id="panel-plan" aria-labelledby="tab-plan">
+        <div class="toolbar">
+          <input type="search" id="q" placeholder="ICAO, Ort oder Land …" aria-label="Flugplan durchsuchen">
+          <select id="flt" aria-label="Filter">
+            <option value="all">Alle Legs</option>
+            <option value="open">Offen</option>
+            <option value="done">Geflogen</option>
+            <option value="hl">Highlights</option>
+            <option value="owned">Eigene Szenerie am Ziel</option>
+            <option value="buy">Kauf-Tipp am Ziel</option>
+            <option value="freeware">Freeware am Ziel</option>
+            <option value="long">Über 2 Stunden</option>
+            <option value="heli">H160-Ausflüge</option>
+            <option value="new">Neue Kategorie</option>
+            <option value="trial">Sonderetappen (erst testen)</option>
+            <option value="unrated">Szenerie ungeprüft</option>
+          </select>
+          <select id="chsel" aria-label="Kapitel"></select>
+          <span class="spacer"></span>
+          <button class="btn small" type="button" id="csv">Flugplan als CSV</button>
+        </div>
+        <div class="scroll"><table id="plan"><thead><tr>
+          <th scope="col"><span class="visually-hidden">Geflogen</span>✓</th><th scope="col">Leg</th><th scope="col">Strecke</th><th scope="col">Ziel · Kategorie</th>
+          <th scope="col" class="num">NM</th><th scope="col" class="num">Flug</th><th scope="col">Szenerie am Ziel</th><th scope="col">Hinweis</th>
+        </tr></thead><tbody></tbody></table></div>
+        <p class="toolbar hint" id="planinfo"></p>
+      </div>
+
+      <div class="panel" role="tabpanel" id="panel-hl" aria-labelledby="tab-hl" hidden></div>
+      <div class="panel" role="tabpanel" id="panel-scn" aria-labelledby="tab-scn" hidden></div>
+      <div class="panel" role="tabpanel" id="panel-cat" aria-labelledby="tab-cat" hidden></div>
+      <div class="panel" role="tabpanel" id="panel-new" aria-labelledby="tab-new" hidden></div>
+      <div class="panel" role="tabpanel" id="panel-data" aria-labelledby="tab-data" hidden>
+        <h2>Daten, Sicherung und Reset</h2>
+        <p class="lede" id="data-where"></p>
+        <div class="datagrid">
+          <section class="dbox">
+            <h3>Sicherung</h3>
+            <p>Exportiert Häkchen, Volanta-Status und Reset-Stand als JSON. Die Sicherung lässt sich hier wieder einlesen – auch ein Export aus V1, dann werden passende Strecken abgehakt.</p>
+            <div class="actions">
+              <button class="btn" type="button" id="backup">Fortschritt sichern</button>
+              <label class="btn" for="restore">Sicherung laden</label>
+              <input class="visually-hidden" type="file" id="restore" accept="application/json,.json">
+            </div>
+          </section>
+          <section class="dbox reset">
+            <h3>Tour zurücksetzen</h3>
+            <fieldset>
+              <legend class="visually-hidden">Was zurückgesetzt wird</legend>
+              <label><input type="checkbox" id="rs-progress" checked> Flug-Häkchen aller Legs</label>
+              <label><input type="checkbox" id="rs-volanta" checked> Volanta-Bestätigungen der Kategorien</label>
+              <label><input type="checkbox" id="rs-debriefs"> Debriefings in der Online-Version</label>
+            </fieldset>
+            <p class="note" id="rs-note">Das Debriefing-Archiv in Git (v2/debriefings.json) bleibt als Tagebuch erhalten. Auf Wunsch leere ich es im Chat – die Git-Historie behält die alte Fassung.</p>
+            <div class="actions" id="rs-step1">
+              <button class="btn danger" type="button" id="rs-go">Zurücksetzen …</button>
+            </div>
+            <div class="confirm" id="rs-step2" hidden>
+              <p><b>Wirklich zurücksetzen?</b> Das gilt auf allen Geräten, die mit der Online-Version synchronisiert sind.</p>
+              <div class="actions">
+                <button class="btn" type="button" id="rs-backup">Erst Sicherung speichern</button>
+                <button class="btn danger" type="button" id="rs-yes">Ja, zurücksetzen</button>
+                <button class="btn" type="button" id="rs-no">Abbrechen</button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <button class="btn" type="button" id="prev">← Zurück</button>
+    <select id="jump" aria-label="Zu einem Leg springen"></select>
+    <button class="btn" type="button" id="next">Weiter →</button>
+    <span class="hint"><kbd>←</kbd> <kbd>→</kbd> blättern · <kbd>G</kbd> geflogen · jedes Leg hat einen eigenen Link</span>
+  </div>
+  <div class="wrap credits" id="credits"></div>
+</footer>
+
+<script type="application/json" id="tour-data">__TOUR_JSON__</script>
+<script type="application/json" id="world-data">__WORLD_JSON__</script>
+<!--__LIBS__-->
+<script>
+/*__APP__*/
+</script>

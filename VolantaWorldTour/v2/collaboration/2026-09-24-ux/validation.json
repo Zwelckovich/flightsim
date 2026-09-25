@@ -1,0 +1,58 @@
+[
+  {
+    "command": [
+      "C:\\Python314\\python.exe",
+      "v2/build_v2.py"
+    ],
+    "exit_code": 0,
+    "stdout": "A320: 388 Legs · 125,503 NM · 429.2 h\nH160: 17 Ausflüge · 34 Legs · 20.4 h\nGesamt: 422 Legs · 449.6 h · über 2 h: 23\nKategorien: 245/245 · eigene Szenerien: Hauptroute 41, mit Ausflügen 43/44 (V1: 36 bzw. 39)\nSzenerie-Status (Hauptstatus): owned 43 · buy 6 · freeware 72 · hand 41 · stdok 241 · optional 0 · unrated 0\nSzenerie ungeprüft: 0 Airports · Sonderetappen: FHSH, NGFU, SCGC\nFreeware zum Prüfen: 4 Kandidaten · offene Sim-Prüfungen: FMZJ, ZDM, ZMCK, ZZ-0002\nDebriefings im Archiv: 0 (geprüft)\nV1 zum Vergleich: 449 Legs · 490.2 h · Twin Otter 2\nDoppelt angeflogen: NCRG, NIUE, SCCI\nFertig: M:\\flightsim\\VolantaWorldTour\\Volanta-Worldtour-V2.html\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "v2/app.js"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "v2/tests/check_ui_navigation.cjs"
+    ],
+    "exit_code": 0,
+    "stdout": "PASS search: combined terms, accents, H160, chapter/status combination, empty results, reset\nPASS keyboard: tab arrows/Home/End, single tab stop, no accidental leg/progress changes, briefing arrows\nPASS navigation: first/last boundaries, current selection, complete-tour state\nPASS focus: native select, repeated next, disabled boundary, route jump and briefing-button shortcuts\nPASS filtered-list focus: following row, previous row, empty result reset\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "v2/tests/check_sync.cjs"
+    ],
+    "exit_code": 0,
+    "stdout": "PASS backup after reset\nPASS debrief confirmation after Volanta reset\nPASS legacy cloud records, reset=0\nPASS legacy cloud records, reset=5000\nPASS local/cloud merge, exactly one necessary upload\nPASS old second device after reset\nPASS late older cloud write repaired; new device correct; no echo loop\nPASS late older Volanta write repaired\nPASS concurrent independent resets preserve both epochs\nPASS equal-time conflicting marks converge\nPASS local edits and resets respect already observed future timestamps\nPASS latest device closed: immutable progress/Volanta events retain the winner\nPASS reset events survive opposite arrival order and suppress legacy data\nPASS repeated partial snapshots do not duplicate pending uploads\nPASS acknowledged writes are not repeated while snapshots lag\nPASS failed writes may retry; confirmed retry is deduplicated\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "v2/tests/check_scenery_ui.cjs"
+    ],
+    "exit_code": 0,
+    "stdout": "PASS scenery rendering: dependency links, required/optional labels, escaped notes, candidates outside download checklist, visible simulator checks\n",
+    "stderr": ""
+  },
+  {
+    "check": "Data and build-source hashes preserved",
+    "files": [
+      "v2/route.json",
+      "v2/content.json",
+      "v2/debriefings.json",
+      "v2/tour-v2.json",
+      "v2/build_v2.py"
+    ]
+  }
+]

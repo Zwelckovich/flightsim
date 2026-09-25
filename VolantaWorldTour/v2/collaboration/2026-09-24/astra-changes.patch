@@ -1,0 +1,771 @@
+--- before/v2/app.js
++++ v2/app.js
+@@ -43,7 +43,13 @@
+     q: '', flt: 'all', ch: 'all', cat: 'all',
+   };
+ 
+-  const stamp = epoch => Math.max(Date.now(), epoch + 1);
++  const stamp = lastSeen => Math.max(Date.now(), lastSeen + 1);
++  // Bei identischen Zeitstempeln müssen alle Geräte dieselbe Entscheidung treffen.
++  // Ein entferntes Häkchen gewinnt; das Datum löst verbleibende Gleichstände auf.
++  const compareText = (a, b) => a === b ? 0 : a > b ? 1 : -1;
++  const compareMark = (a, b) => a.t - b.t || Number(b.on) - Number(a.on) || compareText(a.at, b.at);
++  const compareVol = (a, b) => a.t - b.t || compareText(a.s, b.s);
++  const eventKey = (kind, id, t) => `${kind}_${id}_${t}_${typeof crypto !== 'undefined' && crypto.randomUUID ? crypto.randomUUID() : Math.random().toString(36).slice(2)}`;
+   function rebuildFlown() {
+     const m = new Map();
+     for (const [id, mk] of state.marks) if (mk.on && mk.t > state.epochs.progress) m.set(id, mk.at || '');
+@@ -108,9 +114,28 @@
+   let db = null;
+   let syncMode = 'local';
+   const chains = new Map();
+-  function queue(key, job) {
++  const pendingWrites = new Map();
++  const confirmedWrites = new Map();
++  function queue(key, job, version) {
++    if (version !== undefined && confirmedWrites.get(key)?.has(version)) return Promise.resolve();
++    const pending = pendingWrites.get(key) || new Map();
++    if (version !== undefined && pending.has(version)) return pending.get(version);
++    const token = version === undefined ? Symbol() : version;
+     const next = (chains.get(key) || Promise.resolve()).then(job, job)
+-      .catch(() => toast('Cloud-Sync fehlgeschlagen – der Stand bleibt lokal gespeichert.'));
++      .then(() => {
++        if (version !== undefined) {
++          const confirmed = confirmedWrites.get(key) || new Set();
++          confirmed.add(version);
++          confirmedWrites.set(key, confirmed);
++        }
++      })
++      .catch(() => toast('Cloud-Sync fehlgeschlagen – der Stand bleibt lokal gespeichert.'))
++      .finally(() => {
++        pending.delete(token);
++        if (!pending.size) pendingWrites.delete(key);
++      });
++    pending.set(token, next);
++    pendingWrites.set(key, pending);
+     chains.set(key, next);
+     return next;
+   }
+@@ -129,53 +154,67 @@
+     const m = state.marks.get(id);
+     if (!m || m.t <= state.epochs.progress) return; // vor dem letzten Reset – nicht mehr relevant
+     const l = LEGS[legIdx.get(id)];
+-    queue('f:' + id, () => db.collection('flown').doc(id).set({ legId: id, on: m.on, at: m.at, t: m.t, from: l.f, to: l.t }));
++    // Neue Änderungen überschreiben keinen früheren Cloud-Eintrag. Damit bleibt
++    // der Gewinner auch erhalten, wenn sein ursprüngliches Gerät geschlossen ist.
++    const key = eventKey('f', id, m.t);
++    const value = { legId: id, on: m.on, at: m.at, t: m.t, from: l.f, to: l.t };
++    queue('f:' + id, () => db.collection('flown').doc(key).set(value), JSON.stringify(value));
+   }
+   function pushVol(code) {
+     if (!db) return;
+     const v = state.vstates.get(code);
+     if (!v || v.t <= state.epochs.volanta) return;
+-    queue('v:' + code, () => db.collection('volanta').doc(code).set({ code, s: v.s, t: v.t }));
++    const key = eventKey('v', code, v.t);
++    const value = { code, s: v.s, t: v.t };
++    queue('v:' + code, () => db.collection('volanta').doc(key).set(value), JSON.stringify(value));
+   }
+   function pushEpochs() {
+     if (!db) return;
+-    queue('epochs', () => db.doc('meta/reset').set({ progress: state.epochs.progress, volanta: state.epochs.volanta }));
+-  }
+-  function mergeMarks(docs, first) {
++    const value = { progress: state.epochs.progress, volanta: state.epochs.volanta };
++    // Derselbe Epochensatz hat denselben Schlüssel; verschiedene Resets bleiben erhalten.
++    const key = `p${value.progress}_v${value.volanta}`;
++    queue('epochs', () => db.collection('resets').doc(key).set(value), key);
++  }
++  function mergeMarks(docs) {
+     const remote = new Map();
+     docs.forEach(d => {
+-      if (!d.exists || !legIdx.has(d.id)) return;
+-      const m = cleanMark(d.data());
+-      if (m) remote.set(d.id, m);
++      if (!d.exists) return;
++      const value = d.data();
++      const id = value && legIdx.has(value.legId) ? value.legId : d.id;
++      if (!legIdx.has(id)) return;
++      const m = cleanMark(value);
++      const prior = remote.get(id);
++      if (m && (!prior || compareMark(m, prior) > 0)) remote.set(id, m);
+     });
+     for (const [id, r] of remote) {
+       const l = state.marks.get(id);
+-      if (!l || r.t > l.t) state.marks.set(id, r);
+-    }
+-    if (first) {
+-      // Lokale Änderungen, die neuer sind als die Cloud (oder dort fehlen), hochladen – nichts verwerfen.
+-      for (const [id, l] of state.marks) {
+-        const r = remote.get(id);
+-        if (!r || l.t > r.t) pushMark(id);
+-      }
+-    }
+-  }
+-  function mergeVol(docs, first) {
++      if (!l || compareMark(r, l) > 0) state.marks.set(id, r);
++    }
++    // Auch nach dem ersten Snapshot abgleichen: Ein verspäteter Schreibzugriff eines
++    // anderen Geräts darf den neueren Stand nicht dauerhaft in der Cloud ersetzen.
++    for (const [id, l] of state.marks) {
++      const r = remote.get(id);
++      if (!r || compareMark(l, r) > 0) pushMark(id);
++    }
++  }
++  function mergeVol(docs) {
+     const remote = new Map();
+     docs.forEach(d => {
+-      if (!d.exists || !CATN[d.id]) return;
++      if (!d.exists) return;
+       const v = d.data() || {};
+-      remote.set(d.id, { s: String(v.s || 'open'), t: legacyT(v.t) });
++      const code = CATN[v.code] ? v.code : d.id;
++      if (!CATN[code]) return;
++      const value = { s: String(v.s || 'open'), t: legacyT(v.t) };
++      const prior = remote.get(code);
++      if (!prior || compareVol(value, prior) > 0) remote.set(code, value);
+     });
+     for (const [code, r] of remote) {
+       const l = state.vstates.get(code);
+-      if (!l || r.t > l.t) state.vstates.set(code, r);
+-    }
+-    if (first) {
+-      for (const [code, l] of state.vstates) {
+-        const r = remote.get(code);
+-        if (!r || l.t > r.t) pushVol(code);
+-      }
++      if (!l || compareVol(r, l) > 0) state.vstates.set(code, r);
++    }
++    for (const [code, l] of state.vstates) {
++      const r = remote.get(code);
++      if (!r || compareVol(l, r) > 0) pushVol(code);
+     }
+   }
+   async function initCloud() {
+@@ -184,36 +223,45 @@
+     try { db = await window.claude.use('db'); } catch (e) { db = null; }
+     if (!db) { setSync('local'); return; }
+     const lost = () => { db = null; setSync('local'); };
+-    let firstEpoch = true;
+-    let firstFlown = true;
+-    let firstVol = true;
+-    db.doc('meta/reset').onSnapshot(snap => {
+-      const r = snap.exists ? (snap.data() || {}) : {};
++    const applyEpochs = r => {
+       const rp = Number(r.progress) || 0;
+       const rv = Number(r.volanta) || 0;
+-      const localNewer = state.epochs.progress > rp || state.epochs.volanta > rv;
+       state.epochs.progress = Math.max(state.epochs.progress, rp);
+       state.epochs.volanta = Math.max(state.epochs.volanta, rv);
+-      if (firstEpoch && localNewer) pushEpochs();
+-      firstEpoch = false;
+       // Einträge von vor dem Reset lokal aufräumen
+       for (const [id, m] of state.marks) if (m.t <= state.epochs.progress) state.marks.delete(id);
+       for (const [c, v] of state.vstates) if (v.t <= state.epochs.volanta) state.vstates.delete(c);
+       rebuildFlown();
+       saveLocal();
+       refreshProgress();
++    };
++    // Das alte Reset-Dokument bleibt lesbar und wird beim Empfang ins Journal übernommen.
++    db.doc('meta/reset').onSnapshot(snap => {
++      const before = { ...state.epochs };
++      applyEpochs(snap.exists ? (snap.data() || {}) : {});
++      if (state.epochs.progress > before.progress || state.epochs.volanta > before.volanta) pushEpochs();
++    }, lost);
++    db.collection('resets').onSnapshot(snap => {
++      const r = { progress: 0, volanta: 0 };
++      snap.docs.forEach(d => {
++        if (!d.exists) return;
++        const v = d.data() || {};
++        r.progress = Math.max(r.progress, Number(v.progress) || 0);
++        r.volanta = Math.max(r.volanta, Number(v.volanta) || 0);
++      });
++      const localNewer = state.epochs.progress > r.progress || state.epochs.volanta > r.volanta;
++      applyEpochs(r);
++      if (localNewer) pushEpochs();
+     }, lost);
+     db.collection('flown').onSnapshot(snap => {
+-      mergeMarks(snap.docs, firstFlown);
+-      firstFlown = false;
++      mergeMarks(snap.docs);
+       rebuildFlown();
+       saveLocal();
+       setSync('cloud');
+       refreshProgress();
+     }, lost);
+     db.collection('volanta').onSnapshot(snap => {
+-      mergeVol(snap.docs, firstVol);
+-      firstVol = false;
++      mergeVol(snap.docs);
+       saveLocal();
+       refreshProgress();
+     }, lost);
+@@ -230,7 +278,7 @@
+   function setFlown(id, on) {
+     const prev = state.marks.get(id);
+     const prevOn = prev && prev.on && prev.t > state.epochs.progress;
+-    state.marks.set(id, { on, at: on ? (prevOn && prev.at) || today() : (prev ? prev.at : ''), t: stamp(state.epochs.progress) });
++    state.marks.set(id, { on, at: on ? (prevOn && prev.at) || today() : (prev ? prev.at : ''), t: stamp(Math.max(state.epochs.progress, prev ? prev.t : 0)) });
+     rebuildFlown();
+     saveLocal();
+     pushMark(id);
+@@ -239,7 +287,8 @@
+   const toggleFlown = id => setFlown(id, !state.flown.has(id));
+ 
+   function setVol(code, s) {
+-    state.vstates.set(code, { s, t: stamp(state.epochs.volanta) });
++    const prev = state.vstates.get(code);
++    state.vstates.set(code, { s, t: stamp(Math.max(state.epochs.volanta, prev ? prev.t : 0)) });
+     saveLocal();
+     pushVol(code);
+     refreshProgress();
+@@ -293,7 +342,7 @@
+   }
+   const BADGE = {
+     owned: 'Eigene', buy: 'Kauf-Tipp', freeware: 'Freeware', hand: 'Handgefertigt', optional: 'Optional',
+-    stdok: 'Standard geprüft', unrated: 'Ungeprüft', addon: 'Freeware-Fix',
++    stdok: 'Angebot recherchiert', candidate: 'Freeware · prüfen', unrated: 'Ungeprüft', addon: 'Freeware-Fix',
+   };
+   function stOf(it) { return it.status === 'freeware' && it.addon ? 'addon' : it.status; }
+   function badge(st, label) {
+@@ -422,19 +471,30 @@
+   }
+ 
+   // ---------- Airport-Panels ----------
++  function installationNotes(it) {
++    const deps = Array.isArray(it.dependencies) ? it.dependencies.filter(d => d && d.product) : [];
++    const list = deps.length ? `<ul class="dependencies">${deps.map(d => `<li><b>${d.required ? 'Zusätzlich erforderlich' : 'Optionaler Zusatz'}:</b> ${d.url ? `<a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.product)}${d.dev ? ` · ${esc(d.dev)}` : ''} ↗</a>` : esc(d.product)}${d.note ? ` — ${esc(d.note)}` : ''}</li>`).join('')}</ul>` : '';
++    return list + (it.installNote ? `<p class="installation-note">${esc(it.installNote)}</p>` : '');
++  }
++  function simCheckNote(a) {
++    const sources = (a.simCheck && Array.isArray(a.simCheck.sources) ? a.simCheck.sources : [])
++      .map((u, i) => `<a href="${esc(u)}" target="_blank" rel="noopener">Quelle ${i + 1} ↗</a>`).join(' · ');
++    return a.simCheck && a.simCheck.status === 'unconfirmed'
++      ? `<div class="sim-check"><b>Sim-Prüfung offen</b><p>${esc(a.simCheck.note)}</p>${sources ? `<p>${sources}</p>` : ''}</div>` : '';
++  }
+   function scnLine(it) {
+     const st = stOf(it);
+     if (st === 'owned') {
+-      return `<div class="line">${badge('owned')}<span>Deine Szenerie · ${esc(it.dev)}</span></div>${it.note ? `<div class="why">${esc(it.note)}</div>` : ''}`;
+-    }
+-    if (st === 'hand') return `<div class="line">${badge('hand')}<span>${esc(it.product)}</span></div>`;
+-    if (st === 'stdok') return `<div class="line">${badge('stdok')}<span>MSFS-Standard – bewusst empfohlen</span></div><div class="why">${esc(it.why || '')}</div>`;
++      return `<div class="line">${badge('owned')}<span>Deine Szenerie · ${esc(it.dev)}</span></div>${it.note ? `<div class="why">${esc(it.note)}</div>` : ''}${installationNotes(it)}`;
++    }
++    if (st === 'hand') return `<div class="line">${badge('hand')}<span>${esc(it.product)}</span></div>${installationNotes(it)}`;
++    if (st === 'stdok') return `<div class="line">${badge('stdok')}<span>MSFS-Standard · keine feste Add-on-Empfehlung</span></div><div class="why">${esc(it.why || '')}</div>${installationNotes(it)}`;
+     if (st === 'unrated') return `<div class="line">${badge('unrated')}<span>Keine eigene Recherche – MSFS-Standard</span></div>`;
+     const name = `${esc(it.product)} · ${esc(it.dev)}`;
+     const link = it.url ? `<a href="${esc(it.url)}" target="_blank" rel="noopener">${name} ↗</a>` : name;
+     const meta = [it.rating && `★ ${esc(it.rating)}`, it.price && esc(it.price)].filter(Boolean).join(' · ');
+-    const alt = it.alt ? ` <a href="${esc(it.alt.url)}" target="_blank" rel="noopener">${esc(it.alt.name)} ↗</a>` : '';
+-    return `<div class="line">${itemBadge(it)}<span>${link}</span></div><div class="why">${esc(it.why || '')}${meta ? ` <span class="mono">${meta}</span>` : ''}${alt}</div>`;
++    const alt = it.alt ? ` Alternative: <a href="${esc(it.alt.url)}" target="_blank" rel="noopener">${esc(it.alt.name)} ↗</a>` : '';
++    return `<div class="line">${itemBadge(it)}<span>${link}</span></div><div class="why">${esc(it.why || '')}${meta ? ` <span class="mono">${meta}</span>` : ''}${alt}</div>${installationNotes(it)}`;
+   }
+   function aptCard(a, role, isTo, l) {
+     const rw = a.rw ? `RWY ${esc(a.rw.id)} · ${nf(a.rw.m)} m${a.rw.w ? ' × ' + a.rw.w : ''}${a.rw.s ? ' ' + esc(a.rw.s) : ''}` : (a.type === 'heliport' ? 'Heliport' : 'Landeplatz');
+@@ -444,7 +504,8 @@
+       <div class="icao">${esc(a.i)}</div>
+       <div class="aname">${esc(cityOf(a))}${a.c && a.n !== a.c ? ' · ' + esc(a.n) : ''}</div>
+       <div class="facts"><span${isNew ? ' class="new"' : ''}>${esc(CATN[a.cc])}${isNew ? ' · neu' : ''}</span><span>${rw}</span>${a.el != null ? `<span>${nf(a.el)} ft</span>` : ''}</div>
+-      <div class="scn">${a.sc.items.slice(0, 3).map(scnLine).join('')}</div>
++      ${simCheckNote(a)}
++      <div class="scn">${a.sc.items.map(scnLine).join('')}</div>
+     </article>`;
+   }
+   function renderPanels() {
+@@ -458,6 +519,7 @@
+     $('#xcards').innerHTML = ids.map(id => {
+       const x = XC[id];
+       const tgt = AP[x.target];
++      const fallback = x.fallback && AP[x.fallback.target];
+       const kind = x.kind === 'bonus' ? 'Bonus' : `Kategorie ${CATN[tgt.cc]}`;
+       const chips = x.legs.map(lid => {
+         const lg = LEGS[legIdx.get(lid)];
+@@ -465,7 +527,7 @@
+         return `<button type="button" class="xleg${cls}" data-leg="${lid}">${state.flown.has(lid) ? '✓ ' : ''}${esc(lg.f)} → ${esc(lg.t)} · ${hm(lg.air)}</button>`;
+       }).join('');
+       return `<article class="xcard"><div class="xh"><b>${esc(x.title)}</b><span>H160 · ${esc(kind)} · ${esc(x.tag)}</span></div>
+-        <p>${esc(x.brief)}</p><div class="xlegs">${chips}</div></article>`;
++        <p>${esc(x.brief)}</p>${fallback && fallback.simCheck ? `<b>Ausweichziel ${esc(fallback.i)}</b>${simCheckNote(fallback)}` : ''}<div class="xlegs">${chips}</div></article>`;
+     }).join('');
+   }
+ 
+@@ -854,6 +916,7 @@
+     const req = [];
+     const free = [];
+     const opt = [];
++    const candidates = [];
+     const hand = [];
+     const stdok = [];
+     let unrated = 0;
+@@ -864,6 +927,7 @@
+         if (it.status === 'buy') buy.push([a, it, lid]);
+         else if (it.status === 'freeware') (it.required ? req : free).push([a, it, lid]);
+         else if (it.status === 'optional') opt.push([a, it, lid]);
++        else if (it.status === 'candidate') candidates.push([a, it, lid]);
+         else if (it.status === 'hand') hand.push([a, it, lid]);
+         else if (it.status === 'stdok') stdok.push([a, it, lid]);
+       }
+@@ -871,46 +935,59 @@
+     const link = it => it.url ? `<a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.product)} ↗</a>` : esc(it.product);
+     const scard = ([a, it, lid]) => `<article class="scard"><div class="sh"><b>${esc(a.i)}</b><span>${esc(cityOf(a))} · ${lid}</span></div>
+       <h3>${link(it)}</h3><div class="meta"><span>${esc(it.dev)}</span>${it.rating ? `<span>★ ${esc(it.rating)}</span>` : ''}${it.price ? `<span>${esc(it.price)}</span>` : ''}</div>
+-      <p>${esc(it.why || '')}</p>${it.alt ? `<p><a href="${esc(it.alt.url)}" target="_blank" rel="noopener">${esc(it.alt.name)} ↗</a></p>` : ''}
++      <p>${esc(it.why || '')}</p>${it.alt ? `<p>Alternative: <a href="${esc(it.alt.url)}" target="_blank" rel="noopener">${esc(it.alt.name)} ↗</a></p>` : ''}${installationNotes(it)}
+       <div><button type="button" class="btn small" data-go="${lid}">Zum Leg →</button></div></article>`;
+     const rows = list => `<div class="scroll"><table><thead><tr><th>ICAO</th><th>Ort</th><th>Produkt</th><th>Entwickler</th><th>Bewertung</th><th>Begründung</th><th>Leg</th></tr></thead><tbody>${list.map(([a, it, lid]) =>
+-      `<tr data-go="${lid}"><td class="mono">${esc(a.i)}</td><td>${esc(cityOf(a))}</td><td>${link(it)}</td><td>${esc(it.dev)}</td><td class="mono">${esc(it.rating || '')}</td><td>${esc(it.why || '')}</td><td class="mono">${lid}</td></tr>`).join('')}</tbody></table></div>`;
++      `<tr data-go="${lid}"><td class="mono">${esc(a.i)}</td><td>${esc(cityOf(a))}</td><td>${link(it)}</td><td>${esc(it.dev)}</td><td class="mono">${esc(it.rating || '')}</td><td>${esc(it.why || '')}${it.alt ? ` Alternative: <a href="${esc(it.alt.url)}" target="_blank" rel="noopener">${esc(it.alt.name)} ↗</a>` : ''}${installationNotes(it)}</td><td class="mono">${lid}</td></tr>`).join('')}</tbody></table></div>`;
+ 
+     const owned = D.owned.map(o => {
+       const lid = LEGS.find(l => l.t === o.icao || l.f === o.icao);
+       return `<tr${lid ? ` data-go="${lid.id}"` : ''}><td class="mono">${esc(o.icao)}</td><td>${esc(o.name)}</td><td>${esc(o.dev)}</td><td>${o.used ? (lid ? lid.id : '✓') : '<span class="long">nicht in der Tour</span>'}</td><td>${esc(o.note || '')}</td></tr>`;
+     }).join('');
+     const usedN = D.owned.filter(o => o.used).length;
++    const openChecks = Object.values(AP).filter(a => a.simCheck && a.simCheck.status === 'unconfirmed');
+ 
+     const checklist = CH.map(c => {
+       const idents = new Set();
+-      c.legs.forEach(id => { const l = LEGS[legIdx.get(id)]; idents.add(l.f); idents.add(l.t); });
++      const fallbackIdents = new Set();
++      c.legs.forEach(id => {
++        const l = LEGS[legIdx.get(id)]; idents.add(l.f); idents.add(l.t);
++        const fallback = l.x && XC[l.x] && XC[l.x].fallback;
++        if (fallback) [fallback.anchor, fallback.target].forEach(i => { if (AP[i]) fallbackIdents.add(i); });
++      });
+       const items = [];
++      const preparation = [];
+       idents.forEach(i => {
+         AP[i].sc.items.forEach(it => {
+           if (['owned', 'buy', 'freeware'].includes(it.status)) {
+             const label = it.status === 'owned' ? `Eigene: ${it.dev}` : `${BADGE[stOf(it)]}${it.required ? ' (Pflicht)' : ''}: ${it.product} · ${it.dev}`;
+-            items.push(`<li><span class="mono">${esc(i)}</span> – ${it.url ? `<a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(label)} ↗</a>` : esc(label)}</li>`);
++            items.push(`<li><span class="mono">${esc(i)}</span> – ${it.url ? `<a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(label)} ↗</a>` : esc(label)}${installationNotes(it)}</li>`);
++          } else if (['hand', 'stdok'].includes(it.status) && (it.dependencies?.length || it.installNote)) {
++            preparation.push(`<li><span class="mono">${esc(i)}</span> – Vorbereitung${installationNotes(it)}</li>`);
+           }
+         });
+       });
+       const nNew = items.filter(s => !s.includes('Eigene:')).length;
+-      return `<details class="chk"><summary><b>${c.id}</b><span>${esc(c.title)}</span><em>${items.length ? `${items.length} Szenerien · ${nNew} zu besorgen` : 'nur Standard/handgefertigt'}</em></summary>${items.length ? `<ul>${items.join('')}</ul>` : ''}</details>`;
++      const simChecks = Array.from(new Set([...idents, ...fallbackIdents])).filter(i => AP[i].simCheck && AP[i].simCheck.status === 'unconfirmed');
++      return `<details class="chk"><summary><b>${c.id}</b><span>${esc(c.title)}</span><em>${items.length ? `${items.length} Hauptpakete · ${nNew} zusätzliche Empfehlungen` : 'keine empfohlenen Downloads'}${simChecks.length ? ` · ${simChecks.length} Sim-Prüfung(en) offen` : ''}</em></summary>${items.length ? `<ul>${items.join('')}</ul>` : ''}${preparation.length ? `<ul>${preparation.join('')}</ul>` : ''}${simChecks.map(i => `<div class="check-airport"><b>${esc(i)}${!idents.has(i) ? ' · Ausweichziel' : ''}</b>${simCheckNote(AP[i])}</div>`).join('')}</details>`;
+     }).join('');
+ 
+     $('#panel-scn').innerHTML = `<h2>Szenerien: wenig kaufen, gezielt installieren</h2>
+       <p class="lede">Priorität wie gewünscht: deine Sammlung, dann handgefertigte Airports aus Basis-Sim und World Updates, dann starke Freeware. Gekauft wird nur, wo ein Add-on einen besonderen Anflug spürbar besser macht. ${unrated ? `Für ${unrated} Airports ließ sich keine belastbare Quelle prüfen – sie bleiben als „ungeprüft“ markiert, nicht als „Standard reicht“.` : 'Jeder Airport der Tour ist recherchiert.'}</p>
+-      ${D.research ? `<p class="lede small">Recherche vom ${esc(fmtDate(D.research.date))} über FSAddonCompare und flightsim.to, für alle Airports nach denselben Regeln: ${esc(D.research.rules)}</p>` : ''}
++      ${D.research ? `<p class="lede small">Recherche vom ${esc(fmtDate(D.research.date))} über FSAddonCompare und flightsim.to. ${esc(D.research.rules)} „Angebot recherchiert“ beschreibt den Add-on-Vergleich; eine eigene Prüfung der Standardszenerie im Simulator ist damit nicht verbunden.</p>` : ''}
++      ${openChecks.length ? `<h3 class="sect">Offene Simulatorprüfungen <small>${openChecks.length} Airports einschließlich Ausweichziele</small></h3>${openChecks.map(a => `<div class="check-airport"><b>${esc(a.i)} · ${esc(cityOf(a))}</b>${simCheckNote(a)}</div>`).join('')}` : ''}
+       <h3 class="sect">Kauf-Tipps <small>${buy.length} Produkte · rund 80–90 € zusammen</small></h3>
+       <div class="sgrid">${buy.map(scard).join('')}</div>
+       <h3 class="sect">Pflicht-Freeware <small>ohne diese Pakete fehlen Bahn oder Navdaten</small></h3>
+       ${rows(req)}
+       <h3 class="sect">Empfohlene Freeware <small>${free.length} Pakete</small></h3>
+       ${rows(free)}
+-      <h3 class="sect">Optional &amp; beobachten <small>${opt.length} Produkte · gut, aber kein Muss</small></h3>
++      <h3 class="sect">Freeware zum Prüfen <small>${candidates.length} Kandidaten · noch keine feste Empfehlung</small></h3>
++      ${rows(candidates)}
++      <h3 class="sect">Kaufoptionen &amp; beobachten <small>${opt.length} Produkte · Begründung und Einschränkungen beachten</small></h3>
+       ${rows(opt)}
+-      <h3 class="sect">Standard bewusst empfohlen <small>${stdok.length} Airports – recherchiert, kein Add-on mit klarem Mehrwert</small></h3>
+-      <details class="chk"><summary><b>${stdok.length}</b><span>Begründungen anzeigen</span><em>FSAddonCompare und flightsim.to je Airport geprüft</em></summary>
++      <h3 class="sect">Angebot recherchiert <small>${stdok.length} Airports · keine feste Add-on-Empfehlung</small></h3>
++      <details class="chk"><summary><b>${stdok.length}</b><span>Begründungen anzeigen</span><em>FSAddonCompare und flightsim.to je Airport recherchiert</em></summary>
+       <div class="scroll"><table><thead><tr><th>ICAO</th><th>Ort</th><th>Begründung</th><th>Leg</th></tr></thead><tbody>${stdok.map(([a, it, lid]) =>
+         `<tr data-go="${lid}"><td class="mono">${esc(a.i)}</td><td>${esc(cityOf(a))}</td><td>${esc(it.why)}</td><td class="mono">${lid}</td></tr>`).join('')}</tbody></table></div></details>
+       <h3 class="sect">Deine Sammlung <small>${usedN} von ${D.owned.length} in der Tour</small></h3>
+@@ -994,11 +1071,11 @@
+     if (!progress && !vol && !deb) { toast('Nichts ausgewählt.'); return; }
+     const now = Date.now();
+     if (progress) {
+-      state.epochs.progress = Math.max(now, state.epochs.progress + 1);
++      state.epochs.progress = Math.max(now, state.epochs.progress + 1, ...Array.from(state.marks.values(), m => m.t));
+       for (const [id, m] of state.marks) if (m.t <= state.epochs.progress) state.marks.delete(id);
+     }
+     if (vol) {
+-      state.epochs.volanta = Math.max(now, state.epochs.volanta + 1);
++      state.epochs.volanta = Math.max(now, state.epochs.volanta + 1, ...Array.from(state.vstates.values(), m => m.t));
+       for (const [c, m] of state.vstates) if (m.t <= state.epochs.volanta) state.vstates.delete(c);
+     }
+     rebuildFlown();
+@@ -1067,10 +1144,10 @@
+   function applyImport(o) {
+     let n = 0;
+     let nv = 0;
+-    const t = stamp(state.epochs.progress);
+     const mark = (id, at) => {
+       if (state.flown.has(id)) return;
+-      state.marks.set(id, { on: true, at: at || today(), t });
++      const prev = state.marks.get(id);
++      state.marks.set(id, { on: true, at: at || today(), t: stamp(Math.max(state.epochs.progress, prev ? prev.t : 0)) });
+       pushMark(id);
+       n++;
+     };
+@@ -1088,7 +1165,8 @@
+           if (!CATN[k] || !v || typeof v !== 'object' || !(legacyT(v.t) > bv)) continue;
+           const st = ['credited', 'not_credited'].includes(v.s) ? v.s : 'open';
+           if (manualVol(k) === st) continue;
+-          state.vstates.set(k, { s: st, t: stamp(state.epochs.volanta) });
++          const prev = state.vstates.get(k);
++          state.vstates.set(k, { s: st, t: stamp(Math.max(state.epochs.volanta, prev ? prev.t : 0)) });
+           pushVol(k);
+           nv++;
+         }
+--- before/v2/app.css
++++ v2/app.css
+@@ -217,6 +217,13 @@
+ .badge.freeware { border-color: var(--ok-dim); color: var(--ok); }
+ .badge.hand { border-color: var(--bd3); color: var(--tx2); }
+ .badge.optional { border-style: dashed; color: var(--tx3); }
++.badge.candidate { border-style: dashed; color: var(--tx2); }
++.dependencies { margin: 6px 0; padding-left: 18px; font-size: 12px; }
++.dependencies li { margin: 4px 0; }
++.installation-note { margin: 6px 0; font-size: 12px; color: var(--tx3); }
++.sim-check { margin: 8px 0; padding: 8px 10px; border-left: 2px solid var(--warn); background: var(--paper); font-size: 12px; }
++.sim-check p { margin: 4px 0 0; }
++.check-airport { margin: 12px 16px; }
+ .badge.stdok { border-color: var(--bd3); color: var(--tx2); }
+ .badge.unrated { border-style: dashed; color: var(--tx4); }
+ .badge.req { background: rgba(59, 224, 101, 0.12); }
+--- before/v2/tests/check_sync.cjs
++++ v2/tests/check_sync.cjs
+@@ -0,0 +1,229 @@
++// Real V2 functions with isolated storage and a controllable cloud transport.
++const fs = require('fs');
++const vm = require('vm');
++const assert = require('assert/strict');
++const path = require('path');
++const base = path.resolve(__dirname, '..');
++const src = fs.readFileSync(process.argv[2] || path.join(base, 'app.js'), 'utf8');
++const D = JSON.parse(fs.readFileSync(path.join(base, 'tour-v2.json'), 'utf8'));
++function fn(name) {
++  const start = src.search(new RegExp('  (?:async )?function ' + name + '\\('));
++  const end = src.indexOf('\n  }', start);
++  if (start < 0 || end < 0) throw Error(name);
++  return src.slice(start, end + 4);
++}
++function setup() {
++  const controls = {
++    '#rs-progress': { checked: true }, '#rs-volanta': { checked: true },
++    '#rs-debriefs': { checked: false }, '#sync': { lastElementChild: {} }
++  };
++  const clock = { now: Date.parse('2026-09-24T12:00:00Z') };
++  const RealDate = Date;
++  class TestDate extends RealDate { static now() { return clock.now; } }
++  const ctx = vm.createContext({
++    input: D, Date: TestDate, console, window: {},
++    document: { querySelector: s => controls[s], querySelectorAll: () => [] },
++    localStorage: { getItem: () => null, setItem: () => {} }, log: [], callbacks: {}, holdWrites: false, releases: [], failWrites: 0
++  });
++  const db = {
++    doc(path) { return {
++      onSnapshot(cb) { ctx.callbacks[path] = cb; },
++      set: async data => ctx.log.push(['meta', data])
++    }; },
++    collection(name) { return {
++      onSnapshot(cb) { ctx.callbacks[name] = cb; },
++      doc(id) { return {
++        set: async data => {
++          ctx.log.push([name, id, data]);
++          if (ctx.failWrites > 0) { ctx.failWrites--; throw new Error('simulated network failure'); }
++          if (ctx.holdWrites) await new Promise(resolve => ctx.releases.push(resolve));
++        }, delete: async () => {}
++      }; },
++      get: async () => ({ docs: [] })
++    }; }
++  };
++  ctx.window.claude = { use: async () => db };
++  let prefix = src.slice(0, src.indexOf('  // ---------- Prosa'));
++  prefix = prefix.replace("JSON.parse($('#tour-data').textContent)", 'input')
++    .replace(fn('toast'), '  function toast(s) { log.push(["toast", s]); }');
++  prefix += '\nfunction refreshProgress(){} function renderData(){} function renderPlan(){} function renderProse(){} function renderTracks(){} function renderCat(){}\n';
++  const m = src.indexOf('  const manualVol =');
++  prefix += src.slice(m, src.indexOf('\n  };', m) + 5) + '\n';
++  prefix += [fn('exportJson'), fn('doReset'), fn('applyImport')].join('\n');
++  prefix += '\nglobalThis.review={state,mergeMarks,rebuildFlown,setFlown,setVol,volanta,doReset,exportJson,applyImport,initCloud};})();';
++  vm.runInContext(prefix, ctx);
++  return { ctx, r: ctx.review, clock, controls };
++}
++const docs = o => Object.entries(o).map(([id, d]) => ({ id, exists: true, data: () => d }));
++const ids = a => [...a.r.state.flown.keys()].sort();
++const flush = () => new Promise(resolve => setImmediate(resolve));
++const mark = (on, t) => ({ on, t, at: '2026-09-24' });
++async function connect(a, records = {}, epoch = {}) {
++  await a.r.initCloud();
++  a.ctx.callbacks['meta/reset']({ exists: true, data: () => epoch });
++  if (a.ctx.callbacks.resets) a.ctx.callbacks.resets({ docs: [] });
++  a.ctx.callbacks.flown({ docs: docs(records) });
++  await flush();
++}
++(async () => {
++  {
++    const a = setup();
++    a.r.setFlown('L001', true); a.r.setVol('DE', 'credited');
++    const backup = JSON.parse(a.r.exportJson()); a.clock.now += 1000;
++    await a.r.doReset(); assert.equal(a.r.state.flown.size, 0);
++    a.r.applyImport(backup); assert.deepEqual(ids(a), ['L001']);
++    assert(a.r.volanta().ok.has('DE')); console.log('PASS backup after reset');
++  }
++  {
++    const a = setup();
++    a.r.state.debriefs.set('L001', { volanta: 'credited', updatedAt: '2026-09-20' });
++    assert.equal(a.r.volanta().ok.size, 2); await a.r.doReset();
++    assert.equal(a.r.volanta().ok.size, 0);
++    a.r.state.debriefs.set('L002', { volanta: 'credited', volantaAt: new Date(a.clock.now + 1000).toISOString() });
++    assert.equal(a.r.volanta().ok.size, 2); console.log('PASS debrief confirmation after Volanta reset');
++  }
++  for (const epoch of [0, 5000]) {
++    const a = setup(); await connect(a, { L005: { at: '2026-09-20' } }, { progress: epoch });
++    assert.equal(a.r.state.flown.has('L005'), !epoch);
++    console.log('PASS legacy cloud records, reset=' + epoch);
++  }
++  {
++    const a = setup();
++    for (const [id, t] of [['L001', 1000], ['L002', 2000], ['L003', 3000]]) a.r.state.marks.set(id, mark(true, t));
++    await connect(a, { L001: mark(true, 1000), L003: mark(false, 5000) });
++    assert.deepEqual(ids(a), ['L001', 'L002']);
++    assert.deepEqual(a.ctx.log.filter(x => x[0] === 'flown').map(x => x[2].legId), ['L002']);
++    console.log('PASS local/cloud merge, exactly one necessary upload');
++  }
++  {
++    const a = setup();
++    for (const [id, t] of [['L001', 1000], ['L002', 2000], ['L010', 6000]]) a.r.state.marks.set(id, mark(true, t));
++    await connect(a, {}, { progress: 4000 });
++    assert.deepEqual(ids(a), ['L010']);
++    assert.deepEqual(a.ctx.log.filter(x => x[0] === 'flown').map(x => x[2].legId), ['L010']);
++    console.log('PASS old second device after reset');
++  }
++  {
++    const a = setup(), b = setup();
++    await connect(a); await connect(b);
++    b.clock.now = 1000; b.r.setFlown('L001', true); await flush();
++    const olderWrite = b.ctx.log.find(x => x[0] === 'flown')[2];
++    a.clock.now = 2000; a.r.setFlown('L001', false); await flush();
++    const newerWrite = a.ctx.log.find(x => x[0] === 'flown')[2];
++    // Unconditional document writes can arrive out of order across devices.
++    for (const row of [newerWrite, olderWrite]) {
++      for (const device of [a, b]) device.ctx.callbacks.flown({ docs: docs({ L001: row }) });
++      await flush();
++    }
++    assert.equal(a.r.state.flown.has('L001'), false);
++    assert.equal(b.r.state.flown.has('L001'), false);
++    const repairs = [a, b].map(device => device.ctx.log.filter(x => x[0] === 'flown').at(-1)[2]);
++    for (const repair of repairs) {
++      assert.equal(repair.t, newerWrite.t);
++      assert.equal(repair.on, false);
++    }
++    // Deliver corrective writes and their echoes. Equal values must not loop.
++    const counts = [a.ctx.log.length, b.ctx.log.length];
++    for (const device of [a, b]) device.ctx.callbacks.flown({ docs: docs({ L001: repairs[0] }) });
++    await flush(); assert.deepEqual([a.ctx.log.length, b.ctx.log.length], counts);
++    const c = setup(); await connect(c, { L001: repairs[0] });
++    assert.equal(c.r.state.flown.has('L001'), false);
++    console.log('PASS late older cloud write repaired; new device correct; no echo loop');
++  }
++  {
++    const a = setup(); await connect(a);
++    a.r.state.vstates.set('DE', { s: 'credited', t: 2000 });
++    a.ctx.callbacks.volanta({ docs: docs({ DE: { s: 'credited', t: 2000 } }) });
++    a.ctx.callbacks.volanta({ docs: docs({ DE: { s: 'not_credited', t: 1000 } }) });
++    await flush();
++    const repair = a.ctx.log.filter(x => x[0] === 'volanta').at(-1);
++    assert.equal(repair[2].s, 'credited'); assert.equal(repair[2].t, 2000);
++    console.log('PASS late older Volanta write repaired');
++  }
++  {
++    const a = setup(); await connect(a, {}, { progress: 1000, volanta: 2000 });
++    // A delayed reset from another device carries an older value for one field.
++    a.ctx.callbacks['meta/reset']({ exists: true, data: () => ({ progress: 3000, volanta: 0 }) });
++    await flush();
++    const repair = a.ctx.log.filter(x => x[0] === 'resets').at(-1)[2];
++    assert.equal(repair.progress, 3000); assert.equal(repair.volanta, 2000);
++    console.log('PASS concurrent independent resets preserve both epochs');
++  }
++  {
++    const a = setup(), b = setup();
++    a.r.state.marks.set('L001', mark(true, 1000));
++    b.r.state.marks.set('L001', mark(false, 1000));
++    await connect(a, { L001: mark(false, 1000) });
++    await connect(b, { L001: mark(true, 1000) });
++    assert.equal(a.r.state.flown.has('L001'), false);
++    assert.equal(b.r.state.flown.has('L001'), false);
++    assert.equal(b.ctx.log.filter(x => x[0] === 'flown').at(-1)[2].on, false);
++    console.log('PASS equal-time conflicting marks converge');
++  }
++  {
++    const a = setup(); a.clock.now = 1000;
++    a.r.state.marks.set('L001', mark(true, 5000));
++    a.r.setFlown('L001', false); assert.equal(a.r.state.marks.get('L001').t, 5001);
++    a.r.setFlown('L001', true); assert.equal(a.r.state.marks.get('L001').t, 5002);
++    a.r.state.vstates.set('DE', { s: 'credited', t: 6000 });
++    a.r.setVol('DE', 'not_credited'); assert.equal(a.r.state.vstates.get('DE').t, 6001);
++    await a.r.doReset(); assert.equal(a.r.state.flown.size, 0);
++    assert.equal(a.r.volanta().ok.size, 0); assert.equal(a.r.volanta().no.size, 0);
++    console.log('PASS local edits and resets respect already observed future timestamps');
++  }
++  {
++    const a = setup(), b = setup(); await connect(a); await connect(b);
++    b.clock.now = 1000; b.r.setFlown('L001', true); b.r.setVol('DE', 'not_credited'); await flush();
++    a.clock.now = 2000; a.r.setFlown('L001', false); a.r.setVol('DE', 'credited'); await flush();
++    const cloud = { flown: {}, volanta: {} };
++    // Newer writes arrive first. Device A closes before B's delayed writes arrive.
++    for (const device of [a, b]) for (const [collection, id, value] of device.ctx.log) {
++      if (cloud[collection]) cloud[collection][id] = value;
++    }
++    assert.equal(Object.keys(cloud.flown).length, 2);
++    const c = setup(); await connect(c, cloud.flown);
++    c.ctx.callbacks.volanta({ docs: docs(cloud.volanta) });
++    assert.equal(c.r.state.flown.has('L001'), false);
++    assert.equal(c.r.volanta().ok.has('DE'), true);
++    // Snapshot order must not affect the winner.
++    const d = setup(); await connect(d, Object.fromEntries(Object.entries(cloud.flown).reverse()));
++    assert.equal(d.r.state.flown.has('L001'), false);
++    console.log('PASS latest device closed: immutable progress/Volanta events retain the winner');
++  }
++  {
++    const a = setup(); await connect(a);
++    a.ctx.callbacks.resets({ docs: docs({ first: { progress: 5000, volanta: 0 }, second: { progress: 0, volanta: 6000 } }) });
++    a.ctx.callbacks.flown({ docs: docs({ legacy: { legId: 'L001', on: true, t: 1000 } }) });
++    a.ctx.callbacks.volanta({ docs: docs({ legacy: { code: 'DE', s: 'credited', t: 1000 } }) });
++    assert.equal(a.r.state.flown.size, 0); assert.equal(a.r.volanta().ok.size, 0);
++    assert.equal(a.r.state.epochs.progress, 5000); assert.equal(a.r.state.epochs.volanta, 6000);
++    console.log('PASS reset events survive opposite arrival order and suppress legacy data');
++  }
++  {
++    const a = setup(); a.ctx.holdWrites = true;
++    a.r.state.marks.set('L001', mark(true, 1000)); a.r.state.marks.set('L002', mark(true, 2000));
++    await connect(a);
++    for (let i = 0; i < 4; i++) a.ctx.callbacks.flown({ docs: [] });
++    a.ctx.holdWrites = false; a.ctx.releases.forEach(release => release());
++    await flush(); await flush();
++    assert.equal(a.ctx.log.filter(x => x[0] === 'flown').length, 2);
++    console.log('PASS repeated partial snapshots do not duplicate pending uploads');
++  }
++  {
++    const a = setup(); a.r.state.marks.set('L001', mark(true, 1000));
++    await connect(a); // set() has resolved, but its document has not appeared in a snapshot yet.
++    for (let i = 0; i < 5; i++) { a.ctx.callbacks.flown({ docs: [] }); await flush(); }
++    assert.equal(a.ctx.log.filter(x => x[0] === 'flown').length, 1);
++    console.log('PASS acknowledged writes are not repeated while snapshots lag');
++  }
++  {
++    const a = setup(); a.r.state.marks.set('L001', mark(true, 1000)); a.ctx.failWrites = 1;
++    await connect(a);
++    a.ctx.callbacks.flown({ docs: [] }); await flush();
++    assert.equal(a.ctx.log.filter(x => x[0] === 'flown').length, 2);
++    assert.equal(a.r.state.flown.has('L001'), true);
++    a.ctx.callbacks.flown({ docs: [] }); await flush();
++    assert.equal(a.ctx.log.filter(x => x[0] === 'flown').length, 2);
++    console.log('PASS failed writes may retry; confirmed retry is deduplicated');
++  }
++})().catch(err => { console.error(err); process.exitCode = 1; });
+--- before/v2/tests/check_scenery_ui.cjs
++++ v2/tests/check_scenery_ui.cjs
+@@ -0,0 +1,53 @@
++// Rendering checks without a browser, real progress, or network access.
++const fs = require('fs'), path = require('path'), vm = require('vm'), assert = require('assert/strict');
++const base = path.resolve(__dirname, '..');
++const src = fs.readFileSync(path.join(base, 'app.js'), 'utf8');
++const data = JSON.parse(fs.readFileSync(path.join(base, 'tour-v2.json'), 'utf8'));
++function fn(name) {
++  const start = src.search(new RegExp('  function ' + name + '\\('));
++  const end = src.indexOf('\n  }', start);
++  assert(start >= 0 && end > start, name);
++  return src.slice(start, end + 4);
++}
++const panel = {};
++const ctx = vm.createContext({ input: data, panel });
++let code = `const D=input, AP=D.airports, LEGS=D.legs, CH=D.chapters, XC=D.excursions;
++const legIdx=new Map(LEGS.map((l,i)=>[l.id,i]));
++const CATN=Object.fromEntries(D.cats.map(c=>[c.code,c.name]));
++const $=()=>panel;
++const nf=n=>Number(n).toLocaleString('de-DE');
++const cityOf=a=>a.c||a.n;
++const fmtDate=iso=>String(iso||'').split('-').reverse().join('.');
++`;
++code += src.slice(src.indexOf('  const esc ='), src.indexOf('\n', src.indexOf('  const esc ='))) + '\n';
++code += src.slice(src.indexOf('  const BADGE ='), src.indexOf('  function simbrief'));
++code += ['installationNotes', 'simCheckNote', 'scnLine', 'aptCard', 'renderScn'].map(fn).join('\n');
++code += '\nglobalThis.ui={installationNotes,simCheckNote,scnLine,aptCard,renderScn};';
++vm.runInContext(code, ctx);
++const fixture = { status: 'freeware', product: 'Fixture Airport', dev: 'Test', url: 'https://example.test/airport',
++  dependencies: [{ product: 'Base & Library', url: 'https://example.test/base', required: true },
++    { product: 'Optional objects', url: 'https://example.test/optional', required: false }],
++  installNote: 'Terrain <patch> check', why: 'Fixture only' };
++const notes = ctx.ui.installationNotes(fixture);
++assert(notes.includes('Zusätzlich erforderlich')); assert(notes.includes('Optionaler Zusatz'));
++assert(notes.includes('Base &amp; Library')); assert(notes.includes('Terrain &lt;patch&gt; check'));
++assert(ctx.ui.scnLine(fixture).includes('https://example.test/base'));
++const candidate = { status: 'candidate', product: 'Candidate fixture', dev: 'Test', why: 'Unconfirmed', url: 'https://example.test/candidate' };
++const airport = data.airports.EDLV;
++airport.sc.items.push(fixture, candidate);
++airport.simCheck = { status: 'unconfirmed', note: 'Check runway exists', sources: ['https://example.test/source'] };
++data.airports.FMZJ.simCheck = { status: 'unconfirmed', note: 'Fallback strip check', sources: ['https://example.test/fallback'] };
++assert(ctx.ui.aptCard(airport, 'Abflug', false, data.legs[0]).includes('Sim-Prüfung offen'));
++ctx.ui.renderScn();
++const all = panel.innerHTML;
++assert(all.includes('Freeware zum Prüfen')); assert(all.includes('Candidate fixture'));
++assert(all.includes('Angebot recherchiert')); assert(!all.includes('Standard bewusst empfohlen'));
++const checklist = all.slice(all.indexOf('Download-Checkliste pro Kapitel'));
++assert(checklist.includes('https://example.test/base'));
++assert(checklist.includes('Terrain &lt;patch&gt; check'));
++assert(checklist.includes('Check runway exists'));
++assert(checklist.includes('https://example.test/source'));
++assert(checklist.includes('FMZJ · Ausweichziel'));
++assert(checklist.includes('https://example.test/fallback'));
++assert(!checklist.includes('https://example.test/candidate'));
++console.log('PASS scenery rendering: dependency links, required/optional labels, escaped notes, candidates outside download checklist, visible simulator checks');
+--- before/v2/tests/make_sync_tests.py
++++ v2/tests/make_sync_tests.py
+@@ -53,6 +53,7 @@
+   const wait = ms => new Promise(r => setTimeout(r, ms));
+   const ls = () => JSON.parse(localStorage.getItem('__TEST_KEY__'));
+   const flown = () => { const s = ls(); return Object.entries(s.marks).filter(([k, v]) => v.on && v.t > s.epochs.progress).map(([k]) => k).sort(); };
++  const uploadedLegs = () => __writes.filter(p => p.startsWith('flown/')).map(p => __store.flown[p.slice(6)].legId).sort();
+   const confirmed = () => Number((document.getElementById('count').innerText.match(/(\\d+) bestätigt/) || [])[1]);
+   const reset = async (progress, volanta) => {
+     document.getElementById('tab-data').click(); await wait(50);
+@@ -91,14 +92,14 @@
+         cloud={**EMPTY_CLOUD, "flown": {"L001": {"legId": "L001", **M(True, "2026-09-20", 1000)}, "L003": {"legId": "L003", **M(False, "2026-09-22", 5000)}}},
+         steps="""await wait(200);
+   expect('lokal ergänztes L002 bleibt, in der Cloud entferntes L003 ist weg', flown(), ['L001', 'L002']);
+-  expect('nur L002 wird hochgeladen', __writes, ['flown/L002']);"""),
++  expect('nur L002 wird hochgeladen', uploadedLegs(), ['L002']);"""),
+     "2-zweites-geraet-nach-reset": dict(
+         local={"v": 3, "marks": {"L001": M(True, "2026-09-20", 1000), "L002": M(True, "2026-09-21", 2000), "L010": M(True, "2026-09-25", 6000)},
+                "vstates": {}, "epochs": {"progress": 0, "volanta": 0}},
+         cloud={**EMPTY_CLOUD, "meta": {"reset": {"progress": 4000, "volanta": 4000}}},
+         steps="""await wait(200);
+   expect('nur das nach dem Reset geflogene L010 zählt', flown(), ['L010']);
+-  expect('nichts Veraltetes wird hochgeladen', __writes, ['flown/L010']);"""),
++  expect('nichts Veraltetes wird hochgeladen', uploadedLegs(), ['L010']);"""),
+     "3-sicherung-nach-reset-wiederherstellen": dict(
+         local={"v": 3, "marks": {"L001": M(True, "2026-09-20", 1000)}, "vstates": {"DE": {"s": "credited", "t": 1500}},
+                "epochs": {"progress": 0, "volanta": 0}},
+@@ -135,6 +136,23 @@
+   __notify('debriefs'); await wait(100);
+   expect('ein nach dem Reset erfasstes Debriefing zählt wieder', confirmed(), 2);
+   expect('das Tagebuch bleibt erhalten', Object.keys(__store.debriefs).sort(), ['L001', 'L002']);"""),
++    "6-verspaetete-aenderung-nach-geschlossenem-geraet": dict(
++        local={"v": 3, "marks": {}, "vstates": {}, "epochs": {"progress": 0, "volanta": 0}},
++        cloud={**EMPTY_CLOUD, "flown": {
++            "newer_event": {"legId": "L001", **M(False, "2026-09-24", 2000)},
++            "delayed_event": {"legId": "L001", **M(True, "2026-09-24", 1000)}},
++            "volanta": {"newer_event": {"code": "DE", "s": "credited", "t": 2000},
++                        "delayed_event": {"code": "DE", "s": "not_credited", "t": 1000}}},
++        steps="""expect('neues Gerät berücksichtigt den neueren erhaltenen Eintrag', flown(), []);
++  expect('neuere Volanta-Bestätigung bleibt erhalten', confirmed(), 1);"""),
++    "7-unabhaengige-reset-eintraege": dict(
++        local={"v": 3, "marks": {}, "vstates": {}, "epochs": {"progress": 0, "volanta": 0}},
++        cloud={**EMPTY_CLOUD, "flown": {"L001": {"legId": "L001", **M(True, "2026-09-24", 1000)}},
++               "volanta": {"DE": {"code": "DE", "s": "credited", "t": 1000}},
++               "resets": {"p5000_v0": {"progress": 5000, "volanta": 0}, "p0_v6000": {"progress": 0, "volanta": 6000}}},
++        steps="""expect('Fortschrittsreset bleibt erhalten', flown(), []);
++  expect('Volanta-Reset bleibt unabhängig erhalten', confirmed(), 0);
++  expect('beide Reset-Zeitpunkte übernommen', ls().epochs, {progress: 5000, volanta: 6000});"""),
+ }
+ 
+ for name, sc in SCENARIOS.items():

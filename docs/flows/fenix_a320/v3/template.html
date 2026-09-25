@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fenix A320 Flow</title>
+<meta name="description" content="Flow, Checklisten und Sonderverfahren für den Fenix A320 CEO (CFM56-5B, Sharklets) – im Look der Weltreise ab Weeze.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap">
+<style>
+/*__CSS__*/
+</style>
+</head>
+<body>
+<a class="skip-link" href="#stage">Zu den Schritten der Phase</a>
+<header class="top">
+  <div class="wrap head">
+    <div class="brand">
+      <svg width="38" height="38" viewBox="0 0 38 38" aria-hidden="true">
+        <circle cx="19" cy="19" r="17" fill="none" stroke="#3e4a55" stroke-width="1.5"/>
+        <path d="M3 23h32M11 28h6M21 28h6M14 32h10" stroke="#3e4a55" stroke-width="1.2" fill="none"/>
+        <circle cx="19" cy="16" r="3.4" fill="none" stroke="#33b4f5" stroke-width="2"/>
+        <path d="M8.2 16h7.4M22.4 16h7.4M19 12.6V9" stroke="#33b4f5" stroke-width="2" stroke-linecap="round" fill="none"/>
+      </svg>
+      <div>
+        <h1>Fenix A320 · Flow</h1>
+        <span class="sub" id="sub">V3 · CEO · CFM56-5B · Sharklets · Flow, Checklisten, Sonderverfahren</span>
+      </div>
+    </div>
+    <div class="status">
+      <span class="count" id="count"></span>
+      <button class="chip prof" type="button" id="prof-chip" title="Flugprofil ändern"></button>
+      <span class="chip" id="store" title="Wo Häkchen und Flugdaten gespeichert werden"><i></i><span>Lokal</span></span>
+      <button class="chip" type="button" id="dim" aria-pressed="false" title="Seite für Nachtflüge abdunkeln">Dimmen</button>
+    </div>
+  </div>
+</header>
+
+<nav class="stepbar" aria-label="Phasen">
+  <div class="wrap">
+    <div class="legnav">
+      <button class="btn" type="button" id="prev" aria-label="Zurück – vorherige Phase">← Zurück</button>
+      <label class="leg-picker"><span id="nav-position">Aktuelle Phase</span><select id="jump" aria-label="Zu einer Phase springen"></select></label>
+      <button class="btn" type="button" id="next" aria-label="Weiter – nächste Phase">Weiter →</button>
+      <div class="nav-shortcuts">
+        <button class="btn" type="button" id="resume">Nächster offener Schritt</button>
+        <button class="btn" type="button" id="find">Suchen</button>
+      </div>
+    </div>
+  </div>
+</nav>
+<details class="route-overview wrap" id="overview">
+  <summary>Gesamter Flug · <span id="sum-count"></span><span class="sum-prog" id="sum-prog"></span></summary>
+  <div class="rail" id="rail" role="group" aria-label="Phasen des ganzen Flugs"></div>
+</details>
+
+<main>
+  <div class="wrap">
+    <div class="grid" id="grid" role="region" tabindex="-1" aria-label="Aktuelle Phase">
+      <section class="prose" id="prose" aria-live="polite"></section>
+      <section class="stage" id="stage" tabindex="-1" aria-label="Schritte, Checkliste und Profil"></section>
+    </div>
+
+    <div class="tracks" id="tracks"></div>
+
+    <section class="book" id="book" tabindex="-1">
+      <div class="tabs" role="tablist" aria-label="Bereiche">
+        <button class="tab" role="tab" id="tab-all" aria-controls="panel-all" data-tab="all">Alle Schritte</button>
+        <button class="tab" role="tab" id="tab-spec" aria-controls="panel-spec" data-tab="spec">Sonderverfahren</button>
+        <button class="tab" role="tab" id="tab-cl" aria-controls="panel-cl" data-tab="cl">Checklisten</button>
+        <button class="tab" role="tab" id="tab-ref" aria-controls="panel-ref" data-tab="ref">Referenz</button>
+        <button class="tab" role="tab" id="tab-new" aria-controls="panel-new" data-tab="new">Neu in V3</button>
+        <button class="tab" role="tab" id="tab-data" aria-controls="panel-data" data-tab="data">Daten &amp; Reset</button>
+      </div>
+
+      <div class="panel" role="tabpanel" id="panel-all" aria-labelledby="tab-all">
+        <div class="toolbar">
+          <label class="filter-field"><span>Suche</span><input type="search" id="q" placeholder="Schritt, Wert, Quelle oder Hinweis …"></label>
+          <label class="filter-field"><span>Status</span><select id="f-status">
+            <option value="all">Alle</option>
+            <option value="open">Offen</option>
+            <option value="done">Erledigt</option>
+            <option value="na">Nicht zutreffend</option>
+            <option value="cau">Vorsicht</option>
+            <option value="wrn">Warnung</option>
+            <option value="v3">Neu oder geändert in V3</option>
+          </select></label>
+          <label class="filter-field"><span>Bereich</span><select id="f-kind">
+            <option value="all">Alle Bereiche</option>
+            <option value="flow">Normal Flow</option>
+            <option value="special">Sonderverfahren</option>
+            <option value="checklist">Checklisten</option>
+          </select></label>
+          <label class="filter-field"><span>Quelle</span><select id="f-src"></select></label>
+          <button class="btn" type="button" id="clear-filters" hidden>Filter zurücksetzen</button>
+        </div>
+        <div class="plan-summary">
+          <p id="allinfo" role="status" aria-live="polite"></p>
+          <p class="hint">Zeile anklicken, um zur Phase zu springen. Schritte, die dein Flugprofil ausblendet, stehen nicht in der Liste.</p>
+        </div>
+        <div class="scroll"><table id="alltbl"><thead><tr>
+          <th scope="col"><span class="visually-hidden">Status</span>✓</th><th scope="col">Schritt</th><th scope="col">Soll</th><th scope="col">Quelle</th><th scope="col">Hinweis</th>
+        </tr></thead><tbody></tbody></table></div>
+      </div>
+      <div class="panel" role="tabpanel" id="panel-spec" aria-labelledby="tab-spec" hidden></div>
+      <div class="panel" role="tabpanel" id="panel-cl" aria-labelledby="tab-cl" hidden></div>
+      <div class="panel" role="tabpanel" id="panel-ref" aria-labelledby="tab-ref" hidden></div>
+      <div class="panel" role="tabpanel" id="panel-new" aria-labelledby="tab-new" hidden></div>
+      <div class="panel" role="tabpanel" id="panel-data" aria-labelledby="tab-data" hidden></div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span class="hint"><kbd>←</kbd> <kbd>→</kbd> Phase wechseln · <kbd>N</kbd> nächster offener Schritt · <kbd>Strg</kbd> <kbd>K</kbd> Suche · <kbd>Leertaste</kbd> abhaken</span>
+  </div>
+  <div class="wrap credits" id="credits"></div>
+</footer>
+
+<script type="application/json" id="flow-data">__FLOW_JSON__</script>
+<script>
+/*__APP__*/
+</script>
+</body>
+</html>

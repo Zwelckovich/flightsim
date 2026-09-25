@@ -1,0 +1,38 @@
+[
+  {
+    "run": "ux-20260924-design",
+    "model": "claude-opus-5-5",
+    "effort": "max",
+    "session": "4ba2ed47-bf13-4677-b98f-97a50c1237d4",
+    "is_error": false,
+    "permission_denials": [],
+    "stderr_empty": true
+  },
+  {
+    "run": "ux-20260924-behavior-review",
+    "model": "claude-opus-5-5",
+    "effort": "max",
+    "session": "615c8643-f97a-4059-bbff-81e9fe97e185",
+    "is_error": false,
+    "permission_denials": [],
+    "stderr_empty": true
+  },
+  {
+    "run": "ux-20260924-correction-review",
+    "model": "claude-opus-5-5",
+    "effort": "max",
+    "session": "268af9ba-2445-48d9-b3c5-eb384b94b86a",
+    "is_error": false,
+    "permission_denials": [],
+    "stderr_empty": true
+  },
+  {
+    "check": "Final deterministic build and served HTML",
+    "exit_code": 0,
+    "stdout": "A320: 388 Legs · 125,503 NM · 429.2 h\nH160: 17 Ausflüge · 34 Legs · 20.4 h\nGesamt: 422 Legs · 449.6 h · über 2 h: 23\nKategorien: 245/245 · eigene Szenerien: Hauptroute 41, mit Ausflügen 43/44 (V1: 36 bzw. 39)\nSzenerie-Status (Hauptstatus): owned 43 · buy 6 · freeware 72 · hand 41 · stdok 241 · optional 0 · unrated 0\nSzenerie ungeprüft: 0 Airports · Sonderetappen: FHSH, NGFU, SCGC\nFreeware zum Prüfen: 4 Kandidaten · offene Sim-Prüfungen: FMZJ, ZDM, ZMCK, ZZ-0002\nDebriefings im Archiv: 0 (geprüft)\nV1 zum Vergleich: 449 Legs · 490.2 h · Twin Otter 2\nDoppelt angeflogen: NCRG, NIUE, SCCI\nFertig: M:\\flightsim\\VolantaWorldTour\\Volanta-Worldtour-V2.html\n",
+    "server": "http://localhost:8000/",
+    "bytes": 878810,
+    "sha256": "3d339ff58076329bfef3b60d64fdc85cc8dbba3d5406ab6a222b888361888954",
+    "all_review_hashes_match": true
+  }
+]
