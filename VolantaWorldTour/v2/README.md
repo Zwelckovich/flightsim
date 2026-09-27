@@ -1,6 +1,6 @@
 # Weltreise ab Weeze – V2
 
-Die überarbeitete Tour: **388 A320-Legs + 17 H160-Ausflüge (34 Legs), rund 450 h, alle 245 Volanta-Kategorien, keine Twin Otter, nur aktive Flughäfen.**
+Die überarbeitete Tour: **389 A320-Legs + 17 H160-Ausflüge (34 Legs), rund 450 h, alle 245 Volanta-Kategorien, keine Twin Otter.** Keine historisch stillgelegten Airports wie Kai Tak. **Betriebsausnahme: UKLL/Lwiw ist wegen der zivilen Luftraumsperre aktuell nur ein Simulator-Stopp**, kein regulär anfliegbarer Flughafen (EASA CZIB-2022-01R14, Nachprüfung 25.09.2026).
 
 ## Öffnen
 
@@ -13,7 +13,7 @@ Eine V1-Sicherung (Export aus der alten HTML) lässt sich über „Sicherung lad
 
 Die Leg-Navigation bleibt am oberen Rand erreichbar. „Erstes offenes Leg“ führt zum ersten noch nicht abgehakten Flug der gesamten Tour; „Leg suchen“ öffnet den Flugplan und setzt den Fokus in die Suche. Die Leg-Auswahl zeigt auch den Zielort und zählt A320- und H160-Etappen gemeinsam. Unter „Gesamte Route“ lassen sich die Kapitel und nummerierten Legs aufklappen.
 
-Die Suche kombiniert mehrere Begriffe (z. B. `EDLV EHAM`) und findet Ortsnamen auch ohne Akzente (`Reykjavik`). Zusätzlich zu den Volanta-Namen werden deutsche Ländernamen wie `Deutschland` erkannt. Status und Kapitel lassen sich zusätzlich filtern; „Filter zurücksetzen“ stellt alle 422 Legs wieder her. Die Strecken im Flugplan und die Leg-Buttons der Szenerielisten öffnen das zugehörige Briefing.
+Die Suche kombiniert mehrere Begriffe (z. B. `EDLV EHAM`) und findet Ortsnamen auch ohne Akzente (`Reykjavik`). Zusätzlich zu den Volanta-Namen werden deutsche Ländernamen wie `Deutschland` erkannt. Status und Kapitel lassen sich zusätzlich filtern; „Filter zurücksetzen“ stellt alle 423 Legs wieder her. Die Strecken im Flugplan und die Leg-Buttons der Szenerielisten öffnen das zugehörige Briefing.
 
 Tastatur: In den Reitern wechseln Links/Rechts sowie Pos1/Ende den Bereich. In der aufgeklappten Route wechseln die Pfeile das Leg. Im Briefing blättern Links/Rechts durch die Legs und `G` ändert den Geflogen-Status, auch bei fokussierten Briefing-Buttons. `+`, `−` und `0` zoomen die Karte bzw. zeigen wieder die ganze Ansicht. Eingabefelder und Bedienelemente außerhalb des Briefings lösen diese globalen Kürzel nicht aus. Die obere Leg-Auswahl und Zurück/Weiter behalten ihren Fokus für wiederholtes Blättern.
 
@@ -42,6 +42,8 @@ Voraussetzung: Python 3. Der Build prüft Kapitel-Übergänge, geschlossene Flug
 | `debriefings.json` | Debriefing-Archiv für Git (Schema wie V1, Leg-IDs `L001` … bzw. `X-GG-1`) |
 | `template.html`, `app.css`, `app.js` | Seite, Farbschema (aus `walkthrough.build.html`) und Logik |
 | `research-2026-09-24.json` | Szenerie-Recherche aller Airports: Rohdaten, Quellen, Regeln, Abweichungen |
+| `scenery-links.json` | Zusätzliche Produktverweise aus Briefings und Vergleichstexten, mit Einordnung statt neuer Kaufempfehlung |
+| `highlight-audit.json` | Quellenbasierter Abgleich ausgewählter Anflug-Klassiker, aktive Ergänzungskandidaten und Betriebsausnahmen |
 | `integrate_research.py` | übernimmt Rechercheergebnisse nach den einheitlichen Schwellen in `content.json` |
 | `tour-v2.json` | erzeugte Daten (nicht von Hand bearbeiten) |
 | `dist/artifact.html` | erzeugtes Artifact-Fragment (d3 per CDN) |
@@ -70,6 +72,7 @@ node v2/tests/check_sync.cjs           # isolierte Sync-Regressionen, ohne echte
 node v2/tests/check_scenery_ui.cjs     # Darstellung von Abhängigkeiten, Kandidaten und Sim-Prüfungen
 node v2/tests/check_ui_navigation.cjs  # Suche, kombinierte Filter, Reiter-Tastatur und Navigationsgrenzen
 python v2/tests/check_scenery_data.py  # Datenvertrag, Metadaten-Erhalt und wiederholbare Integration
+python v2/tests/check_links_highlights.py # Produktverweise, aktive Kandidaten, unveränderte Route
 ```
 
 Die Seiten in `v2/tests/out/` (z. B. über `python -m http.server` öffnen) spielen je ein Szenario mit simulierter Cloud durch und zeigen oben PASS oder FAIL: Zusammenführen lokal/Cloud, zweites Gerät nach Reset, Sicherung nach Reset, altes Cloud-Format mit und ohne späteren Reset, Volanta-Reset mit Debriefing, verspätete Änderungen nach Schließen des neueren Geräts und unabhängige Reset-Einträge. Es werden acht Seiten erzeugt.
@@ -92,7 +95,17 @@ Die Kapitel-Downloadlisten enthalten auch hinterlegte Pflichtbestandteile, optio
 
 Die ursprünglichen Rohdaten und damaligen Entscheidungen bleiben in `research-2026-09-24.json` erhalten. Die Nachprüfung und anschließenden Änderungen dokumentiert `collaboration/2026-09-24/`. Übernahme neuer Rechercheergebnisse: `python v2/integrate_research.py <Ordner> --dry` (Probelauf), danach ohne `--dry` und neu bauen. Installationsangaben bleiben beim selben Produkt erhalten; bei einem Produktwechsel bricht das Skript zur manuellen Prüfung ab. Ein bestehendes Recherchearchiv wird nur mit `--replace-archive` ersetzt.
 
-## Sonderetappen
+## Link- und Highlight-Nachprüfung vom 25.09.2026
+
+Die ergänzenden Produktlinks stehen auf den Airportkarten unter **„Weitere erwähnte Angebote & Quellen“** sowie im Reiter Szenerien. Erwähnte, aber verworfene Produkte werden dadurch nicht zu Empfehlungen. Hauptprodukte, Alternativen und Zusatzpakete werden beim Build auf vorhandene HTTPS-Verweise geprüft. Die Originalrecherche bleibt unverändert archiviert.
+
+Der Reiter **Highlights** enthält den quellenbelegten Abgleich von **46 ausgewählten Airports: 35 bereits in der Route, 11 noch nicht enthalten**. Die 11 fehlenden Airports sind Vorschläge mit Betriebsquellen und Einordnung für A320/H160. Auf Nutzerwunsch ist nur KSAN neu aufgenommen: KPHX → KSAN → KLAS statt KPHX → KLAS. Nun 423 Legs. Die unveränderten Strecken behalten ihre IDs; L106 ist stillgelegt, die neuen Teilstrecken heißen intern L389/L390. Die sichtbare Reihenfolge bleibt fortlaufend. `leg-identities.json` und explizite `legIds` pro Kapitel verhindern die Wiederverwendung alter IDs für andere Strecken. Das ist eine qualitative Auswahl aus Medien-/Community-Listen, keine Vollerhebung und keine laufende NOTAM-Prüfung. Neue Plätze brauchen vor einer Routenerweiterung auch einen Szenerie- und Performancecheck. Der Abgleich macht die bereits enthaltenen Klassiker auffindbar; St. Barth ist zusätzlich als H160-Kategorieausflug auf einer Highlight-Karte sichtbar. Die übrigen redaktionellen Highlight-Stufen bleiben erhalten.
+
+London City ist kein regulärer Fenix-A320-CFM-Stopp und wird nicht einfach durch eine angeblich reguläre H160-Landung ersetzt. Bei Barra ist ein H160-Besuch möglich zu planen, das bekannte Strandlande-Erlebnis wäre jedoch ein begründeter optionaler Twin-Otter-Einsatz. Kai Tak bleibt ausgeschlossen. Die Vorgaben „245 Kategorien“ und „ausschließlich aktuell zivil anfliegbare Airports“ sind wegen der Ukraine derzeit nicht gleichzeitig erfüllbar; UKLL ist ausdrücklich markiert.
+
+Die Zusammenarbeit dieses Auftrags verwendet auf ausdrücklichen Nutzerwunsch **Opus 5.5 mit Medium Effort**: `python v2/collaboration/run_opus.py <auftrag.md> <laufname> --effort medium`. Ohne Angabe bleibt der Runner bei `max`. Austausch und gegenseitige Review: `collaboration/2026-09-25-links-highlights/`.
+
+## Sonderetappen und Simulatorprüfung
 
 Funafuti (NGFU), Union Glacier (SCGC) und St Helena (FHSH) liegen außerhalb des realen A320-Betriebs. Sie haben in der Seite eine Testcheckliste und einen Ausweichplan – vorher im Freeflug und im Fenix-EFB prüfen.
 
@@ -106,3 +119,5 @@ Funafuti (NGFU), Union Glacier (SCGC) und St Helena (FHSH) liegen außerhalb des
 ## Zusammenarbeit Astra / Opus
 
 Der gemeinsame Arbeitslauf vom 24.09.2026 ist unter `collaboration/2026-09-24/README.md` dokumentiert. `collaboration/run_opus.py` startet begrenzte Implementierungs- oder Review-Aufträge mit **Claude Opus 5.5, Max Effort**. Modell, Aufträge und Reviews sind nachvollziehbar; die laufenden CLI-Protokolle liegen im ignorierten Ordner `collaboration/.runs/`. Die Aufteilung verhindert gleichzeitige Änderungen an denselben Quelldateien.
+
+KSAN: separater Szenerievergleich vom 25.09.2026 abgeschlossen. Standard-Airport mit kostenlosem City Update 13 als Ausgangspunkt, keine feste Kaufempfehlung. Native Glideslope-2024-Version, LVFR, ältere Produktfassung und Umfeld-Freeware sind mit direkten Links und Grenzen dokumentiert. Kein eigener Sim-Test.

@@ -478,6 +478,15 @@
   }
 
   // ---------- Airport-Panels ----------
+  function sceneryReferences(a) {
+    const shown = new Set((a.simCheck?.sources || []).map(s => typeof s === 'string' ? s : s.url));
+    const refs = (a.sceneryLinks || []).filter(r => !shown.has(r.url));
+    return refs.length ? `<details class="scenery-references"><summary>Weitere erwähnte Angebote &amp; Quellen (${refs.length})</summary><p class="small">Verweise zum Vergleich; keine zusätzlichen Kauf- oder Download-Empfehlungen. Einordnungen stammen aus der vorhandenen Recherche, nicht aus einem neuen Sim-Test.</p><ul>${refs.map(r => `<li><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.label)} ↗</a><p class="small">${esc(r.context)}</p></li>`).join('')}</ul></details>` : '';
+  }
+  function operatingNotice(a) {
+    const n = a.operatingNote;
+    return n ? `<div class="sim-check"><b>${esc(n.title)}</b><p>${esc(n.note)}</p><a href="${esc(n.url)}" target="_blank" rel="noopener">Betriebsstatus: Quelle ↗</a></div>` : '';
+  }
   function installationNotes(it) {
     const deps = Array.isArray(it.dependencies) ? it.dependencies.filter(d => d && d.product) : [];
     const list = deps.length ? `<ul class="dependencies">${deps.map(d => `<li><b>${d.required ? 'Zusätzlich erforderlich' : 'Optionaler Zusatz'}:</b> ${d.url ? `<a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.product)}${d.dev ? ` · ${esc(d.dev)}` : ''} ↗</a>` : esc(d.product)}${d.note ? ` — ${esc(d.note)}` : ''}</li>`).join('')}</ul>` : '';
@@ -512,7 +521,9 @@
       <div class="aname">${esc(cityOf(a))}${a.c && a.n !== a.c ? ' · ' + esc(a.n) : ''}</div>
       <div class="facts"><span${isNew ? ' class="new"' : ''}>${esc(CATN[a.cc])}${isNew ? ' · neu' : ''}</span><span>${rw}</span>${a.el != null ? `<span>${nf(a.el)} ft</span>` : ''}</div>
       ${simCheckNote(a)}
+      ${operatingNotice(a)}
       <div class="scn">${a.sc.items.map(scnLine).join('')}</div>
+      ${sceneryReferences(a)}
     </article>`;
   }
   function renderPanels() {
@@ -1013,18 +1024,31 @@
           <div class="foot">${primaryBadge(b)}<button type="button" class="btn small" data-go="${l.id}">${done ? '✓ geflogen' : 'Zum Leg →'}</button></div></article>`);
       } else {
         const x = XC[l.x];
-        if (x.kind !== 'bonus' || l.t !== x.target || seen.has('x' + x.id)) continue;
+        if ((x.kind !== 'bonus' && AP[x.target].level !== 2) || l.t !== x.target || seen.has('x' + x.id)) continue;
         seen.add('x' + x.id);
         const done = state.flown.has(l.id);
         const t = AP[x.target];
-        cards.push(`<article class="hcard heli${done ? ' done' : ''}"><div class="ht"><span>Kapitel ${l.ch} · H160-Bonus</span><span class="tagc">${esc(x.tag)}</span></div>
+        cards.push(`<article class="hcard heli${done ? ' done' : ''}"><div class="ht"><span>Kapitel ${l.ch} · H160-Ausflug</span><span class="tagc">${esc(x.tag)}</span></div>
           <h3>${esc(x.title)}<small>${esc(t.i)}</small></h3><p>${esc(x.brief)}</p>
           <div class="foot">${primaryBadge(t)}<button type="button" class="btn small" data-go="${l.id}">${done ? '✓ geflogen' : 'Zum Ausflug →'}</button></div></article>`);
       }
     }
     $('#panel-hl').innerHTML = `<h2>Die Anflüge, für die sich die Reise lohnt</h2>
       <p class="lede">${cards.length} Top-Highlights in Flugreihenfolge – mit dem Grund, warum sie auf der Route sind, und der passenden Szenerie. Drei davon sind Sonderetappen, die du vorher im Fenix testest.</p>
-      <div class="cards">${cards.join('')}</div>`;
+      <div class="cards">${cards.join('')}</div>${highlightAuditHtml()}`;
+  }
+
+  function highlightAuditHtml() {
+    const audit = D.highlightAudit;
+    if (!audit) return '';
+    const missing = audit.airports.filter(a => !a.legs.length);
+    const links = (urls, label) => urls.map((u, i) => `<a href="${esc(u)}" target="_blank" rel="noopener">${label} ${i + 1} ↗</a>`).join(' · ');
+    const rows = list => list.map(a => `<tr><td><b>${esc(a.icao)}</b><br>${esc(a.name)}</td><td>${esc(a.feature)}<br>${links(a.sources, 'Erwähnung')}${a.activeSources ? `<br>${links(a.activeSources, 'Betrieb')}` : ''}</td><td>${a.legs.length ? `<button type="button" class="route-link" data-go="${esc(a.legs[0])}">${esc(a.coverage)} · ${esc(a.legs[0])} →</button>` : `<b>Noch nicht in der Route</b><p>${esc(a.proposal)}</p>`}</td></tr>`).join('');
+    return `<section class="highlight-audit"><h2>Highlight-Abgleich · ${esc(fmtDate(audit.date))}</h2><p class="lede">${audit.airports.length} ausgewählte Klassiker aus Luftfahrtmedien und Community-Listen: ${audit.airports.length - missing.length} enthalten, ${missing.length} fehlen. ${esc(audit.scope)}</p>
+      ${(audit.operatingNotes || []).map(n => `<div class="sim-check"><b>${esc(n.icao)} · ${esc(n.title)}</b><p>${esc(n.note)}</p><a href="${esc(n.url)}" target="_blank" rel="noopener">Quelle ↗</a></div>`).join('')}
+      <p>Die Flugzeugangabe bei enthaltenen Airports beschreibt die Sim-Route, keine reale Betriebszulassung.</p><h3>Aktive Airports als mögliche Ergänzungen</h3><p>Planungsvorschläge, noch keine neuen Legs. Fluggerät und Anbindung stehen je Airport dabei; die bestehende Route und ihre Fortschritts-IDs bleiben in diesem Update erhalten. Eine spätere Änderung der Hauptroute braucht stabile IDs oder eine Migration des Fortschritts.</p><div class="scroll"><table><thead><tr><th>Airport</th><th>Highlight &amp; Quellen</th><th>Einordnung</th></tr></thead><tbody>${rows(missing)}</tbody></table></div>
+      <details class="chk"><summary>Bereits enthaltene Klassiker (${audit.airports.length - missing.length})</summary><div class="scroll"><table><thead><tr><th>Airport</th><th>Highlight &amp; Quellen</th><th>In der Tour</th></tr></thead><tbody>${rows(audit.airports.filter(a => a.legs.length))}</tbody></table></div></details>
+      <p class="small">${esc(audit.excluded.note)} <a href="${esc(audit.excluded.url)}" target="_blank" rel="noopener">Quelle ↗</a></p></section>`;
   }
 
   // ---------- Szenerien ----------
@@ -1111,7 +1135,9 @@
       <h3 class="sect">Angebot recherchiert <small>${stdok.length} Airports · keine feste Add-on-Empfehlung</small></h3>
       <details class="chk"><summary><b>${stdok.length}</b><span>Begründungen anzeigen</span><em>FSAddonCompare und flightsim.to je Airport recherchiert</em></summary>
       <div class="scroll"><table><thead><tr><th>ICAO</th><th>Ort</th><th>Begründung</th><th>Leg</th></tr></thead><tbody>${stdok.map(([a, it, lid]) =>
-        `<tr data-go="${lid}"><td class="mono">${esc(a.i)}</td><td>${esc(cityOf(a))}</td><td>${esc(it.why)}</td><td class="mono"><button type="button" class="route-link" data-go="${lid}" aria-label="Briefing ${lid} öffnen">${lid}</button></td></tr>`).join('')}</tbody></table></div></details>
+        `<tr data-go="${lid}"><td class="mono">${esc(a.i)}</td><td>${esc(cityOf(a))}</td><td>${esc(it.why)}${sceneryReferences(a)}</td><td class="mono"><button type="button" class="route-link" data-go="${lid}" aria-label="Briefing ${lid} öffnen">${lid}</button></td></tr>`).join('')}</tbody></table></div></details>
+      <details class="chk"><summary>Zusätzliche Produktverweise je Airport</summary><p class="small">Auch in Briefings und Begründungen erwähnte Alternativen zum Nachlesen. Bestehende Einschränkungen gelten weiterhin.</p>
+      ${order.filter(([i]) => AP[i].sceneryLinks?.length).map(([i, lid]) => `<div class="check-airport"><b>${esc(i)} · ${esc(cityOf(AP[i]))}</b> <button type="button" class="route-link" data-go="${lid}">Zum Leg →</button>${sceneryReferences(AP[i])}</div>`).join('')}</details>
       <h3 class="sect">Deine Sammlung <small>${usedN} von ${D.owned.length} in der Tour</small></h3>
       <div class="scroll"><table><thead><tr><th>ICAO</th><th>Airport</th><th>Hersteller</th><th>Leg</th><th>Hinweis</th></tr></thead><tbody>${owned}</tbody></table></div>
       <h3 class="sect">Handgefertigt in MSFS 2024 <small>${hand.length} Airports – kein Add-on nötig</small></h3>
@@ -1326,7 +1352,7 @@
       const vol = t.closest('[data-vol]');
       if (vol) { setVol(vol.dataset.vol, VOL_NEXT[manualVol(vol.dataset.vol)] || 'credited'); return; }
       const go = t.closest('[data-go]');
-      if (go && !t.closest('a')) {
+      if (go && !t.closest('a, summary, .scenery-references')) {
         openBriefing(go.dataset.go);
         return;
       }

@@ -1392,6 +1392,17 @@
   },
   "EDDL": {
    "hl": "Düsseldorf mit deiner MK-Studios-Szenerie – noch 30 NM bis Weeze."
+  },
+  "KSAN": {
+   "level": 2,
+   "tag": "Downtown-Anflug",
+   "hl": "San Diego – Anflug auf die 27 dicht an der Downtown vorbei, mit Hafen und Bucht.",
+   "brief": "A320-Stopp zwischen Phoenix und Las Vegas. Die Landerichtung richtet sich nach Wind und Freigabe; der bekannte Stadtanflug ist die 27. Aktuelle Anflugkarte und Fenix-EFB für Verfahren und Performance verwenden.",
+   "tips": [
+    "City Update 13: California kostenlos installieren; es wertet San Diego als Stadt auf, ist aber keine handgefertigte Airport-Szenerie.",
+    "Szenerievergleich abgeschlossen: derzeit keine feste Airport-Kaufempfehlung. Glideslope Pro native 2024 und LVFR sind unten mit Begründung und direkten Links zum Vergleich hinterlegt.",
+    "Falls später Glideslope Pro native 2024 gewählt wird: die alte 2020-Version vorher deaktivieren/entfernen, dann den Simulator neu starten. Nicht beide Airport-Versionen gleichzeitig aktivieren."
+   ]
   }
  },
  "scenery": {
@@ -1865,7 +1876,7 @@
    "status": "optional",
    "product": "Seychelles",
    "dev": "FSDG",
-   "url": "https://www.fsaddoncompare.com/search/FSIA",
+   "url": "https://www.fsaddoncompare.com/product/4701/Seychelles",
    "why": "Ganzer Archipel mit Außeninseln; in Foren werden 2024-Textur- und Riffprobleme gemeldet.",
    "rating": "4,68 · 20"
   },
@@ -1873,7 +1884,7 @@
    "status": "optional",
    "product": "Kilimanjaro International",
    "dev": "VueloSimple",
-   "url": "https://www.fsaddoncompare.com/search/HTKJ",
+   "url": "https://www.fsaddoncompare.com/product/4204/HTKJ-Kilimanjaro-Intl.-Airport",
    "why": "Für MSFS 2020 und 2024 gelistet, günstig; die Freeware von VForce hat erst 2 Bewertungen.",
    "rating": "4,33 · 18"
   },
@@ -2857,7 +2868,7 @@
    "url": "https://flightsim.to/addon/37640/ooms-muscat-int-l-muscat-oman",
    "why": "Freeware von QNH997, 4,9 aus 70 Bewertungen, 26.312 Downloads; nur MSFS-2020-Tag und 2024-Nutzerberichte gemischt (Dez. 2025 läuft, Nov. 2024 FPS-Einbruch), Payware-Alternative Double T mit 4,6 aus 14 für 2020/2024.",
    "rating": "4,9 · 70 · 26.312 Downloads",
-   "installNote": "Nur eine Variante installieren: „Default Jetways Version“ ohne GSX oder „GSX Version“. Das hochauflösende Luftbild ist ein separates, empfohlenes Paket."
+   "installNote": "Nur eine Variante installieren: „Default Jetways Version“ ohne GSX oder „GSX Version“. Das Luftbild ist der optionale Ordner „ek1288-ooms-aerial“ im selben Download, kein separat herunterzuladendes Paket."
   },
   "OOMS__pw": {
    "icao": "OOMS",
@@ -3219,7 +3230,7 @@
    "status": "optional",
    "product": "Accra / DGAA Kotoka International Airport (Bewertung aus dem Marketplace-Listing; Shop-Version „Accra“: 4,0 aus 1)",
    "dev": "FSDG",
-   "url": "https://www.fsaddoncompare.com/search/DGAA",
+   "url": "https://www.fsaddoncompare.com/product/7817/DGAA-Kotoka-International-Airport",
    "rating": "4,57 · 18",
    "price": "ab 16,80 €",
    "why": "Die FSDG-Payware ist gut bewertet (4,57 aus 18 im Marketplace-Listing, dort nur MSFS 2020) und als Shop-Version „Accra“ für MSFS 2020/2024 gelistet (ab 16,80 €) – schön, aber nicht nötig; Freeware gibt es nur als Terminal-Lichter (5,0 aus 1)."
@@ -3966,7 +3977,8 @@
   "EVRA": "Recherchiert: kein Muss-Add-on; Payware von LisiumDesign als Option.",
   "EETN": "Recherchiert: kein Muss-Add-on; Payware von Drzewiecki Design als Option.",
   "EFMA": "Recherchiert: Einzige Option ist die Freeware von WildLynxPilot (für 2020/2024 getaggt, 5,0 aus nur 5 Bewertungen, 1,6K Downloads) – einen Blick wert, aber unter der Schwelle; Payware gibt es keine.",
-  "EPWA": "Recherchiert: kein Muss-Add-on; Payware von Drzewiecki Design als Option."
+  "EPWA": "Recherchiert: kein Muss-Add-on; Payware von Drzewiecki Design als Option.",
+  "KSAN": "Recherchiert am 25.09.2026: vorerst Standard-Airport mit kostenlosem City Update 13 für die Stadt; kein eigener Sim-Qualitätstest. Kein ausreichend belegter extremer Mehrwert für eine Kaufempfehlung. Glideslope Pro bietet eine native 2024-Version mit neuem Terminal 1; die zuletzt abgerufene Produktseite zeigt 3,9/5 aus 8 Bewertungen (älterer Suchstand: 3,7/7). Interessant, aber noch kein herausragender Bewertungsnachweis. LVFR bietet Airport und Downtown, mit 4,49/629 auf der direkt abgerufenen FSAddonCompare-Produktseite; die Gesamtbewertung belegt keinen außergewöhnlichen Mehrwert speziell unter MSFS 2024 mit City Update 13. Keine überzeugend belegte komplette KSAN-Freeware für MSFS 2024 in der gezielten Recherche gefunden. Einzelne Umfeld-Mods ersetzen den Airport nicht. Produkt-, Vergleichs- und Freewarelinks stehen unten."
  },
  "trials": {
   "NGFU": {

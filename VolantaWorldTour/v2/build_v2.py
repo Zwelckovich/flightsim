@@ -15,6 +15,7 @@ import os
 import pathlib
 import re
 import sys
+from urllib.parse import urlparse
 from collections import defaultdict
 
 V2 = pathlib.Path(__file__).resolve().parent
@@ -30,6 +31,8 @@ def load_json(path):
 route = load_json(V2 / "route.json")
 # Für Tests lassen sich andere Inhalte und ein anderes Archiv übergeben (siehe tests/).
 content = load_json(pathlib.Path(os.environ.get("WELTREISE_CONTENT", V2 / "content.json")))
+scenery_links = load_json(pathlib.Path(os.environ.get("WELTREISE_SCENERY_LINKS", V2 / "scenery-links.json")))
+highlight_audit = load_json(pathlib.Path(os.environ.get("WELTREISE_HIGHLIGHT_AUDIT", V2 / "highlight-audit.json")))
 v1 = load_json(WORK / "tour-data.json")
 v1x = load_json(WORK / "excursions.json")
 debrief_path = pathlib.Path(os.environ.get("WELTREISE_DEBRIEFS", V2 / "debriefings.json"))
@@ -192,7 +195,13 @@ DEP_KEYS = {"product", "dev", "url", "required", "note"}
 
 
 def is_url(u):
-    return isinstance(u, str) and u.startswith("https://")
+    if not isinstance(u, str) or any(c.isspace() for c in u):
+        return False
+    try:
+        parsed = urlparse(u)
+        return parsed.scheme == "https" and bool(parsed.hostname) and not parsed.username and not parsed.password
+    except ValueError:
+        return False
 
 
 def filled(s):
@@ -209,6 +218,8 @@ def validate_scenery(scenery):
             continue
         if not filled(s.get("product")) or not is_url(s.get("url")):
             errors.append(f"{where}: Produkt und https-Link nötig")
+        if "alt" in s and (not isinstance(s["alt"], dict) or not filled(s["alt"].get("name")) or not is_url(s["alt"].get("url"))):
+            errors.append(f"{where}: Alternative braucht Name und https-Link")
         if st == "candidate" and s.get("required"):
             errors.append(f"{where}: ein Kandidat kann keine Pflicht sein")
         deps = s.get("dependencies")
@@ -256,6 +267,19 @@ def validate_sim_checks(checks):
 
 sim_checks = content.get("simChecks", {})
 scenery_errors = validate_scenery(content["scenery"]) + validate_sim_checks(sim_checks)
+if not isinstance(scenery_links, dict):
+    scenery_errors.append("scenery-links muss ein Objekt sein")
+else:
+    for ident, refs in scenery_links.items():
+        if ident not in airports or not isinstance(refs, list) or not refs:
+            scenery_errors.append(f"scenery-links {ident}: Airport unbekannt oder Liste leer")
+            continue
+        urls = [r.get("url") for r in refs if isinstance(r, dict)]
+        if len(urls) != len(set(urls)):
+            scenery_errors.append(f"scenery-links {ident}: doppelte URL")
+        for ref in refs:
+            if not isinstance(ref, dict) or not all(filled(ref.get(k)) for k in ("label", "context")) or not is_url(ref.get("url")):
+                scenery_errors.append(f"scenery-links {ident}: label, context und https-Link nötig")
 if scenery_errors:
     sys.exit("Szenerie-Daten ungültig:\n  " + "\n  ".join(scenery_errors))
 
@@ -299,6 +323,8 @@ def scenery_for(ident):
 
 for ident, a in airports.items():
     a["sc"] = scenery_for(ident)
+    if ident in scenery_links:
+        a["sceneryLinks"] = scenery_links[ident]
     text = content["airports"].get(ident, {})
     for k in ("hl", "brief", "tips", "tag", "level"):
         if k in text:
@@ -318,16 +344,25 @@ by_anchor = defaultdict(list)
 for e in route["excursions"]:
     by_anchor[e["anchor"]].append(e["id"])
 
+leg_identities = load_json(V2 / "leg-identities.json")
+used_main_ids = set()
 legs = []
 placed = set()
 a320_n = 0
 for ch in chapters:
     seq = ch["route"]
-    for frm, to in zip(seq, seq[1:]):
+    ids = ch.get("legIds", [])
+    if len(ids) != len(seq) - 1:
+        sys.exit(f"Leg-IDs fehlen für Kapitel {ch['id']}")
+    for lid, frm, to in zip(ids, seq, seq[1:]):
+        identity = leg_identities.get(lid, {})
+        if lid in used_main_ids or identity != {"f": frm, "t": to, "ch": ch["id"]}:
+            sys.exit(f"Leg-ID wiederverwendet oder Strecke geändert: {lid}")
+        used_main_ids.add(lid)
         a320_n += 1
         nm = gc_nm(airports[frm], airports[to])
         air = a320_minutes(nm)
-        leg = {"id": f"L{a320_n:03d}", "k": "a", "f": frm, "t": to, "ch": ch["id"], "n": a320_n,
+        leg = {"id": lid, "k": "a", "f": frm, "t": to, "ch": ch["id"], "n": a320_n,
                "nm": round(nm), "air": air, "blk": air + 20, "o2": air > 120}
         trials = content.get("trials", {})
         if to in trials or frm in trials:  # Landung und Start an der Sonderetappe testen
@@ -345,6 +380,9 @@ for ch in chapters:
                 legs.append({"id": lid, "k": "h", "f": a, "t": b, "ch": ch["id"], "n": None,
                              "nm": round(nm), "air": air, "blk": None, "o2": air > 120, "x": xid})
                 e["legs"].append(lid)
+orphan_ids = {lid for lid, spec in leg_identities.items() if not spec.get("retired")} - used_main_ids
+if orphan_ids:
+    sys.exit(f"Nicht verwendete aktive Leg-IDs: {sorted(orphan_ids)}")
 missing_x = set(excursions) - placed
 if missing_x:
     sys.exit(f"Ausflüge ohne Anker in der Route: {sorted(missing_x)}")
@@ -474,6 +512,41 @@ for ch in chapters:
     chapter_out.append({k: ch[k] for k in ("id", "title", "sub", "season")} | {"legs": ids, "route": ch["route"]})
 
 today = datetime.date.today().isoformat()
+# Abdeckung wird aus tatsächlichen Ankünften ermittelt, nicht aus Ausweichplätzen im Airport-Verzeichnis.
+audit_seen = set()
+if not isinstance(highlight_audit.get("airports"), list):
+    sys.exit("Highlight-Abgleich: airports-Liste fehlt")
+for entry in highlight_audit["airports"]:
+    ident = entry["icao"]
+    if not filled(entry.get("name")) or not filled(entry.get("feature")):
+        sys.exit(f"Highlight-Abgleich: Name oder Merkmal fehlt: {ident}")
+    if ident in audit_seen or not entry.get("sources") or not all(is_url(u) for u in entry["sources"]):
+        sys.exit(f"Highlight-Abgleich: doppelte Kennung oder ungültige Quellen: {ident}")
+    audit_seen.add(ident)
+    arrivals = [l for l in legs if l["t"] == ident]
+    entry["legs"] = [l["id"] for l in arrivals]
+    entry["coverage"] = "A320" if any(l["k"] == "a" for l in arrivals) else "H160" if arrivals else "Fehlt"
+    row = oa_row(ident)
+    if row is None or row["type"] == "closed":
+        sys.exit(f"Highlight-Abgleich: kein aktiver Airport-Datensatz für {ident}")
+    if not arrivals and (not entry.get("activeSources") or not all(is_url(u) for u in entry["activeSources"])):
+        sys.exit(f"Highlight-Abgleich: fehlender Betriebsnachweis für Kandidat {ident}")
+    if not arrivals and not filled(entry.get("proposal")):
+        sys.exit(f"Highlight-Abgleich: fehlende Einordnung für Kandidat {ident}")
+    if arrivals and entry.get("promote") is True:
+        airports[ident].setdefault("tag", entry["name"])
+        airports[ident].setdefault("hl", entry["feature"])
+        airports[ident]["level"] = 2
+
+for notice in highlight_audit.get("operatingNotes", []):
+    if not all(filled(notice.get(k)) for k in ("icao", "title", "note")) or not is_url(notice.get("url")):
+        sys.exit("Highlight-Abgleich: ungültiger Betriebshinweis")
+    if notice["icao"] in airports:
+        airports[notice["icao"]]["operatingNote"] = notice
+
+if not filled(highlight_audit.get("excluded", {}).get("note")) or not is_url(highlight_audit.get("excluded", {}).get("url")):
+    sys.exit("Highlight-Abgleich: Ausschlussbegründung oder Quelle fehlt")
+
 data = {
     "meta": {"version": "V2", "built": today, "start": route["start"], "aircraft": route["aircraft"],
              "heli": route["helicopter"], "formula": route["timeFormula"]},
@@ -484,6 +557,7 @@ data = {
     "cats": cats,
     "changes": content["changes"],
     "research": content.get("research"),
+    "highlightAudit": highlight_audit,
     "stats": stats,
     "debriefs": debrief_entries,
     # Zuordnung der V1-Legs (für den Import einer V1-Fortschrittssicherung)

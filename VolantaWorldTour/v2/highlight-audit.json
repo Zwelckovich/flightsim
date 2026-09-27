@@ -1,0 +1,469 @@
+{
+  "date": "2026-09-25",
+  "scope": "Gezielter qualitativer Abgleich, keine vollständige Weltrangliste und keine statistische Häufigkeitsmessung. Historische Medienlisten dienen nur als Inspirationsquelle. Bei neuen Kandidaten wurde laufender Betrieb anhand von Betreiber-, Tourismus- oder Airlinequellen geprüft; das ist keine H160- oder Fenix-Zulassung und kein Sim-Test. Die gesamte Bestandsroute wurde nicht live auf NOTAMs geprüft.",
+  "airports": [
+    {
+      "icao": "TNCM",
+      "name": "Sint Maarten",
+      "feature": "Maho Beach",
+      "sources": [
+        "https://www.privatefly.com/airport-poll/privatefly-airport-poll-results-2018.html",
+        "https://www.privatefly.com/airport-poll/privatefly-airport-poll-results-2020.html",
+        "https://www.flightradar24.com/blog/threads/which-airport-approach-or-departure-do-you-think-is-the-most-scenic/"
+      ]
+    },
+    {
+      "icao": "TFFJ",
+      "name": "St. Barth",
+      "feature": "Hügel an der Schwelle",
+      "sources": [
+        "https://www.reddit.com/r/flightsim/comments/1wa4n9e/interesting_airports_for_approaches/"
+      ],
+      "promote": true
+    },
+    {
+      "icao": "VQPR",
+      "name": "Paro",
+      "feature": "Enges Tal",
+      "sources": [
+        "https://forums.flightsimulator.com/t/recommend-me-scenic-approaches-on-a320/467361",
+        "https://www.flightradar24.com/blog/threads/which-airport-approach-or-departure-do-you-think-is-the-most-scenic/"
+      ]
+    },
+    {
+      "icao": "LOWI",
+      "name": "Innsbruck",
+      "feature": "Alpen und Inntal",
+      "sources": [
+        "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943",
+        "https://forums.flightsimulator.com/t/recommend-me-scenic-approaches-on-a320/467361",
+        "https://forums.flightsimulator.com/t/favorite-approach-in-msfs/449235?page=2"
+      ]
+    },
+    {
+      "icao": "LPMA",
+      "name": "Madeira",
+      "feature": "Bahnplattform und Küste",
+      "sources": [
+        "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943",
+        "https://forums.flightsimulator.com/t/recommend-me-scenic-approaches-on-a320/467361"
+      ]
+    },
+    {
+      "icao": "LXGB",
+      "name": "Gibraltar",
+      "feature": "Felsen neben der Bahn",
+      "sources": [
+        "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943",
+        "https://forums.flightsimulator.com/t/recommend-me-scenic-approaches-on-a320/467361",
+        "https://forums.flightsimulator.com/t/favorite-approach-in-msfs/449235?page=2"
+      ]
+    },
+    {
+      "icao": "LGSK",
+      "name": "Skiathos",
+      "feature": "Strand und Hafen",
+      "sources": [
+        "https://www.privatefly.com/airport-poll/privatefly-airport-poll-results-2020.html"
+      ]
+    },
+    {
+      "icao": "NZQN",
+      "name": "Queenstown",
+      "feature": "See und Gebirgskessel",
+      "sources": [
+        "https://www.privatefly.com/airport-poll/privatefly-airport-poll-results-2018.html",
+        "https://www.flightradar24.com/blog/threads/which-airport-approach-or-departure-do-you-think-is-the-most-scenic/",
+        "https://forums.flightsimulator.com/t/favorite-approach-in-msfs/449235?page=2"
+      ]
+    },
+    {
+      "icao": "SBRJ",
+      "name": "Rio – Santos Dumont",
+      "feature": "Stadt und Guanabara-Bucht",
+      "sources": [
+        "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943",
+        "https://forums.flightsimulator.com/t/recommend-me-scenic-approaches-on-a320/467361"
+      ]
+    },
+    {
+      "icao": "KDCA",
+      "name": "Washington National",
+      "feature": "River Visual 19",
+      "sources": [
+        "https://forums.flightsimulator.com/t/recommend-me-scenic-approaches-on-a320/467361",
+        "https://forums.flightsimulator.com/t/your-top-airport-addons/541754"
+      ]
+    },
+    {
+      "icao": "KSFO",
+      "name": "San Francisco",
+      "feature": "Bucht",
+      "sources": [
+        "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943"
+      ]
+    },
+    {
+      "icao": "LFMN",
+      "name": "Nizza",
+      "feature": "Côte d’Azur",
+      "sources": [
+        "https://www.privatefly.com/airport-poll/privatefly-airport-poll-results-2018.html",
+        "https://forums.flightsimulator.com/t/recommend-me-scenic-approaches-on-a320/467361"
+      ]
+    },
+    {
+      "icao": "VRMM",
+      "name": "Malé",
+      "feature": "Atoll und Flughafeninsel",
+      "sources": [
+        "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943"
+      ]
+    },
+    {
+      "icao": "FACT",
+      "name": "Kapstadt",
+      "feature": "Tafelberg",
+      "sources": [
+        "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943"
+      ]
+    },
+    {
+      "icao": "EGLL",
+      "name": "London Heathrow",
+      "feature": "Stadtanflug",
+      "sources": [
+        "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943",
+        "https://www.flightradar24.com/blog/threads/which-airport-approach-or-departure-do-you-think-is-the-most-scenic/"
+      ]
+    },
+    {
+      "icao": "HRYR",
+      "name": "Kigali",
+      "feature": "Hügellandschaft",
+      "sources": [
+        "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943"
+      ]
+    },
+    {
+      "icao": "VHHH",
+      "name": "Hongkong – Chek Lap Kok",
+      "feature": "Aktueller Flughafen, kein Kai Tak",
+      "sources": [
+        "https://www.reddit.com/r/flightsim/comments/1q7yuvs/hong_kong_night_approach_rpll06vhhh25r_fl330/",
+        "https://www.cad.gov.hk/english/ac_path.html"
+      ]
+    },
+    {
+      "icao": "SCEL",
+      "name": "Santiago",
+      "feature": "Anden",
+      "sources": [
+        "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943"
+      ]
+    },
+    {
+      "icao": "KLAS",
+      "name": "Las Vegas",
+      "feature": "Strip bei Nacht",
+      "sources": [
+        "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943",
+        "https://www.flightradar24.com/blog/threads/which-airport-approach-or-departure-do-you-think-is-the-most-scenic/"
+      ]
+    },
+    {
+      "icao": "NZWN",
+      "name": "Wellington",
+      "feature": "Meerenge",
+      "sources": [
+        "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943"
+      ]
+    },
+    {
+      "icao": "ENSB",
+      "name": "Svalbard",
+      "feature": "Arktis",
+      "sources": [
+        "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943",
+        "https://forums.flightsimulator.com/t/favorite-approach-in-msfs/449235?page=2"
+      ]
+    },
+    {
+      "icao": "VNLK",
+      "name": "Lukla",
+      "feature": "Kurze Hangbahn; Tour besucht sie per H160",
+      "sources": [
+        "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943"
+      ]
+    },
+    {
+      "icao": "MHTG",
+      "name": "Toncontín",
+      "feature": "Talanflug; Airliner-Sonderfall",
+      "sources": [
+        "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943",
+        "https://forums.flightsimulator.com/t/recommend-me-scenic-approaches-on-a320/467361"
+      ]
+    },
+    {
+      "icao": "KJAC",
+      "name": "Jackson Hole",
+      "feature": "Grand Teton",
+      "sources": [
+        "https://forums.flightsimulator.com/t/recommend-me-scenic-approaches-on-a320/467361"
+      ]
+    },
+    {
+      "icao": "KBOS",
+      "name": "Boston",
+      "feature": "Stadt und Hafen",
+      "sources": [
+        "https://forums.flightsimulator.com/t/recommend-me-scenic-approaches-on-a320/467361"
+      ]
+    },
+    {
+      "icao": "ENTC",
+      "name": "Tromsø",
+      "feature": "Fjordlandschaft",
+      "sources": [
+        "https://forums.flightsimulator.com/t/recommend-me-scenic-approaches-on-a320/467361"
+      ]
+    },
+    {
+      "icao": "VNKT",
+      "name": "Kathmandu",
+      "feature": "Tal und Himalaya",
+      "sources": [
+        "https://forums.flightsimulator.com/t/recommend-me-scenic-approaches-on-a320/467361",
+        "https://www.flightradar24.com/blog/threads/which-airport-approach-or-departure-do-you-think-is-the-most-scenic/"
+      ]
+    },
+    {
+      "icao": "NTTB",
+      "name": "Bora Bora",
+      "feature": "Lagune",
+      "sources": [
+        "https://www.privatefly.com/airport-poll/privatefly-airport-poll-results-2020.html"
+      ]
+    },
+    {
+      "icao": "OMDB",
+      "name": "Dubai",
+      "feature": "Skyline",
+      "sources": [
+        "https://www.privatefly.com/airport-poll/privatefly-airport-poll-results-2020.html"
+      ]
+    },
+    {
+      "icao": "NFFN",
+      "name": "Nadi",
+      "feature": "Bucht und Bergkulisse",
+      "sources": [
+        "https://www.privatefly.com/airport-poll/privatefly-airport-poll-results-2020.html"
+      ]
+    },
+    {
+      "icao": "RJTT",
+      "name": "Tokyo Haneda",
+      "feature": "Tokyo Bay",
+      "sources": [
+        "https://www.flightradar24.com/blog/threads/which-airport-approach-or-departure-do-you-think-is-the-most-scenic/"
+      ]
+    },
+    {
+      "icao": "YSSY",
+      "name": "Sydney",
+      "feature": "Hafen",
+      "sources": [
+        "https://www.flightradar24.com/blog/threads/which-airport-approach-or-departure-do-you-think-is-the-most-scenic/"
+      ]
+    },
+    {
+      "icao": "FSIA",
+      "name": "Mahé",
+      "feature": "Granitberge am Meer",
+      "sources": [
+        "https://www.reddit.com/r/flightsim/comments/1wa4n9e/interesting_airports_for_approaches/"
+      ]
+    },
+    {
+      "icao": "SPZO",
+      "name": "Cusco",
+      "feature": "Andental und Höhe",
+      "sources": [
+        "https://www.reddit.com/r/flightsim/comments/1wa4n9e/interesting_airports_for_approaches/"
+      ]
+    },
+    {
+      "icao": "TNCS",
+      "name": "Saba",
+      "feature": "Extrem kurze Küstenpiste",
+      "sources": [
+        "https://www.privatefly.com/airport-poll/privatefly-airport-poll-results-2018.html",
+        "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943"
+      ],
+      "proposal": "Hohe Priorität: H160-Ausflug TNCM → TNCS → TNCM. Hubschrauberverkehr ist belegt; H160-Leistung und Szenerie noch im Sim prüfen. Keine Twin Otter nötig, solange der Besuch und nicht das originale STOL-Landeerlebnis das Ziel ist.",
+      "activeSources": [
+        "https://www.sabatourism.com/getting-here",
+        "https://www.westindieshelico.com/sint-maarten-to-saba-island-helicopters/"
+      ]
+    },
+    {
+      "icao": "EGLC",
+      "name": "London City",
+      "feature": "Docklands und steiler Anflug",
+      "sources": [
+        "https://www.privatefly.com/airport-poll/privatefly-airport-poll-results-2018.html",
+        "https://forums.flightsimulator.com/t/recommend-me-scenic-approaches-on-a320/467361",
+        "https://www.flightradar24.com/blog/threads/which-airport-approach-or-departure-do-you-think-is-the-most-scenic/"
+      ],
+      "proposal": "London-Highlight, aber mit den bevorzugten Typen kein regulärer Landestopp: Fenix A320 CFM ist hier nicht zugelassen; eine touristische H160-Landung ist nicht als reguläre Option belegt. Deshalb nur London-Sightseeing als separate Planung, ohne EGLC-Landung. Keine Twin Otter als Ersatz. Einen anderen aktiven Heliport und die Londoner Hubschrauberrouten vor einer Übernahme gesondert prüfen.",
+      "activeSources": [
+        "https://www.londoncityairport.com/",
+        "https://privatejetcentre.londoncityairport.com/services/approved-operators-and-aircraft"
+      ]
+    },
+    {
+      "icao": "EGPR",
+      "name": "Barra",
+      "feature": "Gezeitenstrand statt Asphalt",
+      "sources": [
+        "https://www.privatefly.com/airport-poll/privatefly-airport-poll-results-2018.html",
+        "https://www.privatefly.com/airport-poll/privatefly-airport-poll-results-2020.html",
+        "https://www.flightradar24.com/blog/threads/which-airport-approach-or-departure-do-you-think-is-the-most-scenic/"
+      ],
+      "proposal": "Hohe Priorität: H160-Ausflug ab EGPE möglich, kein A320. Für das berühmte Rollen und Landen auf dem Strand wäre die Twin Otter eine begründete freiwillige Ausnahme; ein H160-Besuch ersetzt dieses Erlebnis nicht. Gezeiten und Landefläche vorab prüfen.",
+      "activeSources": [
+        "https://www.hial.co.uk/homepage/4/barra-airport"
+      ]
+    },
+    {
+      "icao": "EIDL",
+      "name": "Donegal",
+      "feature": "Wild Atlantic Way",
+      "sources": [
+        "https://www.privatefly.com/airport-poll/privatefly-airport-poll-results-2018.html",
+        "https://www.privatefly.com/airport-poll/privatefly-airport-poll-results-2020.html"
+      ],
+      "proposal": "H160-Ausflug ab EICK oder EGNS. Küstenlinie und Strände machen den Mehrwert aus. Nicht als neuen A320-Sonderfall erzwingen.",
+      "activeSources": [
+        "https://donegalairport.ie/news/",
+        "https://donegalairport.ie/about-us/"
+      ]
+    },
+    {
+      "icao": "KSAN",
+      "name": "San Diego",
+      "feature": "Stadtnaher Endanflug",
+      "sources": [
+        "https://www.reddit.com/r/flightsim/comments/czr2wy/"
+      ],
+      "activeSources": [
+        "https://www.san.org/"
+      ]
+    },
+    {
+      "icao": "KLGA",
+      "name": "New York LaGuardia",
+      "feature": "Expressway Visual und Manhattan",
+      "sources": [
+        "https://forums.flightsimulator.com/t/recommend-me-scenic-approaches-on-a320/467361",
+        "https://forums.flightsimulator.com/t/favorite-approach-in-msfs/449235?page=2",
+        "https://www.flightradar24.com/blog/threads/which-airport-approach-or-departure-do-you-think-is-the-most-scenic/"
+      ],
+      "proposal": "A320-Highlight. Den Abschnitt KDCA → KJFK gezielt umplanen; ein 10-NM-A320-Sprung KLGA → KJFK wäre wenig sinnvoll. JFK wegen eigener Szenerie erhalten, gegebenenfalls als separater Besuch. Noch keine Routenänderung.",
+      "activeSources": [
+        "https://www.laguardiaairport.com/flights/arrivals"
+      ]
+    },
+    {
+      "icao": "LIPZ",
+      "name": "Venedig",
+      "feature": "Lagune",
+      "sources": [
+        "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943"
+      ],
+      "proposal": "A320 zwischen LIRF und LFMN möglich; beide Teilstrecken unter zwei Stunden. Gute Ergänzung, aber geringere Priorität als Saba, Barra und San Diego.",
+      "activeSources": [
+        "https://www.veneziaairport.it/en_gb/flights/arrivals/1180221/"
+      ]
+    },
+    {
+      "icao": "LIMJ",
+      "name": "Genua",
+      "feature": "Hafenbahn an der Küste",
+      "sources": [
+        "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943"
+      ],
+      "proposal": "A320-Zwischenstopp LIRF → LIMJ → LFMN mit kleinem Umweg. Alternative zu einer größeren Italien-Erweiterung über Venedig.",
+      "activeSources": [
+        "https://www.airport.genova.it/orario-voli/"
+      ]
+    },
+    {
+      "icao": "SBSP",
+      "name": "São Paulo Congonhas",
+      "feature": "Stadtflughafen",
+      "sources": [
+        "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943"
+      ],
+      "proposal": "A320 SBRJ → SBSP → SBFI. Performance auf kurzer Bahn prüfen; kein zusätzlicher Flugzeugtyp nötig. Beide Legs im Zwei-Stunden-Ziel.",
+      "activeSources": [
+        "https://www.aenabrasil.com.br/en/airports/congonhas-airport/flights-information.html"
+      ]
+    },
+    {
+      "icao": "FSPP",
+      "name": "Praslin",
+      "feature": "Inseln und Küstenlandschaft",
+      "sources": [
+        "https://www.privatefly.com/airport-poll/privatefly-airport-poll-results-2020.html"
+      ],
+      "proposal": "Kurzer H160-Ausflug ab FSIA; bietet einen zweiten Blick auf die Seychellen. Für einen A320 ungeeignet, Twin Otter für den Besuch nicht erforderlich.",
+      "activeSources": [
+        "https://fly.airseychelles.com/en/domestic-flight-schedule"
+      ]
+    },
+    {
+      "icao": "LFLJ",
+      "name": "Courchevel",
+      "feature": "Altiport mit geneigter Bahn",
+      "sources": [
+        "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943",
+        "https://forums.flightsimulator.com/t/your-top-airport-addons/541754"
+      ],
+      "proposal": "H160-Ausflug ab LSGG; Hubschrauberbetrieb am Altiport ist belegt. Die geneigte Bahn lässt sich besichtigen, das typische Flächenflugzeug-Landeerlebnis wird damit nicht nachgebildet. Hochgebirgsleistung prüfen.",
+      "activeSources": [
+        "https://courchevel.com/en/a/courchevel-altiport-5077208/",
+        "https://www.mbh.fr/fr/nos-bases/courchevel/"
+      ]
+    },
+    {
+      "icao": "LSZS",
+      "name": "Samedan",
+      "feature": "Engadin",
+      "sources": [
+        "https://forums.flightsimulator.com/t/favorite-approach-in-msfs/449235?page=2",
+        "https://forums.flightsimulator.com/t/aussie-group-flights-team-ga-sunday-the-alps-scenic-traverse/756248"
+      ],
+      "proposal": "H160-Ausflug ab LSZH oder LOWI. Hubschrauberbetrieb ist belegt; für die Tour kein weiterer A320-Grenzfall. Talroute und Dichtehöhe beachten.",
+      "activeSources": [
+        "https://www.engadin-airport.ch/rundfluege/",
+        "https://www.engadin-airport.ch/wp-content/uploads/2025/09/Briefing-Familiarization-LSZS.pdf"
+      ]
+    }
+  ],
+  "operatingNotes": [
+    {
+      "icao": "UKLL",
+      "title": "Aktuell kein ziviler Flugbetrieb – nur Simulator-Ausnahme",
+      "note": "Lwiw ist nicht historisch stillgelegt, aber der ukrainische Luftraum einschließlich FIR Lviv ist laut EASA CZIB-2022-01R14 (Revision 24.07.2026, gültig bis 31.01.2027) für zivile Flüge geschlossen. Damit erfüllt dieser Stopp die strenge Vorgabe „aktuell zivil anfliegbar“ nicht. Alle 245 Kategorien und ausschließlich aktuell zivil erreichbare Airports sind deshalb derzeit nicht gleichzeitig möglich. Der Ukraine-Stopp bleibt für die Kategorie im Simulator markiert; keine Behauptung regulären Betriebs.",
+      "url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2022-01r14"
+    }
+  ],
+  "excluded": {
+    "icao": "VHHX",
+    "note": "Kai Tak ist seit 1998 geschlossen und wird ausdrücklich nicht vorgeschlagen. Hongkong ist bereits über den aktiven Flughafen VHHH enthalten. Andere historische oder nicht belegbar aktive Plätze aus alten Listen wurden ebenfalls nicht als Ergänzungen übernommen.",
+    "url": "https://www.cad.gov.hk/english/kaitak.html"
+  }
+}

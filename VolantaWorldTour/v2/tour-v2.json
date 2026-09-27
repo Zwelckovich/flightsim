@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "V2",
-  "built": "2026-09-24",
+  "built": "2026-09-25",
   "start": "EDLV",
   "aircraft": "Fenix A320 · CFM · Sharklets",
   "heli": "Airbus H160 (HPG)",
@@ -303,7 +303,8 @@
     "L105",
     "X-SEDONA-1",
     "X-SEDONA-2",
-    "L106",
+    "L389",
+    "L390",
     "L107",
     "L108",
     "L109",
@@ -317,6 +318,7 @@
     "MMSD",
     "MMHO",
     "KPHX",
+    "KSAN",
     "KLAS",
     "KDEN",
     "KJAC",
@@ -1257,6 +1259,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "ELLX - Luxembourg Airport · Atelic",
+     "url": "https://www.fsaddoncompare.com/product/12165/ELLX-Luxembourg-Airport",
+     "context": "Im Text genannte Payware; mit 3,98 aus 47 unter der Payware-Schwelle – verworfen, keine Empfehlung."
+    }
+   ],
    "hl": "Luxemburg-Findel auf dem Plateau über der Hauptstadt."
   },
   "EGLL": {
@@ -1374,6 +1383,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "EGNS Isle of Man Airport · UK2000 Scenery",
+     "url": "https://www.fsaddoncompare.com/product/1407/EGNS-Isle-of-Man-Airport",
+     "context": "Erwähnte einzige Payware; bringt für den kurzen Stopp wenig – keine Empfehlung."
+    },
+    {
+     "label": "EGNS - Ronaldsway Airport - Isle of Man - Upgrade · flightsim.to",
+     "url": "https://flightsim.to/addon/5919/egns-ronaldsway-airport-isle-of-man-upgrade",
+     "context": "Vermutlich die erwähnte Freeware (Zuordnung aus der älteren Recherche); 2024-Betrieb unbelegt – verworfen, keine Empfehlung."
+    }
+   ],
    "hl": "Isle of Man – Ronaldsway liegt direkt an der Küste."
   },
   "EGGP": {
@@ -1435,6 +1456,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "EGPE Inverness Airport - MSFS2024 · Scotflight",
+     "url": "https://flightsim.to/addon/99067/egpe-invernessairport-msfs2024",
+     "context": "Erwähnte kostenlose Alternative; 4,8 aus erst 6 Bewertungen – nur Kandidat zum Prüfen, keine Empfehlung."
+    }
+   ],
    "hl": "Inverness am Moray Firth – Tor zu den Highlands."
   },
   "EKVG": {
@@ -1524,6 +1552,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "BIKF Keflavik & BIRK Reykjavik Airports v2 · MK Studios",
+     "url": "https://www.fsaddoncompare.com/product/4361/BIKF-Keflavik-&-BIRK-Reykjavik-Airports-v2",
+     "context": "Erwähnte Payware, laut Recherche die einzige echte Aufwertung; kein Muss – keine neue Empfehlung."
+    }
+   ],
    "hl": "Keflavík auf der Reykjanes-Halbinsel – Lavafelder bis zum Horizont."
   },
   "BGGH": {
@@ -1612,6 +1647,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "CYVP - Kuujjuaq - Canada · Ape42",
+     "url": "https://flightsim.to/addon/2718/cyvp-kuujjuaq-canada",
+     "context": "Erwähnte einzige Freeware; nur für MSFS 2020 markiert – verworfen, keine Empfehlung."
+    }
+   ],
    "hl": "Kuujjuaq – Tankstopp in Nunavik."
   },
   "CYWK": {
@@ -1693,6 +1735,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "CYQM Greater Moncton Airport · Stairport",
+     "url": "https://www.fsaddoncompare.com/product/7862/CYQM-Greater-Moncton-Airport",
+     "context": "Erwähnte Payware; 3,7 aus 30, nur MSFS 2020 – verworfen."
+    },
+    {
+     "label": "CYQM Airport AI Fixes · JimBrown",
+     "url": "https://flightsim.to/addon/27160/cyqm-airport-ai-fixes",
+     "context": "Erwähnter unbewerteter AI-Fix von 2022 – keine Szenerie, verworfen."
+    }
+   ],
    "hl": "Moncton – Sprungbrett nach Saint-Pierre."
   },
   "LFVP": {
@@ -1719,6 +1773,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "LFVP - Saint-Pierre Pointe-Blanche Airport · declinous",
+     "url": "https://flightsim.to/addon/94622/lfvp-saint-pierre-airport",
+     "context": "Erwähnte einzige Freeware; 4,5 aus 2 – kein belegter Mehrwert, verworfen."
+    }
+   ],
    "hl": "Saint-Pierre – ein Stück Frankreich vor Neufundland, 1.800-m-Bahn.",
    "tag": "Frankreich",
    "level": 1
@@ -1747,6 +1808,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "St John's Intl CYYT · Mfsg",
+     "url": "https://www.fsaddoncompare.com/product/13966/St-John's-Intl-CYYT",
+     "context": "Erwähnte Payware; noch unbewertet – keine Empfehlung."
+    },
+    {
+     "label": "(UNSUPORTED) St Johns CYYT Tree fix · MrReketa",
+     "url": "https://flightsim.to/addon/40793/st-johns-cyyt-tree-fix",
+     "context": "Erwähnter veralteter Baum-Fix, als unsupported markiert – verworfen."
+    }
+   ],
    "hl": "St. John's – der östlichste Punkt Nordamerikas."
   },
   "CYHZ": {
@@ -1773,6 +1846,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "CYHZ - Halifax Stanfield Intl. v2 · FSimStudios",
+     "url": "https://www.fsaddoncompare.com/product/6010/CYHZ-Halifax-Stanfield-Intl.-v2",
+     "context": "Erwähnte Payware; 4,2 aus 97, unter der Payware-Schwelle – keine Empfehlung."
+    },
+    {
+     "label": "CYHZ Halifax Airport AI Fixes · JimBrown",
+     "url": "https://flightsim.to/addon/26994/cyhz-halifax-airport-ai-fixes",
+     "context": "Beispiel der erwähnten AI-/Static-Fixes – keine Szenerie, verworfen."
+    }
+   ],
    "hl": "Halifax an der Atlantikküste Nova Scotias."
   },
   "KBOS": {
@@ -1896,6 +1981,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "TXKF Bermuda International Airport · SLH Sim Designs",
+     "url": "https://www.fsaddoncompare.com/product/5413/TXKF-Bermuda-International-Airport",
+     "context": "Erwähnte mögliche Payware; der Stopp lebt von der Insel – keine Empfehlung."
+    }
+   ],
    "hl": "Bermuda – Bahn zwischen Castle Harbour und St. George's, türkise Lagunen ringsum.",
    "tag": "Bermuda",
    "level": 1
@@ -1972,6 +2064,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "TIST - Cyril E. King Airport · FeelThere",
+     "url": "https://www.fsaddoncompare.com/product/4139/TIST-Cyril-E.-King-Airport",
+     "context": "Erwähnte Payware; nur für MSFS 2020 gelistet – verworfen."
+    }
+   ],
    "hl": "St. Thomas – Ausgangspunkt für den H160-Sprung zu den British Virgin Islands."
   },
   "TNCM": {
@@ -2067,6 +2166,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Antigua Vc Bird Intl TAPA V2 · Tropicalsim",
+     "url": "https://www.fsaddoncompare.com/product/6039/Antigua-Vc-Bird-Intl-TAPA-V2",
+     "context": "Erwähnte Payware; 2,5 aus 2, nur MSFS 2020 – verworfen."
+    },
+    {
+     "label": "TAPA V.C. Bird Airport Parking and Taxi update · JimBrown",
+     "url": "https://flightsim.to/addon/46544/tapa-v-c-bird-airport-parking-and-taxi-update",
+     "context": "Erwähntes kleines Parking-/Taxi-Update, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Antigua – Basis für den H160-Flug nach Montserrat."
   },
   "TFFR": {
@@ -2102,6 +2213,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Pointe à pitre le Raizet [TFFR] · wilfridlisandro",
+     "url": "https://flightsim.to/addon/27072/pointe-pitre-le-raizet-tffr",
+     "context": "Erwähnte Freeware; nur für MSFS 2020 markiert, 2024 unbestätigt – keine Empfehlung."
+    }
+   ],
    "hl": "Guadeloupe – Pointe-à-Pitre zwischen den beiden Inselflügeln."
   },
   "TDPD": {
@@ -2137,6 +2255,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Douglas-Charles (TDPD) & Canefield (TDCF) Airports Updated Scenery Project V1.5 · lexuz2020",
+     "url": "https://flightsim.to/addon/13983/douglas-charles-tdpd-canefield-tdcf-airports-updated-scenery-project-v1-0",
+     "context": "Erwähnte Freeware; nur für MSFS 2020 markiert, 2024 unbestätigt – keine Empfehlung."
+    }
+   ],
    "hl": "Dominica – Bahn 2025 auf 1.936 m verlängert, jetzt ein A320-Stopp.",
    "brief": "Douglas–Charles liegt an der Nordostküste zwischen Regenwaldbergen und Atlantik. Im Sim kann noch die alte, kürzere Bahn erscheinen – leicht beladen fliegen, der nächste Leg nach Martinique ist kurz. Ersetzt den bisherigen H160-Ausflug.",
    "tag": "Neu",
@@ -2171,6 +2296,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Martinique · FSDG",
+     "url": "https://www.fsaddoncompare.com/product/14153/Martinique",
+     "context": "Erwähnte neue Payware; noch unbewertet – keine Empfehlung."
+    }
+   ],
    "hl": "Martinique – Montagne Pelée im Norden der Insel."
   },
   "TLPL": {
@@ -2197,6 +2329,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "St Lucia TLPL · FSDG",
+     "url": "https://www.fsaddoncompare.com/product/4714/St-Lucia-TLPL",
+     "context": "Erwähnte Payware; 3,73 aus 11 – verworfen."
+    },
+    {
+     "label": "Hewanorra Int. (TLPL) & George F. L. Charles Airport (TLPC) Updated Scenery Pack Project · lexuz2020",
+     "url": "https://flightsim.to/addon/18334/hewanorra-int-tlpl-george-f-l-charles-airport-tlpc-updated-scenery-pack-project",
+     "context": "Erwähnte Freeware; nur für MSFS 2020 markiert, 2024 unbestätigt – verworfen."
+    }
+   ],
    "hl": "St. Lucia – Hewanorra an der Südspitze, die Pitons im Nordwesten.",
    "level": 1
   },
@@ -2224,6 +2368,23 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "TVSA Argyle International Airport · Richer Simulations",
+     "url": "https://www.fsaddoncompare.com/product/6564/TVSA-Argyle-International-Airport",
+     "context": "Erwähnte Payware; nur für MSFS 2020 gelistet – verworfen."
+    },
+    {
+     "label": "Caribbean Pack 2 · FLYNDRIVE4D",
+     "url": "https://www.fsaddoncompare.com/product/9215/Caribbean-Pack-2",
+     "context": "Erwähntes Payware-Pack (4,5 aus 11, erscheint in der FSAddonCompare-Suche nach TVSA); nur MSFS 2020 – verworfen."
+    },
+    {
+     "label": "Saint Vincent and the Grenadines Argyle Intl airport TVSA · timot75",
+     "url": "https://flightsim.to/addon/5978/saint-vincent-and-the-grenadines-argyle-intl-airport-tvsa",
+     "context": "Erwähnte alte Freeware; nur MSFS 2020, kaum bewertet – verworfen."
+    }
+   ],
    "hl": "St. Vincent – Argyle an der Atlantikküste."
   },
   "TBPB": {
@@ -2303,6 +2464,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "TGPY - MAURICE BISHOP INTL GRENADA · SLH Sim Designs",
+     "url": "https://www.fsaddoncompare.com/product/5502/TGPY-MAURICE-BISHOP-INTL-GRENADA",
+     "context": "Erwähnte Payware; 4,44 aus 9, unter der Payware-Schwelle – keine Empfehlung."
+    },
+    {
+     "label": "Maurice Bishop Intl TGPY · timot75",
+     "url": "https://flightsim.to/addon/37950/maurice-bishop-intl-tgpy",
+     "context": "Erwähnte Freeware; 1 Bewertung, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Grenada – Bahn auf der Landzunge von Point Salines."
   },
   "TTCP": {
@@ -2385,6 +2558,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Curaçao TNCC · Tropicalsim",
+     "url": "https://www.fsaddoncompare.com/product/1554/Cura%25C3%25A7ao-TNCC",
+     "context": "Erwähnte Payware; nur MSFS 2020 – verworfen."
+    },
+    {
+     "label": "Curaçao International Airport TNCC · timot75",
+     "url": "https://flightsim.to/addon/26945/curaao-international-airport-tncc",
+     "context": "Erwähnte Freeware; 4,3 aus 2, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Curaçao – Hato mit Blick auf Willemstad."
   },
   "TNCA": {
@@ -2411,6 +2596,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Aruba TNCA · Tropicalsim",
+     "url": "https://www.fsaddoncompare.com/product/1717/Aruba-TNCA",
+     "context": "Erwähnte einzige Payware; 3,5 aus 4, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Aruba – Queen Beatrix am Karibikstrand."
   },
   "SVMI": {
@@ -2437,6 +2629,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "SVMI Simón Bolívar International Airport · PKSIM",
+     "url": "https://www.fsaddoncompare.com/product/6631/SVMI-Sim%25C3%25B3n-Bol%25C3%25ADvar-International-Airport",
+     "context": "Erwähnte Payware; nur für MSFS 2020 gelistet – verworfen."
+    },
+    {
+     "label": "SVMI RESTRUCTURED V.1.0 · RONAL2ADDONS",
+     "url": "https://flightsim.to/addon/12267/svmi-restructured-v-1-0",
+     "context": "Erwähnte Freeware; kollidiert in 2024 mit dem geänderten Standard-Terminal – verworfen."
+    }
+   ],
    "hl": "Caracas-Maiquetía zwischen Küste und Ávila-Massiv."
   },
   "SYCJ": {
@@ -2463,6 +2667,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "SYCJ-Cheddi Jagan International Airport · Kevin1995",
+     "url": "https://flightsim.to/addon/105724/sycj-cheddi-jagan-international-airport",
+     "context": "Erwähnte Freeware; 4,7 aus erst 3 – unter der Schwelle, keine Empfehlung."
+    },
+    {
+     "label": "SYCJ Cheddy Jagan Guyana · MSFScenerybuilders",
+     "url": "https://www.fsaddoncompare.com/product/824/SYCJ-Cheddy-Jagan-Guyana",
+     "context": "Erwähnte Payware; 2,97 aus 10 – verworfen."
+    }
+   ],
    "hl": "Georgetown – Regenwaldküste Guyanas."
   },
   "SMJP": {
@@ -2575,6 +2791,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "SBMQ Macapá- Alberto Alcolumbre · Brazil Land Games",
+     "url": "https://www.fsaddoncompare.com/product/1285/SBMQ-Macap%25C3%25A1--Alberto-Alcolumbre",
+     "context": "Erwähnte Payware; unbewertet, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Macapá – direkt am Äquator an der Amazonasmündung."
   },
   "SBSN": {
@@ -2628,6 +2851,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "manaus airport SBEG · timot75",
+     "url": "https://flightsim.to/addon/9598/manaus-airport-sbeg",
+     "context": "Erwähnte Freeware; 4,5 aus 2, nur MSFS 2020 – verworfen."
+    },
+    {
+     "label": "SBEG Manaus Intl · Mfsg",
+     "url": "https://www.fsaddoncompare.com/product/5790/SBEG-Manaus-Intl",
+     "context": "Erwähnte Payware; 4,0 aus 1 – verworfen."
+    }
+   ],
    "hl": "Manaus – Treffen der Wasser von Rio Negro und Solimões."
   },
   "SBPV": {
@@ -2654,6 +2889,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "SBPV Porto Velho · Brazil Land Games",
+     "url": "https://www.fsaddoncompare.com/product/1290/SBPV-Porto-Velho",
+     "context": "Erwähnte Payware; unbewertet, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Porto Velho am Rio Madeira."
   },
   "SBCY": {
@@ -2742,6 +2984,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "SBCF - CNF - Belo Horizonte/Confins - Tancredo Neves International Airport · aeromaia",
+     "url": "https://flightsim.to/addon/103756/belo-horizonte-confins-tancredo-neves-international-airport-cnf-sbcf",
+     "context": "Erwähnte 2024-Freeware; 5,0 aus 1 – kaum bewertet, verworfen."
+    },
+    {
+     "label": "SBCF - Confins/bh - Brazil · Brazil Land Games",
+     "url": "https://www.fsaddoncompare.com/product/1014/SBCF-Confins%252Fbh-Brazil",
+     "context": "Erwähnte Payware; 4,0 aus 1, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Belo Horizonte – Hochland von Minas Gerais."
   },
   "SBRJ": {
@@ -2827,6 +3081,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "SGAS - Silvio Pettirossi International Airport (ASU) · aeromaia (Marcelo Maia)",
+     "url": "https://flightsim.to/addon/94395/silvio-pettirossi-international-airport-sgas",
+     "context": "Erwähnte 2024-Freeware; 5,0 aus erst 2 – verworfen."
+    },
+    {
+     "label": "Asunción Intl Paraguay SGAS · Tropicalsim",
+     "url": "https://www.fsaddoncompare.com/product/6381/Asunci%25C3%25B3n-Intl-Paraguay-SGAS",
+     "context": "Erwähnte Payware; 4,0 aus 3, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Asunción am Río Paraguay."
   },
   "SUMU": {
@@ -2892,6 +3158,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Aeropuerto Internacional Ministro Pistarini (Ezeiza) - SAEZ · unTopo",
+     "url": "https://flightsim.to/addon/6483/aeropuerto-internacional-ministro-pistarini-ezeiza-saez-buenos-aires-argentina",
+     "context": "Erwähnte Freeware; 4,4 aus 31, seit 2021 ohne Update – verworfen."
+    },
+    {
+     "label": "Buenos Aires Ezeiza SAEZ · Tropicalsim",
+     "url": "https://www.fsaddoncompare.com/product/1798/Buenos-Aires-Ezeiza-SAEZ",
+     "context": "Erwähnte Payware; 3,2 aus 5, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Buenos Aires-Ezeiza."
   },
   "SAZB": {
@@ -3152,6 +3430,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Wolf's Fang Runway (AT98) for MSFS 2024 · iniBuilds",
+     "url": "https://inibuilds.com/products/inibuilds-wolfs-fang-runway-at98-msfs",
+     "context": "Im Ausweichplan erwähntes kostenloses Add-on (Kapstadt → Wolf's Fang); nur relevant, falls Union Glacier ausfällt."
+    }
+   ],
    "hl": "Union Glacier – 3.000 m Blue Ice im Ellsworth-Gebirge.",
    "brief": "Real fliegt ALE hier mit der B757 ab Punta Arenas, rund 4¼ h. Die Bahn ist blankes Eis mit sehr geringer Bremswirkung – Landestrecke und Verzögerung vorher im EFB und im Freeflug-Test klären. Nicht im Standard-Sim: das kostenlose „Antarctica Airfield Pack“ von kychungdotcom ist Pflicht. Vor Ort im Sim nachtanken; Volanta-Wertung nach der Landung prüfen.",
    "tips": [
@@ -3205,6 +3490,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "SCBA Rework · Miep3r",
+     "url": "https://flightsim.to/addon/36777/scba-rework",
+     "context": "Erwähnte Freeware; 4,8 aus 2, nur MSFS 2020 – verworfen, keine Empfehlung."
+    }
+   ],
    "hl": "Balmaceda – Patagonische Anden und Fjorde von Aysén."
   },
   "SCTE": {
@@ -3231,6 +3523,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "SCTE El Tepual Airport · Simulación Extrema",
+     "url": "https://www.fsaddoncompare.com/product/981/SCTE-El-Tepual-Airport",
+     "context": "Erwähnte Payware; gut bewertet, aber nur für MSFS 2020 gelistet – verworfen."
+    }
+   ],
    "hl": "Puerto Montt – Vulkan Osorno über dem Llanquihue-See."
   },
   "SCIE": {
@@ -3266,6 +3565,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "SCIE - Carriel Sur Intl (Enhancement) · jagdwolf",
+     "url": "https://flightsim.to/addon/84936/scie-carriel-sur-intl-enhancement",
+     "context": "Erwähntes Freeware-Enhancement; unbewertet – verworfen."
+    }
+   ],
    "hl": "Concepción an der Pazifikküste."
   },
   "SCEL": {
@@ -3301,6 +3607,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "SCEL Old generation 3D building replace · VincentAviation, elcarelushin",
+     "url": "https://flightsim.to/addon/15024/scel-old-generation-3d-building-replace",
+     "context": "Beispiel der erwähnten kleinen Freeware-Ergänzungen; keine eigene Flughafenszenerie – keine Empfehlung."
+    }
+   ],
    "hl": "Santiago de Chile vor der Andenkulisse."
   },
   "SCAT": {
@@ -3327,6 +3640,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "SCAT - Desierto de Atacama Airport (Enhancement) · jagdwolf",
+     "url": "https://flightsim.to/addon/84761/desierto-de-atacama-airport-scat-enhancement",
+     "context": "Erwähntes Freeware-Enhancement; unbewertet – verworfen."
+    }
+   ],
    "hl": "Copiapó – am Rand der Atacama."
   },
   "SCFA": {
@@ -3353,6 +3673,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "SCFA - Andres Sabella International Airport · LuchoDev",
+     "url": "https://www.fsaddoncompare.com/product/13363/SCFA-Andres-Sabella-International-Airport",
+     "context": "Erwähnte neue 2024-Payware; noch ohne Bewertungen – keine Empfehlung."
+    }
+   ],
    "hl": "Antofagasta – Wüste trifft Pazifik."
   },
   "SLLP": {
@@ -3417,6 +3744,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "SLVR - Viru Viru International Airport - Santa Cruz, Bolivia · BoliviaVFR, Aviadora and FlightMatrix",
+     "url": "https://flightsim.to/addon/19701/slvr-viru-viru-international-airport-santa-cruz-bolivia",
+     "context": "Erwähnte Freeware; 4,4 aus 9, nur MSFS 2020 – verworfen."
+    },
+    {
+     "label": "Santa Cruz De La Sierra Intl SLVR · Tropicalsim",
+     "url": "https://www.fsaddoncompare.com/product/2100/Santa-Cruz-De-La-Sierra-Intl-SLVR",
+     "context": "Erwähnte Payware; 4,5 aus 2, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Santa Cruz – Tiefland östlich der Anden."
   },
   "SPZO": {
@@ -3486,6 +3825,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "SPJC - Aeropuerto Internacional Jorge Chavez (version 1.5.1) · jorgechin",
+     "url": "https://flightsim.to/addon/7548/aeropuerto-internacional-jorge-chavez-spjc-lima-peru",
+     "context": "Erwähnte Freeware; nur MSFS 2020, seit 2022 ohne Update – verworfen."
+    }
+   ],
    "hl": "Lima-Callao an der Pazifikküste."
   },
   "SPHI": {
@@ -3512,6 +3858,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "SPHI - Cap.FAP José Abelardo Quiñones Gonzales · jorgechin",
+     "url": "https://flightsim.to/addon/33566/sphi-cap-fap-jos-abelardo-quiones-gonzales",
+     "context": "Erwähnte Freeware; 4,5 aus 4, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Chiclayo – Nordküste Perus."
   },
   "SEGU": {
@@ -3538,6 +3891,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "SEGU - Jose Joaquin De Olmedo Intl. · Sierrasim Simulation",
+     "url": "https://www.fsaddoncompare.com/product/4185/SEGU-Jose-Joaquin-De-Olmedo-Intl.",
+     "context": "Erwähnte Payware; nur für MSFS 2020 gelistet – verworfen."
+    },
+    {
+     "label": "2026 SEGU-Guayaquil Jose Joaquin de Olmedo Intl · Ram249",
+     "url": "https://flightsim.to/addon/113233/2026-segu-guayaquil-jose-joaquin-de-olmedo-intl",
+     "context": "Erwähnte neue Freeware; erst 3 Bewertungen – verworfen."
+    }
+   ],
    "hl": "Guayaquil – Sprungbrett zu den Galápagos."
   },
   "SEGS": {
@@ -3569,6 +3934,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "SEGS Seymour-Baltra 2023 · Ecuavirtual3d",
+     "url": "https://secure.simmarket.com/ecuavirtual3d-segs-seymour-baltra-2023-msfs.phtml",
+     "context": "Erwähnte einzige Payware; nur für MSFS 2020 gelistet – keine Empfehlung, die Freeware bleibt die Wahl."
+    }
+   ],
    "hl": "Galápagos (Baltra) – Vulkaninseln mitten im Pazifik.",
    "brief": "Kleine Inselbahn nördlich von Santa Cruz; Freeware von David Munoz Jensen. Danach direkt nach Quito – der Leg liegt mit 2:05 h knapp über zwei Stunden, spart aber den Rückflug nach Guayaquil.",
    "tag": "Galápagos",
@@ -3697,6 +4069,23 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "SKCG - Rafael Nunez Airport, Cartagena · V Pilot Designs",
+     "url": "https://www.fsaddoncompare.com/product/6696/SKCG-Rafael-Nunez-Airport%252C-Cartagena",
+     "context": "Erwähnte 2024-taugliche Payware; 4,2 aus 15 – unter der Schwelle, verworfen."
+    },
+    {
+     "label": "SKCG Rafael Nunez International Airport V2 · V Pilot Designs",
+     "url": "https://www.fsaddoncompare.com/product/6697/SKCG-Rafael-Nunez-International-Airport-V2",
+     "context": "Erwähnte V2; nur für MSFS 2020 gelistet – verworfen."
+    },
+    {
+     "label": "SKCG AEROPUERTO INTERNACIONAL RAFAEL NUÑEZ · fsotelo2",
+     "url": "https://flightsim.to/addon/13233/skcg-aeropuerto-internacional-rafael-nunez",
+     "context": "Erwähnte Freeware; 4,2 aus 6 – verworfen."
+    }
+   ],
    "hl": "Cartagena – Kolonialaltstadt an der Karibik."
   },
   "MPTO": {
@@ -3723,6 +4112,23 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "MPTO Tocumen International Airport · V Pilot Designs",
+     "url": "https://www.fsaddoncompare.com/product/6998/MPTO-Tocumen-International-Airport",
+     "context": "Erwähnte Payware; nur für MSFS 2020 gelistet – verworfen."
+    },
+    {
+     "label": "Tocumen (MPTO) · DominicDesignTeam",
+     "url": "https://www.fsaddoncompare.com/product/14184/Tocumen-MPTO",
+     "context": "Erwähnte 2024-taugliche Payware; erst 2 Bewertungen – keine Empfehlung."
+    },
+    {
+     "label": "Tocumen Intl. Airport (MPTO) · timot75",
+     "url": "https://flightsim.to/addon/21867/tocumen-intl-airport-mpto",
+     "context": "Erwähnte Freeware von 2021; 4,4 aus 13 – verworfen."
+    }
+   ],
    "hl": "Panama-Stadt – Anflug über die Bucht nahe dem Kanal."
   },
   "MROC": {
@@ -3758,6 +4164,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "COSTA RICA-MROC-SAN JOSE INTERNATIONAL AIRPORT · Alvargas",
+     "url": "https://flightsim.to/addon/4619/mroc-san-jose-international-airport",
+     "context": "Erwähnte Freeware; seit 2021 nicht aktualisiert – verworfen."
+    }
+   ],
    "hl": "San José – Zentraltal zwischen Vulkanen."
   },
   "MNMG": {
@@ -3784,6 +4197,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "MNMG Augusto C. Sandino International Airport · Sierrasim Simulation",
+     "url": "https://www.fsaddoncompare.com/product/4621/MNMG-Augusto-C.-Sandino-International-Airport",
+     "context": "Erwähnte einzige Payware; nur für MSFS 2020 gelistet – verworfen."
+    }
+   ],
    "hl": "Managua am Managuasee."
   },
   "MHTG": {
@@ -3839,6 +4259,23 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "MSLP & MSSS - El Salvador International Airports · PortalFrame",
+     "url": "https://www.fsaddoncompare.com/product/3501/MSLP-%2526-MSSS-El-Salvador-International-Airports",
+     "context": "Erwähnte Payware; nur für MSFS 2020 ausgewiesen – verworfen."
+    },
+    {
+     "label": "El Salvador · PKSIM",
+     "url": "https://www.fsaddoncompare.com/product/14530/El-Salvador",
+     "context": "Erwähnte native 2024-Szenerie; 3,5 aus 2 – verworfen."
+    },
+    {
+     "label": "Night Airport Lighting - Latin America · DieLopz503",
+     "url": "https://flightsim.to/addon/22059/night-airport-lighting-latin-america",
+     "context": "Erwähnter Nachtbeleuchtungs-Mod; keine Szenerie – verworfen."
+    }
+   ],
    "hl": "San Salvador – Pazifikküste."
   },
   "MGGT": {
@@ -3900,6 +4337,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "MZBZ Philip S. W. Goldson International Airport · MSFScenerybuilders",
+     "url": "https://www.fsaddoncompare.com/product/1753/MZBZ-Philip-S.-W.-Goldson-International-Airport",
+     "context": "Erwähnte Payware; 3,38 aus 12, nur MSFS 2020 – verworfen."
+    },
+    {
+     "label": "Philip S. W. Goldson International Airport, Belize - MZBZ · pyrotix",
+     "url": "https://flightsim.to/addon/65234/philip-s-w-goldson-international-airport",
+     "context": "Erwähnte Freeware; ohne Bewertungen – verworfen."
+    }
+   ],
    "hl": "Belize – Barrier Reef vor der Küste."
   },
   "MMUN": {
@@ -3926,6 +4375,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "MMUN - Cancun Airport · Macco Simulations",
+     "url": "https://maccosim.com/products/mmun-cancun-airport",
+     "context": "Erwähnte Payware; gemeldete Geländefehler in 2024 – verworfen."
+    },
+    {
+     "label": "(MMUN) Cancun International Airport · flightsim.to",
+     "url": "https://flightsim.to/addon/17796/mmun-cancun-international-airport",
+     "context": "Vermutlich die erwähnte Freeware (einziger MMUN-Treffer der älteren Freeware-Suche); nicht für 2024 getestet – verworfen."
+    }
+   ],
    "hl": "Cancún – Riviera Maya."
   },
   "MWCR": {
@@ -3961,6 +4422,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Owen Roberts International · AVA Simulations",
+     "url": "https://flightsim.to/addon/30566/owen-roberts-international",
+     "context": "Erwähnte Freeware; nur 3 Bewertungen, Stand 2022 – verworfen."
+    }
+   ],
    "hl": "Grand Cayman."
   },
   "MKJS": {
@@ -4013,6 +4481,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "MTCH Cap Haitien Intl · Mountainair",
+     "url": "https://flightsim.to/addon/72171/cap-haitien-intl-mtch",
+     "context": "Erwähnte Freeware; 4,8 aus 4 – ohne klaren Nachweis, nur zum Prüfen."
+    }
+   ],
    "hl": "Cap-Haïtien – das aktive Tor Haitis an der Nordküste, die Zitadelle La Ferrière in den Bergen.",
    "tag": "Haiti",
    "level": 1
@@ -4137,6 +4612,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "MYNN – Lynden Pindling International Airport – Nassau, Bahamas · LKPDesigns",
+     "url": "https://flightsim.to/addon/56439/mynn-lynden-pindling-international-airport-nassau-bahamas-custom-models",
+     "context": "Erwähnte Freeware; nur für MSFS 2020 getaggt, 2024 unbestätigt – keine Empfehlung."
+    },
+    {
+     "label": "MYNN LYNDEN PINDLING INTL. AIRPORT V2 · Sierrasim Simulation",
+     "url": "https://www.fsaddoncompare.com/product/4116/MYNN-LYNDEN-PINDLING-INTL.-AIRPORT-V2",
+     "context": "Erwähnte 2024-taugliche Payware; 3,93 aus 43 – verworfen."
+    }
+   ],
    "hl": "Nassau."
   },
   "MUHA": {
@@ -4163,6 +4650,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "MUHA La Habana Jose Marti Airport · Mex High Flight",
+     "url": "https://www.fsaddoncompare.com/product/1365/MUHA-La-Habana-Jose-Marti-Airport",
+     "context": "Erwähnte Payware; 3,71 aus 7 – verworfen."
+    }
+   ],
    "hl": "Havanna."
   },
   "MMMD": {
@@ -4198,6 +4692,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "(MMMD) Merida International Airport, Mexico · HSSsimulations",
+     "url": "https://flightsim.to/addon/14070/mmmd-merida-international-airport-mexico",
+     "context": "Erwähnte Freeware von 2022; für 2024 nicht bestätigt – keine Empfehlung."
+    }
+   ],
    "hl": "Mérida – Yucatán."
   },
   "MMVR": {
@@ -4224,6 +4725,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "(MMVR) Veracruz International Airport, Mexico · HSSsimulations",
+     "url": "https://flightsim.to/addon/29569/mmvr-veracruz-international-airport-mexico",
+     "context": "Erwähnte Freeware; nicht mehr gepflegt, Jetway-Fehler – verworfen."
+    },
+    {
+     "label": "MMVR Veracruz International Airport · DXR",
+     "url": "https://www.fsaddoncompare.com/product/9164/MMVR-Veracruz-International-Airport",
+     "context": "Erwähnte Payware; 3,2 aus 8 – verworfen."
+    }
+   ],
    "hl": "Veracruz am Golf von Mexiko."
   },
   "MMMX": {
@@ -4259,6 +4772,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Mexico City Intl. MMMX Benito Juárez · edu0811",
+     "url": "https://flightsim.to/addon/20563/mexico-city-intl-mmmx-benito-jurez",
+     "context": "Erwähnte Freeware; 4,0 aus 7, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Mexico City – 2.230 m hoch mitten im Häusermeer, der Popocatépetl im Südosten.",
    "level": 1
   },
@@ -4329,6 +4849,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "MMSD Los Cabos International Airport · MSFScenerybuilders",
+     "url": "https://www.fsaddoncompare.com/product/11762/MMSD-Los-Cabos-International-Airport",
+     "context": "Erwähnte Payware; 2,37 aus 12 – verworfen."
+    }
+   ],
    "hl": "Los Cabos an der Südspitze der Baja California."
   },
   "MMHO": {
@@ -4385,7 +4912,95 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "KPHX - Phoenix Sky Harbor · unmlobo",
+     "url": "https://flightsim.to/addon/9074/kphx-phoenix-sky-harbor",
+     "context": "Erwähnte Freeware; nur für MSFS 2020 getaggt – verworfen."
+    },
+    {
+     "label": "KPHX - Sky Harbor Phoenix International Airport · Glideslope Pro",
+     "url": "https://www.fsaddoncompare.com/product/2906/KPHX-Sky-Harbor-Phoenix-International-Airport--",
+     "context": "Erwähnte Payware; 3,77 aus 125 – verworfen."
+    }
+   ],
    "hl": "Phoenix – Basis für den H160-Abstecher nach Sedona."
+  },
+  "KSAN": {
+   "i": "KSAN",
+   "n": "San Diego International Airport",
+   "c": "San Diego",
+   "cc": "US",
+   "lat": 32.7336,
+   "lon": -117.19,
+   "el": 17,
+   "type": "large_airport",
+   "rw": {
+    "id": "09/27",
+    "m": 2865,
+    "w": 61,
+    "s": "ASP"
+   },
+   "sc": {
+    "p": "stdok",
+    "items": [
+     {
+      "status": "stdok",
+      "why": "Recherchiert am 25.09.2026: vorerst Standard-Airport mit kostenlosem City Update 13 für die Stadt; kein eigener Sim-Qualitätstest. Kein ausreichend belegter extremer Mehrwert für eine Kaufempfehlung. Glideslope Pro bietet eine native 2024-Version mit neuem Terminal 1; die zuletzt abgerufene Produktseite zeigt 3,9/5 aus 8 Bewertungen (älterer Suchstand: 3,7/7). Interessant, aber noch kein herausragender Bewertungsnachweis. LVFR bietet Airport und Downtown, mit 4,49/629 auf der direkt abgerufenen FSAddonCompare-Produktseite; die Gesamtbewertung belegt keinen außergewöhnlichen Mehrwert speziell unter MSFS 2024 mit City Update 13. Keine überzeugend belegte komplette KSAN-Freeware für MSFS 2024 in der gezielten Recherche gefunden. Einzelne Umfeld-Mods ersetzen den Airport nicht. Produkt-, Vergleichs- und Freewarelinks stehen unten."
+     }
+    ]
+   },
+   "sceneryLinks": [
+    {
+     "label": "Microsoft City Update 13: California",
+     "url": "https://www.flightsimulator.com/city-update-13/",
+     "context": "Offizielle kostenlose Stadtaufwertung mit San Diego; kein Ersatz für eine Airport-Szenerie und keine Payware-Empfehlung."
+    },
+    {
+     "label": "Glideslope Pro KSAN – native MSFS-2024-Version",
+     "url": "https://flightsim.to/store/product/ksan-san-diego-airport-msfs-2024",
+     "context": "Nur Vergleich, keine Kaufempfehlung: neues Terminal 1, native 2024-Version seit 25.07.2026, Stand v2.2.6 vom 14.09.2026. Zuletzt 3,9/8 Bewertungen, gemischte Rückmeldungen; älterer Suchstand 3,7/7. Verbesserungen an Rollwegen und Parkhäusern sind im Changelog genannt. Frühere Reviews des Vorgängers sind kein aktuelles Urteil über diese Version."
+    },
+    {
+     "label": "LatinVFR San Diego – Herstellerseite",
+     "url": "https://latinvfr.com/products/latinvfr-san-diego-intl-airport-ksan-msfs",
+     "context": "Nur Vergleich: Airport plus Downtown. Kein belegter extremer Zusatznutzen gegenüber der kostenlosen Stadtaufwertung und kein eigener Kompatibilitätstest dieser Kombination. Ob das neue Terminal 1 enthalten ist, ist nicht bestätigt; Downtown/Midway können sich mit City Update 13 überschneiden."
+    },
+    {
+     "label": "LatinVFR KSAN – FSAddonCompare",
+     "url": "https://www.fsaddoncompare.com/product/845/KSAN-San-Diego-Intl.",
+     "context": "Preis- und Produktvergleich: direkte Seite 4,49/629 und MSFS-2024-Angabe, Stand 25.09.2026. Aggregierte Bewertung, kein separater Test mit City Update 13."
+    },
+    {
+     "label": "Glideslope Pro KSAN – FSAddonCompare",
+     "url": "https://www.fsaddoncompare.com/product/5111/KSAN-San-Diego-Airport",
+     "context": "Direkte Seite inzwischen mit neuer 2024-Beschreibung, 2020/2024-Tags und 4,15/46; die veraltete Suchseite zeigte noch 4,2/33 und nur 2020. Bewertung nicht als ausschließlich native-2024-Reviews ausgeben und nicht mit den Flightsim.to-Bewertungen addieren."
+    },
+    {
+     "label": "Balboa Park vegetation overhaul – Freeware",
+     "url": "https://flightsim.to/addon/52980/balboa-park-vegetation-overhaul-san-diego-ca",
+     "context": "Nur Umfeld-Mod, kein KSAN-Airport. 5,0 aus 2 Bewertungen, rund 1.000 Downloads: unter unserer Belegschwelle. Zusammenspiel mit City Update 13 nicht bestätigt, daher keine Download-Empfehlung."
+    },
+    {
+     "label": "Car Parking for KSAN – Freeware",
+     "url": "https://flightsim.to/addon/70959/car-parking-for-ksan-airport",
+     "context": "Kleines Umfeld-Add-on; Suchtreffer meldet vom Autor pausierte Downloads. Kein vollwertiger Airport und keine Empfehlung."
+    },
+    {
+     "label": "Glideslope KSAN – Review des Vorgängers (April 2026)",
+     "url": "https://forums.flightsimulator.com/t/review-glideslope-pro-san-diego-ksan-fs2020-2024/762406",
+     "context": "Historischer Vergleich: betrifft die ältere, für 2024 angepasste Version, nicht das native Produkt vom Juli 2026. Kritik daraus wird nicht ungeprüft auf die neue Ausgabe übertragen."
+    }
+   ],
+   "hl": "San Diego – Anflug auf die 27 dicht an der Downtown vorbei, mit Hafen und Bucht.",
+   "brief": "A320-Stopp zwischen Phoenix und Las Vegas. Die Landerichtung richtet sich nach Wind und Freigabe; der bekannte Stadtanflug ist die 27. Aktuelle Anflugkarte und Fenix-EFB für Verfahren und Performance verwenden.",
+   "tips": [
+    "City Update 13: California kostenlos installieren; es wertet San Diego als Stadt auf, ist aber keine handgefertigte Airport-Szenerie.",
+    "Szenerievergleich abgeschlossen: derzeit keine feste Airport-Kaufempfehlung. Glideslope Pro native 2024 und LVFR sind unten mit Begründung und direkten Links zum Vergleich hinterlegt.",
+    "Falls später Glideslope Pro native 2024 gewählt wird: die alte 2020-Version vorher deaktivieren/entfernen, dann den Simulator neu starten. Nicht beide Airport-Versionen gleichzeitig aktivieren."
+   ],
+   "tag": "Downtown-Anflug",
+   "level": 2
   },
   "KLAS": {
    "i": "KLAS",
@@ -4633,6 +5248,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "PMDY Henderson · Bailsoft",
+     "url": "https://flightsim.to/addon/93072/pmdy-henderson",
+     "context": "Erwähnte Freeware; erst 4 Bewertungen – nur zum Prüfen, keine Empfehlung."
+    }
+   ],
    "hl": "Midway-Atoll – Henderson Field, Schauplatz der Schlacht von 1942 und riesige Albatros-Kolonie.",
    "tag": "Midway",
    "level": 1
@@ -4661,6 +5283,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "PWAK Wake Island V2 20 · Mountainair",
+     "url": "https://flightsim.to/addon/62103/wake-island-pwak",
+     "context": "Erwähnte Freeware; laut Autor noch nicht MSFS-2024-kompatibel – verworfen."
+    }
+   ],
    "hl": "Wake Island – winziges Atoll mitten im Pazifik."
   },
   "PKMJ": {
@@ -4744,6 +5373,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "PTKK Chuuk (Truk) FSM (V3 20/24) · Mountainair",
+     "url": "https://flightsim.to/addon/58465/chuuk-ptkk-truk-fsm-ver-2",
+     "context": "Erwähnte Freeware; 4,7 aus 6 – ohne klaren Nachweis, nur zum Prüfen."
+    }
+   ],
    "hl": "Chuuk – Lagune voller Wracks aus dem Zweiten Weltkrieg."
   },
   "PGUM": {
@@ -4817,6 +5453,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "PGSN Saipan Intl (V3 20) · Mountainair",
+     "url": "https://flightsim.to/addon/70195/saipan-intl-pgsn-version-2-0",
+     "context": "Erwähnte Freeware; für MSFS 2020 gebaut, in 2024 fehlen voraussichtlich Objekte – verworfen."
+    }
+   ],
    "hl": "Saipan."
   },
   "PTRO": {
@@ -4843,6 +5486,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Roman Tmetuchl / Palau International Airport (PTRO) · TurtleTank1997",
+     "url": "https://flightsim.to/addon/44104/roman-tmetuchl-palau-international-airport-ptro",
+     "context": "Erwähnte Freeware; seit 2022 unverändert, zu wenig bewertet – nur zum Prüfen."
+    }
+   ],
    "hl": "Palau – die Rock Islands."
   },
   "RPMD": {
@@ -4869,6 +5519,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Davao (RPMD) · Airwil Sceneries",
+     "url": "https://www.fsaddoncompare.com/product/6159/Davao-RPMD",
+     "context": "Erwähnte Payware; 4,33 aus 3, nur MSFS 2020 – verworfen."
+    },
+    {
+     "label": "BDOaviation Davao",
+     "url": "https://secure.simmarket.com/bdoaviation-davao-international-airport-msfs.phtml",
+     "context": "Im Vergleich erwähnt; Produktseite nachgetragen. Keine zusätzliche Empfehlung oder eigene Bestätigung der Simulatorqualität."
+    }
+   ],
    "hl": "Davao – Mindanao, Mount Apo."
   },
   "WAMM": {
@@ -4895,6 +5557,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "WAMM - Sam Ratulangi Manado International Airport · Project MAX",
+     "url": "https://www.fsaddoncompare.com/product/10599/WAMM-Sam-Ratulangi-Manado-International-Airport",
+     "context": "Erwähnte einzige Payware; 4,4 aus 5, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Manado – Nord-Sulawesi."
   },
   "WABB": {
@@ -4947,6 +5616,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "WAJJ Sentani Jayapura Airport · BinerSim",
+     "url": "https://www.fsaddoncompare.com/product/6519/WAJJ-Sentani-Jayapura-Airport",
+     "context": "Erwähnte Payware; gut bewertet, aber nur MSFS 2020 ohne 2024-Nachweis – verworfen."
+    },
+    {
+     "label": "WAJJ - Bandar udara Sentani light fix for default WAJJ · hamwrtma",
+     "url": "https://flightsim.to/addon/13488/wajj-bandar-udara-sentani-light-fix-for-default-wajj",
+     "context": "Erwähnter Licht-Fix von 2021 – keine Szenerie, verworfen."
+    }
+   ],
    "hl": "Jayapura – Neuguinea."
   },
   "AYPY": {
@@ -5026,6 +5707,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "AGGH - Honiara International Airport · tcastest",
+     "url": "https://flightsim.to/addon/63601/aggh-honiara-international-airport",
+     "context": "Erwähnte Freeware; 5,0 aus 3 – zu schwach belegt, verworfen."
+    }
+   ],
    "hl": "Honiara – Guadalcanal."
   },
   "ANYN": {
@@ -5052,6 +5740,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "ANYN - Nauru International Airport · tcastest",
+     "url": "https://flightsim.to/addon/84142/anyn-nauru-international-airport",
+     "context": "Erwähnte Freeware; 4,8 aus 6 – zu wenige Bewertungen, nur zum Prüfen."
+    }
+   ],
    "hl": "Nauru – die Bahn nimmt einen guten Teil der Inselküste ein."
   },
   "NGTA": {
@@ -5078,6 +5773,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "NGTA - Bonriki International Airport · tcastest",
+     "url": "https://flightsim.to/addon/57855/ngta-bonriki-international-airport",
+     "context": "Erwähnte Freeware; 5,0 aus 2, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Tarawa – Kiribati."
   },
   "NGFU": {
@@ -5104,6 +5806,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Funafuti Airport - NGFU - and Tuvalu Expansion · Snoopy7412",
+     "url": "https://flightsim.to/addon/62434/funafuti-international-airport-ngfu",
+     "context": "Erwähnte Freeware; 4,4 aus 9, knapp unter der Schwelle – keine Empfehlung."
+    }
+   ],
    "hl": "Funafuti – eine Bahn mitten im Atoll, Lagune und Ozean links und rechts.",
    "brief": "Real fliegen hier nur Turboprops. Mit dem A320 ist das eine Sonderetappe, die du vorher im Freeflug und im EFB prüfst. Klappt es, ersetzt dieser Stopp die frühere 10½-Stunden-Kette mit dem H160; sonst gilt der Ausweichplan.",
    "tips": [
@@ -5217,6 +5926,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Apia Faleolo Airport - NSFA · Snoopy7412",
+     "url": "https://flightsim.to/addon/62629/apia-faleolo-airport-nsfa",
+     "context": "Erwähnte Freeware; 5,0 aus 3 – zu schwach belegt, verworfen."
+    },
+    {
+     "label": "NSFA - Faleolo International Airport, Samoa · KiwiFlightSim",
+     "url": "https://www.fsaddoncompare.com/product/11295/NSFA-Faleolo-International-Airport%252C-Samoa--Pacific-Islands-2020-%2526-2024",
+     "context": "Erwähnte Payware; 4,65 aus 6 – zu schwach belegt, verworfen."
+    }
+   ],
    "hl": "Samoa – Faleolo."
   },
   "NSTU": {
@@ -5274,6 +5995,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Niue International Airport Scenery Enhancement · lswain",
+     "url": "https://flightsim.to/addon/19468/niue-international-airport-scenery-enhancement",
+     "context": "Erwähnte einzige Freeware; nur MSFS 2020, 4 Jahre alt – verworfen."
+    }
+   ],
    "hl": "Niue – Korallenfelsen im Südpazifik."
   },
   "NCRG": {
@@ -5300,6 +6028,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "NCRG - Rarotonga Airport, Cook Islands · KiwiFlightSim",
+     "url": "https://www.fsaddoncompare.com/product/10089/NCRG-Rarotonga-Airport%252C-Cook-Islands-Polynesia",
+     "context": "Erwähnte Payware; 4,57 aus 7 – zu schwach belegt, verworfen."
+    },
+    {
+     "label": "Rarotonga Airport Scenery Enhancement · LswainStudiosNZ",
+     "url": "https://flightsim.to/addon/45085/rarotonga-airport-scenery-enhancement",
+     "context": "Erwähnte Freeware; 4,6 aus 7, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Rarotonga – Cook-Inseln, Lagune und grüne Gipfel."
   },
   "NTAA": {
@@ -5335,6 +6075,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "NTAA - Tahiti Faaa International Airport · Givenchy987",
+     "url": "https://flightsim.to/addon/60695/ntaa-faaa-international-airport",
+     "context": "Erwähnte Freeware; laut zwei 2024-Nutzern ohne Bahn- und Bodenmarkierungen, nicht mehr gepflegt – verworfen."
+    }
+   ],
    "hl": "Tahiti – Blick hinüber nach Moorea; Basis für den H160-Flug nach Bora Bora.",
    "tag": "Tahiti",
    "level": 1
@@ -5363,6 +6110,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Fua'amotu Tonga NFTF (V4 20/24) · Mountainair",
+     "url": "https://flightsim.to/addon/42503/fua-amotu-tonga-nftf",
+     "context": "Erwähnte Freeware; 5,0 aus 6 – zu wenige Bewertungen, nur zum Prüfen."
+    },
+    {
+     "label": "Tonga Fua'amotu Intl Airport NFTF · Shadow Media",
+     "url": "https://www.fsaddoncompare.com/product/12878/Tonga-Fua'amotu-Intl-Airport-NFTF",
+     "context": "Erwähnte Payware (Early Access); unbewertet – keine Empfehlung."
+    }
+   ],
    "hl": "Tonga – Nukuʻalofa."
   },
   "NFFN": {
@@ -5398,6 +6157,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "NFFN Nadi Intl (V5 20/24) · Mountainair",
+     "url": "https://flightsim.to/addon/42203/nadi-fiji-nffn-version-2",
+     "context": "Erwähnte Freeware; 4,4 aus 11, knapp unter der Freeware-Schwelle – keine Empfehlung."
+    }
+   ],
    "hl": "Nadi – Fidschi."
   },
   "NVVV": {
@@ -5489,6 +6255,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "YSNF Norfolk Island Airport · Propair Flight",
+     "url": "https://www.fsaddoncompare.com/product/2827/YSNF-NorfolkIsland-Airport",
+     "context": "Erwähnte Payware; 4,0 aus 2 – verworfen."
+    },
+    {
+     "label": "Norfolk Island Airport - YSNF · geekle",
+     "url": "https://flightsim.to/addon/38425/norfolk-island-airport",
+     "context": "Erwähnte Freeware; 5,0 aus 3, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Norfolk Island – 1.950-m-Bahn auf der Klippeninsel.",
    "level": 1
   },
@@ -5620,6 +6398,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "NZCH - Christchurch Airport New Zealand · Redbaron601",
+     "url": "https://flightsim.to/addon/88603/nzch-christchurch-airport-new-zealand",
+     "context": "Erwähnte Freeware; 5,0 aus 2 – zu schwach belegt, keine Empfehlung."
+    }
+   ],
    "hl": "Christchurch – Canterbury-Ebene vor den Südalpen."
   },
   "NZQN": {
@@ -5684,6 +6469,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "YMHB-Hobart Tasmania Australia V8 · Redbaron",
+     "url": "https://flightsim.to/addon/66293/hobart-tasmania-ymhb",
+     "context": "Erwähnte Freeware; 5,0 aus 1 – zu schwach belegt, keine Empfehlung."
+    }
+   ],
    "hl": "Hobart – Tasmanien und kunanyi/Mount Wellington."
   },
   "YMML": {
@@ -5778,6 +6570,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "YBCG - Gold Coast Airport · Rod Langella",
+     "url": "https://flightsim.to/addon/18491/ybcg-gold-coast-airport",
+     "context": "Eine der erwähnten Freeware-Alternativen; nur MSFS 2020, kaum bewertet – keine Empfehlung."
+    }
+   ],
    "hl": "Gold Coast – Surfers Paradise an der Küste."
   },
   "YBHM": {
@@ -5842,6 +6641,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Cairns International Airport - YBCS · TAIMODELS",
+     "url": "https://www.fsaddoncompare.com/product/5354/Cairns-International-Airport-YBCS",
+     "context": "Erwähnte Payware; 3,53 aus 17 – verworfen."
+    },
+    {
+     "label": "Cairns International - YBCS - Queensland - Tag21 · Tag21",
+     "url": "https://flightsim.to/addon/31874/cairns-international-ybcs-queensland-tag21",
+     "context": "Erwähnte Freeware; 3,9 aus 8, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Cairns – Regenwald und Great Barrier Reef.",
    "level": 1
   },
@@ -5869,6 +6680,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "YBMA Mount Isa Airport · Orbx",
+     "url": "https://www.fsaddoncompare.com/product/13015/YBMA-Mount-Isa-Airport",
+     "context": "Erwähnte Payware; noch unbewertet – keine Empfehlung."
+    },
+    {
+     "label": "Mount Isa - YBMA · Shanman",
+     "url": "https://flightsim.to/addon/27193/mount-isa-ybma",
+     "context": "Erwähnte Freeware; nur für MSFS 2020 getaggt – verworfen."
+    }
+   ],
    "hl": "Mount Isa – Bergbaustadt im Outback."
   },
   "YBAS": {
@@ -5904,6 +6727,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Alice Springs Airport - YBAS - Northern Territory - Tag21 · Tag21",
+     "url": "https://flightsim.to/addon/32137/alice-springs-airport-ybas-northern-territory-tag21",
+     "context": "Erwähnte Freeware; nur für MSFS 2020 getaggt – keine Empfehlung."
+    }
+   ],
    "hl": "Alice Springs – MacDonnell Ranges."
   },
   "YAYE": {
@@ -5939,6 +6769,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Ayers Rock Airport - YAYE - Northern Territory - Tag21 · Tag21",
+     "url": "https://flightsim.to/addon/32598/ayres-rock-airport-yaye-northern-territory-tag21",
+     "context": "Erwähnte Freeware; unbewertet, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Ayers Rock – Uluru und Kata Tjuta liegen vor der Bahn.",
    "tag": "Uluru",
    "level": 1
@@ -6007,6 +6844,28 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "YPPH - Perth International · Axonos",
+     "url": "https://www.fsaddoncompare.com/product/4289/YPPH-Perth-International",
+     "context": "Erwähnte Payware; 3,71 aus 104 – verworfen."
+    },
+    {
+     "label": "YPPH Perth International Airport · Orbx",
+     "url": "https://www.fsaddoncompare.com/product/12518/YPPH-Perth-International-Airport",
+     "context": "Erwähnte Payware; unbewertet – keine Empfehlung."
+    },
+    {
+     "label": "YPPH Perth Intl · Mfsg",
+     "url": "https://www.fsaddoncompare.com/product/8932/YPPH-Perth-Intl",
+     "context": "Erwähnte Payware; unbewertet – keine Empfehlung."
+    },
+    {
+     "label": "YPPH - Perth Airport · nsajid91",
+     "url": "https://flightsim.to/addon/60047/ypph-perth-airport",
+     "context": "Erwähnte Freeware; 3,8 aus 5, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Perth am Swan River."
   },
   "YPLM": {
@@ -6033,6 +6892,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "YPLM - Learmonth Airport WA · Bindook",
+     "url": "https://flightsim.to/addon/65367/yplm-learmonth-airport-wa",
+     "context": "Erwähnte einzige Freeware; unbewertet, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Learmonth – Ningaloo-Riff und Exmouth-Golf."
   },
   "YBRM": {
@@ -6086,6 +6952,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "YPDN Darwin Airport Enhancement · Ecrufeels",
+     "url": "https://flightsim.to/addon/87076/ypdn-darwin-airport-enhancement",
+     "context": "Erwähnte Freeware; 5,0 aus 6, knapp unter der Schwelle – nur zum Prüfen."
+    },
+    {
+     "label": "Darwin Intl YPDN · Mfsg",
+     "url": "https://www.fsaddoncompare.com/product/2216/Darwin-Intl-YPDN",
+     "context": "Erwähnte Payware; unbewertet – keine Empfehlung."
+    }
+   ],
    "hl": "Darwin – Top End."
   },
   "WPDL": {
@@ -6112,6 +6990,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Dili Airport - WPDL · Pilot-Snoops",
+     "url": "https://flightsim.to/addon/73511/dili-international-airport-wpdl",
+     "context": "Erwähnte Freeware; 5,0 aus 2 – zu wenig Belege, nur zum Prüfen."
+    }
+   ],
    "hl": "Dili – Timor-Leste."
   },
   "WADD": {
@@ -6173,6 +7058,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "WALL/Sepinggan - Balikpapan · ProjectRaven",
+     "url": "https://flightsim.to/addon/87468/wall-sepinggan-balikpapan",
+     "context": "Erwähnte einzige Freeware; 3,5 aus 2 – verworfen."
+    }
+   ],
    "hl": "Balikpapan – Ostborneo."
   },
   "WBSB": {
@@ -6203,6 +7095,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Brunei Intl WBSB · Mfsg",
+     "url": "https://www.fsaddoncompare.com/product/5045/Brunei-Intl-WBSB",
+     "context": "Erwähnte Payware; ohne Bewertungen – keine Empfehlung."
+    }
+   ],
    "hl": "Brunei – Bandar Seri Begawan."
   },
   "WBKK": {
@@ -6238,6 +7137,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "WBKK KKIA (Kota Kinabalu International) Freeware Edition · ChrisJSetterington / The Secret Studio",
+     "url": "https://flightsim.to/addon/28060/wbkk-kkia-kota-kinabalu-international-freeware-edition",
+     "context": "Erwähnte Freeware-Edition; nur 4 Bewertungen, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Kota Kinabalu – Mount Kinabalu (4.095 m) im Hintergrund.",
    "level": 1
   },
@@ -6274,6 +7180,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Kuching Intl. Airport - WBGG · Enggang / Hornbill",
+     "url": "https://flightsim.to/addon/4244/kuching-international-airport",
+     "context": "Erwähnte Freeware; seit 2022 nicht aktualisiert, 2024 unbestätigt – keine Empfehlung."
+    }
+   ],
    "hl": "Kuching – Sarawak."
   },
   "WSSS": {
@@ -6333,6 +7246,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "WIII Soekarno Hatta International Airport · BinerSim",
+     "url": "https://www.fsaddoncompare.com/product/9303/WIII-Soekarno-Hatta-International-Airport",
+     "context": "Erwähnte Payware; nur für MSFS 2020 gelistet – verworfen."
+    }
+   ],
    "hl": "Jakarta – Sprungbrett zu Christmas Island."
   },
   "YPXM": {
@@ -6359,6 +7279,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "YPXM Christmas Island 24 (v1.01) · Mountainair",
+     "url": "https://flightsim.to/addon/92151/ypxm-christmas-island-24",
+     "context": "Erwähnte 2024-Freeware; 4,3 aus 7, knapp unter der Schwelle – nur zum Prüfen."
+    }
+   ],
    "hl": "Christmas Island – steile Dschungelinsel im Indischen Ozean.",
    "level": 1
   },
@@ -6417,6 +7344,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "WIEE Minangkabau International Aiport improvements 1.1 · hamwrtma",
+     "url": "https://flightsim.to/addon/13147/wiee-minangkabau-international-aiport-improvements-1-0",
+     "context": "Erwähnte kleine Beleuchtungs-Freeware; 5,0 aus 1, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Padang – Westsumatra."
   },
   "WMKK": {
@@ -6491,6 +7425,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "VTSP - Phuket Intl. Airport Enhancement · Nokin",
+     "url": "https://flightsim.to/addon/25405/vtsp-phuket-intl-airportenhancement",
+     "context": "Erwähnte Freeware; 4,0 aus 6 – verworfen."
+    },
+    {
+     "label": "MSFS 2024 Update für Nokins Phuket",
+     "url": "https://flightsim.to/addon/99768/msfs-2024-update-for-nokin-s-phuket-international-airport-vtsp-scenery",
+     "context": "Im Vergleich erwähnt; Produktseite nachgetragen. Keine zusätzliche Empfehlung oder eigene Bestätigung der Simulatorqualität."
+    }
+   ],
    "hl": "Phuket – Anflug über die Andamanensee und den Mai-Khao-Strand.",
    "level": 1
   },
@@ -6527,6 +7473,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Suvarnabhumi Airport Thailand [VTBS] · Blackbean (book15172)",
+     "url": "https://flightsim.to/addon/2763/suvarnabhumi-airport-thailand-vtbs",
+     "context": "Erwähnte Freeware von 2020; veraltet (alte Pistenlage, fehlende Anflüge) – verworfen."
+    }
+   ],
    "hl": "Bangkok-Suvarnabhumi."
   },
   "VDSA": {
@@ -6553,6 +7506,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "VDSA - Siem Reap–Angkor International Airport - SAI · Yoshino",
+     "url": "https://flightsim.to/addon/73197/vdsr-siem-reap-angkor-international-airport-sai",
+     "context": "Erwähnte Freeware; 4,0 aus 3, nur MSFS 2020 – verworfen."
+    },
+    {
+     "label": "VDSA Siem Reap Angkor International Airport · MSFScenerybuilders",
+     "url": "https://www.fsaddoncompare.com/product/5421/VDSA-Siem-Reap-Angkor-International-Airport",
+     "context": "Erwähnte Payware; 2,5 aus 6, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Siem Reap – neuer Flughafen (2023) für Angkor Wat.",
    "brief": "Siem Reap–Angkor International ersetzt seit Oktober 2023 den alten Stadtflughafen. Angkor Wat liegt rund 40 km westlich – bei klarer Sicht lohnt ein Umweg über die Tempelanlagen.",
    "tag": "Angkor",
@@ -6582,6 +7547,23 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Tan Son Nhat International Airport [VVTS] · ams7880",
+     "url": "https://flightsim.to/addon/15167/tan-son-nhat-international-airport-vvts",
+     "context": "Erwähnte eigenständige Freeware; 4,4 aus 12, nur MSFS 2020 – verworfen."
+    },
+    {
+     "label": "VVTS - Tan Son Nhat Intl Airport Enhancement Package · Yoshino",
+     "url": "https://flightsim.to/addon/44554/vvts-tan-son-nhat-intl-airport-enhancement-package",
+     "context": "Erwähntes Yoshino-Paket; nur Ergänzung zur DominicDesignTeam-Payware – keine Empfehlung."
+    },
+    {
+     "label": "Tan Son Nhat V2 (VVTS) · DominicDesignTeam",
+     "url": "https://www.fsaddoncompare.com/product/6134/Tan-Son-Nhat-V2-VVTS",
+     "context": "Erwähnte Payware; 4,0 aus 8 – verworfen."
+    }
+   ],
    "hl": "Ho-Chi-Minh-Stadt."
   },
   "VVDN": {
@@ -6608,6 +7590,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "VVDN Da Nang international Airport · DominicDesignTeam",
+     "url": "https://www.fsaddoncompare.com/product/1570/VVDN-Da-Nang-international-Airport",
+     "context": "Erwähnte Payware; 3,58 aus 12, nur MSFS 2020 – verworfen."
+    },
+    {
+     "label": "VVDN - Da Nang Intl Airport Enhancement Package · Yoshino",
+     "url": "https://flightsim.to/addon/83780/vvdn-da-nang-intl-airport-enhancement-package",
+     "context": "Erwähnte unbewertete Ergänzung zur Payware – verworfen."
+    }
+   ],
    "hl": "Da Nang – Marmorberge und Küste."
   },
   "VLLB": {
@@ -6634,6 +7628,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "VLLB, Luang Prabanng international Airport · Chanthanong_Nino",
+     "url": "https://flightsim.to/addon/19516/vllb-luang-prabanng-international-airport",
+     "context": "Erwähnte Freeware von 2021; nur MSFS 2020, 2024 unbestätigt – keine Empfehlung."
+    },
+    {
+     "label": "Luang Phabang · FSDG",
+     "url": "https://www.fsaddoncompare.com/product/13837/Luang-Phabang",
+     "context": "Erwähnte Payware; 4,0 aus 2 – verworfen."
+    }
+   ],
    "hl": "Luang Prabang – Anflug über den Mekong in die Berge von Laos.",
    "level": 1
   },
@@ -6661,6 +7667,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Noi Bai (VVNB) · DominicDesignTeam",
+     "url": "https://www.fsaddoncompare.com/product/6136/Noi-Bai-VVNB",
+     "context": "Erwähnte Payware; 3,82 aus 21, nur MSFS 2020 – verworfen."
+    },
+    {
+     "label": "VVNB - Noi Bai International Airport - Ground Base Package · Yoshino",
+     "url": "https://flightsim.to/addon/49704/noi-bai-international-airport-ground-base",
+     "context": "Erwähntes Bodenpaket passend zur Dominic-Szenerie; 4,0 aus 4 – verworfen."
+    }
+   ],
    "hl": "Hanoi."
   },
   "VHHH": {
@@ -6695,6 +7713,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Hong Kong (VHHH) for MSFS 2024 · iniBuilds",
+     "url": "https://inibuilds.com/products/inibuilds-hong-kong-vhhh-msfs-2024",
+     "context": "Erwähnte Payware (März 2026); noch ohne Bewertungen – nur beobachten, keine Empfehlung."
+    }
+   ],
    "hl": "Hongkong – Inselairport vor Lantau, der Big Buddha im Süden.",
    "level": 1
   },
@@ -6766,6 +7791,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "RCTP - Taoyuan Intl Airport [Night Light Enhancements] · ZEM502",
+     "url": "https://flightsim.to/addon/14060/rctp-taoyuan-intl-airport-runway-fix",
+     "context": "Beispiel der erwähnten kleinen Licht-/Fix-Mods von 2021 – keine Szenerie, verworfen."
+    }
+   ],
    "hl": "Taipeh-Taoyuan."
   },
   "RORS": {
@@ -6825,6 +7857,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "ROAH - Naha Airport · MK Studios",
+     "url": "https://www.fsaddoncompare.com/product/9291/ROAH-Naha-Airport",
+     "context": "Erwähnte Payware-Alternative (4,91 aus 35); die Freeware bleibt die Empfehlung – kein Kauf nötig."
+    }
+   ],
    "hl": "Naha – Okinawa, Bahn direkt am Ostchinesischen Meer (Freeware).",
    "level": 1
   },
@@ -6852,6 +7891,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "RJFK - Kagoshima Airport · Fly2High",
+     "url": "https://www.fsaddoncompare.com/product/3550/RJFK-Kagoshima-Airport",
+     "context": "Erwähnte Payware; 3,51 aus 25 – verworfen."
+    }
+   ],
    "hl": "Kagoshima – Anflug mit Blick auf den aktiven Vulkan Sakurajima.",
    "brief": "Der Sakurajima raucht fast ständig über der Bucht von Kagoshima. Bei Nordwind lohnt ein Blick nach Süden auf den Krater.",
    "tag": "Vulkan",
@@ -6998,6 +8044,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "ZKPY Pyongyang International Airport · kui",
+     "url": "https://flightsim.to/addon/22648/zkpy-pyongyang-international-airport",
+     "context": "Erwähnte Freeware von 2021; für MSFS 2024 unbestätigt – keine Empfehlung."
+    }
+   ],
    "hl": "Pjöngjang – einer der am wenigsten beflogenen Hauptstadtflughäfen der Welt.",
    "level": 1
   },
@@ -7025,6 +8078,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "ZYTL Dalian Zhoushuizi Intl Airport · Rudi_Z",
+     "url": "https://flightsim.to/addon/24092/zytl-dalian-zhoushuizi-intl-airport",
+     "context": "Erwähnte einzige Freeware; 4,6 aus 6, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Dalian."
   },
   "ZBAA": {
@@ -7060,6 +8120,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Beijing Capital International Airport-ZBAA · NTSB",
+     "url": "https://flightsim.to/addon/3758/beijing-capital-international-airport",
+     "context": "Erwähnte Freeware; 4,0 aus 14, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Peking."
   },
   "ZBHH": {
@@ -7086,6 +8153,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "ZBHH - Hohhot Baita International Airport · SONG_DAIZONG",
+     "url": "https://flightsim.to/addon/103035/zbhh-hohhot-baita-international-airport",
+     "context": "Erwähnte Freeware; 5,0 aus nur 4 – nur zum Prüfen, keine Empfehlung."
+    }
+   ],
    "hl": "Hohhot – Innere Mongolei."
   },
   "ZMCK": {
@@ -7112,6 +8186,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "ZMCK - Ulaanbaatar Chinggis Khaan int'l airport · Flyingplum",
+     "url": "https://flightsim.to/addon/114241/zmck-new-ulaanbaatar-chinggis-khaan-int-l-airport-free-version",
+     "context": "Erwähnte unbewertete Freeware; zugleich Quelle für den Hinweis, dass ZMCK in der MSFS-2020-Datenbank fehlt – keine Empfehlung."
+    },
+    {
+     "label": "ZMCK Ulaanbaatar Chinggis Khaan · Mokui",
+     "url": "https://www.fsaddoncompare.com/product/2087/ZMCK-Ulaanbaatar-Chinggis-Khaan",
+     "context": "Erwähnte Payware; 5,0 aus 2, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Ulaanbaatar – neuer Chinggis-Khaan-Flughafen in der Steppe.",
    "tips": [
     "Vorher im Sim prüfen, ob ZMCK existiert: eröffnet 2021, fehlt in MSFS 2020, für MSFS 2024 nicht belegt",
@@ -7150,6 +8236,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "UIUU - Baikal International Airport - Ulan-Ude 2024 · xflight",
+     "url": "https://flightsim.to/addon/105550/uiuu-baikal-international-airport-ulan-ude-2024",
+     "context": "Erwähnte 2024-Freeware; 5,0 aus 3 – zu wenig Belege, nur zum Prüfen."
+    }
+   ],
    "hl": "Ulan-Ude – Burjatien."
   },
   "UIII": {
@@ -7176,6 +8269,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "UIII - Irkutsk International Airport 2024 · xflight",
+     "url": "https://flightsim.to/addon/105930/uiii-irkutsk-international-airport-2024",
+     "context": "Erwähnte 2024-Freeware; 5,0 aus 3 – unter der Schwelle, nur zum Prüfen."
+    }
+   ],
    "hl": "Irkutsk – nur einen kurzen Sprung vom Baikalsee entfernt.",
    "level": 1
   },
@@ -7229,6 +8329,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Airport Ust-kamenogorsk (UASK) · Middle Asia Developers",
+     "url": "https://www.fsaddoncompare.com/product/11252/Airport-Ust-kamenogorsk-UASK",
+     "context": "Erwähnte Payware; ohne Bewertungen – keine Empfehlung."
+    },
+    {
+     "label": "UASK | Ust-Kamenogorsk · AltayCompany",
+     "url": "https://flightsim.to/addon/48740/uask-ust-kamenogorsk",
+     "context": "Erwähnte Freeware; 3,5 aus 1, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Öskemen – Altai-Vorland."
   },
   "UAAA": {
@@ -7255,6 +8367,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "UAAA - Almaty International Airport · VueloSimple",
+     "url": "https://www.fsaddoncompare.com/product/12859/UAAA-Almaty-International-Airport",
+     "context": "Erwähnte Payware; 4,54 aus nur 7 – zu dünn belegt, keine Empfehlung."
+    },
+    {
+     "label": "UAAA ALMATY BUG · w1zzyx",
+     "url": "https://flightsim.to/addon/48434/uaaa-almaty-bug",
+     "context": "Erwähnte Freeware; 4,0 aus 9, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Almaty – vor den Gipfeln des Tian Shan.",
    "level": 1
   },
@@ -7282,6 +8406,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Manas International Airport ICAO: UCFM · Sticiceti134545",
+     "url": "https://flightsim.to/addon/53663/manas-international-airport-icao-ucfm",
+     "context": "Erwähnte einzige Freeware; 3,6 aus 8, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Bischkek."
   },
   "UTTT": {
@@ -7308,6 +8439,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Tashkent Int Airport UTTT · Middle Asia Developers",
+     "url": "https://www.fsaddoncompare.com/product/11838/Tashkent-Int-Airport-UTTT",
+     "context": "Erwähnte Payware; 2,0 aus 1 – verworfen."
+    },
+    {
+     "label": "UTTT Tashkent Airport Parking Update · JimBrown",
+     "url": "https://flightsim.to/addon/30152/uttt-tashkent-airport-parking-update",
+     "context": "Erwähntes Parkpositions-Update für AI-Verkehr – keine Szenerie, verworfen."
+    }
+   ],
    "hl": "Taschkent."
   },
   "UTSS": {
@@ -7334,6 +8477,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "UTSS - Samarkand airport enhancement · maksim_imt",
+     "url": "https://flightsim.to/addon/67503/utss-samarkand-airport-enhancement",
+     "context": "Erwähnte Freeware; 5,0 aus nur 4 – nur zum Prüfen, keine Empfehlung."
+    },
+    {
+     "label": "Samarkand Int Airport (UTSS) · Middle Asia Developers",
+     "url": "https://www.fsaddoncompare.com/product/11254/Samarkand-Int-Airport-UTSS",
+     "context": "Erwähnte Payware; 5,0 aus 1 – zu wenig Bewertungen, keine Empfehlung."
+    }
+   ],
    "hl": "Samarkand – Registan und die Kuppeln der Timuriden.",
    "brief": "Die Altstadt liegt nur wenige Kilometer vom Flughafen. Kurzer Hüpfer von Taschkent, danach über das Serafschan-Tal nach Duschanbe.",
    "tag": "Seidenstraße",
@@ -7363,6 +8518,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "UTDD Dushanbe · Viktoren69",
+     "url": "https://flightsim.to/addon/31909/utdd-dushanbe",
+     "context": "Erwähnte Freeware; 4,3 aus 3, nur MSFS 2020 – verworfen."
+    },
+    {
+     "label": "Dushanbe Int Airport (UTDD) · Middle Asia Developers",
+     "url": "https://www.fsaddoncompare.com/product/11256/Dushanbe-Int-Airport-UTDD",
+     "context": "Erwähnte Payware; unbewertet – keine Empfehlung."
+    }
+   ],
    "hl": "Duschanbe – Pamir-Vorland."
   },
   "OAKB": {
@@ -7458,6 +8625,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "OPIS Islamabad International Airport · SimArc",
+     "url": "https://msfsmarket.place/airports/simarc-opis/",
+     "context": "Erwähnte Payware; nur MSFS 2020, bei simMarket inaktiv – verworfen."
+    },
+    {
+     "label": "OPIS - Islamabad Intl. Airport, Pakistan · capungflightTV",
+     "url": "https://flightsim.to/addon/19658/opis-islamabad-intl-airport-pakistan",
+     "context": "Erwähnte Freeware; 1 Bewertung, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Islamabad."
   },
   "VIAR": {
@@ -7484,6 +8663,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "VIAR - Amritsar Airport · VForce",
+     "url": "https://flightsim.to/addon/84743/amritsar-airport",
+     "context": "Erwähnte einzige Freeware; 4,0 aus 2, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Amritsar – Goldener Tempel."
   },
   "VILH": {
@@ -7568,6 +8754,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "VIDP Indira Gandhi International Airport · rcavinash123",
+     "url": "https://flightsim.to/addon/7681/vidp-indira-gandhi-international-airport",
+     "context": "Erwähnte Freeware von 2021; nur MSFS 2020 – keine Empfehlung."
+    }
+   ],
    "hl": "Delhi."
   },
   "VEBN": {
@@ -7594,6 +8787,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "VEBN-Varanasi Airport · VForce",
+     "url": "https://flightsim.to/addon/97601/vebn-varanasi-airport",
+     "context": "Erwähnte unbewertete Freeware; nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Varanasi am Ganges."
   },
   "VNKT": {
@@ -7761,6 +8961,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "VYYY-Yangon International Airport-Update · SawLay",
+     "url": "https://flightsim.to/addon/37122/vyyy-yangon-international-airport-update",
+     "context": "Erwähnte Freeware; 4,8 aus 9, nur MSFS 2020, 2024 unbestätigt – keine Empfehlung."
+    },
+    {
+     "label": "Yangon Intl VYYY · Mfsg",
+     "url": "https://secure.simmarket.com/yangon-intl-vyyy-msfs24.phtml",
+     "context": "Erwähnte Payware; unbewertet – keine Empfehlung."
+    }
+   ],
    "hl": "Yangon – Shwedagon-Pagode."
   },
   "VOPB": {
@@ -7787,6 +8999,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "VOPB Veer Savarkar International Airport (Port Blair) · Sw1t23r",
+     "url": "https://flightsim.to/addon/108265/vopb-veer-savarkar-international-airport-port-blair",
+     "context": "Erwähnte 2024-Freeware mit geneigter Piste; 4,0 aus 1 – verworfen."
+    },
+    {
+     "label": "Veer Savarkar International Airport VOPB (Port Blair) · arvind320",
+     "url": "https://flightsim.to/addon/46016/veer-savarkar-international-airport-vopb-port-blair",
+     "context": "Erwähnte Freeware; 4,7 aus 3, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Port Blair – Andamanen im Golf von Bengalen.",
    "level": 1
   },
@@ -7844,6 +9068,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "VCBI - Bandaranaike Intl. Airport, Colombo/Katunayake · capungflightTV",
+     "url": "https://flightsim.to/addon/19762/vcbi-bandaranaike-intl-airport-colombo-katunayake",
+     "context": "Erwähnte Freeware; 4,3 aus 8, nur MSFS 2020 – verworfen."
+    },
+    {
+     "label": "Bandaranaike VCBI · Mfsg",
+     "url": "https://secure.simmarket.com/mfsg-bandaranaike-vcbi-msfs.phtml",
+     "context": "Erwähnte Payware; unbewertet, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Colombo."
   },
   "VRMM": {
@@ -7878,6 +9114,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Maldives - Malé International Airport - MSFS · FSDG",
+     "url": "https://fsdg-online.com/Sceneries/MSFS/MSFS-Full/Maldives-Male-International-Airport-MSFS::98.html",
+     "context": "Im Briefing als optional genannte Payware; in der Recherche nicht bewertet – keine neue Empfehlung."
+    }
+   ],
    "hl": "Malé – Bahn auf der Flughafeninsel Hulhulé zwischen Atollen.",
    "brief": "Wasserflugzeuge starten direkt neben der Bahn, ringsum türkise Atolle – tagsüber fliegen. Die NSAJID-Freeware mit korrigierter Bahnlänge ist mit 4 Bewertungen nur ein Kandidat zum Prüfen; FSDG Malé ist optional.",
    "tag": "Malediven",
@@ -7985,6 +9228,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "VABB Chhatrapati Shivaji International Airport (BOM) · Alkee15",
+     "url": "https://flightsim.to/addon/11495/vabb-chhatrapati-shivaji-international-airport-bom",
+     "context": "Erwähnte Freeware von 2021; ohne 2024-Bestätigung – keine Empfehlung."
+    }
+   ],
    "hl": "Mumbai."
   },
   "VAAH": {
@@ -8041,6 +9291,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Karachi (OPKC) · MSK Productions",
+     "url": "https://orbxdirect.com/product/msk-productions-opkc-msfs",
+     "context": "Erwähnte Payware; 4,22 aus 37, knapp unter der Schwelle – keine Empfehlung."
+    },
+    {
+     "label": "OPKC - Jinnah Intl. Airport, Karachi (Improvement) · capungflightTV",
+     "url": "https://flightsim.to/addon/19761/opkc-jinnah-intl-airport-karachi-improvement",
+     "context": "Erwähnte Freeware; 3 Bewertungen, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Karatschi."
   },
   "OOMS": {
@@ -8068,7 +9330,7 @@
       "url": "https://flightsim.to/addon/37640/ooms-muscat-int-l-muscat-oman",
       "why": "Freeware von QNH997, 4,9 aus 70 Bewertungen, 26.312 Downloads; nur MSFS-2020-Tag und 2024-Nutzerberichte gemischt (Dez. 2025 läuft, Nov. 2024 FPS-Einbruch), Payware-Alternative Double T mit 4,6 aus 14 für 2020/2024.",
       "rating": "4,9 · 70 · 26.312 Downloads",
-      "installNote": "Nur eine Variante installieren: „Default Jetways Version“ ohne GSX oder „GSX Version“. Das hochauflösende Luftbild ist ein separates, empfohlenes Paket."
+      "installNote": "Nur eine Variante installieren: „Default Jetways Version“ ohne GSX oder „GSX Version“. Das Luftbild ist der optionale Ordner „ek1288-ooms-aerial“ im selben Download, kein separat herunterzuladendes Paket."
      },
      {
       "status": "optional",
@@ -8136,6 +9398,23 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Bahrain International Airport - OBBI · Rashidar84",
+     "url": "https://flightsim.to/addon/19077/bahrain-international-airport-obbi",
+     "context": "Erwähnte Freeware; 4,3 aus 8, nur MSFS 2020 – verworfen."
+    },
+    {
+     "label": "Bahrain (OBBI) V2 · Tuwaiq Designs",
+     "url": "https://secure.simmarket.com/tuwaiq-designs-bahrain-airport-v2-msfs2420.phtml",
+     "context": "Erwähnte Payware V2; noch unbewertet – keine Empfehlung."
+    },
+    {
+     "label": "Bahrain Intl OBBI · Mfsg",
+     "url": "https://www.fsaddoncompare.com/product/5534/Bahrain-Intl-OBBI",
+     "context": "Erwähnte Payware; 3,0 aus 1 – verworfen."
+    }
+   ],
    "hl": "Bahrain."
   },
   "OTHH": {
@@ -8162,6 +9441,23 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Doha-Hamad (OTHH) · MXI Design",
+     "url": "https://www.fsaddoncompare.com/product/3136/Doha-Hamad-OTHH",
+     "context": "Erwähnte Payware; 3,72 aus 81 – verworfen."
+    },
+    {
+     "label": "Doha Hamad (OTHH) for MSFS 2024 · iniBuilds",
+     "url": "https://inibuilds.com/products/inibuilds-doha-hamad-othh-msfs-2024",
+     "context": "Erwähnte neue 2024-Payware; noch unbewertet – keine Empfehlung."
+    },
+    {
+     "label": "Doha Hamad INTL airport [OTHH] · ams7880",
+     "url": "https://flightsim.to/addon/14072/doha-hamad-intl-airport-othh",
+     "context": "Erwähnte Freeware; 2,4 aus 5 – verworfen."
+    }
+   ],
    "hl": "Doha."
   },
   "OKKK": {
@@ -8223,6 +9519,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "OERK - Riyadh Saudi Arabia · Azrsim",
+     "url": "https://secure.simmarket.com/azrsim-oerk-riyadh-saudi-arabia-v3-msfs2024.phtml",
+     "context": "Erwähnte Payware; 3,81 aus 38 – verworfen, die Freeware bleibt die Empfehlung."
+    }
+   ],
    "hl": "Riad."
   },
   "OEAO": {
@@ -8249,6 +9552,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Prince Abdul Majeed bin Abdulaziz International Airport (OEAO-AlUla) · Loay",
+     "url": "https://flightsim.to/addon/68153/prince-abdul-majeed-bin-abdulaziz-international-airport-oeao-alula",
+     "context": "Erwähnte einzige Freeware; v0.1, 5,0 aus 2, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "AlUla – Sandsteinfelsen und die Nabatäer-Gräber von Hegra.",
    "brief": "Anflug über eine Wüste aus roten Felsformationen; das UNESCO-Welterbe Hegra liegt nördlich des Flughafens. Ersetzt Medina.",
    "tag": "Hegra",
@@ -8278,6 +9588,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "OJAQ Aqaba Intl · Mfsg",
+     "url": "https://secure.simmarket.com/ojaq-aqaba-intl-msfs24.phtml",
+     "context": "Erwähnte Payware; 3,5 aus 2 – verworfen."
+    },
+    {
+     "label": "Aqaba OJAQ · EDDB2020",
+     "url": "https://flightsim.to/addon/7761/aqaba-ojaq",
+     "context": "Erwähnte Freeware; unbewertet, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Aqaba – vier Länder im Blick, das Wadi Rum im Osten.",
    "tag": "Rotes Meer",
    "level": 1
@@ -8315,6 +9637,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "LLBG - Ben Gurion Airport Israel · Redbaron601",
+     "url": "https://flightsim.to/addon/100775/llbg-ben-gurion-airport-israel",
+     "context": "Erwähnte eigenständige Freeware; 3,5 aus 2 – verworfen."
+    }
+   ],
    "hl": "Tel Aviv-Ben Gurion – Basis für den H160-Flug nach Ramallah."
   },
   "OLBA": {
@@ -8429,6 +9758,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "ORBI - Baghdad International Airport · Azrsim",
+     "url": "https://inibuilds.com/products/azrsim-baghdad-v2-orbi-for-msfs-2024",
+     "context": "Erwähnte einzige Payware; 4,2 aus nur 4 – kein klarer Mehrwert, keine Empfehlung."
+    }
+   ],
    "hl": "Bagdad."
   },
   "OIIE": {
@@ -8455,6 +9791,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "OIIE International Airport · HomaSim",
+     "url": "https://orbxdirect.com/product/aerosoft-oiie-msfs",
+     "context": "Erwähnte Payware; 4,13 aus 65, nur für MSFS 2020 gelistet – verworfen."
+    }
+   ],
    "hl": "Teheran-Imam Khomeini, das Elburs-Gebirge im Norden."
   },
   "UTAA": {
@@ -8481,6 +9824,23 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "UTAA - Ashgabat Airport · Vizkaine",
+     "url": "https://flightsim.to/store/product/ashgabat-airport-utaa",
+     "context": "Erwähnte Payware; 2,5 aus 2 – verworfen."
+    },
+    {
+     "label": "Ashgabat UTAA (Airport & Lights Enhancement) · EDDB2020",
+     "url": "https://flightsim.to/addon/6405/ashgabat-utaa-lights-enhancement",
+     "context": "Erwähnte Freeware; 2,5 aus 2 – verworfen."
+    },
+    {
+     "label": "UTAA - Ashgabat (WIP!) · bymaxgames",
+     "url": "https://flightsim.to/addon/81441/wip-ashgabat-utaa",
+     "context": "Erwähnte WIP-Freeware; 1,0 aus 2 laut Recherche – verworfen."
+    }
+   ],
    "hl": "Aschgabat – Marmorstadt am Kopet-Dag."
   },
   "UTAK": {
@@ -8507,6 +9867,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "UTAK - Turkmenbashi (WIP!) · bymaxgames",
+     "url": "https://flightsim.to/addon/82130/utak-turkmenbashi",
+     "context": "Erwähnte einzige WIP-Freeware; 3,0 aus 1, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Turkmenbaschi am Kaspischen Meer."
   },
   "UBBB": {
@@ -8533,6 +9900,28 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "UBBB - GYD - Baku Azerbaijan · Azrsim",
+     "url": "https://secure.simmarket.com/azrsim-ubbb-baku-gyd-azerbaijan-msfs2024.phtml",
+     "context": "Erwähnte Payware; 3,78 aus 5 – verworfen."
+    },
+    {
+     "label": "UBBB Baku Bundle Azerbaijan · Azrsim",
+     "url": "https://www.fsaddoncompare.com/product/12091/UBBB-Baku-Bundle-Azerbaijan",
+     "context": "Erwähntes Bundle; 5,0 aus 2 – zu wenig Bewertungen, verworfen."
+    },
+    {
+     "label": "UBBB Heydar Aliyev Airport · Ac Scenery",
+     "url": "https://www.fsaddoncompare.com/product/11843/UBBB-Heydar-Aliyev-Airport",
+     "context": "Erwähnte Payware; 4,3 aus 3 – verworfen."
+    },
+    {
+     "label": "Baku UBBB (Airport & Lights Enhancement) · EDDB2020",
+     "url": "https://flightsim.to/addon/17101/baku-ubbb-airport-lights-enhancement",
+     "context": "Erwähnte Freeware; 4,0 aus 7, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Baku – nach dem Flug über das Kaspische Meer."
   },
   "UDYZ": {
@@ -8595,6 +9984,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "UGTB Tbilisi International Airport · AmSim",
+     "url": "https://msfsmarket.place/airports/amsim-ugtb-tbilisi/",
+     "context": "Erwähnte Payware; nur MSFS 2020, 2024 laut Nutzern weder erhältlich noch sicher lauffähig – verworfen."
+    }
+   ],
    "hl": "Tiflis – Großer Kaukasus im Norden."
   },
   "LTCG": {
@@ -8665,6 +10061,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "LTAI Antalya Airport · JustSim",
+     "url": "https://msfsmarket.place/airports/justsim-airport-ltai-antalya/",
+     "context": "Erwähnte Payware; 4,21 aus 104, nur für MSFS 2020 gelistet – verworfen, die Freeware bleibt die Empfehlung."
+    }
+   ],
    "hl": "Antalya – Taurusgebirge."
   },
   "LCLK": {
@@ -8691,6 +10094,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Larnaca (LCLK) · iniBuilds",
+     "url": "https://inibuilds.com/products/inibuilds-larnaca-lclk-msfs",
+     "context": "Erwähnte Payware laut Recherche-Archiv; noch unbewertet – keine Empfehlung."
+    },
+    {
+     "label": "JustSim Larnaca",
+     "url": "https://secure.simmarket.com/justsim-larnaca-international-airport-msfs.phtml",
+     "context": "Im Vergleich erwähnt; Produktseite nachgetragen. Keine zusätzliche Empfehlung oder eigene Bestätigung der Simulatorqualität."
+    }
+   ],
    "hl": "Larnaka – Salzsee neben der Bahn."
   },
   "HECA": {
@@ -8743,6 +10158,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Aswan International Airport HESN · Nassef",
+     "url": "https://flightsim.to/addon/21144/aswan-international-airport-hesn",
+     "context": "Erwähnte kleine Freeware-Verbesserung; 5,0 aus 2, nur MSFS 2020 – verworfen."
+    },
+    {
+     "label": "HESN Aswan International Airport · MSFScenerybuilders",
+     "url": "https://www.fsaddoncompare.com/product/1418/HESN-Aswan-International-Airport",
+     "context": "Erwähnte Payware; 0 Bewertungen, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Assuan – Nil, Katarakte und der Nassersee.",
    "level": 1
   },
@@ -8863,6 +10290,23 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "HHAS - Asmara International Airport Eritrea · DangerousBanana",
+     "url": "https://flightsim.to/addon/87280/hhas-asmara-international-airport-eritrea",
+     "context": "Erwähnte Freeware; 5,0 aus 4, braucht in 2024 einen Fix – verworfen."
+    },
+    {
+     "label": "HHAS MSFS 2024 Fix for DangerousBanana MSFS 2020 Version · Nevermind1982",
+     "url": "https://flightsim.to/addon/105800/hhas-msfs-2024-fix-for-dangerousbanana-msfs-2020-version",
+     "context": "Erwähnter separater 2024-Fix zur DangerousBanana-Freeware – nur relevant, falls man diese testet; keine Empfehlung."
+    },
+    {
+     "label": "HHAS Asmara Eritrea International Airport · MSFScenerybuilders",
+     "url": "https://www.fsaddoncompare.com/product/5021/HHAS-Asmara-Eritrea-International-Airport",
+     "context": "Erwähnte Payware; 4,3 aus 6, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Asmara – 2.335 m hoch am Rand des Eritreischen Hochlands.",
    "level": 1
   },
@@ -8933,6 +10377,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Addis Ababa Bole International · African Skies",
+     "url": "https://www.fsaddoncompare.com/product/11340/Addis-Ababa-Bole-International",
+     "context": "Erwähnte 2024-Payware; 5,0 aus 2 – kaum bewertet, keine Empfehlung."
+    },
+    {
+     "label": "HAAB - Addis Ababa Bole International Airport · Barelli MSFS Addons",
+     "url": "https://www.fsaddoncompare.com/product/10051/HAAB-Addis-Ababa-Bole-International-Airport",
+     "context": "Erwähnte 2024-Payware; 4,0 aus 3 – kaum bewertet, keine Empfehlung."
+    }
+   ],
    "hl": "Addis Abeba – 2.325 m hoch."
   },
   "HDAM": {
@@ -8959,6 +10415,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "HDAM MSFS 2024 Auto Gen Tree Removal · Nevermind1982",
+     "url": "https://flightsim.to/addon/86911/hdam-msfs-2024-auto-gen-tree-removal",
+     "context": "Erwähnter kleiner Baumentfernungs-Fix; keine Szenerie, 0 Bewertungen – verworfen."
+    }
+   ],
    "hl": "Dschibuti – Golf von Tadjoura."
   },
   "OYSQ": {
@@ -8993,6 +10456,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "OYSQ - Socotra Airport Yemen · DangerousBanana",
+     "url": "https://flightsim.to/addon/79155/oysq-socotra-airport-yemen",
+     "context": "Erwähnte Freeware; 5,0 aus 2, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Socotra – Drachenblutbäume auf der „Galápagos des Indischen Ozeans“.",
    "brief": "Eine der isoliertesten Inseln der Welt. Azrsim Socotra ist die einzige echte Umsetzung und günstig.",
    "tag": "Socotra",
@@ -9074,6 +10544,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Juba Intl. Airport (HJJJ) · kychungdotcom",
+     "url": "https://flightsim.to/addon/50472/juba-intl-airport-hjjj",
+     "context": "Erwähnte Freeware; 5,0 aus 1, seit 2023 unverändert – verworfen."
+    },
+    {
+     "label": "HJJJ Juba International Airport · MSFScenerybuilders",
+     "url": "https://www.fsaddoncompare.com/product/950/HJJJ-Juba-International-Airport",
+     "context": "Erwähnte Payware; unbewertet, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Juba am Weißen Nil."
   },
   "HKJK": {
@@ -9109,6 +10591,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "HKJK-NAIROBI Jomo Kenyatta International Airport · Chak991",
+     "url": "https://flightsim.to/addon/53241/hkjk-nairobi-jomo-kenyatta-international-airport",
+     "context": "Erwähnte Freeware; nur für MSFS 2020 gebaut, in 2024 fehlt laut Kommentaren das Terminal – verworfen."
+    }
+   ],
    "hl": "Nairobi – der Nationalpark grenzt direkt an den Flughafen.",
    "level": 1
   },
@@ -9166,6 +10655,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Kigali International Airport · African Skies",
+     "url": "https://www.fsaddoncompare.com/product/10326/Kigali-International-Airport",
+     "context": "Erwähnte Payware; unbewertet – keine Empfehlung, die Freeware bleibt die Wahl."
+    }
+   ],
    "hl": "Kigali – Land der tausend Hügel."
   },
   "HBBA": {
@@ -9192,6 +10688,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "HBBA Bujumbura International Airport · MSFScenerybuilders",
+     "url": "https://www.fsaddoncompare.com/product/999/HBBA-Bujumbura-International-Airport",
+     "context": "Erwähnte einzige Payware; nur für MSFS 2020 gelistet – verworfen."
+    }
+   ],
    "hl": "Bujumbura am Tanganjikasee."
   },
   "HTKJ": {
@@ -9220,12 +10723,19 @@
       "status": "optional",
       "product": "Kilimanjaro International",
       "dev": "VueloSimple",
-      "url": "https://www.fsaddoncompare.com/search/HTKJ",
+      "url": "https://www.fsaddoncompare.com/product/4204/HTKJ-Kilimanjaro-Intl.-Airport",
       "why": "Für MSFS 2020 und 2024 gelistet, günstig; die Freeware von VForce hat erst 2 Bewertungen.",
       "rating": "4,33 · 18"
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "HTKJ-Kilimanjaro Intl Airport · VForce",
+     "url": "https://flightsim.to/addon/85404/htkj-kilimanjaro-intl-airport",
+     "context": "Erwähnte Freeware; erst 2 Bewertungen – keine Empfehlung."
+    }
+   ],
    "hl": "Kilimanjaro – der 5.895-m-Gipfel steht nordöstlich des Flughafens.",
    "brief": "Bei klarer Sicht thront der Kibo über der Savanne, der Mount Meru steht im Westen. Morgens ist die Chance auf einen wolkenfreien Gipfel am größten.",
    "tag": "Kibo",
@@ -9255,6 +10765,23 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "HTZA - Abeid Amani Karume International Airport - Zanzibar · Skyprince",
+     "url": "https://flightsim.to/addon/47668/htza-abeid-amani-karume-international-airport-zanzibar",
+     "context": "Erwähnte Freeware; nur MSFS 2020, für 2024 unbestätigt – nur zum Testen, keine Empfehlung."
+    },
+    {
+     "label": "Zanzibar Abeid Amani Karume International Airport - HTZA · Barelli MSFS Addons",
+     "url": "https://www.fsaddoncompare.com/product/4217/Zanzibar-Abeid-Amani-Karume-International-Airport-HTZA",
+     "context": "Erwähnte Payware; 4,25 aus 2 – kaum bewertet, verworfen."
+    },
+    {
+     "label": "HTZA Abeid Amani Karume Airport · South Oak Co",
+     "url": "https://www.fsaddoncompare.com/product/7523/HTZA-Abeid-Amani-Karume-Airport",
+     "context": "Erwähnte Payware; 4,3 aus 6 – kaum bewertet, verworfen."
+    }
+   ],
    "hl": "Sansibar."
   },
   "HKMO": {
@@ -9281,6 +10808,23 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "HKMO - Mombasa Moi International Airport · Lennart320",
+     "url": "https://flightsim.to/addon/68106/hkmo-mombasa-moi-international-airport",
+     "context": "Erwähnte native 2024-Freeware; laut Autor keine realistische Darstellung, 4,8 aus 5 – verworfen."
+    },
+    {
+     "label": "Mombasa International Airport · African Skies",
+     "url": "https://www.fsaddoncompare.com/product/10460/Mombasa-International-Airport",
+     "context": "Erwähnte Payware; 4,0 aus 4 – verworfen."
+    },
+    {
+     "label": "HKMO Moi International Airport · MSFScenerybuilders",
+     "url": "https://www.fsaddoncompare.com/product/1060/HKMO-Moi-International-Airport",
+     "context": "Erwähnte Payware; 3,31 aus 9 – verworfen."
+    }
+   ],
    "hl": "Mombasa – Absprung zu den Seychellen."
   },
   "FSIA": {
@@ -9309,7 +10853,7 @@
       "status": "optional",
       "product": "Seychelles",
       "dev": "FSDG",
-      "url": "https://www.fsaddoncompare.com/search/FSIA",
+      "url": "https://www.fsaddoncompare.com/product/4701/Seychelles",
       "why": "Ganzer Archipel mit Außeninseln; in Foren werden 2024-Textur- und Riffprobleme gemeldet.",
       "rating": "4,68 · 20"
      }
@@ -9342,6 +10886,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "FJDG, Diego Garcia Navy Base · TangoFox",
+     "url": "https://flightsim.to/addon/24045/fjdg-diego-garcia-air-naval-base",
+     "context": "Erwähnte einzige Freeware; 4,2 aus 5, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Diego Garcia – Militäratoll im Chagos-Archipel.",
    "level": 1
   },
@@ -9369,6 +10920,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Mauritius · FSDG",
+     "url": "https://www.fsaddoncompare.com/product/4704/Mauritius",
+     "context": "Erwähnte Payware (3,15 aus 93); zeigt in 2024 Riff- und Bildfehler – verworfen."
+    }
+   ],
    "hl": "Mauritius."
   },
   "FMEE": {
@@ -9493,6 +11051,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "FMMI Ivato Int'l Airport · nico_lszk",
+     "url": "https://flightsim.to/addon/79606/fmmi-ivato-int-l-airport",
+     "context": "Erwähnte Freeware; 4,8 aus 5, nur MSFS 2020 – zu wenig bewertet, verworfen."
+    }
+   ],
    "hl": "Antananarivo – Hochland von Madagaskar."
   },
   "FMNN": {
@@ -9519,6 +11084,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "FMNN - Nosy Be Fascene Airport · Pilot_mathis974",
+     "url": "https://flightsim.to/addon/39738/madagascar-nosy-be-fascene-airport",
+     "context": "Erwähnte Freeware; 5,0 aus 1, nur MSFS 2020 – verworfen."
+    },
+    {
+     "label": "Nosy Be Island · DSky",
+     "url": "https://www.fsaddoncompare.com/product/4669/Nosy-Be-Island",
+     "context": "Erwähnte Payware; 4,0 aus 1, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Nosy Be – Basis für den H160-Flug zu den Glorieuses.",
    "level": 1
   },
@@ -9594,6 +11171,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "FMCH - Prince Said Ibrahim International Airport The Comoros · DangerousBanana",
+     "url": "https://flightsim.to/addon/82615/fmch-prince-said-ibrahim-international-airport-the-comoros",
+     "context": "Erwähnte einzige Freeware; 5,0 aus 1, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Komoren – Vulkan Karthala."
   },
   "FQPB": {
@@ -9620,6 +11204,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Pemba Airport (FQPB) · DangerousBanana",
+     "url": "https://flightsim.to/addon/51170/pemba-airport-fqpb",
+     "context": "Erwähnte einzige Freeware; 1 Bewertung, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Pemba – Nordmosambik."
   },
   "FWKI": {
@@ -9646,6 +11237,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "FWKI - Kamuzu International Airport Malawi · DangerousBanana",
+     "url": "https://flightsim.to/addon/73166/fwki-kamuzu-international-airport-malawi",
+     "context": "Erwähnte Freeware; 5,0 aus 5, nur MSFS 2020 – zu wenig bewertet, verworfen."
+    }
+   ],
    "hl": "Lilongwe – Malawi."
   },
   "FQBR": {
@@ -9672,6 +11270,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Beira Airport (FQBR), Mozambique · Victor98",
+     "url": "https://flightsim.to/addon/59735/beira-airport-fqbr",
+     "context": "Erwähnte Freeware; 5,0 aus 6, seit 2023 unverändert – verworfen."
+    }
+   ],
    "hl": "Beira."
   },
   "FQMA": {
@@ -9698,6 +11303,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "FQMA - Maputo Intl Mozambique MSFS 2024 · DangerousBanana",
+     "url": "https://flightsim.to/addon/115045/fqma-maputo-intl-mozambique-msfs-2024",
+     "context": "Erwähnte neue native 2024-Freeware; noch ohne Bewertung – nur zum Prüfen."
+    },
+    {
+     "label": "FQMA Maputo International Airport · MSFScenerybuilders",
+     "url": "https://www.fsaddoncompare.com/product/1032/FQMA-Maputo-International-Airport",
+     "context": "Erwähnte Payware; 3,4 aus 7, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Maputo."
   },
   "FDSK": {
@@ -9724,6 +11341,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Sikhupe International Airport (FDSK) · DangerousBanana",
+     "url": "https://flightsim.to/addon/53507/sikhupe-international-airport-fdsk",
+     "context": "Erwähnte Freeware; 5,0 aus 3, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Eswatini – King Mswati III."
   },
   "FAOR": {
@@ -9750,6 +11374,28 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Johannesburg (FAOR) · Gaffer Simulations",
+     "url": "https://www.fsaddoncompare.com/product/6177/Johannesburg-FAOR",
+     "context": "Erwähnte Payware; 3,82 aus 48 – verworfen."
+    },
+    {
+     "label": "FAOR Johannesburg International Airport · NMG Simulations",
+     "url": "https://www.fsaddoncompare.com/product/10297/FAOR-Johannesburg-International-Airport",
+     "context": "Erwähnte Payware; mäßig bewertet – verworfen."
+    },
+    {
+     "label": "Johannesburg O.R. Tambo (FAOR) · iniBuilds",
+     "url": "https://www.fsaddoncompare.com/product/9660/Johannesburg-O.R.-Tambo-FAOR",
+     "context": "Erwähnte Payware; 3,07 aus 14 – verworfen."
+    },
+    {
+     "label": "FAOR - O. R. Tambo International Airport · NSAJID",
+     "url": "https://flightsim.to/addon/65986/faor-o-r-tambo-international-airport",
+     "context": "Erwähnte Freeware; 3,0 aus 3 – verworfen."
+    }
+   ],
    "hl": "Johannesburg."
   },
   "FXMM": {
@@ -9776,6 +11422,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Maseru Airport Improvement (FXMM) · DangerousBanana",
+     "url": "https://flightsim.to/addon/39431/maseru-airport-improvement-fxmm",
+     "context": "Erwähnte Freeware; 5,0 aus 5, nur MSFS 2020 – zu wenig bewertet, verworfen."
+    },
+    {
+     "label": "FXMM Moshoeshoe I International Airport · MSFScenerybuilders",
+     "url": "https://www.fsaddoncompare.com/product/1361/FXMM-Moshoeshoe-I-International-Airport",
+     "context": "Erwähnte Payware; 4,0 aus 1, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Maseru – Lesotho, das „Königreich im Himmel“.",
    "level": 1
   },
@@ -9808,6 +11466,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "FALE King Shaka International Airport · NMG Simulations",
+     "url": "https://www.fsaddoncompare.com/product/10302/FALE-King-Shaka-International-Airport",
+     "context": "Erwähnte Payware (5,0 aus 6); nicht nötig – keine Empfehlung."
+    },
+    {
+     "label": "King Shaka (FALE) · Gaffer Simulations",
+     "url": "https://www.fsaddoncompare.com/product/6202/King-Shaka-FALE",
+     "context": "Erwähnte Payware; 4,17 aus 87, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Durban."
   },
   "FAGG": {
@@ -9834,6 +11504,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "FAGG George Airport · NMG Simulations",
+     "url": "https://www.fsaddoncompare.com/product/1913/FAGG-George-Airport",
+     "context": "Erwähnte einzige Payware; 3,8 aus 6 – verworfen."
+    }
+   ],
    "hl": "George – Garden Route zwischen Outeniqua-Bergen und Indischem Ozean.",
    "tag": "Garden Route",
    "level": 1
@@ -9899,6 +11576,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "FYLZ - Lüderitz Airport · vo1tage",
+     "url": "https://flightsim.to/addon/78825/fylz",
+     "context": "Erwähnte einzige Freeware; 0 Bewertungen, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Lüderitz – Namib-Küste, die Geisterstadt Kolmanskop gleich nebenan.",
    "level": 1
   },
@@ -9930,6 +11614,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "FYWH Hosea Kutako International Airport · FSDG",
+     "url": "https://www.fsaddoncompare.com/product/7606/FYWH-Hosea-Kutako-International-Airport",
+     "context": "Erwähnte Payware; nur für MSFS 2020 gelistet – verworfen, die Freeware bleibt die Empfehlung."
+    }
+   ],
    "hl": "Windhoek."
   },
   "FBKE": {
@@ -9956,6 +11647,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Kasane Intl Botswana (FBKE) · DangerousBanana",
+     "url": "https://flightsim.to/addon/69358/kasane-intl-botswana-fbke",
+     "context": "Erwähnte Freeware; 5,0 aus 3, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Kasane – Chobe-Nationalpark."
   },
   "FVFA": {
@@ -10028,6 +11726,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "FVHA - Harare International Scenery improvements · DangerousBanana",
+     "url": "https://flightsim.to/addon/40617/harare-international-scenery-improvements-fvha",
+     "context": "Erwähnte Freeware; 2,8 aus 5 – verworfen."
+    },
+    {
+     "label": "FVHA Harare International Airport · MSFScenerybuilders",
+     "url": "https://www.fsaddoncompare.com/product/848/FVHA-Harare-International-Airport",
+     "context": "Erwähnte Payware; 3,4 aus 17, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Harare."
   },
   "FLKK": {
@@ -10054,6 +11764,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Lusaka International Zambia (FLKK) · DangerousBanana",
+     "url": "https://flightsim.to/addon/61511/lusaka-international-zambia-flkk",
+     "context": "Erwähnte Freeware; 4,5 aus 6, nur MSFS 2020 – zu wenig bewertet, verworfen."
+    }
+   ],
    "hl": "Lusaka."
   },
   "FZQA": {
@@ -10080,6 +11797,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "FZQA - Loano International Airport (FBM) - Lubumbashi · EchoMikeRDC",
+     "url": "https://flightsim.to/addon/87617/fzqa-loano-international-airport-fbm-lubumbashi-democratic-republic-of-congo",
+     "context": "Erwähnte Freeware; 5,0 aus 6 – optional testbar, keine Empfehlung."
+    }
+   ],
    "hl": "Lubumbashi – Kupfergürtel."
   },
   "FNME": {
@@ -10132,6 +11856,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Mukanka-Lubango Airport Angola (FNUB) · DangerousBanana",
+     "url": "https://flightsim.to/addon/44789/mukanka-lubango-airport-angola-fnub",
+     "context": "Erwähnte einzige Freeware; 0 Bewertungen, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Lubango – Serra da Leba."
   },
   "FNLU": {
@@ -10162,6 +11893,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "FNLU Quatro de Fevereiro International Airport · MSFScenerybuilders",
+     "url": "https://www.fsaddoncompare.com/product/1036/FNLU-Quatro-de-Fevereiro-International-Airport",
+     "context": "Erwähnte Payware; 3,9 aus 10, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Luanda – Absprung in den Südatlantik."
   },
   "FHSH": {
@@ -10274,6 +12012,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "FPST Sao Tome · Viktoren69",
+     "url": "https://flightsim.to/addon/74311/fpst-sao-tome",
+     "context": "Erwähnte Freeware; 5,0 aus 3, nur MSFS 2020, sechs Abhängigkeiten – verworfen."
+    }
+   ],
    "hl": "São Tomé."
   },
   "FOOL": {
@@ -10300,6 +12045,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "FOOL - Leon-M'ba International Airport | Libreville, Gabon · dulce1021",
+     "url": "https://flightsim.to/addon/110165/fool-leon-m-ba-international-airport-librevile-gabon",
+     "context": "Erwähnte neue Freeware; 5,0 aus 4 – noch unter der Schwelle, nur zum Prüfen."
+    },
+    {
+     "label": "FOOL Libreville International Airport · MSFScenerybuilders",
+     "url": "https://www.fsaddoncompare.com/product/6015/FOOL-Libreville-International-Airport",
+     "context": "Erwähnte Payware; 3,03 aus 4, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Libreville."
   },
   "FZAA": {
@@ -10356,6 +12113,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "FCBB Agostinho-Neto International Airport (Maya-Maya Brazzaville) · MSFScenerybuilders",
+     "url": "https://www.fsaddoncompare.com/product/878/FCBB-Agostinho-Neto-International-Airport",
+     "context": "Erwähnte Payware; 3,38 aus 18, nur MSFS 2020 – verworfen."
+    },
+    {
+     "label": "FSXcenery Brazzaville Maya-Maya Airport Enhancement Mod · Pilot-Snoops (Snoopy7412)",
+     "url": "https://flightsim.to/addon/69369/fsxcenery-brazzaville-maya-maya-airport-update",
+     "context": "Erwähnter Korrektur-Mod für genau diese Payware; 5,0 aus 1 – verworfen."
+    }
+   ],
    "hl": "Brazzaville."
   },
   "FGSL": {
@@ -10382,6 +12151,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Sao Tome e Principe-Annobon-Bioko airports · timot75",
+     "url": "https://flightsim.to/addon/27077/sao-tome-e-principe-annobon-bioko-airports",
+     "context": "Erwähntes Inselpaket inkl. FGSL; 5,0 aus 4, nur MSFS 2020 – verworfen."
+    },
+    {
+     "label": "FGSL Malabo Equatorial Guinea Intl airport · MSFScenerybuilders",
+     "url": "https://www.fsaddoncompare.com/product/5053/FGSL-Malabo-Equatorial-Guinea-Intl-airport",
+     "context": "Erwähnte Payware; 4,7 aus nur 3, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Malabo – Bioko und der Pico Basilé."
   },
   "FKKD": {
@@ -10408,6 +12189,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "FKKD Douala International Airport · MSFScenerybuilders",
+     "url": "https://www.fsaddoncompare.com/product/1074/FKKD-Douala-International-Airport",
+     "context": "Erwähnte Payware; nur für MSFS 2020 gelistet – verworfen."
+    },
+    {
+     "label": "FKKD - Douala International, Cameroun · ghosh9691",
+     "url": "https://flightsim.to/addon/29263/fkkd-douala-international-cameroun",
+     "context": "Erwähnte Freeware; 5,0 aus 2, seit 2022 unverändert – verworfen."
+    }
+   ],
    "hl": "Douala – der Kamerunberg im Westen."
   },
   "FEFF": {
@@ -10434,6 +12227,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Bangui M'Poko International Airport [FEFF] · quelcertoleo",
+     "url": "https://flightsim.to/addon/46435/bangui-m-poko-international-airport-feff-central-african-republic",
+     "context": "Erwähnte Freeware v0.1; 5,0 aus 1, nur MSFS 2020 – verworfen."
+    },
+    {
+     "label": "FEFF Bangui Central African Republic Intl Airport · MSFScenerybuilders",
+     "url": "https://www.fsaddoncompare.com/product/5473/FEFF-Bangui-Central-African-Republic-Intl-Airport",
+     "context": "Erwähnte Payware; 4,2 aus 4, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Bangui."
   },
   "FTTJ": {
@@ -10460,6 +12265,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "N'Djamena FTTJ (Airport & Lights Enhancement) · EDDB2020",
+     "url": "https://flightsim.to/addon/7507/n-djamena-fttj-airport-lights-enhancement",
+     "context": "Erwähnte Freeware; keine Bewertungen, nur MSFS 2020 – verworfen."
+    },
+    {
+     "label": "FTTJ N'Djamena International Airport · MSFScenerybuilders",
+     "url": "https://www.fsaddoncompare.com/product/10050/FTTJ-N'Djamena-International-Airport",
+     "context": "Erwähnte Payware; keine Bewertungen – verworfen."
+    }
+   ],
    "hl": "N'Djamena."
   },
   "DNSO": {
@@ -10512,6 +12329,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "DRRN Diori Hamani International Airport · MSFScenerybuilders",
+     "url": "https://www.fsaddoncompare.com/product/2369/DRRN-Diori-Hamani-International-Airport",
+     "context": "Erwähnte Payware; 4,5 aus 4, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Niamey am Niger."
   },
   "DNMM": {
@@ -10551,6 +12375,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Lagos Murtala Muhammed Airport · African Skies",
+     "url": "https://www.fsaddoncompare.com/product/12333/Lagos-Murtala-Muhammed-Airport",
+     "context": "Erwähnte Payware; 3,86 aus 7 – verworfen, die Freeware-Kombination bleibt die Empfehlung."
+    }
+   ],
    "hl": "Lagos."
   },
   "DBBB": {
@@ -10577,6 +12408,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "DBBB Cadjehoun Airport · MSFScenerybuilders",
+     "url": "https://www.fsaddoncompare.com/product/5013/DBBB-Cadjehoun-Airport",
+     "context": "Erwähnte Payware; 3,25 aus 4, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Cotonou."
   },
   "DXXX": {
@@ -10603,6 +12441,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "DXXX-Tokoin International Airport-Lome · caribbeansky",
+     "url": "https://flightsim.to/addon/91562/dxxx-tokoin-international-airport-lome",
+     "context": "Erwähntes „Simple upgrade“; 5,0 aus 4 – verworfen."
+    },
+    {
+     "label": "DXXX Lome Tokoin Airport · MSFScenerybuilders",
+     "url": "https://www.fsaddoncompare.com/product/1225/DXXX-Lome-Tokoin-Airport",
+     "context": "Erwähnte Payware; 4,3 aus 6, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Lomé."
   },
   "DGAA": {
@@ -10631,13 +12481,25 @@
       "status": "optional",
       "product": "Accra / DGAA Kotoka International Airport (Bewertung aus dem Marketplace-Listing; Shop-Version „Accra“: 4,0 aus 1)",
       "dev": "FSDG",
-      "url": "https://www.fsaddoncompare.com/search/DGAA",
+      "url": "https://www.fsaddoncompare.com/product/7817/DGAA-Kotoka-International-Airport",
       "rating": "4,57 · 18",
       "price": "ab 16,80 €",
       "why": "Die FSDG-Payware ist gut bewertet (4,57 aus 18 im Marketplace-Listing, dort nur MSFS 2020) und als Shop-Version „Accra“ für MSFS 2020/2024 gelistet (ab 16,80 €) – schön, aber nicht nötig; Freeware gibt es nur als Terminal-Lichter (5,0 aus 1)."
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Accra (Shop-Version) · FSDG",
+     "url": "https://www.fsaddoncompare.com/product/4713/Accra",
+     "context": "Erwähnte Shop-Version derselben Payware für MSFS 2020/2024 (4,0 aus 1) – keine zusätzliche Empfehlung."
+    },
+    {
+     "label": "DGAA - Kokota International, Accra Ghana - Terminal Lights · ghosh9691",
+     "url": "https://flightsim.to/addon/29209/dgaa-kokota-international-accra-ghana-terminal-lights",
+     "context": "Erwähnte Freeware (nur Terminal-Lichter, 5,0 aus 1) – verworfen."
+    }
+   ],
    "hl": "Accra."
   },
   "DFFD": {
@@ -10664,6 +12526,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "DFFD Uagadougou Burkina Faso International Airport · MSFScenerybuilders",
+     "url": "https://www.fsaddoncompare.com/product/5820/DFFD-Uagadougou-Burkina-Faso-International-Airport",
+     "context": "Erwähnte Payware; 3,2 aus 4, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Ouagadougou."
   },
   "GABS": {
@@ -10690,6 +12559,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "AFRICA TO GO! (Sammelpaket, enthält GABS) · msfsprojects",
+     "url": "https://flightsim.to/addon/53291/africa-to-go",
+     "context": "Erwähntes Freeware-Sammelpaket; nur MSFS 2020, seit 11/2024 ohne Update, 11 Abhängigkeiten – verworfen."
+    },
+    {
+     "label": "GABS Bamako Modibo Keita International Airport · MSFScenerybuilders",
+     "url": "https://www.fsaddoncompare.com/product/1197/GABS-Bamako-Modibo-Keita-International-Airport",
+     "context": "Erwähnte Payware; 2,62 aus 10 – verworfen."
+    }
+   ],
    "hl": "Bamako am Niger."
   },
   "DIAP": {
@@ -10716,6 +12597,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "DIAP - Felix-Houphouet-Boigny International Airport SIMPLE · Chak991",
+     "url": "https://flightsim.to/addon/103767/diap-felix-houphouet-boigny-international-airport-simple",
+     "context": "Erwähnte bewusst einfache Freeware; 5,0 aus 6 – kein klarer Mehrwert, verworfen."
+    },
+    {
+     "label": "DIAP Abidjan Felix International Airport · MSFScenerybuilders",
+     "url": "https://www.fsaddoncompare.com/product/1118/DIAP-Abidjan-Felix-International-Airport",
+     "context": "Erwähnte Payware; 3,38 aus 17, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Abidjan – Lagunenstadt."
   },
   "GLRB": {
@@ -10742,6 +12635,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Roberts International Airport GLRB · Africa4fs",
+     "url": "https://www.fsaddoncompare.com/product/835/Roberts-International-Airport-GLRB",
+     "context": "Erwähnte Payware; 5,0 aus 2, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Monrovia."
   },
   "GFLL": {
@@ -10768,6 +12668,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "GFLL Freetown Lungi NEW AIRPORT · Lennart320",
+     "url": "https://flightsim.to/addon/64632/gfll-freetown-lungi-new-airport",
+     "context": "Erwähnte Freeware; laut Autor keine realistische Umsetzung, 5,0 aus 7 – unter der Schwelle, verworfen."
+    }
+   ],
    "hl": "Freetown-Lungi."
   },
   "GUCY": {
@@ -10794,6 +12701,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "GUCY-Ahmed Sékou Touré International Airport -Gbessia -Conakry Simple · Chak991",
+     "url": "https://flightsim.to/addon/95007/gucy-ahmed-sekou-toure-international-airport-gbessia-conakry",
+     "context": "Erwähnte einfache Freeware; 5,0 aus 1 – verworfen."
+    },
+    {
+     "label": "GUCY Conakri International Airport · MSFScenerybuilders",
+     "url": "https://www.fsaddoncompare.com/product/829/GUCY-Conakri-International-Airport",
+     "context": "Erwähnte Payware; 3,71 aus 7, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Conakry."
   },
   "GGOV": {
@@ -10820,6 +12739,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "GGOV - Bissau Airport Osvaldo Vieira · Lennart320",
+     "url": "https://flightsim.to/addon/61668/ggov-bissau-airport-osvaldo-vieira",
+     "context": "Erwähnte einzige Freeware (nur Bodentexturen); 5,0 aus 1 – verworfen."
+    }
+   ],
    "hl": "Bissau."
   },
   "GBYD": {
@@ -10924,6 +12850,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "GOBD - Dakar Blaise Diagne Airport · Lennart320",
+     "url": "https://flightsim.to/addon/105435/gobd-dakar-blaise-diagne-airport",
+     "context": "Erwähnte Freeware; 5,0 aus erst 3 – keine Empfehlung."
+    }
+   ],
    "hl": "Dakar-Diass."
   },
   "GVAC": {
@@ -10950,6 +12883,23 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "GVAC Amilcar Cabral International Airport · RmStudios",
+     "url": "https://www.fsaddoncompare.com/product/7555/GVAC-Amilcar-Cabral-International-Airport",
+     "context": "Erwähnte Payware; gut bewertet, aber nur MSFS 2020 gelistet – keine Empfehlung."
+    },
+    {
+     "label": "Cape Verde Sal · FSDG",
+     "url": "https://www.fsaddoncompare.com/product/13111/Cape-Verde-Sal",
+     "context": "Erwähnte Payware für 2020/2024; noch ohne Bewertungen – keine Empfehlung."
+    },
+    {
+     "label": "GVAC - Amilcar Cabral International Airport - Sal Island - Cape Verde · ravelino",
+     "url": "https://flightsim.to/addon/42267/gvac-amilcar-cabral-international-airport-sal-island-cape-verde",
+     "context": "Erwähnte Freeware; 3,7 aus 3 – verworfen."
+    }
+   ],
    "hl": "Sal – Kapverden."
   },
   "GQNO": {
@@ -10976,6 +12926,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "GQNO Nouakchott New International Airport · MSFScenerybuilders",
+     "url": "https://www.fsaddoncompare.com/product/1385/GQNO-Nouakchott-New-International-Airport",
+     "context": "Erwähnte Payware; 3,64 aus 11, nur MSFS 2020 – verworfen."
+    },
+    {
+     "label": "GQNO Nouakchott Airport · Lennart320",
+     "url": "https://flightsim.to/addon/105226/gqno-nouakchott-airport",
+     "context": "Erwähnte 2024-Freeware; 5,0 aus 1 – verworfen."
+    }
+   ],
    "hl": "Nouakchott."
   },
   "GMMH": {
@@ -11128,6 +13090,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "LPPT - Humberto Delgado Airport, Lisbon · NSAJID",
+     "url": "https://flightsim.to/addon/54799/lppt-humberto-delgado-airport-lisbon",
+     "context": "Erwähnte Freeware; nur für MSFS 2020 getaggt, 2024 unbestätigt – keine Empfehlung."
+    }
+   ],
    "hl": "Lissabon – Anflug über die Stadt."
   },
   "LPFR": {
@@ -11218,6 +13187,23 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "GMMN - Casablanca Airport · Prealsoft",
+     "url": "https://www.fsaddoncompare.com/product/8491/GMMN-Casablanca-Airport",
+     "context": "Erwähnte Payware; 4,17 aus 65, unter der Schwelle – verworfen."
+    },
+    {
+     "label": "Casablanca · FSDG",
+     "url": "https://www.fsaddoncompare.com/product/12687/Casablanca",
+     "context": "Erwähnte Payware; 3,0 aus 4 – verworfen."
+    },
+    {
+     "label": "GMMN Casablanca - LIGHTS FIX · valexyo",
+     "url": "https://flightsim.to/addon/59224/gmmn-casablanca-lights-fix",
+     "context": "Erwähnter unbewerteter Licht-Fix – keine Szenerie, verworfen."
+    }
+   ],
    "hl": "Casablanca."
   },
   "DAAG": {
@@ -11292,6 +13278,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "AFRICA TO GO! · msfsprojects",
+     "url": "https://flightsim.to/addon/53291/africa-to-go",
+     "context": "Erscheint in der Suche, nennt HLLM auf seiner Seite aber nicht; nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Tripolis-Mitiga."
   },
   "DTTJ": {
@@ -11318,6 +13311,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Djerba · FSDG",
+     "url": "https://www.fsaddoncompare.com/product/5340/Djerba",
+     "context": "Erwähnte einzige Payware; 3,87 aus 6 – verworfen."
+    }
+   ],
    "hl": "Djerba."
   },
   "LMML": {
@@ -11344,6 +13344,23 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Malta (LMML) · iniBuilds",
+     "url": "https://www.fsaddoncompare.com/product/14469/Malta-LMML",
+     "context": "Erwähnte neue 2024-Payware; noch ohne Bewertungen – keine Empfehlung."
+    },
+    {
+     "label": "LMML - Malta International Airport - Malta (Early Access) · vikingnope",
+     "url": "https://flightsim.to/addon/75544/lmml-malta-international-airport-malta-early-access",
+     "context": "Erwähnte Early-Access-Freeware; 4,5 aus 2 – verworfen."
+    },
+    {
+     "label": "JustSim Malta",
+     "url": "https://secure.simmarket.com/justsim-malta-international-airport-msfs.phtml",
+     "context": "Im Vergleich erwähnt; Produktseite nachgetragen. Keine zusätzliche Empfehlung oder eigene Bestätigung der Simulatorqualität."
+    }
+   ],
    "hl": "Malta."
   },
   "LICJ": {
@@ -11501,6 +13518,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "BARCELONA - LEBL - El Prat Airport International V1.0 · Chak991",
+     "url": "https://flightsim.to/addon/46733/barcelona-lebl-el-prat-airport-international-airport-v1-0",
+     "context": "Erwähnte Freeware; nur 3–5 Bewertungen, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Barcelona – H160 in die Pyrenäen nach Andorra."
   },
   "LSGG": {
@@ -11819,6 +13843,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "LATI Tirana Airport Parking Update · JimBrown",
+     "url": "https://flightsim.to/addon/29037/lati-tirana-airport-parking-update",
+     "context": "Erwähntes Parking-Update; 3 Bewertungen – keine Szenerie, verworfen."
+    }
+   ],
    "hl": "Tirana."
   },
   "BKPR": {
@@ -11854,6 +13885,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "BKPR Pristina Airport Parking Fixes · JimBrown",
+     "url": "https://flightsim.to/addon/27381/bkpr-pristina-airport-parking-fixes",
+     "context": "Erwähnte Parking-Fixes; 3,6 aus 5 – verworfen."
+    }
+   ],
    "hl": "Priština – Kosovo."
   },
   "LWSK": {
@@ -11880,6 +13918,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Skopje LWSK (Airport & Lights Enhancement) · EDDB2020",
+     "url": "https://flightsim.to/addon/6723/skopje-lwsk",
+     "context": "Erwähnte Freeware; nur MSFS 2020 gelistet – keine Empfehlung."
+    },
+    {
+     "label": "LWSK - Skopje Airport · Aerosoft",
+     "url": "https://www.fsaddoncompare.com/product/4384/LWSK-Skopje-Airport",
+     "context": "Erwähnte Payware; nur MSFS 2020 gelistet – keine Empfehlung."
+    }
+   ],
    "hl": "Skopje."
   },
   "LGKR": {
@@ -11935,6 +13985,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "LGSK Skiathos International Airport · Orbx",
+     "url": "https://orbxdirect.com/product/lgsk-msfs",
+     "context": "Erwähnte Payware; nur MSFS 2020 – verworfen, geflogen wird mit dem Standard-Airport."
+    }
+   ],
    "hl": "Skiathos – das „St. Maarten Griechenlands“.",
    "brief": "1.628 × 30 m; im September 2024 landete hier sogar ein A321. Tiefe Überflüge am Pistenende sind ein Spotter-Klassiker. Leicht beladen, früh stabil – geflogen wird mit dem Standard-Airport, Orbx gibt es nur für MSFS 2020.",
    "tag": "Beach",
@@ -12023,6 +14080,23 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "LBSF - Sofia Airport 2.0 · Fly2High",
+     "url": "https://www.fsaddoncompare.com/product/4068/LBSF-Sofia-Airport-2.0",
+     "context": "Erwähnte Payware; 4,12 aus 25, unter der Schwelle – verworfen."
+    },
+    {
+     "label": "LBSF Sofia Airport · Aflosim",
+     "url": "https://www.fsaddoncompare.com/product/5014/LBSF-Sofia-Airport",
+     "context": "Erwähnte Payware; nur MSFS 2020 gelistet – verworfen."
+    },
+    {
+     "label": "Sofia Airport (LBSF) · TAW_Leghorn u. a.",
+     "url": "https://flightsim.to/addon/15803/sofia-airport-lbsf",
+     "context": "Erwähnte Freeware; 3,9 aus 11 – verworfen."
+    }
+   ],
    "hl": "Sofia – das Witoscha-Gebirge vor der Stadt."
   },
   "LQSA": {
@@ -12058,6 +14132,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Sarajevo International Airport · Ali Riza Mortaş",
+     "url": "https://flightsim.to/addon/109177/sarajevo-international-airport",
+     "context": "Erwähnte einzige Freeware-Szenerie; noch unbewertet – keine Empfehlung."
+    }
+   ],
    "hl": "Sarajevo im Talkessel."
   },
   "LYBE": {
@@ -12088,6 +14169,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "LYBE - Nikola Tesla - Belgrade, Serbia - 2 runways addon scenery v002.0 · dbs071, caniky u. a.",
+     "url": "https://flightsim.to/file/50776/lybe-nikola-tesla-2-runways-addon-v001",
+     "context": "Erwähnte Erweiterung mit neuer Piste; für MSFS 2024 unbestätigt – nur zum Prüfen, keine Empfehlung."
+    }
+   ],
    "hl": "Belgrad."
   },
   "LHBP": {
@@ -12123,6 +14211,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Budapest Ferenc Liszt LHBP default airport UPGRADE · Olly P",
+     "url": "https://flightsim.to/addon/26551/budapest-ferenc-liszt-lhbp-default-airport-upgrade",
+     "context": "Erwähnte Freeware-Aufwertung; 3,6 aus 4 – verworfen."
+    }
+   ],
    "hl": "Budapest."
   },
   "LZTT": {
@@ -12180,6 +14275,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "LRCL - Cluj-Napoca Avram Iancu Airport · Barelli MSFS Addons",
+     "url": "https://www.fsaddoncompare.com/product/9447/LRCL-Cluj-Napoca-Avram-Iancu-Airport",
+     "context": "Erwähnte Payware; 1,0 aus 1 – verworfen."
+    },
+    {
+     "label": "LRCL Cluj Airport · South Oak Co",
+     "url": "https://www.fsaddoncompare.com/product/9469/LRCL-Cluj-Airport",
+     "context": "Erwähnte Payware; 2,8 aus 5 – verworfen."
+    }
+   ],
    "hl": "Cluj – Siebenbürgen."
   },
   "LROP": {
@@ -12245,6 +14352,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Chisinau LUKK · CHISINAU",
+     "url": "https://flightsim.to/addon/60640/chisinau-lukk",
+     "context": "Erwähnte Freeware; nur MSFS 2020, in 2024 laut Nutzern mit defektem ILS – verworfen."
+    }
+   ],
    "hl": "Chișinău."
   },
   "UKLL": {
@@ -12281,7 +14395,13 @@
     ]
    },
    "hl": "Lwiw – der einzige Weg zur Kategorie Ukraine.",
-   "brief": "Real ist der ukrainische Luftraum seit 2022 für den Linienverkehr gesperrt (Stand der Recherche); im Sim ist Lwiw ein normaler Stopp und kein historischer Flughafen."
+   "brief": "Real ist der ukrainische Luftraum seit 2022 für den Linienverkehr gesperrt (Stand der Recherche); im Sim ist Lwiw ein normaler Stopp und kein historischer Flughafen.",
+   "operatingNote": {
+    "icao": "UKLL",
+    "title": "Aktuell kein ziviler Flugbetrieb – nur Simulator-Ausnahme",
+    "note": "Lwiw ist nicht historisch stillgelegt, aber der ukrainische Luftraum einschließlich FIR Lviv ist laut EASA CZIB-2022-01R14 (Revision 24.07.2026, gültig bis 31.01.2027) für zivile Flüge geschlossen. Damit erfüllt dieser Stopp die strenge Vorgabe „aktuell zivil anfliegbar“ nicht. Alle 245 Kategorien und ausschließlich aktuell zivil erreichbare Airports sind deshalb derzeit nicht gleichzeitig möglich. Der Ukraine-Stopp bleibt für die Kategorie im Simulator markiert; keine Behauptung regulären Betriebs.",
+    "url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2022-01r14"
+   }
   },
   "UMMS": {
    "i": "UMMS",
@@ -12307,6 +14427,18 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "UMMS Minsk National Airport · AmSim",
+     "url": "https://www.fsaddoncompare.com/product/1438/UMMS-Minsk-National-Airport",
+     "context": "Erwähnte Payware; 4,2 aus 53, nur MSFS 2020 – verworfen."
+    },
+    {
+     "label": "Minsk 2 airport (UMMS) with default terminal change · Hetman15",
+     "url": "https://flightsim.to/addon/14252/minsk-2-airport-umms-with-default-terminal-change",
+     "context": "Erwähnte Freeware; 1,5 aus 2 – verworfen."
+    }
+   ],
    "hl": "Minsk."
   },
   "EYVI": {
@@ -12372,6 +14504,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Riga Airport (EVRA) · Desmo",
+     "url": "https://flightsim.to/addon/5588/riga-airport-evra",
+     "context": "Erwähnte Freeware; 4,0 aus 30, nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Riga."
   },
   "EETN": {
@@ -12407,6 +14546,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "EETN Tallinn Lennart Meri (unfinished project) · Carmelo",
+     "url": "https://flightsim.to/addon/29733/eetn-tallinn-lennart-meri-unfinished-project",
+     "context": "Erwähntes unfertiges Freeware-Projekt; 3,5 aus 1 – verworfen."
+    }
+   ],
    "hl": "Tallinn."
   },
   "EFMA": {
@@ -12433,6 +14579,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "EFMA - Mariehamn Airport · WildLynxPilot",
+     "url": "https://flightsim.to/addon/81837/efma-mariehamn-airport",
+     "context": "Erwähnte einzige Freeware; 5,0 aus nur 5 – einen Blick wert, aber unter der Schwelle, keine Empfehlung."
+    }
+   ],
    "hl": "Mariehamn – Åland, eine eigene Volanta-Kategorie.",
    "level": 1
   },
@@ -12569,6 +14722,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "ENTC - Tromsø Airport · M'M Simulations",
+     "url": "https://www.fsaddoncompare.com/product/4106/ENTC-Troms%25C3%25B8-Airport",
+     "context": "Erwähnte Payware; 3,55 aus 64, deutlich schwächer als die Freeware – verworfen."
+    }
+   ],
    "hl": "Tromsø – Fjordinsel unter dem Nordlicht (Freeware artogsta).",
    "level": 1
   },
@@ -12787,6 +14947,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Poland EPWA Warsaw Chopin Airport Ground textures · PG_simulation",
+     "url": "https://flightsim.to/addon/30070/poland-epwa-warsaw-chopin-airport-ground-textures",
+     "context": "Erwähnte Freeware (nur Bodentexturen); nur MSFS 2020 – verworfen."
+    }
+   ],
    "hl": "Warschau."
   },
   "EPKK": {
@@ -13199,7 +15366,19 @@
       "why": "Recherchiert: UK2000 Guernsey (4,5 aus nur 8 Bewertungen, MSFS 2020/2024, ab 14,03 €) ist die solide, aber nicht nötige Aufwertung; die beliebte superspud-Freeware (4,8 aus 73) ist nur für MSFS 2020 markiert und die 2024-Nutzerberichte sind widersprüchlich."
      }
     ]
-   }
+   },
+   "sceneryLinks": [
+    {
+     "label": "EGJB - Guernsey Airport · UK2000 Scenery",
+     "url": "https://www.fsaddoncompare.com/product/10479/EGJB-Guernsey-Airport",
+     "context": "Erwähnte Payware; 4,5 aus nur 8 Bewertungen, unter der Payware-Schwelle – keine Empfehlung, keine feste Add-on-Empfehlung."
+    },
+    {
+     "label": "Channel Islands Airports Upgrade - Jersey, Guernsey, Alderney · superspud",
+     "url": "https://flightsim.to/addon/1615/channel-islands-complete-overhaul-jersey-guernsey-sark-alderney-airports",
+     "context": "Erwähnte Freeware; nur für MSFS 2020 markiert, 2024-Berichte widersprüchlich – verworfen, keine Empfehlung."
+    }
+   ]
   },
   "TUPJ": {
    "i": "TUPJ",
@@ -13233,7 +15412,14 @@
       "why": "SLH-Payware (4,66 aus 19, MSFS 2020/2024, im Sale ab 10,53 €) ist gut, aber nicht nötig; die starke lexuz2020-Freeware (5,0 aus 11) ist nur für MSFS 2020 markiert und für 2024 unbestätigt."
      }
     ]
-   }
+   },
+   "sceneryLinks": [
+    {
+     "label": "Terrance B. Lettsome International Airport (TUPJ) Updated Scenery Project v1.5 · lexuz2020",
+     "url": "https://flightsim.to/addon/15589/terrance-b-lettsome-international-airport-tupj-updated-scenery-project-v1-0",
+     "context": "Erwähnte Freeware; nur für MSFS 2020 markiert, 2024 unbestätigt – keine Empfehlung."
+    }
+   ]
   },
   "TQPF": {
    "i": "TQPF",
@@ -13267,7 +15453,14 @@
       "why": "SLH-Payware (4,72 aus 13, MSFS 2020/2024, im Sale ab 11,41 €) ist gut, aber nicht nötig; die lexuz2020-Freeware (5,0 aus 7) ist nur für MSFS 2020 markiert und für 2024 unbestätigt."
      }
     ]
-   }
+   },
+   "sceneryLinks": [
+    {
+     "label": "Clayton J. Lloyd International (TQPF) Updated Scenery Project v1.5 · lexuz2020",
+     "url": "https://flightsim.to/addon/14685/clayton-j-lloyd-international-tqpf-updated-scenery-project-v1-0",
+     "context": "Erwähnte Freeware; nur für MSFS 2020 markiert, 2024 unbestätigt – keine Empfehlung."
+    }
+   ]
   },
   "TFFJ": {
    "i": "TFFJ",
@@ -13292,7 +15485,10 @@
       "product": "Basis-Sim"
      }
     ]
-   }
+   },
+   "tag": "St. Barth",
+   "hl": "Hügel an der Schwelle",
+   "level": 2
   },
   "TFFG": {
    "i": "TFFG",
@@ -13317,7 +15513,19 @@
       "why": "Recherchiert: Die SLH-Payware (MSFS 2020/2024, ab 13,15 €) hat zwar 5,0, aber erst aus 5 Bewertungen, und die timot75-Freeware ist nur für MSFS 2020 markiert und kaum bewertet (5,0 aus 1)."
      }
     ]
-   }
+   },
+   "sceneryLinks": [
+    {
+     "label": "TFFG - St. Martin Grand Case (L'Espérance Airport) · SLH Sim Designs",
+     "url": "https://www.fsaddoncompare.com/product/11149/TFFG-St.-Martin-Grand-Case-L'Esp%25C3%25A9rance-Airport",
+     "context": "Erwähnte Payware; 5,0 aus erst 5 Bewertungen – unter der Schwelle, keine Empfehlung."
+    },
+    {
+     "label": "St Martin TFFG · timot75",
+     "url": "https://flightsim.to/addon/44024/st-martin-tffg",
+     "context": "Erwähnte Freeware; nur MSFS 2020, 5,0 aus 1 – verworfen."
+    }
+   ]
   },
   "TRPG": {
    "i": "TRPG",
@@ -13544,6 +15752,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Grande Glorieuse Airport Resort · Perseverance",
+     "url": "https://flightsim.to/addon/63230/grande-glorieuse",
+     "context": "Erwähntes fantasievolles, laut Autor unfertiges Add-on; 5,0 aus 1, nur MSFS 2020 – verworfen."
+    }
+   ],
    "simCheck": {
     "status": "unconfirmed",
     "note": "Militärpiste Grande Glorieuse ohne ICAO-Code (OurAirports ZZ-0002): Keine geprüfte Quelle belegt, dass sie im Standard-MSFS existiert; auf flightsim.to gibt es nur ein fantasievolles, laut Autor unfertiges Resort-Add-on. Vorab in der MSFS-Weltkarte und in Volantas Flughafenansicht prüfen. Ausweichplan: ab Mayotte nach Juan de Nova (FMZJ).",
@@ -13577,6 +15792,13 @@
      }
     ]
    },
+   "sceneryLinks": [
+    {
+     "label": "Juan de Nova - Fictional airport · AtomicDZ",
+     "url": "https://flightsim.to/addon/45110/juan-de-nova-fictional-airport",
+     "context": "Erwähnte, vom Autor selbst als fiktiv bezeichnete Freeware; keine Bewertungen – verworfen."
+    }
+   ],
    "simCheck": {
     "status": "unconfirmed",
     "note": "Juan de Nova, Ausweichziel für die Glorieuses: Ob die Piste im Standard-MSFS existiert, sagt keine der geprüften Quellen; die einzige Freeware nennt ihr Autor selbst fiktiv (keine Bewertungen, nur MSFS 2020). Vor dem Ausweichen in der Weltkarte suchen.",
@@ -13604,7 +15826,14 @@
       "why": "Recherchiert: Einzige Option ist die unbewertete Freeware „Vatican City Heliport“ (880 Downloads, nur für MSFS 2020 getaggt), Payware gibt es keine."
      }
     ]
-   }
+   },
+   "sceneryLinks": [
+    {
+     "label": "Vatican City Heliport · kychungdotcom",
+     "url": "https://flightsim.to/addon/27209/vatican-city-heliport",
+     "context": "Erwähnte einzige Freeware; unbewertet, nur MSFS 2020 – keine Empfehlung."
+    }
+   ]
   },
   "LIKD": {
    "i": "LIKD",
@@ -13629,7 +15858,14 @@
       "why": "Recherchiert: Nur kleine, kaum bewertete Freeware – eine MSFS-2024-Version von FG91X (unbewertet, 197 Downloads) und Pille83s ältere 2020-Version (4,8 aus 2) –, Payware gibt es keine."
      }
     ]
-   }
+   },
+   "sceneryLinks": [
+    {
+     "label": "Torraccia Airfield, San Marino for MSFS2024 · FG91X",
+     "url": "https://flightsim.to/addon/99809/torraccia-airfield-torraccia-likd-san-marino-for-msfs2024",
+     "context": "Erwähnte 2024-Freeware; unbewertet – keine Empfehlung."
+    }
+   ]
   },
   "LNMC": {
    "i": "LNMC",
@@ -13657,7 +15893,14 @@
       "rating": "5,0 · 7 · 1.172 Downloads"
      }
     ]
-   }
+   },
+   "sceneryLinks": [
+    {
+     "label": "Monaco Heliport - LNMC · T0kenDesign",
+     "url": "https://flightsim.to/addon/11665/monaco-heliport-lnmc",
+     "context": "Erwähnte ältere Fassung (im Text „t0kenkiwi“, 4,3 aus 26) – keine Empfehlung."
+    }
+   ]
   },
   "AD-ALV": {
    "i": "AD-ALV",
@@ -13677,7 +15920,19 @@
       "why": "Recherchiert: Kein passendes Add-on verifiziert: Simteks Payware „LFUA Andorra National Heliport“ (nur 2024, 4,0 aus 1) beschreibt einen neu eröffneten Heliport auf einem Berg, dessen Identität mit AD-ALV unklar ist, und die Freeware „Cami heliport“ ist ein anderer Landeplatz."
      }
     ]
-   }
+   },
+   "sceneryLinks": [
+    {
+     "label": "LFUA Andorra National Heliport · Simtek Solutions",
+     "url": "https://www.fsaddoncompare.com/product/14364/LFUA-Andorra-National-Heliport",
+     "context": "Erwähnte Payware; Identität mit AD-ALV unklar, 4,0 aus 1 – verworfen."
+    },
+    {
+     "label": "Cami heliport andorra · morg",
+     "url": "https://flightsim.to/file/61560/cami-heliport-andorra",
+     "context": "Erwähnte Freeware für einen anderen Landeplatz – verworfen."
+    }
+   ]
   },
   "LSXB": {
    "i": "LSXB",
@@ -13697,7 +15952,14 @@
       "why": "Recherchiert: Einzige Option ist die Freeware von Heli30 (5,0 aus 5, 1,1K Downloads), die nur für MSFS 2020 getaggt und für 2024 unbestätigt ist; Payware gibt es keine."
      }
     ]
-   }
+   },
+   "sceneryLinks": [
+    {
+     "label": "LSXB Heliport Balzers · Heli30",
+     "url": "https://flightsim.to/addon/47223/lsxb-heliport-balzers",
+     "context": "Erwähnte einzige Freeware; nur MSFS 2020, 2024 unbestätigt – keine Empfehlung."
+    }
+   ]
   }
  },
  "legs": [
@@ -15344,15 +17606,27 @@
    "x": "SEDONA"
   },
   {
-   "id": "L106",
+   "id": "L389",
    "k": "a",
    "f": "KPHX",
-   "t": "KLAS",
+   "t": "KSAN",
    "ch": "07",
    "n": 106,
-   "nm": 222,
-   "air": 51,
-   "blk": 71,
+   "nm": 264,
+   "air": 57,
+   "blk": 77,
+   "o2": false
+  },
+  {
+   "id": "L390",
+   "k": "a",
+   "f": "KSAN",
+   "t": "KLAS",
+   "ch": "07",
+   "n": 107,
+   "nm": 225,
+   "air": 52,
+   "blk": 72,
    "o2": false
   },
   {
@@ -15361,7 +17635,7 @@
    "f": "KLAS",
    "t": "KDEN",
    "ch": "07",
-   "n": 107,
+   "n": 108,
    "nm": 544,
    "air": 99,
    "blk": 119,
@@ -15373,7 +17647,7 @@
    "f": "KDEN",
    "t": "KJAC",
    "ch": "07",
-   "n": 108,
+   "n": 109,
    "nm": 352,
    "air": 71,
    "blk": 91,
@@ -15385,7 +17659,7 @@
    "f": "KJAC",
    "t": "KSLC",
    "ch": "07",
-   "n": 109,
+   "n": 110,
    "nm": 178,
    "air": 45,
    "blk": 65,
@@ -15397,7 +17671,7 @@
    "f": "KSLC",
    "t": "KSFO",
    "ch": "07",
-   "n": 110,
+   "n": 111,
    "nm": 519,
    "air": 95,
    "blk": 115,
@@ -15409,7 +17683,7 @@
    "f": "KSFO",
    "t": "PHKO",
    "ch": "07",
-   "n": 111,
+   "n": 112,
    "nm": 2055,
    "air": 325,
    "blk": 345,
@@ -15421,7 +17695,7 @@
    "f": "PHKO",
    "t": "PHNL",
    "ch": "07",
-   "n": 112,
+   "n": 113,
    "nm": 142,
    "air": 39,
    "blk": 59,
@@ -15433,7 +17707,7 @@
    "f": "PHNL",
    "t": "PMDY",
    "ch": "08",
-   "n": 113,
+   "n": 114,
    "nm": 1136,
    "air": 188,
    "blk": 208,
@@ -15448,7 +17722,7 @@
    "f": "PMDY",
    "t": "PWAK",
    "ch": "08",
-   "n": 114,
+   "n": 115,
    "nm": 1026,
    "air": 171,
    "blk": 191,
@@ -15460,7 +17734,7 @@
    "f": "PWAK",
    "t": "PKMJ",
    "ch": "08",
-   "n": 115,
+   "n": 116,
    "nm": 781,
    "air": 135,
    "blk": 155,
@@ -15475,7 +17749,7 @@
    "f": "PKMJ",
    "t": "PTPN",
    "ch": "08",
-   "n": 116,
+   "n": 117,
    "nm": 778,
    "air": 134,
    "blk": 154,
@@ -15490,7 +17764,7 @@
    "f": "PTPN",
    "t": "PTKK",
    "ch": "08",
-   "n": 117,
+   "n": 118,
    "nm": 380,
    "air": 75,
    "blk": 95,
@@ -15502,7 +17776,7 @@
    "f": "PTKK",
    "t": "PGUM",
    "ch": "08",
-   "n": 118,
+   "n": 119,
    "nm": 551,
    "air": 100,
    "blk": 120,
@@ -15517,7 +17791,7 @@
    "f": "PGUM",
    "t": "PGSN",
    "ch": "08",
-   "n": 119,
+   "n": 120,
    "nm": 112,
    "air": 35,
    "blk": 55,
@@ -15532,7 +17806,7 @@
    "f": "PGSN",
    "t": "PTRO",
    "ch": "08",
-   "n": 120,
+   "n": 121,
    "nm": 805,
    "air": 138,
    "blk": 158,
@@ -15547,7 +17821,7 @@
    "f": "PTRO",
    "t": "RPMD",
    "ch": "08",
-   "n": 121,
+   "n": 122,
    "nm": 530,
    "air": 97,
    "blk": 117,
@@ -15562,7 +17836,7 @@
    "f": "RPMD",
    "t": "WAMM",
    "ch": "08",
-   "n": 122,
+   "n": 123,
    "nm": 337,
    "air": 68,
    "blk": 88,
@@ -15577,7 +17851,7 @@
    "f": "WAMM",
    "t": "WABB",
    "ch": "08",
-   "n": 123,
+   "n": 124,
    "nm": 691,
    "air": 121,
    "blk": 141,
@@ -15589,7 +17863,7 @@
    "f": "WABB",
    "t": "WAJJ",
    "ch": "08",
-   "n": 124,
+   "n": 125,
    "nm": 277,
    "air": 59,
    "blk": 79,
@@ -15601,7 +17875,7 @@
    "f": "WAJJ",
    "t": "AYPY",
    "ch": "08",
-   "n": 125,
+   "n": 126,
    "nm": 574,
    "air": 104,
    "blk": 124,
@@ -15616,7 +17890,7 @@
    "f": "AYPY",
    "t": "AGGH",
    "ch": "09",
-   "n": 126,
+   "n": 127,
    "nm": 760,
    "air": 131,
    "blk": 151,
@@ -15631,7 +17905,7 @@
    "f": "AGGH",
    "t": "ANYN",
    "ch": "09",
-   "n": 127,
+   "n": 128,
    "nm": 672,
    "air": 118,
    "blk": 138,
@@ -15646,7 +17920,7 @@
    "f": "ANYN",
    "t": "NGTA",
    "ch": "09",
-   "n": 128,
+   "n": 129,
    "nm": 391,
    "air": 76,
    "blk": 96,
@@ -15661,7 +17935,7 @@
    "f": "NGTA",
    "t": "NGFU",
    "ch": "09",
-   "n": 129,
+   "n": 130,
    "nm": 696,
    "air": 122,
    "blk": 142,
@@ -15677,7 +17951,7 @@
    "f": "NGFU",
    "t": "NLWW",
    "ch": "09",
-   "n": 130,
+   "n": 131,
    "nm": 392,
    "air": 77,
    "blk": 97,
@@ -15693,7 +17967,7 @@
    "f": "NLWW",
    "t": "NSFA",
    "ch": "09",
-   "n": 131,
+   "n": 132,
    "nm": 247,
    "air": 55,
    "blk": 75,
@@ -15708,7 +17982,7 @@
    "f": "NSFA",
    "t": "NSTU",
    "ch": "09",
-   "n": 132,
+   "n": 133,
    "nm": 81,
    "air": 30,
    "blk": 50,
@@ -15723,7 +17997,7 @@
    "f": "NSTU",
    "t": "NIUE",
    "ch": "09",
-   "n": 133,
+   "n": 134,
    "nm": 289,
    "air": 61,
    "blk": 81,
@@ -15738,7 +18012,7 @@
    "f": "NIUE",
    "t": "NCRG",
    "ch": "09",
-   "n": 134,
+   "n": 135,
    "nm": 584,
    "air": 105,
    "blk": 125,
@@ -15753,7 +18027,7 @@
    "f": "NCRG",
    "t": "NTAA",
    "ch": "09",
-   "n": 135,
+   "n": 136,
    "nm": 617,
    "air": 110,
    "blk": 130,
@@ -15794,7 +18068,7 @@
    "f": "NTAA",
    "t": "NCRG",
    "ch": "09",
-   "n": 136,
+   "n": 137,
    "nm": 617,
    "air": 110,
    "blk": 130,
@@ -15806,7 +18080,7 @@
    "f": "NCRG",
    "t": "NIUE",
    "ch": "09",
-   "n": 137,
+   "n": 138,
    "nm": 584,
    "air": 105,
    "blk": 125,
@@ -15818,7 +18092,7 @@
    "f": "NIUE",
    "t": "NFTF",
    "ch": "09",
-   "n": 138,
+   "n": 139,
    "nm": 322,
    "air": 66,
    "blk": 86,
@@ -15833,7 +18107,7 @@
    "f": "NFTF",
    "t": "NFFN",
    "ch": "09",
-   "n": 139,
+   "n": 140,
    "nm": 468,
    "air": 88,
    "blk": 108,
@@ -15848,7 +18122,7 @@
    "f": "NFFN",
    "t": "NVVV",
    "ch": "09",
-   "n": 140,
+   "n": 141,
    "nm": 521,
    "air": 96,
    "blk": 116,
@@ -15863,7 +18137,7 @@
    "f": "NVVV",
    "t": "NWWW",
    "ch": "09",
-   "n": 141,
+   "n": 142,
    "nm": 285,
    "air": 61,
    "blk": 81,
@@ -15878,7 +18152,7 @@
    "f": "NWWW",
    "t": "YSNF",
    "ch": "09",
-   "n": 142,
+   "n": 143,
    "nm": 432,
    "air": 82,
    "blk": 102,
@@ -15893,7 +18167,7 @@
    "f": "YSNF",
    "t": "NZAA",
    "ch": "09",
-   "n": 143,
+   "n": 144,
    "nm": 589,
    "air": 106,
    "blk": 126,
@@ -15908,7 +18182,7 @@
    "f": "NZAA",
    "t": "NZRO",
    "ch": "10",
-   "n": 144,
+   "n": 145,
    "nm": 98,
    "air": 33,
    "blk": 53,
@@ -15920,7 +18194,7 @@
    "f": "NZRO",
    "t": "NZWN",
    "ch": "10",
-   "n": 145,
+   "n": 146,
    "nm": 205,
    "air": 49,
    "blk": 69,
@@ -15932,7 +18206,7 @@
    "f": "NZWN",
    "t": "NZCH",
    "ch": "10",
-   "n": 146,
+   "n": 147,
    "nm": 164,
    "air": 43,
    "blk": 63,
@@ -15944,7 +18218,7 @@
    "f": "NZCH",
    "t": "NZQN",
    "ch": "10",
-   "n": 147,
+   "n": 148,
    "nm": 187,
    "air": 46,
    "blk": 66,
@@ -15982,7 +18256,7 @@
    "f": "NZQN",
    "t": "YMHB",
    "ch": "10",
-   "n": 148,
+   "n": 149,
    "nm": 924,
    "air": 156,
    "blk": 176,
@@ -15997,7 +18271,7 @@
    "f": "YMHB",
    "t": "YMML",
    "ch": "10",
-   "n": 149,
+   "n": 150,
    "nm": 333,
    "air": 68,
    "blk": 88,
@@ -16009,7 +18283,7 @@
    "f": "YMML",
    "t": "YSSY",
    "ch": "10",
-   "n": 150,
+   "n": 151,
    "nm": 381,
    "air": 75,
    "blk": 95,
@@ -16021,7 +18295,7 @@
    "f": "YSSY",
    "t": "YBCG",
    "ch": "10",
-   "n": 151,
+   "n": 152,
    "nm": 367,
    "air": 73,
    "blk": 93,
@@ -16033,7 +18307,7 @@
    "f": "YBCG",
    "t": "YBHM",
    "ch": "10",
-   "n": 152,
+   "n": 153,
    "nm": 530,
    "air": 97,
    "blk": 117,
@@ -16045,7 +18319,7 @@
    "f": "YBHM",
    "t": "YBCS",
    "ch": "10",
-   "n": 153,
+   "n": 154,
    "nm": 277,
    "air": 59,
    "blk": 79,
@@ -16057,7 +18331,7 @@
    "f": "YBCS",
    "t": "YBMA",
    "ch": "11",
-   "n": 154,
+   "n": 155,
    "nm": 422,
    "air": 81,
    "blk": 101,
@@ -16069,7 +18343,7 @@
    "f": "YBMA",
    "t": "YBAS",
    "ch": "11",
-   "n": 155,
+   "n": 156,
    "nm": 363,
    "air": 72,
    "blk": 92,
@@ -16081,7 +18355,7 @@
    "f": "YBAS",
    "t": "YAYE",
    "ch": "11",
-   "n": 156,
+   "n": 157,
    "nm": 180,
    "air": 45,
    "blk": 65,
@@ -16093,7 +18367,7 @@
    "f": "YAYE",
    "t": "YPKG",
    "ch": "11",
-   "n": 157,
+   "n": 158,
    "nm": 605,
    "air": 108,
    "blk": 128,
@@ -16105,7 +18379,7 @@
    "f": "YPKG",
    "t": "YPPH",
    "ch": "11",
-   "n": 158,
+   "n": 159,
    "nm": 290,
    "air": 61,
    "blk": 81,
@@ -16117,7 +18391,7 @@
    "f": "YPPH",
    "t": "YPLM",
    "ch": "11",
-   "n": 159,
+   "n": 160,
    "nm": 591,
    "air": 106,
    "blk": 126,
@@ -16129,7 +18403,7 @@
    "f": "YPLM",
    "t": "YBRM",
    "ch": "11",
-   "n": 160,
+   "n": 161,
    "nm": 526,
    "air": 96,
    "blk": 116,
@@ -16141,7 +18415,7 @@
    "f": "YBRM",
    "t": "YPDN",
    "ch": "11",
-   "n": 161,
+   "n": 162,
    "nm": 601,
    "air": 108,
    "blk": 128,
@@ -16153,7 +18427,7 @@
    "f": "YPDN",
    "t": "WPDL",
    "ch": "12",
-   "n": 162,
+   "n": 163,
    "nm": 392,
    "air": 77,
    "blk": 97,
@@ -16168,7 +18442,7 @@
    "f": "WPDL",
    "t": "WADD",
    "ch": "12",
-   "n": 163,
+   "n": 164,
    "nm": 614,
    "air": 110,
    "blk": 130,
@@ -16180,7 +18454,7 @@
    "f": "WADD",
    "t": "WALL",
    "ch": "12",
-   "n": 164,
+   "n": 165,
    "nm": 461,
    "air": 87,
    "blk": 107,
@@ -16192,7 +18466,7 @@
    "f": "WALL",
    "t": "WBSB",
    "ch": "12",
-   "n": 165,
+   "n": 166,
    "nm": 391,
    "air": 76,
    "blk": 96,
@@ -16207,7 +18481,7 @@
    "f": "WBSB",
    "t": "WBKK",
    "ch": "12",
-   "n": 166,
+   "n": 167,
    "nm": 89,
    "air": 31,
    "blk": 51,
@@ -16222,7 +18496,7 @@
    "f": "WBKK",
    "t": "WBGG",
    "ch": "12",
-   "n": 167,
+   "n": 168,
    "nm": 433,
    "air": 83,
    "blk": 103,
@@ -16234,7 +18508,7 @@
    "f": "WBGG",
    "t": "WSSS",
    "ch": "12",
-   "n": 168,
+   "n": 169,
    "nm": 382,
    "air": 75,
    "blk": 95,
@@ -16249,7 +18523,7 @@
    "f": "WSSS",
    "t": "WIII",
    "ch": "12",
-   "n": 169,
+   "n": 170,
    "nm": 476,
    "air": 89,
    "blk": 109,
@@ -16261,7 +18535,7 @@
    "f": "WIII",
    "t": "YPXM",
    "ch": "12",
-   "n": 170,
+   "n": 171,
    "nm": 266,
    "air": 58,
    "blk": 78,
@@ -16276,7 +18550,7 @@
    "f": "YPXM",
    "t": "YPCC",
    "ch": "12",
-   "n": 171,
+   "n": 172,
    "nm": 531,
    "air": 97,
    "blk": 117,
@@ -16291,7 +18565,7 @@
    "f": "YPCC",
    "t": "WIEE",
    "ch": "12",
-   "n": 172,
+   "n": 173,
    "nm": 714,
    "air": 125,
    "blk": 145,
@@ -16303,7 +18577,7 @@
    "f": "WIEE",
    "t": "WMKK",
    "ch": "12",
-   "n": 173,
+   "n": 174,
    "nm": 229,
    "air": 52,
    "blk": 72,
@@ -16315,7 +18589,7 @@
    "f": "WMKK",
    "t": "VTSP",
    "ch": "13",
-   "n": 174,
+   "n": 175,
    "nm": 380,
    "air": 75,
    "blk": 95,
@@ -16330,7 +18604,7 @@
    "f": "VTSP",
    "t": "VTBS",
    "ch": "13",
-   "n": 175,
+   "n": 176,
    "nm": 363,
    "air": 72,
    "blk": 92,
@@ -16342,7 +18616,7 @@
    "f": "VTBS",
    "t": "VDSA",
    "ch": "13",
-   "n": 176,
+   "n": 177,
    "nm": 204,
    "air": 48,
    "blk": 68,
@@ -16357,7 +18631,7 @@
    "f": "VDSA",
    "t": "VVTS",
    "ch": "13",
-   "n": 177,
+   "n": 178,
    "nm": 209,
    "air": 49,
    "blk": 69,
@@ -16372,7 +18646,7 @@
    "f": "VVTS",
    "t": "VVDN",
    "ch": "13",
-   "n": 178,
+   "n": 179,
    "nm": 326,
    "air": 67,
    "blk": 87,
@@ -16384,7 +18658,7 @@
    "f": "VVDN",
    "t": "VLLB",
    "ch": "13",
-   "n": 179,
+   "n": 180,
    "nm": 415,
    "air": 80,
    "blk": 100,
@@ -16399,7 +18673,7 @@
    "f": "VLLB",
    "t": "VVNB",
    "ch": "13",
-   "n": 180,
+   "n": 181,
    "nm": 219,
    "air": 51,
    "blk": 71,
@@ -16411,7 +18685,7 @@
    "f": "VVNB",
    "t": "VHHH",
    "ch": "13",
-   "n": 181,
+   "n": 182,
    "nm": 456,
    "air": 86,
    "blk": 106,
@@ -16426,7 +18700,7 @@
    "f": "VHHH",
    "t": "VMMC",
    "ch": "13",
-   "n": 182,
+   "n": 183,
    "nm": 20,
    "air": 25,
    "blk": 45,
@@ -16441,7 +18715,7 @@
    "f": "VMMC",
    "t": "RCTP",
    "ch": "13",
-   "n": 183,
+   "n": 184,
    "nm": 455,
    "air": 86,
    "blk": 106,
@@ -16456,7 +18730,7 @@
    "f": "RCTP",
    "t": "RORS",
    "ch": "13",
-   "n": 184,
+   "n": 185,
    "nm": 213,
    "air": 50,
    "blk": 70,
@@ -16471,7 +18745,7 @@
    "f": "RORS",
    "t": "ROAH",
    "ch": "13",
-   "n": 185,
+   "n": 186,
    "nm": 158,
    "air": 42,
    "blk": 62,
@@ -16483,7 +18757,7 @@
    "f": "ROAH",
    "t": "RJFK",
    "ch": "13",
-   "n": 186,
+   "n": 187,
    "nm": 373,
    "air": 74,
    "blk": 94,
@@ -16495,7 +18769,7 @@
    "f": "RJFK",
    "t": "RJOO",
    "ch": "13",
-   "n": 187,
+   "n": 188,
    "nm": 297,
    "air": 62,
    "blk": 82,
@@ -16507,7 +18781,7 @@
    "f": "RJOO",
    "t": "RJTT",
    "ch": "13",
-   "n": 188,
+   "n": 189,
    "nm": 218,
    "air": 51,
    "blk": 71,
@@ -16519,7 +18793,7 @@
    "f": "RJTT",
    "t": "RKSI",
    "ch": "13",
-   "n": 189,
+   "n": 190,
    "nm": 653,
    "air": 115,
    "blk": 135,
@@ -16534,7 +18808,7 @@
    "f": "RKSI",
    "t": "ZKPY",
    "ch": "13",
-   "n": 190,
+   "n": 191,
    "nm": 112,
    "air": 35,
    "blk": 55,
@@ -16549,7 +18823,7 @@
    "f": "ZKPY",
    "t": "ZYTL",
    "ch": "14",
-   "n": 191,
+   "n": 192,
    "nm": 193,
    "air": 47,
    "blk": 67,
@@ -16564,7 +18838,7 @@
    "f": "ZYTL",
    "t": "ZBAA",
    "ch": "14",
-   "n": 192,
+   "n": 193,
    "nm": 238,
    "air": 54,
    "blk": 74,
@@ -16576,7 +18850,7 @@
    "f": "ZBAA",
    "t": "ZBHH",
    "ch": "14",
-   "n": 193,
+   "n": 194,
    "nm": 223,
    "air": 51,
    "blk": 71,
@@ -16588,7 +18862,7 @@
    "f": "ZBHH",
    "t": "ZMCK",
    "ch": "14",
-   "n": 194,
+   "n": 195,
    "nm": 461,
    "air": 87,
    "blk": 107,
@@ -16603,7 +18877,7 @@
    "f": "ZMCK",
    "t": "UIUU",
    "ch": "14",
-   "n": 195,
+   "n": 196,
    "nm": 251,
    "air": 55,
    "blk": 75,
@@ -16618,7 +18892,7 @@
    "f": "UIUU",
    "t": "UIII",
    "ch": "14",
-   "n": 196,
+   "n": 197,
    "nm": 116,
    "air": 35,
    "blk": 55,
@@ -16630,7 +18904,7 @@
    "f": "UIII",
    "t": "ZMKD",
    "ch": "14",
-   "n": 197,
+   "n": 198,
    "nm": 554,
    "air": 101,
    "blk": 121,
@@ -16642,7 +18916,7 @@
    "f": "ZMKD",
    "t": "UASK",
    "ch": "14",
-   "n": 198,
+   "n": 199,
    "nm": 380,
    "air": 75,
    "blk": 95,
@@ -16657,7 +18931,7 @@
    "f": "UASK",
    "t": "UAAA",
    "ch": "14",
-   "n": 199,
+   "n": 200,
    "nm": 459,
    "air": 87,
    "blk": 107,
@@ -16669,7 +18943,7 @@
    "f": "UAAA",
    "t": "UCFM",
    "ch": "14",
-   "n": 200,
+   "n": 201,
    "nm": 114,
    "air": 35,
    "blk": 55,
@@ -16684,7 +18958,7 @@
    "f": "UCFM",
    "t": "UTTT",
    "ch": "14",
-   "n": 201,
+   "n": 202,
    "nm": 255,
    "air": 56,
    "blk": 76,
@@ -16699,7 +18973,7 @@
    "f": "UTTT",
    "t": "UTSS",
    "ch": "14",
-   "n": 202,
+   "n": 203,
    "nm": 140,
    "air": 39,
    "blk": 59,
@@ -16711,7 +18985,7 @@
    "f": "UTSS",
    "t": "UTDD",
    "ch": "14",
-   "n": 203,
+   "n": 204,
    "nm": 110,
    "air": 34,
    "blk": 54,
@@ -16726,7 +19000,7 @@
    "f": "UTDD",
    "t": "OAKB",
    "ch": "14",
-   "n": 204,
+   "n": 205,
    "nm": 239,
    "air": 54,
    "blk": 74,
@@ -16741,7 +19015,7 @@
    "f": "OAKB",
    "t": "OPSD",
    "ch": "15",
-   "n": 205,
+   "n": 206,
    "nm": 314,
    "air": 65,
    "blk": 85,
@@ -16756,7 +19030,7 @@
    "f": "OPSD",
    "t": "OPIS",
    "ch": "15",
-   "n": 206,
+   "n": 207,
    "nm": 172,
    "air": 44,
    "blk": 64,
@@ -16768,7 +19042,7 @@
    "f": "OPIS",
    "t": "VIAR",
    "ch": "15",
-   "n": 207,
+   "n": 208,
    "nm": 149,
    "air": 40,
    "blk": 60,
@@ -16783,7 +19057,7 @@
    "f": "VIAR",
    "t": "VILH",
    "ch": "15",
-   "n": 208,
+   "n": 209,
    "nm": 201,
    "air": 48,
    "blk": 68,
@@ -16795,7 +19069,7 @@
    "f": "VILH",
    "t": "VIDP",
    "ch": "15",
-   "n": 209,
+   "n": 210,
    "nm": 336,
    "air": 68,
    "blk": 88,
@@ -16807,7 +19081,7 @@
    "f": "VIDP",
    "t": "VEBN",
    "ch": "15",
-   "n": 210,
+   "n": 211,
    "nm": 360,
    "air": 72,
    "blk": 92,
@@ -16819,7 +19093,7 @@
    "f": "VEBN",
    "t": "VNKT",
    "ch": "15",
-   "n": 211,
+   "n": 212,
    "nm": 190,
    "air": 46,
    "blk": 66,
@@ -16860,7 +19134,7 @@
    "f": "VNKT",
    "t": "VQPR",
    "ch": "15",
-   "n": 212,
+   "n": 213,
    "nm": 217,
    "air": 50,
    "blk": 70,
@@ -16875,7 +19149,7 @@
    "f": "VQPR",
    "t": "VGHS",
    "ch": "15",
-   "n": 213,
+   "n": 214,
    "nm": 220,
    "air": 51,
    "blk": 71,
@@ -16890,7 +19164,7 @@
    "f": "VGHS",
    "t": "VYYY",
    "ch": "15",
-   "n": 214,
+   "n": 215,
    "nm": 526,
    "air": 97,
    "blk": 117,
@@ -16905,7 +19179,7 @@
    "f": "VYYY",
    "t": "VOPB",
    "ch": "15",
-   "n": 215,
+   "n": 216,
    "nm": 373,
    "air": 74,
    "blk": 94,
@@ -16917,7 +19191,7 @@
    "f": "VOPB",
    "t": "VOMM",
    "ch": "16",
-   "n": 216,
+   "n": 217,
    "nm": 741,
    "air": 129,
    "blk": 149,
@@ -16929,7 +19203,7 @@
    "f": "VOMM",
    "t": "VCBI",
    "ch": "16",
-   "n": 217,
+   "n": 218,
    "nm": 349,
    "air": 70,
    "blk": 90,
@@ -16944,7 +19218,7 @@
    "f": "VCBI",
    "t": "VRMM",
    "ch": "16",
-   "n": 218,
+   "n": 219,
    "nm": 420,
    "air": 81,
    "blk": 101,
@@ -16959,7 +19233,7 @@
    "f": "VRMM",
    "t": "VOCI",
    "ch": "16",
-   "n": 219,
+   "n": 220,
    "nm": 396,
    "air": 77,
    "blk": 97,
@@ -16971,7 +19245,7 @@
    "f": "VOCI",
    "t": "VOGO",
    "ch": "16",
-   "n": 220,
+   "n": 221,
    "nm": 348,
    "air": 70,
    "blk": 90,
@@ -16983,7 +19257,7 @@
    "f": "VOGO",
    "t": "VABB",
    "ch": "16",
-   "n": 221,
+   "n": 222,
    "nm": 229,
    "air": 52,
    "blk": 72,
@@ -16995,7 +19269,7 @@
    "f": "VABB",
    "t": "VAAH",
    "ch": "16",
-   "n": 222,
+   "n": 223,
    "nm": 240,
    "air": 54,
    "blk": 74,
@@ -17007,7 +19281,7 @@
    "f": "VAAH",
    "t": "OPKC",
    "ch": "16",
-   "n": 223,
+   "n": 224,
    "nm": 319,
    "air": 66,
    "blk": 86,
@@ -17019,7 +19293,7 @@
    "f": "OPKC",
    "t": "OOMS",
    "ch": "16",
-   "n": 224,
+   "n": 225,
    "nm": 492,
    "air": 91,
    "blk": 111,
@@ -17034,7 +19308,7 @@
    "f": "OOMS",
    "t": "OMDB",
    "ch": "16",
-   "n": 225,
+   "n": 226,
    "nm": 187,
    "air": 46,
    "blk": 66,
@@ -17049,7 +19323,7 @@
    "f": "OMDB",
    "t": "OBBI",
    "ch": "16",
-   "n": 226,
+   "n": 227,
    "nm": 263,
    "air": 57,
    "blk": 77,
@@ -17064,7 +19338,7 @@
    "f": "OBBI",
    "t": "OTHH",
    "ch": "16",
-   "n": 227,
+   "n": 228,
    "nm": 79,
    "air": 30,
    "blk": 50,
@@ -17079,7 +19353,7 @@
    "f": "OTHH",
    "t": "OKKK",
    "ch": "16",
-   "n": 228,
+   "n": 229,
    "nm": 306,
    "air": 64,
    "blk": 84,
@@ -17094,7 +19368,7 @@
    "f": "OKKK",
    "t": "OERK",
    "ch": "16",
-   "n": 229,
+   "n": 230,
    "nm": 265,
    "air": 58,
    "blk": 78,
@@ -17109,7 +19383,7 @@
    "f": "OERK",
    "t": "OEAO",
    "ch": "16",
-   "n": 230,
+   "n": 231,
    "nm": 473,
    "air": 89,
    "blk": 109,
@@ -17121,7 +19395,7 @@
    "f": "OEAO",
    "t": "OJAQ",
    "ch": "16",
-   "n": 231,
+   "n": 232,
    "nm": 249,
    "air": 55,
    "blk": 75,
@@ -17136,7 +19410,7 @@
    "f": "OJAQ",
    "t": "LLBG",
    "ch": "16",
-   "n": 232,
+   "n": 233,
    "nm": 144,
    "air": 40,
    "blk": 60,
@@ -17180,7 +19454,7 @@
    "f": "LLBG",
    "t": "OLBA",
    "ch": "17",
-   "n": 233,
+   "n": 234,
    "nm": 113,
    "air": 35,
    "blk": 55,
@@ -17195,7 +19469,7 @@
    "f": "OLBA",
    "t": "OSDI",
    "ch": "17",
-   "n": 234,
+   "n": 235,
    "nm": 57,
    "air": 26,
    "blk": 46,
@@ -17210,7 +19484,7 @@
    "f": "OSDI",
    "t": "ORBI",
    "ch": "17",
-   "n": 235,
+   "n": 236,
    "nm": 387,
    "air": 76,
    "blk": 96,
@@ -17225,7 +19499,7 @@
    "f": "ORBI",
    "t": "OIIE",
    "ch": "17",
-   "n": 236,
+   "n": 237,
    "nm": 366,
    "air": 73,
    "blk": 93,
@@ -17240,7 +19514,7 @@
    "f": "OIIE",
    "t": "UTAA",
    "ch": "17",
-   "n": 237,
+   "n": 238,
    "nm": 379,
    "air": 75,
    "blk": 95,
@@ -17255,7 +19529,7 @@
    "f": "UTAA",
    "t": "UTAK",
    "ch": "17",
-   "n": 238,
+   "n": 239,
    "nm": 279,
    "air": 60,
    "blk": 80,
@@ -17267,7 +19541,7 @@
    "f": "UTAK",
    "t": "UBBB",
    "ch": "17",
-   "n": 239,
+   "n": 240,
    "nm": 137,
    "air": 39,
    "blk": 59,
@@ -17282,7 +19556,7 @@
    "f": "UBBB",
    "t": "UDYZ",
    "ch": "17",
-   "n": 240,
+   "n": 241,
    "nm": 259,
    "air": 57,
    "blk": 77,
@@ -17297,7 +19571,7 @@
    "f": "UDYZ",
    "t": "UGTB",
    "ch": "17",
-   "n": 241,
+   "n": 242,
    "nm": 95,
    "air": 32,
    "blk": 52,
@@ -17312,7 +19586,7 @@
    "f": "UGTB",
    "t": "LTCG",
    "ch": "17",
-   "n": 242,
+   "n": 243,
    "nm": 236,
    "air": 53,
    "blk": 73,
@@ -17327,7 +19601,7 @@
    "f": "LTCG",
    "t": "LTAI",
    "ch": "17",
-   "n": 243,
+   "n": 244,
    "nm": 486,
    "air": 91,
    "blk": 111,
@@ -17339,7 +19613,7 @@
    "f": "LTAI",
    "t": "LCLK",
    "ch": "17",
-   "n": 244,
+   "n": 245,
    "nm": 183,
    "air": 45,
    "blk": 65,
@@ -17354,7 +19628,7 @@
    "f": "LCLK",
    "t": "HECA",
    "ch": "17",
-   "n": 245,
+   "n": 246,
    "nm": 307,
    "air": 64,
    "blk": 84,
@@ -17369,7 +19643,7 @@
    "f": "HECA",
    "t": "HESN",
    "ch": "18",
-   "n": 246,
+   "n": 247,
    "nm": 377,
    "air": 74,
    "blk": 94,
@@ -17381,7 +19655,7 @@
    "f": "HESN",
    "t": "HSPN",
    "ch": "18",
-   "n": 247,
+   "n": 248,
    "nm": 366,
    "air": 73,
    "blk": 93,
@@ -17396,7 +19670,7 @@
    "f": "HSPN",
    "t": "HHAS",
    "ch": "18",
-   "n": 248,
+   "n": 249,
    "nm": 266,
    "air": 58,
    "blk": 78,
@@ -17411,7 +19685,7 @@
    "f": "HHAS",
    "t": "HAAB",
    "ch": "18",
-   "n": 249,
+   "n": 250,
    "nm": 379,
    "air": 75,
    "blk": 95,
@@ -17426,7 +19700,7 @@
    "f": "HAAB",
    "t": "HDAM",
    "ch": "18",
-   "n": 250,
+   "n": 251,
    "nm": 300,
    "air": 63,
    "blk": 83,
@@ -17441,7 +19715,7 @@
    "f": "HDAM",
    "t": "OYSQ",
    "ch": "18",
-   "n": 251,
+   "n": 252,
    "nm": 634,
    "air": 113,
    "blk": 133,
@@ -17456,7 +19730,7 @@
    "f": "OYSQ",
    "t": "HCMH",
    "ch": "18",
-   "n": 252,
+   "n": 253,
    "nm": 608,
    "air": 109,
    "blk": 129,
@@ -17471,7 +19745,7 @@
    "f": "HCMH",
    "t": "HALA",
    "ch": "18",
-   "n": 253,
+   "n": 254,
    "nm": 367,
    "air": 73,
    "blk": 93,
@@ -17483,7 +19757,7 @@
    "f": "HALA",
    "t": "HJJJ",
    "ch": "18",
-   "n": 254,
+   "n": 255,
    "nm": 427,
    "air": 82,
    "blk": 102,
@@ -17498,7 +19772,7 @@
    "f": "HJJJ",
    "t": "HKJK",
    "ch": "18",
-   "n": 255,
+   "n": 256,
    "nm": 490,
    "air": 91,
    "blk": 111,
@@ -17513,7 +19787,7 @@
    "f": "HKJK",
    "t": "HUEN",
    "ch": "18",
-   "n": 256,
+   "n": 257,
    "nm": 281,
    "air": 60,
    "blk": 80,
@@ -17528,7 +19802,7 @@
    "f": "HUEN",
    "t": "HRYR",
    "ch": "18",
-   "n": 257,
+   "n": 258,
    "nm": 183,
    "air": 45,
    "blk": 65,
@@ -17543,7 +19817,7 @@
    "f": "HRYR",
    "t": "HBBA",
    "ch": "18",
-   "n": 258,
+   "n": 259,
    "nm": 95,
    "air": 32,
    "blk": 52,
@@ -17558,7 +19832,7 @@
    "f": "HBBA",
    "t": "HTKJ",
    "ch": "18",
-   "n": 259,
+   "n": 260,
    "nm": 465,
    "air": 87,
    "blk": 107,
@@ -17573,7 +19847,7 @@
    "f": "HTKJ",
    "t": "HTZA",
    "ch": "18",
-   "n": 260,
+   "n": 261,
    "nm": 211,
    "air": 50,
    "blk": 70,
@@ -17585,7 +19859,7 @@
    "f": "HTZA",
    "t": "HKMO",
    "ch": "18",
-   "n": 261,
+   "n": 262,
    "nm": 133,
    "air": 38,
    "blk": 58,
@@ -17597,7 +19871,7 @@
    "f": "HKMO",
    "t": "FSIA",
    "ch": "19",
-   "n": 262,
+   "n": 263,
    "nm": 954,
    "air": 160,
    "blk": 180,
@@ -17612,7 +19886,7 @@
    "f": "FSIA",
    "t": "FJDG",
    "ch": "19",
-   "n": 263,
+   "n": 264,
    "nm": 1020,
    "air": 170,
    "blk": 190,
@@ -17627,7 +19901,7 @@
    "f": "FJDG",
    "t": "FIMP",
    "ch": "19",
-   "n": 264,
+   "n": 265,
    "nm": 1162,
    "air": 192,
    "blk": 212,
@@ -17642,7 +19916,7 @@
    "f": "FIMP",
    "t": "FMEE",
    "ch": "19",
-   "n": 265,
+   "n": 266,
    "nm": 125,
    "air": 37,
    "blk": 57,
@@ -17657,7 +19931,7 @@
    "f": "FMEE",
    "t": "FMMI",
    "ch": "19",
-   "n": 266,
+   "n": 267,
    "nm": 471,
    "air": 88,
    "blk": 108,
@@ -17672,7 +19946,7 @@
    "f": "FMMI",
    "t": "FMNN",
    "ch": "19",
-   "n": 267,
+   "n": 268,
    "nm": 333,
    "air": 68,
    "blk": 88,
@@ -17713,7 +19987,7 @@
    "f": "FMNN",
    "t": "FMCZ",
    "ch": "19",
-   "n": 268,
+   "n": 269,
    "nm": 180,
    "air": 45,
    "blk": 65,
@@ -17728,7 +20002,7 @@
    "f": "FMCZ",
    "t": "FMCH",
    "ch": "19",
-   "n": 269,
+   "n": 270,
    "nm": 141,
    "air": 39,
    "blk": 59,
@@ -17743,7 +20017,7 @@
    "f": "FMCH",
    "t": "FQPB",
    "ch": "19",
-   "n": 270,
+   "n": 271,
    "nm": 183,
    "air": 45,
    "blk": 65,
@@ -17758,7 +20032,7 @@
    "f": "FQPB",
    "t": "FWKI",
    "ch": "20",
-   "n": 271,
+   "n": 272,
    "nm": 397,
    "air": 77,
    "blk": 97,
@@ -17773,7 +20047,7 @@
    "f": "FWKI",
    "t": "FQBR",
    "ch": "20",
-   "n": 272,
+   "n": 273,
    "nm": 366,
    "air": 73,
    "blk": 93,
@@ -17785,7 +20059,7 @@
    "f": "FQBR",
    "t": "FQMA",
    "ch": "20",
-   "n": 273,
+   "n": 274,
    "nm": 389,
    "air": 76,
    "blk": 96,
@@ -17797,7 +20071,7 @@
    "f": "FQMA",
    "t": "FDSK",
    "ch": "20",
-   "n": 274,
+   "n": 275,
    "nm": 53,
    "air": 26,
    "blk": 46,
@@ -17812,7 +20086,7 @@
    "f": "FDSK",
    "t": "FAOR",
    "ch": "20",
-   "n": 275,
+   "n": 276,
    "nm": 187,
    "air": 46,
    "blk": 66,
@@ -17827,7 +20101,7 @@
    "f": "FAOR",
    "t": "FXMM",
    "ch": "20",
-   "n": 276,
+   "n": 277,
    "nm": 202,
    "air": 48,
    "blk": 68,
@@ -17842,7 +20116,7 @@
    "f": "FXMM",
    "t": "FALE",
    "ch": "20",
-   "n": 277,
+   "n": 278,
    "nm": 186,
    "air": 46,
    "blk": 66,
@@ -17854,7 +20128,7 @@
    "f": "FALE",
    "t": "FAGG",
    "ch": "20",
-   "n": 278,
+   "n": 279,
    "nm": 517,
    "air": 95,
    "blk": 115,
@@ -17866,7 +20140,7 @@
    "f": "FAGG",
    "t": "FACT",
    "ch": "20",
-   "n": 279,
+   "n": 280,
    "nm": 188,
    "air": 46,
    "blk": 66,
@@ -17878,7 +20152,7 @@
    "f": "FACT",
    "t": "FYLZ",
    "ch": "20",
-   "n": 280,
+   "n": 281,
    "nm": 470,
    "air": 88,
    "blk": 108,
@@ -17893,7 +20167,7 @@
    "f": "FYLZ",
    "t": "FYWH",
    "ch": "20",
-   "n": 281,
+   "n": 282,
    "nm": 280,
    "air": 60,
    "blk": 80,
@@ -17905,7 +20179,7 @@
    "f": "FYWH",
    "t": "FBKE",
    "ch": "20",
-   "n": 282,
+   "n": 283,
    "nm": 515,
    "air": 95,
    "blk": 115,
@@ -17920,7 +20194,7 @@
    "f": "FBKE",
    "t": "FVFA",
    "ch": "20",
-   "n": 283,
+   "n": 284,
    "nm": 41,
    "air": 25,
    "blk": 45,
@@ -17935,7 +20209,7 @@
    "f": "FVFA",
    "t": "FVHA",
    "ch": "20",
-   "n": 284,
+   "n": 285,
    "nm": 300,
    "air": 63,
    "blk": 83,
@@ -17947,7 +20221,7 @@
    "f": "FVHA",
    "t": "FLKK",
    "ch": "20",
-   "n": 285,
+   "n": 286,
    "nm": 218,
    "air": 51,
    "blk": 71,
@@ -17962,7 +20236,7 @@
    "f": "FLKK",
    "t": "FZQA",
    "ch": "20",
-   "n": 286,
+   "n": 287,
    "nm": 231,
    "air": 52,
    "blk": 72,
@@ -17977,7 +20251,7 @@
    "f": "FZQA",
    "t": "FNME",
    "ch": "20",
-   "n": 287,
+   "n": 288,
    "nm": 602,
    "air": 108,
    "blk": 128,
@@ -17992,7 +20266,7 @@
    "f": "FNME",
    "t": "FNUB",
    "ch": "20",
-   "n": 288,
+   "n": 289,
    "nm": 241,
    "air": 54,
    "blk": 74,
@@ -18004,7 +20278,7 @@
    "f": "FNUB",
    "t": "FNLU",
    "ch": "20",
-   "n": 289,
+   "n": 290,
    "nm": 365,
    "air": 72,
    "blk": 92,
@@ -18016,7 +20290,7 @@
    "f": "FNLU",
    "t": "FHSH",
    "ch": "21",
-   "n": 290,
+   "n": 291,
    "nm": 1184,
    "air": 195,
    "blk": 215,
@@ -18032,7 +20306,7 @@
    "f": "FHSH",
    "t": "FHAW",
    "ch": "21",
-   "n": 291,
+   "n": 292,
    "nm": 702,
    "air": 123,
    "blk": 143,
@@ -18045,7 +20319,7 @@
    "f": "FHAW",
    "t": "FPST",
    "ch": "21",
-   "n": 292,
+   "n": 293,
    "nm": 1358,
    "air": 221,
    "blk": 241,
@@ -18060,7 +20334,7 @@
    "f": "FPST",
    "t": "FOOL",
    "ch": "21",
-   "n": 293,
+   "n": 294,
    "nm": 162,
    "air": 42,
    "blk": 62,
@@ -18075,7 +20349,7 @@
    "f": "FOOL",
    "t": "FZAA",
    "ch": "21",
-   "n": 294,
+   "n": 295,
    "nm": 464,
    "air": 87,
    "blk": 107,
@@ -18087,7 +20361,7 @@
    "f": "FZAA",
    "t": "FCBB",
    "ch": "21",
-   "n": 295,
+   "n": 296,
    "nm": 14,
    "air": 25,
    "blk": 45,
@@ -18102,7 +20376,7 @@
    "f": "FCBB",
    "t": "FGSL",
    "ch": "21",
-   "n": 296,
+   "n": 297,
    "nm": 620,
    "air": 111,
    "blk": 131,
@@ -18117,7 +20391,7 @@
    "f": "FGSL",
    "t": "FKKD",
    "ch": "21",
-   "n": 297,
+   "n": 298,
    "nm": 62,
    "air": 27,
    "blk": 47,
@@ -18132,7 +20406,7 @@
    "f": "FKKD",
    "t": "FEFF",
    "ch": "21",
-   "n": 298,
+   "n": 299,
    "nm": 527,
    "air": 97,
    "blk": 117,
@@ -18147,7 +20421,7 @@
    "f": "FEFF",
    "t": "FTTJ",
    "ch": "21",
-   "n": 299,
+   "n": 300,
    "nm": 508,
    "air": 94,
    "blk": 114,
@@ -18162,7 +20436,7 @@
    "f": "FTTJ",
    "t": "DNSO",
    "ch": "21",
-   "n": 300,
+   "n": 301,
    "nm": 577,
    "air": 104,
    "blk": 124,
@@ -18177,7 +20451,7 @@
    "f": "DNSO",
    "t": "DRRN",
    "ch": "21",
-   "n": 301,
+   "n": 302,
    "nm": 180,
    "air": 45,
    "blk": 65,
@@ -18192,7 +20466,7 @@
    "f": "DRRN",
    "t": "DNMM",
    "ch": "21",
-   "n": 302,
+   "n": 303,
    "nm": 420,
    "air": 81,
    "blk": 101,
@@ -18204,7 +20478,7 @@
    "f": "DNMM",
    "t": "DBBB",
    "ch": "22",
-   "n": 303,
+   "n": 304,
    "nm": 57,
    "air": 27,
    "blk": 47,
@@ -18219,7 +20493,7 @@
    "f": "DBBB",
    "t": "DXXX",
    "ch": "22",
-   "n": 304,
+   "n": 305,
    "nm": 68,
    "air": 28,
    "blk": 48,
@@ -18234,7 +20508,7 @@
    "f": "DXXX",
    "t": "DGAA",
    "ch": "22",
-   "n": 305,
+   "n": 306,
    "nm": 91,
    "air": 32,
    "blk": 52,
@@ -18249,7 +20523,7 @@
    "f": "DGAA",
    "t": "DFFD",
    "ch": "22",
-   "n": 306,
+   "n": 307,
    "nm": 413,
    "air": 80,
    "blk": 100,
@@ -18264,7 +20538,7 @@
    "f": "DFFD",
    "t": "GABS",
    "ch": "22",
-   "n": 307,
+   "n": 308,
    "nm": 377,
    "air": 74,
    "blk": 94,
@@ -18279,7 +20553,7 @@
    "f": "GABS",
    "t": "DIAP",
    "ch": "22",
-   "n": 308,
+   "n": 309,
    "nm": 497,
    "air": 92,
    "blk": 112,
@@ -18294,7 +20568,7 @@
    "f": "DIAP",
    "t": "GLRB",
    "ch": "22",
-   "n": 309,
+   "n": 310,
    "nm": 389,
    "air": 76,
    "blk": 96,
@@ -18309,7 +20583,7 @@
    "f": "GLRB",
    "t": "GFLL",
    "ch": "22",
-   "n": 310,
+   "n": 311,
    "nm": 221,
    "air": 51,
    "blk": 71,
@@ -18324,7 +20598,7 @@
    "f": "GFLL",
    "t": "GUCY",
    "ch": "22",
-   "n": 311,
+   "n": 312,
    "nm": 63,
    "air": 27,
    "blk": 47,
@@ -18339,7 +20613,7 @@
    "f": "GUCY",
    "t": "GGOV",
    "ch": "22",
-   "n": 312,
+   "n": 313,
    "nm": 184,
    "air": 45,
    "blk": 65,
@@ -18354,7 +20628,7 @@
    "f": "GGOV",
    "t": "GBYD",
    "ch": "22",
-   "n": 313,
+   "n": 314,
    "nm": 105,
    "air": 34,
    "blk": 54,
@@ -18369,7 +20643,7 @@
    "f": "GBYD",
    "t": "GOBD",
    "ch": "22",
-   "n": 314,
+   "n": 315,
    "nm": 84,
    "air": 30,
    "blk": 50,
@@ -18384,7 +20658,7 @@
    "f": "GOBD",
    "t": "GVAC",
    "ch": "22",
-   "n": 315,
+   "n": 316,
    "nm": 361,
    "air": 72,
    "blk": 92,
@@ -18399,7 +20673,7 @@
    "f": "GVAC",
    "t": "GQNO",
    "ch": "23",
-   "n": 316,
+   "n": 317,
    "nm": 410,
    "air": 79,
    "blk": 99,
@@ -18414,7 +20688,7 @@
    "f": "GQNO",
    "t": "GMMH",
    "ch": "23",
-   "n": 317,
+   "n": 318,
    "nm": 325,
    "air": 66,
    "blk": 86,
@@ -18429,7 +20703,7 @@
    "f": "GMMH",
    "t": "GCXO",
    "ch": "23",
-   "n": 318,
+   "n": 319,
    "nm": 287,
    "air": 61,
    "blk": 81,
@@ -18444,7 +20718,7 @@
    "f": "GCXO",
    "t": "LPMA",
    "ch": "23",
-   "n": 319,
+   "n": 320,
    "nm": 254,
    "air": 56,
    "blk": 76,
@@ -18459,7 +20733,7 @@
    "f": "LPMA",
    "t": "LPPT",
    "ch": "23",
-   "n": 320,
+   "n": 321,
    "nm": 521,
    "air": 96,
    "blk": 116,
@@ -18471,7 +20745,7 @@
    "f": "LPPT",
    "t": "LPFR",
    "ch": "23",
-   "n": 321,
+   "n": 322,
    "nm": 119,
    "air": 36,
    "blk": 56,
@@ -18483,7 +20757,7 @@
    "f": "LPFR",
    "t": "LXGB",
    "ch": "23",
-   "n": 322,
+   "n": 323,
    "nm": 137,
    "air": 38,
    "blk": 58,
@@ -18498,7 +20772,7 @@
    "f": "LXGB",
    "t": "GMMN",
    "ch": "23",
-   "n": 323,
+   "n": 324,
    "nm": 200,
    "air": 48,
    "blk": 68,
@@ -18513,7 +20787,7 @@
    "f": "GMMN",
    "t": "DAAG",
    "ch": "23",
-   "n": 324,
+   "n": 325,
    "nm": 567,
    "air": 103,
    "blk": 123,
@@ -18528,7 +20802,7 @@
    "f": "DAAG",
    "t": "HLLM",
    "ch": "23",
-   "n": 325,
+   "n": 326,
    "nm": 546,
    "air": 99,
    "blk": 119,
@@ -18543,7 +20817,7 @@
    "f": "HLLM",
    "t": "DTTJ",
    "ch": "23",
-   "n": 326,
+   "n": 327,
    "nm": 139,
    "air": 39,
    "blk": 59,
@@ -18558,7 +20832,7 @@
    "f": "DTTJ",
    "t": "LMML",
    "ch": "23",
-   "n": 327,
+   "n": 328,
    "nm": 218,
    "air": 51,
    "blk": 71,
@@ -18573,7 +20847,7 @@
    "f": "LMML",
    "t": "LICJ",
    "ch": "24",
-   "n": 328,
+   "n": 329,
    "nm": 155,
    "air": 41,
    "blk": 61,
@@ -18588,7 +20862,7 @@
    "f": "LICJ",
    "t": "LIRF",
    "ch": "24",
-   "n": 329,
+   "n": 330,
    "nm": 221,
    "air": 51,
    "blk": 71,
@@ -18658,7 +20932,7 @@
    "f": "LIRF",
    "t": "LFMN",
    "ch": "24",
-   "n": 330,
+   "n": 331,
    "nm": 248,
    "air": 55,
    "blk": 75,
@@ -18702,7 +20976,7 @@
    "f": "LFMN",
    "t": "LEPA",
    "ch": "24",
-   "n": 331,
+   "n": 332,
    "nm": 318,
    "air": 65,
    "blk": 85,
@@ -18714,7 +20988,7 @@
    "f": "LEPA",
    "t": "LEBL",
    "ch": "24",
-   "n": 332,
+   "n": 333,
    "nm": 109,
    "air": 34,
    "blk": 54,
@@ -18755,7 +21029,7 @@
    "f": "LEBL",
    "t": "LSGG",
    "ch": "24",
-   "n": 333,
+   "n": 334,
    "nm": 344,
    "air": 69,
    "blk": 89,
@@ -18770,7 +21044,7 @@
    "f": "LSGG",
    "t": "LSZH",
    "ch": "24",
-   "n": 334,
+   "n": 335,
    "nm": 124,
    "air": 37,
    "blk": 57,
@@ -18811,7 +21085,7 @@
    "f": "LSZH",
    "t": "LOWI",
    "ch": "24",
-   "n": 335,
+   "n": 336,
    "nm": 114,
    "air": 35,
    "blk": 55,
@@ -18826,7 +21100,7 @@
    "f": "LOWI",
    "t": "LOWS",
    "ch": "24",
-   "n": 336,
+   "n": 337,
    "nm": 74,
    "air": 29,
    "blk": 49,
@@ -18838,7 +21112,7 @@
    "f": "LOWS",
    "t": "LOWG",
    "ch": "24",
-   "n": 337,
+   "n": 338,
    "nm": 110,
    "air": 34,
    "blk": 54,
@@ -18850,7 +21124,7 @@
    "f": "LOWG",
    "t": "LJLJ",
    "ch": "25",
-   "n": 338,
+   "n": 339,
    "nm": 61,
    "air": 27,
    "blk": 47,
@@ -18865,7 +21139,7 @@
    "f": "LJLJ",
    "t": "LDRI",
    "ch": "25",
-   "n": 339,
+   "n": 340,
    "nm": 61,
    "air": 27,
    "blk": 47,
@@ -18880,7 +21154,7 @@
    "f": "LDRI",
    "t": "LDDU",
    "ch": "25",
-   "n": 340,
+   "n": 341,
    "nm": 226,
    "air": 52,
    "blk": 72,
@@ -18892,7 +21166,7 @@
    "f": "LDDU",
    "t": "LYTV",
    "ch": "25",
-   "n": 341,
+   "n": 342,
    "nm": 22,
    "air": 25,
    "blk": 45,
@@ -18907,7 +21181,7 @@
    "f": "LYTV",
    "t": "LATI",
    "ch": "25",
-   "n": 342,
+   "n": 343,
    "nm": 74,
    "air": 29,
    "blk": 49,
@@ -18922,7 +21196,7 @@
    "f": "LATI",
    "t": "BKPR",
    "ch": "25",
-   "n": 343,
+   "n": 344,
    "nm": 91,
    "air": 32,
    "blk": 52,
@@ -18937,7 +21211,7 @@
    "f": "BKPR",
    "t": "LWSK",
    "ch": "25",
-   "n": 344,
+   "n": 345,
    "nm": 45,
    "air": 25,
    "blk": 45,
@@ -18952,7 +21226,7 @@
    "f": "LWSK",
    "t": "LGKR",
    "ch": "25",
-   "n": 345,
+   "n": 346,
    "nm": 161,
    "air": 42,
    "blk": 62,
@@ -18967,7 +21241,7 @@
    "f": "LGKR",
    "t": "LGSK",
    "ch": "25",
-   "n": 346,
+   "n": 347,
    "nm": 168,
    "air": 43,
    "blk": 63,
@@ -18979,7 +21253,7 @@
    "f": "LGSK",
    "t": "LGAV",
    "ch": "25",
-   "n": 347,
+   "n": 348,
    "nm": 77,
    "air": 30,
    "blk": 50,
@@ -18991,7 +21265,7 @@
    "f": "LGAV",
    "t": "LGSM",
    "ch": "25",
-   "n": 348,
+   "n": 349,
    "nm": 141,
    "air": 39,
    "blk": 59,
@@ -19003,7 +21277,7 @@
    "f": "LGSM",
    "t": "LBSF",
    "ch": "25",
-   "n": 349,
+   "n": 350,
    "nm": 340,
    "air": 69,
    "blk": 89,
@@ -19018,7 +21292,7 @@
    "f": "LBSF",
    "t": "LQSA",
    "ch": "26",
-   "n": 350,
+   "n": 351,
    "nm": 232,
    "air": 53,
    "blk": 73,
@@ -19033,7 +21307,7 @@
    "f": "LQSA",
    "t": "LYBE",
    "ch": "26",
-   "n": 351,
+   "n": 352,
    "nm": 104,
    "air": 33,
    "blk": 53,
@@ -19048,7 +21322,7 @@
    "f": "LYBE",
    "t": "LHBP",
    "ch": "26",
-   "n": 352,
+   "n": 353,
    "nm": 163,
    "air": 42,
    "blk": 62,
@@ -19063,7 +21337,7 @@
    "f": "LHBP",
    "t": "LZTT",
    "ch": "26",
-   "n": 353,
+   "n": 354,
    "nm": 106,
    "air": 34,
    "blk": 54,
@@ -19078,7 +21352,7 @@
    "f": "LZTT",
    "t": "LRCL",
    "ch": "26",
-   "n": 354,
+   "n": 355,
    "nm": 195,
    "air": 47,
    "blk": 67,
@@ -19093,7 +21367,7 @@
    "f": "LRCL",
    "t": "LROP",
    "ch": "26",
-   "n": 355,
+   "n": 356,
    "nm": 167,
    "air": 43,
    "blk": 63,
@@ -19105,7 +21379,7 @@
    "f": "LROP",
    "t": "LUKK",
    "ch": "26",
-   "n": 356,
+   "n": 357,
    "nm": 184,
    "air": 46,
    "blk": 66,
@@ -19120,7 +21394,7 @@
    "f": "LUKK",
    "t": "UKLL",
    "ch": "26",
-   "n": 357,
+   "n": 358,
    "nm": 263,
    "air": 57,
    "blk": 77,
@@ -19135,7 +21409,7 @@
    "f": "UKLL",
    "t": "UMMS",
    "ch": "26",
-   "n": 358,
+   "n": 359,
    "nm": 287,
    "air": 61,
    "blk": 81,
@@ -19150,7 +21424,7 @@
    "f": "UMMS",
    "t": "EYVI",
    "ch": "26",
-   "n": 359,
+   "n": 360,
    "nm": 106,
    "air": 34,
    "blk": 54,
@@ -19165,7 +21439,7 @@
    "f": "EYVI",
    "t": "EVRA",
    "ch": "26",
-   "n": 360,
+   "n": 361,
    "nm": 144,
    "air": 40,
    "blk": 60,
@@ -19180,7 +21454,7 @@
    "f": "EVRA",
    "t": "EETN",
    "ch": "26",
-   "n": 361,
+   "n": 362,
    "nm": 152,
    "air": 41,
    "blk": 61,
@@ -19195,7 +21469,7 @@
    "f": "EETN",
    "t": "EFMA",
    "ch": "27",
-   "n": 362,
+   "n": 363,
    "nm": 155,
    "air": 41,
    "blk": 61,
@@ -19210,7 +21484,7 @@
    "f": "EFMA",
    "t": "ESSA",
    "ch": "27",
-   "n": 363,
+   "n": 364,
    "nm": 66,
    "air": 28,
    "blk": 48,
@@ -19225,7 +21499,7 @@
    "f": "ESSA",
    "t": "EFVA",
    "ch": "27",
-   "n": 364,
+   "n": 365,
    "nm": 232,
    "air": 53,
    "blk": 73,
@@ -19240,7 +21514,7 @@
    "f": "EFVA",
    "t": "EFIV",
    "ch": "27",
-   "n": 365,
+   "n": 366,
    "nm": 361,
    "air": 72,
    "blk": 92,
@@ -19252,7 +21526,7 @@
    "f": "EFIV",
    "t": "ESNQ",
    "ch": "27",
-   "n": 366,
+   "n": 367,
    "nm": 164,
    "air": 43,
    "blk": 63,
@@ -19264,7 +21538,7 @@
    "f": "ESNQ",
    "t": "ENTC",
    "ch": "27",
-   "n": 367,
+   "n": 368,
    "nm": 116,
    "air": 35,
    "blk": 55,
@@ -19279,7 +21553,7 @@
    "f": "ENTC",
    "t": "ENSB",
    "ch": "27",
-   "n": 368,
+   "n": 369,
    "nm": 517,
    "air": 95,
    "blk": 115,
@@ -19294,7 +21568,7 @@
    "f": "ENSB",
    "t": "ENBO",
    "ch": "27",
-   "n": 369,
+   "n": 370,
    "nm": 659,
    "air": 116,
    "blk": 136,
@@ -19306,7 +21580,7 @@
    "f": "ENBO",
    "t": "ENVA",
    "ch": "27",
-   "n": 370,
+   "n": 371,
    "nm": 244,
    "air": 54,
    "blk": 74,
@@ -19318,7 +21592,7 @@
    "f": "ENVA",
    "t": "ENGM",
    "ch": "27",
-   "n": 371,
+   "n": 372,
    "nm": 196,
    "air": 47,
    "blk": 67,
@@ -19330,7 +21604,7 @@
    "f": "ENGM",
    "t": "EKCH",
    "ch": "27",
-   "n": 372,
+   "n": 373,
    "nm": 279,
    "air": 60,
    "blk": 80,
@@ -19345,7 +21619,7 @@
    "f": "EKCH",
    "t": "EKRN",
    "ch": "27",
-   "n": 373,
+   "n": 374,
    "nm": 79,
    "air": 30,
    "blk": 50,
@@ -19357,7 +21631,7 @@
    "f": "EKRN",
    "t": "EPWA",
    "ch": "28",
-   "n": 374,
+   "n": 375,
    "nm": 281,
    "air": 60,
    "blk": 80,
@@ -19372,7 +21646,7 @@
    "f": "EPWA",
    "t": "EPKK",
    "ch": "28",
-   "n": 375,
+   "n": 376,
    "nm": 133,
    "air": 38,
    "blk": 58,
@@ -19384,7 +21658,7 @@
    "f": "EPKK",
    "t": "LKKV",
    "ch": "28",
-   "n": 376,
+   "n": 377,
    "nm": 264,
    "air": 57,
    "blk": 77,
@@ -19399,7 +21673,7 @@
    "f": "LKKV",
    "t": "EDDM",
    "ch": "28",
-   "n": 377,
+   "n": 378,
    "nm": 119,
    "air": 36,
    "blk": 56,
@@ -19411,7 +21685,7 @@
    "f": "EDDM",
    "t": "EDDN",
    "ch": "28",
-   "n": 378,
+   "n": 379,
    "nm": 74,
    "air": 29,
    "blk": 49,
@@ -19423,7 +21697,7 @@
    "f": "EDDN",
    "t": "EDDP",
    "ch": "28",
-   "n": 379,
+   "n": 380,
    "nm": 123,
    "air": 36,
    "blk": 56,
@@ -19435,7 +21709,7 @@
    "f": "EDDP",
    "t": "EDDB",
    "ch": "28",
-   "n": 380,
+   "n": 381,
    "nm": 73,
    "air": 29,
    "blk": 49,
@@ -19447,7 +21721,7 @@
    "f": "EDDB",
    "t": "EDXW",
    "ch": "28",
-   "n": 381,
+   "n": 382,
    "nm": 239,
    "air": 54,
    "blk": 74,
@@ -19459,7 +21733,7 @@
    "f": "EDXW",
    "t": "EDDW",
    "ch": "28",
-   "n": 382,
+   "n": 383,
    "nm": 113,
    "air": 35,
    "blk": 55,
@@ -19471,7 +21745,7 @@
    "f": "EDDW",
    "t": "EDDV",
    "ch": "28",
-   "n": 383,
+   "n": 384,
    "nm": 48,
    "air": 25,
    "blk": 45,
@@ -19483,7 +21757,7 @@
    "f": "EDDV",
    "t": "EDLP",
    "ch": "28",
-   "n": 384,
+   "n": 385,
    "nm": 64,
    "air": 28,
    "blk": 48,
@@ -19495,7 +21769,7 @@
    "f": "EDLP",
    "t": "EDDF",
    "ch": "28",
-   "n": 385,
+   "n": 386,
    "nm": 95,
    "air": 32,
    "blk": 52,
@@ -19507,7 +21781,7 @@
    "f": "EDDF",
    "t": "EDDK",
    "ch": "28",
-   "n": 386,
+   "n": 387,
    "nm": 74,
    "air": 29,
    "blk": 49,
@@ -19519,7 +21793,7 @@
    "f": "EDDK",
    "t": "EDDL",
    "ch": "28",
-   "n": 387,
+   "n": 388,
    "nm": 29,
    "air": 25,
    "blk": 45,
@@ -19531,7 +21805,7 @@
    "f": "EDDL",
    "t": "EDLV",
    "ch": "28",
-   "n": 388,
+   "n": 389,
    "nm": 30,
    "air": 25,
    "blk": 45,
@@ -21997,6 +24271,7 @@
     "KJFK",
     "KPHX",
     "KSEZ",
+    "KSAN",
     "KLAS",
     "KDEN",
     "KJAC",
@@ -22214,11 +24489,648 @@
   "airports": 289,
   "rules": "Freeware-Empfehlung ab 4,5 Sternen bei mindestens 8 Bewertungen oder 6.000 Downloads und belegtem MSFS-2024-Betrieb (Tag, Autor oder Nutzer). Payware-Option ab 4,3 Sternen bei mindestens 10 Bewertungen und MSFS-2024-Angabe. Kostenlose Kandidaten unter der Schwelle stehen nur als „Freeware zum Prüfen“ da. Ohne belegten Mehrwert: „Angebot recherchiert“ mit Begründung. Preise: günstigster Händler laut FSAddonCompare, meist ohne Steuern. Die Schwellen gelten für die 289 Airports dieser Recherche und für die älteren Freeware-Einträge (am 24.09.2026 nachgezählt; VILH, VRMM und NTTB stehen seitdem nur noch zum Prüfen da). Ausgenommen, jeweils mit eigener Begründung: die handverlesenen Kauf-Tipps und ältere bezahlte Beobachtungskandidaten unter der Payware-Schwelle (FACT, VNKT, OYSQ, FVFA/FSDG, VQPR/FSDG, NTAA, MMMX, VILH/Sundownersim) – diese bleiben optional."
  },
+ "highlightAudit": {
+  "date": "2026-09-25",
+  "scope": "Gezielter qualitativer Abgleich, keine vollständige Weltrangliste und keine statistische Häufigkeitsmessung. Historische Medienlisten dienen nur als Inspirationsquelle. Bei neuen Kandidaten wurde laufender Betrieb anhand von Betreiber-, Tourismus- oder Airlinequellen geprüft; das ist keine H160- oder Fenix-Zulassung und kein Sim-Test. Die gesamte Bestandsroute wurde nicht live auf NOTAMs geprüft.",
+  "airports": [
+   {
+    "icao": "TNCM",
+    "name": "Sint Maarten",
+    "feature": "Maho Beach",
+    "sources": [
+     "https://www.privatefly.com/airport-poll/privatefly-airport-poll-results-2018.html",
+     "https://www.privatefly.com/airport-poll/privatefly-airport-poll-results-2020.html",
+     "https://www.flightradar24.com/blog/threads/which-airport-approach-or-departure-do-you-think-is-the-most-scenic/"
+    ],
+    "legs": [
+     "L028",
+     "X-AI-2",
+     "X-BL-2",
+     "X-MF-2"
+    ],
+    "coverage": "A320"
+   },
+   {
+    "icao": "TFFJ",
+    "name": "St. Barth",
+    "feature": "Hügel an der Schwelle",
+    "sources": [
+     "https://www.reddit.com/r/flightsim/comments/1wa4n9e/interesting_airports_for_approaches/"
+    ],
+    "promote": true,
+    "legs": [
+     "X-BL-1"
+    ],
+    "coverage": "H160"
+   },
+   {
+    "icao": "VQPR",
+    "name": "Paro",
+    "feature": "Enges Tal",
+    "sources": [
+     "https://forums.flightsimulator.com/t/recommend-me-scenic-approaches-on-a320/467361",
+     "https://www.flightradar24.com/blog/threads/which-airport-approach-or-departure-do-you-think-is-the-most-scenic/"
+    ],
+    "legs": [
+     "L212"
+    ],
+    "coverage": "A320"
+   },
+   {
+    "icao": "LOWI",
+    "name": "Innsbruck",
+    "feature": "Alpen und Inntal",
+    "sources": [
+     "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943",
+     "https://forums.flightsimulator.com/t/recommend-me-scenic-approaches-on-a320/467361",
+     "https://forums.flightsimulator.com/t/favorite-approach-in-msfs/449235?page=2"
+    ],
+    "legs": [
+     "L335"
+    ],
+    "coverage": "A320"
+   },
+   {
+    "icao": "LPMA",
+    "name": "Madeira",
+    "feature": "Bahnplattform und Küste",
+    "sources": [
+     "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943",
+     "https://forums.flightsimulator.com/t/recommend-me-scenic-approaches-on-a320/467361"
+    ],
+    "legs": [
+     "L319"
+    ],
+    "coverage": "A320"
+   },
+   {
+    "icao": "LXGB",
+    "name": "Gibraltar",
+    "feature": "Felsen neben der Bahn",
+    "sources": [
+     "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943",
+     "https://forums.flightsimulator.com/t/recommend-me-scenic-approaches-on-a320/467361",
+     "https://forums.flightsimulator.com/t/favorite-approach-in-msfs/449235?page=2"
+    ],
+    "legs": [
+     "L322"
+    ],
+    "coverage": "A320"
+   },
+   {
+    "icao": "LGSK",
+    "name": "Skiathos",
+    "feature": "Strand und Hafen",
+    "sources": [
+     "https://www.privatefly.com/airport-poll/privatefly-airport-poll-results-2020.html"
+    ],
+    "legs": [
+     "L346"
+    ],
+    "coverage": "A320"
+   },
+   {
+    "icao": "NZQN",
+    "name": "Queenstown",
+    "feature": "See und Gebirgskessel",
+    "sources": [
+     "https://www.privatefly.com/airport-poll/privatefly-airport-poll-results-2018.html",
+     "https://www.flightradar24.com/blog/threads/which-airport-approach-or-departure-do-you-think-is-the-most-scenic/",
+     "https://forums.flightsimulator.com/t/favorite-approach-in-msfs/449235?page=2"
+    ],
+    "legs": [
+     "L147",
+     "X-MILFORD-2"
+    ],
+    "coverage": "A320"
+   },
+   {
+    "icao": "SBRJ",
+    "name": "Rio – Santos Dumont",
+    "feature": "Stadt und Guanabara-Bucht",
+    "sources": [
+     "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943",
+     "https://forums.flightsimulator.com/t/recommend-me-scenic-approaches-on-a320/467361"
+    ],
+    "legs": [
+     "L053"
+    ],
+    "coverage": "A320"
+   },
+   {
+    "icao": "KDCA",
+    "name": "Washington National",
+    "feature": "River Visual 19",
+    "sources": [
+     "https://forums.flightsimulator.com/t/recommend-me-scenic-approaches-on-a320/467361",
+     "https://forums.flightsimulator.com/t/your-top-airport-addons/541754"
+    ],
+    "legs": [
+     "L023"
+    ],
+    "coverage": "A320"
+   },
+   {
+    "icao": "KSFO",
+    "name": "San Francisco",
+    "feature": "Bucht",
+    "sources": [
+     "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943"
+    ],
+    "legs": [
+     "L110"
+    ],
+    "coverage": "A320"
+   },
+   {
+    "icao": "LFMN",
+    "name": "Nizza",
+    "feature": "Côte d’Azur",
+    "sources": [
+     "https://www.privatefly.com/airport-poll/privatefly-airport-poll-results-2018.html",
+     "https://forums.flightsimulator.com/t/recommend-me-scenic-approaches-on-a320/467361"
+    ],
+    "legs": [
+     "L330",
+     "X-MC-2"
+    ],
+    "coverage": "A320"
+   },
+   {
+    "icao": "VRMM",
+    "name": "Malé",
+    "feature": "Atoll und Flughafeninsel",
+    "sources": [
+     "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943"
+    ],
+    "legs": [
+     "L218"
+    ],
+    "coverage": "A320"
+   },
+   {
+    "icao": "FACT",
+    "name": "Kapstadt",
+    "feature": "Tafelberg",
+    "sources": [
+     "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943"
+    ],
+    "legs": [
+     "L279"
+    ],
+    "coverage": "A320"
+   },
+   {
+    "icao": "EGLL",
+    "name": "London Heathrow",
+    "feature": "Stadtanflug",
+    "sources": [
+     "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943",
+     "https://www.flightradar24.com/blog/threads/which-airport-approach-or-departure-do-you-think-is-the-most-scenic/"
+    ],
+    "legs": [
+     "L004"
+    ],
+    "coverage": "A320"
+   },
+   {
+    "icao": "HRYR",
+    "name": "Kigali",
+    "feature": "Hügellandschaft",
+    "sources": [
+     "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943"
+    ],
+    "legs": [
+     "L257"
+    ],
+    "coverage": "A320"
+   },
+   {
+    "icao": "VHHH",
+    "name": "Hongkong – Chek Lap Kok",
+    "feature": "Aktueller Flughafen, kein Kai Tak",
+    "sources": [
+     "https://www.reddit.com/r/flightsim/comments/1q7yuvs/hong_kong_night_approach_rpll06vhhh25r_fl330/",
+     "https://www.cad.gov.hk/english/ac_path.html"
+    ],
+    "legs": [
+     "L181"
+    ],
+    "coverage": "A320"
+   },
+   {
+    "icao": "SCEL",
+    "name": "Santiago",
+    "feature": "Anden",
+    "sources": [
+     "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943"
+    ],
+    "legs": [
+     "L069"
+    ],
+    "coverage": "A320"
+   },
+   {
+    "icao": "KLAS",
+    "name": "Las Vegas",
+    "feature": "Strip bei Nacht",
+    "sources": [
+     "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943",
+     "https://www.flightradar24.com/blog/threads/which-airport-approach-or-departure-do-you-think-is-the-most-scenic/"
+    ],
+    "legs": [
+     "L390"
+    ],
+    "coverage": "A320"
+   },
+   {
+    "icao": "NZWN",
+    "name": "Wellington",
+    "feature": "Meerenge",
+    "sources": [
+     "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943"
+    ],
+    "legs": [
+     "L145"
+    ],
+    "coverage": "A320"
+   },
+   {
+    "icao": "ENSB",
+    "name": "Svalbard",
+    "feature": "Arktis",
+    "sources": [
+     "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943",
+     "https://forums.flightsimulator.com/t/favorite-approach-in-msfs/449235?page=2"
+    ],
+    "legs": [
+     "L368"
+    ],
+    "coverage": "A320"
+   },
+   {
+    "icao": "VNLK",
+    "name": "Lukla",
+    "feature": "Kurze Hangbahn; Tour besucht sie per H160",
+    "sources": [
+     "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943"
+    ],
+    "legs": [
+     "X-LUKLA-1"
+    ],
+    "coverage": "H160"
+   },
+   {
+    "icao": "MHTG",
+    "name": "Toncontín",
+    "feature": "Talanflug; Airliner-Sonderfall",
+    "sources": [
+     "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943",
+     "https://forums.flightsimulator.com/t/recommend-me-scenic-approaches-on-a320/467361"
+    ],
+    "legs": [
+     "L086"
+    ],
+    "coverage": "A320"
+   },
+   {
+    "icao": "KJAC",
+    "name": "Jackson Hole",
+    "feature": "Grand Teton",
+    "sources": [
+     "https://forums.flightsimulator.com/t/recommend-me-scenic-approaches-on-a320/467361"
+    ],
+    "legs": [
+     "L108"
+    ],
+    "coverage": "A320"
+   },
+   {
+    "icao": "KBOS",
+    "name": "Boston",
+    "feature": "Stadt und Hafen",
+    "sources": [
+     "https://forums.flightsimulator.com/t/recommend-me-scenic-approaches-on-a320/467361"
+    ],
+    "legs": [
+     "L022"
+    ],
+    "coverage": "A320"
+   },
+   {
+    "icao": "ENTC",
+    "name": "Tromsø",
+    "feature": "Fjordlandschaft",
+    "sources": [
+     "https://forums.flightsimulator.com/t/recommend-me-scenic-approaches-on-a320/467361"
+    ],
+    "legs": [
+     "L367"
+    ],
+    "coverage": "A320"
+   },
+   {
+    "icao": "VNKT",
+    "name": "Kathmandu",
+    "feature": "Tal und Himalaya",
+    "sources": [
+     "https://forums.flightsimulator.com/t/recommend-me-scenic-approaches-on-a320/467361",
+     "https://www.flightradar24.com/blog/threads/which-airport-approach-or-departure-do-you-think-is-the-most-scenic/"
+    ],
+    "legs": [
+     "L211",
+     "X-LUKLA-2"
+    ],
+    "coverage": "A320"
+   },
+   {
+    "icao": "NTTB",
+    "name": "Bora Bora",
+    "feature": "Lagune",
+    "sources": [
+     "https://www.privatefly.com/airport-poll/privatefly-airport-poll-results-2020.html"
+    ],
+    "legs": [
+     "X-BORABORA-1"
+    ],
+    "coverage": "H160"
+   },
+   {
+    "icao": "OMDB",
+    "name": "Dubai",
+    "feature": "Skyline",
+    "sources": [
+     "https://www.privatefly.com/airport-poll/privatefly-airport-poll-results-2020.html"
+    ],
+    "legs": [
+     "L225"
+    ],
+    "coverage": "A320"
+   },
+   {
+    "icao": "NFFN",
+    "name": "Nadi",
+    "feature": "Bucht und Bergkulisse",
+    "sources": [
+     "https://www.privatefly.com/airport-poll/privatefly-airport-poll-results-2020.html"
+    ],
+    "legs": [
+     "L139"
+    ],
+    "coverage": "A320"
+   },
+   {
+    "icao": "RJTT",
+    "name": "Tokyo Haneda",
+    "feature": "Tokyo Bay",
+    "sources": [
+     "https://www.flightradar24.com/blog/threads/which-airport-approach-or-departure-do-you-think-is-the-most-scenic/"
+    ],
+    "legs": [
+     "L188"
+    ],
+    "coverage": "A320"
+   },
+   {
+    "icao": "YSSY",
+    "name": "Sydney",
+    "feature": "Hafen",
+    "sources": [
+     "https://www.flightradar24.com/blog/threads/which-airport-approach-or-departure-do-you-think-is-the-most-scenic/"
+    ],
+    "legs": [
+     "L150"
+    ],
+    "coverage": "A320"
+   },
+   {
+    "icao": "FSIA",
+    "name": "Mahé",
+    "feature": "Granitberge am Meer",
+    "sources": [
+     "https://www.reddit.com/r/flightsim/comments/1wa4n9e/interesting_airports_for_approaches/"
+    ],
+    "legs": [
+     "L262"
+    ],
+    "coverage": "A320"
+   },
+   {
+    "icao": "SPZO",
+    "name": "Cusco",
+    "feature": "Andental und Höhe",
+    "sources": [
+     "https://www.reddit.com/r/flightsim/comments/1wa4n9e/interesting_airports_for_approaches/"
+    ],
+    "legs": [
+     "L074"
+    ],
+    "coverage": "A320"
+   },
+   {
+    "icao": "TNCS",
+    "name": "Saba",
+    "feature": "Extrem kurze Küstenpiste",
+    "sources": [
+     "https://www.privatefly.com/airport-poll/privatefly-airport-poll-results-2018.html",
+     "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943"
+    ],
+    "proposal": "Hohe Priorität: H160-Ausflug TNCM → TNCS → TNCM. Hubschrauberverkehr ist belegt; H160-Leistung und Szenerie noch im Sim prüfen. Keine Twin Otter nötig, solange der Besuch und nicht das originale STOL-Landeerlebnis das Ziel ist.",
+    "activeSources": [
+     "https://www.sabatourism.com/getting-here",
+     "https://www.westindieshelico.com/sint-maarten-to-saba-island-helicopters/"
+    ],
+    "legs": [],
+    "coverage": "Fehlt"
+   },
+   {
+    "icao": "EGLC",
+    "name": "London City",
+    "feature": "Docklands und steiler Anflug",
+    "sources": [
+     "https://www.privatefly.com/airport-poll/privatefly-airport-poll-results-2018.html",
+     "https://forums.flightsimulator.com/t/recommend-me-scenic-approaches-on-a320/467361",
+     "https://www.flightradar24.com/blog/threads/which-airport-approach-or-departure-do-you-think-is-the-most-scenic/"
+    ],
+    "proposal": "London-Highlight, aber mit den bevorzugten Typen kein regulärer Landestopp: Fenix A320 CFM ist hier nicht zugelassen; eine touristische H160-Landung ist nicht als reguläre Option belegt. Deshalb nur London-Sightseeing als separate Planung, ohne EGLC-Landung. Keine Twin Otter als Ersatz. Einen anderen aktiven Heliport und die Londoner Hubschrauberrouten vor einer Übernahme gesondert prüfen.",
+    "activeSources": [
+     "https://www.londoncityairport.com/",
+     "https://privatejetcentre.londoncityairport.com/services/approved-operators-and-aircraft"
+    ],
+    "legs": [],
+    "coverage": "Fehlt"
+   },
+   {
+    "icao": "EGPR",
+    "name": "Barra",
+    "feature": "Gezeitenstrand statt Asphalt",
+    "sources": [
+     "https://www.privatefly.com/airport-poll/privatefly-airport-poll-results-2018.html",
+     "https://www.privatefly.com/airport-poll/privatefly-airport-poll-results-2020.html",
+     "https://www.flightradar24.com/blog/threads/which-airport-approach-or-departure-do-you-think-is-the-most-scenic/"
+    ],
+    "proposal": "Hohe Priorität: H160-Ausflug ab EGPE möglich, kein A320. Für das berühmte Rollen und Landen auf dem Strand wäre die Twin Otter eine begründete freiwillige Ausnahme; ein H160-Besuch ersetzt dieses Erlebnis nicht. Gezeiten und Landefläche vorab prüfen.",
+    "activeSources": [
+     "https://www.hial.co.uk/homepage/4/barra-airport"
+    ],
+    "legs": [],
+    "coverage": "Fehlt"
+   },
+   {
+    "icao": "EIDL",
+    "name": "Donegal",
+    "feature": "Wild Atlantic Way",
+    "sources": [
+     "https://www.privatefly.com/airport-poll/privatefly-airport-poll-results-2018.html",
+     "https://www.privatefly.com/airport-poll/privatefly-airport-poll-results-2020.html"
+    ],
+    "proposal": "H160-Ausflug ab EICK oder EGNS. Küstenlinie und Strände machen den Mehrwert aus. Nicht als neuen A320-Sonderfall erzwingen.",
+    "activeSources": [
+     "https://donegalairport.ie/news/",
+     "https://donegalairport.ie/about-us/"
+    ],
+    "legs": [],
+    "coverage": "Fehlt"
+   },
+   {
+    "icao": "KSAN",
+    "name": "San Diego",
+    "feature": "Stadtnaher Endanflug",
+    "sources": [
+     "https://www.reddit.com/r/flightsim/comments/czr2wy/"
+    ],
+    "activeSources": [
+     "https://www.san.org/"
+    ],
+    "legs": [
+     "L389"
+    ],
+    "coverage": "A320"
+   },
+   {
+    "icao": "KLGA",
+    "name": "New York LaGuardia",
+    "feature": "Expressway Visual und Manhattan",
+    "sources": [
+     "https://forums.flightsimulator.com/t/recommend-me-scenic-approaches-on-a320/467361",
+     "https://forums.flightsimulator.com/t/favorite-approach-in-msfs/449235?page=2",
+     "https://www.flightradar24.com/blog/threads/which-airport-approach-or-departure-do-you-think-is-the-most-scenic/"
+    ],
+    "proposal": "A320-Highlight. Den Abschnitt KDCA → KJFK gezielt umplanen; ein 10-NM-A320-Sprung KLGA → KJFK wäre wenig sinnvoll. JFK wegen eigener Szenerie erhalten, gegebenenfalls als separater Besuch. Noch keine Routenänderung.",
+    "activeSources": [
+     "https://www.laguardiaairport.com/flights/arrivals"
+    ],
+    "legs": [],
+    "coverage": "Fehlt"
+   },
+   {
+    "icao": "LIPZ",
+    "name": "Venedig",
+    "feature": "Lagune",
+    "sources": [
+     "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943"
+    ],
+    "proposal": "A320 zwischen LIRF und LFMN möglich; beide Teilstrecken unter zwei Stunden. Gute Ergänzung, aber geringere Priorität als Saba, Barra und San Diego.",
+    "activeSources": [
+     "https://www.veneziaairport.it/en_gb/flights/arrivals/1180221/"
+    ],
+    "legs": [],
+    "coverage": "Fehlt"
+   },
+   {
+    "icao": "LIMJ",
+    "name": "Genua",
+    "feature": "Hafenbahn an der Küste",
+    "sources": [
+     "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943"
+    ],
+    "proposal": "A320-Zwischenstopp LIRF → LIMJ → LFMN mit kleinem Umweg. Alternative zu einer größeren Italien-Erweiterung über Venedig.",
+    "activeSources": [
+     "https://www.airport.genova.it/orario-voli/"
+    ],
+    "legs": [],
+    "coverage": "Fehlt"
+   },
+   {
+    "icao": "SBSP",
+    "name": "São Paulo Congonhas",
+    "feature": "Stadtflughafen",
+    "sources": [
+     "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943"
+    ],
+    "proposal": "A320 SBRJ → SBSP → SBFI. Performance auf kurzer Bahn prüfen; kein zusätzlicher Flugzeugtyp nötig. Beide Legs im Zwei-Stunden-Ziel.",
+    "activeSources": [
+     "https://www.aenabrasil.com.br/en/airports/congonhas-airport/flights-information.html"
+    ],
+    "legs": [],
+    "coverage": "Fehlt"
+   },
+   {
+    "icao": "FSPP",
+    "name": "Praslin",
+    "feature": "Inseln und Küstenlandschaft",
+    "sources": [
+     "https://www.privatefly.com/airport-poll/privatefly-airport-poll-results-2020.html"
+    ],
+    "proposal": "Kurzer H160-Ausflug ab FSIA; bietet einen zweiten Blick auf die Seychellen. Für einen A320 ungeeignet, Twin Otter für den Besuch nicht erforderlich.",
+    "activeSources": [
+     "https://fly.airseychelles.com/en/domestic-flight-schedule"
+    ],
+    "legs": [],
+    "coverage": "Fehlt"
+   },
+   {
+    "icao": "LFLJ",
+    "name": "Courchevel",
+    "feature": "Altiport mit geneigter Bahn",
+    "sources": [
+     "https://forums.flightsimulator.com/t/airport-destinations-approaches-list/484943",
+     "https://forums.flightsimulator.com/t/your-top-airport-addons/541754"
+    ],
+    "proposal": "H160-Ausflug ab LSGG; Hubschrauberbetrieb am Altiport ist belegt. Die geneigte Bahn lässt sich besichtigen, das typische Flächenflugzeug-Landeerlebnis wird damit nicht nachgebildet. Hochgebirgsleistung prüfen.",
+    "activeSources": [
+     "https://courchevel.com/en/a/courchevel-altiport-5077208/",
+     "https://www.mbh.fr/fr/nos-bases/courchevel/"
+    ],
+    "legs": [],
+    "coverage": "Fehlt"
+   },
+   {
+    "icao": "LSZS",
+    "name": "Samedan",
+    "feature": "Engadin",
+    "sources": [
+     "https://forums.flightsimulator.com/t/favorite-approach-in-msfs/449235?page=2",
+     "https://forums.flightsimulator.com/t/aussie-group-flights-team-ga-sunday-the-alps-scenic-traverse/756248"
+    ],
+    "proposal": "H160-Ausflug ab LSZH oder LOWI. Hubschrauberbetrieb ist belegt; für die Tour kein weiterer A320-Grenzfall. Talroute und Dichtehöhe beachten.",
+    "activeSources": [
+     "https://www.engadin-airport.ch/rundfluege/",
+     "https://www.engadin-airport.ch/wp-content/uploads/2025/09/Briefing-Familiarization-LSZS.pdf"
+    ],
+    "legs": [],
+    "coverage": "Fehlt"
+   }
+  ],
+  "operatingNotes": [
+   {
+    "icao": "UKLL",
+    "title": "Aktuell kein ziviler Flugbetrieb – nur Simulator-Ausnahme",
+    "note": "Lwiw ist nicht historisch stillgelegt, aber der ukrainische Luftraum einschließlich FIR Lviv ist laut EASA CZIB-2022-01R14 (Revision 24.07.2026, gültig bis 31.01.2027) für zivile Flüge geschlossen. Damit erfüllt dieser Stopp die strenge Vorgabe „aktuell zivil anfliegbar“ nicht. Alle 245 Kategorien und ausschließlich aktuell zivil erreichbare Airports sind deshalb derzeit nicht gleichzeitig möglich. Der Ukraine-Stopp bleibt für die Kategorie im Simulator markiert; keine Behauptung regulären Betriebs.",
+    "url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2022-01r14"
+   }
+  ],
+  "excluded": {
+   "icao": "VHHX",
+   "note": "Kai Tak ist seit 1998 geschlossen und wird ausdrücklich nicht vorgeschlagen. Hongkong ist bereits über den aktiven Flughafen VHHH enthalten. Andere historische oder nicht belegbar aktive Plätze aus alten Listen wurden ebenfalls nicht als Ergänzungen übernommen.",
+   "url": "https://www.cad.gov.hk/english/kaitak.html"
+  }
+ },
  "stats": {
   "a320": {
-   "legs": 388,
-   "nm": 125503,
-   "air": 25753
+   "legs": 389,
+   "nm": 125770,
+   "air": 25811
   },
   "h160": {
    "legs": 34,
@@ -22226,8 +25138,8 @@
    "air": 1226,
    "trips": 17
   },
-  "legs": 422,
-  "air": 26979,
+  "legs": 423,
+  "air": 27037,
   "over2h": 23,
   "cats": 245,
   "ownedUsed": 43,
@@ -22240,7 +25152,7 @@
    "buy": 6,
    "freeware": 72,
    "hand": 41,
-   "stdok": 241,
+   "stdok": 242,
    "optional": 0,
    "unrated": 0
   },

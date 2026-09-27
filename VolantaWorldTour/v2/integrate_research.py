@@ -241,6 +241,18 @@ if verified.exists():
 # Frühere Übernahmen dieser Airports entfernen, damit ein erneuter Lauf nichts Veraltetes stehen lässt.
 # Von Hand ergänzte Installationsangaben werden gemerkt und unten an denselben Eintrag wieder angehängt.
 GENERATED = ("__fw", "__pw", "__cand")
+# Am 25.09.2026 belegte Produktlinks statt historischer Suchseiten. Nur den
+# exakt bekannten Altlink ersetzen; neue Rechercheprodukte bleiben unberührt.
+PRODUCT_LINK_CORRECTIONS = {
+    "FSIA": ("https://www.fsaddoncompare.com/search/FSIA", "https://www.fsaddoncompare.com/product/4701/Seychelles"),
+    "HTKJ": ("https://www.fsaddoncompare.com/search/HTKJ", "https://www.fsaddoncompare.com/product/4204/HTKJ-Kilimanjaro-Intl.-Airport"),
+    "DGAA": ("https://www.fsaddoncompare.com/search/DGAA", "https://www.fsaddoncompare.com/product/7817/DGAA-Kotoka-International-Airport"),
+}
+for ident, (old_url, direct_url) in PRODUCT_LINK_CORRECTIONS.items():
+    pw = results.get(ident, {}).get("payware")
+    if pw and pw.get("url") == old_url:
+        pw["url"] = direct_url
+
 PRESERVE = ("dependencies", "installNote")
 kept = {}
 for key in [k for k, s in content["scenery"].items() if k.endswith(GENERATED) and s.get("icao") in results]:

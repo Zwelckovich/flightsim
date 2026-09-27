@@ -562,6 +562,17 @@ kbd { font-family: var(--mono); font-size: 11px; border: 1px solid var(--bd3); b
   .m-flow { display: none; }
 }
 
+.scenery-references { margin-top: 10px; font-size: 13px; }
+.scenery-references summary { cursor: pointer; color: var(--tx2); padding-block: 5px; }
+.scenery-references ul { padding-left: 18px; }
+.scenery-references li { margin-block: 8px; overflow-wrap: anywhere; }
+.scenery-references li p { margin-top: 3px; }
+.highlight-audit { margin-top: 32px; border-top: 1px solid var(--bd2); padding-top: 20px; }
+.highlight-audit table { min-width: 650px; }
+.highlight-audit td { white-space: normal; vertical-align: top; max-width: 34rem; }
+.highlight-audit td:first-child { min-width: 9rem; }
+.highlight-audit td p { margin-top: 6px; }
+
 /* Sonderetappen */
 .trial { margin-top: 14px; background: var(--paper); border: 1px solid var(--bd2); border-left: 3px solid var(--warn); border-radius: 4px; padding: 11px 14px; font-size: 13px; }
 .trial h3 { font-family: var(--narrow); font-size: 17px; color: var(--warn); margin-bottom: 4px; }
