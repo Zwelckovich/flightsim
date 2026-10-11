@@ -64,7 +64,8 @@ ui.state.flt = 'done'; ui.renderPlan(); assert.equal(ids().length, 0);
 assert(element('#plan tbody').innerHTML.includes('Keine passenden Legs'));
 assert.equal(element('#clear-filters').hidden, false);
 element('#clear-filters').listeners.click();
-assert.equal(ids().length, 422); assert.equal(element('#clear-filters').hidden, true);
+assert.deepEqual(ids(), data.legs.map(l => l.id), 'clearing filters restores every route leg in order');
+assert.equal(element('#clear-filters').hidden, true);
 assert(element('#q').focused);
 console.log('PASS search: combined terms, accents, H160, chapter/status combination, empty results, reset');
 
