@@ -52,7 +52,7 @@ RULES = ("Freeware-Empfehlung ab 4,5 Sternen bei mindestens 8 Bewertungen oder 6
 SCOPE = ("Die Schwellen gelten für die {airports} Airports dieser Recherche und für die älteren Freeware-Einträge "
          "(am 24.09.2026 nachgezählt; VILH, VRMM und NTTB stehen seitdem nur noch zum Prüfen da). Ausgenommen, "
          "jeweils mit eigener Begründung: die handverlesenen Kauf-Tipps und ältere bezahlte Beobachtungskandidaten "
-         "unter der Payware-Schwelle (FACT, VNKT, OYSQ, FVFA/FSDG, VQPR/FSDG, NTAA, MMMX, VILH/Sundownersim) – "
+         "unter der Payware-Schwelle (FACT, VNKT, OYSQ, FVFA/FSDG, VQPR/FSDG, NTAA, MMMX, VILH/Sundownersim, seit 30.09.2026 auch das neue LGSK/M'M) – "
          "diese bleiben optional.")
 
 # Dieselbe Szenerie mit getrennten Einträgen: niedrigere Bewertung, Summe der Bewertungen und Downloads.

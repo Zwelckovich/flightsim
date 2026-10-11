@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "V2",
-  "built": "2026-09-25",
+  "built": "2026-09-30",
   "start": "EDLV",
   "aircraft": "Fenix A320 · CFM · Sharklets",
   "heli": "Airbus H160 (HPG)",
@@ -13981,7 +13981,15 @@
     "items": [
      {
       "status": "stdok",
-      "why": "Recherchiert: Orbx nur für MSFS 2020, Freeware von 2020 – nichts Natives für 2024."
+      "why": "Recherchiert: kein Muss-Add-on; die neue M'M-Payware (30.09.2026 noch ohne Bewertungen) als Option, Orbx und die Freeware gibt es nur für MSFS 2020."
+     },
+     {
+      "status": "optional",
+      "product": "LGSK – Skiathos International Airport",
+      "dev": "M'M Simulations",
+      "url": "https://flightsim.to/store/product/lgsk-skiathos-international-airport",
+      "why": "Einziges natives 2024-Skiathos: Terminal- und Tower-Interieur, handgebautes Gelände, Nachtbeleuchtung. Erst am 29.09.2026 erschienen (v1.0.1), noch ohne Bewertungen, und M'M schwankt stark (Pristina 4,7, Tromsø 3,6) – kaufen, sobald Bewertungen da sind.",
+      "price": "ca. 15 €"
      }
     ]
    },
@@ -13993,7 +14001,7 @@
     }
    ],
    "hl": "Skiathos – das „St. Maarten Griechenlands“.",
-   "brief": "1.628 × 30 m; im September 2024 landete hier sogar ein A321. Tiefe Überflüge am Pistenende sind ein Spotter-Klassiker. Leicht beladen, früh stabil – geflogen wird mit dem Standard-Airport, Orbx gibt es nur für MSFS 2020.",
+   "brief": "1.628 × 30 m; im September 2024 landete hier sogar ein A321. Tiefe Überflüge am Pistenende sind ein Spotter-Klassiker. Leicht beladen, früh stabil. Seit Ende September 2026 gibt es mit M'M Simulations die erste native 2024-Szenerie – noch ohne Bewertungen, daher nur als Beobachten-Tipp.",
    "tag": "Beach",
    "level": 2
   },
@@ -24475,7 +24483,7 @@
    "area": "Ehrlichkeit",
    "title": "Jeder Airport eingeordnet – nach festen Schwellen",
    "text": "Jeder der 403 Airports ist eingeordnet: deine Sammlung, handgefertigt laut den World-Update-Listen oder per Add-on-Recherche auf FSAddonCompare und flightsim.to (Stand 24.09.2026). Freeware wird ab 4,5 Sternen bei mindestens 8 Bewertungen oder 6.000 Downloads mit belegtem 2024-Betrieb empfohlen, Payware ab 4,3 Sternen bei mindestens 10 Bewertungen als Option; kostenlose Kandidaten darunter stehen nur zum Prüfen da. „Angebot recherchiert“ heißt: kein Add-on mit belegtem Mehrwert gefunden – im Simulator getestet ist der Standard damit nicht.",
-   "effect": "72 Freeware-Airports · 87 Optionen · 4 Kandidaten · 0 ungeprüft"
+   "effect": "72 Freeware-Airports · 88 Optionen · 4 Kandidaten · 0 ungeprüft"
   },
   {
    "area": "Daten",
@@ -24487,7 +24495,7 @@
  "research": {
   "date": "2026-09-24",
   "airports": 289,
-  "rules": "Freeware-Empfehlung ab 4,5 Sternen bei mindestens 8 Bewertungen oder 6.000 Downloads und belegtem MSFS-2024-Betrieb (Tag, Autor oder Nutzer). Payware-Option ab 4,3 Sternen bei mindestens 10 Bewertungen und MSFS-2024-Angabe. Kostenlose Kandidaten unter der Schwelle stehen nur als „Freeware zum Prüfen“ da. Ohne belegten Mehrwert: „Angebot recherchiert“ mit Begründung. Preise: günstigster Händler laut FSAddonCompare, meist ohne Steuern. Die Schwellen gelten für die 289 Airports dieser Recherche und für die älteren Freeware-Einträge (am 24.09.2026 nachgezählt; VILH, VRMM und NTTB stehen seitdem nur noch zum Prüfen da). Ausgenommen, jeweils mit eigener Begründung: die handverlesenen Kauf-Tipps und ältere bezahlte Beobachtungskandidaten unter der Payware-Schwelle (FACT, VNKT, OYSQ, FVFA/FSDG, VQPR/FSDG, NTAA, MMMX, VILH/Sundownersim) – diese bleiben optional."
+  "rules": "Freeware-Empfehlung ab 4,5 Sternen bei mindestens 8 Bewertungen oder 6.000 Downloads und belegtem MSFS-2024-Betrieb (Tag, Autor oder Nutzer). Payware-Option ab 4,3 Sternen bei mindestens 10 Bewertungen und MSFS-2024-Angabe. Kostenlose Kandidaten unter der Schwelle stehen nur als „Freeware zum Prüfen“ da. Ohne belegten Mehrwert: „Angebot recherchiert“ mit Begründung. Preise: günstigster Händler laut FSAddonCompare, meist ohne Steuern. Die Schwellen gelten für die 289 Airports dieser Recherche und für die älteren Freeware-Einträge (am 24.09.2026 nachgezählt; VILH, VRMM und NTTB stehen seitdem nur noch zum Prüfen da). Ausgenommen, jeweils mit eigener Begründung: die handverlesenen Kauf-Tipps und ältere bezahlte Beobachtungskandidaten unter der Payware-Schwelle (FACT, VNKT, OYSQ, FVFA/FSDG, VQPR/FSDG, NTAA, MMMX, VILH/Sundownersim, seit 30.09.2026 auch das neue LGSK/M'M) – diese bleiben optional."
  },
  "highlightAudit": {
   "date": "2026-09-25",

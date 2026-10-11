@@ -1256,7 +1256,7 @@
    "level": 2,
    "tag": "Beach",
    "hl": "Skiathos – das „St. Maarten Griechenlands“.",
-   "brief": "1.628 × 30 m; im September 2024 landete hier sogar ein A321. Tiefe Überflüge am Pistenende sind ein Spotter-Klassiker. Leicht beladen, früh stabil – geflogen wird mit dem Standard-Airport, Orbx gibt es nur für MSFS 2020."
+   "brief": "1.628 × 30 m; im September 2024 landete hier sogar ein A321. Tiefe Überflüge am Pistenende sind ein Spotter-Klassiker. Leicht beladen, früh stabil. Seit Ende September 2026 gibt es mit M'M Simulations die erste native 2024-Szenerie – noch ohne Bewertungen, daher nur als Beobachten-Tipp."
   },
   "LGAV": {
    "hl": "Athen mit deiner FlyTampa-Szenerie."
@@ -3544,6 +3544,14 @@
    "rating": "4,87 · 31",
    "price": "ab 18,48 €",
    "why": "Kostenpflichtige Alternative zur Freeware."
+  },
+  "LGSK": {
+   "status": "optional",
+   "product": "LGSK – Skiathos International Airport",
+   "dev": "M'M Simulations",
+   "url": "https://flightsim.to/store/product/lgsk-skiathos-international-airport",
+   "why": "Einziges natives 2024-Skiathos: Terminal- und Tower-Interieur, handgebautes Gelände, Nachtbeleuchtung. Erst am 29.09.2026 erschienen (v1.0.1), noch ohne Bewertungen, und M'M schwankt stark (Pristina 4,7, Tromsø 3,6) – kaufen, sobald Bewertungen da sind.",
+   "price": "ca. 15 €"
   }
  },
  "handcrafted": {
@@ -3727,7 +3735,7 @@
    "area": "Ehrlichkeit",
    "title": "Jeder Airport eingeordnet – nach festen Schwellen",
    "text": "Jeder der 403 Airports ist eingeordnet: deine Sammlung, handgefertigt laut den World-Update-Listen oder per Add-on-Recherche auf FSAddonCompare und flightsim.to (Stand 24.09.2026). Freeware wird ab 4,5 Sternen bei mindestens 8 Bewertungen oder 6.000 Downloads mit belegtem 2024-Betrieb empfohlen, Payware ab 4,3 Sternen bei mindestens 10 Bewertungen als Option; kostenlose Kandidaten darunter stehen nur zum Prüfen da. „Angebot recherchiert“ heißt: kein Add-on mit belegtem Mehrwert gefunden – im Simulator getestet ist der Standard damit nicht.",
-   "effect": "72 Freeware-Airports · 87 Optionen · 4 Kandidaten · 0 ungeprüft"
+   "effect": "72 Freeware-Airports · 88 Optionen · 4 Kandidaten · 0 ungeprüft"
   },
   {
    "area": "Daten",
@@ -3741,7 +3749,7 @@
   "BIKF": "Recherchiert: Nur MK Studios (Payware, 4,66 · 54) wertet echt auf; die Freeware ist unfertig.",
   "TXKF": "Recherchiert: SLH (4,59 · 15) ist möglich, aber der Stopp lebt von der Insel, nicht vom Terminal.",
   "MMUN": "Recherchiert: Die Macco-Payware hat gemeldete Geländefehler in 2024; die Freeware ist nicht für 2024 getestet.",
-  "LGSK": "Recherchiert: Orbx nur für MSFS 2020, Freeware von 2020 – nichts Natives für 2024.",
+  "LGSK": "Recherchiert: kein Muss-Add-on; die neue M'M-Payware (30.09.2026 noch ohne Bewertungen) als Option, Orbx und die Freeware gibt es nur für MSFS 2020.",
   "FIMP": "Recherchiert: FSDG Mauritius zeigt in 2024 Riff- und Bildfehler (3,15 · 93); die Freeware ist nur mittelmäßig.",
   "VILH": "Recherchiert: Kein Add-on mit belegtem Mehrwert – die mottoth-Freeware (4,8 aus 3, rund 4.000 Downloads) liegt unter der Freeware-Schwelle und steht nur als Kandidat zum Prüfen daneben, die Sundownersim-Payware (4,2 aus 4) liegt unter der Payware-Schwelle.",
   "VRMM": "Recherchiert: Kein Add-on mit belegtem Mehrwert – die NSAJID-Freeware (4,8 aus 4, rund 2.000 Downloads) liegt unter der Freeware-Schwelle und steht nur als Kandidat zum Prüfen daneben.",
@@ -4016,7 +4024,7 @@
  "research": {
   "date": "2026-09-24",
   "airports": 289,
-  "rules": "Freeware-Empfehlung ab 4,5 Sternen bei mindestens 8 Bewertungen oder 6.000 Downloads und belegtem MSFS-2024-Betrieb (Tag, Autor oder Nutzer). Payware-Option ab 4,3 Sternen bei mindestens 10 Bewertungen und MSFS-2024-Angabe. Kostenlose Kandidaten unter der Schwelle stehen nur als „Freeware zum Prüfen“ da. Ohne belegten Mehrwert: „Angebot recherchiert“ mit Begründung. Preise: günstigster Händler laut FSAddonCompare, meist ohne Steuern. Die Schwellen gelten für die 289 Airports dieser Recherche und für die älteren Freeware-Einträge (am 24.09.2026 nachgezählt; VILH, VRMM und NTTB stehen seitdem nur noch zum Prüfen da). Ausgenommen, jeweils mit eigener Begründung: die handverlesenen Kauf-Tipps und ältere bezahlte Beobachtungskandidaten unter der Payware-Schwelle (FACT, VNKT, OYSQ, FVFA/FSDG, VQPR/FSDG, NTAA, MMMX, VILH/Sundownersim) – diese bleiben optional."
+  "rules": "Freeware-Empfehlung ab 4,5 Sternen bei mindestens 8 Bewertungen oder 6.000 Downloads und belegtem MSFS-2024-Betrieb (Tag, Autor oder Nutzer). Payware-Option ab 4,3 Sternen bei mindestens 10 Bewertungen und MSFS-2024-Angabe. Kostenlose Kandidaten unter der Schwelle stehen nur als „Freeware zum Prüfen“ da. Ohne belegten Mehrwert: „Angebot recherchiert“ mit Begründung. Preise: günstigster Händler laut FSAddonCompare, meist ohne Steuern. Die Schwellen gelten für die 289 Airports dieser Recherche und für die älteren Freeware-Einträge (am 24.09.2026 nachgezählt; VILH, VRMM und NTTB stehen seitdem nur noch zum Prüfen da). Ausgenommen, jeweils mit eigener Begründung: die handverlesenen Kauf-Tipps und ältere bezahlte Beobachtungskandidaten unter der Payware-Schwelle (FACT, VNKT, OYSQ, FVFA/FSDG, VQPR/FSDG, NTAA, MMMX, VILH/Sundownersim, seit 30.09.2026 auch das neue LGSK/M'M) – diese bleiben optional."
  },
  "simChecks": {
   "ZMCK": {

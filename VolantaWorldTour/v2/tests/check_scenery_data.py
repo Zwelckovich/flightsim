@@ -24,7 +24,7 @@ ARCHIVE = json.loads((V2 / "research-2026-09-24.json").read_text(encoding="utf-8
 SIM_CHECKS = ["FMZJ", "ZDM", "ZMCK", "ZZ-0002"]
 CANDIDATES = {"LNMC", "NTTB", "VILH", "VRMM"}
 # Ältere bezahlte Beobachtungskandidaten unter der Payware-Schwelle – so nennt sie SCOPE in integrate_research.py
-PAID_WATCH = ["FACT", "FVFA", "MMMX", "NTAA", "OYSQ", "VILH", "VNKT", "VQPR"]
+PAID_WATCH = ["FACT", "FVFA", "LGSK", "MMMX", "NTAA", "OYSQ", "VILH", "VNKT", "VQPR"]
 failures = []
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(errors="replace")
