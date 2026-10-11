@@ -1,5 +1,5 @@
 /* Weltreise ab Weeze · V2
-   Farbschema: R&S-Instrumentenlook aus walkthrough.build.html
+   Farbschema: R&S-Instrumentenlook aus dem UMA-Designsystem
    (flache Schiefer-Panels, versenkte Kanten, Cyan als Leitfarbe).
    Die Karte ist der schwarze Neon-Screen des Instruments. */
 :root {
@@ -22,8 +22,8 @@
   --on-lead: #04121b; /* Text auf Cyan */
   --focus: #66ccff;
   --warn: #ffa23c;
-  --ok: #3be065;
-  --ok-dim: #2a6b42;
+  --ok: #2bd98a; /* UMA-Designsystem: ok-Grün, bewusst anders als das LED-Grün der Kurven */
+  --ok-dim: #1e6f4e;
   --heli: #d6dce1;
   --paper: #10141a;
   --plot: #0a0d10;
@@ -31,9 +31,11 @@
   --axis: #3a434d;
   --land: #1b232b;
   --coast: #3b4753;
-  --sans: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  --narrow: "Arial Narrow", "Barlow Semi Condensed", Arial, sans-serif;
-  --mono: Consolas, "JetBrains Mono", "Courier New", monospace;
+  /* Schriften aus dem UMA-Designsystem (docs/design/DESIGN.md): Inter / Quicksand / JetBrains Mono.
+     --narrow behält den Namen für die Überschriften, ist jetzt aber die Display-Schrift. */
+  --sans: Inter, system-ui, sans-serif;
+  --narrow: Quicksand, Inter, sans-serif;
+  --mono: "JetBrains Mono", Consolas, monospace;
   --nav-h: 62px; /* Höhe der sticky Leg-Navigation, für scroll-padding */
   color-scheme: dark;
 }
@@ -47,6 +49,7 @@ body {
   background: var(--bg0);
   color: var(--tx2);
   font-family: var(--sans);
+  font-weight: 420;
   font-size: 14px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -106,7 +109,7 @@ header.top { background: var(--bg1); border-bottom: 1px solid var(--bd1); }
 }
 .chip i { width: 7px; height: 7px; border-radius: 50%; background: var(--tx4); display: inline-block; }
 .chip.cloud { color: var(--ok); border-color: var(--ok-dim); }
-.chip.cloud i { background: var(--ok); box-shadow: 0 0 6px rgba(59, 224, 101, 0.6); }
+.chip.cloud i { background: var(--ok); box-shadow: 0 0 6px rgba(43, 217, 138, 0.6); }
 .chip.pending i { background: var(--warn); }
 
 /* ---- Leg-Navigation (sticky) ---- */
@@ -216,8 +219,8 @@ summary::-webkit-details-marker { display: none; }
 .pip.long::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 3px; border-radius: 2px 2px 0 0; background: var(--warn); }
 .pip.heli { min-width: 30px; height: 30px; padding: 0 8px; border-radius: 15px; background: #4a5561; border-color: #5d6a76; color: var(--tx1); }
 .pip.heli .pip-label { font-size: 10.5px; }
-.pip.done { background: var(--ok-dim); border-color: #3c8a58; color: var(--tx1); }
-.pip.heli.done { background: #3d7a55; border-color: #52946a; }
+.pip.done { background: var(--ok-dim); border-color: #228c5e; color: var(--tx1); }
+.pip.heli.done { background: #207d56; border-color: #239966; }
 .pip.now { background: var(--lead); border-color: var(--lead2); color: var(--on-lead); box-shadow: 0 0 8px rgba(0, 157, 236, 0.6); }
 .pip.heli.now { background: #ffffff; border-color: #ffffff; color: var(--bg0); box-shadow: 0 0 8px rgba(255, 255, 255, 0.55); }
 
@@ -370,7 +373,7 @@ main { padding-block: 16px 40px; }
 .check-airport { margin: 12px 16px; }
 .badge.stdok { border-color: var(--bd3); color: var(--tx2); }
 .badge.unrated { border-style: dashed; color: var(--tx4); }
-.badge.req { background: rgba(59, 224, 101, 0.12); }
+.badge.req { background: rgba(43, 217, 138, 0.12); }
 
 /* Ausflüge */
 .xcards { display: grid; gap: 10px; margin-top: 12px; }
